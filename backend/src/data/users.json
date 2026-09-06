@@ -1,0 +1,19 @@
+[
+  {
+    "id": "usr_1788694964087_fyri",
+    "name": "Ragul R",
+    "email": "ragulr9962@gmail.com",
+    "passwordHash": null,
+    "role": "superadmin",
+    "title": "Platform Super Administrator",
+    "isSuperAdmin": true,
+    "isAdmin": true,
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocK45YtPVDvCiZwyQJiuxo6uZmT7KenpCgoczO2U6zNGF_gB7blb=s96-c",
+    "status": "active",
+    "provider": "google",
+    "createdAt": "2026-09-06T11:42:44.088Z",
+    "lastActive": "2026-09-06T11:45:26.946Z",
+    "savedTripsCount": 0,
+    "updatedAt": "2026-09-06T12:06:26.728Z"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "broadcast": {
+    "active": false,
+    "message": "",
+    "severity": "info",
+    "updatedAt": null,
+    "updatedBy": null
+  },
+  "featureFlags": {
+    "aiItineraryV2": true,
+    "userRegistrations": true,
+    "instantBooking": true,
+    "emergencySosDispatch": true,
+    "maintenanceMode": true
+  },
+  "adminInvites": [],
+  "auditLogs": [
+    {
+      "id": "log_1788695434522_aaa",
+      "action": "MAINTENANCE_RESET_USER",
+      "details": "Reset profile avatar and cached data for user Ragul R (ragulr9962@gmail.com)",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T11:50:34.522Z"
+    },
+    {
+      "id": "log_1788695433454_e60",
+      "action": "MAINTENANCE_RESET_USER",
+      "details": "Reset profile avatar and cached data for user Ragul R (ragulr9962@gmail.com)",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T11:50:33.454Z"
+    },
+    {
+      "id": "log_1788695432036_d18",
+      "action": "MAINTENANCE_RESET_USER",
+      "details": "Reset profile avatar and cached data for user Ragul R (ragulr9962@gmail.com)",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T11:50:32.036Z"
+    },
+    {
+      "id": "log_1788695126952_4kp",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T11:45:26.952Z"
+    },
+    {
+      "id": "log_1788695016138_fir",
+      "action": "FEATURE_FLAG_TOGGLE",
+      "details": "Toggled feature maintenanceMode to ENABLED",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T11:43:36.138Z"
+    },
+    {
+      "id": "log_1788694964100_wm0",
+      "action": "USER_REGISTER",
+      "details": "User Ragul R (ragulr9962@gmail.com) registered with role: SUPERADMIN",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T11:42:44.100Z"
+    },
+    {
+      "id": "log_init_001",
+      "action": "SYSTEM_RESET",
+      "details": "User database purged. First-user Super Admin promotion policy active.",
+      "performedBy": "System",
+      "timestamp": "2026-09-06T11:36:00.000Z"
+    }
+  ]
+}
