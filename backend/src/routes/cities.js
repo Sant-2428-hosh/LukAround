@@ -73,7 +73,7 @@ const MOCK_CITIES = [
     state: 'Tamil Nadu',
     country: 'India',
     description: 'Serene hill station nestled in the Shevaroy Hills of Eastern Ghats, known for Emerald Lake, coffee estates, and spice gardens.',
-    image_url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+    image_url: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
     best_time_to_visit: 'October to June'
   }
 ];

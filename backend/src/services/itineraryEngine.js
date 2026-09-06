@@ -151,7 +151,7 @@ const MOCK_ATTRACTIONS_BY_CITY = {
       idealTimeOfDay: 'afternoon', 
       crowdLevelByHour: 'Moderate 2:00-4:30 PM', 
       notes: 'Rent a pedal boat or shikara to explore the quiet lake surrounded by purple Neela Kurinji slopes.',
-      imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Munnar_Kundala_Dam_%284224019133%29.jpg/960px-Munnar_Kundala_Dam_%284224019133%29.jpg'
     }
   ],
   'varanasi': [

@@ -16,6 +16,13 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1788719295566_cy6",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-06T18:28:15.566Z"
+    },
+    {
       "id": "log_1788695434522_aaa",
       "action": "MAINTENANCE_RESET_USER",
       "details": "Reset profile avatar and cached data for user Ragul R (ragulr9962@gmail.com)",

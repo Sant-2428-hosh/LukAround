@@ -24,7 +24,7 @@ export const SCENIC_WALLPAPERS = [
     id: 'munnar',
     name: 'Emerald Tea Gardens (Munnar)',
     icon: '🍃',
-    imageUrl: 'https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=2000&q=85'
+    imageUrl: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=2000&q=85'
   },
   {
     id: 'varanasi',
@@ -60,7 +60,9 @@ const CITY_WALLPAPERS = {
   'agra': 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=2000&q=85',
   'kochin': 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2000&q=85',
   'pondicherry': 'https://images.unsplash.com/photo-1600100397608-f010e421d3fa?auto=format&fit=crop&w=2000&q=85',
-  'yercaud': 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=85',
+  'yercaud': 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2000&q=85',
+  'ooty': 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=2000&q=85',
+  'hampi': 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=2000&q=85',
   'delhi': 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=2000&q=85',
   'munnar': 'https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=2000&q=85',
   'varanasi': 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=2000&q=85',

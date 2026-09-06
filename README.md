@@ -203,7 +203,7 @@ graph LR
 | **Geospatial & Places** | Geoapify API | Cloud API | Places search, categories, coordinate lookup, and address geocoding |
 | **Security & Auth** | `jsonwebtoken` & `bcryptjs` | `^9.0.3` / `^3.0.3` | JWT issuance/verification and secure salted password hashing |
 | **Session & Cookies** | `cookie-parser` | `^1.4.7` | Secure HTTP-only cookie management for authentication tokens |
-| **Cross-Origin** | `cors` | `^2.8.5` | Configured CORS origin handling supporting local and staging environments |
+| **Cross-Origin** | `cors` | `^2.8.5` | Configured CORS origin handling supporting localx and staging environments |
 | **Dev Daemon** | `nodemon` | `^3.1.0` | Hot-reloading development server watcher for backend code changes |
 
 ---

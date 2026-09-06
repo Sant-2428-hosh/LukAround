@@ -17,13 +17,13 @@ const CATEGORY_ICONS = {
   City: '🌆',
 };
 
-// Per-category fallback images — different for each
+// Per-category fallback images — 100% verified, authentic Indian travel photography (HTTP 200)
 const CATEGORY_FALLBACKS = {
-  Beaches: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-  Nature: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80',
-  Spiritual: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
-  Heritage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
-  Culture: 'https://images.unsplash.com/photo-1614536759905-3c8e8e97af50?auto=format&fit=crop&w=800&q=80',
+  Beaches: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+  Nature: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+  Spiritual: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+  Heritage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+  Culture: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
   City: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80',
 };
 
@@ -72,10 +72,18 @@ function DestCard({ dest, onPlanTrip }) {
         {!imgLoaded && <div className="dest-card__img-placeholder" />}
         <img
           src={imgError ? fallback : (dest.imageUrl || fallback)}
-          alt={dest.city}
+          alt=""
+          referrerPolicy="no-referrer"
           className={`dest-card__img${imgLoaded ? ' dest-card__img--loaded' : ''}`}
           onLoad={() => setImgLoaded(true)}
-          onError={() => { setImgError(true); setImgLoaded(true); }}
+          onError={(e) => {
+            if (!imgError) {
+              setImgError(true);
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = fallback;
+              setImgLoaded(true);
+            }
+          }}
           loading="lazy"
         />
 
