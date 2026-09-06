@@ -1,4 +1,4 @@
-# 🗺️ Bharat Yatri (भारत यात्री) — Comprehensive System Blueprint & Figma Design Handoff Spec
+# 🗺️ LukAround (लुक अराउंड) — Comprehensive System Blueprint & Figma Design Handoff Spec
 
 > **Purpose**: This document provides an exhaustive, field-by-field UI/UX component specification, complete REST API contracts, JSON data schemas, environment configurations, and design system tokens. It is structured specifically for creating wireframes/mockups in **Figma** and seamlessly linking them to the Node.js/Express backend.
 
@@ -18,7 +18,7 @@
 
 ## 1. Project Overview
 
-**Bharat Yatri** is an intelligent tourist itinerary generator engineered for Indian cities. It solves the chaotic nature of urban travel in India by clustering attractions geographically using **Haversine Distance** (preventing zig-zag transit), sequencing sights according to **time-of-day suitability** (morning sunrise spots, indoor midday museums, sunset viewpoints), calculating multi-modal inter-stop transit costs (Auto, Cab, Bus, Walking), curating tier-based hotel stays with direct booking links, and providing persistent 24/7 tourist safety/police emergency tools.
+**LukAround** is an intelligent tourist itinerary generator engineered for Indian cities. It solves the chaotic nature of urban travel in India by clustering attractions geographically using **Haversine Distance** (preventing zig-zag transit), sequencing sights according to **time-of-day suitability** (morning sunrise spots, indoor midday museums, sunset viewpoints), calculating multi-modal inter-stop transit costs (Auto, Cab, Bus, Walking), curating tier-based hotel stays with direct booking links, and providing persistent 24/7 tourist safety/police emergency tools.
 
 - **Frontend Tech Stack**: React 18, Vite, Framer Motion, Lucide Icons, Vanilla CSS Design System.
 - **Backend Tech Stack**: Node.js, Express.js, PostgreSQL (with local intelligence fallback engine).
@@ -140,7 +140,7 @@ Design the following screens and overlays in Figma:
 ## 4. Component Data Contracts & Figma Specs
 
 ### Component 1: Sticky Navigation Bar (`Header`)
-- **Left**: Compass Logo icon in `38x38px` Gradient box + Brand Title `"Bharat Yatri"` + Tagline `"SMART TOURIST ITINERARY GENERATOR"`.
+- **Left**: Compass Logo icon in `38x38px` Gradient box + Brand Title `"LukAround"` + Tagline `"SMART TOURIST ITINERARY GENERATOR"`.
 - **Right Items**:
   - `Badge`: `"11 Seeded Cities"`
   - `Button 1 (Scenery)`: Opens Background wallpaper picker (Auto-Sync, Taj Mahal, Amber Fort, Munnar, Varanasi, Goa, Delhi, Bangalore).
@@ -220,7 +220,7 @@ All endpoints are hosted at base URL: `http://localhost:5000/api`
 ```json
 {
   "status": "online",
-  "appName": "Bharat Yatri API",
+  "appName": "Luk Around API",
   "version": "1.0.0",
   "timestamp": "2026-08-20T09:21:16.566Z",
   "uptimeSeconds": 722,
@@ -486,13 +486,13 @@ NODE_ENV=development
 # PostgreSQL Database Credentials (Optional - Local mock fallback engine operates automatically)
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=bharatyatri
+DB_NAME=lukaround
 DB_USER=postgres
 DB_PASSWORD=postgres
 
 # Optional External API Keys (Can be configured for production deployment)
 # Google Maps Platform API Key (For Geocoding & Real distance calculation)
-GOOGLE_MAPS_API_KEY=AIzaSyDemoTouristKey_BharatYatri_Production
+GOOGLE_MAPS_API_KEY=AIzaSyDemoTouristKey_LukAround_Production
 
 # OpenStreetMap / GraphHopper API Key (Alternative routing engine)
 GRAPHHOPPER_API_KEY=
