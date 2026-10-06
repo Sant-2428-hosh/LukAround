@@ -27,6 +27,16 @@ const POPULAR_CITIES = [
   "Jaipur", "Hampi", "Goa", "Munnar", "Varanasi", "Bangalore", "Agra", "Chennai", "Delhi", "Rishikesh", "Kochi", "Pondicherry"
 ];
 
+const CATEGORY_FALLBACKS = {
+  Beaches: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+  Nature: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+  Spiritual: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+  Heritage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+  Culture: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
+  City: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80',
+  Sightseeing: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+};
+
 function getTimeSlotInfo(timeSlot = '', index = 0) {
   const lower = (timeSlot || '').toLowerCase();
   if (lower.includes('morning') || lower.includes('dawn') || lower.includes('09:') || lower.includes('10:') || lower.includes('11:') || index === 0) {
@@ -608,12 +618,52 @@ export default function Itinerary() {
                             alignItems: "center"
                           }}
                         >
-                          {/* Stop Photo if available */}
-                          {stop.imageUrl && (
-                            <div style={{ height: "200px", borderRadius: "var(--radius-button)", overflow: "hidden" }}>
-                              <img src={stop.imageUrl} alt={stop.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                          {/* Stop Photo with graceful fallback & badge */}
+                          <div style={{
+                            position: "relative",
+                            height: "220px",
+                            borderRadius: "var(--radius-button)",
+                            overflow: "hidden",
+                            backgroundColor: "var(--color-canvas-warm)",
+                            boxShadow: "0 4px 12px rgba(0,0,0,0.08)"
+                          }}>
+                            <img
+                              src={stop.imageUrl || CATEGORY_FALLBACKS[stop.category] || CATEGORY_FALLBACKS.Heritage}
+                              alt={stop.name}
+                              loading="lazy"
+                              referrerPolicy="no-referrer"
+                              onError={(e) => {
+                                e.currentTarget.onerror = null;
+                                e.currentTarget.src = CATEGORY_FALLBACKS[stop.category] || CATEGORY_FALLBACKS.Heritage;
+                              }}
+                              style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                transition: "transform 0.3s ease"
+                              }}
+                            />
+                            <div style={{
+                              position: "absolute",
+                              inset: 0,
+                              background: "linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 60%)"
+                            }} />
+                            <div style={{
+                              position: "absolute",
+                              bottom: "0.75rem",
+                              left: "0.75rem",
+                              color: "#fff",
+                              fontSize: "0.75rem",
+                              fontWeight: 700,
+                              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "0.3rem"
+                            }}>
+                              <MapPin size={12} />
+                              <span>{selectedCity}</span>
                             </div>
-                          )}
+                          </div>
 
                           <div>
                             {/* Slot Badge and Number */}

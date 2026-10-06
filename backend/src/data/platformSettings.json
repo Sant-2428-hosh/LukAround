@@ -16,6 +16,34 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791263892553_2j4",
+      "action": "USER_REGISTER",
+      "details": "User bharath (bharath@gmail.com) registered with role: USER",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-06T05:18:12.553Z"
+    },
+    {
+      "id": "log_1788764526910_b7z",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-07T07:02:06.910Z"
+    },
+    {
+      "id": "log_1788747182049_7gd",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-09-07T02:13:02.049Z"
+    },
+    {
+      "id": "log_1788747056405_in4",
+      "action": "USER_REGISTER",
+      "details": "User Iniyan (9311.iniyanm@gmail.com) registered with role: USER",
+      "performedBy": "9311.iniyanm@gmail.com",
+      "timestamp": "2026-09-07T02:10:56.405Z"
+    },
+    {
       "id": "log_1788719295566_cy6",
       "action": "GOOGLE_LOGIN",
       "details": "User Ragul R authenticated via Google SSO",

@@ -4,6 +4,51 @@
  */
 
 const GEOAPIFY_KEY = process.env.GEOAPIFY_API_KEY || '';
+const { findCuratedDestination } = require('../data/curatedLandmarks');
+
+const UNSPLASH_CATEGORY_FALLBACKS = {
+  Beaches: [
+    'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=800&q=80'
+  ],
+  Nature: [
+    'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+  ],
+  Spiritual: [
+    'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80'
+  ],
+  Heritage: [
+    'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80'
+  ],
+  Culture: [
+    'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80'
+  ],
+  City: [
+    'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80'
+  ],
+  default: [
+    'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80'
+  ]
+};
+
+function getCategoryFallbackImage(category, seed = '') {
+  const pool = UNSPLASH_CATEGORY_FALLBACKS[category] || UNSPLASH_CATEGORY_FALLBACKS.default;
+  if (!seed) return pool[0];
+  const hash = Array.from(String(seed)).reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  return pool[hash % pool.length];
+}
 
 function getGroqKey() {
   return process.env.GROQ_ITINERARY_API_KEY || process.env.GROQ_API_KEY || '';
@@ -272,7 +317,21 @@ Return JSON with this EXACT structure:
 /** Fallback generator that synthesizes extracted real places into a structured plan */
 function generateSynthesizedItinerary(cityName, stateName, numDays, extractedPlaces = [], cityCoords = null) {
   const validDays = Math.min(Math.max(parseInt(numDays) || 1, 1), 7);
-  const places = [...extractedPlaces];
+  const curated = findCuratedDestination(cityName);
+  const curatedPlaces = (curated && curated.attractions?.length > 0)
+    ? curated.attractions.map(a => ({
+        name: a.name,
+        category: a.category,
+        entryFee: 100,
+        ideal: 'morning',
+        description: a.description,
+        lat: a.lat,
+        lng: a.lng,
+        imageUrl: a.imageUrl
+      }))
+    : [];
+
+  const places = [...curatedPlaces, ...extractedPlaces];
 
   const defaultStopsSeed = [
     { name: `${cityName} Heritage Fort`, category: 'Heritage', entryFee: 200, ideal: 'morning' },
@@ -365,7 +424,23 @@ async function generateRealTimeItinerary(cityName, numDays = 3, preferences = ''
   const resolvedCityName = cityGeo?.name || cleanCity;
 
   // 2. Fetch real attractions in 30km radius via Geoapify
-  const realAttractions = await fetchRealAttractions(cityLat, cityLng, 30000);
+  const curated = findCuratedDestination(resolvedCityName);
+  let realAttractions = await fetchRealAttractions(cityLat, cityLng, 30000);
+
+  // If curated attractions exist for this destination, inject them at the front
+  if (curated && curated.attractions?.length > 0) {
+    const curatedMapped = curated.attractions.map(a => ({
+      name: a.name,
+      lat: a.lat,
+      lng: a.lng,
+      category: a.category,
+      address: `${a.name}, ${curated.city}`,
+      city: curated.city,
+      state: curated.state,
+      imageUrl: a.imageUrl
+    }));
+    realAttractions = [...curatedMapped, ...realAttractions];
+  }
 
   // 3. Generate plan via Groq AI (with real places grounding)
   let rawPlan = null;
@@ -380,7 +455,7 @@ async function generateRealTimeItinerary(cityName, numDays = 3, preferences = ''
     rawPlan = generateSynthesizedItinerary(resolvedCityName, cityState, days, realAttractions, { lat: cityLat, lng: cityLng });
   }
 
-  // 5. Post-process: Compute inter-stop transit & coordinate verification
+  // 5. Post-process: Compute inter-stop transit, assign verified photos & coordinate verification
   let totalAttractionsCount = 0;
   let totalFees = 0;
 
@@ -391,11 +466,15 @@ async function generateRealTimeItinerary(cityName, numDays = 3, preferences = ''
       const fee = Number(stop.entryFeeInr || 0);
       totalFees += fee;
 
-      // Coordinate matching from Geoapify if AI didn't provide or gave 0
+      // Coordinate matching from Geoapify/Curated if AI didn't provide or gave 0
       let lat = Number(stop.lat || 0);
       let lng = Number(stop.lng || 0);
+      const matched = realAttractions.find(a => 
+        a.name.toLowerCase().includes(stop.name.toLowerCase()) || 
+        stop.name.toLowerCase().includes(a.name.toLowerCase())
+      );
+
       if (!lat || !lng || isNaN(lat) || isNaN(lng)) {
-        const matched = realAttractions.find(a => a.name.toLowerCase().includes(stop.name.toLowerCase()) || stop.name.toLowerCase().includes(a.name.toLowerCase()));
         if (matched) {
           lat = matched.lat;
           lng = matched.lng;
@@ -403,6 +482,24 @@ async function generateRealTimeItinerary(cityName, numDays = 3, preferences = ''
           lat = cityLat + (stopIdx * 0.008) - 0.004;
           lng = cityLng + (stopIdx * 0.008) - 0.004;
         }
+      }
+
+      // Resolve verified high-resolution photo
+      let stopImg = stop.imageUrl;
+      if (!stopImg && matched?.imageUrl) {
+        stopImg = matched.imageUrl;
+      }
+      if (!stopImg && curated?.attractions) {
+        const curatedMatch = curated.attractions.find(a =>
+          a.name.toLowerCase().includes(stop.name.toLowerCase()) ||
+          stop.name.toLowerCase().includes(a.name.toLowerCase())
+        );
+        if (curatedMatch?.imageUrl) {
+          stopImg = curatedMatch.imageUrl;
+        }
+      }
+      if (!stopImg) {
+        stopImg = getCategoryFallbackImage(stop.category, stop.name || resolvedCityName);
       }
 
       return {
@@ -416,6 +513,7 @@ async function generateRealTimeItinerary(cityName, numDays = 3, preferences = ''
         openingHours: stop.openingHours || '9:00 AM – 6:00 PM',
         description: stop.description || `Signature travel destination in ${resolvedCityName}.`,
         tip: stop.tip || 'Reach early to avoid rush hours and get great photo light.',
+        imageUrl: stopImg,
         lat,
         lng,
         latitude: lat,

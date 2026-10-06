@@ -12,8 +12,40 @@
     "status": "active",
     "provider": "google",
     "createdAt": "2026-09-06T11:42:44.088Z",
-    "lastActive": "2026-09-06T18:28:15.554Z",
+    "lastActive": "2026-09-07T07:02:06.906Z",
     "savedTripsCount": 0,
-    "updatedAt": "2026-09-06T18:28:15.560Z"
+    "updatedAt": "2026-09-07T07:02:06.907Z"
+  },
+  {
+    "id": "usr_1788747056359_0d6y",
+    "name": "Iniyan",
+    "email": "9311.iniyanm@gmail.com",
+    "passwordHash": "$2b$10$9SKq1sZOk1EHbL/l8LsRLezFjd6PjN2JPYW5s79i93GSK67Vu1O1m",
+    "role": "user",
+    "title": "Enterprise Traveler",
+    "isSuperAdmin": false,
+    "isAdmin": false,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Iniyan",
+    "status": "active",
+    "provider": "password",
+    "createdAt": "2026-09-07T02:10:56.359Z",
+    "lastActive": "2026-09-07T02:10:56.359Z",
+    "savedTripsCount": 0
+  },
+  {
+    "id": "usr_1791263892551_33tr",
+    "name": "bharath",
+    "email": "bharath@gmail.com",
+    "passwordHash": "$2b$10$9ir7RvVGaQBeiR79MdL/C.O.YxsoZWrd8LdEvPa1DjKoIt1OrYTPa",
+    "role": "user",
+    "title": "Enterprise Traveler",
+    "isSuperAdmin": false,
+    "isAdmin": false,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=bharath",
+    "status": "active",
+    "provider": "password",
+    "createdAt": "2026-10-06T05:18:12.551Z",
+    "lastActive": "2026-10-06T05:18:12.551Z",
+    "savedTripsCount": 0
   }
 ]

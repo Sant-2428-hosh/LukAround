@@ -38,3 +38,4 @@ logs/
 # Helper setup scripts
 git.bat
 git.ps1
+cloudflared.exe

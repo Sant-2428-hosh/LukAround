@@ -13,6 +13,7 @@ const authRouter = require('./routes/auth');
 const adminRouter = require('./routes/admin');
 const translateRouter = require('./routes/translate');
 const destinationsRouter = require('./routes/destinations');
+const chatRouter = require('./routes/chat');
 const userStore = require('./services/userStore');
 
 const app = express();
@@ -50,6 +51,7 @@ app.use('/api/auth', authRouter.router || authRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api/translate', translateRouter);
 app.use('/api/destinations', destinationsRouter);
+app.use('/api/chat', chatRouter);
 
 // Public settings endpoint (broadcast banner, public flags)
 app.get('/api/public/settings', (req, res) => {

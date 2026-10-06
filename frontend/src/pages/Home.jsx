@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import HeroSlider from '../components/HeroSlider';
+import HeroChatSearch from '../components/HeroChatSearch';
 import { useApp } from '../context/AppContext';
 import { Compass, Sparkles, MapPin, Star, ArrowRight, ShieldCheck, Calendar, IndianRupee } from 'lucide-react';
 
@@ -32,6 +33,9 @@ export default function Home() {
     <div>
       {/* ── 1. Full-Width Animated Hero Slider ── */}
       <HeroSlider onSelectSlide={(city) => handlePlanTrip(city)} />
+
+      {/* ── 1b. AI-Powered Hero Search Bar (MindTrip-style, embedded) ── */}
+      <HeroChatSearch />
 
       {/* ── 2. Quick Value Proposition Bar ── */}
       <section style={{ backgroundColor: "var(--color-canvas-warm)", borderBottom: "1px solid var(--color-rule)", padding: "1.75rem 0" }}>
