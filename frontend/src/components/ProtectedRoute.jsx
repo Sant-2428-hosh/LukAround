@@ -55,12 +55,12 @@ export default function ProtectedRoute({ children, requireAdmin = false, require
         {/* Title */}
         <div style={{ textAlign: 'center' }}>
           <h2 style={{
-            fontFamily: 'var(--font-display, "Outfit", sans-serif)',
-            fontSize: '1.4rem',
-            fontWeight: 800,
+            fontFamily: 'var(--font-brand, "Outfit", sans-serif)',
+            fontSize: '1.45rem',
+            fontWeight: 900,
             color: 'var(--color-ink)',
             marginBottom: '0.35rem',
-            letterSpacing: '-0.3px'
+            letterSpacing: '-0.45px'
           }}>
             Luk<span style={{ background: 'linear-gradient(135deg, #0A7274 0%, #0284C7 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Around</span>
           </h2>

@@ -4,7 +4,8 @@
 
 /* 1. COLOR PALETTE — single source of truth */
 :root, [data-theme="crimson"] {
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-display: 'Outfit', 'Montserrat', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-brand: 'Outfit', 'Montserrat', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-body: 'Outfit', system-ui, -apple-system, sans-serif;
   --font-mono: 'DM Mono', monospace;
 

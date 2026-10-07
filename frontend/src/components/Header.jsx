@@ -103,8 +103,20 @@ export default function Header({ currentLang = 'en', onToggleLang, activeScene =
             />
           </motion.div>
           <div>
-            <h1 style={{ fontSize: isScrolled ? '1.25rem' : '1.45rem', fontWeight: 800, color: '#fff', lineHeight: 1.1, transition: 'font-size 0.25s ease' }}>
-              {currentLang === 'hi' ? 'लुक अराउंड' : 'Luk Around'}
+            <h1 style={{
+              fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
+              fontSize: isScrolled ? '1.25rem' : '1.45rem',
+              fontWeight: 900,
+              color: '#fff',
+              lineHeight: 1.1,
+              letterSpacing: '-0.45px',
+              transition: 'font-size 0.25s ease'
+            }}>
+              {currentLang === 'hi' ? 'लुक अराउंड' : (
+                <>
+                  Luk<span style={{ color: '#38BDF8' }}>Around</span>
+                </>
+              )}
             </h1>
             <span style={{ fontSize: '0.68rem', color: 'var(--primary-light)', fontWeight: 700, letterSpacing: '1.2px' }}>
               TRAVEL BEYOND THE ORDINARY

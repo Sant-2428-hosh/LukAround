@@ -72,10 +72,10 @@ export default function AuthLayout({ children }) {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <span
                 style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '1.3rem',
-                  fontWeight: 800,
-                  letterSpacing: '-0.3px',
+                  fontFamily: 'var(--font-brand, "Outfit", sans-serif)',
+                  fontSize: '1.35rem',
+                  fontWeight: 900,
+                  letterSpacing: '-0.45px',
                   color: '#FFFFFF'
                 }}
               >

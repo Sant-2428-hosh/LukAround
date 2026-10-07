@@ -308,11 +308,11 @@ export default function Navbar() {
                   className="notranslate"
                   data-no-translate="true"
                   style={{
-                    fontFamily: "var(--font-display, 'Outfit', sans-serif)",
-                    fontSize: "clamp(1.15rem, 1.3vw, 1.28rem)",
-                    fontWeight: 800,
+                    fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
+                    fontSize: "clamp(1.2rem, 1.35vw, 1.32rem)",
+                    fontWeight: 900,
                     color: "var(--color-ink)",
-                    letterSpacing: "-0.35px",
+                    letterSpacing: "-0.45px",
                     whiteSpace: "nowrap"
                   }}
                 >
@@ -968,11 +968,11 @@ export default function Navbar() {
                   <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
                     <span
                       style={{
-                        fontFamily: "var(--font-display, 'Outfit', sans-serif)",
-                        fontSize: "1.15rem",
-                        fontWeight: 800,
+                        fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
+                        fontSize: "1.2rem",
+                        fontWeight: 900,
                         color: "var(--color-ink)",
-                        letterSpacing: "-0.3px"
+                        letterSpacing: "-0.45px"
                       }}
                     >
                       Luk<span
