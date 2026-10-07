@@ -4,10 +4,14 @@ import { auth } from '../firebase/config';
 import { onAuthStateChanged } from 'firebase/auth';
 import {
   setDomTranslatorLanguage,
+  setWebsiteLanguage,
   getTranslationSync,
   translateTextAsync,
   translateRealtimeData,
-  onTranslationsUpdated
+  onTranslationsUpdated,
+  STATIC_DICTIONARY,
+  detectActiveLanguage,
+  clearGoogleTranslateCookies
 } from '../services/translator';
 
 const AppContext = createContext();
@@ -274,10 +278,10 @@ export const LANGUAGES = [
  * Fast synchronous fallbacks for essential core nav labels (prevents momentary flicker)
  */
 export const QUICK_NAV = {
-  hi: { home: "होम", Home: "होम", destinations: "गंतव्य", Destinations: "गंतव्य", itinerary: "यात्रा योजना", Itinerary: "यात्रा योजना", hotels: "होटल", Hotels: "होटल", budget: "बजट", Budget: "बजट", safety: "सुरक्षा", Safety: "सुरक्षा", admin: "व्यवस्थापक", Admin: "व्यवस्थापक", superAdmin: "सुपर व्यवस्थापक", 'Super Admin': "सुपर व्यवस्थापक", sos: "SOS", SOS: "SOS", "travel india": "भारत यात्रा" },
-  ta: { home: "முகப்பு", Home: "முகப்பு", destinations: "இடங்கள்", Destinations: "இடங்கள்", itinerary: "திட்டம்", Itinerary: "திட்டம்", hotels: "தங்குமிடம்", Hotels: "தங்குமிடம்", budget: "பட்ஜெட்", Budget: "பட்ஜெட்", safety: "பாதுகாப்பு", Safety: "பாதுகாப்பு", admin: "அட்மின்", Admin: "அட்மின்", superAdmin: "சூப்பர் அட்மின்", 'Super Admin': "சூப்பர் அட்மின்", sos: "SOS", SOS: "SOS", "travel india": "இந்தியா பயணம்" },
-  te: { home: "హోమ్", Home: "హोమ్", destinations: "గమ్యస్థానాలు", Destinations: "గమ్యస్థానాలు", itinerary: "ప్రణాళిక", Itinerary: "ప్రణాళిక", hotels: "హోటళ్ళు", Hotels: "హోటళ్ళు", budget: "బడ్జెట్", Budget: "బడ్జెట్", safety: "భద్రత", Safety: "భద్రత", admin: "అడ్మిన్", Admin: "అడ్మిన్", superAdmin: "సూపర్ అడ్మిన్", 'Super Admin': "సూపర్ అడ్మిన్", sos: "SOS", SOS: "SOS", "travel india": "భారత ప్రయాణం" },
-  kn: { home: "ಮುಖಪುಟ", Home: "ಮುಖಪುಟ", destinations: "ತಾಣಗಳು", Destinations: "ತಾಣಗಳು", itinerary: "ಪ್ರವಾಸ ಯೋಜನೆ", Itinerary: "ಪ್ರವಾಸ ಯೋಜನೆ", hotels: "ಹೋಟೆಲ್‌ಗಳು", Hotels: "ಹೋಟೆಲ್‌ಗಳು", budget: "ಬಜೆಟ್", Budget: "ಬಜೆಟ್", safety: "ಸುರಕ್ಷತೆ", Safety: "ಸುರಕ್ಷತೆ", admin: "ಅಡ್ಮಿನ್", Admin: "ಅಡ್ಮಿನ್", superAdmin: "ಸೂಪರ್ ಅಡ್ಮಿನ್", 'Super Admin': "ಸೂಪರ್ ಅಡ್ಮಿನ್", sos: "SOS", SOS: "SOS", "travel india": "ಭಾರತ ಪ್ರವಾಸ" }
+  hi: { home: "होम", Home: "होम", destinations: "गंतव्य", Destinations: "गंतव्य", itinerary: "यात्रा योजना", Itinerary: "यात्रा योजना", hotels: "होटल", Hotels: "होटल", budget: "बजट", Budget: "बजट", safety: "सुरक्षा", Safety: "सुरक्षा", admin: "व्यवस्थापक", Admin: "व्यवस्थापक", superAdmin: "सुपर व्यवस्थापक", 'Super Admin': "सुपर व्यवस्थापक", sos: "SOS", SOS: "SOS", "travel india": "असाधारण से परे यात्रा", "Travel beyond the Ordinary": "असाधारण से परे यात्रा", "travel beyond the ordinary": "असाधारण से परे यात्रा" },
+  ta: { home: "முகப்பு", Home: "முகப்பு", destinations: "இடங்கள்", Destinations: "இடங்கள்", itinerary: "திட்டம்", Itinerary: "திட்டம்", hotels: "தங்குமிடம்", Hotels: "தங்குமிடம்", budget: "பட்ஜெட்", Budget: "பட்ஜெட்", safety: "பாதுகாப்பு", Safety: "பாதுகாப்பு", admin: "அட்மின்", Admin: "அட்மின்", superAdmin: "சூப்பர் அட்மின்", 'Super Admin': "சூப்பர் அட்மின்", sos: "SOS", SOS: "SOS", "travel india": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்", "Travel beyond the Ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்", "travel beyond the ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்" },
+  te: { home: "హోమ్", Home: "హోమ్", destinations: "గమ్యస్థానాలు", Destinations: "గమ్యస్థానాలు", itinerary: "ప్రణాళిక", Itinerary: "ప్రణాళిక", hotels: "హోటళ్ళు", Hotels: "హోటళ్ళు", budget: "బడ్జెట్", Budget: "బడ్జెట్", safety: "భద్రత", Safety: "భద్రత", admin: "అడ్మిన్", Admin: "అడ్మిన్", superAdmin: "సూపర్ అడ్మిన్", 'Super Admin': "సూపర్ అడ్మిన్", sos: "SOS", SOS: "SOS", "travel india": "సాధారణానికి మించిన ప్రయాణం", "Travel beyond the Ordinary": "సాధారణానికి మించిన ప్రయాణం", "travel beyond the ordinary": "సాధారణానికి మించిన ప్రయాణం" },
+  kn: { home: "ಮುಖಪುಟ", Home: "ಮುಖಪುಟ", destinations: "ತಾಣಗಳು", Destinations: "ತಾಣಗಳು", itinerary: "ಪ್ರವಾಸ ಯೋಜನೆ", Itinerary: "ಪ್ರವಾಸ ಯೋಜನೆ", hotels: "ಹೋಟೆಲ್‌ಗಳು", Hotels: "ಹೋಟೆಲ್‌ಗಳು", budget: "ಬಜೆಟ್", Budget: "ಬಜೆಟ್", safety: "ಸುರಕ್ಷತೆ", Safety: "ಸುರಕ್ಷತೆ", admin: "ಅಡ್ಮಿನ್", Admin: "ಅಡ್ಮಿನ್", superAdmin: "ಸೂಪರ್ ಅಡ್ಮಿನ್", 'Super Admin': "ಸೂಪರ್ ಅಡ್ಮಿನ್", sos: "SOS", SOS: "SOS", "travel india": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ", "Travel beyond the Ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ", "travel beyond the ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ" }
 };
 
 export const TRANSLATIONS = QUICK_NAV;
@@ -468,7 +472,7 @@ export function AppProvider({ children }) {
   }, [currentTheme]);
 
   const [currentLanguage, setCurrentLanguage] = useState(() => {
-    return localStorage.getItem('luk_lang') || 'en';
+    return detectActiveLanguage();
   });
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const [, setLangRenderTrigger] = useState(0);
@@ -481,16 +485,79 @@ export function AppProvider({ children }) {
   }, []);
 
   const handleLanguageChange = (langCode) => {
-    setCurrentLanguage(langCode);
-    localStorage.setItem('luk_lang', langCode);
+    const target = (langCode || 'en').toLowerCase();
+    const previous = currentLanguage;
+    try {
+      localStorage.setItem('luk_lang', target);
+    } catch {}
+    setCurrentLanguage(target);
     setLanguageDropdownOpen(false);
-    setDomTranslatorLanguage(langCode);
+
+    if (target === 'en') {
+      clearGoogleTranslateCookies();
+      setWebsiteLanguage('en');
+      // If switching back to English from a translated state or if translated DOM exists, do a clean reload
+      const hasForeignCookie = typeof document !== 'undefined' && /googtrans=\/[^/]+\/(?!en)[a-z]{2}/i.test(document.cookie);
+      const hasFontTags = typeof document !== 'undefined' && !!document.querySelector('font[style*="vertical-align"], #goog-gt-tt');
+      if (previous !== 'en' || hasForeignCookie || hasFontTags) {
+        setTimeout(() => {
+          window.location.reload();
+        }, 50);
+        return;
+      }
+      return;
+    }
+
+    setWebsiteLanguage(target);
   };
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('luk_lang') || 'en';
-    setDomTranslatorLanguage(savedLang);
+    const savedLang = detectActiveLanguage();
+    if (savedLang === 'en') {
+      const hasForeignCookie = typeof document !== 'undefined' && /googtrans=\/[^/]+\/(?!en)[a-z]{2}/i.test(document.cookie);
+      const hasFontTags = typeof document !== 'undefined' && !!document.querySelector('font[style*="vertical-align"], #goog-gt-tt');
+      if (hasForeignCookie || hasFontTags) {
+        clearGoogleTranslateCookies();
+        window.location.reload();
+        return;
+      }
+      setCurrentLanguage('en');
+      setWebsiteLanguage('en');
+    } else {
+      if (savedLang !== currentLanguage) {
+        setCurrentLanguage(savedLang);
+      }
+      setWebsiteLanguage(savedLang);
+    }
   }, []);
+
+  // Continuous background sync: only sync non-English cookies if the user has NOT chosen English
+  useEffect(() => {
+    const timer = setInterval(() => {
+      try {
+        const preferredLang = (localStorage.getItem('luk_lang') || 'en').toLowerCase();
+        if (preferredLang === 'en') {
+          if (document.cookie.includes('googtrans')) {
+            clearGoogleTranslateCookies();
+          }
+          if (currentLanguage !== 'en') {
+            setCurrentLanguage('en');
+          }
+          return;
+        }
+
+        const cookieMatch = document.cookie.match(/googtrans=\/[^/]+\/([a-z]{2})/i);
+        if (cookieMatch && cookieMatch[1]) {
+          const cookieLang = cookieMatch[1].toLowerCase();
+          if (['en', 'hi', 'ta', 'te', 'kn'].includes(cookieLang) && cookieLang !== currentLanguage) {
+            setCurrentLanguage(cookieLang);
+            try { localStorage.setItem('luk_lang', cookieLang); } catch {}
+          }
+        }
+      } catch {}
+    }, 600);
+    return () => clearInterval(timer);
+  }, [currentLanguage]);
 
   // Universal real-time dynamic translation helper for any incoming API data (itinerary, hotels, safety, etc.)
   const dynamicTranslate = async (dataOrText) => {
@@ -508,6 +575,10 @@ export function AppProvider({ children }) {
     // Check quick nav labels first for instant zero-latency UI
     if (QUICK_NAV[currentLanguage]?.[text]) {
       return QUICK_NAV[currentLanguage][text];
+    }
+    // Check static dictionary next for instant zero-latency UI
+    if (STATIC_DICTIONARY[currentLanguage]?.[text]) {
+      return STATIC_DICTIONARY[currentLanguage][text];
     }
     return getTranslationSync(text, currentLanguage);
   };

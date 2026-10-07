@@ -22,7 +22,7 @@ export default function SosModal({ cityName, t = {} }) {
         style={{
           position: 'fixed',
           bottom: '24px',
-          right: '24px',
+          left: '24px',
           zIndex: 9999,
           padding: '0.85rem 1.4rem',
           background: 'linear-gradient(135deg, #E11D48 0%, #BE123C 100%)',

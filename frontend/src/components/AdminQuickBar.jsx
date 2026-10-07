@@ -22,7 +22,7 @@ export default function AdminQuickBar() {
         style={{
           position: 'fixed',
           bottom: '24px',
-          right: '24px',
+          left: '24px',
           zIndex: 9990,
           width: '46px',
           height: '46px',
@@ -48,7 +48,7 @@ export default function AdminQuickBar() {
       style={{
         position: 'fixed',
         bottom: '24px',
-        right: '24px',
+        left: '24px',
         zIndex: 9990,
         backgroundColor: isSuperAdmin
           ? 'rgba(26, 17, 8, 0.95)'

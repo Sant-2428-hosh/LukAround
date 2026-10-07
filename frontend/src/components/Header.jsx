@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Compass, Globe, Sparkles, MapPin, Palette, Check, Image as ImageIcon } from 'lucide-react';
+import { Globe, Sparkles, MapPin, Palette, Check, Image as ImageIcon } from 'lucide-react';
 import { SCENIC_WALLPAPERS } from './BackgroundScene';
+import logoMark from '../assets/logo-mark.png';
 
 const THEMES = [
   { id: 'sunset', name: 'Sunset Terracotta', icon: '🌅', color: '#FF5722' },
@@ -77,30 +78,36 @@ export default function Header({ currentLang = 'en', onToggleLang, activeScene =
         {/* LOGO WITH MOTION */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <motion.div 
-            whileHover={{ rotate: 90, scale: 1.06 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.94 }}
             transition={{ duration: 0.25 }}
             style={{
               width: isScrolled ? '38px' : '44px',
               height: isScrolled ? '38px' : '44px',
-              borderRadius: '12px',
-              background: 'linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 4px 18px var(--primary-glow)',
               cursor: 'pointer',
               transition: 'width 0.25s ease, height 0.25s ease'
             }}
           >
-            <Compass size={isScrolled ? 20 : 24} color="#fff" />
+            <img
+              src={logoMark}
+              alt="LukAround"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))'
+              }}
+            />
           </motion.div>
           <div>
             <h1 style={{ fontSize: isScrolled ? '1.25rem' : '1.45rem', fontWeight: 800, color: '#fff', lineHeight: 1.1, transition: 'font-size 0.25s ease' }}>
               {currentLang === 'hi' ? 'लुक अराउंड' : 'Luk Around'}
             </h1>
             <span style={{ fontSize: '0.68rem', color: 'var(--primary-light)', fontWeight: 700, letterSpacing: '1.2px' }}>
-              SMART TOURIST ITINERARY GENERATOR
+              TRAVEL BEYOND THE ORDINARY
             </span>
           </div>
         </div>

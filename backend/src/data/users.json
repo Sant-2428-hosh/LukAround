@@ -3,7 +3,7 @@
     "id": "usr_1788694964087_fyri",
     "name": "Ragul R",
     "email": "ragulr9962@gmail.com",
-    "passwordHash": null,
+    "passwordHash": "$2b$10$Yunv6l1LiAAuP/oFhPxWpe/QPjblikkhIF816RrWClVUiWZ835qy6",
     "role": "superadmin",
     "title": "Platform Super Administrator",
     "isSuperAdmin": true,
@@ -12,9 +12,9 @@
     "status": "active",
     "provider": "google",
     "createdAt": "2026-09-06T11:42:44.088Z",
-    "lastActive": "2026-09-07T07:02:06.906Z",
+    "lastActive": "2026-10-07T10:32:04.112Z",
     "savedTripsCount": 0,
-    "updatedAt": "2026-09-07T07:02:06.907Z"
+    "updatedAt": "2026-10-07T10:32:04.114Z"
   },
   {
     "id": "usr_1788747056359_0d6y",
@@ -45,7 +45,40 @@
     "status": "active",
     "provider": "password",
     "createdAt": "2026-10-06T05:18:12.551Z",
-    "lastActive": "2026-10-06T05:18:12.551Z",
+    "lastActive": "2026-10-07T09:27:35.747Z",
+    "savedTripsCount": 0,
+    "updatedAt": "2026-10-07T09:27:35.749Z"
+  },
+  {
+    "id": "usr_1791275397067_vg7x",
+    "name": "saisurya",
+    "email": "sai1234@gmail.com",
+    "passwordHash": "$2b$10$.P5I03qdhWCysNObM0KvEesZxxMoPaa2ejncZmu4Lg9IhMAgg4yU6",
+    "role": "user",
+    "title": "Enterprise Traveler",
+    "isSuperAdmin": false,
+    "isAdmin": false,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=saisurya",
+    "status": "active",
+    "provider": "password",
+    "createdAt": "2026-10-06T08:29:57.067Z",
+    "lastActive": "2026-10-06T08:29:57.067Z",
+    "savedTripsCount": 0
+  },
+  {
+    "id": "usr_1791344241695_gjdz",
+    "name": "ajay",
+    "email": "ajj11@gmail.com",
+    "passwordHash": "$2b$10$5/7j.yPLMTY54bWAOkyVF.nmQBDJuSMwggVaAff/cGg6NLbEtRbmm",
+    "role": "user",
+    "title": "Enterprise Traveler",
+    "isSuperAdmin": false,
+    "isAdmin": false,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=ajay",
+    "status": "active",
+    "provider": "password",
+    "createdAt": "2026-10-07T03:37:21.695Z",
+    "lastActive": "2026-10-07T03:37:21.695Z",
     "savedTripsCount": 0
   }
 ]

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Navigate, useLocation, Outlet } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
-import { Compass, ShieldCheck } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
+import logoMark from '../assets/logo-mark.png';
 
 export default function ProtectedRoute({ children, requireAdmin = false, requireSuperAdmin = false }) {
   const { user, isAuthChecking, isAdmin, isSuperAdmin } = useApp();
@@ -34,37 +35,34 @@ export default function ProtectedRoute({ children, requireAdmin = false, require
             width: '100%',
             height: '100%',
             borderRadius: '50%',
-            backgroundColor: 'var(--color-primary-light)',
+            backgroundColor: 'rgba(10, 114, 116, 0.15)',
             animation: 'pulse 1.8s infinite ease-in-out',
             opacity: 0.7
           }} />
-          <div style={{
-            width: '52px',
-            height: '52px',
-            borderRadius: '14px',
-            backgroundColor: 'var(--color-primary)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#FFFFFF',
-            boxShadow: '0 8px 24px rgba(192, 41, 60, 0.25)',
-            zIndex: 2
-          }}>
-            <Compass size={28} />
-          </div>
+          <img
+            src={logoMark}
+            alt="LukAround Logo"
+            style={{
+              width: '56px',
+              height: '56px',
+              objectFit: 'contain',
+              filter: 'drop-shadow(0 6px 16px rgba(10, 114, 116, 0.25))',
+              zIndex: 2
+            }}
+          />
         </div>
 
         {/* Title */}
         <div style={{ textAlign: 'center' }}>
           <h2 style={{
-            fontFamily: 'var(--font-display)',
+            fontFamily: 'var(--font-display, "Outfit", sans-serif)',
             fontSize: '1.4rem',
             fontWeight: 800,
             color: 'var(--color-ink)',
             marginBottom: '0.35rem',
             letterSpacing: '-0.3px'
           }}>
-            Luk Around
+            Luk<span style={{ background: 'linear-gradient(135deg, #0A7274 0%, #0284C7 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Around</span>
           </h2>
           <p style={{
             fontSize: '0.85rem',
@@ -75,8 +73,8 @@ export default function ProtectedRoute({ children, requireAdmin = false, require
             gap: '0.4rem',
             justifyContent: 'center'
           }}>
-            <ShieldCheck size={16} color="var(--color-primary)" />
-            Verifying secure enterprise session credentials...
+            <ShieldCheck size={16} color="#0A7274" />
+            Travel beyond the Ordinary — Verifying secure session...
           </p>
         </div>
       </div>

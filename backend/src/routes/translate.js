@@ -20,28 +20,62 @@ function unescapeHtml(text) {
     .replace(/&nbsp;/g, ' ');
 }
 
-/**
- * Fetch translation from Google Mobile Web Translation Engine (High reliability, zero 429 rate limits)
- */
-async function fetchGoogleTranslate(query, targetLang) {
-  const url = `https://translate.google.com/m?sl=auto&tl=${encodeURIComponent(targetLang)}&q=${encodeURIComponent(query)}`;
-  const res = await fetch(url, {
-    headers: {
-      'User-Agent': USER_AGENT,
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+async function fetchTranslation(query, targetLang) {
+  if (!query || typeof query !== 'string' || !targetLang || targetLang === 'en') return query;
+  const trimmed = query.trim();
+
+  // 1. Primary Engine: Google dict-chrome-ex client (Extremely reliable, high speed, no 429)
+  try {
+    const chromeUrl = `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=auto&tl=${encodeURIComponent(targetLang)}&q=${encodeURIComponent(trimmed)}`;
+    const res = await fetch(chromeUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+      }
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data[0]) {
+        const text = typeof data[0] === 'string' ? data[0] : (data[0][0] || '');
+        if (text) return unescapeHtml(text.trim());
+      } else if (typeof data === 'string' && data) {
+        return unescapeHtml(data.trim());
+      }
     }
-  });
-
-  if (!res.ok) {
-    throw new Error(`Google translate returned status ${res.status}`);
+  } catch (err) {
+    // Continue to fallback
   }
 
-  const html = await res.text();
-  const match = html.match(/<div class="result-container">(.*?)<\/div>/s);
-  if (match && match[1]) {
-    return unescapeHtml(match[1].trim());
+  // 2. Secondary Engine: MyMemory API (if quota is available)
+  try {
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(trimmed)}&langpair=en|${encodeURIComponent(targetLang)}`;
+    const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
+    if (res.ok) {
+      const data = await res.json();
+      const txt = data?.responseData?.translatedText;
+      if (txt && !txt.startsWith('MYMEMORY WARNING')) {
+        return unescapeHtml(txt.trim());
+      }
+    }
+  } catch (err) {
+    // Continue to fallback
   }
-  throw new Error('Could not parse result-container from response');
+
+  // 3. Fallback: Google GTX endpoint
+  try {
+    const gtxUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${encodeURIComponent(targetLang)}&dt=t&q=${encodeURIComponent(trimmed)}`;
+    const res = await fetch(gtxUrl);
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && Array.isArray(data[0])) {
+        const full = data[0].map(item => item[0]).join('');
+        if (full) return unescapeHtml(full.trim());
+      }
+    }
+  } catch (err) {
+    // Continue
+  }
+
+  return trimmed;
 }
 
 /**
@@ -58,7 +92,7 @@ async function translateSingle(text, targetLang) {
   }
 
   try {
-    const translated = await fetchGoogleTranslate(trimmed, targetLang);
+    const translated = await fetchTranslation(trimmed, targetLang);
     if (translated) {
       translationCache.set(cacheKey, translated);
       return translated;
@@ -100,36 +134,13 @@ async function translateChunk(texts, targetLang) {
     return results;
   }
 
-  if (uncachedTexts.length === 1) {
-    const tr = await translateSingle(uncachedTexts[0], targetLang);
-    results[uncachedIndices[0]] = tr;
-    return results;
-  }
+  // Translate all uncached items in parallel
+  const translatedItems = await Promise.all(
+    uncachedTexts.map(t => translateSingle(t, targetLang))
+  );
 
-  // Batch translate multiple uncached texts
-  try {
-    const joined = uncachedTexts.join(DELIMITER);
-    const full = await fetchGoogleTranslate(joined, targetLang);
-    const split = full.split(/\[\[LUK_SPLIT\]\]/i).map(s => s.trim());
-
-    if (split.length === uncachedTexts.length) {
-      for (let k = 0; k < split.length; k++) {
-        const original = uncachedTexts[k];
-        const translated = split[k] || original;
-        translationCache.set(`${targetLang}:${original.trim()}`, translated);
-        results[uncachedIndices[k]] = translated;
-      }
-      return results;
-    }
-  } catch (err) {
-    console.warn(`[Translate Error] Batch into ${targetLang} failed, translating individually:`, err.message);
-  }
-
-  // Fallback to translating individual items
-  for (let m = 0; m < uncachedTexts.length; m++) {
-    const original = uncachedTexts[m];
-    const tr = await translateSingle(original, targetLang);
-    results[uncachedIndices[m]] = tr;
+  for (let k = 0; k < uncachedIndices.length; k++) {
+    results[uncachedIndices[k]] = translatedItems[k];
   }
 
   return results;

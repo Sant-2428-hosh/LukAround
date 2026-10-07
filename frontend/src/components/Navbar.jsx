@@ -23,6 +23,7 @@ import {
   Globe
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import logoMark from '../assets/logo-mark.png';
 import JSZip from 'jszip';
 
 export default function Navbar() {
@@ -269,55 +270,74 @@ export default function Navbar() {
             {/* Brand Logo — Desktop only, removed in mobile app view as requested */}
             <Link
               to="/"
-              className="notranslate hide-on-mobile"
+              className="hide-on-mobile navbar-brand-link"
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "0.5rem",
+                gap: "0.6rem",
                 textDecoration: "none",
                 flexShrink: 0
               }}
             >
               <div
+                className="navbar-brand-emblem-wrap notranslate"
+                data-no-translate="true"
                 style={{
-                  width: "34px",
-                  height: "34px",
-                  borderRadius: "10px",
-                  backgroundColor: "var(--color-primary)",
+                  width: "38px",
+                  height: "38px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#FFFFFF",
-                  boxShadow: "0 2px 8px rgba(192, 41, 60, 0.25)"
+                  flexShrink: 0,
+                  transition: "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)"
                 }}
               >
-                <Compass size={19} color="#FFFFFF" strokeWidth={2.2} />
+                <img
+                  src={logoMark}
+                  alt="LukAround Logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    filter: "drop-shadow(0 2px 6px rgba(10, 114, 116, 0.22))"
+                  }}
+                />
               </div>
               <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
                 <span
+                  className="notranslate"
+                  data-no-translate="true"
                   style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "clamp(1.1rem, 1.3vw, 1.25rem)",
+                    fontFamily: "var(--font-display, 'Outfit', sans-serif)",
+                    fontSize: "clamp(1.15rem, 1.3vw, 1.28rem)",
                     fontWeight: 800,
                     color: "var(--color-ink)",
-                    letterSpacing: "-0.3px",
+                    letterSpacing: "-0.35px",
                     whiteSpace: "nowrap"
                   }}
                 >
-                  Luk<span style={{ color: "var(--color-primary)" }}>Around</span>
+                  Luk<span
+                    style={{
+                      background: "linear-gradient(135deg, #0A7274 0%, #0284C7 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent"
+                    }}
+                  >
+                    Around
+                  </span>
                 </span>
                 <span
                   style={{
-                    fontSize: "0.6rem",
+                    fontSize: "0.58rem",
                     fontWeight: 700,
                     color: "var(--color-ink-tertiary)",
-                    letterSpacing: "0.5px",
+                    letterSpacing: "0.65px",
                     textTransform: "uppercase",
                     whiteSpace: "nowrap"
                   }}
                   className="hide-on-mobile-compact"
                 >
-                  {t("travel india")}
+                  {t("Travel beyond the Ordinary")}
                 </span>
               </div>
             </Link>
@@ -516,13 +536,13 @@ export default function Navbar() {
                 onClick={toggleLanguageDropdown}
                 style={{
                   height: "36px",
-                  padding: "0 clamp(0.5rem, 1vw, 0.7rem)",
+                  padding: "0 clamp(0.5rem, 1vw, 0.75rem)",
                   borderRadius: "var(--radius-button)",
                   border: `1.5px solid ${languageDropdownOpen ? "var(--color-primary)" : "var(--color-rule)"}`,
                   backgroundColor: languageDropdownOpen ? "var(--color-primary-light)" : "#FFFFFF",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "0.35rem",
+                  gap: "0.4rem",
                   cursor: "pointer",
                   transition: "all 0.15s ease",
                   boxShadow: "0 1px 2px rgba(0,0,0,0.04)"
@@ -530,18 +550,19 @@ export default function Navbar() {
                 title="Select Language"
                 aria-label="Select Language"
               >
-                <Globe size={15} color="var(--color-ink-secondary)" strokeWidth={2.2} />
+                <span className="notranslate" style={{ fontSize: "1.05rem", lineHeight: 1 }}>
+                  {LANGUAGES.find(l => l.code === currentLanguage)?.flag || '🌐'}
+                </span>
                 <span
                   className="notranslate"
                   style={{
                     fontSize: "0.78rem",
-                    fontWeight: 700,
+                    fontWeight: 800,
                     color: "var(--color-ink)",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.3px"
+                    letterSpacing: "0.4px"
                   }}
                 >
-                  {currentLanguage}
+                  {currentLanguage.toUpperCase()}
                 </span>
                 <ChevronDown size={12} color="var(--color-ink-tertiary)" strokeWidth={2.2} />
               </button>
@@ -933,31 +954,49 @@ export default function Navbar() {
                   borderBottom: "1px solid var(--color-rule)"
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <div
+                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                  <img
+                    src={logoMark}
+                    alt="LukAround Logo"
                     style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "8px",
-                      backgroundColor: "var(--color-primary)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "#FFFFFF"
+                      width: "34px",
+                      height: "34px",
+                      objectFit: "contain",
+                      filter: "drop-shadow(0 2px 4px rgba(10, 114, 116, 0.2))"
                     }}
-                  >
-                    <Compass size={18} color="#FFFFFF" strokeWidth={2.2} />
+                  />
+                  <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-display, 'Outfit', sans-serif)",
+                        fontSize: "1.15rem",
+                        fontWeight: 800,
+                        color: "var(--color-ink)",
+                        letterSpacing: "-0.3px"
+                      }}
+                    >
+                      Luk<span
+                        style={{
+                          background: "linear-gradient(135deg, #0A7274 0%, #0284C7 100%)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent"
+                        }}
+                      >
+                        Around
+                      </span>
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "0.55rem",
+                        fontWeight: 700,
+                        color: "var(--color-ink-tertiary)",
+                        letterSpacing: "0.6px",
+                        textTransform: "uppercase"
+                      }}
+                    >
+                      {t("Travel beyond the Ordinary")}
+                    </span>
                   </div>
-                  <span
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: "1.15rem",
-                      fontWeight: 800,
-                      color: "var(--color-ink)"
-                    }}
-                  >
-                    Luk<span style={{ color: "var(--color-primary)" }}>Around</span>
-                  </span>
                 </div>
 
                 <button

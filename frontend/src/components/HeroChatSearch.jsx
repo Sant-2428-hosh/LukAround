@@ -1,168 +1,178 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Search, Sparkles, ArrowRight, MapPin, Compass } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import { useApp } from '../context/AppContext';
+﻿import React, { useState, useRef, useEffect } from "react";
+import { Sparkles, ArrowRight, MapPin, Compass, Flame } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useApp } from "../context/AppContext";
 
 const CITIES = [
-  'Jaipur', 'Varanasi', 'Goa', 'Munnar', 'Agra', 'Delhi', 'Chennai',
-  'Bangalore', 'Pondicherry', 'Kochi', 'Yercaud', 'Mumbai', 'Udaipur',
-  'Hampi', 'Rishikesh', 'Mysore', 'Ooty', 'Darjeeling', 'Shimla',
-  'Manali', 'Coorg', 'Alleppey', 'Trivandrum', 'Jodhpur', 'Jaisalmer',
-  'Pushkar', 'Amritsar', 'Leh', 'Srinagar', 'Gangtok', 'Madurai'
+  "Jaipur","Varanasi","Goa","Munnar","Agra","Delhi","Chennai",
+  "Bangalore","Pondicherry","Kochi","Yercaud","Mumbai","Udaipur",
+  "Hampi","Rishikesh","Mysore","Ooty","Darjeeling","Shimla",
+  "Manali","Coorg","Alleppey","Trivandrum","Jodhpur","Jaisalmer",
+  "Pushkar","Amritsar","Leh","Srinagar","Gangtok","Madurai",
 ];
 
-const QUICK_PICKS = ['Jaipur', 'Varanasi', 'Goa', 'Munnar', 'Agra', 'Ooty'];
+const QUICK_PICKS = ["Jaipur","Varanasi","Goa","Munnar","Agra","Ooty"];
 
 const DURATION_OPTIONS = [
-  { label: '2 Days', value: 2 },
-  { label: '3 Days', value: 3 },
-  { label: '5 Days', value: 5 },
-  { label: '7 Days', value: 7 },
+  { label: "2D", value: 2 },
+  { label: "3D", value: 3 },
+  { label: "5D", value: 5 },
+  { label: "7D", value: 7 },
 ];
 
 const MOOD_CHIPS = [
-  { label: 'All', icon: '✨' },
-  { label: 'Heritage', icon: '🏰' },
-  { label: 'Beach', icon: '🌴' },
-  { label: 'Spiritual', icon: '🛕' },
-  { label: 'Nature', icon: '🍃' },
-  { label: 'City', icon: '🌆' },
+  { label: "All",       icon: "✨", color: null       },
+  { label: "Heritage",  icon: "🏰", color: "#FFB300"  },
+  { label: "Beach",     icon: "🌴", color: "#00BCD4"  },
+  { label: "Spiritual", icon: "🛕", color: "#FF7043"  },
+  { label: "Nature",    icon: "🍃", color: "#43A047"  },
+  { label: "City",      icon: "🌆", color: "#7C4DFF"  },
 ];
 
 const CITY_BY_MOOD = {
-  Heritage: ['Jaipur', 'Agra', 'Hampi', 'Delhi', 'Pondicherry', 'Mysore'],
-  Beach: ['Goa', 'Kovalam', 'Varkala', 'Alleppey', 'Puri'],
-  Spiritual: ['Varanasi', 'Rishikesh', 'Tirupati', 'Madurai', 'Amritsar', 'Pushkar'],
-  Nature: ['Munnar', 'Ooty', 'Coorg', 'Darjeeling', 'Shimla', 'Manali', 'Yercaud'],
-  City: ['Bangalore', 'Chennai', 'Mumbai', 'Delhi', 'Hyderabad', 'Pune'],
+  Heritage:  ["Jaipur","Agra","Hampi","Delhi","Pondicherry","Mysore"],
+  Beach:     ["Goa","Kovalam","Varkala","Alleppey","Puri"],
+  Spiritual: ["Varanasi","Rishikesh","Tirupati","Madurai","Amritsar","Pushkar"],
+  Nature:    ["Munnar","Ooty","Coorg","Darjeeling","Shimla","Manali","Yercaud"],
+  City:      ["Bangalore","Chennai","Mumbai","Delhi","Hyderabad","Pune"],
 };
+
+const PLACEHOLDERS = [
+  '3 days in Goa on a budget...',
+  'Spiritual tour of Varanasi...',
+  'Hill stations near Chennai...',
+  'Heritage walk in Jaipur...',
+  'Beach escape to Munnar...',
+];
 
 export default function HeroChatSearch() {
   const navigate = useNavigate();
   const { setSelectedCity, setDays, handleGenerateItinerary } = useApp();
 
-  const [query, setQuery] = useState('');
+  const [query,            setQuery]            = useState("");
   const [selectedDuration, setSelectedDuration] = useState(3);
-  const [activeMood, setActiveMood] = useState('All');
-  const [suggestions, setSuggestions] = useState([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
-  const [focused, setFocused] = useState(false);
+  const [activeMood,       setActiveMood]       = useState("All");
+  const [suggestions,      setSuggestions]      = useState([]);
+  const [showSuggestions,  setShowSuggestions]  = useState(false);
+  const [focused,          setFocused]          = useState(false);
+  const [placeholderIdx,   setPlaceholderIdx]   = useState(0);
+  const [isSubmitting,     setIsSubmitting]     = useState(false);
   const inputRef = useRef(null);
-  const wrapRef = useRef(null);
+  const wrapRef  = useRef(null);
+
+  // Rotating placeholder
+  useEffect(() => {
+    const tick = setInterval(() => {
+      setPlaceholderIdx(i => (i + 1) % PLACEHOLDERS.length);
+    }, 3200);
+    return () => clearInterval(tick);
+  }, []);
 
   // Autocomplete filter
   useEffect(() => {
-    if (!query.trim()) {
-      setSuggestions([]);
-      return;
-    }
-    const lower = query.toLowerCase();
+    if (!query.trim()) { setSuggestions([]); return; }
+    const lower    = query.toLowerCase();
     const filtered = CITIES.filter(c => c.toLowerCase().startsWith(lower)).slice(0, 6);
     setSuggestions(filtered);
   }, [query]);
 
-  // Close dropdown on outside click
+  // Close on outside click
   useEffect(() => {
-    const handler = (e) => {
+    const handler = e => {
       if (wrapRef.current && !wrapRef.current.contains(e.target)) {
         setShowSuggestions(false);
         setFocused(false);
       }
     };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  // Get displayed quick picks based on mood
-  const displayPicks = activeMood === 'All'
+  const displayPicks = activeMood === "All"
     ? QUICK_PICKS
     : (CITY_BY_MOOD[activeMood] || QUICK_PICKS).slice(0, 6);
 
   const handleSearch = (cityOverride) => {
-    // Try to parse city from query if no override
     const cityInput = cityOverride || (() => {
-      const lower = query.toLowerCase();
+      const lower   = query.toLowerCase();
       const matched = CITIES.find(c => lower.includes(c.toLowerCase()));
       return matched || query.trim();
     })();
-
     if (!cityInput) return;
-
+    setIsSubmitting(true);
     setSelectedCity(cityInput);
     setDays(selectedDuration);
     handleGenerateItinerary(cityInput, selectedDuration);
     navigate(`/itinerary?city=${encodeURIComponent(cityInput)}&days=${selectedDuration}`);
+    setTimeout(() => setIsSubmitting(false), 1500);
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      setShowSuggestions(false);
-      handleSearch();
-    }
-    if (e.key === 'Escape') {
-      setShowSuggestions(false);
-      setFocused(false);
-    }
+  const handleKeyDown = e => {
+    if (e.key === "Enter")  { setShowSuggestions(false); handleSearch(); }
+    if (e.key === "Escape") { setShowSuggestions(false); setFocused(false); }
   };
 
-  const pickCity = (city) => {
+  const pickCity = city => {
     setQuery(city);
     setShowSuggestions(false);
     handleSearch(city);
   };
 
-  const selectMood = (mood) => {
+  const selectMood = mood => {
     setActiveMood(mood);
-    if (mood !== 'All') {
-      setQuery('');
-      setSuggestions([]);
-    }
+    if (mood !== "All") { setQuery(""); setSuggestions([]); }
   };
 
   return (
-    <section className="hero-chat-section">
-      <div className="hero-chat-container">
-        {/* Headline */}
-        <div className="hero-chat-headline">
-          <div className="hero-chat-badge">
-            <Sparkles size={14} />
-            AI-Powered Travel Planner
-          </div>
-          <h2 className="hero-chat-title">
-            Where would you like to explore in India?
-          </h2>
-          <p className="hero-chat-subtitle">
-            Describe your trip in natural language or pick a city below — we'll craft your perfect itinerary instantly.
-          </p>
+    <section className="hcs-section" aria-label="AI Travel Planner Search">
+      <div className="hcs-orb hcs-orb--left"  aria-hidden="true" />
+      <div className="hcs-orb hcs-orb--right" aria-hidden="true" />
+      <div className="hcs-orb hcs-orb--center" aria-hidden="true" />
+
+      <div className="hcs-container">
+
+        <div className="hcs-badge">
+          <Sparkles size={13} aria-hidden="true" />
+          <span>AI-Powered Travel Planner</span>
         </div>
 
-        {/* Search bar */}
-        <div className="hero-search-wrap" ref={wrapRef}>
-          <div className={`hero-search-bar ${focused ? 'hero-search-bar--focused' : ''}`}>
-            <div className="hero-search-icon">
-              <Compass size={20} color="var(--color-primary)" />
+        <h2 className="hcs-title">
+          Where would you like to{" "}
+          <span className="hcs-title__accent">explore</span> in India?
+        </h2>
+
+        <p className="hcs-subtitle">
+          Describe your trip in natural language or pick a city — we will craft
+          your perfect itinerary <em>instantly</em>.
+        </p>
+
+        <div className="hcs-search-wrap" ref={wrapRef} role="search">
+          <div className={`hcs-search-bar${focused ? " hcs-search-bar--focused" : ""}`}>
+            <div className="hcs-search-icon" aria-hidden="true">
+              <Compass size={20} />
             </div>
+
             <input
               ref={inputRef}
+              id="hero-city-search"
               type="text"
-              className="hero-search-input"
-              placeholder='Try "3 days in Goa on a budget" or just a city name…'
+              className="hcs-search-input"
+              placeholder={PLACEHOLDERS[placeholderIdx]}
+              aria-label="Search destination or describe your trip"
               value={query}
-              onChange={(e) => {
-                setQuery(e.target.value);
-                setShowSuggestions(true);
-              }}
+              onChange={e => { setQuery(e.target.value); setShowSuggestions(true); }}
               onFocus={() => { setFocused(true); setShowSuggestions(true); }}
               onKeyDown={handleKeyDown}
               autoComplete="off"
             />
 
-            {/* Duration selector */}
-            <div className="hero-duration-picker">
+            <div className="hcs-duration-group" role="group" aria-label="Trip duration">
               {DURATION_OPTIONS.map(opt => (
                 <button
                   key={opt.value}
-                  className={`hero-duration-btn ${selectedDuration === opt.value ? 'hero-duration-btn--active' : ''}`}
+                  type="button"
+                  aria-pressed={selectedDuration === opt.value}
+                  className={`hcs-dur-btn${selectedDuration === opt.value ? " hcs-dur-btn--active" : ""}`}
                   onClick={() => setSelectedDuration(opt.value)}
                 >
                   {opt.label}
@@ -170,61 +180,83 @@ export default function HeroChatSearch() {
               ))}
             </div>
 
+            <div className="hcs-divider" aria-hidden="true" />
+
             <button
-              className="hero-search-submit"
+              type="button"
+              id="hero-plan-trip-btn"
+              className={`hcs-cta${isSubmitting ? " hcs-cta--loading" : ""}`}
               onClick={() => handleSearch()}
-              disabled={!query.trim() && activeMood === 'All'}
+              disabled={(!query.trim() && activeMood === "All") || isSubmitting}
+              aria-label="Plan my trip"
             >
-              <span>Plan My Trip</span>
-              <ArrowRight size={16} />
+              {isSubmitting ? (
+                <span className="hcs-cta__spinner" aria-hidden="true" />
+              ) : (
+                <>
+                  <span>Plan My Trip</span>
+                  <ArrowRight size={15} aria-hidden="true" />
+                </>
+              )}
             </button>
           </div>
 
-          {/* Autocomplete dropdown */}
           {showSuggestions && suggestions.length > 0 && (
-            <div className="hero-autocomplete">
-              {suggestions.map((city) => (
+            <div className="hcs-autocomplete" role="listbox" aria-label="City suggestions">
+              {suggestions.map(city => (
                 <button
                   key={city}
-                  className="hero-autocomplete-item"
+                  role="option"
+                  className="hcs-autocomplete__item"
                   onMouseDown={() => pickCity(city)}
                 >
-                  <MapPin size={13} color="var(--color-primary)" />
-                  <span>{city}</span>
-                  <span className="hero-autocomplete-plan">Plan →</span>
+                  <MapPin size={13} className="hcs-autocomplete__pin" aria-hidden="true" />
+                  <span className="hcs-autocomplete__city">{city}</span>
+                  <span className="hcs-autocomplete__cta" aria-hidden="true">Plan &rarr;</span>
                 </button>
               ))}
             </div>
           )}
         </div>
 
-        {/* Mood chips */}
-        <div className="hero-mood-strip">
+        <div className="hcs-mood-row" role="toolbar" aria-label="Filter by travel mood">
           {MOOD_CHIPS.map(m => (
             <button
               key={m.label}
-              className={`hero-mood-chip ${activeMood === m.label ? 'hero-mood-chip--active' : ''}`}
+              type="button"
+              aria-pressed={activeMood === m.label}
+              className={`hcs-mood${activeMood === m.label ? " hcs-mood--active" : ""}`}
               onClick={() => selectMood(m.label)}
+              style={
+                activeMood === m.label && m.color
+                  ? { background: m.color, borderColor: m.color }
+                  : undefined
+              }
             >
-              <span>{m.icon}</span>
+              <span aria-hidden="true">{m.icon}</span>
               <span>{m.label}</span>
             </button>
           ))}
         </div>
 
-        {/* Quick picks */}
-        <div className="hero-quickpicks">
-          <span className="hero-quickpick-label">Quick picks:</span>
+        <div className="hcs-picks" aria-label="Quick city picks">
+          <span className="hcs-picks__label">
+            <Flame size={12} aria-hidden="true" />
+            Trending:
+          </span>
           {displayPicks.map(city => (
             <button
               key={city}
-              className="hero-quickpick-btn"
+              type="button"
+              className="hcs-pick-btn"
               onClick={() => pickCity(city)}
+              aria-label={`Plan a trip to ${city}`}
             >
               {city}
             </button>
           ))}
         </div>
+
       </div>
     </section>
   );

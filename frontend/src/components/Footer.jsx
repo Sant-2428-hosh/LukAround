@@ -1,125 +1,124 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Compass } from 'lucide-react';
-import { useApp } from '../context/AppContext';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Phone } from "lucide-react";
+import { useApp } from "../context/AppContext";
+import logoMark from "../assets/logo-mark.png";
+
+const NAV_LINKS = [
+  { label: "Home",          path: "/" },
+  { label: "Destinations",  path: "/destinations" },
+  { label: "Itinerary",     path: "/itinerary" },
+  { label: "Hotels",        path: "/hotels" },
+  { label: "Safety & SOS",  path: "/safety" },
+];
+
+const CITIES = ["Jaipur", "Goa", "Munnar", "Varanasi", "Delhi", "Ooty"];
+
+const HELPLINES = [
+  { label: "Emergency",       number: "112"  },
+  { label: "Women Helpline",  number: "1091" },
+  { label: "Tourist Help",    number: "1363" },
+  { label: "Ambulance",       number: "108"  },
+];
 
 export default function Footer() {
-  const { setSelectedCity, handleGenerateItinerary } = useApp();
+  const { setSelectedCity, handleGenerateItinerary, t } = useApp();
   const navigate = useNavigate();
 
-  const handleCityClick = (cityName) => {
-    setSelectedCity(cityName);
-    handleGenerateItinerary(cityName, 3);
-    navigate(`/itinerary?city=${cityName}`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const handleCityClick = (city) => {
+    setSelectedCity(city);
+    handleGenerateItinerary(city, 3);
+    navigate(`/itinerary?city=${encodeURIComponent(city)}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer style={{
-      backgroundColor: "var(--color-primary-dark)",
-      color: "#FFFFFF",
-      padding: "4rem 0 2.5rem 0",
-      borderTop: "1px solid rgba(255,255,255,0.1)"
-    }}>
-      <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "2.5rem", marginBottom: "3rem" }}>
-          
-          {/* Brand Col */}
-          <div style={{ gridColumn: "span 2" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "1rem" }}>
-              <div style={{
+    <footer className="site-footer">
+      {/* ── Top grid ── */}
+      <div className="container site-footer__grid">
+
+        {/* Brand */}
+        <div className="site-footer__brand">
+          <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
+            <img
+              src={logoMark}
+              alt="LukAround"
+              style={{
                 width: "32px",
                 height: "32px",
-                backgroundColor: "var(--color-primary)",
-                borderRadius: "var(--radius-button)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center"
-              }}>
-                <Compass size={16} color="#fff" />
-              </div>
-              <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: "1.3rem", color: "#FFFFFF" }}>
-                Luk Around
-              </span>
-            </div>
-            <p style={{ fontSize: "0.9rem", color: "rgba(255, 255, 255, 0.8)", lineHeight: 1.6, maxWidth: "360px" }}>
-              Honest travel advice, intelligent day clustering, multi-modal transport guidance, and persistent tourist safety across India.
-            </p>
+                objectFit: "contain",
+                filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.35))"
+              }}
+            />
+            <span className="site-footer__name notranslate" data-no-translate="true">
+              Luk<span style={{ color: "var(--color-primary-light, #38BDF8)" }}>Around</span>
+            </span>
           </div>
-
-          {/* Quick Pages Navigation */}
-          <div>
-            <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "1rem", color: "rgba(255,255,255,0.6)" }}>
-              Explore Pages
-            </h4>
-            <ul style={{ listStyle: "none", fontSize: "0.85rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              {[
-                { label: "Home", path: "/" },
-                { label: "All Destinations", path: "/destinations" },
-                { label: "Smart Itinerary", path: "/itinerary" },
-                { label: "Hotels & Stays", path: "/hotels" },
-                { label: "Safety & SOS", path: "/safety" },
-                { label: "Trip Budget", path: "/budget" },
-              ].map((item) => (
-                <li key={item.path}>
-                  <Link
-                    to={item.path}
-                    style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", transition: "color 0.2s" }}
-                    onMouseEnter={(e) => (e.target.style.color = "#FFFFFF")}
-                    onMouseLeave={(e) => (e.target.style.color = "rgba(255,255,255,0.85)")}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Quick Cities */}
-          <div>
-            <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "1rem", color: "rgba(255,255,255,0.6)" }}>
-              Popular Cities
-            </h4>
-            <ul style={{ listStyle: "none", fontSize: "0.85rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              {["Jaipur", "Goa", "Bangalore", "Chennai", "Agra", "Munnar", "Varanasi"].map((c) => (
-                <li key={c}>
-                  <button
-                    onClick={() => handleCityClick(c)}
-                    style={{ background: "none", border: "none", color: "rgba(255,255,255,0.85)", cursor: "pointer", padding: 0, fontSize: "0.85rem" }}
-                  >
-                    {c}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Helplines */}
-          <div>
-            <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "1rem", color: "rgba(255,255,255,0.6)" }}>
-              Emergency Lines
-            </h4>
-            <ul style={{ listStyle: "none", fontSize: "0.85rem", display: "flex", flexDirection: "column", gap: "0.5rem", color: "rgba(255,255,255,0.85)" }}>
-              <li>🚨 Emergency: 112</li>
-              <li>👩 Women's Helpline: 1091</li>
-              <li>🧳 Tourist Helpline: 1363</li>
-              <li>🚑 Ambulance: 108</li>
-            </ul>
-          </div>
+          <p className="site-footer__tagline">
+            {t("Travel beyond the Ordinary")}
+          </p>
         </div>
 
-        <div style={{
-          paddingTop: "1.5rem",
-          borderTop: "1px solid rgba(255,255,255,0.1)",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          fontSize: "0.75rem",
-          color: "rgba(255,255,255,0.6)"
-        }}>
-          <p>© 2025–2026 Luk Around. All rights reserved.</p>
-          <p>Powered by Express.js, Vite & Local Intelligence Engine</p>
+        {/* Pages */}
+        <nav className="site-footer__col" aria-label="Pages">
+          <h3 className="site-footer__heading">Pages</h3>
+          <ul className="site-footer__list">
+            {NAV_LINKS.map((link) => (
+              <li key={link.path}>
+                <Link to={link.path} className="site-footer__link">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Cities */}
+        <nav className="site-footer__col" aria-label="Popular cities">
+          <h3 className="site-footer__heading">Popular Cities</h3>
+          <ul className="site-footer__list">
+            {CITIES.map((city) => (
+              <li key={city}>
+                <button
+                  type="button"
+                  className="site-footer__link site-footer__city-btn"
+                  onClick={() => handleCityClick(city)}
+                >
+                  {city}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Helplines */}
+        <div className="site-footer__col">
+          <h3 className="site-footer__heading">
+            <Phone size={11} aria-hidden="true" />
+            Emergency Lines
+          </h3>
+          <ul className="site-footer__list">
+            {HELPLINES.map((h) => (
+              <li key={h.number} className="site-footer__helpline">
+                <span className="site-footer__helpline-label">{h.label}</span>
+                <a
+                  href={`tel:${h.number}`}
+                  className="site-footer__helpline-num"
+                  aria-label={`Call ${h.label} at ${h.number}`}
+                >
+                  {h.number}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+
+      {/* ── Bottom bar ── */}
+      <div className="site-footer__bar">
+        <div className="container site-footer__bar-inner">
+          <span>© {new Date().getFullYear()} Luk Around. All rights reserved.</span>
         </div>
       </div>
     </footer>

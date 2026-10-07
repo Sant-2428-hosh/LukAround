@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Compass, ShieldCheck, Building2, Route } from 'lucide-react';
+import { ShieldCheck, Building2, Route } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import logoMark from '../assets/logo-mark.png';
 
 export default function AuthLayout({ children }) {
   const { user } = useApp();
@@ -56,22 +57,17 @@ export default function AuthLayout({ children }) {
         {/* 1. Top Brand Lockup */}
         <div style={{ position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <div
+            <img
+              src={logoMark}
+              alt="LukAround Logo"
               style={{
-                width: '34px',
-                height: '34px',
-                borderRadius: '8px',
-                backgroundColor: 'var(--color-primary)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#FFFFFF',
-                boxShadow: '0 4px 12px rgba(192, 41, 60, 0.35)',
+                width: '38px',
+                height: '38px',
+                objectFit: 'contain',
+                filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4))',
                 flexShrink: 0
               }}
-            >
-              <Compass size={19} />
-            </div>
+            />
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <span
@@ -83,7 +79,7 @@ export default function AuthLayout({ children }) {
                   color: '#FFFFFF'
                 }}
               >
-                Luk <span style={{ color: 'var(--color-primary)' }}>Around</span>
+                Luk<span style={{ background: 'linear-gradient(135deg, #0A7274 0%, #38BDF8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Around</span>
               </span>
 
               <span

@@ -34,6 +34,32 @@ export async function sendChatMessage(message, history = [], city = 'Jaipur', da
   }
 }
 
+export const DINING_LOCATIONS = [
+  'Jaipur', 'Goa', 'Chennai', 'Pondicherry', 'Agra', 'Bangalore',
+  'Delhi', 'Kochi', 'Munnar', 'Varanasi', 'Yercaud', 'Udaipur',
+  'Kolkata', 'Amritsar', 'Madurai', 'Ooty', 'Manali', 'Rishikesh',
+  'Alleppey', 'Mysore', 'Pune', 'Mumbai', 'Hyderabad', 'Coorg'
+];
+
+/**
+ * Fetch restaurants directly for a given city
+ */
+export async function fetchRestaurants(city) {
+  try {
+    const res = await fetch(`${API_BASE}/chat/restaurants?city=${encodeURIComponent(city)}`);
+    if (!res.ok) throw new Error('Failed to fetch restaurants');
+    return await res.json();
+  } catch (err) {
+    console.warn('[chatEngine] Direct fetch failed:', err.message);
+    return {
+      success: true,
+      city,
+      data: null,
+      suggestions: getDefaultSuggestions(city)
+    };
+  }
+}
+
 /**
  * Fetch suggestion chips for a city
  */
@@ -49,39 +75,19 @@ export async function fetchSuggestions(city) {
 
 /** Local intent-based fallback (works offline) */
 function getLocalFallback(message, city) {
-  const lower = message.toLowerCase();
-  if (/hotel|stay|accommodation/.test(lower)) {
-    return `Looking for stays in ${city}! Head to the Hotels page for curated options with real pricing.`;
-  }
-  if (/safe|safety|crime/.test(lower)) {
-    return `${city} is generally safe for tourists. Keep emergency number 112 handy. Check Safety page for details.`;
-  }
-  if (/budget|cost|price|rupee/.test(lower)) {
-    return `${city} travel budgets range from ₹1,800–₹5,000/day depending on your style. The Budget page has full breakdowns.`;
-  }
-  if (/plan|trip|itinerary/.test(lower)) {
-    return `I'll plan your perfect ${city} trip! Use the Itinerary page for a full day-by-day plan with maps.`;
-  }
-  return `I'm your India travel expert! Ask me to plan a trip, find hotels, check safety, or explore attractions in ${city}.`;
+  const c = city || 'your destination';
+  return `I'm your LukAround Culinary AI! Here are the best restaurants, iconic local dishes, and dining spots in ${c}.`;
 }
 
 /** Default suggestion chips */
 export function getDefaultSuggestions(city) {
-  if (city) {
-    return [
-      `🗓️ Plan 3 days in ${city}`,
-      `🏨 Hotels in ${city}`,
-      `🛡️ Is ${city} safe?`,
-      `💰 Budget for ${city}`,
-      `📍 Top places in ${city}`
-    ];
-  }
+  const c = city || 'Jaipur';
   return [
-    '🏰 Heritage trip ideas',
-    '🌴 Best beach destinations',
-    '🛕 Spiritual journeys',
-    '🍃 Nature & hill stations',
-    '🌆 City exploration picks'
+    `🍛 Top restaurants in ${c}`,
+    `🍢 Famous street food in ${c}`,
+    `🥗 Pure Veg spots in ${c}`,
+    `🍷 Rooftop & Fine Dining in ${c}`,
+    `☕ Best breakfast in ${c}`
   ];
 }
 

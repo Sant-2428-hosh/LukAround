@@ -16,6 +16,209 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791369124116_8mo",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T10:32:04.116Z"
+    },
+    {
+      "id": "log_1791368032998_zgn",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T10:13:52.998Z"
+    },
+    {
+      "id": "log_1791366942202_ry3",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T09:55:42.202Z"
+    },
+    {
+      "id": "log_1791365285689_yzq",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T09:28:05.689Z"
+    },
+    {
+      "id": "log_1791365255752_r9o",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-07T09:27:35.752Z"
+    },
+    {
+      "id": "log_1791360539966_wai",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T08:08:59.966Z"
+    },
+    {
+      "id": "log_1791357549036_s8x",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T07:19:09.037Z"
+    },
+    {
+      "id": "log_1791356973436_agq",
+      "action": "USER_DELETED",
+      "details": "Permanently deleted user Demo Admin (admin@lukaround.com)",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T07:09:33.436Z"
+    },
+    {
+      "id": "log_1791356969577_nr8",
+      "action": "USER_DELETED",
+      "details": "Permanently deleted user Demo Traveler (demo@lukaround.com)",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T07:09:29.577Z"
+    },
+    {
+      "id": "log_1791356431457_9j6",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T07:00:31.457Z"
+    },
+    {
+      "id": "log_1791356018342_c9s",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T06:53:38.342Z"
+    },
+    {
+      "id": "log_1791355396936_nl2",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T06:43:16.936Z"
+    },
+    {
+      "id": "log_1791355047539_4ad",
+      "action": "USER_LOGIN",
+      "details": "User Demo Admin logged in via password",
+      "performedBy": "admin@lukaround.com",
+      "timestamp": "2026-10-07T06:37:27.539Z"
+    },
+    {
+      "id": "log_1791355027741_2uv",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T06:37:07.741Z"
+    },
+    {
+      "id": "log_1791354925787_25f",
+      "action": "USER_LOGIN",
+      "details": "User Demo Traveler logged in via password",
+      "performedBy": "demo@lukaround.com",
+      "timestamp": "2026-10-07T06:35:25.787Z"
+    },
+    {
+      "id": "log_1791354814952_jjo",
+      "action": "USER_LOGIN",
+      "details": "User Demo Traveler logged in via password",
+      "performedBy": "demo@lukaround.com",
+      "timestamp": "2026-10-07T06:33:34.952Z"
+    },
+    {
+      "id": "log_1791354814866_5t1",
+      "action": "USER_LOGIN",
+      "details": "User Demo Admin logged in via password",
+      "performedBy": "admin@lukaround.com",
+      "timestamp": "2026-10-07T06:33:34.866Z"
+    },
+    {
+      "id": "log_1791354773278_wma",
+      "action": "USER_LOGIN",
+      "details": "User Demo Traveler logged in via password",
+      "performedBy": "demo@lukaround.com",
+      "timestamp": "2026-10-07T06:32:53.278Z"
+    },
+    {
+      "id": "log_1791354773178_qao",
+      "action": "USER_LOGIN",
+      "details": "User Demo Admin logged in via password",
+      "performedBy": "admin@lukaround.com",
+      "timestamp": "2026-10-07T06:32:53.178Z"
+    },
+    {
+      "id": "log_1791354729223_sa3",
+      "action": "USER_LOGIN",
+      "details": "User Demo Traveler logged in via password",
+      "performedBy": "demo@lukaround.com",
+      "timestamp": "2026-10-07T06:32:09.223Z"
+    },
+    {
+      "id": "log_1791354729091_gdy",
+      "action": "USER_LOGIN",
+      "details": "User Demo Admin logged in via password",
+      "performedBy": "admin@lukaround.com",
+      "timestamp": "2026-10-07T06:32:09.091Z"
+    },
+    {
+      "id": "log_1791354418215_oev",
+      "action": "USER_LOGIN",
+      "details": "User Demo Admin logged in via password",
+      "performedBy": "admin@lukaround.com",
+      "timestamp": "2026-10-07T06:26:58.215Z"
+    },
+    {
+      "id": "log_1791354418023_oxq",
+      "action": "USER_LOGIN",
+      "details": "User Demo Traveler logged in via password",
+      "performedBy": "demo@lukaround.com",
+      "timestamp": "2026-10-07T06:26:58.023Z"
+    },
+    {
+      "id": "log_1791354291991_t75",
+      "action": "USER_LOGIN",
+      "details": "User Test User logged in via password",
+      "performedBy": "testuser_1791354278819@example.com",
+      "timestamp": "2026-10-07T06:24:51.991Z"
+    },
+    {
+      "id": "log_1791354279034_usd",
+      "action": "USER_REGISTER",
+      "details": "User Test User (testuser_1791354278819@example.com) registered with role: USER",
+      "performedBy": "testuser_1791354278819@example.com",
+      "timestamp": "2026-10-07T06:24:39.034Z"
+    },
+    {
+      "id": "log_1791349591271_hbq",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-07T05:06:31.271Z"
+    },
+    {
+      "id": "log_1791344241698_gh6",
+      "action": "USER_REGISTER",
+      "details": "User ajay (ajj11@gmail.com) registered with role: USER",
+      "performedBy": "ajj11@gmail.com",
+      "timestamp": "2026-10-07T03:37:21.698Z"
+    },
+    {
+      "id": "log_1791344121547_b0t",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-07T03:35:21.547Z"
+    },
+    {
+      "id": "log_1791275397069_59y",
+      "action": "USER_REGISTER",
+      "details": "User saisurya (sai1234@gmail.com) registered with role: USER",
+      "performedBy": "sai1234@gmail.com",
+      "timestamp": "2026-10-06T08:29:57.069Z"
+    },
+    {
       "id": "log_1791263892553_2j4",
       "action": "USER_REGISTER",
       "details": "User bharath (bharath@gmail.com) registered with role: USER",
