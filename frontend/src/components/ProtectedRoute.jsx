@@ -3,6 +3,7 @@ import { Navigate, useLocation, Outlet } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { ShieldCheck } from 'lucide-react';
 import logoMark from '../assets/logo-mark.png';
+import logoWordmark from '../assets/logo-wordmark.png';
 
 export default function ProtectedRoute({ children, requireAdmin = false, requireSuperAdmin = false }) {
   const { user, isAuthChecking, isAdmin, isSuperAdmin } = useApp();
@@ -54,16 +55,17 @@ export default function ProtectedRoute({ children, requireAdmin = false, require
 
         {/* Title */}
         <div style={{ textAlign: 'center' }}>
-          <h2 style={{
-            fontFamily: 'var(--font-brand, "Outfit", sans-serif)',
-            fontSize: '1.45rem',
-            fontWeight: 900,
-            color: 'var(--color-ink)',
-            marginBottom: '0.35rem',
-            letterSpacing: '-0.45px'
-          }}>
-            Luk<span style={{ background: 'linear-gradient(135deg, #0A7274 0%, #0284C7 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Around</span>
-          </h2>
+          <img
+            src={logoWordmark}
+            alt="LukAround"
+            style={{
+              height: '30px',
+              width: 'auto',
+              objectFit: 'contain',
+              marginBottom: '0.45rem',
+              display: 'inline-block'
+            }}
+          />
           <p style={{
             fontSize: '0.85rem',
             color: 'var(--color-ink-secondary)',

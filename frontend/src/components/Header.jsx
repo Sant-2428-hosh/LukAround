@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, Sparkles, MapPin, Palette, Check, Image as ImageIcon } from 'lucide-react';
 import { SCENIC_WALLPAPERS } from './BackgroundScene';
 import logoMark from '../assets/logo-mark.png';
+import logoWordmarkLight from '../assets/logo-wordmark-light.png';
 
 const THEMES = [
   { id: 'sunset', name: 'Sunset Terracotta', icon: '🌅', color: '#FF5722' },
@@ -102,23 +103,33 @@ export default function Header({ currentLang = 'en', onToggleLang, activeScene =
               }}
             />
           </motion.div>
-          <div>
-            <h1 style={{
-              fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
-              fontSize: isScrolled ? '1.25rem' : '1.45rem',
-              fontWeight: 900,
-              color: '#fff',
-              lineHeight: 1.1,
-              letterSpacing: '-0.45px',
-              transition: 'font-size 0.25s ease'
-            }}>
-              {currentLang === 'hi' ? 'लुक अराउंड' : (
-                <>
-                  Luk<span style={{ color: '#38BDF8' }}>Around</span>
-                </>
-              )}
-            </h1>
-            <span style={{ fontSize: '0.68rem', color: 'var(--primary-light)', fontWeight: 700, letterSpacing: '1.2px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            {currentLang === 'hi' ? (
+              <h1 style={{
+                fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
+                fontSize: isScrolled ? '1.25rem' : '1.45rem',
+                fontWeight: 900,
+                color: '#fff',
+                lineHeight: 1.1,
+                letterSpacing: '-0.45px'
+              }}>
+                लुक अराउंड
+              </h1>
+            ) : (
+              <img
+                src={logoWordmarkLight}
+                alt="LukAround"
+                style={{
+                  height: isScrolled ? '24px' : '28px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  display: 'block',
+                  filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.5))',
+                  transition: 'height 0.25s ease'
+                }}
+              />
+            )}
+            <span style={{ fontSize: '0.62rem', color: 'var(--primary-light)', fontWeight: 700, letterSpacing: '1.2px', marginTop: '2px' }}>
               TRAVEL BEYOND THE ORDINARY
             </span>
           </div>

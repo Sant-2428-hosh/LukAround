@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { ShieldCheck, Building2, Route } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import logoMark from '../assets/logo-mark.png';
+import logoWordmarkLight from '../assets/logo-wordmark-light.png';
 
 export default function AuthLayout({ children }) {
   const { user } = useApp();
@@ -70,17 +71,15 @@ export default function AuthLayout({ children }) {
             />
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span
+              <img
+                src={logoWordmarkLight}
+                alt="LukAround"
                 style={{
-                  fontFamily: 'var(--font-brand, "Outfit", sans-serif)',
-                  fontSize: '1.35rem',
-                  fontWeight: 900,
-                  letterSpacing: '-0.45px',
-                  color: '#FFFFFF'
+                  height: '24px',
+                  width: 'auto',
+                  objectFit: 'contain'
                 }}
-              >
-                Luk<span style={{ background: 'linear-gradient(135deg, #0A7274 0%, #38BDF8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Around</span>
-              </span>
+              />
 
               <span
                 style={{

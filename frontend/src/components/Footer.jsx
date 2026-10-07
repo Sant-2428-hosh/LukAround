@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import logoMark from "../assets/logo-mark.png";
+import logoWordmarkLight from "../assets/logo-wordmark-light.png";
 
 const NAV_LINKS = [
   { label: "Home",          path: "/" },
@@ -50,9 +51,15 @@ export default function Footer() {
                 filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.35))"
               }}
             />
-            <span className="site-footer__name notranslate" data-no-translate="true">
-              Luk<span style={{ color: "var(--color-primary-light, #38BDF8)" }}>Around</span>
-            </span>
+            <img
+              src={logoWordmarkLight}
+              alt="LukAround"
+              style={{
+                height: "22px",
+                width: "auto",
+                objectFit: "contain"
+              }}
+            />
           </div>
           <p className="site-footer__tagline">
             {t("Travel beyond the Ordinary")}

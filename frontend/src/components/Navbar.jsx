@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import logoMark from '../assets/logo-mark.png';
+import logoWordmark from '../assets/logo-wordmark.png';
 import JSZip from 'jszip';
 
 export default function Navbar() {
@@ -303,37 +304,28 @@ export default function Navbar() {
                   }}
                 />
               </div>
-              <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
-                <span
+              <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                <img
+                  src={logoWordmark}
+                  alt="LukAround"
                   className="notranslate"
                   data-no-translate="true"
                   style={{
-                    fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
-                    fontSize: "clamp(1.2rem, 1.35vw, 1.32rem)",
-                    fontWeight: 900,
-                    color: "var(--color-ink)",
-                    letterSpacing: "-0.45px",
-                    whiteSpace: "nowrap"
+                    height: "26px",
+                    width: "auto",
+                    objectFit: "contain",
+                    display: "block"
                   }}
-                >
-                  Luk<span
-                    style={{
-                      background: "linear-gradient(135deg, #0A7274 0%, #0284C7 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent"
-                    }}
-                  >
-                    Around
-                  </span>
-                </span>
+                />
                 <span
                   style={{
-                    fontSize: "0.58rem",
+                    fontSize: "0.56rem",
                     fontWeight: 700,
                     color: "var(--color-ink-tertiary)",
-                    letterSpacing: "0.65px",
+                    letterSpacing: "0.75px",
                     textTransform: "uppercase",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
+                    marginTop: "2px"
                   }}
                   className="hide-on-mobile-compact"
                 >
@@ -965,26 +957,17 @@ export default function Navbar() {
                       filter: "drop-shadow(0 2px 4px rgba(10, 114, 116, 0.2))"
                     }}
                   />
-                  <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
-                    <span
+                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                    <img
+                      src={logoWordmark}
+                      alt="LukAround"
                       style={{
-                        fontFamily: "var(--font-brand, 'Outfit', 'Montserrat', sans-serif)",
-                        fontSize: "1.2rem",
-                        fontWeight: 900,
-                        color: "var(--color-ink)",
-                        letterSpacing: "-0.45px"
+                        height: "24px",
+                        width: "auto",
+                        objectFit: "contain",
+                        display: "block"
                       }}
-                    >
-                      Luk<span
-                        style={{
-                          background: "linear-gradient(135deg, #0A7274 0%, #0284C7 100%)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent"
-                        }}
-                      >
-                        Around
-                      </span>
-                    </span>
+                    />
                     <span
                       style={{
                         fontSize: "0.55rem",
