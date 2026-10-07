@@ -819,23 +819,7 @@ export default function AuthForm({ mode = 'login' }) {
         </button>
       )}
 
-      {/* Enterprise Security & Privacy Footer */}
-      <div
-        style={{
-          marginTop: '1.5rem',
-          paddingTop: '0.85rem',
-          borderTop: '1px solid #F3F4F6',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '0.4rem',
-          fontSize: '0.72rem',
-          color: '#9CA3AF'
-        }}
-      >
-        <ShieldCheck size={13} color="#10B981" />
-        <span>Enterprise 256-bit SSL Security • LukAround</span>
-      </div>
+      {/* Clean end of form */}
     </motion.div>
   );
 }

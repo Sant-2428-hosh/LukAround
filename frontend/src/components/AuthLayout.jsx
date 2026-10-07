@@ -20,18 +20,18 @@ export default function AuthLayout({ children }) {
   const capabilities = [
     {
       icon: <Route size={16} color="var(--color-primary)" />,
-      title: "Algorithmic Route Pacing",
-      desc: "Optimized daily sequencing with transit logistics and balanced sightseeing intervals."
+      title: "Smart Day-by-Day Itineraries",
+      desc: "Clustered routes with balanced transit logistics and zero backtracking."
     },
     {
       icon: <Building2 size={16} color="#D97706" />,
-      title: "Verified Accommodations",
-      desc: "Direct booking links to handpicked boutique, heritage, and luxury hotel stays."
+      title: "Verified Heritage & Boutique Stays",
+      desc: "Curated accommodations tailored to authentic local travel styles."
     },
     {
       icon: <ShieldCheck size={16} color="#10B981" />,
-      title: "Emergency Safety Coordination",
-      desc: "Integrated tourist helplines, rapid police contacts, and emergency assistance."
+      title: "24/7 Verified Tourist Safety",
+      desc: "Instant access to verified police helplines and medical assistance."
     }
   ];
 
@@ -55,103 +55,82 @@ export default function AuthLayout({ children }) {
           }}
         />
 
-        {/* 1. Top Brand Lockup */}
+        {/* 1. Top Brand Lockup (Clean, professional, without enterprise tags) */}
         <div style={{ position: 'relative', zIndex: 2 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <img
               src={logoMark}
               alt="LukAround Logo"
               style={{
-                width: '38px',
-                height: '38px',
+                width: '40px',
+                height: '40px',
                 objectFit: 'contain',
                 filter: 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4))',
                 flexShrink: 0
               }}
             />
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <img
-                src={logoWordmarkLight}
-                alt="LukAround"
-                style={{
-                  height: '24px',
-                  width: 'auto',
-                  objectFit: 'contain'
-                }}
-              />
-
-              <span
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.25rem',
-                  fontSize: '0.65rem',
-                  fontWeight: 700,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.4px',
-                  padding: '0.15rem 0.45rem',
-                  borderRadius: '10px',
-                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
-                  color: '#D1D5DB',
-                  border: '1px solid rgba(255, 255, 255, 0.1)'
-                }}
-              >
-                <ShieldCheck size={11} color="var(--color-primary)" />
-                Enterprise Portal
-              </span>
-            </div>
+            <img
+              src={logoWordmarkLight}
+              alt="LukAround"
+              style={{
+                height: '26px',
+                width: 'auto',
+                objectFit: 'contain',
+                display: 'block'
+              }}
+            />
           </div>
         </div>
 
-        {/* 2. Middle Value Proposition & Capabilities (Zero Overflow) */}
-        <div style={{ position: 'relative', zIndex: 2, margin: 'auto 0', padding: '1rem 0' }}>
+        {/* 2. Middle Value Proposition & Capabilities */}
+        <div style={{ position: 'relative', zIndex: 2, margin: 'auto 0', padding: '1.5rem 0' }}>
           <h1
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(1.5rem, 2.1vw, 2rem)',
+              fontSize: 'clamp(1.65rem, 2.3vw, 2.2rem)',
               fontWeight: 800,
-              lineHeight: 1.25,
-              marginBottom: '0.6rem',
-              letterSpacing: '-0.3px',
+              lineHeight: 1.2,
+              marginBottom: '0.75rem',
+              letterSpacing: '-0.02em',
               color: '#FFFFFF'
             }}
           >
-            Intelligent Travel Logistics & Itinerary Architecture.
+            Travel Beyond the Ordinary.
           </h1>
 
           <p
             style={{
-              fontSize: 'clamp(0.8rem, 0.95vw, 0.875rem)',
+              fontSize: 'clamp(0.85rem, 1vw, 0.95rem)',
               color: '#9CA3AF',
-              lineHeight: 1.5,
+              lineHeight: 1.6,
               maxWidth: '430px',
-              marginBottom: '1.25rem'
+              marginBottom: '1.75rem'
             }}
           >
-            Plan multi-city journeys across India with automated day-by-day pacing, verified accommodations, and emergency safety coordination.
+            Plan multi-city journeys across India with intelligent day-by-day pacing, handpicked stays, and real-time culinary guidance.
           </p>
 
           {/* 3 Crisp Capability Cards */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', maxWidth: '430px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', maxWidth: '430px' }}>
             {capabilities.map((item, idx) => (
               <div
                 key={idx}
                 style={{
                   display: 'flex',
                   alignItems: 'flex-start',
-                  gap: '0.7rem',
-                  padding: '0.65rem 0.8rem',
-                  backgroundColor: 'rgba(255, 255, 255, 0.03)',
-                  borderRadius: '8px',
-                  border: '1px solid rgba(255, 255, 255, 0.06)'
+                  gap: '0.8rem',
+                  padding: '0.75rem 0.95rem',
+                  backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                  borderRadius: '10px',
+                  border: '1px solid rgba(255, 255, 255, 0.07)'
                 }}
               >
                 <div
                   style={{
-                    width: '28px',
-                    height: '28px',
-                    borderRadius: '6px',
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '8px',
                     backgroundColor: 'rgba(255, 255, 255, 0.06)',
                     display: 'flex',
                     alignItems: 'center',
@@ -162,10 +141,10 @@ export default function AuthLayout({ children }) {
                   {item.icon}
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#F3F4F6', marginBottom: '0.1rem' }}>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#F3F4F6', marginBottom: '0.15rem' }}>
                     {item.title}
                   </div>
-                  <div style={{ fontSize: '0.72rem', color: '#9CA3AF', lineHeight: 1.35 }}>
+                  <div style={{ fontSize: '0.75rem', color: '#9CA3AF', lineHeight: 1.4 }}>
                     {item.desc}
                   </div>
                 </div>
@@ -173,39 +152,9 @@ export default function AuthLayout({ children }) {
             ))}
           </div>
         </div>
-
-        {/* 3. Bottom Platform Status Bar */}
-        <div
-          style={{
-            position: 'relative',
-            zIndex: 2,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-            paddingTop: '0.85rem',
-            fontSize: '0.72rem',
-            color: '#9CA3AF'
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <span
-              style={{
-                width: '7px',
-                height: '7px',
-                borderRadius: '50%',
-                backgroundColor: '#22C55E',
-                boxShadow: '0 0 6px #22C55E'
-              }}
-            />
-            <span>Luk Around Platform • Operational</span>
-          </div>
-
-          <div>11+ Destinations Active</div>
-        </div>
       </div>
 
-      {/* ── RIGHT AUTHENTICATION PANEL (No duplicate logo, fully responsive) ── */}
+      {/* ── RIGHT AUTHENTICATION PANEL ── */}
       <div className="auth-form-panel">
         {children}
       </div>
