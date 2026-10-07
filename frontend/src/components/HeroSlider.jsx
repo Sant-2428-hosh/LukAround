@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Compass, MoveHorizontal } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Compass } from 'lucide-react';
 
 const DEFAULT_SLIDES = [
   {
@@ -46,7 +46,6 @@ export default function HeroSlider({
   const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
   const [touchOffset, setTouchOffset] = useState(0);
-  const [hasInteracted, setHasInteracted] = useState(false);
   const shouldReduceMotion = useReducedMotion();
 
   const touchStartX = useRef(0);
@@ -68,12 +67,6 @@ export default function HeroSlider({
     setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   }, [totalSlides]);
 
-  const goToSlide = (index) => {
-    setDirection(index > currentIndex ? 1 : -1);
-    setCurrentIndex(index);
-    setHasInteracted(true);
-  };
-
   // ── Autoplay Timer ──
   useEffect(() => {
     if (isPaused || totalSlides <= 1) return;
@@ -86,14 +79,8 @@ export default function HeroSlider({
   // ── Keyboard Navigation (Arrow Keys) ──
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'ArrowLeft') {
-        handlePrev();
-        setHasInteracted(true);
-      }
-      if (e.key === 'ArrowRight') {
-        handleNext();
-        setHasInteracted(true);
-      }
+      if (e.key === 'ArrowLeft') handlePrev();
+      if (e.key === 'ArrowRight') handleNext();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -134,8 +121,7 @@ export default function HeroSlider({
     setTouchOffset(0);
 
     // If horizontal swipe exceeds threshold and is greater than vertical movement
-    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 45) {
-      setHasInteracted(true);
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
       if (diffX < 0) {
         handleNext(); // Swiped left -> next destination
       } else {
@@ -375,120 +361,6 @@ export default function HeroSlider({
       >
         <ChevronRight size={24} />
       </button>
-
-      {/* ── 4. MODERN PROFESSIONAL STORY-STYLE SEGMENTED PROGRESS & GESTURE BAR ── */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: '1.75rem',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          zIndex: 20,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '0.6rem',
-          maxWidth: '92%',
-          width: 'auto'
-        }}
-      >
-        {/* Sleek Segmented Glass Pill Navigation */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.65rem',
-            padding: '0.45rem 0.9rem',
-            borderRadius: '999px',
-            backgroundColor: 'rgba(0, 0, 0, 0.45)',
-            backdropFilter: 'blur(14px)',
-            WebkitBackdropFilter: 'blur(14px)',
-            border: '1px solid rgba(255, 255, 255, 0.18)',
-            boxShadow: '0 6px 20px rgba(0, 0, 0, 0.35)'
-          }}
-        >
-          {/* Slide counter */}
-          <span
-            style={{
-              fontSize: '0.72rem',
-              fontWeight: 700,
-              letterSpacing: '0.08em',
-              color: 'rgba(255, 255, 255, 0.85)',
-              paddingRight: '0.35rem',
-              fontVariantNumeric: 'tabular-nums'
-            }}
-          >
-            {String(currentIndex + 1).padStart(2, '0')}&thinsp;/&thinsp;{String(totalSlides).padStart(2, '0')}
-          </span>
-
-          {/* Interactive Progress Segments */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
-            {slides.map((_, idx) => {
-              const isActive = idx === currentIndex;
-              return (
-                <button
-                  key={`segment-${idx}`}
-                  type="button"
-                  onClick={() => goToSlide(idx)}
-                  aria-label={`Slide ${idx + 1}`}
-                  style={{
-                    position: 'relative',
-                    width: isActive ? '36px' : '14px',
-                    height: '5px',
-                    borderRadius: '999px',
-                    backgroundColor: 'rgba(255, 255, 255, 0.25)',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                    overflow: 'hidden',
-                    transition: 'width 0.35s cubic-bezier(0.4, 0, 0.2, 1)'
-                  }}
-                >
-                  {/* Active segment animated progress fill */}
-                  {isActive && (
-                    <motion.div
-                      key={`progress-${currentIndex}-${isPaused}`}
-                      initial={{ scaleX: 0 }}
-                      animate={{ scaleX: 1 }}
-                      transition={{
-                        duration: autoPlayInterval / 1000,
-                        ease: 'linear'
-                      }}
-                      style={{
-                        position: 'absolute',
-                        inset: 0,
-                        backgroundColor: 'var(--color-primary, #E11D48)',
-                        transformOrigin: 'left',
-                        borderRadius: '999px'
-                      }}
-                    />
-                  )}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* ── 5. MOBILE GESTURE HINT (Subtle swipe indicator, auto-fades after interaction) ── */}
-        {!hasInteracted && (
-          <div
-            className="hero-mobile-swipe-hint"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.35rem',
-              fontSize: '0.7rem',
-              fontWeight: 600,
-              color: 'rgba(255, 255, 255, 0.75)',
-              textShadow: '0 1px 4px rgba(0, 0, 0, 0.6)',
-              letterSpacing: '0.04em'
-            }}
-          >
-            <MoveHorizontal size={13} className="hero-swipe-icon" />
-            <span>Swipe left / right to explore</span>
-          </div>
-        )}
-      </div>
     </section>
   );
 }
