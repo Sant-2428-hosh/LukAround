@@ -16,6 +16,83 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791385795152_vlq",
+      "action": "FEATURE_FLAG_TOGGLE",
+      "details": "Toggled feature maintenanceMode to ENABLED",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:09:55.152Z"
+    },
+    {
+      "id": "log_1791385793716_or7",
+      "action": "FEATURE_FLAG_TOGGLE",
+      "details": "Toggled feature maintenanceMode to DISABLED",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:09:53.716Z"
+    },
+    {
+      "id": "log_1791385791120_q48",
+      "action": "FEATURE_FLAG_TOGGLE",
+      "details": "Toggled feature userRegistrations to ENABLED",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:09:51.120Z"
+    },
+    {
+      "id": "log_1791385789923_mv2",
+      "action": "FEATURE_FLAG_TOGGLE",
+      "details": "Toggled feature userRegistrations to DISABLED",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:09:49.923Z"
+    },
+    {
+      "id": "log_1791385763764_cup",
+      "action": "MAINTENANCE_RESYNC_DB",
+      "details": "Re-indexed database integrity for 5 user records.",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:09:23.764Z"
+    },
+    {
+      "id": "log_1791385758600_pi2",
+      "action": "MAINTENANCE_PRUNE_SESSIONS",
+      "details": "Pruned visitor sessions table. Total active: 5",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:09:18.600Z"
+    },
+    {
+      "id": "log_1791385737279_020",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:08:57.279Z"
+    },
+    {
+      "id": "log_1791385581702_l5e",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:06:21.702Z"
+    },
+    {
+      "id": "log_1791385531765_3ou",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:05:31.765Z"
+    },
+    {
+      "id": "log_1791384765058_jrl",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T14:52:45.058Z"
+    },
+    {
+      "id": "log_1791384686843_pio",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T14:51:26.843Z"
+    },
+    {
       "id": "log_1791369124116_8mo",
       "action": "USER_LOGIN",
       "details": "User Ragul R logged in via password",
