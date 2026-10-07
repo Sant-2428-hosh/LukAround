@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, ChevronDown, Compass } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Compass, MoveHorizontal } from 'lucide-react';
 
 const DEFAULT_SLIDES = [
   {
@@ -43,20 +43,38 @@ export default function HeroSlider({
   onSelectSlide
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
+  const [touchOffset, setTouchOffset] = useState(0);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const shouldReduceMotion = useReducedMotion();
+
+  const touchStartX = useRef(0);
+  const touchStartY = useRef(0);
+  const touchCurrentX = useRef(0);
+  const touchCurrentY = useRef(0);
+  const isSwiping = useRef(false);
 
   const totalSlides = slides.length;
   const currentSlide = slides[currentIndex] || slides[0];
 
   const handleNext = useCallback(() => {
+    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
   }, [totalSlides]);
 
   const handlePrev = useCallback(() => {
+    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   }, [totalSlides]);
 
+  const goToSlide = (index) => {
+    setDirection(index > currentIndex ? 1 : -1);
+    setCurrentIndex(index);
+    setHasInteracted(true);
+  };
+
+  // ── Autoplay Timer ──
   useEffect(() => {
     if (isPaused || totalSlides <= 1) return;
     const timer = setInterval(() => {
@@ -65,18 +83,71 @@ export default function HeroSlider({
     return () => clearInterval(timer);
   }, [handleNext, isPaused, autoPlayInterval, totalSlides]);
 
+  // ── Keyboard Navigation (Arrow Keys) ──
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'ArrowLeft') handlePrev();
-      if (e.key === 'ArrowRight') handleNext();
+      if (e.key === 'ArrowLeft') {
+        handlePrev();
+        setHasInteracted(true);
+      }
+      if (e.key === 'ArrowRight') {
+        handleNext();
+        setHasInteracted(true);
+      }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [handlePrev, handleNext]);
 
+  // ── Mobile Touch Gesture Handling (Swipe Left / Swipe Right) ──
+  const handleTouchStart = (e) => {
+    if (!e.touches || !e.touches[0]) return;
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    touchCurrentX.current = e.touches[0].clientX;
+    touchCurrentY.current = e.touches[0].clientY;
+    isSwiping.current = true;
+    setIsPaused(true);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isSwiping.current || !e.touches || !e.touches[0]) return;
+    touchCurrentX.current = e.touches[0].clientX;
+    touchCurrentY.current = e.touches[0].clientY;
+
+    const diffX = touchCurrentX.current - touchStartX.current;
+    const diffY = touchCurrentY.current - touchStartY.current;
+
+    // Only apply visual drag if horizontal movement is dominant
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      setTouchOffset(diffX);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (!isSwiping.current) return;
+    isSwiping.current = false;
+    setIsPaused(false);
+
+    const diffX = touchCurrentX.current - touchStartX.current;
+    const diffY = touchCurrentY.current - touchStartY.current;
+    setTouchOffset(0);
+
+    // If horizontal swipe exceeds threshold and is greater than vertical movement
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 45) {
+      setHasInteracted(true);
+      if (diffX < 0) {
+        handleNext(); // Swiped left -> next destination
+      } else {
+        handlePrev(); // Swiped right -> previous destination
+      }
+    }
+  };
+
   return (
     <section
       aria-label="Featured Travel Destinations Hero Slider"
+      className="hero-slider-root"
       style={{
         position: 'relative',
         width: '100%',
@@ -86,20 +157,32 @@ export default function HeroSlider({
         overflow: 'hidden',
         backgroundColor: '#111114',
         color: '#FFFFFF',
-        userSelect: 'none'
+        userSelect: 'none',
+        touchAction: 'pan-y'
       }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchEnd}
     >
       {/* ── 1. BACKGROUND PHOTO WITH KEN BURNS & GRADIENT OVERLAY ── */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" custom={direction}>
         <motion.div
           key={currentIndex}
+          custom={direction}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          style={{ position: 'absolute', inset: 0, zIndex: 0 }}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            zIndex: 0,
+            transform: touchOffset ? `translateX(${touchOffset * 0.15}px)` : 'none',
+            transition: isSwiping.current ? 'none' : 'transform 0.3s ease-out'
+          }}
         >
           <motion.div
             animate={
@@ -128,14 +211,14 @@ export default function HeroSlider({
             style={{
               position: 'absolute',
               inset: 0,
-              background: 'linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.35))',
+              background: 'linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.65) 100%)',
               pointerEvents: 'none'
             }}
           />
         </motion.div>
       </AnimatePresence>
 
-      {/* ── 2. HERO CONTENT CONTAINER (ONE CLEAR VISUAL HIERARCHY) ── */}
+      {/* ── 2. HERO CONTENT CONTAINER ── */}
       <div
         style={{
           position: 'relative',
@@ -149,54 +232,66 @@ export default function HeroSlider({
           maxWidth: '850px',
           margin: '0 auto',
           padding: '0 1.5rem',
-          pointerEvents: 'none'
+          pointerEvents: 'none',
+          transform: touchOffset ? `translateX(${touchOffset * 0.35}px)` : 'none',
+          transition: isSwiping.current ? 'none' : 'transform 0.25s ease-out'
         }}
       >
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${currentIndex}`}
-            initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15, transition: { duration: 0.25 } }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+            initial={{
+              opacity: 0,
+              x: shouldReduceMotion ? 0 : (direction > 0 ? 30 : -30),
+              y: shouldReduceMotion ? 0 : 15
+            }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+            exit={{
+              opacity: 0,
+              x: shouldReduceMotion ? 0 : (direction > 0 ? -30 : 30),
+              y: -10,
+              transition: { duration: 0.25 }
+            }}
+            transition={{ duration: 0.45, ease: 'easeOut' }}
+            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}
           >
-            {/* 1. One Eyebrow / Badge Label */}
+            {/* Tagline / Eyebrow Badge */}
             {currentSlide.tagline && (
               <div
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '0.4rem',
-                  padding: '0.3rem 0.8rem',
-                  borderRadius: 'var(--radius-badge)',
-                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
-                  backdropFilter: 'blur(8px)',
-                  border: '1px solid rgba(255, 255, 255, 0.25)',
+                  gap: '0.45rem',
+                  padding: '0.35rem 0.95rem',
+                  borderRadius: 'var(--radius-badge, 999px)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.16)',
+                  backdropFilter: 'blur(10px)',
+                  WebkitBackdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
                   color: '#FFFFFF',
                   fontSize: '0.75rem',
                   fontWeight: 700,
-                  letterSpacing: '0.06em',
+                  letterSpacing: '0.07em',
                   textTransform: 'uppercase',
                   marginBottom: '1.25rem',
-                  boxShadow: 'var(--shadow-rest)'
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)'
                 }}
               >
-                <Compass size={13} style={{ color: '#FFFFFF' }} />
+                <Compass size={14} style={{ color: '#FFFFFF' }} />
                 <span>{currentSlide.tagline}</span>
               </div>
             )}
 
-            {/* 2. One Headline (One Font Weight: Bold, One Size) */}
+            {/* Headline */}
             <h1
               style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+                fontFamily: 'var(--font-display, inherit)',
+                fontSize: 'clamp(2rem, 5.2vw, 3.5rem)',
                 fontWeight: 700,
                 lineHeight: 1.18,
                 letterSpacing: '-0.02em',
                 color: '#FFFFFF',
-                textShadow: '0 2px 10px rgba(0,0,0,0.4)',
+                textShadow: '0 2px 12px rgba(0,0,0,0.5)',
                 marginBottom: '1rem',
                 maxWidth: '750px'
               }}
@@ -204,23 +299,23 @@ export default function HeroSlider({
               {currentSlide.headline}
             </h1>
 
-            {/* 3. One Subtext Line (Lighter Weight, Smaller, max-width ~600px) */}
+            {/* Subtext */}
             <p
               style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
+                fontFamily: 'var(--font-body, inherit)',
+                fontSize: 'clamp(0.92rem, 2vw, 1.1rem)',
                 fontWeight: 400,
                 lineHeight: 1.6,
-                color: 'rgba(255, 255, 255, 0.9)',
+                color: 'rgba(255, 255, 255, 0.92)',
                 maxWidth: '600px',
                 marginBottom: '2rem',
-                textShadow: '0 1px 4px rgba(0,0,0,0.3)'
+                textShadow: '0 1px 6px rgba(0,0,0,0.4)'
               }}
             >
               {currentSlide.subtext}
             </p>
 
-            {/* 4. One CTA Button (--color-primary background, White text, 8px radius) */}
+            {/* CTA Button */}
             <div style={{ pointerEvents: 'auto' }}>
               <a
                 href={currentSlide.ctaLink || '#smart-itinerary'}
@@ -229,139 +324,170 @@ export default function HeroSlider({
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '0.5rem',
-                  padding: '0.85rem 2rem',
-                  borderRadius: 'var(--radius-btn)',
-                  backgroundColor: 'var(--color-primary)',
+                  gap: '0.55rem',
+                  padding: '0.85rem 2.2rem',
+                  borderRadius: 'var(--radius-btn, 12px)',
+                  backgroundColor: 'var(--color-primary, #C0293C)',
                   color: '#FFFFFF',
-                  fontSize: '0.95rem',
+                  fontSize: '0.96rem',
                   fontWeight: 600,
                   textDecoration: 'none',
-                  boxShadow: '0 4px 14px rgba(192, 41, 60, 0.4)',
+                  boxShadow: '0 4px 18px rgba(192, 41, 60, 0.45)',
                   transition: 'background-color 0.2s, transform 0.2s, box-shadow 0.2s',
                   cursor: 'pointer'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'var(--color-primary-dark)';
+                  e.currentTarget.style.backgroundColor = 'var(--color-primary-dark, #9E1F30)';
                   e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(122, 22, 38, 0.5)';
+                  e.currentTarget.style.boxShadow = '0 6px 24px rgba(122, 22, 38, 0.6)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'var(--color-primary)';
+                  e.currentTarget.style.backgroundColor = 'var(--color-primary, #C0293C)';
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(192, 41, 60, 0.4)';
+                  e.currentTarget.style.boxShadow = '0 4px 18px rgba(192, 41, 60, 0.45)';
                 }}
               >
                 <span>{currentSlide.ctaText || 'Explore Destinations'}</span>
-                <ChevronRight size={17} />
+                <ChevronRight size={18} />
               </a>
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* ── 3. NAVIGATION ARROWS ── */}
-      <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', left: '1.5rem', zIndex: 20 }}>
-        <button
-          type="button"
-          onClick={handlePrev}
-          aria-label="Previous Slide"
-          style={{
-            width: '44px',
-            height: '44px',
-            borderRadius: '50%',
-            backgroundColor: 'rgba(0, 0, 0, 0.4)',
-            backdropFilter: 'blur(6px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
-            color: '#FFFFFF',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            boxShadow: 'var(--shadow-rest)',
-            transition: 'background-color 0.2s, transform 0.2s'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.7)';
-            e.currentTarget.style.transform = 'scale(1.08)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.4)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <ChevronLeft size={22} />
-        </button>
-      </div>
+      {/* ── 3. DESKTOP-ONLY SUBTLE EDGE CHEVRONS (Completely Hidden on Mobile) ── */}
+      <button
+        type="button"
+        className="hero-desktop-arrow hero-desktop-arrow--prev"
+        onClick={handlePrev}
+        aria-label="Previous Slide"
+        title="Previous destination (or swipe left/right)"
+      >
+        <ChevronLeft size={24} />
+      </button>
 
-      <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: '1.5rem', zIndex: 20 }}>
-        <button
-          type="button"
-          onClick={handleNext}
-          aria-label="Next Slide"
-          style={{
-            width: '44px',
-            height: '44px',
-            borderRadius: '50%',
-            backgroundColor: 'rgba(0, 0, 0, 0.4)',
-            backdropFilter: 'blur(6px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
-            color: '#FFFFFF',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            boxShadow: 'var(--shadow-rest)',
-            transition: 'background-color 0.2s, transform 0.2s'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.7)';
-            e.currentTarget.style.transform = 'scale(1.08)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.4)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <ChevronRight size={22} />
-        </button>
-      </div>
+      <button
+        type="button"
+        className="hero-desktop-arrow hero-desktop-arrow--next"
+        onClick={handleNext}
+        aria-label="Next Slide"
+        title="Next destination (or swipe left/right)"
+      >
+        <ChevronRight size={24} />
+      </button>
 
-      {/* ── 4. SLIDE DOT INDICATORS ── */}
+      {/* ── 4. MODERN PROFESSIONAL STORY-STYLE SEGMENTED PROGRESS & GESTURE BAR ── */}
       <div
         style={{
           position: 'absolute',
-          bottom: '2rem',
-          left: 0,
-          right: 0,
+          bottom: '1.75rem',
+          left: '50%',
+          transform: 'translateX(-50%)',
           zIndex: 20,
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
           alignItems: 'center',
-          gap: '0.6rem'
+          gap: '0.6rem',
+          maxWidth: '92%',
+          width: 'auto'
         }}
       >
-        {slides.map((_, idx) => {
-          const isActive = idx === currentIndex;
-          return (
-            <button
-              key={`dot-${idx}`}
-              type="button"
-              onClick={() => setCurrentIndex(idx)}
-              aria-label={`Go to slide ${idx + 1}`}
-              style={{
-                height: '8px',
-                width: isActive ? '28px' : '8px',
-                borderRadius: 'var(--radius-full)',
-                backgroundColor: isActive ? 'var(--color-primary)' : 'rgba(255, 255, 255, 0.4)',
-                border: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                boxShadow: 'var(--shadow-rest)'
-              }}
-            />
-          );
-        })}
+        {/* Sleek Segmented Glass Pill Navigation */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.65rem',
+            padding: '0.45rem 0.9rem',
+            borderRadius: '999px',
+            backgroundColor: 'rgba(0, 0, 0, 0.45)',
+            backdropFilter: 'blur(14px)',
+            WebkitBackdropFilter: 'blur(14px)',
+            border: '1px solid rgba(255, 255, 255, 0.18)',
+            boxShadow: '0 6px 20px rgba(0, 0, 0, 0.35)'
+          }}
+        >
+          {/* Slide counter */}
+          <span
+            style={{
+              fontSize: '0.72rem',
+              fontWeight: 700,
+              letterSpacing: '0.08em',
+              color: 'rgba(255, 255, 255, 0.85)',
+              paddingRight: '0.35rem',
+              fontVariantNumeric: 'tabular-nums'
+            }}
+          >
+            {String(currentIndex + 1).padStart(2, '0')}&thinsp;/&thinsp;{String(totalSlides).padStart(2, '0')}
+          </span>
+
+          {/* Interactive Progress Segments */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+            {slides.map((_, idx) => {
+              const isActive = idx === currentIndex;
+              return (
+                <button
+                  key={`segment-${idx}`}
+                  type="button"
+                  onClick={() => goToSlide(idx)}
+                  aria-label={`Slide ${idx + 1}`}
+                  style={{
+                    position: 'relative',
+                    width: isActive ? '36px' : '14px',
+                    height: '5px',
+                    borderRadius: '999px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    overflow: 'hidden',
+                    transition: 'width 0.35s cubic-bezier(0.4, 0, 0.2, 1)'
+                  }}
+                >
+                  {/* Active segment animated progress fill */}
+                  {isActive && (
+                    <motion.div
+                      key={`progress-${currentIndex}-${isPaused}`}
+                      initial={{ scaleX: 0 }}
+                      animate={{ scaleX: 1 }}
+                      transition={{
+                        duration: autoPlayInterval / 1000,
+                        ease: 'linear'
+                      }}
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        backgroundColor: 'var(--color-primary, #E11D48)',
+                        transformOrigin: 'left',
+                        borderRadius: '999px'
+                      }}
+                    />
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ── 5. MOBILE GESTURE HINT (Subtle swipe indicator, auto-fades after interaction) ── */}
+        {!hasInteracted && (
+          <div
+            className="hero-mobile-swipe-hint"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.35rem',
+              fontSize: '0.7rem',
+              fontWeight: 600,
+              color: 'rgba(255, 255, 255, 0.75)',
+              textShadow: '0 1px 4px rgba(0, 0, 0, 0.6)',
+              letterSpacing: '0.04em'
+            }}
+          >
+            <MoveHorizontal size={13} className="hero-swipe-icon" />
+            <span>Swipe left / right to explore</span>
+          </div>
+        )}
       </div>
     </section>
   );

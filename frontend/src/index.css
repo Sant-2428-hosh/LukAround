@@ -3347,3 +3347,83 @@ header {
 .navbar-brand-link:active .navbar-brand-emblem-wrap {
   transform: scale(0.96);
 }
+
+/* ==========================================================================
+   HERO SLIDER — Professional Mobile Touch Gestures & Desktop Navigation
+   ========================================================================== */
+.hero-slider-root {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Subtle Desktop Edge Arrows (Fade in on hover, completely hidden on mobile) */
+.hero-desktop-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 46px;
+  height: 60px;
+  background: rgba(15, 15, 18, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-desktop-arrow--prev {
+  left: 0;
+  border-radius: 0 16px 16px 0;
+  border-left: none;
+}
+
+.hero-desktop-arrow--next {
+  right: 0;
+  border-radius: 16px 0 0 16px;
+  border-right: none;
+}
+
+.hero-slider-root:hover .hero-desktop-arrow {
+  opacity: 0.85;
+  pointer-events: auto;
+}
+
+.hero-desktop-arrow:hover {
+  opacity: 1 !important;
+  background: rgba(15, 15, 18, 0.7);
+  transform: translateY(-50%) scale(1.04);
+}
+
+/* On mobile / touch devices: completely hide arrows! Users swipe naturally! */
+@media (max-width: 768px), (pointer: coarse) {
+  .hero-desktop-arrow {
+    display: none !important;
+  }
+}
+
+/* Mobile swipe hint subtle nudge animation */
+.hero-mobile-swipe-hint {
+  animation: heroSwipePulse 2.8s ease-in-out infinite;
+}
+
+.hero-swipe-icon {
+  animation: heroSwipeNudge 1.6s ease-in-out infinite;
+}
+
+@keyframes heroSwipePulse {
+  0%, 100% { opacity: 0.65; }
+  50% { opacity: 1; }
+}
+
+@keyframes heroSwipeNudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
