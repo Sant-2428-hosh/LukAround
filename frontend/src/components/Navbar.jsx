@@ -123,14 +123,32 @@ export default function Navbar() {
     };
   }, [mobileMenuOpen]);
 
-  // Clean core navigation links translated with t()
+  // Authentic verified navigation translations (instant 0ms response, zero mutilation)
+  const CORE_NAV_TRANSLATIONS = {
+    home: { en: "Home", ta: "முகப்பு", hi: "होम", te: "హోమ్", kn: "ಮುಖಪುಟ" },
+    destinations: { en: "Destinations", ta: "இடங்கள்", hi: "गंतव्य", te: "గమ్యస్థానాలు", kn: "ತಾಣಗಳು" },
+    itinerary: { en: "Itinerary", ta: "திட்டம்", hi: "यात्रा योजना", te: "ప్రణాళిక", kn: "ಪ್ರವಾಸ ಯೋಜನೆ" },
+    hotels: { en: "Hotels", ta: "தங்குமிடம்", hi: "होटल", te: "హోటళ్ళు", kn: "ಹೋಟೆಲ್‌ಗಳು" },
+    budget: { en: "Budget", ta: "பட்ஜெட்", hi: "बजट", te: "బడ్జెట్", kn: "ಬಜೆಟ್" },
+    safety: { en: "Safety", ta: "பாதுகாப்பு", hi: "सुरक्षा", te: "భద్రత", kn: "ಸುರಕ್ಷತೆ" }
+  };
+
+  const getNavLabel = (key, fallback) => {
+    const lang = (currentLanguage || 'en').toLowerCase();
+    if (CORE_NAV_TRANSLATIONS[key] && CORE_NAV_TRANSLATIONS[key][lang]) {
+      return CORE_NAV_TRANSLATIONS[key][lang];
+    }
+    return t(fallback || key);
+  };
+
+  // Clean core navigation links translated with getNavLabel()
   const coreNavLinks = [
-    { label: t("home"), path: "/", icon: <Compass size={15} color="var(--color-primary)" strokeWidth={2} /> },
-    { label: t("destinations"), path: "/destinations", icon: <MapPin size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
-    { label: t("itinerary"), path: "/itinerary", icon: <Calendar size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
-    { label: t("hotels"), path: "/hotels", icon: <Building2 size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
-    { label: t("budget"), path: "/budget", icon: <DollarSign size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
-    { label: t("safety"), path: "/safety", icon: <HeartHandshake size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("home", "Home"), path: "/", icon: <Compass size={15} color="var(--color-primary)" strokeWidth={2} /> },
+    { label: getNavLabel("destinations", "Destinations"), path: "/destinations", icon: <MapPin size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("itinerary", "Itinerary"), path: "/itinerary", icon: <Calendar size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("hotels", "Hotels"), path: "/hotels", icon: <Building2 size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("budget", "Budget"), path: "/budget", icon: <DollarSign size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("safety", "Safety"), path: "/safety", icon: <HeartHandshake size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
   ];
 
   // Export site packager
@@ -335,9 +353,11 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* ── 2. Center Section: Core Navigation Links (Background Layer Removed, Centered & Animated) ── */}
+          {/* ── 2. Center Section: Core Navigation Links (Protected against external translation mutilation) ── */}
           <nav
-            className="desktop-nav-links"
+            className="desktop-nav-links notranslate"
+            translate="no"
+            data-no-translate="true"
             style={{
               flex: "0 0 auto",
               display: "flex",
@@ -349,7 +369,9 @@ export default function Navbar() {
               <NavLink
                 key={item.path}
                 to={item.path}
-                className={({ isActive }) => `desktop-nav-item ${isActive ? 'active' : ''}`}
+                className={({ isActive }) => `desktop-nav-item notranslate ${isActive ? 'active' : ''}`}
+                translate="no"
+                data-no-translate="true"
               >
                 {item.label}
               </NavLink>
@@ -1053,7 +1075,7 @@ export default function Navbar() {
               </div>
 
               {/* Navigation Links in Drawer */}
-              <div style={{ padding: "0.75rem 0.85rem", display: "flex", flexDirection: "column", gap: "0.3rem", flex: 1 }}>
+              <div className="notranslate" translate="no" data-no-translate="true" style={{ padding: "0.75rem 0.85rem", display: "flex", flexDirection: "column", gap: "0.3rem", flex: 1 }}>
                 <div style={{ fontSize: "0.68rem", fontWeight: 800, textTransform: "uppercase", color: "var(--color-ink-tertiary)", padding: "0.2rem 0.5rem 0.35rem" }}>
                   Navigation
                 </div>
@@ -1062,6 +1084,9 @@ export default function Navbar() {
                   <NavLink
                     key={item.path}
                     to={item.path}
+                    className="notranslate"
+                    translate="no"
+                    data-no-translate="true"
                     onClick={() => setMobileMenuOpen(false)}
                     style={({ isActive }) => ({
                       display: "flex",
@@ -1078,7 +1103,7 @@ export default function Navbar() {
                     })}
                   >
                     {item.icon}
-                    <span>{item.label}</span>
+                    <span className="notranslate" translate="no" data-no-translate="true">{item.label}</span>
                   </NavLink>
                 ))}
 

@@ -572,15 +572,28 @@ export function AppProvider({ children }) {
   const t = (text) => {
     if (!text || typeof text !== 'string') return text || '';
     if (currentLanguage === 'en') return text;
-    // Check quick nav labels first for instant zero-latency UI
-    if (QUICK_NAV[currentLanguage]?.[text]) {
-      return QUICK_NAV[currentLanguage][text];
+    const trimmed = text.trim();
+    const lower = trimmed.toLowerCase();
+    const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+
+    // 1. Check quick nav labels (exact, lowercase, or capitalized)
+    const navDict = QUICK_NAV[currentLanguage];
+    if (navDict) {
+      if (navDict[trimmed]) return navDict[trimmed];
+      if (navDict[lower]) return navDict[lower];
+      if (navDict[capitalized]) return navDict[capitalized];
     }
-    // Check static dictionary next for instant zero-latency UI
-    if (STATIC_DICTIONARY[currentLanguage]?.[text]) {
-      return STATIC_DICTIONARY[currentLanguage][text];
+
+    // 2. Check static dictionary (exact, lowercase, or capitalized)
+    const staticDict = STATIC_DICTIONARY[currentLanguage];
+    if (staticDict) {
+      if (staticDict[trimmed]) return staticDict[trimmed];
+      if (staticDict[lower]) return staticDict[lower];
+      if (staticDict[capitalized]) return staticDict[capitalized];
     }
-    return getTranslationSync(text, currentLanguage);
+
+    // 3. Fallback to runtime translation
+    return getTranslationSync(trimmed, currentLanguage);
   };
 
   // ── Auto-sync Google Profile Photo from Firebase Auth ──

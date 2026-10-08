@@ -16,6 +16,20 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791449781467_tbt",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-08T08:56:21.467Z"
+    },
+    {
+      "id": "log_1791448118276_qcs",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-08T08:28:38.276Z"
+    },
+    {
       "id": "log_1791447134931_dy4",
       "action": "USER_LOGIN",
       "details": "User Ragul R logged in via password",

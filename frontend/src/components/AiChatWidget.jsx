@@ -552,9 +552,9 @@ export default function AiChatWidget() {
   return (
     <>
       {/* ── Floating Luxury Launcher Capsule ── */}
-      <div className="dishly-launcher-wrap">
+      <div className="dishly-launcher-wrap notranslate" translate="no" data-no-translate="true">
         {!isOpen && (
-          <div className="dishly-launcher-hover-pill">
+          <div className="dishly-launcher-hover-pill notranslate" translate="no">
             <Sparkles size={12} className="dishly-hover-sparkle" />
             <span>Craving food in {contextCity}? Ask Dishly ✨</span>
           </div>
@@ -562,23 +562,25 @@ export default function AiChatWidget() {
 
         <button
           type="button"
-          className={`dishly-toggle-btn ${isOpen ? 'dishly-toggle-btn--open' : ''} ${pulseActive && !isOpen ? 'dishly-toggle-btn--pulse' : ''}`}
+          className={`dishly-toggle-btn notranslate ${isOpen ? 'dishly-toggle-btn--open' : ''} ${pulseActive && !isOpen ? 'dishly-toggle-btn--pulse' : ''}`}
           onClick={() => setIsOpen(prev => !prev)}
+          translate="no"
+          data-no-translate="true"
           aria-label={isOpen ? 'Close Dishly' : 'Open Dishly — LukAround Food AI'}
           title="Dishly — LukAround Culinary Concierge"
         >
           {isOpen ? (
             <ChevronDown size={24} strokeWidth={2.8} color="#FFFFFF" />
           ) : (
-            <div className="dishly-toggle-inner">
-              <div className="dishly-toggle-logo-ring">
-                <img src={logoMark} alt="LukAround Logo" className="dishly-toggle-logo" />
+            <div className="dishly-toggle-inner notranslate" translate="no" data-no-translate="true">
+              <div className="dishly-toggle-logo-ring notranslate">
+                <img src={logoMark} alt="LukAround Logo" className="dishly-toggle-logo notranslate" />
               </div>
-              <div className="dishly-toggle-text-wrap">
-                <span className="dishly-toggle-title">Dishly</span>
-                <span className="dishly-toggle-tag">AI CONCIERGE</span>
+              <div className="dishly-toggle-text-wrap notranslate" translate="no" data-no-translate="true">
+                <span className="dishly-toggle-title notranslate" translate="no" data-no-translate="true">Dishly</span>
+                <span className="dishly-toggle-tag notranslate" translate="no" data-no-translate="true">AI CONCIERGE</span>
               </div>
-              <div className="dishly-toggle-sparkle-pill">
+              <div className="dishly-toggle-sparkle-pill notranslate">
                 <Sparkles size={12} />
               </div>
             </div>
@@ -596,14 +598,14 @@ export default function AiChatWidget() {
         <div className="chat-panel-header dishly-header">
           <div className="chat-panel-header-left dishly-header-left">
             {/* Branded LukAround Logo Box with Ambient Glow */}
-            <div className="dishly-logo-badge" title="Official LukAround Culinary AI">
-              <img src={logoMark} alt="LukAround" className="dishly-header-logo-img" />
+            <div className="dishly-logo-badge notranslate" translate="no" title="Official LukAround Culinary AI">
+              <img src={logoMark} alt="LukAround" className="dishly-header-logo-img notranslate" />
               <span className="dishly-online-beacon" />
             </div>
             <div>
-              <div className="dishly-title-row">
-                <span className="dishly-brand-name">Dishly</span>
-                <span className="dishly-ai-badge">
+              <div className="dishly-title-row notranslate" translate="no" data-no-translate="true">
+                <span className="dishly-brand-name notranslate" translate="no" data-no-translate="true">Dishly</span>
+                <span className="dishly-ai-badge notranslate" translate="no" data-no-translate="true">
                   <Sparkles size={10} />
                   <span>AI FOOD CONCIERGE</span>
                 </span>

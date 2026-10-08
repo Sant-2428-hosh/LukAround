@@ -17,21 +17,38 @@ export const STATIC_DICTIONARY = {
     "travel beyond the ordinary": "असाधारण से परे यात्रा",
     "travel india": "असाधारण से परे यात्रा",
     "Home": "होम",
+    "home": "होम",
     "Destinations": "गंतव्य",
+    "destinations": "गंतव्य",
     "Itinerary": "यात्रा योजना",
+    "itinerary": "यात्रा योजना",
     "Hotels": "होटल",
+    "hotels": "होटल",
     "Safety": "सुरक्षा",
+    "safety": "सुरक्षा",
     "Safety & SOS": "सुरक्षा और SOS",
     "Budget": "बजट",
+    "budget": "बजट",
     "Admin": "व्यवस्थापक",
+    "admin": "व्यवस्थापक",
+    "Admin Panel": "प्रशासन पैनल",
     "Super Admin": "सुपर व्यवस्थापक",
+    "superAdmin": "सुपर व्यवस्थापक",
+    "Super Admin Center": "सुपर एडमिन केंद्र",
     "Login": "लॉग इन",
     "Register": "पंजीकरण",
     "Logout": "लॉग आउट",
     "Sign In": "साइन इन",
+    "signIn": "साइन इन",
     "Sign Up": "साइन अप",
+    "signUp": "साइन अप",
+    "Sign Out": "साइन आउट",
+    "signOut": "साइन आउट",
     "Account": "खाता",
     "SOS": "SOS",
+    "Dishly": "Dishly",
+    "dishly": "Dishly",
+    "LukAround": "LukAround",
 
     // Hero & Search
     "Where in India are you heading?": "भारत में आप कहाँ जा रहे हैं?",
@@ -137,21 +154,38 @@ export const STATIC_DICTIONARY = {
     "travel beyond the ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
     "travel india": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
     "Home": "முகப்பு",
+    "home": "முகப்பு",
     "Destinations": "இடங்கள்",
+    "destinations": "இடங்கள்",
     "Itinerary": "திட்டம்",
+    "itinerary": "திட்டம்",
     "Hotels": "தங்குமிடம்",
+    "hotels": "தங்குமிடம்",
     "Safety": "பாதுகாப்பு",
+    "safety": "பாதுகாப்பு",
     "Safety & SOS": "பாதுகாப்பு & SOS",
     "Budget": "பட்ஜெட்",
+    "budget": "பட்ஜெட்",
     "Admin": "அட்மின்",
+    "admin": "அட்மின்",
+    "Admin Panel": "அட்மின் பேனல்",
     "Super Admin": "சூப்பர் அட்மின்",
+    "superAdmin": "சூப்பர் அட்மின்",
+    "Super Admin Center": "சூப்பர் அட்மின் மையம்",
     "Login": "உள்நுழைக",
     "Register": "பதிவுசெய்க",
     "Logout": "வெளியேறுக",
     "Sign In": "உள்நுழைக",
+    "signIn": "உள்நுழைக",
     "Sign Up": "பதிவு செய்க",
+    "signUp": "பதிவு செய்க",
+    "Sign Out": "வெளியேறுக",
+    "signOut": "வெளியேறுக",
     "Account": "கணக்கு",
     "SOS": "SOS",
+    "Dishly": "Dishly",
+    "dishly": "Dishly",
+    "LukAround": "LukAround",
 
     // Hero & Search
     "Where in India are you heading?": "இந்தியாவில் நீங்கள் எங்கு செல்கிறீர்கள்?",
@@ -257,21 +291,38 @@ export const STATIC_DICTIONARY = {
     "travel beyond the ordinary": "సాధారణానికి మించిన ప్రయాణం",
     "travel india": "సాధారణానికి మించిన ప్రయాణం",
     "Home": "హోమ్",
+    "home": "హోమ్",
     "Destinations": "గమ్యస్థానాలు",
+    "destinations": "గమ్యస్థానాలు",
     "Itinerary": "ప్రణాళిక",
+    "itinerary": "ప్రణాళిక",
     "Hotels": "హోటళ్ళు",
+    "hotels": "హోటళ్ళు",
     "Safety": "భద్రత",
+    "safety": "భద్రత",
     "Safety & SOS": "భద్రత & SOS",
     "Budget": "బడ్జెట్",
+    "budget": "బడ్జెట్",
     "Admin": "అడ్మిన్",
+    "admin": "అడ్మిన్",
+    "Admin Panel": "అడ్మిన్ ప్యానెల్",
     "Super Admin": "సూపర్ అడ్మిన్",
+    "superAdmin": "సూపర్ అడ్మిన్",
+    "Super Admin Center": "సూపర్ అడ్మిన్ కేంద్రం",
     "Login": "లాగిన్",
     "Register": "రిజిస్టర్",
     "Logout": "లాగ్ అవుట్",
     "Sign In": "సైన్ ఇన్",
+    "signIn": "సైన్ ఇన్",
     "Sign Up": "సైన్ అప్",
+    "signUp": "సైన్ అప్",
+    "Sign Out": "లాగ్ అవుట్",
+    "signOut": "లాగ్ అవుట్",
     "Account": "ఖాతా",
     "SOS": "SOS",
+    "Dishly": "Dishly",
+    "dishly": "Dishly",
+    "LukAround": "LukAround",
 
     // Hero & Search
     "Where in India are you heading?": "భారతదేశంలో మీరు ఎక్కడికి వెళ్తున్నారు?",
@@ -377,21 +428,38 @@ export const STATIC_DICTIONARY = {
     "travel beyond the ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
     "travel india": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
     "Home": "ಮುಖಪುಟ",
+    "home": "ಮುಖಪುಟ",
     "Destinations": "ತಾಣಗಳು",
+    "destinations": "ತಾಣಗಳು",
     "Itinerary": "ಪ್ರವಾಸ ಯೋಜನೆ",
+    "itinerary": "ಪ್ರವಾಸ ಯೋಜನೆ",
     "Hotels": "ಹೋಟೆಲ್‌ಗಳು",
+    "hotels": "ಹೋಟೆಲ್‌ಗಳು",
     "Safety": "ಸುರಕ್ಷತೆ",
+    "safety": "ಸುರಕ್ಷತೆ",
     "Safety & SOS": "ಸುರಕ್ಷತೆ & SOS",
     "Budget": "ಬಜೆಟ್",
+    "budget": "ಬಜೆಟ್",
     "Admin": "ಅಡ್ಮಿನ್",
+    "admin": "ಅಡ್ಮಿನ್",
+    "Admin Panel": "ನಿರ್ವಾಹಕ ಫಲಕ",
     "Super Admin": "ಸೂಪರ್ ಅಡ್ಮಿನ್",
+    "superAdmin": "ಸೂಪರ್ ಅಡ್ಮಿನ್",
+    "Super Admin Center": "ಸೂಪರ್ ಅಡ್ಮಿನ್ ಕೇಂದ್ರ",
     "Login": "ಲಾಗಿನ್",
     "Register": "ನೋಂದಣಿ",
     "Logout": "ಲಾಗ್ ಔಟ್",
     "Sign In": "ಸೈನ್ ಇನ್",
+    "signIn": "ಸೈನ್ ಇನ್",
     "Sign Up": "ಸೈನ್ ಅಪ್",
+    "signUp": "ಸೈನ್ ಅಪ್",
+    "Sign Out": "ಸೈನ್ ಔಟ್",
+    "signOut": "ಸೈನ್ ಔಟ್",
     "Account": "ಖಾತೆ",
     "SOS": "SOS",
+    "Dishly": "Dishly",
+    "dishly": "Dishly",
+    "LukAround": "LukAround",
 
     // Hero & Search
     "Where in India are you heading?": "ಭಾರತದಲ್ಲಿ ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದೀರಿ?",
@@ -499,18 +567,31 @@ const translationCache = {
   kn: { ...STATIC_DICTIONARY.kn }
 };
 
-// Load persisted cache from localStorage on startup
+// Load persisted cache from localStorage on startup with strict sanitization
 try {
   const saved = localStorage.getItem('luk_translations_cache');
   if (saved) {
     const parsed = JSON.parse(saved);
     Object.keys(parsed).forEach((lang) => {
-      translationCache[lang] = { ...translationCache[lang], ...parsed[lang] };
+      if (translationCache[lang]) {
+        for (const key of Object.keys(parsed[lang] || {})) {
+          const val = parsed[lang][key];
+          // Filter out corrupt single-character punctuation marks like '।' or '|'
+          if (typeof val === 'string' && val.trim().length >= 2 && !/^[\s|।.:;!?-]+$/.test(val.trim())) {
+            translationCache[lang][key] = val;
+          }
+        }
+      }
     });
   }
 } catch {
   // Ignore localStorage parsing errors
 }
+
+// Guarantee that verified STATIC_DICTIONARY entries ALWAYS take precedence over runtime cache
+Object.keys(STATIC_DICTIONARY).forEach((lang) => {
+  translationCache[lang] = { ...translationCache[lang], ...STATIC_DICTIONARY[lang] };
+});
 
 function persistCache() {
   try {
@@ -810,28 +891,42 @@ let domObserver = null;
 let isTranslatingDom = false;
 
 // Tags to strictly ignore during DOM translation
+// Indic Script detection maps: prevents re-translating text already in target language
+const SCRIPT_REGEX_MAP = {
+  hi: /[\u0900-\u097F]/, // Devanagari (Hindi)
+  ta: /[\u0B80-\u0BFF]/, // Tamil
+  te: /[\u0C00-\u0C7F]/, // Telugu
+  kn: /[\u0C80-\u0CFF]/, // Kannada
+};
+
 const IGNORED_TAGS = new Set(['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'CODE', 'PRE', 'NOSCRIPT', 'SVG', 'PATH']);
 
-function isNodeTranslatable(node) {
+function isNodeTranslatable(node, targetLang) {
   if (!node || node.nodeType !== Node.TEXT_NODE) return false;
   const parent = node.parentElement;
   if (!parent) return false;
 
   if (IGNORED_TAGS.has(parent.tagName)) return false;
-  if (parent.closest('.notranslate') || parent.closest('[data-no-translate="true"]')) return false;
+  if (parent.closest('.notranslate') || parent.closest('[data-no-translate="true"]') || parent.closest('[translate="no"]')) return false;
 
   const val = node.nodeValue;
   if (!val) return false;
   const trimmed = val.trim();
   if (trimmed.length < 2) return false;
-  // Ignore pure numbers, prices (e.g. ₹3,200), pure symbols, dates/times
-  if (/^[\d\s,.:;₹$%&*+\-–—/()#@!?"'’]+$/.test(trimmed)) return false;
+
+  // Ignore pure numbers, prices (e.g. ₹3,200), pure symbols, dates/times, and lone punctuation
+  if (/^[\d\s,.:;₹$%&*+\-–—/()#@!?"'’|।]+$/.test(trimmed)) return false;
+
+  // CRITICAL SCRIPT GUARD: If text already contains the target language script, DO NOT re-translate!
+  if (targetLang && SCRIPT_REGEX_MAP[targetLang] && SCRIPT_REGEX_MAP[targetLang].test(trimmed)) {
+    return false;
+  }
 
   return true;
 }
 
 function processTextNode(node, targetLang) {
-  if (!isNodeTranslatable(node)) return;
+  if (!isNodeTranslatable(node, targetLang)) return;
 
   // Remember original English text
   if (typeof node.__lukOriginal === 'undefined') {

@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: "Destinations",  path: "/destinations" },
   { label: "Itinerary",     path: "/itinerary" },
   { label: "Hotels",        path: "/hotels" },
+  { label: "Budget",        path: "/budget" },
   { label: "Safety & SOS",  path: "/safety" },
 ];
 
@@ -68,12 +69,12 @@ export default function Footer() {
 
         {/* Pages */}
         <nav className="site-footer__col" aria-label="Pages">
-          <h3 className="site-footer__heading">Pages</h3>
+          <h3 className="site-footer__heading notranslate" translate="no">{t("Pages")}</h3>
           <ul className="site-footer__list">
             {NAV_LINKS.map((link) => (
               <li key={link.path}>
-                <Link to={link.path} className="site-footer__link">
-                  {link.label}
+                <Link to={link.path} className="site-footer__link notranslate" translate="no" data-no-translate="true">
+                  {t(link.label)}
                 </Link>
               </li>
             ))}
@@ -82,13 +83,14 @@ export default function Footer() {
 
         {/* Cities */}
         <nav className="site-footer__col" aria-label="Popular cities">
-          <h3 className="site-footer__heading">Popular Cities</h3>
+          <h3 className="site-footer__heading notranslate" translate="no">{t("Popular Cities")}</h3>
           <ul className="site-footer__list">
             {CITIES.map((city) => (
               <li key={city}>
                 <button
                   type="button"
-                  className="site-footer__link site-footer__city-btn"
+                  className="site-footer__link site-footer__city-btn notranslate"
+                  translate="no"
                   onClick={() => handleCityClick(city)}
                 >
                   {city}
@@ -100,17 +102,18 @@ export default function Footer() {
 
         {/* Helplines */}
         <div className="site-footer__col">
-          <h3 className="site-footer__heading">
+          <h3 className="site-footer__heading notranslate" translate="no">
             <Phone size={11} aria-hidden="true" />
-            Emergency Lines
+            {t("Helplines")}
           </h3>
           <ul className="site-footer__list">
             {HELPLINES.map((h) => (
               <li key={h.number} className="site-footer__helpline">
-                <span className="site-footer__helpline-label">{h.label}</span>
+                <span className="site-footer__helpline-label notranslate" translate="no">{t(h.label)}</span>
                 <a
                   href={`tel:${h.number}`}
-                  className="site-footer__helpline-num"
+                  className="site-footer__helpline-num notranslate"
+                  translate="no"
                   aria-label={`Call ${h.label} at ${h.number}`}
                 >
                   {h.number}
@@ -125,7 +128,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="site-footer__bar">
         <div className="container site-footer__bar-inner">
-          <span>© {new Date().getFullYear()} Luk Around. All rights reserved.</span>
+          <span className="notranslate" translate="no">© {new Date().getFullYear()} LukAround. {t("All rights reserved.")}</span>
         </div>
       </div>
     </footer>

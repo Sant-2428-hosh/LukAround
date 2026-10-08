@@ -4,6 +4,80 @@ const router = express.Router();
 // In-memory cache to prevent duplicate external requests: Map<`${lang}:${text}`, string>
 const translationCache = new Map();
 
+// Pre-seed core curated navigation, brand, and UI words to ensure zero machine-translation mutilation
+const CORE_PRESETS = {
+  ta: {
+    "Home": "முகப்பு", "home": "முகப்பு",
+    "Destinations": "இடங்கள்", "destinations": "இடங்கள்",
+    "Itinerary": "திட்டம்", "itinerary": "திட்டம்",
+    "Hotels": "தங்குமிடம்", "hotels": "தங்குமிடம்",
+    "Budget": "பட்ஜெட்", "budget": "பட்ஜெட்",
+    "Safety": "பாதுகாப்பு", "safety": "பாதுகாப்பு",
+    "Safety & SOS": "பாதுகாப்பு & SOS",
+    "Admin": "அட்மின்", "admin": "அட்மின்", "Admin Panel": "அட்மின் பேனல்",
+    "Super Admin": "சூப்பர் அட்மின்", "superAdmin": "சூப்பர் அட்மின்", "Super Admin Center": "சூப்பர் அட்மின் மையம்",
+    "Sign In": "உள்நுழைக", "signIn": "உள்நுழைக", "Sign Out": "வெளியேறுக", "signOut": "வெளியேறுக",
+    "Travel beyond the Ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
+    "travel beyond the ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
+    "travel india": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
+    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+  },
+  hi: {
+    "Home": "होम", "home": "होम",
+    "Destinations": "गंतव्य", "destinations": "गंतव्य",
+    "Itinerary": "यात्रा योजना", "itinerary": "यात्रा योजना",
+    "Hotels": "होटल", "hotels": "होटल",
+    "Budget": "बजट", "budget": "बजट",
+    "Safety": "सुरक्षा", "safety": "सुरक्षा",
+    "Safety & SOS": "सुरक्षा और SOS",
+    "Admin": "व्यवस्थापक", "admin": "व्यवस्थापक", "Admin Panel": "प्रशासन पैनल",
+    "Super Admin": "सुपर व्यवस्थापक", "superAdmin": "सुपर व्यवस्थापक", "Super Admin Center": "सुपर एडमिन केंद्र",
+    "Sign In": "साइन इन", "signIn": "साइन इन", "Sign Out": "साइन आउट", "signOut": "साइन आउट",
+    "Travel beyond the Ordinary": "असाधारण से परे यात्रा",
+    "travel beyond the ordinary": "असाधारण से परे यात्रा",
+    "travel india": "असाधारण से परे यात्रा",
+    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+  },
+  te: {
+    "Home": "హోమ్", "home": "హోమ్",
+    "Destinations": "గమ్యస్థానాలు", "destinations": "గమ్యస్థానాలు",
+    "Itinerary": "ప్రణాళిక", "itinerary": "ప్రణాళిక",
+    "Hotels": "హోటళ్ళు", "hotels": "హోటళ్ళు",
+    "Budget": "బడ్జెట్", "budget": "బడ్జెట్",
+    "Safety": "భద్రత", "safety": "భద్రత",
+    "Safety & SOS": "భద్రత & SOS",
+    "Admin": "అడ్మిన్", "admin": "అడ్మిన్", "Admin Panel": "అడ్మిన్ ప్యానెల్",
+    "Super Admin": "సూపర్ అడ్మిన్", "superAdmin": "సూపర్ అడ్మిన్", "Super Admin Center": "సూపర్ అడ్మిన్ కేంద్రం",
+    "Sign In": "సైన్ ఇన్", "signIn": "సైన్ ఇన్", "Sign Out": "సైన్ అవుట్", "signOut": "సైన్ అవుట్",
+    "Travel beyond the Ordinary": "సాధారణానికి మించిన ప్రయాణం",
+    "travel beyond the ordinary": "సాధారణానికి మించిన ప్రయాణం",
+    "travel india": "సాధారణానికి మించిన ప్రయాణం",
+    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+  },
+  kn: {
+    "Home": "ಮುಖಪುಟ", "home": "ಮುಖಪುಟ",
+    "Destinations": "ತಾಣಗಳು", "destinations": "ತಾಣಗಳು",
+    "Itinerary": "ಪ್ರವಾಸ ಯೋಜನೆ", "itinerary": "ಪ್ರವಾಸ ಯೋಜನೆ",
+    "Hotels": "ಹೋಟೆಲ್‌ಗಳು", "hotels": "ಹೋಟೆಲ್‌ಗಳು",
+    "Budget": "ಬಜೆಟ್", "budget": "ಬಜೆಟ್",
+    "Safety": "ಸುರಕ್ಷತೆ", "safety": "ಸುರಕ್ಷತೆ",
+    "Safety & SOS": "ಸುರಕ್ಷತೆ & SOS",
+    "Admin": "ಅಡ್ಮಿನ್", "admin": "ಅಡ್ಮಿನ್", "Admin Panel": "ನಿರ್ವಾಹಕ ಫಲಕ",
+    "Super Admin": "ಸೂಪರ್ ಅಡ್ಮಿನ್", "superAdmin": "ಸೂಪರ್ ಅಡ್ಮಿನ್", "Super Admin Center": "ಸೂಪರ್ ಅಡ್ಮಿನ್ ಕೇಂದ್ರ",
+    "Sign In": "ಸೈನ್ ಇನ್", "signIn": "ಸೈನ್ ಇನ್", "Sign Out": "ಸೈನ್ ಔಟ್", "signOut": "ಸೈನ್ ಔಟ್",
+    "Travel beyond the Ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
+    "travel beyond the ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
+    "travel india": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
+    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+  }
+};
+
+for (const [lang, map] of Object.entries(CORE_PRESETS)) {
+  for (const [key, val] of Object.entries(map)) {
+    translationCache.set(`${lang}:${key}`, val);
+  }
+}
+
 const DELIMITER = ' \n[[LUK_SPLIT]]\n ';
 const CHUNK_SIZE = 15; // Safe chunk size for web URL parameters
 
