@@ -25,9 +25,14 @@ import ChatResponseCard from './ChatResponseCards';
 const createGreeting = (city = 'Jaipur') => ({
   id: 'greeting',
   role: 'assistant',
-  text: `Namaste & Bon Appétit! 🍽️ I'm Dishly — your personal LukAround culinary & dining concierge. Looking for the best places to eat in ${city}? Ask me for iconic restaurants, famous street food, pure veg spots, rooftop dining, or local delicacies!`,
+  text: `Namaste! 🍽️ I'm Dishly. What would you like to eat in ${city}? Ask me for iconic restaurants, famous street food, or pure veg spots!`,
   type: 'text',
-  suggestions: getDefaultSuggestions(city)
+  suggestions: [
+    `🍛 Top restaurants`,
+    `🍢 Street food`,
+    `🥗 Pure veg spots`,
+    `🍷 Rooftop dining`
+  ]
 });
 
 // ── Format Session Timestamp Helper ───────────────────────────────────────────
@@ -736,12 +741,20 @@ export default function AiChatWidget() {
           <textarea
             ref={inputRef}
             className="chat-input dishly-input"
-            placeholder={`Ask Dishly about restaurants, street food, veg cafes in ${contextCity}… 🍲`}
+            placeholder={`Ask Dishly about food in ${contextCity}… 🍲`}
             value={inputText}
-            onChange={(e) => setInputText(e.target.value)}
+            onChange={(e) => {
+              setInputText(e.target.value);
+              if (inputRef.current) {
+                inputRef.current.style.height = '40px';
+                if (e.target.value.trim()) {
+                  inputRef.current.style.height = `${Math.min(inputRef.current.scrollHeight, 80)}px`;
+                }
+              }
+            }}
             onKeyDown={handleKeyDown}
             rows={1}
-            maxLength={300}
+            maxLength={250}
           />
 
           {/* Microphone Voice Input Button */}

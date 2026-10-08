@@ -16,6 +16,13 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791439294256_k5w",
+      "action": "USER_REGISTER",
+      "details": "User viji (vijii12@gmail.com) registered with role: USER",
+      "performedBy": "vijii12@gmail.com",
+      "timestamp": "2026-10-08T06:01:34.256Z"
+    },
+    {
       "id": "log_1791438518400_9xf",
       "action": "USER_LOGIN",
       "details": "User Ragul R logged in via password",

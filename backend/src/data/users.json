@@ -80,5 +80,21 @@
     "createdAt": "2026-10-07T03:37:21.695Z",
     "lastActive": "2026-10-07T03:37:21.695Z",
     "savedTripsCount": 0
+  },
+  {
+    "id": "usr_1791439294254_vt4v",
+    "name": "viji",
+    "email": "vijii12@gmail.com",
+    "passwordHash": "$2b$10$oQ34L4OoB0Oa79vFZotnGev2WmMPKeEUMfBSkgQD9pgDwoSrBE0Gi",
+    "role": "user",
+    "title": "Enterprise Traveler",
+    "isSuperAdmin": false,
+    "isAdmin": false,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=viji",
+    "status": "active",
+    "provider": "password",
+    "createdAt": "2026-10-08T06:01:34.254Z",
+    "lastActive": "2026-10-08T06:01:34.254Z",
+    "savedTripsCount": 0
   }
 ]

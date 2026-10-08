@@ -2553,16 +2553,37 @@ header {
   flex: 1;
   border: 1.5px solid var(--color-rule);
   border-radius: 14px;
-  padding: 0.6rem 0.85rem;
+  padding: 0.55rem 0.85rem;
   font-family: var(--font-body);
   font-size: 0.84rem;
   color: var(--color-ink);
-  resize: none;
-  min-height: 40px;
-  max-height: 90px;
+  resize: none !important;
+  height: 40px;
+  min-height: 40px !important;
+  max-height: 80px;
   background: var(--color-canvas-warm);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  line-height: 1.45;
+  line-height: 1.35;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.chat-input.dishly-input::-webkit-scrollbar,
+.chat-input::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.chat-input.dishly-input::placeholder,
+.chat-input::placeholder {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  color: var(--color-ink-tertiary);
+  line-height: 1.35;
 }
 
 .chat-input.dishly-input:focus,
