@@ -16,6 +16,13 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791481310501_ygy",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-08T17:41:50.501Z"
+    },
+    {
       "id": "log_1791450418912_5pg",
       "action": "USER_LOGIN",
       "details": "User bharath logged in via password",
