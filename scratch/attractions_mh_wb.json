@@ -1,0 +1,1211 @@
+[
+  {
+    "id": "gateway-of-india",
+    "name": "Gateway of India",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "Iconic 1924 basalt arch monument on the Mumbai harbour front, built to commemorate King George V and Queen Mary's landing in India.",
+    "longDescription": "Mumbai's most famous landmark, designed by Scottish architect George Wittet in the Indo-Saracenic architectural style. Overlooking the Arabian Sea in Colaba, it combines 16th-century Gujarati architectural motifs with Muslim triumphal arch elements. It was the ceremonial departure point for the last British troops leaving independent India in 1948.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 2 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 18.922,
+      "longitude": 72.8347
+    },
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "26-meter yellow basalt arch facing the Arabian Sea",
+      "Directly opposite the historic Taj Mahal Palace Hotel",
+      "Ferry departure terminal for Elephanta Caves island",
+      "Vibrant seaside promenade with street photographers"
+    ],
+    "activities": [
+      "Seaside promenade strolls",
+      "Boarding passenger ferry to Elephanta Caves",
+      "Photographing the monument against the Taj Mahal Palace"
+    ],
+    "nearbyPlaces": [
+      "Taj Mahal Palace Hotel",
+      "Colaba Causeway",
+      "Regal Cinema"
+    ],
+    "travelTips": [
+      "Early morning around 6:30 AM is peaceful before large crowds and touts arrive"
+    ],
+    "accessibility": "Flat paved plaza with wheelchair ramp access",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "gateway-of-india",
+      "mumbai-symbol",
+      "colaba",
+      "indo-saracenic",
+      "harbour"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "marine-drive",
+    "name": "Marine Drive (Queen's Necklace)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "beaches",
+    "shortDescription": "3.6-kilometer arc-shaped promenade along the Arabian Sea, named Queen's Necklace for its string of glowing streetlights at night.",
+    "longDescription": "A world-famous C-shaped six-lane boulevard connecting Nariman Point to Babulnath and Malabar Hill. Backed by the world's second-largest collection of Art Deco buildings (UNESCO World Heritage Site), its wide promenade and sea-facing tetrapods are Mumbai's beloved gathering spot for morning runners and sunset lovers.",
+    "category": [
+      "beaches",
+      "nature",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 18.9432,
+      "longitude": 72.823
+    },
+    "image": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "3.6-km curved waterfront promenade with cool sea breezes",
+      "UNESCO World Heritage Art Deco residential precinct",
+      "The glowing 'Queen's Necklace' curve seen from Malabar Hill at night",
+      "Giant concrete tetrapods along the sea wall"
+    ],
+    "activities": [
+      "Sitting on the promenade wall watching Arabian Sea waves",
+      "Evening chai and roasted corn on the cob (Bhutta)",
+      "Watching Mumbai skyline light up at dusk"
+    ],
+    "nearbyPlaces": [
+      "Girgaon Chowpatty",
+      "Nariman Point",
+      "Wankhede Stadium"
+    ],
+    "travelTips": [
+      "Head to Girgaon Chowpatty at the northern end for Mumbai's famous Bhelpuri and Kulfi"
+    ],
+    "accessibility": "Wide level pedestrian promenade with curb ramps",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "marine-drive",
+      "queens-necklace",
+      "mumbai",
+      "sunset",
+      "art-deco"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "csmt-station",
+    "name": "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage railway terminus designed by F.W. Stevens, blending Victorian Italianate Gothic Revival with traditional Indian craftsmanship.",
+    "longDescription": "Completed in 1887 to mark Queen Victoria's Golden Jubilee (originally Victoria Terminus). A supreme example of Victorian Gothic Revival architecture in India, it features an octagonal ribbed dome topped by the statue of 'Progress', gargoyles, stained glass windows, vaulted tile ceilings, and decorative iron grillwork.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 18.94,
+      "longitude": 72.8353
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Gothic Revival architectural facade",
+      "Octagonal ribbed central dome and stone gargoyles",
+      "Night multicolored architectural illumination",
+      "Heritage railway museum inside the administrative wing"
+    ],
+    "activities": [
+      "Viewing the illuminated stone facade from the viewing gallery",
+      "Heritage walking tour through the central hall"
+    ],
+    "nearbyPlaces": [
+      "BMC Headquarters",
+      "Crawford Market",
+      "Flora Fountain"
+    ],
+    "travelTips": [
+      "The elevated pedestrian bridge opposite the terminus provides the best vantage point for full facade photos, especially when lit up at night"
+    ],
+    "accessibility": "Wheelchair ramps at main station concourse",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "unesco",
+      "csmt",
+      "victoria-terminus",
+      "gothic-architecture",
+      "mumbai"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "elephanta-caves",
+    "name": "Elephanta Caves",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 6th-century rock-cut cave temples on Elephanta Island, housing the monumental 20-foot three-headed Sadashiva sculpture.",
+    "longDescription": "Located on Gharapuri Island in Mumbai Harbour (a 1-hour ferry ride from Gateway of India). Carved between the 5th and 8th centuries AD, Cave 1 is dedicated to Lord Shiva. Its crowning masterpiece is the 20-foot high Trimurti / Sadashiva monolithic bust depicting Shiva as the Creator, Preserver, and Destroyer.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours (including ferry)",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.9633,
+      "longitude": 72.9315
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage rock-cut cave complex",
+      "20-foot Trimurti (Sadashiva) three-headed masterwork sculpture",
+      "Ardhanarishvara and Nataraja stone carvings",
+      "Scenic 1-hour ferry boat ride across Mumbai Harbour"
+    ],
+    "activities": [
+      "Harbour ferry boat ride",
+      "Toy train ride from island jetty to village",
+      "Studying rock-cut Shaivite sculpture"
+    ],
+    "nearbyPlaces": [
+      "Gateway of India",
+      "Mumbai Harbour"
+    ],
+    "travelTips": [
+      "Caves closed on Mondays; take the morning ferry from Gateway of India before 10 AM to avoid crowds and heat"
+    ],
+    "accessibility": "Mini toy train connects ferry jetty to steps; ~120 steps up to cave entrance (palanquins available for seniors)",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "elephanta-caves",
+      "trimurti",
+      "rock-cut",
+      "mumbai-island"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "colaba-causeway",
+    "name": "Colaba Causeway (Shahid Bhagat Singh Road)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "shopping",
+    "shortDescription": "Vibrant shopping arcade and street market lined with quirky antique stores, silver jewellery, leather goods, and iconic Leopold Cafe.",
+    "longDescription": "Mumbai's famous street market corridor connecting Colaba to the old Fort area. Lined with stalls selling brass trinkets, vintage Bollywood posters, silver jewellery, and Kolhapuri sandals, flanked by historic culinary institutions like Leopold Cafe (established 1871) and Cafe Mondegar with Mario Miranda cartoon murals.",
+    "category": [
+      "shopping",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 18.915,
+      "longitude": 72.825
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Bustling street stalls for junk jewellery, books, and antiques",
+      "Iconic Leopold Cafe & Bar (operating since 1871)",
+      "Cafe Mondegar featuring Mario Miranda wall cartoons",
+      "Short walk to Gateway of India"
+    ],
+    "activities": [
+      "Bargaining for unique souvenirs and handicrafts",
+      "Enjoying chilled draught beer and snacks at Leopold Cafe"
+    ],
+    "nearbyPlaces": [
+      "Gateway of India",
+      "Sassoon Docks"
+    ],
+    "travelTips": [
+      "Friendly bargaining is standard at street stalls; visit Cafe Mondegar early to grab a booth by the vintage jukebox"
+    ],
+    "accessibility": "Crowded sidewalks; flat terrain",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "colaba-causeway",
+      "street-shopping",
+      "leopold-cafe",
+      "mumbai"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "siddhivinayak-temple",
+    "name": "Shri Siddhivinayak Ganapati Mandir",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "spiritual",
+    "shortDescription": "One of India's richest and most beloved Ganesha temples, consecrated in 1801 in Prabhadevi, visited by millions of devotees and celebrities.",
+    "longDescription": "Dedicated to Lord Ganesha as Siddhivinayak ('Ganesha who grants your wish'). The sanctum features a small two-and-a-half-foot black stone Ganesha with his trunk turned to the right (a rare and potent attribute). Crowned by a gilded gold dome and visited by thousands of devotees every Tuesday.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "Year-round (Special on Tuesdays)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 19.0168,
+      "longitude": 72.8302
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred right-trunked (Navasacha Ganapati) black stone idol",
+      "Gold-plated sanctum dome (Kalas)",
+      "Celebrity and public pilgrimage epicenter of Mumbai",
+      "Rich tradition of offering Modak and Durva grass"
+    ],
+    "activities": [
+      "Darshan of Lord Siddhivinayak",
+      "Whispering wishes into the ears of silver mouse statues outside the sanctum"
+    ],
+    "nearbyPlaces": [
+      "Shivaji Park",
+      "Dadark Chowpatty"
+    ],
+    "travelTips": [
+      "Tuesdays are extremely crowded with hours-long lines; consider booking online VIP darshan or visit on other weekdays"
+    ],
+    "accessibility": "Wheelchair ramps and special assistance counters for elderly pilgrims",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "siddhivinayak",
+      "ganesha-temple",
+      "mumbai-spiritual",
+      "prabhadevi"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "juhu-beach",
+    "name": "Juhu Beach",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "beaches",
+    "shortDescription": "Mumbai's most famous suburban beach, celebrated for its legendary Pav Bhaji and Pani Puri stalls and celebrity residential neighborhood.",
+    "longDescription": "Stretching along the Arabian Sea in Mumbai's upscale western suburbs, Juhu Beach is legendary for street food stalls serving buttery Pav Bhaji, Sev Puri, Kala Khatta gola, and coconut water. Bordered by bungalows of Bollywood superstars like Amitabh Bachchan and the iconic ISKCON Juhu temple.",
+    "category": [
+      "beaches",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 19.0988,
+      "longitude": 72.8264
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Legendary beachside street food stalls (Pav Bhaji, Sev Puri, Bhel Puri)",
+      "Spotting Bollywood celebrity bungalows nearby",
+      "Lively carnival atmosphere with horse rides and toy vendors",
+      "Golden sunset over the Arabian Sea"
+    ],
+    "activities": [
+      "Tasting authentic Mumbai Pav Bhaji from beach stalls",
+      "Sunset walks along the shoreline sand",
+      "Visiting nearby ISKCON Juhu Temple"
+    ],
+    "nearbyPlaces": [
+      "Prithvi Theatre",
+      "ISKCON Juhu",
+      "Mukteshwar Temple"
+    ],
+    "travelTips": [
+      "Grab coffee and attend an evening play at the legendary Prithvi Theatre just a short walk from the beach"
+    ],
+    "accessibility": "Paved entrance plazas lead onto the sandy beach",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "juhu-beach",
+      "pav-bhaji",
+      "bollywood-suburb",
+      "sunset",
+      "mumbai"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "bandra-worli-sea-link",
+    "name": "Bandra-Worli Sea Link (Rajiv Gandhi Sea Link)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "5.6-kilometer cable-stayed engineering marvel spanning Mahim Bay, symbolizing modern Mumbai with its soaring steel cable pylons.",
+    "longDescription": "Opened in 2009, this eight-lane cable-stayed bridge connects Bandra in the Western Suburbs to Worli in South Mumbai across the open Arabian Sea. Its majestic steel pylon towers rise 128 meters into the sky, illuminated with chromatic lighting at night and framed from Bandra Fort promenade.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 19.03,
+      "longitude": 72.815
+    },
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "5.6-km eight-lane cable-stayed expressway over open sea",
+      "128-meter tall soaring steel cable pylons",
+      "Spectacular view looking back at the Mumbai skyline",
+      "Best photographed from the historic ramparts of Bandra Fort (Castella de Aguada)"
+    ],
+    "activities": [
+      "Driving across the sea link",
+      "Watching sunset and illuminated bridge pylons from Bandra Fort"
+    ],
+    "nearbyPlaces": [
+      "Bandra Fort",
+      "Bandra Bandstand (Mannat)",
+      "Worli Sea Face"
+    ],
+    "travelTips": [
+      "Pedestrians and two-wheelers are prohibited on the bridge itself; enjoy panoramic walking views from Bandra Fort or Worli Sea Face promenade"
+    ],
+    "accessibility": "Viewable from paved promenade at Worli Sea Face and Bandra Fort",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "sea-link",
+      "bandra-worli",
+      "cable-stayed",
+      "modern-marvel",
+      "mumbai"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "shaniwar-wada",
+    "name": "Shaniwar Wada",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Pune",
+    "citySlug": "pune",
+    "type": "forts-palaces",
+    "shortDescription": "Historic 18th-century fortified seat of the Maratha Peshwa rulers, famous for its spiked Dilli Darwaza and tragic Bajirao-Mastani lore.",
+    "longDescription": "Built in 1732 by Peshwa Baji Rao I as the palace fort of the Maratha Empire. Though much of the seven-storey timber palace was destroyed by an unexplained fire in 1828, its massive stone ramparts, nine bastion towers, spiked Delhi Gate (designed to deter elephant battering), and lotus-shaped fountain (Hazari Karanje) remain standing.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.5196,
+      "longitude": 73.8553
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Massive Dilli Darwaza with steel elephant-repelling spikes",
+      "Hazari Karanje (Fountain of a Thousand Jets)",
+      "Surviving stone fortifications and rampart battlements",
+      "Evening Sound and Light show recreating Maratha history"
+    ],
+    "activities": [
+      "Walking atop the elevated fortress ramparts",
+      "Attending evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Dagdusheth Halwai Ganpati",
+      "Lal Mahal",
+      "Tulsi Baug"
+    ],
+    "travelTips": [
+      "Visit nearby Shreemant Dagdusheth Ganpati temple right across the street in the same trip"
+    ],
+    "accessibility": "Level courtyards; stairs to upper ramparts",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "shaniwar-wada",
+      "peshwa",
+      "maratha-empire",
+      "bajirao-mastani",
+      "pune"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "aga-khan-palace",
+    "name": "Aga Khan Palace",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Pune",
+    "citySlug": "pune",
+    "type": "heritage",
+    "shortDescription": "Italianate palace built in 1892, where Mahatma Gandhi was imprisoned during the Quit India movement, housing Gandhi and Kasturba memorials.",
+    "longDescription": "Built by Sultan Muhammed Shah Aga Khan III in 1892 as a famine relief measure. It is a monument of national importance where Mahatma Gandhi, his wife Kasturba Gandhi, and secretary Mahadev Desai were imprisoned following the Quit India resolution in 1942. The serene garden grounds house the samadhis of Kasturba Gandhi and Mahadev Desai, along with an extensive Gandhi memorial museum.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.5524,
+      "longitude": 73.9015
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Italianate arches and spacious sweeping garden lawns",
+      "Preserved rooms where Mahatma Gandhi lived during detention",
+      "Samadhi memorials of Kasturba Gandhi and Mahadev Desai",
+      "Personal artifacts, khadi looms, and letters of Mahatma Gandhi"
+    ],
+    "activities": [
+      "Self-guided memorial museum walk",
+      "Peaceful contemplation in the memorial gardens"
+    ],
+    "nearbyPlaces": [
+      "Osho International Meditation Resort",
+      "Koregaon Park"
+    ],
+    "travelTips": [
+      "Very peaceful and quiet; ideal for historical photography and reflection"
+    ],
+    "accessibility": "Paved garden pathways and ramp access to ground floor museum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "aga-khan-palace",
+      "gandhi-memorial",
+      "quit-india",
+      "pune",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "ajanta-caves",
+    "name": "Ajanta Caves",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage masterpiece of 30 rock-cut Buddhist caves dating from 2nd century BCE, world-renowned for exquisite mural frescoes.",
+    "longDescription": "Carved into the sheer cliff face of a horseshoe-shaped gorge along the Waghur River. Discovered in 1819 by British officer John Smith during a tiger hunt. The caves contain masterworks of ancient Buddhist religious art, depicting Jataka tales, the life of Buddha, and the celebrated Padmapani and Vajrapani Bodhisattva frescoes painted with natural mineral pigments.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "4 - 5 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 20.5519,
+      "longitude": 75.7033
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's finest surviving ancient Buddhist fresco paintings",
+      "Padmapani Bodhisattva holding the blue lotus flower",
+      "Horseshoe-shaped canyon amphitheater setting",
+      "Cave 26 colossal 29-foot Reclining Buddha mahaparinirvana sculpture"
+    ],
+    "activities": [
+      "Studying 2,000-year-old fresco murals with torchlight",
+      "Hiking to the hilltop viewpoint across the gorge"
+    ],
+    "nearbyPlaces": [
+      "Ellora Caves",
+      "Chhatrapati Sambhaji Nagar (100 km)"
+    ],
+    "travelTips": [
+      "Closed on Mondays; eco-friendly shuttle buses take visitors from the T-junction amenities center to cave entrance"
+    ],
+    "accessibility": "Ramp and pathway along cliff; sedan chairs (palki) available for elderly visitors",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "ajanta-caves",
+      "buddhist-art",
+      "padmapani",
+      "rock-cut"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "ellora-caves",
+    "name": "Ellora Caves & Kailash Temple",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage site of 34 rock-cut temples, featuring the Kailash Temple—the world's largest monolithic rock-cut structure carved top-down.",
+    "longDescription": "Spanning 2 kilometers of Charanandri basalt cliffs, Ellora comprises 34 monasteries and temples representing Buddhist, Hindu, and Jain traditions. Cave 16 (Kailash Temple), commissioned by Rashtrakuta King Krishna I, was carved top-down out of a single volcanic basalt cliff, removing 200,000 tons of rock with chisels and hammers to reveal a multi-storey temple twice the size of the Parthenon.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "4 - 5 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 20.0268,
+      "longitude": 75.1792
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Kailash Temple (Cave 16) - World's largest monolithic stone monument",
+      "Carved top-down without scaffolding from a single giant cliff",
+      "Harmonious coexistence of Hindu, Buddhist, and Jain cave monuments",
+      "Ravana shaking Mount Kailash rock relief sculpture"
+    ],
+    "activities": [
+      "Marveling at the monumental Kailash Temple monolith",
+      "Exploring the multi-storey Buddhist Chaitya Cave 10 (Carpenter's Cave)",
+      "Visiting Indra Sabha Jain cave carvings"
+    ],
+    "nearbyPlaces": [
+      "Grishneshwar Jyotirlinga Temple",
+      "Daulatabad Fort",
+      "Bibi Ka Maqbara"
+    ],
+    "travelTips": [
+      "Closed on Tuesdays; rent an official audio guide at the entrance gate"
+    ],
+    "accessibility": "Cave 16 is accessible at ground level; side caves require walking across paved paths",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "kailash-temple",
+      "ellora-caves",
+      "monolithic",
+      "rashtrakuta"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "bibi-ka-maqbara",
+    "name": "Bibi Ka Maqbara (Taj of the Deccan)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "heritage",
+    "shortDescription": "The 'Dakkhani Taj' commissioned in 1668 by Mughal Prince Azam Shah for his mother Dilras Banu Begum, closely resembling the Taj Mahal.",
+    "longDescription": "Built between 1660 and 1668 by Prince Azam Shah in memory of his mother, Empress Dilras Banu Begum (Rabia-ud-Daurani). Designed by architect Ata-Ullah (son of Ustad Ahmad Lahori, principal architect of the Taj Mahal). Surrounded by a Charbagh garden with reflecting water pools and four soaring minarets, it stands as an impressive Deccan counterpart to the Taj Mahal.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 19.9014,
+      "longitude": 75.32
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Striking architectural resemblance to the Taj Mahal",
+      "White marble octagonal central tomb with lattice jalis",
+      "Four freestanding 100-foot minarets at the corners",
+      "Charbagh Persian garden and reflecting waterways"
+    ],
+    "activities": [
+      "Heritage photography comparing with Taj Mahal",
+      "Strolling through the Charbagh gardens"
+    ],
+    "nearbyPlaces": [
+      "Panchakki",
+      "Daulatabad Fort",
+      "Ellora Caves"
+    ],
+    "travelTips": [
+      "Visit in late afternoon to catch warm sunset lighting on the marble dome"
+    ],
+    "accessibility": "Paved garden pathways and ramp access to the raised mausoleum plinth",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "bibi-ka-maqbara",
+      "deccan-taj",
+      "mughal-architecture",
+      "aurangabad"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "daulatabad-fort",
+    "name": "Daulatabad Fort (Devagiri)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "forts-palaces",
+    "shortDescription": "Impregnable 12th-century conical rock fortress featuring a 200-meter sheer cliff, moat with crocodiles, and pitch-black labyrinth trap (Andhari).",
+    "longDescription": "Originally Devagiri under the Yadava dynasty, renamed Daulatabad by Muhammad bin Tughluq who infamously ordered the entire population of Delhi to march 1,100 km here in 1327. One of the most impregnable fortresses of medieval India, it features three concentric concentric defensive rings, a 50-foot moat, and the pitch-black 'Andhari' maze engineered with deadly optical traps and false steps.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 19.9431,
+      "longitude": 75.2131
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Conical pyramid rock hill rising 200 meters vertically",
+      "The dark labyrinth 'Andhari' maze designed to trap invaders",
+      "110-foot pinkish-red Chand Minar victory tower",
+      "Colossal Mendha Top cannon on summit ramparts"
+    ],
+    "activities": [
+      "Navigating the pitch-black Andhari maze with a torch guide",
+      "Climbing to the summit for 360-degree Deccan views"
+    ],
+    "nearbyPlaces": [
+      "Ellora Caves",
+      "Bibi Ka Maqbara"
+    ],
+    "travelTips": [
+      "Hire a local guide with a lamp to guide you safely through the subterranean pitch-black Andhari passage"
+    ],
+    "accessibility": "Strenuous uphill climb involving over 750 stone steps; not wheelchair accessible",
+    "familyFriendly": false,
+    "budgetLevel": "budget",
+    "tags": [
+      "daulatabad-fort",
+      "devagiri",
+      "andhari-maze",
+      "tughluq",
+      "medieval-fort"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "victoria-memorial",
+    "name": "Victoria Memorial Hall",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "heritage",
+    "shortDescription": "Majestic white Makrana marble monument commissioned by Lord Curzon in 1906, set in 64 acres of royal gardens, the pride of Kolkata.",
+    "longDescription": "Built between 1906 and 1921 to commemorate Queen Victoria. Designed by Sir William Emerson in Indo-Saracenic and British neoclassical styles using the same Makrana marble as the Taj Mahal. Topped by a 16-foot bronze Angel of Victory that rotates with the wind. The interior houses 25 galleries showcasing British Raj paintings by Thomas Daniell, historical maps, and royal memorabilia.",
+    "category": [
+      "heritage",
+      "architecture",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.5448,
+      "longitude": 88.3426
+    },
+    "image": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "White Makrana marble monument with 184-foot central dome",
+      "16-foot rotating bronze 'Angel of Victory' weather vane",
+      "Royal Gallery with paintings of Queen Victoria and Prince Albert",
+      "64 acres of landscaped gardens with reflecting pools"
+    ],
+    "activities": [
+      "Self-guided tour of the grand marble galleries",
+      "Evening Sound and Light Show 'Pride & Glory'",
+      "Strolling along reflecting pools"
+    ],
+    "nearbyPlaces": [
+      "St. Paul's Cathedral",
+      "Maidan",
+      "Indian Museum"
+    ],
+    "travelTips": [
+      "Closed on Mondays; separate tickets for garden access and interior museum galleries"
+    ],
+    "accessibility": "Wheelchair ramps at museum entrance; flat paved garden pathways",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "victoria-memorial",
+      "kolkata",
+      "makrana-marble",
+      "british-raj",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "howrah-bridge",
+    "name": "Howrah Bridge (Rabindra Setu)",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "heritage",
+    "shortDescription": "The world's busiest cantilever bridge, a 1943 engineering marvel built with 26,500 tons of high-tensile steel without a single nut or bolt.",
+    "longDescription": "Spanning 705 meters across the Hooghly River, connecting Kolkata and Howrah. Commissioned in 1943, this iconic balanced cantilever bridge was constructed using Tata steel without any nuts or bolts, held together entirely by hot rivets. It carries over 100,000 vehicles and 150,000 pedestrians daily.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 22.5851,
+      "longitude": 88.3468
+    },
+    "image": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's busiest cantilever bridge constructed without nuts or bolts",
+      "Iconic symbol of Kolkata seen in countless films",
+      "Howrah Flower Market bustling under the bridge arches",
+      "Spectacular night lighting illuminating the steel lattice"
+    ],
+    "activities": [
+      "Walking across the pedestrian footpath across the Hooghly",
+      "Visiting the vibrant wholesale Howrah Flower Market at sunrise",
+      "Ferry boat ride between Howrah and Babu Ghat for prime water views"
+    ],
+    "nearbyPlaces": [
+      "Howrah Railway Station",
+      "Mallick Ghat Flower Market",
+      "Prinsep Ghat"
+    ],
+    "travelTips": [
+      "Take a ₹6 public river ferry from Fairlie Place Ghat to Howrah for the most dramatic angle looking up at the steel bridge from water level"
+    ],
+    "accessibility": "Pedestrian sidewalks on both sides of the bridge",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "howrah-bridge",
+      "rabindra-setu",
+      "cantilever",
+      "hooghly-river",
+      "kolkata"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "dakshineswar-kali-temple",
+    "name": "Dakshineswar Kali Temple",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "spiritual",
+    "shortDescription": "19th-century Navaratna nine-spired temple on the eastern bank of the Hooghly, where mystic saint Sri Ramakrishna Paramahamsa served as head priest.",
+    "longDescription": "Built in 1855 by philanthropist Rani Rashmoni. Dedicated to Bhavatarini, an aspect of Goddess Kali. The nine-spired Navaratna temple is surrounded by 12 identical Shiva temples along the river ghat, a shrine to Radha Krishna, and the preserved room of Sri Ramakrishna Paramahamsa who achieved divine visions here.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.653,
+      "longitude": 88.357
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Navaratna (nine-spired) traditional Bengali architectural temple",
+      "Preserved living room and Panchavati garden of Sri Ramakrishna",
+      "Row of 12 riverside Shiva temples along the holy Hooghly ghat",
+      "Ferry connection directly across the river to Belur Math"
+    ],
+    "activities": [
+      "Darshan of Goddess Bhavatarini",
+      "Meditating in Ramakrishna's sacred Panchavati grove",
+      "Taking the scenic river ferry across to Belur Math"
+    ],
+    "nearbyPlaces": [
+      "Belur Math (Across the river)",
+      "Adyapith Temple"
+    ],
+    "travelTips": [
+      "Take the country ferry boat from Dakshineswar Ghat directly across the river to Belur Math for an iconic spiritual twin-pilgrimage"
+    ],
+    "accessibility": "Paved temple courtyard; skywalk connects Dakshineswar railway station directly to temple gates",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "dakshineswar",
+      "kali-temple",
+      "ramakrishna",
+      "rani-rashmoni",
+      "hooghly"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "indian-museum-kolkata",
+    "name": "Indian Museum (Jadu Ghar)",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "museums",
+    "shortDescription": "Ninth oldest regular museum in the world (founded in 1814), housing a 4,000-year-old Egyptian mummy and Bharhut Buddhist stupa railings.",
+    "longDescription": "Known locally as 'Jadu Ghar' (House of Magic). Founded in 1814 by Danish botanist Dr. Nathaniel Wallich at the Asiatic Society of Bengal. Spanning 35 galleries in an imposing neoclassical colonnaded building, it houses rare dinosaur fossils, the Gandhara Buddha sculptures, an actual 4,000-year-old Egyptian mummy, and meteorites.",
+    "category": [
+      "museums",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.558,
+      "longitude": 88.351
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "4,000-year-old preserved Egyptian mummy",
+      "2nd-century BCE Bharhut Buddhist sandstone stupa railings",
+      "Prehistoric dinosaur and Siwalik mammal fossil skeletons",
+      "Rare collection of meteorites and gemstones"
+    ],
+    "activities": [
+      "Exploring the archaeological sculpture galleries",
+      "Viewing ancient Egyptian mummy artifacts"
+    ],
+    "nearbyPlaces": [
+      "Park Street",
+      "New Market",
+      "Victoria Memorial"
+    ],
+    "travelTips": [
+      "Closed on Mondays; located right on Park Street metro station"
+    ],
+    "accessibility": "Ground floor accessible; elevators available to upper galleries",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "indian-museum",
+      "jadu-ghar",
+      "mummy",
+      "oldest-museum",
+      "kolkata"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "tiger-hill-darjeeling",
+    "name": "Tiger Hill Sunrise",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "type": "hill-stations",
+    "shortDescription": "Vantage point at 8,482 feet (2,590 m) famous for dawn vistas of sunrise illuminating Mount Kanchenjunga and Mount Everest in golden light.",
+    "longDescription": "Located 11 km from Darjeeling town. As dawn breaks over the Eastern Himalayas, the sun's first rays illuminate the snowy twin peaks of Mount Kanchenjunga (world's 3rd highest peak) in shades of indigo, gold, and blazing crimson. On exceptionally clear mornings, the tip of Mount Everest (8,848m) is visible in the distant western horizon.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to December & March to April",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Early Morning (4:00 AM)",
+    "coordinates": {
+      "latitude": 27,
+      "longitude": 88.28
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunrise over Mount Kanchenjunga turning peaks from pink to gold",
+      "Distant views of Mount Everest, Lhotse, and Makalu on clear mornings",
+      "Multi-tiered glass-enclosed observatory tower"
+    ],
+    "activities": [
+      "Waking up at 3:30 AM for the pre-dawn mountain drive",
+      "Watching sunrise over the Himalayan range",
+      "Sipping hot ginger lemon tea from local vendors at freezing dawn"
+    ],
+    "nearbyPlaces": [
+      "Batasia Loop",
+      "Ghoom Monastery"
+    ],
+    "travelTips": [
+      "Book your shared taxi or private cab the previous evening; leave your hotel by 4:00 AM to beat heavy traffic at the summit gate"
+    ],
+    "accessibility": "Paved viewing tower with stairs; lower courtyard accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "tiger-hill",
+      "kanchenjunga",
+      "everest-view",
+      "sunrise",
+      "darjeeling"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "darjeeling-himalayan-railway",
+    "name": "Darjeeling Himalayan Railway (DHR Toy Train)",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 2-foot narrow gauge railway operating since 1881, featuring vintage steam engines and loops around Batasia.",
+    "longDescription": "Inaugurated in 1881, the DHR was the first mountain railway in India to achieve UNESCO World Heritage status. Climbing from New Jalpaiguri at 100 meters to Ghoom at 2,258 meters using ingenious loops and Z-reverses, the iconic 'Joy Ride' steam train runs between Darjeeling, Batasia Loop, and Ghoom.",
+    "category": [
+      "heritage",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "2 hours (Joy Ride)",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.04,
+      "longitude": 88.26
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Mountain Railways status",
+      "Vintage British-era steam locomotives blowing plumes of white smoke",
+      "Scenic 2-hour Joy Ride between Darjeeling and Ghoom",
+      "360-degree loop around the Batasia war memorial garden"
+    ],
+    "activities": [
+      "Riding the vintage steam locomotive Joy Ride",
+      "Visiting the DHR Railway Museum at Ghoom Station (India's highest railway station)"
+    ],
+    "nearbyPlaces": [
+      "Batasia Loop",
+      "Ghoom Monastery",
+      "The Mall Road"
+    ],
+    "travelTips": [
+      "Choose the steam engine option rather than diesel for the authentic historical experience; book early on IRCTC"
+    ],
+    "accessibility": "Narrow-gauge historic railway coaches; assistance required for boarding",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "toy-train",
+      "dhr",
+      "steam-engine",
+      "darjeeling"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "batasia-loop",
+    "name": "Batasia Loop & War Memorial",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "type": "heritage",
+    "shortDescription": "Ingenious spiral railway loop set in a manicured flower garden, offering 360-degree views of the Kanchenjunga snow range.",
+    "longDescription": "Constructed in 1919 to enable the toy train to gently negotiate a steep 140-foot gradient by spiraling 360 degrees around itself. At the center of this circular floral garden stands the Gorkha War Memorial honoring brave soldiers of the Gorkha regiments. As the toy train circles the loop, passengers enjoy unobstructed panoramas of the Kanchenjunga massif.",
+    "category": [
+      "heritage",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 27.0167,
+      "longitude": 88.2467
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Ingenious 360-degree spiral railway loop",
+      "Gorkha War Memorial cenotaph",
+      "Lush botanical gardens with seasonal rhododendrons",
+      "Classic postcard photo of the Toy Train with Mount Kanchenjunga in the background"
+    ],
+    "activities": [
+      "Watching the steam toy train negotiate the spiral loop",
+      "Photographing Kanchenjunga across the circular gardens"
+    ],
+    "nearbyPlaces": [
+      "Ghoom Monastery",
+      "Tiger Hill",
+      "Darjeeling Town (5 km)"
+    ],
+    "travelTips": [
+      "The DHR Joy Ride stops here for 10 minutes; can also be reached easily by road taxi"
+    ],
+    "accessibility": "Paved, level circular garden pathways",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "batasia-loop",
+      "toy-train",
+      "gorkha-memorial",
+      "kanchenjunga",
+      "darjeeling"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "sundarbans-national-park",
+    "name": "Sundarbans National Park & Tiger Reserve",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Sundarbans",
+    "citySlug": "sundarbans",
+    "type": "wildlife",
+    "shortDescription": "UNESCO World Heritage mangrove forest, the world's largest delta and only habitat where Royal Bengal Tigers swim in saline tidal waters.",
+    "longDescription": "Formed by the confluence of the Ganga, Brahmaputra, and Meghna rivers across India and Bangladesh. Covering 10,000 square kilometers, it is the world's largest halophytic mangrove forest. Famous for the unique swimming Royal Bengal Tigers, saltwater crocodiles, Irrawaddy dolphins, and spotted deer navigating dense sundari tree root networks.",
+    "category": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day (Multi-Day Cruise)",
+    "coordinates": {
+      "latitude": 21.9497,
+      "longitude": 89.1833
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage & Biosphere Reserve",
+      "Only mangrove habitat inhabited by wild Royal Bengal Tigers",
+      "Exclusive boat cruise safaris through narrow tidal channels and creeks",
+      "Saltwater crocodiles basking on mudbanks"
+    ],
+    "activities": [
+      "Boat safari cruises through dense mangrove estuaries",
+      "Visiting watchtowers at Sajnekhali, Sudhanyakhali, and Do Banki",
+      "Canopy walkway through mangrove tree crowns at Do Banki"
+    ],
+    "nearbyPlaces": [
+      "Sajnekhali Bird Sanctuary",
+      "Pakhiralay",
+      "Kolkata (100 km)"
+    ],
+    "travelTips": [
+      "All exploration is conducted strictly from motorized wooden boats; no walking safaris permitted in core tiger zones"
+    ],
+    "accessibility": "Requires boarding safari boats and climbing watchtower staircases",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "sundarbans",
+      "mangroves",
+      "swimming-tigers",
+      "delta",
+      "wildlife"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  }
+]

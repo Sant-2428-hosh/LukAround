@@ -1,0 +1,1464 @@
+[
+  {
+    "id": "bangalore-palace",
+    "name": "Bangalore Palace",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "forts-palaces",
+    "shortDescription": "Tudor-revival royal palace built in 1878 inspired by England's Windsor Castle, featuring fortified towers, battlements, and Spanish ceramic benches.",
+    "longDescription": "Purchased by the Mysore royal family (Wodeyars) in 1884, Bangalore Palace is an extraordinary specimen of Tudor-style architecture in South India. Featuring wooden battlements, fortified crenellations, stained glass windows, and grand durbar halls with yellow ceramic tiles and 19th-century paintings by Raja Ravi Varma.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.9988,
+      "longitude": 77.5921
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Windsor Castle-inspired Tudor architectural facade",
+      "Durbar Hall with stained glass and yellow Spanish tiles",
+      "Original Raja Ravi Varma paintings collection",
+      "Sprawling royal lawns that host international rock concerts"
+    ],
+    "activities": [
+      "Audio-guided heritage palace tour",
+      "Exploring royal carriage and vintage photography rooms"
+    ],
+    "nearbyPlaces": [
+      "Sankey Tank",
+      "Cubbon Park",
+      "National Gallery of Modern Art"
+    ],
+    "travelTips": [
+      "Audio guide in multiple languages included with admission ticket; photography fee is separate"
+    ],
+    "accessibility": "Ground floor accessible; staircase to upper Durbar Hall",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "bangalore-palace",
+      "wodeyar",
+      "tudor-architecture",
+      "bengaluru"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "lalbagh-botanical-garden",
+    "name": "Lalbagh Botanical Garden",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "nature",
+    "shortDescription": "Historic 240-acre botanical garden commissioned by Hyder Ali in 1760, famous for its London Crystal Palace-modeled Glass House and ancient rock.",
+    "longDescription": "Commissioned by Hyder Ali and completed by Tipu Sultan, Lalbagh houses over 1,850 species of rare exotic flora and trees centuries old. The focal point is the grand cast-iron Glass House modeled after London's Crystal Palace, which hosts iconic Republic Day and Independence Day flower shows, alongside a 3-billion-year-old Peninsular Gneiss rock formation.",
+    "category": [
+      "nature",
+      "heritage",
+      "family"
+    ],
+    "bestTimeToVisit": "Year-round (Flower shows in Jan & Aug)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.9507,
+      "longitude": 77.5848
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Victorian Glass House modeled after Crystal Palace",
+      "Lalbagh Rock (3,000-million-year-old Peninsular Gneiss)",
+      "Annual Republic Day and Independence Day mega flower shows",
+      "Lake and lotus ponds with resident aquatic birds"
+    ],
+    "activities": [
+      "Early morning joggers walk",
+      "Flower show photography",
+      "Climbing the ancient rock to Kempegowda watchtower"
+    ],
+    "nearbyPlaces": [
+      "MTR (Mavalli Tiffin Room for iconic masala dosa)",
+      "Cubbon Park"
+    ],
+    "travelTips": [
+      "Don't miss breakfast at historic MTR located right beside Lalbagh's Main Gate"
+    ],
+    "accessibility": "Paved pathways throughout; electric buggy rides available for senior citizens",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "lalbagh",
+      "glass-house",
+      "botanical-garden",
+      "flower-show",
+      "bengaluru"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "cubbon-park",
+    "name": "Cubbon Park",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "nature",
+    "shortDescription": "The green lungs of Bengaluru spanning 300 acres, filled with bamboo thickets, colonial statues, and heritage red brick public buildings.",
+    "longDescription": "Established in 1870 by British Commissioner Sir Mark Cubbon. This lush sanctuary features over 6,000 trees, wide asphalted walking avenues, and prominent heritage buildings including the neoclassical red-brick Attara Kacheri (High Court), Seshadri Iyer Memorial Library, and Bal Bhavan.",
+    "category": [
+      "nature",
+      "culture",
+      "family"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 12.9763,
+      "longitude": 77.5929
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "300 acres of dense urban canopy with bamboo groves",
+      "Attara Kacheri (Historic red brick High Court)",
+      "Seshadri Iyer Memorial Library with rose garden",
+      "Vehicle-free on Sundays for cyclists, dog lovers, and walkers"
+    ],
+    "activities": [
+      "Morning running and rollerblading",
+      "Sunday dog park social gatherings",
+      "Reading outside the heritage red library"
+    ],
+    "nearbyPlaces": [
+      "Vidhana Soudha",
+      "UB City",
+      "Visvesvaraya Industrial & Technological Museum"
+    ],
+    "travelTips": [
+      "Sundays are completely pedestrianized with fun flea markets and open-air pet meetups"
+    ],
+    "accessibility": "Smooth wide paved avenues ideal for prams and wheelchairs",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "cubbon-park",
+      "green-lungs",
+      "bengaluru",
+      "running",
+      "dogs"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "vidhana-soudha",
+    "name": "Vidhana Soudha",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "heritage",
+    "shortDescription": "Asia's largest legislative building, an imposing 1956 Neo-Dravidian granite marvel inscribed with 'Government Work is God's Work'.",
+    "longDescription": "Constructed under Chief Minister Kengal Hanumanthaiah between 1951 and 1956 using thousands of convict stone masons. Built entirely of Bangalore granite in the Neo-Dravidian architectural style, it features four-faced Ashoka lion capitals, grand stone stairs, and is illuminated on Sunday evenings by 10,000 incandescent lamps.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.9797,
+      "longitude": 77.5907
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand Neo-Dravidian granite architectural facade",
+      "Famous inscription 'Government Work is God's Work'",
+      "Brilliant illumination on Sunday and holiday evenings (6:00 PM - 8:30 PM)",
+      "Attara Kacheri red stone building directly opposite"
+    ],
+    "activities": [
+      "Exterior architectural photography",
+      "Viewing Sunday evening night illumination"
+    ],
+    "nearbyPlaces": [
+      "Cubbon Park",
+      "Vikasa Soudha",
+      "High Court of Karnataka"
+    ],
+    "travelTips": [
+      "Public entry to the interior is restricted without official passes; the exterior view and Sunday lighting are public and breathtaking"
+    ],
+    "accessibility": "Paved viewing plaza with level walking paths",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "vidhana-soudha",
+      "neo-dravidian",
+      "granite",
+      "bengaluru"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "iskcon-bangalore",
+    "name": "ISKCON Sri Radha Krishna Temple",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "spiritual",
+    "shortDescription": "Monumental hill-temple atop Hare Krishna Hill combining modern glass-and-granite architecture with traditional gopuram aesthetics.",
+    "longDescription": "Inaugurated in 1997 by Shankar Dayal Sharma, this is one of the largest ISKCON temple complexes in the world. Situated on a seven-acre hillock at Rajajinagar, it features a 56-foot gold-plated dhwaja-stambha, multiple gilded sanctums, open-air amphitheaters, and the global headquarters of the Akshaya Patra Foundation.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 13.0098,
+      "longitude": 77.5511
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "56-foot gold-plated flag post (Dhwaja Stambha)",
+      "Intricate glass arch ceilings and chandelier lighting",
+      "Continuous melodious Hare Krishna maha-mantra chanting",
+      "Delicious hot khichdi and sweet prasadam distributed to all"
+    ],
+    "activities": [
+      "Darshan of Radha Krishna deities",
+      "Attending evening grand Maha Aarti",
+      "Sampling traditional South Indian sweets at Higher Taste"
+    ],
+    "nearbyPlaces": [
+      "Orion Mall",
+      "World Trade Center Bangalore"
+    ],
+    "travelTips": [
+      "Footwear counters and electronic lockers available; avoid visiting during peak Sunday noon rush if seeking quiet prayer"
+    ],
+    "accessibility": "Escalators and elevators assist devotees reaching the hilltop sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "iskcon",
+      "radha-krishna",
+      "hare-krishna-hill",
+      "bengaluru"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ub-city",
+    "name": "UB City Luxury Boulevard",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "shopping",
+    "shortDescription": "India's premier luxury commercial and lifestyle landmark featuring global haute couture fashion houses, fine dining terraces, and open-air amphitheater.",
+    "longDescription": "Developed jointly by Dr. Vijay Mallya and Prestige Group on Vittal Mallya Road. UB City encompasses four towers crowned with Greco-Roman arches, luxury fashion flagships (Louis Vuitton, Rolex, Burberry), rooftop lounge restaurants, and the Sublime Galleria art gallery.",
+    "category": [
+      "shopping",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.9716,
+      "longitude": 77.5958
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Ultra-luxury global fashion brand boutiques",
+      "Rooftop dining with skyline views of Bengaluru",
+      "Sublime Galleria contemporary art gallery on sky bridge",
+      "Piazza open-air amphitheater hosting jazz concerts"
+    ],
+    "activities": [
+      "Fine dining at open-air rooftop lounges",
+      "Luxury window shopping and art gallery browsing"
+    ],
+    "nearbyPlaces": [
+      "Cubbon Park",
+      "MG Road",
+      "Lavelle Road"
+    ],
+    "travelTips": [
+      "Book rooftop tables in advance for weekend dinners; dress code is smart casual"
+    ],
+    "accessibility": "Elevators, escalators, and wheelchair ramps throughout all four towers",
+    "familyFriendly": true,
+    "budgetLevel": "luxury",
+    "tags": [
+      "ub-city",
+      "luxury-shopping",
+      "fine-dining",
+      "skyline",
+      "bengaluru"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "mysore-palace",
+    "name": "Mysore Palace (Amba Vilas Palace)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "forts-palaces",
+    "shortDescription": "India's most visited royal palace after the Taj Mahal, an Indo-Saracenic marvel illuminated by 97,000 golden incandescent bulbs every Sunday.",
+    "longDescription": "Designed by British architect Henry Irwin and completed in 1912 after the original wooden palace burned down. The official residence of the Wadiyar dynasty features three-storey grey granite battlements, marble domes, the dazzling stained-glass Peacock Pavilion (Kalyana Mandapa), and the Golden Throne carved from 200 kg of pure gold.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March (Special during Dasara)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.3051,
+      "longitude": 76.6551
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunday night illumination by 97,000 golden bulbs",
+      "Peacock Pavilion (Kalyana Mandapa) stained-glass dome",
+      "Indo-Saracenic rose marble domes and grey granite arches",
+      "Epicenter of the world-famous 10-day Mysuru Dasara festival"
+    ],
+    "activities": [
+      "Audio-guided palace interior tour",
+      "Watching Sunday illumination and police brass band performance",
+      "Attending Mysore Dasara Jumboo Savari procession in autumn"
+    ],
+    "nearbyPlaces": [
+      "Chamundi Hills",
+      "Devaraja Market",
+      "Mysuru Zoo"
+    ],
+    "travelTips": [
+      "Do not miss Sunday evening illumination from 7:00 PM to 7:45 PM; footwear must be deposited outside before entering the palace interior"
+    ],
+    "accessibility": "Ramps and golf buggies for elders across the vast palace courtyard",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "mysore-palace",
+      "amba-vilas",
+      "dasara",
+      "illumination",
+      "wadiyar"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "chamundi-hills",
+    "name": "Chamundi Hills & Monolithic Nandi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "spiritual",
+    "shortDescription": "Sacred 1,000-meter hilltop shrine dedicated to Goddess Chamundeshwari, featuring a 1,008-step pilgrimage trail and a 16-foot monolithic Nandi.",
+    "longDescription": "Rising 1,062 meters above sea level overlooking Mysuru, this hill is crowned by the 17th-century Chamundeshwari Temple with a seven-tier gopuram. Halfway up the traditional 1,008-step walking route sits the colossal 16-foot high, 24-foot long monolithic black granite Nandi bull carved in 1659.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.2724,
+      "longitude": 76.671
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "16-foot monolithic black granite Nandi Bull",
+      "Panoramic views of Mysore Palace and city from hill summit",
+      "Seven-tiered golden painted gopuram of Chamundeshwari",
+      "Statue of demon Mahishasura at hill entry"
+    ],
+    "activities": [
+      "Climbing the 1,008 ancient stone stairs",
+      "Darshan of Goddess Chamundeshwari",
+      "Viewing illuminated Mysuru city at night"
+    ],
+    "nearbyPlaces": [
+      "Mysore Palace",
+      "Karanji Lake"
+    ],
+    "travelTips": [
+      "City buses run frequently from Mysore city bus stand directly to the hilltop temple"
+    ],
+    "accessibility": "Motorable road to the top; VIP darshan queues provide expedited access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "chamundi-hills",
+      "nandi-monolith",
+      "chamundeshwari",
+      "mysuru"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "brindavan-gardens",
+    "name": "Brindavan Gardens & KRS Dam",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "nature",
+    "shortDescription": "Famous 60-acre terraced garden laid out across the Kaveri River below Krishnarajasagara Dam, famed for its evening musical fountain show.",
+    "longDescription": "Laid out between 1927 and 1932 by Sir Mirza Ismail, Dewan of Mysore, across the majestic Krishna Raja Sagara (KRS) dam built by Sir M. Visvesvaraya. The terraced Mughal-style garden features illuminated fountains, topiaries, flowerbeds, and a computerized dancing musical fountain show.",
+    "category": [
+      "nature",
+      "family",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.423,
+      "longitude": 76.572
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Computerized dancing musical fountain show",
+      "Terraced Mughal-style water cascades below KRS Dam",
+      "Row and motor boating on the connecting lake channel",
+      "Spectacular night multicolored lighting"
+    ],
+    "activities": [
+      "Watching the evening musical fountain water show",
+      "Boating across the river channel between North and South gardens"
+    ],
+    "nearbyPlaces": [
+      "Ranganathittu Bird Sanctuary",
+      "Srirangapatna"
+    ],
+    "travelTips": [
+      "Musical fountain show starts around 6:30 PM on weekdays and 6:30 PM & 7:30 PM on weekends"
+    ],
+    "accessibility": "Wide paved terraces; stairs lead between upper and lower garden levels",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "brindavan-gardens",
+      "musical-fountain",
+      "krs-dam",
+      "mysuru"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "st-philomenas-cathedral",
+    "name": "St. Philomena's Cathedral",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "spiritual",
+    "shortDescription": "One of the tallest churches in Asia, a 175-foot twin-spired Neo-Gothic cathedral designed after Germany's Cologne Cathedral.",
+    "longDescription": "Constructed in 1936 by French architect Daly under Maharaja Nalvadi Krishnaraja Wadiyar. The twin spires rise 175 feet above the city skyline. Inside, the cathedral features French stained glass windows depicting the Last Supper and Crucifixion, and an underground crypt preserving relics of 3rd-century Saint Philomena.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 12.3211,
+      "longitude": 76.658
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "175-foot soaring twin Neo-Gothic spires",
+      "Imported French stained glass windows",
+      "Underground subterranean crypt with Saint Philomena's relic statue"
+    ],
+    "activities": [
+      "Admiring stained glass biblical scenes",
+      "Visiting the subterranean crypt chapel"
+    ],
+    "nearbyPlaces": [
+      "Mysore Palace",
+      "Devaraja Market"
+    ],
+    "travelTips": [
+      "Modest dress required; silence observed inside main prayer hall"
+    ],
+    "accessibility": "Main cathedral hall accessible; steps lead into underground crypt",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "st-philomenas",
+      "neo-gothic",
+      "cologne-style",
+      "mysuru"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "mysuru-zoo",
+    "name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "wildlife",
+    "shortDescription": "One of the oldest and most acclaimed zoos in India (established in 1892), home to giraffes, elephants, white rhinos, and big cats in lush moated enclosures.",
+    "longDescription": "Established in 1892 by Maharaja Chamarajendra Wadiyar across 157 acres near Chamundi Hills. Known internationally for spacious naturalistic moated enclosures, captive breeding of rare species, and a picturesque walk around Karanji Lake.",
+    "category": [
+      "wildlife",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.302,
+      "longitude": 76.666
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Over 168 animal species from 25 countries",
+      "Naturalistic green enclosures with African elephants, zebras, and giraffes",
+      "Battery-operated safari carts for children and seniors"
+    ],
+    "activities": [
+      "Family walking tour through wooded animal enclosures",
+      "Battery cart ride across the zoo"
+    ],
+    "nearbyPlaces": [
+      "Karanji Lake",
+      "Mysore Palace"
+    ],
+    "travelTips": [
+      "Closed on Tuesdays; carry water as the walking circuit is around 3.5 km"
+    ],
+    "accessibility": "Paved, shaded, flat walking paths; battery buggies available",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "mysuru-zoo",
+      "wildlife",
+      "family",
+      "zoological-gardens"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "virupaksha-temple",
+    "name": "Virupaksha Temple",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "spiritual",
+    "shortDescription": "Ancient 7th-century sacred temple that has functioned uninterrupted since before Vijayanagara, crowned by a 160-foot gopuram on the Tungabhadra.",
+    "longDescription": "The spiritual heart of Hampi, dedicated to Lord Shiva as Virupaksha (consort of local river goddess Pampa). Features an imposing 50-meter eastern gopuram, pillared halls with ceiling frescoes of Mahabharata epics, a pinhole camera effect demonstrating inverted shadow projection, and Lakshmi the resident temple elephant.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 15.3353,
+      "longitude": 76.46
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "160-foot nine-tiered Rajagopuram",
+      "Pinhole camera effect casting inverted shadow of the gopuram on inner wall",
+      "Uninterrupted worship since the 7th century AD",
+      "Blessings from Lakshmi the temple elephant"
+    ],
+    "activities": [
+      "Early morning darshan and elephant blessings",
+      "Studying Vijayanagara ceiling frescoes in the Ranga Mandapa",
+      "Witnessing inverted tower shadow through wall slit"
+    ],
+    "nearbyPlaces": [
+      "Hampi Bazaar",
+      "Hemakuta Hill",
+      "Matanga Hill"
+    ],
+    "travelTips": [
+      "Visit early in the morning when the elephant takes its morning bath in the Tungabhadra River"
+    ],
+    "accessibility": "Flat stone courtyard; small thresholds at inner shrines",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "virupaksha",
+      "hampi",
+      "shiva-temple",
+      "pinhole-camera"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "vittala-temple",
+    "name": "Vittala Temple & Musical Pillars",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage pinnacle of Vijayanagara architecture, featuring the world-famous Stone Chariot and 56 musical pillars.",
+    "longDescription": "Dedicated to Lord Vittala (an aspect of Vishnu). Constructed in the 16th century under King Devaraya II and expanded by Krishnadevaraya. The Ranga Mandapa features 56 slender monolithic pillars that resonate with musical notes (Sa Re Ga Ma) when tapped. In the open courtyard stands the iconic Stone Chariot (Garuda shrine), printed on India's ₹50 currency note.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 15.3364,
+      "longitude": 76.4789
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Iconic Stone Chariot (depicted on ₹50 currency note)",
+      "56 acoustic musical stone pillars (Saregama pillars)",
+      "Intricately carved Kalyana Mandapa wedding hall",
+      "Electric golf cart ride along ancient market street"
+    ],
+    "activities": [
+      "Photography of the Stone Chariot at golden hour",
+      "Exploring the vast ruined marketplace leading to Tungabhadra River"
+    ],
+    "nearbyPlaces": [
+      "King's Balance",
+      "Purandara Dasa Mandapa",
+      "Virupaksha Temple"
+    ],
+    "travelTips": [
+      "Battery-operated eco-carts run from the parking area to the temple gate (1.5 km); visit in late afternoon for golden lighting on the granite"
+    ],
+    "accessibility": "Electric buggy from parking; flat sandy and stone courtyard",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "stone-chariot",
+      "vittala-temple",
+      "musical-pillars",
+      "50-rupee-note"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "stone-chariot",
+    "name": "The Stone Chariot of Hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "One of India's three famous stone chariots, an exquisitely carved monolithic shrine dedicated to Garuda with revolving wheels.",
+    "longDescription": "Standing proudly in the courtyard of the Vittala Temple complex, this is actually a shrine dedicated to Garuda (the eagle mount of Vishnu). Built from interlocking granite slabs, its wheels were once capable of rotating and are embellished with floral motifs, guarded by stone elephants.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 15.3364,
+      "longitude": 76.4788
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Symbol of Karnataka Tourism and featured on ₹50 note",
+      "Intricately assembled stone joinery disguised as monolithic carving",
+      "Pair of stone elephants flanking the front shaft"
+    ],
+    "activities": [
+      "Iconic portrait photography",
+      "Comparing the monument with the ₹50 banknote"
+    ],
+    "nearbyPlaces": [
+      "Vittala Temple",
+      "Ranga Mandapa"
+    ],
+    "travelTips": [
+      "Bring a ₹50 Indian currency note to take the famous perspective photo aligning the note with the chariot"
+    ],
+    "accessibility": "Flat courtyard ground",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "stone-chariot",
+      "garuda",
+      "hampi-symbol",
+      "unesco"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "lotus-mahal",
+    "name": "Lotus Mahal & Zenana Enclosure",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "Elegant two-storey Indo-Islamic pleasure pavilion shaped like a blossoming lotus bud, designed with ingenious subterranean water cooling.",
+    "longDescription": "Located within the walled Zenana Enclosure (Queen's quarters). The Lotus Mahal features recessed multi-cusped arches resembling lotus petals, Islamic domes, and decorative plaster medallions. The hollow pillars originally held terracotta pipes pumping water from nearby wells to cool the royal chambers in summer.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 15.32,
+      "longitude": 76.47
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Indo-Islamic multi-lobed arched architecture",
+      "Ancient pipeline air-cooling technology",
+      "Guarded watchtowers in royal Zenana enclosure",
+      "Manicured green lawns"
+    ],
+    "activities": [
+      "Studying Indo-Islamic synthesis architecture",
+      "Walking through the manicured queen's gardens"
+    ],
+    "nearbyPlaces": [
+      "Elephant Stables",
+      "Queen's Bath",
+      "Hazara Rama Temple"
+    ],
+    "travelTips": [
+      "The ticket for Vittala Temple covers the Zenana Enclosure and Lotus Mahal if visited on the same day"
+    ],
+    "accessibility": "Lawn pathways; entry inside the upper level is restricted for preservation",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "lotus-mahal",
+      "zenana",
+      "indo-islamic",
+      "hampi"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "elephant-stables",
+    "name": "Elephant Stables",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "Monumental row of 11 domed chambers built in Indo-Islamic style to house the royal ceremonial state elephants of the Vijayanagara Empire.",
+    "longDescription": "One of the few royal secular buildings that survived the destruction of Vijayanagara virtually intact. A long, symmetrical structure featuring 11 spacious chambers, each topped with a distinct architectural dome (fluted, ribbed, and octagonal), linked by arched doorways with iron rings in ceilings once used to chain the elephants.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 15.3205,
+      "longitude": 76.4725
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "11 grand domed chambers with diverse Islamic architectural domes",
+      "Survived intact from the 16th century",
+      "Sprawling green lawns ideal for resting between monument visits"
+    ],
+    "activities": [
+      "Architectural photography of the long symmetrical facade",
+      "Exploring adjacent archaeological museum gallery"
+    ],
+    "nearbyPlaces": [
+      "Lotus Mahal",
+      "Guards Quarters",
+      "Hazara Rama Temple"
+    ],
+    "travelTips": [
+      "Located directly behind the Zenana Enclosure through a small garden gate"
+    ],
+    "accessibility": "Spacious flat green lawns with easy walking access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "elephant-stables",
+      "vijayanagara",
+      "heritage",
+      "hampi"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "matanga-hill",
+    "name": "Matanga Hill Sunrise Trek",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "adventure",
+    "shortDescription": "The highest vantage point in central Hampi, offering an unforgettable 360-degree sunrise view over boulder-strewn landscapes and ancient ruins.",
+    "longDescription": "Mentioned in the Ramayana as the hermitage of sage Matanga where Sugriva sought refuge from Vali. A moderate 30-minute hike up ancient rock-cut stairs leads to the Veerabhadra Temple atop the summit, unveiling a surreal Martian panorama of golden granite boulders, banana plantations, and the winding Tungabhadra River.",
+    "category": [
+      "adventure",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 15.331,
+      "longitude": 76.467
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Best sunrise and sunset 360-degree viewpoint in all of Hampi",
+      "Surreal boulder-strewn landscape vistas",
+      "Veerabhadra Temple roof terrace at summit"
+    ],
+    "activities": [
+      "Early morning sunrise hike (start at 5:30 AM)",
+      "Landscape photography capturing morning mist over Tungabhadra"
+    ],
+    "nearbyPlaces": [
+      "Hampi Bazaar",
+      "Virupaksha Temple",
+      "Achyutaraya Temple"
+    ],
+    "travelTips": [
+      "Start climbing 45 minutes before sunrise; carry a flashlight for the early morning ascent and wear shoes with good rubber traction"
+    ],
+    "accessibility": "Requires climbing steep, uneven ancient stone stairs; not wheelchair accessible",
+    "familyFriendly": false,
+    "budgetLevel": "free",
+    "tags": [
+      "matanga-hill",
+      "sunrise",
+      "trekking",
+      "boulders",
+      "hampi"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "abbey-falls",
+    "name": "Abbey Falls (Abbi Falls)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "lakes-waterfalls",
+    "shortDescription": "70-foot roaring waterfall cascading through lush private coffee estates and spice plantations, viewed from a scenic hanging bridge.",
+    "longDescription": "Located 8 km from Madikeri, Abbey Falls tumbles down granite cliffs where early mountain streams unite into the Kaveri River. A short paved walk through fragrant Arabica coffee bushes and black pepper vines leads to a hanging pedestrian bridge directly facing the thunderous cascades.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "July to December (Peak flow after monsoon)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 12.454,
+      "longitude": 75.717
+    },
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "70-foot waterfall framed by coffee and pepper plantations",
+      "Hanging suspension bridge viewpoint",
+      "Lush rainforest walk"
+    ],
+    "activities": [
+      "Photography from the hanging bridge",
+      "Walking through aromatic coffee and spice trees"
+    ],
+    "nearbyPlaces": [
+      "Madikeri Fort",
+      "Raja's Seat"
+    ],
+    "travelTips": [
+      "Swimming is strictly prohibited due to strong currents and submerged rocks; wear comfortable shoes for the 200-step descent"
+    ],
+    "accessibility": "Requires descending and climbing back up ~200 concrete steps through the coffee estate",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "abbey-falls",
+      "waterfall",
+      "coorg",
+      "coffee-plantations"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "rajas-seat",
+    "name": "Raja's Seat",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "nature",
+    "shortDescription": "Seasonal garden and pavilion in Madikeri where the Kings of Kodagu once watched sunsets over layered rolling mist-draped Western Ghats valleys.",
+    "longDescription": "Perched on a cliff edge overlooking deep green valleys, Raja's Seat features a small brick pavilion surrounded by seasonal flowerbeds and musical fountains. In the evenings, mist sweeps up from the valleys below while the setting sun paints the sky in shades of amber and magenta.",
+    "category": [
+      "nature",
+      "hill-stations",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.418,
+      "longitude": 75.738
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Historic pavilion where Kodagu Kings relaxed with queens",
+      "Spectacular sunset view over undulating Western Ghats hills",
+      "Evening musical fountain show and toy train for kids"
+    ],
+    "activities": [
+      "Sunset photography",
+      "Evening strolls through flower gardens"
+    ],
+    "nearbyPlaces": [
+      "Madikeri Fort",
+      "Omkareshwara Temple"
+    ],
+    "travelTips": [
+      "Arrive by 5:15 PM to enjoy the golden hour before sunset; musical fountain begins at 7:00 PM"
+    ],
+    "accessibility": "Flat paved garden pathways; wheelchair friendly",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "rajas-seat",
+      "sunset",
+      "valley-view",
+      "coorg",
+      "madikeri"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "dubare-elephant-camp",
+    "name": "Dubare Elephant Camp",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "wildlife",
+    "shortDescription": "Forest department camp on the banks of the Kaveri River where visitors can participate in elephant bathing and feeding interactions.",
+    "longDescription": "Historically the training camp for elephants used in the Mysore Dasara procession. Operated by Jungle Lodges and Resorts, visitors cross the Kaveri River by boat or foot to scrub and bathe elephants with coconut husk brushes in the river, feed them jaggery and ragi balls, and learn about wildlife conservation.",
+    "category": [
+      "wildlife",
+      "adventure",
+      "family"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 12.368,
+      "longitude": 75.903
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Elephant bathing in Kaveri River with coconut husks",
+      "Preparing and hand-feeding nutritious ragi balls",
+      "River crossing by motorboat or walking across rocks",
+      "River rafting along Kaveri during monsoon"
+    ],
+    "activities": [
+      "Hands-on elephant grooming and scrubbing",
+      "White water rafting (during monsoon)",
+      "Birdwatching along riverbanks"
+    ],
+    "nearbyPlaces": [
+      "Kaveri Nisargadhama",
+      "Kushalnagar Tibetan Golden Temple"
+    ],
+    "travelTips": [
+      "Elephant bathing takes place strictly between 9:00 AM and 11:00 AM; arrive early to buy activity tokens"
+    ],
+    "accessibility": "Requires crossing the river by boat and walking on uneven riverbank sand",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "dubare",
+      "elephant-camp",
+      "kaveri-river",
+      "wildlife",
+      "coorg"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "mandalpatti",
+    "name": "Mandalpatti Peak 4x4 Jeep Safari",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "adventure",
+    "shortDescription": "Thrilling off-road 4x4 Jeep trail climbing 4,050 feet to the 'Market of Mists' with endless windswept grassland ridges.",
+    "longDescription": "Located 18 km from Madikeri within the Pushpagiri Wildlife Sanctuary. The journey involves a rugged off-road Jeep climb across rocky streams and mud tracks to reach the windswept summit at 4,050 feet. Clouds literally brush against visitors on the panoramic grasslands overlooking evergreen shola forests.",
+    "category": [
+      "adventure",
+      "nature",
+      "hill-stations"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.518,
+      "longitude": 75.7
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Rugged off-road 4x4 Jeep ride through forest trails",
+      "360-degree panorama of rolling Western Ghats ridges",
+      "Dramatic sea of clouds swirling around peak watchtower"
+    ],
+    "activities": [
+      "4x4 Jeep off-roading adventure",
+      "Trekking on windswept grassy ridge trails"
+    ],
+    "nearbyPlaces": [
+      "Madikeri Town",
+      "Abbey Falls"
+    ],
+    "travelTips": [
+      "Hire a local 4x4 Jeep from Madikeri or the base checkpost; normal private cars cannot navigate the rocky terrain"
+    ],
+    "accessibility": "Bumpy off-road Jeep ride; watchtower reached via short uphill walk",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "mandalpatti",
+      "jeep-safari",
+      "adventure",
+      "clouds",
+      "coorg"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "om-beach",
+    "name": "Om Beach",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "beaches",
+    "shortDescription": "World-famous crescent beach shaped naturally in the sacred Hindu symbol 'ॐ' (Om), offering water sports, dolphin boat trips, and beach shacks.",
+    "longDescription": "Named because its two adjoining semicircular coves naturally form the auspicious shape of the sacred syllable 'Om'. Fringed by black rocky outcrops, golden sands, and coconut palms, it offers banana boat rides, jet skiing, surfing, and laid-back cliffside cafes like Namaste Cafe.",
+    "category": [
+      "beaches",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 14.518,
+      "longitude": 74.316
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Natural geographical formation of sacred 'Om' (ॐ) shape",
+      "Namaste Cafe cliffside dining overlooking waves",
+      "Dolphin spotting boat rides into the Arabian Sea",
+      "Starting point for the famous Gokarna 5-beach trek"
+    ],
+    "activities": [
+      "Swimming in sheltered coves",
+      "Trekking to Half Moon and Paradise beaches",
+      "Speedboat rides and dolphin spotting"
+    ],
+    "nearbyPlaces": [
+      "Kudle Beach",
+      "Half Moon Beach",
+      "Mahabaleshwar Temple"
+    ],
+    "travelTips": [
+      "Watch the sunset from the rocky promontory separating the two curves of the 'Om'"
+    ],
+    "accessibility": "Paved stairs lead down from the cliff parking lot to the beach sand",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "om-beach",
+      "gokarna",
+      "beach-trek",
+      "arabian-sea",
+      "water-sports"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kudle-beach",
+    "name": "Kudle Beach",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "beaches",
+    "shortDescription": "Vast white-sand crescent cove backed by palm-fringed cliffs, famous for beach yoga, glowing sunsets, and candlelit seafood shacks.",
+    "longDescription": "A wide, gentle sandy bay located just over the hill from Gokarna town. Beloved by backpackers, yogis, and travelers seeking tranquility. By day, visitors swim and practice yoga; by night, beach shacks light up with bamboo lanterns and candles serving wood-fired pizzas and fresh grilled fish.",
+    "category": [
+      "beaches",
+      "wellness",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 14.529,
+      "longitude": 74.314
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Wide crescent bay ideal for morning beach yoga",
+      "Romantic sunset dining with tables set right on the sand",
+      "Gentle swimming conditions compared to open ocean beaches"
+    ],
+    "activities": [
+      "Morning yoga on the beach",
+      "Sunset watching and candlelit beach dining",
+      "Swimming in the Arabian Sea"
+    ],
+    "nearbyPlaces": [
+      "Om Beach",
+      "Gokarna Main Beach"
+    ],
+    "travelTips": [
+      "Vehicles cannot go directly onto the beach; park on the hilltop and take the pleasant 5-minute footpath down"
+    ],
+    "accessibility": "Footpath descent from cliff parking",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kudle-beach",
+      "yoga",
+      "sunset-cafes",
+      "gokarna"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "half-moon-beach",
+    "name": "Half Moon Beach & Paradise Beach",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "beaches",
+    "shortDescription": "Secluded hidden coves accessible only by hiking over rocky coastal cliffs or taking a fishing boat, offering pure untouched coastal wilderness.",
+    "longDescription": "Tucked away beyond Om Beach, Half Moon Beach is a small secluded crescent cove with pristine turquoise water. A further 20-minute hike over coastal headlands leads to Paradise Beach (Full Moon Beach), surrounded by dramatic granite boulders and tranquil waves away from all road traffic.",
+    "category": [
+      "beaches",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 14.512,
+      "longitude": 74.323
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "No road access ensures undisturbed natural serenity",
+      "Coastal cliff trek connecting Om, Half Moon, and Paradise beaches",
+      "Crystal clear shallow water for peaceful swimming"
+    ],
+    "activities": [
+      "Coastal cliff trekking",
+      "Hiring local wooden fishing boats for transfers",
+      "Unplugged relaxation"
+    ],
+    "nearbyPlaces": [
+      "Om Beach",
+      "Paradise Beach"
+    ],
+    "travelTips": [
+      "Carry sufficient water and snacks as there are limited commercial facilities; wear sturdy shoes for cliff trails"
+    ],
+    "accessibility": "Requires hiking across rocky cliff paths or hiring a boat",
+    "familyFriendly": false,
+    "budgetLevel": "budget",
+    "tags": [
+      "half-moon-beach",
+      "paradise-beach",
+      "secluded",
+      "trek",
+      "gokarna"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "mahabaleshwar-temple-gokarna",
+    "name": "Mahabaleshwar Temple (Atmalinga)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "spiritual",
+    "shortDescription": "4th-century Dravidian granite shrine enshrining the legendary Atmalinga of Lord Shiva, making Gokarna known as the 'Kashi of the South'.",
+    "longDescription": "According to mythology, demon king Ravana obtained the potent Atmalinga from Lord Shiva with the condition that it must never be placed on the earth. Lord Ganesha in the guise of a Brahmin boy tricked Ravana and placed the lingam firmly into the ground at Gokarna. Devotees touch the sacred lingam through a hole in the carved stone floor.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March (Special during Maha Shivaratri)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 14.5427,
+      "longitude": 74.3184
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred Atmalinga of Lord Shiva touched by devotees",
+      "Ancient 4th-century Kadamba and Dravidian granite architecture",
+      "Holy Kotiteertha temple tank nearby for ritual ablutions",
+      "Grand chariot festival during Maha Shivaratri"
+    ],
+    "activities": [
+      "Touching the sacred Atmalinga during puja",
+      "Holy bath at Kotiteertha sacred tank",
+      "Visiting the adjacent Maha Ganapathi Temple"
+    ],
+    "nearbyPlaces": [
+      "Kotiteertha",
+      "Maha Ganapathi Temple",
+      "Gokarna Main Beach"
+    ],
+    "travelTips": [
+      "Traditional dress code: Men must remove shirts and wear dhotis; women must wear sarees or salwar suits"
+    ],
+    "accessibility": "Paved temple prakaram; stone floor inside inner sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "atmalinga",
+      "shiva-temple",
+      "kashi-of-south",
+      "gokarna",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "badami-cave-temples",
+    "name": "Badami Cave Temples",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Badami",
+    "citySlug": "badami",
+    "type": "heritage",
+    "shortDescription": "Four magnificent 6th-century rock-cut cave temples carved into red sandstone cliffs by the Early Chalukyas, overlooking Agastya Lake.",
+    "longDescription": "The capital of the Early Chalukya dynasty from 540 to 757 AD. Four rock-cut caves carved into towering red sandstone cliffs represent Hindu (Shiva and Vishnu) and Jain faiths. Cave 1 features the famed 18-armed dancing Nataraja executing 81 Bharatanatyam postures; Cave 3 showcases colossal carved sculptures of Vishnu as Narasimha and Varaha.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 15.9185,
+      "longitude": 75.676
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "18-armed dancing Shiva Nataraja with 81 classical dance poses",
+      "Massive rock-cut reliefs of Vishnu, Varaha, and Trivikrama",
+      "Spectacular views overlooking Agastya Lake and Bhutanatha Temple",
+      "Carved red sandstone pillars and painted ceiling friezes"
+    ],
+    "activities": [
+      "Studying 6th-century rock-cut iconography",
+      "Climbing between the four cliff caves",
+      "Photography across the red canyon"
+    ],
+    "nearbyPlaces": [
+      "Agastya Lake",
+      "Bhutanatha Temples",
+      "Badami Fort"
+    ],
+    "travelTips": [
+      "Visit in late afternoon when the warm western sun lights up the red sandstone carvings; watch out for monkeys on the stone stairs"
+    ],
+    "accessibility": "Requires climbing stone staircases connecting the four cave levels",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco-tentative",
+      "badami-caves",
+      "chalukya",
+      "rock-cut",
+      "nataraja"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "agastya-lake",
+    "name": "Agastya Lake & Bhutanatha Temples",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Badami",
+    "citySlug": "badami",
+    "type": "heritage",
+    "shortDescription": "Sacred artificial lake cradled by towering red cliffs, featuring the 7th-century sandstone Bhutanatha Temples extending right into the water.",
+    "longDescription": "Created in the 5th century and believed to possess miraculous healing waters. Flanked by the Northern and Southern rock cliffs of Badami, the lake's eastern shore houses the poetic Bhutanatha Group of Temples, whose stone plinths are lapped by the emerald waters during monsoon, creating one of India's most evocative architectural reflections.",
+    "category": [
+      "heritage",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 15.92,
+      "longitude": 75.684
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Bhutanatha Temple plinth reflected in emerald waters",
+      "Red sandstone cliff amphitheater surrounding the lake",
+      "Historic stone ghats where locals bathe and wash clothes",
+      "Rock carvings of Vishnu's avatars behind the temple"
+    ],
+    "activities": [
+      "Sunset photography of temple reflections",
+      "Walking along the quiet lake banks",
+      "Bouldering on adjacent red sandstone cliffs"
+    ],
+    "nearbyPlaces": [
+      "Badami Cave Temples",
+      "Archaeological Museum Badami"
+    ],
+    "travelTips": [
+      "The best photography angle is from the western ghats looking east towards Bhutanatha Temple at sunset"
+    ],
+    "accessibility": "Paved footpath along lake edge to the temple",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "agastya-lake",
+      "bhutanatha-temple",
+      "reflections",
+      "badami"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  }
+]

@@ -1,0 +1,1063 @@
+[
+  {
+    "id": "chinese-fishing-nets",
+    "name": "Chinese Fishing Nets (Cheena Vala)",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "type": "heritage",
+    "shortDescription": "Iconic shore-operated cantilever fishing nets introduced in the 14th century by Chinese explorer Zheng He's court, silhouetted against Kochi sunsets.",
+    "longDescription": "Stretching along the promenade of Fort Kochi where the backwaters meet the Arabian Sea. Introduced by traders from the court of Kublai Khan or Chinese navigator Zheng He. These colossal cantilevered wooden structures use counterbalanced stone weights and require a team of four to six fishermen to lower into the sea and hoist up with the tide.",
+    "category": [
+      "heritage",
+      "culture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 9.9674,
+      "longitude": 76.2427
+    },
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Centuries-old counterweighted bamboo and teakwood fishing nets",
+      "Spectacular sunset silhouette against Arabian Sea waves",
+      "Buying fresh catch directly from fishermen and having it grilled at seaside stalls"
+    ],
+    "activities": [
+      "Helping fishermen pull the counterweight ropes to haul in the net",
+      "Sunset photography along Vasco da Gama Square promenade"
+    ],
+    "nearbyPlaces": [
+      "St. Francis Church",
+      "Fort Kochi Beach",
+      "Mattancherry Palace"
+    ],
+    "travelTips": [
+      "The best time to photograph the nets is at sunset from Vasco da Gama Square; fishermen welcome visitors to try operating the ropes for a small voluntary tip"
+    ],
+    "accessibility": "Paved waterfront promenade with benches",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "chinese-fishing-nets",
+      "fort-kochi",
+      "cheena-vala",
+      "sunset",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "mattancherry-palace",
+    "name": "Mattancherry Palace (Dutch Palace)",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "type": "forts-palaces",
+    "shortDescription": "Portuguese-built palace gifted to the Raja of Kochi in 1555, famed for its Ramayana mural frescoes and traditional Nalukettu courtyard.",
+    "longDescription": "Constructed by the Portuguese in 1555 and later renovated by the Dutch in 1663. Built in traditional Kerala 'Nalukettu' architectural style with sloping tiled roofs, wooden balconies, and polished black floors made of burnt coconut shells and egg whites. Features 300 square meters of wall frescoes depicting the Ramayana and Bhagavata Purana painted in vibrant vegetable pigments.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 9.9583,
+      "longitude": 76.2592
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World-renowned 16th-century Ramayana tempera wall frescoes",
+      "Traditional Kerala Nalukettu central courtyard and timber joinery",
+      "Royal royal palanquins, coronation robes, and brass oil lamps"
+    ],
+    "activities": [
+      "Studying classical Kerala tempera mural art",
+      "Exploring adjacent Jew Town and Paradesi Synagogue"
+    ],
+    "nearbyPlaces": [
+      "Paradesi Synagogue",
+      "Jew Town",
+      "Fort Kochi"
+    ],
+    "travelTips": [
+      "Closed on Fridays; combine with a visit to the adjacent 1568 Paradesi Synagogue in Jew Town"
+    ],
+    "accessibility": "First floor palace reached by a flight of wooden stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "dutch-palace",
+      "mattancherry",
+      "kerala-murals",
+      "kochi"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "tea-gardens-munnar",
+    "name": "Munnar Tea Plantations & Tata Tea Museum",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Munnar",
+    "citySlug": "munnar",
+    "type": "hill-stations",
+    "shortDescription": "Rolling emerald carpet of tea plantations rising up to 7,000 feet in the Western Ghats, featuring live tea processing and tea tasting sessions.",
+    "longDescription": "Located at the confluence of three mountain streams (Mudrapuzha, Nallathanni, Kundala). Munnar was the British Raj's summer capital in South India. Countless rolling green tea estates (primarily KDHP / Tata Tea) carpet the mist-wrapped hillsides. The Tea Museum at KDHP's Nallathanni Estate showcases the century-old history of tea manufacturing, antique CTC rollers, and artisanal tea tasting.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "agriculture"
+    ],
+    "bestTimeToVisit": "September to May",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.0889,
+      "longitude": 77.0595
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Endless rolling emerald green tea estate hillsides",
+      "Tata Tea Museum with live tea tasting sessions and factory demo",
+      "Tea pluckers harvesting fresh green leaves with traditional shears",
+      "Aromatic fresh cardamom, clove, and cinnamon spice gardens"
+    ],
+    "activities": [
+      "Guided tea tasting session sampling white, green, and orthodox teas",
+      "Tea plantation walking tour and photography",
+      "Buying fresh single-estate tea packets and homemade chocolates"
+    ],
+    "nearbyPlaces": [
+      "Eravikulam National Park",
+      "Mattupetty Dam",
+      "Top Station"
+    ],
+    "travelTips": [
+      "Visit the tea factory in the morning when the fresh green tea leaf batch is being crushed, torn, and curled (CTC process)"
+    ],
+    "accessibility": "Tea museum is ground-level accessible; plantation tracks are hilly",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "munnar-tea",
+      "tea-plantations",
+      "hill-station",
+      "western-ghats",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "eravikulam-national-park",
+    "name": "Eravikulam National Park (Rajamalai)",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Munnar",
+    "citySlug": "munnar",
+    "type": "wildlife",
+    "shortDescription": "Sanctuary of the endangered Nilgiri Tahr mountain goat, home to Anamudi (South India's highest peak at 2,695m) and Neelakurinji blooms.",
+    "longDescription": "Spanning 97 square kilometers of high-altitude rolling montane shola-grassland in the Kannan Devan Hills. Home to the world's largest population (over 800) of the endangered Nilgiri Tahr (wild mountain goat), which graze fearlessly alongside visitor trails. Crowned by Anamudi (2,695m), the highest peak in India south of the Himalayas, and famous for the Neelakurinji flower that blooms once every 12 years.",
+    "category": [
+      "wildlife",
+      "nature",
+      "hill-stations"
+    ],
+    "bestTimeToVisit": "September to January (Park closed Feb-Mar for Tahr calving)",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.15,
+      "longitude": 77.0667
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Close-up sightings of the endangered Nilgiri Tahr mountain goat",
+      "Panoramic view of Anamudi Peak (2,695 m, highest in South India)",
+      "Eco-safari bus drive up the scenic mountain slopes",
+      "Once-in-12-years blooming phenomenon of the purple Neelakurinji flower"
+    ],
+    "activities": [
+      "Boarding the forest department eco-bus up to Rajamalai",
+      "Gentle 1.5-km uphill nature walk on the paved mountain trail",
+      "Spotting Nilgiri Tahr against mountain backdrops"
+    ],
+    "nearbyPlaces": [
+      "Munnar Town (15 km)",
+      "Lakkam Waterfalls",
+      "Marayoor Sandalwood Forests"
+    ],
+    "travelTips": [
+      "Book your safari entry time-slot online to skip long ticket queues at the base booking counter; park is closed in February and March for the calving season"
+    ],
+    "accessibility": "Forest eco-buses take visitors up to the trailhead; a paved 1.5-km road has a gentle slope",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "nilgiri-tahr",
+      "eravikulam",
+      "anamudi",
+      "neelakurinji",
+      "munnar"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "alappuzha-backwaters",
+    "name": "Alappuzha Backwaters & Kettuvallam Houseboat Cruise",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Alappuzha",
+    "citySlug": "alappuzha",
+    "type": "nature",
+    "shortDescription": "The 'Venice of the East', an intricate labyrinth of palm-fringed lagoons, canals, and paddy fields navigated on traditional luxury thatched houseboats.",
+    "longDescription": "Formed by a network of interconnected brackish lagoons, rivers, and canals running parallel to the Arabian Sea. The hallmark Kerala travel experience: boarding an overnight 'Kettuvallam'—a traditional wooden rice barge constructed from anjili wood tied with coir ropes and thatched with palm leaves. Cruises meander past village homes, duck farms, coir makers, and water lilies while personal chefs prepare Karimeen Pollichathu.",
+    "category": [
+      "nature",
+      "culture",
+      "luxury",
+      "lakes-waterfalls"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "1 - 2 days (Overnight stay)",
+    "estimatedVisitTime": "Overnight Cruise",
+    "coordinates": {
+      "latitude": 9.4981,
+      "longitude": 76.3388
+    },
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Overnight stay aboard traditional wooden thatched Kettuvallam houseboat",
+      "Gliding silently through emerald lagoons and canals flanked by coconut palms",
+      "Freshly cooked Kerala Sadya and Pearl Spot (Karimeen) fish on banana leaves",
+      "Epicenter of the annual Nehru Trophy Snake Boat Race on Punnamada Lake"
+    ],
+    "activities": [
+      "Overnight houseboat cruising through Vembanad Lake",
+      "Village canoe (Shikara) rides through narrow village canals",
+      "Watching rural duck farming and toddy tapping"
+    ],
+    "nearbyPlaces": [
+      "Vembanad Lake",
+      "Alappuzha Beach",
+      "Marari Beach"
+    ],
+    "travelTips": [
+      "Take a smaller non-motorized wooden Shikara boat or government ferry to explore the narrower, picturesque inner canals where large houseboats cannot enter"
+    ],
+    "accessibility": "Houseboats have comfortable flat wooden decks; crew assists with boarding from wooden jetties",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "houseboat",
+      "kettuvallam",
+      "backwaters",
+      "venice-of-east",
+      "alappuzha",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "periyar-national-park",
+    "name": "Periyar National Park & Lake Boat Safari",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Thekkady",
+    "citySlug": "thekkady",
+    "type": "wildlife",
+    "shortDescription": "Famous tiger reserve and elephant sanctuary centered on an artificial lake created in 1895, offering boat safaris where wild herds drink at the water's edge.",
+    "longDescription": "Spanning 925 square kilometers high in the Cardamom and Pandalam Hills. Centered on the scenic 26-sq-km artificial Periyar Lake formed by the Mullaperiyar Dam in 1895. Submerged dead tree trunks emerge from the water. Two-hour boat safaris allow visitors to view wild elephant herds, sambar deer, gaur (Indian bison), and otters along the forested water's edge without disturbing the jungle.",
+    "category": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 9.4679,
+      "longitude": 77.1425
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Boat safari on scenic Periyar Lake among submerged tree trunks",
+      "Wild elephant herds bathing and grazing along the water banks",
+      "Bamboo rafting and jungle trekking expeditions led by tribal trackers",
+      "Spice plantation tours smelling fresh green cardamom and vanilla pods"
+    ],
+    "activities": [
+      "Periyar Lake morning boat safari",
+      "Full-day bamboo rafting through deep jungle",
+      "Visiting aromatic spice plantations and watching Kathakali performances"
+    ],
+    "nearbyPlaces": [
+      "Kumily Spice Market",
+      "Murikkady Spice Valley"
+    ],
+    "travelTips": [
+      "The early morning 7:30 AM boat cruise has the highest probability of spotting wild elephants and bison drinking at the lakeshore"
+    ],
+    "accessibility": "Two-deck motorboats accommodate passengers from paved boarding jetties",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "periyar",
+      "thekkady",
+      "wild-elephants",
+      "lake-safari",
+      "tiger-reserve"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "varkala-cliff",
+    "name": "Varkala Cliff & Papanasam Beach",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Varkala",
+    "citySlug": "varkala",
+    "type": "beaches",
+    "shortDescription": "Dramatic red laterite sea cliffs towering over the Arabian Sea, designated a National Geological Monument, with yoga cafes and natural holy springs.",
+    "longDescription": "Known as the 'Papanasam Beach' (cleanser of sins). Varkala is unique along Kerala's coastline for its sheer red laterite cliffs bordering the beach, designated a geo-heritage site by the Geological Survey of India. The North Cliff promenade is lined with bohemian cafes, yoga shalas, Tibetan craft shops, and Ayurvedic massage centers looking out over turquoise waves.",
+    "category": [
+      "beaches",
+      "wellness",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 8.7379,
+      "longitude": 76.7032
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Dramatic red laterite geological cliff edge overlooking the ocean",
+      "Papanasam Beach holy mineral springs believed to wash away sins",
+      "Cliff-top pedestrian trail packed with seafood shacks and candlelit cafes",
+      "2,000-year-old Janardhana Swamy Temple on southern cliff"
+    ],
+    "activities": [
+      "Practicing sunrise yoga on cliff viewpoints",
+      "Surfing and swimming in turquoise Arabian Sea waves",
+      "Dining on fresh catch fish under the stars along the cliff path"
+    ],
+    "nearbyPlaces": [
+      "Janardhana Swamy Temple",
+      "Kappil Beach & Lake",
+      "Anjengo Fort"
+    ],
+    "travelTips": [
+      "North Cliff is the vibrant backpacker hub with cafes; South Cliff is much quieter and peaceful for yoga retreats"
+    ],
+    "accessibility": "Cliff top is a flat pedestrian path; bamboo and concrete steps lead down to the beach below",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "varkala-cliff",
+      "papanasam-beach",
+      "geo-heritage",
+      "yoga",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "mahabodhi-temple",
+    "name": "Mahabodhi Temple Complex & Bodhi Tree",
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "city": "Bodh Gaya",
+    "citySlug": "bodh-gaya",
+    "type": "spiritual",
+    "shortDescription": "UNESCO World Heritage site where Prince Siddhartha attained Supreme Enlightenment (Bodhi) under the sacred Bodhi Tree in 531 BCE.",
+    "longDescription": "The supreme pilgrimage site of world Buddhism. Consecrated originally by Emperor Ashoka in the 3rd century BCE, the current 55-meter grand pyramidal brick temple dates from the 5th-6th century CE. Houses the Vajrasana (Diamond Throne) and stands directly behind the direct descendant of the sacred Bodhi Tree (Ficus religiosa) under which Gautama Buddha meditated and attained supreme spiritual liberation.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 24.6959,
+      "longitude": 84.9914
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage designation",
+      "Sacred Bodhi Tree under which Gautama Buddha attained enlightenment",
+      "Vajrasana (Diamond Throne) placed by Emperor Ashoka",
+      "55-meter grand pyramidal shikhara tower crowned by golden kalash",
+      "Muchalinda Lake where the serpent king sheltered meditating Buddha"
+    ],
+    "activities": [
+      "Quiet meditation beneath the sacred Bodhi Tree",
+      "Prostrations and chanting with international monks from around the globe",
+      "Visiting international monasteries (Thai, Bhutanese, Tibetan, Japanese)"
+    ],
+    "nearbyPlaces": [
+      "Great Buddha Statue (80-foot)",
+      "Dungeshwari Cave Temples",
+      "Gaya (15 km)"
+    ],
+    "travelTips": [
+      "Mobile phones are strictly prohibited inside the inner complex; lockers available at the entrance; photography permits required for DSLRs"
+    ],
+    "accessibility": "Wheelchair ramps and level marble courtyards throughout the temple precinct",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "bodhi-tree",
+      "mahabodhi-temple",
+      "buddha-enlightenment",
+      "bodh-gaya"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "nalanda-mahavihara",
+    "name": "Nalanda Mahavihara Archaeological Ruins",
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "city": "Nalanda",
+    "citySlug": "nalanda",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage ruins of the world's first residential international university (5th - 12th century CE), housing 10,000 monks and scholars.",
+    "longDescription": "Established in the 5th century CE under the Gupta Empire and patronized by Emperor Harshavardhana and the Pala dynasty. A flourishing global university for over 700 years attracting scholars from China (Xuanzang), Korea, Japan, Tibet, and Persia. Spans 14 hectares of excavated red brick monasteries and temples, including the iconic multi-tiered Sariputra Stupa.",
+    "category": [
+      "heritage",
+      "history",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.1357,
+      "longitude": 85.445
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage ancient university ruins",
+      "Iconic tiered Temple 3 (Sariputra Stupa) with sculpted stucco panels",
+      "Excavated dormitory monasteries with student prayer cells and lecture podiums",
+      "Nalanda Archaeological Museum housing bronze statues and seals"
+    ],
+    "activities": [
+      "Guided walking tour through excavated student dormitories and meditation cells",
+      "Visiting the Xuanzang Memorial Hall nearby",
+      "Exploring ancient library ruins (Dharmaganja)"
+    ],
+    "nearbyPlaces": [
+      "Rajgir (15 km)",
+      "Hiuen Tsang Memorial Hall",
+      "Kundalpur"
+    ],
+    "travelTips": [
+      "Hire a certified ASI guide at the entry gate to understand the functioning of this ancient residential campus; museum closed on Fridays"
+    ],
+    "accessibility": "Paved pathways and ramps through the excavated monument complex",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "nalanda-university",
+      "ancient-monastery",
+      "sariputra-stupa",
+      "bihar"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "konark-sun-temple",
+    "name": "Konark Sun Temple (Black Pagoda)",
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "city": "Konark",
+    "citySlug": "konark",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 13th-century stone chariot of Surya the Sun God, featuring 24 colossal sundial wheels and 7 carved horses.",
+    "longDescription": "Conceived by Eastern Ganga King Narasimhadeva I in 1250 AD on the shores of the Bay of Bengal. Sculpted in the Kalinga architectural style from Khondalite stone as a monumental 100-foot high chariot with 12 pairs of intricately carved wheels (serving as sundials accurate to a minute) pulled by seven galloping horses. Famed for its Natya Mandapa (Hall of Dance) depicting every classical Odissi dance posture.",
+    "category": [
+      "heritage",
+      "architecture",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "October to March (Konark Dance Festival in Dec)",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 19.8876,
+      "longitude": 86.0945
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Monument",
+      "24 monumental carved stone chariot wheels serving as accurate astronomical sundials",
+      "Natya Mandapa featuring every classical Odissi dance mudra in stone",
+      "Evening Sound and Light show and Konark Dance Festival in December"
+    ],
+    "activities": [
+      "Learning to calculate precise solar time using the shadow of the spoke on the chariot wheel",
+      "Studying Kalinga stone sculptures of celestial dancers and war elephants",
+      "Sunset walk on nearby Chandrabhaga Beach"
+    ],
+    "nearbyPlaces": [
+      "Chandrabhaga Beach (3 km)",
+      "Puri (35 km)",
+      "Raghurajpur Heritage Crafts Village"
+    ],
+    "travelTips": [
+      "Take a photo aligning an Indian ₹10 currency note with the iconic Konark wheel depicted on its reverse"
+    ],
+    "accessibility": "Paved garden pathways; stairs lead onto the main stone plinth",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "konark-sun-temple",
+      "black-pagoda",
+      "sundial-wheel",
+      "kalinga-art"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "jagannath-temple-puri",
+    "name": "Shri Jagannath Temple (Puri)",
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "city": "Puri",
+    "citySlug": "puri",
+    "type": "spiritual",
+    "shortDescription": "One of the sacred Char Dham shrines of India, a 12th-century Kalinga temple famous for the world-renowned annual Ratha Yatra chariot festival.",
+    "longDescription": "Built by King Anantavarman Chodaganga Deva in the 12th century. The sacred abode of Lord Jagannath, his brother Balabhadra, and sister Subhadra. Spans 10 acres enclosed by double defensive walls (Meghanada Pacheri). Known for its colossal 214-foot Vimana, the Rosaghara (world's largest traditional temple kitchen cooking for 100,000 pilgrims daily in clay pots over wood fire), and the legendary Ratha Yatra.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March (Special during Ratha Yatra in June/July)",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 19.8049,
+      "longitude": 85.8179
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "One of the supreme Char Dham pilgrimage destinations",
+      "World's largest kitchen (Ananda Bazar) feeding 100,000 pilgrims daily",
+      "Annual Ratha Yatra pulling giant 45-foot chariots down Grand Road (Bada Danda)",
+      "Neelachakra (Blue Wheel) made of Ashtadhatu atop the 214-foot spire"
+    ],
+    "activities": [
+      "Darshan of Lord Jagannath, Balabhadra, and Subhadra",
+      "Tasting Mahaprasad at Ananda Bazar cooked in clay pots stacked 7-high",
+      "Watching evening Patita Pavana flag changing ceremony atop the spire"
+    ],
+    "nearbyPlaces": [
+      "Puri Golden Beach",
+      "Gundicha Temple",
+      "Konark Sun Temple"
+    ],
+    "travelTips": [
+      "Entry inside the temple is traditionally restricted to practicing Hindus; non-Hindus can view the temple from the roof of Raghunandan Library opposite the Lion Gate"
+    ],
+    "accessibility": "Requires climbing the 22 sacred stone stairs (Baisi Pahacha); wheelchair assistance available at Lion Gate",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "char-dham",
+      "jagannath-puri",
+      "ratha-yatra",
+      "mahaprasad",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "golden-temple",
+    "name": "Sri Harmandir Sahib (The Golden Temple)",
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "city": "Amritsar",
+    "citySlug": "amritsar",
+    "type": "spiritual",
+    "shortDescription": "The holiest Gurdwara of Sikhism, coated in 500 kg of pure gold foil, resting in the Amrit Sarovar, serving free meals to 100,000 people daily.",
+    "longDescription": "Founded in 1577 by Guru Ram Das, the fourth Sikh Guru. Built with four entrances facing all cardinal directions symbolizing universal brotherhood welcoming people of all castes and creeds. The two-storey sanctum was embellished with gilded marble and 500 kg of gold leaf by Maharaja Ranjit Singh in 1830. Houses the holy Guru Granth Sahib and the world's largest free community kitchen (Guru Ka Langar).",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 31.62,
+      "longitude": 74.8765
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pure gold-plated marble sanctum floating in the Amrit Sarovar holy pool",
+      "Guru Ka Langar serving free vegetarian meals to 100,000 people every day",
+      "Continuous live 24-hour Gurbani Kirtan recitations",
+      "Night Palki Sahib procession carrying the Guru Granth Sahib to Akal Takht"
+    ],
+    "activities": [
+      "Taking a holy dip (Ishnan) in the sacred Amrit Sarovar",
+      "Participating in Langar volunteer seva (washing plates or making rotis)",
+      "Watching the 9:30 PM Palki Sahib bedtime ceremony"
+    ],
+    "nearbyPlaces": [
+      "Jallianwala Bagh",
+      "Partition Museum",
+      "Heritage Street"
+    ],
+    "travelTips": [
+      "Head covering is mandatory for everyone (scarves available free outside); shoes must be checked in at free cloakrooms; open 24/7"
+    ],
+    "accessibility": "Wheelchair ramps, dedicated elevators, and loaner wheelchairs available at main entrance gates",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "golden-temple",
+      "harmandir-sahib",
+      "langar",
+      "sikh-shrine",
+      "amritsar",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "wagah-border",
+    "name": "Wagah-Attari Border Beating Retreat Ceremony",
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "city": "Amritsar",
+    "citySlug": "amritsar",
+    "type": "heritage",
+    "shortDescription": "Electrifying military flag-lowering drill staged daily at sunset between the Indian BSF and Pakistan Rangers in a 25,000-seat amphitheater.",
+    "longDescription": "Located 28 km west of Amritsar on the Grand Trunk Road at the international border between India and Pakistan. Staged daily since 1959. The Border Security Force (BSF) and Pakistan Rangers perform a 45-minute synchronized military drill featuring rapid stomping, high kicks, and flag-lowering ceremonies amid thunderous cheers of patriotic crowds.",
+    "category": [
+      "heritage",
+      "culture",
+      "patriotic"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours (including travel)",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 31.6044,
+      "longitude": 74.5731
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Synchronized high-kicking drill between Indian BSF and Pakistan Rangers",
+      "Ceremonial opening of international border gates and flag-lowering",
+      "25,000-seat stadium with energetic patriotic music and crowd cheering",
+      "Swarn Jayanti Dwar grand border entrance monument"
+    ],
+    "activities": [
+      "Watching the sunset Beating Retreat military ceremony",
+      "Patriotic singing and dancing before the ceremony starts"
+    ],
+    "nearbyPlaces": [
+      "Amritsar City (28 km)",
+      "Ram Tirath Temple"
+    ],
+    "travelTips": [
+      "Arrive at the border by 3:30 PM (winter) or 4:30 PM (summer) to clear security and secure good grandstand seats; bags are prohibited, carry only phone and wallet"
+    ],
+    "accessibility": "Wheelchair accessible seating ramp in the special lower seating enclosure",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "wagah-border",
+      "beating-retreat",
+      "bsf",
+      "attari",
+      "amritsar"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "rishikesh-ganga-aarti",
+    "name": "Triveni Ghat Ganga Aarti & Yoga Capital",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Rishikesh",
+    "citySlug": "rishikesh",
+    "type": "spiritual",
+    "shortDescription": "The 'Yoga Capital of the World', where the emerald Ganga emerges from the Himalayas, celebrated for evening Maha Aarti and white-water rafting.",
+    "longDescription": "Set in the Himalayan foothills where the holy River Ganga emerges onto the northern plains. Renowned globally as the world capital of yoga, meditation, and spiritual ashrams (famed for The Beatles' 1968 stay at Chaurasi Kutia). Features iconic suspension bridges (Laxman Jhula, Ram Jhula), evening Maha Aarti ceremonies at Triveni Ghat and Parmarth Niketan, and Grade III/IV white-water river rafting.",
+    "category": [
+      "spiritual",
+      "wellness",
+      "adventure",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to April",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 30.1033,
+      "longitude": 78.2948
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Evening Ganga Aarti with flaming brass lamps and Vedic chants at Triveni Ghat",
+      "White-water river rafting from Shivpuri (Grade III/IV rapids)",
+      "The Beatles Ashram (Chaurasi Kutia) with psychedelic graffiti murals",
+      "Parmarth Niketan riverside spiritual satsangs"
+    ],
+    "activities": [
+      "Morning yoga and meditation by the riverbank",
+      "16-km white-water rafting down the roaring Ganga",
+      "Releasing floating flower diyas at twilight Triveni Ghat Aarti"
+    ],
+    "nearbyPlaces": [
+      "Haridwar (25 km)",
+      "Neelkanth Mahadev Temple",
+      "Vashistha Cave"
+    ],
+    "travelTips": [
+      "Parmarth Niketan's Ganga Aarti starts at 6:00 PM; arrive 30 minutes early to sit on the riverside steps overlooking the Shiva statue"
+    ],
+    "accessibility": "Paved riverfront ghats with wide steps",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "rishikesh",
+      "yoga-capital",
+      "ganga-aarti",
+      "river-rafting",
+      "beatles-ashram"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "har-ki-pauri",
+    "name": "Har Ki Pauri & Ganga Aarti",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Haridwar",
+    "citySlug": "haridwar",
+    "type": "spiritual",
+    "shortDescription": "The most sacred bathing ghat on the Ganga, where Lord Vishnu left his footprint, famous for the magical evening Ganga Aarti with thousands of floating lamps.",
+    "longDescription": "Literally 'Steps of Lord Shiva'. Constructed by King Vikramaditya in the 1st century BCE. The exact spot where drops of Amrit (nectar of immortality) fell from the celestial urn during the churning of the cosmic ocean. Every evening at dusk, priests perform the grand Ganga Aarti with massive multi-tiered flaming brass lamps while thousands of pilgrims release marigold leaf-boats with flickering candles onto the fast-flowing emerald river.",
+    "category": [
+      "spiritual",
+      "culture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to April (Special during Kumbh Mela)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 29.957,
+      "longitude": 78.172
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Mesmerizing evening Ganga Aarti with clanging gongs and flaming brass lamps",
+      "Brahmakund sacred bathing pool with Lord Vishnu's footprint (Charan Paduka)",
+      "A sea of thousands of floating marigold leaf lamps (diyas) drifting downstream",
+      "Mansa Devi and Chandi Devi ropeway cable cars nearby"
+    ],
+    "activities": [
+      "Watching the evening Ganga Aarti from the ghat steps",
+      "Holy dip in the fast-flowing Ganga water at Brahmakund",
+      "Releasing a floating leaf diya with your prayers"
+    ],
+    "nearbyPlaces": [
+      "Mansa Devi Temple (Ropeway)",
+      "Chandi Devi Temple",
+      "Rishikesh (25 km)"
+    ],
+    "travelTips": [
+      "Arrive by 5:15 PM to get seated on the stone steps across the river channel for an unobstructed front view of the priests performing the aarti"
+    ],
+    "accessibility": "Paved bridges and ramps connect across the river channels to the ghats",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "har-ki-pauri",
+      "ganga-aarti",
+      "haridwar",
+      "kumbh-mela",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "naini-lake",
+    "name": "Naini Lake & Naina Devi Temple",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Nainital",
+    "citySlug": "nainital",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Natural emerald eye-shaped lake surrounded by seven forested peaks, offering yachting, pedal boating, and the sacred lakeside Naina Devi shrine.",
+    "longDescription": "According to Hindu mythology, Naini Lake was formed where the eyes (Naina) of Goddess Sati fell to earth. Set at 6,350 feet in the Kumaon Himalayas, this natural eye-shaped lake is flanked by seven forested hills. Visitors enjoy colorful yachting, pedal and row boating, walking the lively Mall Road, and taking the aerial ropeway to Snow View Point.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "hill-stations"
+    ],
+    "bestTimeToVisit": "March to June & September to November",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 29.3919,
+      "longitude": 79.4542
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Emerald eye-shaped high-altitude lake ringed by pine-covered hills",
+      "Sailing colorful yachts and row boating on calm mountain water",
+      "Sacred lakeside Naina Devi Shaktipeeth temple",
+      "Aerial ropeway cable car to Snow View Point overlooking Nanda Devi"
+    ],
+    "activities": [
+      "Boating and yachting across Naini Lake",
+      "Evening stroll on Mall Road tasting hot momos and bhutta",
+      "Taking the cable car to Snow View Point"
+    ],
+    "nearbyPlaces": [
+      "Snow View Point",
+      "Tiffin Top (Dorothy's Seat)",
+      "Bhimtal (22 km)"
+    ],
+    "travelTips": [
+      "Walk along Thandi Sadak on the quiet pedestrian-only side of the lake for a tranquil pine-scented morning walk away from vehicle traffic"
+    ],
+    "accessibility": "Flat paved lakeside promenades on both Mall Road and Thandi Sadak",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "naini-lake",
+      "boating",
+      "hill-station",
+      "kumaon",
+      "nainital"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "jim-corbett-national-park",
+    "name": "Jim Corbett National Park & Dhikala Zone",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Jim Corbett",
+    "citySlug": "jim-corbett",
+    "type": "wildlife",
+    "shortDescription": "India's first national park (established 1936), nestled in the Shivalik foothills along the Ramganga River, world-famous for wild tigers and elephants.",
+    "longDescription": "Established in 1936 as Hailey National Park and later renamed after legendary naturalist-author Jim Corbett. Spanning 520 square kilometers of dense sal forests, riverine grasslands, and hills along the Ramganga River. The prime Dhikala tourism zone offers historic British rest houses inside the deep forest, Royal Bengal Tiger safaris, and wild Asian elephant herds.",
+    "category": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "November to June (Dhikala zone opens November 15)",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day (Multi-Day Safaris)",
+    "coordinates": {
+      "latitude": 29.53,
+      "longitude": 78.7747
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "India's oldest national park and birthplace of Project Tiger (1973)",
+      "Famed Dhikala grassland zone with wild elephant herds along Ramganga River",
+      "Overnight stay inside core forest British-era heritage rest houses",
+      "Over 250 Royal Bengal Tigers and 600 bird species"
+    ],
+    "activities": [
+      "Jeep and Canter safaris in Dhikala, Bijrani, and Jhirna zones",
+      "Staying inside the core forest at Dhikala Forest Lodge",
+      "Visiting Corbett Museum at Kaladhungi"
+    ],
+    "nearbyPlaces": [
+      "Corbett Waterfall",
+      "Garjiya Devi Temple",
+      "Nainital (65 km)"
+    ],
+    "travelTips": [
+      "Dhikala night-stay bookings open on the Uttarakhand Forest Department portal 45 days in advance and sell out within minutes"
+    ],
+    "accessibility": "4x4 Gypsy and Canter safaris with boarding assistance",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "jim-corbett",
+      "project-tiger",
+      "dhikala",
+      "oldest-national-park",
+      "wildlife"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kedarnath-temple",
+    "name": "Kedarnath Temple (Shiva Jyotirlinga)",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Char Dham Circuit",
+    "citySlug": "char-dham-circuit",
+    "type": "spiritual",
+    "shortDescription": "The highest of the 12 Jyotirlingas at 3,584m in the Garhwal Himalayas, an ancient stone shrine surrounded by snow-capped Kedarnath peaks.",
+    "longDescription": "Set at an altitude of 3,584 meters (11,759 ft) near the Mandakini River glacier. Revered as one of the 12 Jyotirlingas and the most prominent of the Panch Kedar temples, traditionally built by the Pandavas and revived by Adi Shankaracharya. The massive grey stone temple survived the catastrophic 2013 Himalayan deluge virtually untouched thanks to the 'Bhim Shila' boulder that diverted floodwaters.",
+    "category": [
+      "spiritual",
+      "adventure",
+      "heritage"
+    ],
+    "bestTimeToVisit": "May to June & September to October (Closed during winter)",
+    "recommendedDuration": "2 - 3 days (16-km trek from Gaurikund)",
+    "estimatedVisitTime": "Full Day (Trek / Helicopter)",
+    "coordinates": {
+      "latitude": 30.7352,
+      "longitude": 79.0669
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Highest of the 12 sacred Jyotirlingas at 3,584 meters altitude",
+      "Framed against the 22,000-foot snow-capped Kedarnath Peak",
+      "Historic Bhim Shila boulder that miraculously protected the temple during 2013 floods",
+      "Challenging 16-km scenic trek along the rushing Mandakini River"
+    ],
+    "activities": [
+      "Trekking the 16-km trail from Gaurikund (or helicopter transfer)",
+      "Early morning darshan of the triangular Shiva Jyotirlinga",
+      "Visiting Adi Shankaracharya Samadhi monument behind the temple"
+    ],
+    "nearbyPlaces": [
+      "Bhairavnath Temple",
+      "Gandhi Sarovar glacier",
+      "Gaurikund base"
+    ],
+    "travelTips": [
+      "Mandatory biometric registration required on the Uttarakhand Char Dham portal; carry warm thermal clothing even in summer as night temperatures drop near freezing"
+    ],
+    "accessibility": "Requires a 16-km steep mountain trek; ponies, palanquins, and helicopter services available from Phata/Guptkashi",
+    "familyFriendly": false,
+    "budgetLevel": "moderate",
+    "tags": [
+      "kedarnath",
+      "jyotirlinga",
+      "himalayan-temple",
+      "char-dham",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "badrinath-temple",
+    "name": "Badrinath Temple (Badri Vishal)",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Char Dham Circuit",
+    "citySlug": "char-dham-circuit",
+    "type": "spiritual",
+    "shortDescription": "Primary Vishnu shrine of India's Char Dham at 3,133m between Nar and Narayana mountain ranges, famous for Tapt Kund hot sulfur springs.",
+    "longDescription": "Located at an altitude of 3,133 meters along the banks of the Alaknanda River. The supreme shrine of Lord Vishnu, established by Adi Shankaracharya in the 9th century. Features a vibrant rainbow-painted facade, a one-meter black stone (Saligram) idol of Lord Badrinarayan seated in Padmasana posture, and natural natural boiling sulfur hot springs (Tapt Kund) where pilgrims bathe before darshan.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "May to June & September to October (Closed in winter)",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 30.7448,
+      "longitude": 79.493
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Primary Vishnu shrine of both All-India Char Dham and Chota Char Dham",
+      "Black stone Shaligram idol of Lord Badrinarayan under gold canopy",
+      "Natural healing hot sulfur spring pool at Tapt Kund (55°C)",
+      "Located just 3 km from Mana, officially India's first/last border village"
+    ],
+    "activities": [
+      "Bathing in the natural hot spring of Tapt Kund",
+      "Darshan of Lord Badri Vishal",
+      "Visiting Mana Village (India's first village) and Bheem Pul natural stone bridge"
+    ],
+    "nearbyPlaces": [
+      "Mana Village (3 km)",
+      "Vasudhara Falls",
+      "Vyasa Cave"
+    ],
+    "travelTips": [
+      "Unlike Kedarnath, Badrinath is directly accessible by motorable road via Joshimath; visit Mana village 3 km ahead to see Saraswati River emerge from the mountain"
+    ],
+    "accessibility": "Motorable road to temple entrance; gentle ramps and stone stairs to sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "badrinath",
+      "char-dham",
+      "vishnu-shrine",
+      "tapt-kund",
+      "mana-village"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  }
+]

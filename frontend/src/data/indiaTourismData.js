@@ -1,0 +1,17092 @@
+// LukAround - Master India Tourism Database (Frontend ES Module)
+// Automatically generated with complete schemas for all 15 Priority States, 77 Cities, and 198+ Attractions.
+
+export const metadata = {
+  "title": "LukAround - India Tourism & Travel Discovery Master Database",
+  "version": "2.0.0",
+  "generatedAt": "2026-10-08T09:44:47.271Z",
+  "totalStates": 15,
+  "totalCities": 77,
+  "totalAttractions": 198,
+  "totalCategories": 8,
+  "totalTravelStyles": 12,
+  "totalItineraries": 6
+};
+export const states = [
+  {
+    "id": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "slug": "uttar-pradesh",
+    "priorityRank": 1,
+    "domesticTouristVisits2024": 320000000,
+    "capital": "Lucknow",
+    "description": "Uttar Pradesh is the spiritual and cultural heartland of India, cradled by the holy rivers Ganga and Yamuna. Home to the timeless Taj Mahal, the eternal sacred ghats of Varanasi, the divine birthplace of Lord Rama in Ayodhya, and the regal Nawabi heritage of Lucknow, Uttar Pradesh presents an unmatched tapestry of living history, magnificent Mughal and Hindu architecture, world-renowned culinary traditions, and vibrant cultural festivities.",
+    "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "spiritual",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Agra",
+      "Varanasi",
+      "Lucknow",
+      "Ayodhya",
+      "Prayagraj",
+      "Mathura",
+      "Vrindavan",
+      "Kanpur",
+      "Jhansi",
+      "Chitrakoot",
+      "Sarnath",
+      "Kushinagar",
+      "Fatehpur Sikri",
+      "Meerut",
+      "Bareilly"
+    ],
+    "topDestinations": [
+      "Taj Mahal",
+      "Kashi Vishwanath Temple",
+      "Ram Mandir",
+      "Bara Imambara",
+      "Triveni Sangam",
+      "Fatehpur Sikri",
+      "Prem Mandir"
+    ],
+    "popularFoods": [
+      {
+        "name": "Lucknowi Awadhi Biryani",
+        "description": "Fragrant dum-cooked rice and marinated meat infused with saffron and royal spices"
+      },
+      {
+        "name": "Galouti & Tunday Kebabs",
+        "description": "Mouth-melting kebabs created with over 160 secret aromatic herbs and spices"
+      },
+      {
+        "name": "Agra Petha",
+        "description": "Translucent candied ash gourd sweet in saffron, pan, and almond varieties"
+      },
+      {
+        "name": "Banarasi Kachori & Jalebi",
+        "description": "Crisp urad dal stuffed poori served with spicy aloo and fresh syrup-soaked jalebi"
+      },
+      {
+        "name": "Mathura Peda",
+        "description": "Caramelized reduced milk sweet renowned for its rich mawa flavor"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Kumbh Mela (Prayagraj)",
+        "description": "The largest human spiritual gathering on earth at the sacred Triveni Sangam"
+      },
+      {
+        "name": "Dev Deepawali (Varanasi)",
+        "description": "Lakhs of clay earthen lamps illuminate all 84 ghats on Kartik Purnima"
+      },
+      {
+        "name": "Braj Ki Holi (Mathura/Barsana)",
+        "description": "Spectacular multi-day celebration of colors, flowers, and Lathmar Holi"
+      },
+      {
+        "name": "Deepotsav (Ayodhya)",
+        "description": "Millions of oil lamps lit along the Saryu River setting world records"
+      }
+    ],
+    "culture": "Uttar Pradesh is the birthplace of Kathak, one of the eight classical dance forms of India, and the home of the prestigious Benares and Lucknow gharanas of Hindustani classical music. The state is renowned for Chikankari embroidery, Banarasi silk weaving, brassware of Moradabad, and perfumed attar from Kannauj.",
+    "transportation": {
+      "airports": [
+        "Chhatrapati Shivaji Maharaj International (Lucknow - LKO)",
+        "Lal Bahadur Shastri International (Varanasi - VNS)",
+        "Maharishi Valmiki International (Ayodhya - AYJ)",
+        "Agra Airport (AGR)"
+      ],
+      "railway": [
+        "Prayagraj Junction",
+        "Varanasi Junction",
+        "Lucknow Charbagh",
+        "Agra Cantt",
+        "Kanpur Central",
+        "Mathura Junction"
+      ],
+      "road": [
+        "Yamuna Expressway",
+        "Agra-Lucknow Expressway",
+        "Purvanchal Expressway",
+        "Bundelkhand Expressway"
+      ]
+    },
+    "unescoSites": [
+      "Taj Mahal (Agra)",
+      "Agra Fort (Agra)",
+      "Fatehpur Sikri"
+    ]
+  },
+  {
+    "id": "tamil-nadu",
+    "name": "Tamil Nadu",
+    "slug": "tamil-nadu",
+    "priorityRank": 2,
+    "domesticTouristVisits2024": 286000000,
+    "capital": "Chennai",
+    "description": "Tamil Nadu is India's sanctuary of Dravidian architectural genius, classical arts, and timeless coastal beauty. From the soaring gopurams of Madurai, Thanjavur, and Rameswaram to the mist-wrapped Nilgiri hill stations of Ooty and Kodaikanal, and the meeting of three oceans at Kanyakumari, Tamil Nadu offers over two millennia of unbroken classical Tamil heritage, world-famous temple art, and spicy Chettinad culinary grandeur.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "spiritual",
+      "beaches",
+      "hill-stations",
+      "culture"
+    ],
+    "bestTimeToVisit": "November to March",
+    "majorCities": [
+      "Chennai",
+      "Coimbatore",
+      "Madurai",
+      "Ooty",
+      "Kodaikanal",
+      "Kanyakumari",
+      "Rameswaram",
+      "Thanjavur",
+      "Tiruchirappalli",
+      "Mahabalipuram",
+      "Kanchipuram",
+      "Yercaud",
+      "Coonoor",
+      "Valparai",
+      "Tirunelveli",
+      "Vellore",
+      "Salem"
+    ],
+    "topDestinations": [
+      "Meenakshi Amman Temple",
+      "Brihadeeswarar Temple",
+      "Shore Temple",
+      "Ramanathaswamy Temple",
+      "Vivekananda Rock Memorial",
+      "Ooty Lake",
+      "Kodaikanal Lake"
+    ],
+    "popularFoods": [
+      {
+        "name": "Chettinad Pepper Chicken / Chukka",
+        "description": "Fiercely aromatic curry ground with black peppercorns, kalpasi stone flower, and freshly roasted spices"
+      },
+      {
+        "name": "Madurai Jigarthanda",
+        "description": "Iconic cooling royal beverage made with badam pisin almond gum, nannari syrup, and basundi ice cream"
+      },
+      {
+        "name": "Kanchipuram Idli",
+        "description": "Traditional spiced steamed cakes seasoned with crushed peppercorns, cumin, and ginger"
+      },
+      {
+        "name": "Filter Coffee (Kumbakonam Degree)",
+        "description": "Frothy, rich chicory-drip decoction blended with boiled cow's milk served in brass dabara-tumbler"
+      },
+      {
+        "name": "Tirunelveli Halwa",
+        "description": "Ghee-drenched wheat milk halwa cooked with pure Thamirabarani river water"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Pongal",
+        "description": "Four-day harvest celebration featuring boiling milk in earthen pots, Jallikattu, and kolam designs"
+      },
+      {
+        "name": "Chithirai Festival (Madurai)",
+        "description": "Grand celebration of the celestial wedding of Goddess Meenakshi and Lord Sundareswarar"
+      },
+      {
+        "name": "Margazhi Music Season (Chennai)",
+        "description": "The world's largest classical Carnatic music and Bharatanatyam dance festival"
+      },
+      {
+        "name": "Natyanjali Dance Festival (Chidambaram)",
+        "description": "Classical dancers offer performances to Lord Nataraja against temple sanctums"
+      }
+    ],
+    "culture": "Tamil Nadu preserves the ancient Sangam literary traditions, Bharatanatyam classical dance, intricate Tanjore paintings with 22-carat gold foil, Kanchipuram silk sarees handwoven on pit looms, and world-renowned bronze casting techniques practiced since the Chola dynasty.",
+    "transportation": {
+      "airports": [
+        "Chennai International (MAA)",
+        "Coimbatore International (CJB)",
+        "Madurai International (IXM)",
+        "Tiruchirappalli International (TRZ)"
+      ],
+      "railway": [
+        "Chennai Central (MAS)",
+        "Madurai Junction",
+        "Coimbatore Junction",
+        "Tiruchirappalli Junction"
+      ],
+      "road": [
+        "Grand Southern Trunk Road (NH 45)",
+        "NH 44 (Kanyakumari Highway)",
+        "East Coast Road (ECR scenic corridor)"
+      ]
+    },
+    "unescoSites": [
+      "Great Living Chola Temples (Thanjavur, Gangaikonda Cholapuram, Darasuram)",
+      "Group of Monuments at Mahabalipuram",
+      "Nilgiri Mountain Railway"
+    ]
+  },
+  {
+    "id": "karnataka",
+    "name": "Karnataka",
+    "slug": "karnataka",
+    "priorityRank": 3,
+    "domesticTouristVisits2024": 245000000,
+    "capital": "Bengaluru",
+    "description": "Karnataka embodies a wondrous harmony of prehistoric boulder-strewn ruins, opulent royal palaces, pristine coffee-draped Western Ghats, and sparkling coastal shorelines. From the UNESCO monument wonderland of Hampi to the golden palace of Mysuru, the misty hills of Coorg and Chikmagalur, and the untouched sacred beaches of Gokarna, Karnataka is an extraordinary travel mosaic.",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f4446b1a?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "nature",
+      "hill-stations",
+      "wildlife",
+      "beaches"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Bengaluru",
+      "Mysuru",
+      "Hampi",
+      "Coorg",
+      "Chikmagalur",
+      "Udupi",
+      "Gokarna",
+      "Mangaluru",
+      "Badami",
+      "Aihole",
+      "Pattadakal",
+      "Belur",
+      "Halebeedu",
+      "Shivamogga",
+      "Dandeli",
+      "Kabini",
+      "Bandipur",
+      "Jog Falls",
+      "Hubballi",
+      "Srirangapatna"
+    ],
+    "topDestinations": [
+      "Hampi Ruins & Stone Chariot",
+      "Mysore Palace",
+      "Om Beach Gokarna",
+      "Abbey Falls Coorg",
+      "Badami Cave Temples",
+      "Jog Falls",
+      "Belur-Halebeedu"
+    ],
+    "popularFoods": [
+      {
+        "name": "Mysore Pak",
+        "description": "Silky, melt-in-mouth dessert crafted with gram flour, pure ghee, and sugar crystals"
+      },
+      {
+        "name": "Bisi Bele Bath",
+        "description": "Spiced hot lentil-rice delicacy simmered with vegetables, tamarind, and aromatic spice blend"
+      },
+      {
+        "name": "Coorg Pandi Curry",
+        "description": "Signature Kodava dish spiced with indigenous Kachampuli black vinegar and roasted coriander"
+      },
+      {
+        "name": "Mangalorean Ghee Roast",
+        "description": "Spicy and tangy coastal specialty roasted in generous ladles of country ghee"
+      },
+      {
+        "name": "Mysore Masala Dosa",
+        "description": "Crisp golden crepe smeared with spicy red garlic chutney and stuffed with spiced potato"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Mysuru Dasara",
+        "description": "Ten days of royal spectacle featuring the illuminated palace with 100,000 bulbs and Jamboo Savari"
+      },
+      {
+        "name": "Hampi Utsav",
+        "description": "Multi-colored illumination of 14th-century Vijayanagara ruins with classical music and dance"
+      },
+      {
+        "name": "Kambala Buffalo Race",
+        "description": "Traditional coastal slush-track buffalo race celebrating agrarian folklore"
+      },
+      {
+        "name": "Karaga Shaktyotsava (Bengaluru)",
+        "description": "Ancient firewalking festival honoring Draupadi across Old Bengaluru"
+      }
+    ],
+    "culture": "Karnataka's heritage spans the Chalukya, Hoysala, and Vijayanagara empires. Folk art forms include the energetic Yakshagana theater, Dollu Kunitha drum dancing, Channapatna wooden lacquerware toys, and Bidriware silver inlay metalwork.",
+    "transportation": {
+      "airports": [
+        "Kempegowda International Bengaluru (BLR)",
+        "Mangaluru International (IXE)",
+        "Mysuru Airport (MYQ)",
+        "Hubballi Airport (HBX)"
+      ],
+      "railway": [
+        "KSR Bengaluru (SBC)",
+        "Yesvantpur Junction",
+        "Mysuru Junction",
+        "Hubballi Junction"
+      ],
+      "road": [
+        "Bengaluru-Mysuru Expressway",
+        "NH 48 (Pune-Bengaluru Highway)",
+        "NH 66 (Coastal Konkan Highway)"
+      ]
+    },
+    "unescoSites": [
+      "Group of Monuments at Hampi",
+      "Group of Monuments at Pattadakal",
+      "Sacred Ensembles of the Hoysalas (Belur, Halebeedu, Somanathapura)"
+    ]
+  },
+  {
+    "id": "andhra-pradesh",
+    "name": "Andhra Pradesh",
+    "slug": "andhra-pradesh",
+    "priorityRank": 4,
+    "domesticTouristVisits2024": 192000000,
+    "capital": "Amaravati",
+    "description": "Andhra Pradesh stretches across 974 kilometers of breathtaking Coromandel coastline, sacred hill shrines, prehistoric limestone caves, and majestic river canyons. Home to the world-renowned sacred shrine of Tirupati, the coastal jewel of Visakhapatnam, the Grand Canyon of India at Gandikota, and the mist-shrouded coffee valleys of Araku, Andhra Pradesh blends divine devotion with rugged natural wonder.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "beaches",
+      "nature",
+      "heritage",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Visakhapatnam",
+      "Tirupati",
+      "Vijayawada",
+      "Amaravati",
+      "Araku Valley",
+      "Rajahmundry",
+      "Srisailam",
+      "Kurnool",
+      "Nellore",
+      "Kakinada",
+      "Horsley Hills",
+      "Gandikota",
+      "Lepakshi",
+      "Papikondalu"
+    ],
+    "topDestinations": [
+      "Tirumala Venkateswara Temple",
+      "Borra Caves",
+      "Gandikota Gorge",
+      "Lepakshi Veerabhadra Temple",
+      "Kailasagiri Visakhapatnam",
+      "Srisailam Jyotirlinga"
+    ],
+    "popularFoods": [
+      {
+        "name": "Tirupati Laddu",
+        "description": "World-famous GI-tagged sacred offering crafted with besan, sugar, cashews, cardamom, and pure ghee"
+      },
+      {
+        "name": "Andhra Gongura Mutton / Chicken",
+        "description": "Fiery curry flavored with tart sorrel leaves (gongura) and red Guntur chilies"
+      },
+      {
+        "name": "Pesarattu Upma",
+        "description": "Whole green gram dosa crisped on griddle and stuffed with hot ginger-flavored rava upma"
+      },
+      {
+        "name": "Pootharekulu (Paper Sweet)",
+        "description": "Ultra-thin rice starch edible paper rolls layered with powdered sugar and ghee from Atreyapuram"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Tirumala Brahmotsavam",
+        "description": "Nine-day spiritual festival with spectacular processions of Lord Malayappa Swami on sacred vahanas"
+      },
+      {
+        "name": "Visakha Utsav",
+        "description": "Three-day coastal celebration on RK Beach showcasing tribal dance, beach sports, and cuisine"
+      },
+      {
+        "name": "Ugadi",
+        "description": "Telugu New Year celebrated with Ugadi Pachadi combining six distinct tastes of life"
+      },
+      {
+        "name": "Lepakshi Utsav",
+        "description": "Celebration of Vijayanagara stone architecture, dance, and music at the Veerabhadra temple"
+      }
+    ],
+    "culture": "Andhra Pradesh is the cradle of Kuchipudi classical dance, Kondapalli wooden toys, Kalamkari hand-painted textiles, and the intricate stone carving traditions of Lepakshi with its legendary hanging pillar.",
+    "transportation": {
+      "airports": [
+        "Visakhapatnam International (VTZ)",
+        "Vijayawada International (VGA)",
+        "Tirupati Airport (TIR)",
+        "Rajahmundry Airport (RJA)"
+      ],
+      "railway": [
+        "Visakhapatnam Junction",
+        "Vijayawada Junction (one of India's busiest)",
+        "Tirupati Railway Station"
+      ],
+      "road": [
+        "NH 16 (Chennai-Kolkata Coastal Highway)",
+        "NH 40 (Rayalaseema Highway)"
+      ]
+    },
+    "unescoSites": [
+      "Tentative: Lepakshi Veerabhadra Temple",
+      "Tentative: Gandikota Canyon Complex"
+    ]
+  },
+  {
+    "id": "rajasthan",
+    "name": "Rajasthan",
+    "slug": "rajasthan",
+    "priorityRank": 5,
+    "domesticTouristVisits2024": 180000000,
+    "capital": "Jaipur",
+    "description": "Rajasthan is the land of kings, desert romanticism, massive hilltop battlements, and mirror-work palaces. From the rose-tinted architecture of Jaipur to the cobalt blue streets of Jodhpur, the romantic lakeside palaces of Udaipur, and the golden sand dunes of Jaisalmer, Rajasthan offers an unforgettable journey through heroic chivalry, folk melodies, and royal opulence.",
+    "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "culture",
+      "wildlife",
+      "adventure",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Jaipur",
+      "Udaipur",
+      "Jodhpur",
+      "Jaisalmer",
+      "Pushkar",
+      "Ajmer",
+      "Bikaner",
+      "Mount Abu",
+      "Chittorgarh",
+      "Ranthambore",
+      "Bharatpur",
+      "Bundi",
+      "Alwar",
+      "Kota",
+      "Neemrana"
+    ],
+    "topDestinations": [
+      "Amber Fort",
+      "Hawa Mahal",
+      "City Palace Udaipur",
+      "Mehrangarh Fort Jodhpur",
+      "Jaisalmer Golden Fort",
+      "Ranthambore Tiger Reserve",
+      "Pushkar Lake"
+    ],
+    "popularFoods": [
+      {
+        "name": "Dal Baati Churma",
+        "description": "Hard wheat dough balls baked on cow-dung coals, soaked in ghee, and served with spicy panchmel dal and sweet churma"
+      },
+      {
+        "name": "Laal Maas",
+        "description": "Fiery Rajput mutton curry simmered with authentic Mathania red chilies and smoked cloves"
+      },
+      {
+        "name": "Ghevar",
+        "description": "Disc-shaped honeycomb dessert soaked in sugar syrup, crowned with mawa and silver leaf"
+      },
+      {
+        "name": "Ker Sangri",
+        "description": "Desert bean and berry vegetable preparation cooked with mustard oil and dry spices"
+      },
+      {
+        "name": "Pyaaz Kachori",
+        "description": "Flaky, crisp golden pastry filled with spiced caramelized onion mixture"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Pushkar Camel Fair",
+        "description": "World's largest livestock trading spectacle accompanied by folk dancers, turbans, and hot-air balloons"
+      },
+      {
+        "name": "Desert Festival (Jaisalmer)",
+        "description": "Three days of camel polo, turban tying, and folk singing on the Sam sand dunes"
+      },
+      {
+        "name": "Jaipur Literature Festival",
+        "description": "The world's greatest free literary gathering hosted at the historic Diggi Palace"
+      },
+      {
+        "name": "Teej & Gangaur",
+        "description": "Joyous women's processions of Goddess Parvati across the old walled Pink City"
+      }
+    ],
+    "culture": "Famed for Ghoomar and Kalbelia folk dances, soulful Langas and Manganiyars singers, blue pottery of Jaipur, block printing of Sanganer and Bagru, and intricate Kundan-Meenakari royal jewelry.",
+    "transportation": {
+      "airports": [
+        "Jaipur International (JAI)",
+        "Udaipur Maharana Pratap (UDR)",
+        "Jodhpur Airport (JDH)",
+        "Jaisalmer Airport (JSA)"
+      ],
+      "railway": [
+        "Jaipur Junction",
+        "Jodhpur Junction",
+        "Udaipur City",
+        "Ajmer Junction"
+      ],
+      "road": [
+        "Delhi-Mumbai Expressway",
+        "NH 48 (Delhi-Jaipur Corridor)",
+        "NH 11 (Bikaner-Agra)"
+      ]
+    },
+    "unescoSites": [
+      "Hill Forts of Rajasthan (Chittorgarh, Kumbhalgarh, Sawai Madhopur, Jaisalmer, Amber, Gagron)",
+      "Jaipur Walled City",
+      "Jantar Mantar Jaipur",
+      "Keoladeo National Park Bharatpur"
+    ]
+  },
+  {
+    "id": "maharashtra",
+    "name": "Maharashtra",
+    "slug": "maharashtra",
+    "priorityRank": 6,
+    "domesticTouristVisits2024": 172000000,
+    "capital": "Mumbai",
+    "description": "Maharashtra is a powerhouse state where ancient cave artistry meets soaring modern skylines and rugged Maratha hill battlements. Ranging from Mumbai's Bollywood energy and Victorian Gothic UNESCO architecture to the rock-cut cave wonders of Ajanta and Ellora, the serene vineyards of Nashik, and the Sahyadri hill retreats of Mahabaleshwar and Lonavala, Maharashtra is an electrifying journey.",
+    "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "beaches",
+      "hill-stations",
+      "nature",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Mumbai",
+      "Pune",
+      "Nashik",
+      "Mahabaleshwar",
+      "Lonavala",
+      "Khandala",
+      "Chhatrapati Sambhaji Nagar",
+      "Alibaug",
+      "Kolhapur",
+      "Nagpur",
+      "Shirdi",
+      "Matheran",
+      "Ratnagiri",
+      "Panchgani",
+      "Ajanta",
+      "Ellora"
+    ],
+    "topDestinations": [
+      "Gateway of India",
+      "Marine Drive",
+      "Ajanta Caves",
+      "Ellora Kailash Temple",
+      "Shaniwar Wada",
+      "Elephanta Caves",
+      "Bibi Ka Maqbara"
+    ],
+    "popularFoods": [
+      {
+        "name": "Vada Pav",
+        "description": "Spiced potato dumpling dipped in chickpea batter, fried crisp, and tucked in pav with garlic chutney"
+      },
+      {
+        "name": "Misal Pav",
+        "description": "Spicy sprout curry topped with farsan, onions, coriander, and served with buttered pav and extra tari"
+      },
+      {
+        "name": "Puran Poli",
+        "description": "Sweet flatbread stuffed with delicate mixture of chana dal, jaggery, cardamom, and nutmeg"
+      },
+      {
+        "name": "Bombil Fry (Bombay Duck)",
+        "description": "Semolina-crusted crispy fried coastal lizardfish seasoned with spicy green masala"
+      },
+      {
+        "name": "Kolhapuri Tambda-Pandhra Rassa",
+        "description": "Fiery red meat broth paired with soothing coconut-milk white soup"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Ganesh Chaturthi",
+        "description": "Ten days of massive public pandals, dhol-tasha pathaks, and emotional sea immersion processions"
+      },
+      {
+        "name": "Gudi Padwa",
+        "description": "Traditional Marathi New Year marked by raising decorated victory flags (gudis) and shobha yatras"
+      },
+      {
+        "name": "Ellora-Ajanta Festival",
+        "description": "Classical musicians and dancers perform against the illuminated backdrop of ancient stone caves"
+      },
+      {
+        "name": "Parihar / Pandharpur Wari",
+        "description": "Century-old pilgrimage on foot where millions of Warkaris walk singing abhangas"
+      }
+    ],
+    "culture": "Maharashtra boasts Lavani dance, Powada martial ballads of Chhatrapati Shivaji Maharaj, Paithani silk sarees with peacock motifs, and Warli geometric tribal paintings.",
+    "transportation": {
+      "airports": [
+        "Chhatrapati Shivaji Maharaj International Mumbai (BOM)",
+        "Pune International (PNQ)",
+        "Dr. Babasaheb Ambedkar Nagpur (NAG)",
+        "Shirdi Airport (SAG)"
+      ],
+      "railway": [
+        "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+        "Mumbai Central",
+        "Pune Junction"
+      ],
+      "road": [
+        "Mumbai-Pune Expressway",
+        "Samruddhi Mahamarg (Mumbai-Nagpur)",
+        "Atal Setu (MTHL)"
+      ]
+    },
+    "unescoSites": [
+      "Ajanta Caves",
+      "Ellora Caves",
+      "Elephanta Caves",
+      "Chhatrapati Shivaji Maharaj Terminus",
+      "Victorian Gothic and Art Deco Ensembles of Mumbai"
+    ]
+  },
+  {
+    "id": "west-bengal",
+    "name": "West Bengal",
+    "slug": "west-bengal",
+    "priorityRank": 7,
+    "domesticTouristVisits2024": 155000000,
+    "capital": "Kolkata",
+    "description": "West Bengal stretches from the snow-capped Himalayan peaks of Kanchenjunga in Darjeeling down to the world's largest mangrove delta in the Sundarbans. Famous for Kolkata's colonial grandeur, intellectual cafes, Rabindranath Tagore's sanctuary at Shantiniketan, Terracotta temples of Bishnupur, and the euphoria of Durga Puja, Bengal is a poetic feast for travellers.",
+    "heroImage": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "culture",
+      "nature",
+      "wildlife",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Kolkata",
+      "Darjeeling",
+      "Kalimpong",
+      "Siliguri",
+      "Digha",
+      "Sundarbans",
+      "Shantiniketan",
+      "Murshidabad",
+      "Bishnupur",
+      "Jalpaiguri",
+      "Kurseong"
+    ],
+    "topDestinations": [
+      "Victoria Memorial",
+      "Howrah Bridge",
+      "Tiger Hill Darjeeling",
+      "Darjeeling Toy Train",
+      "Sundarbans National Park",
+      "Dakshineswar Kali Temple",
+      "Visva-Bharati"
+    ],
+    "popularFoods": [
+      {
+        "name": "Rosogolla & Sandesh",
+        "description": "Spongy chhena dumplings in sugar syrup and soft cottage cheese sweets infused with nolen gur date-palm jaggery"
+      },
+      {
+        "name": "Macher Jhol",
+        "description": "Traditional mustard-scented hilsa (Ilish) or rohu fish curry cooked with nigella seeds and green chilies"
+      },
+      {
+        "name": "Kolkata Biryani",
+        "description": "Fragrant Awadhi-rooted biryani enriched with slow-cooked spiced potatoes and boiled egg"
+      },
+      {
+        "name": "Kathi Roll",
+        "description": "Flaky paratha wrapped around char-grilled chicken or paneer with lime and sliced onions"
+      },
+      {
+        "name": "Shorshe Ilish",
+        "description": "Prized Hilsa fish steamed in pungent yellow and black mustard seed paste"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Durga Puja (UNESCO Heritage)",
+        "description": "Spectacular multi-day public art installation celebration with monumental pandals and dhaak drums"
+      },
+      {
+        "name": "Poush Mela (Shantiniketan)",
+        "description": "Winter folk fair featuring Baul singers, tribal dances, and Dokra metal craft"
+      },
+      {
+        "name": "Kolkata Book Fair",
+        "description": "World's third-largest book fair and highest-attended non-trade book exposition"
+      },
+      {
+        "name": "Ganga Sagar Mela",
+        "description": "Massive Makar Sankranti holy dip festival at Sagar Island where the Ganga meets the Bay of Bengal"
+      }
+    ],
+    "culture": "Nobel laureates, Satyajit Ray cinema, Baul mystic singing, Kantha embroidery, Terracotta horse pottery of Bankura, and the UNESCO-inscribed celebration of Durga Puja.",
+    "transportation": {
+      "airports": [
+        "Netaji Subhash Chandra Bose International Kolkata (CCU)",
+        "Bagdogra Airport Siliguri (IXB)",
+        "Kazi Nazrul Islam Durgapur (RDP)"
+      ],
+      "railway": [
+        "Howrah Junction (India's oldest & largest)",
+        "Sealdah",
+        "New Jalpaiguri (NJP)"
+      ],
+      "road": [
+        "NH 12 (Kolkata-Siliguri Corridor)",
+        "NH 16",
+        "Durgapur Expressway"
+      ]
+    },
+    "unescoSites": [
+      "Sundarbans National Park",
+      "Darjeeling Himalayan Railway (Mountain Railways of India)",
+      "Santiniketan",
+      "Durga Puja in Kolkata (Intangible Cultural Heritage)"
+    ]
+  },
+  {
+    "id": "gujarat",
+    "name": "Gujarat",
+    "slug": "gujarat",
+    "priorityRank": 8,
+    "domesticTouristVisits2024": 148000000,
+    "capital": "Gandhinagar",
+    "description": "Gujarat is India's western frontier of boundless white salt deserts, Asiatic lion wilderness, Harappan antiquity, and sacred coastal pilgrimage sites. From the hypnotic moonlight over the Great Rann of Kutch to the ancient Harappan citadel of Dholavira, the architectural perfection of Rani ki Vav, and the sacred sea temples of Dwarka and Somnath, Gujarat radiates entrepreneurship, textiles, and vibrant folk celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1597040663342-45b6af2b0a97?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "wildlife",
+      "spiritual",
+      "culture",
+      "food"
+    ],
+    "bestTimeToVisit": "November to February",
+    "majorCities": [
+      "Ahmedabad",
+      "Vadodara",
+      "Surat",
+      "Rajkot",
+      "Dwarka",
+      "Somnath",
+      "Kutch",
+      "Bhuj",
+      "Gir",
+      "Junagadh",
+      "Gandhinagar",
+      "Saputara",
+      "Modhera",
+      "Patan",
+      "Champaner",
+      "Dholavira"
+    ],
+    "topDestinations": [
+      "Rann of Kutch White Desert",
+      "Gir National Park Lions",
+      "Rani ki Vav Stepwell",
+      "Somnath Temple",
+      "Dwarkadhish Temple",
+      "Statue of Unity",
+      "Sabarmati Ashram"
+    ],
+    "popularFoods": [
+      {
+        "name": "Gujarati Thali",
+        "description": "Balanced sweet, salty, and sour platter featuring dal, kadhi, rotli, shaak, farsan, and sweet shrikhand"
+      },
+      {
+        "name": "Dhokla & Khandvi",
+        "description": "Steamed fermented gram flour savory sponge and paper-thin rolled gram rolls tempered with mustard and sesame"
+      },
+      {
+        "name": "Undhiyu",
+        "description": "Winter harvest pot casserole of seasonal root vegetables, surti papdi, and fenugreek muthiyas cooked upside down"
+      },
+      {
+        "name": "Fafda Jalebi",
+        "description": "Crispy chickpea flour strips served with hot sweet jalebi, raw papaya sambharo, and fried green chilies"
+      },
+      {
+        "name": "Dabeli (Kutch)",
+        "description": "Pav stuffed with spicy mashed potato filling, peanuts, pomegranate seeds, and garlic chutney"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Navratri Garba",
+        "description": "World's longest nine-night dance festival where millions dance Garba and Dandiya Raas in kaleidoscopic chaniya cholis"
+      },
+      {
+        "name": "Rann Utsav (Dhordo)",
+        "description": "Three-month tent city celebration of music, crafts, and full-moon desert safaris"
+      },
+      {
+        "name": "International Kite Festival (Uttarayan)",
+        "description": "Skies across Ahmedabad and Surat filled with millions of kites and night lanterns"
+      },
+      {
+        "name": "Modhera Dance Festival",
+        "description": "Classical dance recital staged against the illuminated 11th-century Sun Temple stepwell"
+      }
+    ],
+    "culture": "Gujarat is the land of Mahatma Gandhi, Patola double-ikat silk weaving, Bandhani tie-dye, Rogan fabric painting, copper bell making, and Ajrakh block printing.",
+    "transportation": {
+      "airports": [
+        "Sardar Vallabhbhai Patel International Ahmedabad (AMD)",
+        "Surat Airport (STV)",
+        "Vadodara Airport (BDQ)",
+        "Rajkot International (HSR)"
+      ],
+      "railway": [
+        "Ahmedabad Junction",
+        "Surat Railway Station",
+        "Vadodara Junction"
+      ],
+      "road": [
+        "National Expressway 1 (Ahmedabad-Vadodara)",
+        "Delhi-Mumbai Expressway corridor",
+        "NH 48"
+      ]
+    },
+    "unescoSites": [
+      "Historic City of Ahmadabad",
+      "Rani-ki-Vav (the Queen’s Stepwell) at Patan",
+      "Champaner-Pavagadh Archaeological Park",
+      "Dholavira: a Harappan City"
+    ]
+  },
+  {
+    "id": "madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "slug": "madhya-pradesh",
+    "priorityRank": 9,
+    "domesticTouristVisits2024": 135000000,
+    "capital": "Bhopal",
+    "description": "Madhya Pradesh is the geographical and ecological heart of India, harboring the densest Royal Bengal Tiger reserves, thousands of years of prehistoric rock cave art, and the finest sensual temple carvings in the world. From the Buddhist stupas of Sanchi and erotic sculptural marvels of Khajuraho to the jungle realms of Kanha, Bandhavgarh, and Pench that inspired Kipling's Jungle Book, Madhya Pradesh is an unmissable destination.",
+    "heroImage": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "wildlife",
+      "spiritual",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to April",
+    "majorCities": [
+      "Bhopal",
+      "Indore",
+      "Ujjain",
+      "Khajuraho",
+      "Gwalior",
+      "Jabalpur",
+      "Sanchi",
+      "Pachmarhi",
+      "Orchha",
+      "Mandu",
+      "Kanha",
+      "Bandhavgarh",
+      "Pench",
+      "Panna",
+      "Chanderi"
+    ],
+    "topDestinations": [
+      "Khajuraho Temples",
+      "Gwalior Fort",
+      "Mahakaleshwar Ujjain",
+      "Sanchi Stupa",
+      "Bhimbetka Rock Shelters",
+      "Kanha Tiger Reserve",
+      "Orchha Fort Complex"
+    ],
+    "popularFoods": [
+      {
+        "name": "Indori Poha & Jalebi",
+        "description": "Steamed flattened rice spiced with fennel and crowned with spicy sev, pomegranate, and paired with hot jalebi"
+      },
+      {
+        "name": "Dal Bafla",
+        "description": "Boiled and then ghee-roasted wheat dough balls served with spicy lentil curry, garlic chutney, and laddoos"
+      },
+      {
+        "name": "Bhopali Gosht Korma",
+        "description": "Slow-simmered rich mutton preparation in rich yogurt and nut gravy"
+      },
+      {
+        "name": "Bhutte Ka Kees",
+        "description": "Grated sweet corn cooked in milk, spiced with mustard seeds, green chilies, and coconut"
+      },
+      {
+        "name": "Mawa Bati",
+        "description": "Deep-fried rich milk solid dumpling stuffed with mawa, dry fruits, and steeped in sugar syrup"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Khajuraho Dance Festival",
+        "description": "World-class classical Indian dance performances staged before the Western Group of temples"
+      },
+      {
+        "name": "Ujjain Simhastha Kumbh",
+        "description": "Sacred once-in-12-years holy bath ritual along the Shipra riverbanks"
+      },
+      {
+        "name": "Tansen Samaroh (Gwalior)",
+        "description": "Prestigious national musical tribute to legend Mian Tansen at his tomb"
+      },
+      {
+        "name": "Mandu Festival",
+        "description": "Hot-air balloons, heritage cycles, and music amidst romantic Afghan architecture"
+      }
+    ],
+    "culture": "Bhimbetka rock shelters demonstrate 30,000-year-old human art. The state is renowned for Chanderi and Maheshwari handloom sarees with gossamer silk-cotton weave, Gond tribal paintings, and Dhokra bell-metal craft.",
+    "transportation": {
+      "airports": [
+        "Devi Ahilyabai Holkar Indore (IDR)",
+        "Raja Bhoj Bhopal (BHO)",
+        "Gwalior Airport (GWL)",
+        "Khajuraho Airport (HJR)",
+        "Jabalpur Airport (JLR)"
+      ],
+      "railway": [
+        "Bhopal Junction",
+        "Rani Kamlapati (India's premier modern station)",
+        "Indore Junction",
+        "Gwalior Junction"
+      ],
+      "road": [
+        "NH 44",
+        "NH 46",
+        "Delhi-Mumbai Expressway corridor through MP"
+      ]
+    },
+    "unescoSites": [
+      "Khajuraho Group of Monuments",
+      "Buddhist Monuments at Sanchi",
+      "Rock Shelters of Bhimbetka"
+    ]
+  },
+  {
+    "id": "telangana",
+    "name": "Telangana",
+    "slug": "telangana",
+    "priorityRank": 10,
+    "domesticTouristVisits2024": 122000000,
+    "capital": "Hyderabad",
+    "description": "Telangana blends four centuries of grand Qutb Shahi and Asaf Jahi royal heritage with Kakatiya architectural brilliance and cutting-edge cosmopolitan energy. Centered on the iconic minarets of Charminar, the diamond-trading ramparts of Golconda Fort, and the floating UNESCO Kakatiya marvel at Ramappa Temple, Telangana is an intoxicating hub of pearl bazaars, royal biryani, and rich folklore.",
+    "heroImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df8?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "food",
+      "culture",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Hyderabad",
+      "Warangal",
+      "Karimnagar",
+      "Nizamabad",
+      "Khammam",
+      "Medak",
+      "Yadadri",
+      "Nagarjuna Sagar",
+      "Bhongir"
+    ],
+    "topDestinations": [
+      "Charminar",
+      "Golconda Fort",
+      "Ramappa Temple",
+      "Chowmahalla Palace",
+      "Warangal Fort",
+      "Ramoji Film City",
+      "Salar Jung Museum"
+    ],
+    "popularFoods": [
+      {
+        "name": "Hyderabadi Dum Biryani",
+        "description": "Legendary fragrant basmati rice layered with raw marinated meat cooked on slow charcoal heat with dough-sealed pot"
+      },
+      {
+        "name": "Hyderabadi Haleem",
+        "description": "GI-tagged slow-cooked Ramadan porridge of pounded wheat, lentils, ghee, and tender meat spiced with rose petals"
+      },
+      {
+        "name": "Double Ka Meetha",
+        "description": "Rich Mughlai bread pudding fried in ghee, simmered in reduced saffron-infused milk, and crowned with pistachios"
+      },
+      {
+        "name": "Mirchi Ka Salan",
+        "description": "Tangy, nutty curry made with green chilies, roasted peanuts, sesame seeds, and dry coconut"
+      },
+      {
+        "name": "Irani Chai with Osmania Biscuits",
+        "description": "Rich creamy milk tea paired with sweet-salty butter biscuits at historic Irani cafes"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Bathukamma",
+        "description": "Nine-day floral festival where women arrange vibrant seasonal flowers in cone-shaped towers and sing folklore"
+      },
+      {
+        "name": "Bonalu",
+        "description": "Vibrant monsoon thanksgiving festival honoring Goddess Mahakali with decorated brass pots (bonam) and Pothuraju dancers"
+      },
+      {
+        "name": "Sammakka Saralamma Jatara (Medaram)",
+        "description": "Asia's largest tribal gathering commemorating valor of tribal warrior mothers"
+      },
+      {
+        "name": "Numaish (All India Industrial Exhibition)",
+        "description": "Historic 45-day winter exhibition held at Hyderabad Exhibition Grounds since 1938"
+      }
+    ],
+    "culture": "Home to Pochampally Ikat sarees (GI tagged for geometric dyed patterns), Bidriware silver inlay, Cheriyal scroll paintings, and Nirmal lacquered toys.",
+    "transportation": {
+      "airports": [
+        "Rajiv Gandhi International Hyderabad (HYD - world ranked)"
+      ],
+      "railway": [
+        "Secunderabad Junction (SCR Headquarters)",
+        "Hyderabad Deccan (Nampally)",
+        "Kacheguda",
+        "Kazipet Junction"
+      ],
+      "road": [
+        "Hyderabad Outer Ring Road (ORR - 158 km expressway)",
+        "NH 44",
+        "NH 65"
+      ]
+    },
+    "unescoSites": [
+      "Kakatiya Rudreshwara (Ramappa) Temple at Palampet",
+      "Tentative: Qutb Shahi Monuments of Hyderabad (Golconda Fort, Qutb Shahi Tombs, Charminar)"
+    ]
+  },
+  {
+    "id": "kerala",
+    "name": "Kerala",
+    "slug": "kerala",
+    "priorityRank": 11,
+    "domesticTouristVisits2024": 115000000,
+    "capital": "Thiruvananthapuram",
+    "description": "Revered as 'God's Own Country', Kerala is a tropical paradise of tranquil emerald backwaters, cloud-kissed Western Ghat tea plantations, pristine Arabian Sea cliffs, and ancient Ayurvedic healing traditions. Experience slow-paced wooden houseboat cruises through palm-fringed lagoons, dramatic Kathakali dance dramas, and fragrant spice trails across Malabar.",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "nature",
+      "beaches",
+      "hill-stations",
+      "wildlife",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "majorCities": [
+      "Kochi",
+      "Thiruvananthapuram",
+      "Munnar",
+      "Alappuzha",
+      "Wayanad",
+      "Thekkady",
+      "Varkala",
+      "Kovalam",
+      "Kumarakom",
+      "Vagamon",
+      "Bekal",
+      "Kozhikode",
+      "Kannur",
+      "Thrissur",
+      "Kollam"
+    ],
+    "topDestinations": [
+      "Alappuzha Backwaters",
+      "Munnar Tea Hills",
+      "Fort Kochi & Chinese Nets",
+      "Varkala Cliff Beach",
+      "Periyar Tiger Reserve",
+      "Athirappilly Waterfalls",
+      "Edakkal Caves"
+    ],
+    "popularFoods": [
+      {
+        "name": "Kerala Sadhya",
+        "description": "Grand 26-dish vegetarian feast served on banana leaf featuring Avial, Sambar, Olan, Thoran, and Payasam"
+      },
+      {
+        "name": "Malabar Parotta & Beef Fry / Curry",
+        "description": "Multi-layered flaky spiral parotta served with slow-roasted spiced coconut meat"
+      },
+      {
+        "name": "Karimeen Pollichathu",
+        "description": "Pearl spot fish marinated in spicy shallot paste, wrapped in banana leaf, and pan-roasted"
+      },
+      {
+        "name": "Appam with Ishtu (Stew)",
+        "description": "Crisp-laced fluffy fermented rice hopper served with mild coconut milk and vegetable/chicken stew"
+      },
+      {
+        "name": "Thalassery Biryani",
+        "description": "Fragrant short-grain Khaima rice biryani cooked with Malabar spices, ghee, and fried onions"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Onam",
+        "description": "Ten-day state festival with floral pookkalam carpets, snake boat races, Kathakali, and Onasadya feasts"
+      },
+      {
+        "name": "Thrissur Pooram",
+        "description": "Spectacular temple festival with caparisoned elephant face-off (Kudamattom) and Ilanjithara Melam percussion"
+      },
+      {
+        "name": "Nehru Trophy Boat Race (Alappuzha)",
+        "description": "Thrilling snake boat (Chundan Vallam) rowing race on Punnamada Lake"
+      },
+      {
+        "name": "Theyyam (North Malabar)",
+        "description": "Mesmerizing ritual dance of living deities with towering headdresses and fiery embers"
+      }
+    ],
+    "culture": "Kerala is the birthplace of Kathakali, Mohiniyattam classical dance, and Kalaripayattu, the world's oldest martial art. It is globally famous for traditional Ayurvedic rejuvenation retreats and wooden snake boat craft.",
+    "transportation": {
+      "airports": [
+        "Cochin International (COK - world's 1st solar-powered airport)",
+        "Trivandrum International (TRV)",
+        "Calicut International (CCJ)",
+        "Kannur International (CNN)"
+      ],
+      "railway": [
+        "Ernakulam Junction",
+        "Thiruvananthapuram Central",
+        "Kozhikode",
+        "Shoranur Junction"
+      ],
+      "road": [
+        "NH 66 (Coastal Highway)",
+        "NH 544",
+        "MC Road"
+      ]
+    },
+    "unescoSites": [
+      "Western Ghats (Agasthyamalai, Periyar, Silent Valley clusters)",
+      "Koodiyattam (Intangible Cultural Heritage)",
+      "Mudiyettu (Intangible Cultural Heritage)"
+    ]
+  },
+  {
+    "id": "bihar",
+    "name": "Bihar",
+    "slug": "bihar",
+    "priorityRank": 12,
+    "domesticTouristVisits2024": 108000000,
+    "capital": "Patna",
+    "description": "Bihar is the ancient cradle of Buddhism, Jainism, and the world's earliest residential universities. Centered on Bodh Gaya, where Prince Siddhartha attained supreme enlightenment under the Bodhi tree, and Nalanda, which welcomed 10,000 scholars from across Asia 1,500 years ago, Bihar offers profound spiritual depth, Emperor Ashoka's monumental edicts, and the scenic Himalayan foothills of Valmiki Tiger Reserve.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "heritage",
+      "culture",
+      "wildlife"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Patna",
+      "Bodh Gaya",
+      "Nalanda",
+      "Rajgir",
+      "Vaishali",
+      "Pawapuri",
+      "Gaya",
+      "Vikramshila",
+      "Valmiki Nagar"
+    ],
+    "topDestinations": [
+      "Mahabodhi Temple Complex",
+      "Ancient Nalanda University Ruins",
+      "Vishwa Shanti Stupa Rajgir",
+      "Bodh Gaya Bodhi Tree",
+      "Golghar Patna",
+      "Valmiki Tiger Reserve"
+    ],
+    "popularFoods": [
+      {
+        "name": "Litti Chokha",
+        "description": "Roasted whole wheat dough balls stuffed with spiced roasted gram sattu, dipped in ghee and served with charred eggplant-tomato chokha"
+      },
+      {
+        "name": "Khaja (Silao)",
+        "description": "GI-tagged multi-layered crisp sweet pastry fried in ghee and dipped in light sugar syrup"
+      },
+      {
+        "name": "Chana Ghugni",
+        "description": "Spiced black chickpea curry tempered with cumin and garam masala, eaten with flattened poha"
+      },
+      {
+        "name": "Tilkut (Gaya)",
+        "description": "Crisp sesame seed and jaggery/sugar sweet beaten wafer-thin"
+      },
+      {
+        "name": "Sattu Paratha & Sharbat",
+        "description": "Protein-rich roasted gram flour flatbreads and cooling refreshing summer beverage"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Chhath Puja",
+        "description": "Sacred, austere Vedic sun-worship festival where millions offer Arghya to rising and setting sun in river waters"
+      },
+      {
+        "name": "Sonepur Cattle Fair",
+        "description": "One of Asia's largest historic rural livestock fairs held at the confluence of Ganga and Gandak"
+      },
+      {
+        "name": "Buddha Jayanti (Bodh Gaya)",
+        "description": "Thousands of Buddhist monks and pilgrims worldwide assemble under the Bodhi Tree"
+      },
+      {
+        "name": "Rajgir Mahotsav",
+        "description": "Classical dance and music extravaganza held amidst the historic seven hills of Rajgir"
+      }
+    ],
+    "culture": "Bihar is globally celebrated for Madhubani (Mithila) folk paintings created with natural mineral dyes, Sujani quilt embroidery, Manjusha art, and terracotta artifacts from ancient Magadha.",
+    "transportation": {
+      "airports": [
+        "Jay Prakash Narayan International Patna (PAT)",
+        "Gaya International (GAY - major pilgrimage gateway)",
+        "Darbhanga Airport (DBR)"
+      ],
+      "railway": [
+        "Patna Junction",
+        "Gaya Junction",
+        "Pandit Deen Dayal Upadhyaya Junction (nearby hub)",
+        "Muzaffarpur Junction"
+      ],
+      "road": [
+        "Purvanchal Expressway connectivity",
+        "NH 19",
+        "NH 31",
+        "Patna Marine Drive"
+      ]
+    },
+    "unescoSites": [
+      "Mahabodhi Temple Complex at Bodh Gaya",
+      "Archaeological Site of Nalanda Mahavihara at Nalanda"
+    ]
+  },
+  {
+    "id": "odisha",
+    "name": "Odisha",
+    "slug": "odisha",
+    "priorityRank": 13,
+    "domesticTouristVisits2024": 98000000,
+    "capital": "Bhubaneswar",
+    "description": "Odisha is India's jewel of Kalinga stone architecture, sacred coastal pilgrimage, and pristine coastal ecosystems. From the monumental 13th-century Sun Temple chariot at Konark and the legendary abode of Lord Jagannath at Puri to Asia's largest brackish lagoon at Chilika with its playful Irrawaddy dolphins and the thousands of ancient sandstone shrines of Bhubaneswar, Odisha is a treasure of sacred art and coastal peace.",
+    "heroImage": "https://images.unsplash.com/photo-1627916607164-7b20241db935?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "spiritual",
+      "beaches",
+      "wildlife",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Bhubaneswar",
+      "Puri",
+      "Konark",
+      "Cuttack",
+      "Chilika",
+      "Gopalpur",
+      "Rourkela",
+      "Sambalpur",
+      "Koraput",
+      "Baripada",
+      "Dhenkanal"
+    ],
+    "topDestinations": [
+      "Konark Sun Temple",
+      "Jagannath Temple Puri",
+      "Chilika Lake & Dolphins",
+      "Lingaraj Temple",
+      "Udayagiri & Khandagiri Caves",
+      "Dhauli Shanti Stupa",
+      "Puri Golden Beach"
+    ],
+    "popularFoods": [
+      {
+        "name": "Pahala Rasgulla",
+        "description": "GI-tagged soft, warm, caramelized brown chhena sweet originating from Pahala village"
+      },
+      {
+        "name": "Chhena Poda",
+        "description": "World's original baked cheesecake made with cottage cheese, sugar, cardamom, and baked in sal leaves till crust is caramelized"
+      },
+      {
+        "name": "Dalma",
+        "description": "Nutritious lentil dish cooked with raw papaya, pumpkin, eggplant, and tempered with pancha phutana"
+      },
+      {
+        "name": "Pakhala Bhata",
+        "description": "Fermented cooked rice water cooling dish served with fried fish, badi chura, and roasted potatoes on Pakhala Dibasa"
+      },
+      {
+        "name": "Chhena Jhili",
+        "description": "Soft cottage cheese dough fried and soaked in delicate sugar syrup from Nimapada"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Ratha Yatra (Puri)",
+        "description": "World's most monumental chariot procession where Lord Jagannath, Balabhadra, and Subhadra are pulled by millions"
+      },
+      {
+        "name": "Konark Dance Festival",
+        "description": "Classical Indian dance masters perform with the floodlit Sun Temple as an open-air backdrop"
+      },
+      {
+        "name": "Puri Beach Festival",
+        "description": "Coastal celebration of sand art, folk dances, maritime cuisine, and beach games"
+      },
+      {
+        "name": "Bali Jatra (Cuttack)",
+        "description": "Massive historic fair celebrating ancient maritime sea trade voyages of Sadhavas to Bali and Sumatra"
+      }
+    ],
+    "culture": "Odisha is the home of Odissi classical dance, world-renowned sand sculptures by Sudarsan Pattnaik on Puri beach, Pattachitra scroll paintings of Raghurajpur, Sambalpuri Ikat handloom, and Cuttack's filigree silver work (Tarakasi).",
+    "transportation": {
+      "airports": [
+        "Biju Patnaik International Bhubaneswar (BBI)",
+        "Jharsuguda Veer Surendra Sai (JRG)"
+      ],
+      "railway": [
+        "Bhubaneswar Railway Station",
+        "Puri Railway Station",
+        "Cuttack Junction"
+      ],
+      "road": [
+        "NH 16 (Golden Quadrilateral Corridor)",
+        "Puri-Konark Marine Drive"
+      ]
+    },
+    "unescoSites": [
+      "Sun Temple, Konârak",
+      "Tentative: Chilika Lake",
+      "Tentative: Ekamra Kshetra – The Temple City, Bhubaneswar"
+    ]
+  },
+  {
+    "id": "punjab",
+    "name": "Punjab",
+    "slug": "punjab",
+    "priorityRank": 14,
+    "domesticTouristVisits2024": 85000000,
+    "capital": "Chandigarh",
+    "description": "Punjab is the golden land of five rivers, boundless hospitality, brave warrior history, and the spiritual radiance of Sikhism. Crowned by the sacred sanctum of Harmandir Sahib (the Golden Temple) in Amritsar, the historic battlements of Patiala, the patriotic fever of the Wagah Border parade, and lush emerald mustard fields, Punjab welcomes every traveler with open arms and hearty dhabas.",
+    "heroImage": "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "heritage",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Amritsar",
+      "Ludhiana",
+      "Patiala",
+      "Jalandhar",
+      "Anandpur Sahib",
+      "Bathinda",
+      "Pathankot",
+      "Kapurthala",
+      "Fatehgarh Sahib",
+      "Rupnagar"
+    ],
+    "topDestinations": [
+      "Golden Temple (Harmandir Sahib)",
+      "Jallianwala Bagh",
+      "Wagah Border Ceremony",
+      "Partition Museum",
+      "Virasat-e-Khalsa Anandpur Sahib",
+      "Qila Mubarak Patiala"
+    ],
+    "popularFoods": [
+      {
+        "name": "Amritsari Kulcha with Chole",
+        "description": "Flaky tandoor-baked flatbread stuffed with spiced potatoes and onions, topped with melting butter and tangy imli chutney"
+      },
+      {
+        "name": "Makki di Roti & Sarson da Saag",
+        "description": "Winter staple of slow-cooked mustard greens tempered with garlic, served with cornmeal flatbread and fresh white butter"
+      },
+      {
+        "name": "Butter Chicken & Tandoori Chicken",
+        "description": "Charcoal-tandoor smoked chicken in rich velvet tomato, butter, and cream gravy"
+      },
+      {
+        "name": "Amritsari Machhi (Fish Fry)",
+        "description": "Crisp carom-seed spiced gram flour coated freshwater fish fried to golden perfection"
+      },
+      {
+        "name": "Patiala Lassi",
+        "description": "Thick, churned yogurt drink served in tall brass tumblers topped with a thick dollop of clotted cream (malai)"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Baisakhi",
+        "description": "Vibrant harvest festival marking the founding of the Khalsa Panth in 1699 by Guru Gobind Singh"
+      },
+      {
+        "name": "Hola Mohalla (Anandpur Sahib)",
+        "description": "Thrilling three-day display of martial arts, mock battles, horsemanship, and Gatka by Nihang Sikhs"
+      },
+      {
+        "name": "Lohri",
+        "description": "Winter bonfire celebration with traditional songs, rewri, popcorn, and dance to mark winter solstice"
+      },
+      {
+        "name": "Gurpurab Celebrations",
+        "description": "Spectacular golden illumination and fireworks at the Golden Temple for Guru Nanak Jayanti"
+      }
+    ],
+    "culture": "World-famous for Bhangra and Giddha folk dances, vibrant Phulkari floral embroidery, Punjabi Jutti footwear, Gatka martial arts, and the world's largest community kitchen (Langar) feeding over 100,000 people daily for free at the Golden Temple.",
+    "transportation": {
+      "airports": [
+        "Sri Guru Ram Dass Jee International Amritsar (ATQ)",
+        "Shaheed Bhagat Singh International Chandigarh (IXC)"
+      ],
+      "railway": [
+        "Amritsar Junction",
+        "Ludhiana Junction",
+        "Jalandhar City",
+        "Bathinda Junction"
+      ],
+      "road": [
+        "Grand Trunk Road (NH 44)",
+        "Delhi-Amritsar-Katra Expressway",
+        "NH 5"
+      ]
+    },
+    "unescoSites": [
+      "Tentative: Sri Harmandir Sahib (The Golden Temple)",
+      "Virasat-e-Khalsa Complex"
+    ]
+  },
+  {
+    "id": "uttarakhand",
+    "name": "Uttarakhand",
+    "slug": "uttarakhand",
+    "priorityRank": 15,
+    "domesticTouristVisits2024": 76000000,
+    "capital": "Dehradun (Winter) / Gairshain (Summer)",
+    "description": "Revered as 'Devbhoomi' (Land of the Gods), Uttarakhand is an alpine sanctuary of snow-crowned Himalayan peaks, sacred glacial river sources, premier yoga capitals, and dense tiger wilderness. From the holy Char Dham pilgrimage shrines high in the Garhwal Himalayas to the sunset Ganga Aarti at Haridwar and Rishikesh, the ski slopes of Auli, and the mist-draped colonial hill stations of Mussoorie and Nainital, Uttarakhand inspires deep reverence and outdoor adventure.",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "hill-stations",
+      "adventure",
+      "wildlife",
+      "nature"
+    ],
+    "bestTimeToVisit": "March to June & September to November",
+    "majorCities": [
+      "Dehradun",
+      "Mussoorie",
+      "Rishikesh",
+      "Haridwar",
+      "Nainital",
+      "Jim Corbett",
+      "Kedarnath",
+      "Badrinath",
+      "Gangotri",
+      "Yamunotri",
+      "Auli",
+      "Almora",
+      "Ranikhet",
+      "Lansdowne",
+      "Kausani",
+      "Pithoragarh",
+      "Valley of Flowers"
+    ],
+    "topDestinations": [
+      "Kedarnath Temple",
+      "Badrinath Temple",
+      "Har Ki Pauri Haridwar",
+      "Triveni Ghat Rishikesh",
+      "Naini Lake Nainital",
+      "Jim Corbett National Park",
+      "Auli Ski Resort",
+      "Valley of Flowers"
+    ],
+    "popularFoods": [
+      {
+        "name": "Kafuli",
+        "description": "Thick nutrient-dense gravy of spinach and fenugreek leaves cooked in iron kadhai with rice paste"
+      },
+      {
+        "name": "Chainsoo & Phaanu",
+        "description": "Roasted black gram dal and lentil preparations packed with mountain spices and ghee"
+      },
+      {
+        "name": "Bal Mithai (Almora)",
+        "description": "Brown chocolate-like fudgy roasted khoya sweet coated with white sugar balls"
+      },
+      {
+        "name": "Singodi",
+        "description": "Khowa dessert wrapped in fragrant Maalu leaves with sweet cardamom essence"
+      },
+      {
+        "name": "Bhatt ki Churkani",
+        "description": "Hearty black soybean stew eaten with steamed mountain red rice on chilly evenings"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Ganga Dussehra (Haridwar & Rishikesh)",
+        "description": "Ten days celebrating the descent of the sacred river Ganga onto earth with millions of floating diyas"
+      },
+      {
+        "name": "International Yoga Festival (Rishikesh)",
+        "description": "World yoga masters and seekers converge on the banks of the holy Ganges"
+      },
+      {
+        "name": "Nanda Devi Raj Jat Yatra",
+        "description": "Sacred once-in-12-years 280-kilometer Himalayan pilgrimage traversing high mountain passes"
+      },
+      {
+        "name": "Phool Dei",
+        "description": "Spring festival where children place freshly picked mountain flowers at village thresholds for good fortune"
+      }
+    ],
+    "culture": "Garhwali and Kumaoni folklore, Jhora and Chholiya sword dances, sacred pilgrimage culture, Aipan geometric floor rituals, and the deep conservation legacy of the Chipko movement.",
+    "transportation": {
+      "airports": [
+        "Jolly Grant Airport Dehradun (DED)",
+        "Pantnagar Airport (PGH)"
+      ],
+      "railway": [
+        "Haridwar Railway Station",
+        "Dehradun Railway Station",
+        "Kathgodam (Gateway to Nainital/Kumaon)"
+      ],
+      "road": [
+        "All-Weather Char Dham Highway",
+        "NH 7",
+        "Delhi-Dehradun Expressway"
+      ]
+    },
+    "unescoSites": [
+      "Nanda Devi and Valley of Flowers National Parks"
+    ]
+  }
+];
+export const cities = [
+  {
+    "id": "agra",
+    "name": "Agra",
+    "aliases": [
+      "City of the Taj",
+      "Akbarabad"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "Former Mughal imperial capital nestled on the banks of the Yamuna River, renowned globally for the Taj Mahal, Agra Fort, and exquisite Pietra Dura marble inlay craftsmanship.",
+    "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 27.1767,
+    "longitude": 78.0081,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "taj-mahal",
+      "agra-fort",
+      "itmad-ud-daulah",
+      "mehtab-bagh",
+      "akbars-tomb",
+      "fatehpur-sikri"
+    ],
+    "thingsToDo": [
+      "Watch Taj Mahal sunrise from Mehtab Bagh",
+      "Explore Mughal marble inlay workshops",
+      "Heritage walk through Old Agra bazaars",
+      "Mughlai food trail in Sadar Bazaar"
+    ],
+    "food": [
+      "Agra Petha (Kesar, Angoori)",
+      "Mughlai Biryani",
+      "Bedmi Poori with Aloo Sabzi",
+      "Jalebi & Rabri",
+      "Dalmoth namkeen"
+    ],
+    "shopping": [
+      "Marble inlay handicrafts",
+      "Leather footwear & bags at Sadar Bazaar",
+      "Zardozi hand embroidery",
+      "Brass artifacts"
+    ],
+    "festivals": [
+      "Taj Mahotsav (10-day February cultural fiesta)",
+      "Ram Barat",
+      "Bateshwar Cattle Fair"
+    ],
+    "nearbyDestinations": [
+      "Fatehpur Sikri (36 km)",
+      "Mathura (56 km)",
+      "Bharatpur Bird Sanctuary (54 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "family",
+      "couples",
+      "heritage",
+      "photography",
+      "luxury"
+    ]
+  },
+  {
+    "id": "varanasi",
+    "name": "Varanasi",
+    "aliases": [
+      "Kashi",
+      "Benares",
+      "City of Light"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "One of the world's oldest continually inhabited sacred cities. Experience divine twilight Ganga Aarti rituals, sacred riverfront ghats, labyrinthine heritage alleys, and ancient classical music traditions.",
+    "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.3176,
+    "longitude": 82.9739,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "kashi-vishwanath-temple",
+      "dashashwamedh-ghat",
+      "assi-ghat",
+      "manikarnika-ghat",
+      "sarnath-deer-park",
+      "ramnagar-fort"
+    ],
+    "thingsToDo": [
+      "Sunrise wooden boat ride along the 84 ghats",
+      "Witness the grand Dashashwamedh Ganga Aarti",
+      "Heritage walking tour through narrow gallis",
+      "Visit Sarnath where Buddha gave his first sermon"
+    ],
+    "food": [
+      "Banarasi Paan",
+      "Kachori Jalebi at Ram Bhandar",
+      "Tamatar Chaat at Kashi Chaat Bhandar",
+      "Malaiyo (Winter saffron foam sweet)",
+      "Thandai with Rabri"
+    ],
+    "shopping": [
+      "Banarasi Silk Sarees & Brocades",
+      "Brass deities & prayer lamps",
+      "Wooden lacquer toys",
+      "Gulabi Meenakari pink enamel craft"
+    ],
+    "festivals": [
+      "Dev Deepawali (All ghats lit with 1M lamps)",
+      "Mahashivratri",
+      "Ganga Mahotsav",
+      "Dhrupad Mela classical music"
+    ],
+    "nearbyDestinations": [
+      "Sarnath (10 km)",
+      "Chunar Fort (42 km)",
+      "Prayagraj (125 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "spiritual",
+      "solo",
+      "heritage",
+      "culture",
+      "photography"
+    ]
+  },
+  {
+    "id": "ayodhya",
+    "name": "Ayodhya",
+    "aliases": [
+      "Saket",
+      "Ram Janmabhoomi"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The revered birthplace of Lord Rama on the banks of the sacred Saryu River, featuring the magnificent new Ram Mandir, historic Hanuman Garhi, and vibrant Deepotsav celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1707343843437-caacff5cfa74?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.7922,
+    "longitude": 82.1998,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "ram-mandir-ayodhya",
+      "hanuman-garhi",
+      "kanak-bhawan",
+      "saryu-ghats",
+      "ram-ki-paidi"
+    ],
+    "thingsToDo": [
+      "Attend evening Saryu River Aarti",
+      "Darshan at Shri Ram Janmabhoomi Mandir",
+      "Walk through Ram Ki Paidi riverfront",
+      "Explore Kanak Bhawan palace shrine"
+    ],
+    "food": [
+      "Ayodhya Rabri & Khurchan",
+      "Pedas from Hanuman Garhi",
+      "Poori Sabzi",
+      "Laddus from Ram Lalla Prasad"
+    ],
+    "shopping": [
+      "Ayodhya Ram Darbar brass idols",
+      "Wooden temple miniatures",
+      "Tulsi malas & prayer beads"
+    ],
+    "festivals": [
+      "Deepotsav (World Record earthen lamp illumination)",
+      "Ram Navami",
+      "Sita Vivah",
+      "Shravan Jhula Utsav"
+    ],
+    "nearbyDestinations": [
+      "Lucknow (135 km)",
+      "Prayagraj (165 km)",
+      "Varanasi (200 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "family",
+      "heritage"
+    ]
+  },
+  {
+    "id": "lucknow",
+    "name": "Lucknow",
+    "aliases": [
+      "City of Nawabs",
+      "Golden City of the East"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The graceful capital of Uttar Pradesh, renowned for its Awadhi royal etiquette (Tehzeeb), soaring arched gateways, architectural marvels like the gravity-defying Bara Imambara, and world-beating gastronomy.",
+    "heroImage": "https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.8467,
+    "longitude": 80.9462,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "bara-imambara",
+      "chota-imambara",
+      "rumi-darwaza",
+      "british-residency",
+      "hazratganj-promenade",
+      "ambedkar-memorial-park"
+    ],
+    "thingsToDo": [
+      "Navigate the mysterious Bhool Bhulaiya labyrinth",
+      "Walk down the heritage colonial boulevard of Hazratganj",
+      "Awadhi royal kebab culinary crawl",
+      "Shop for authentic hand-embroidered Chikankari kurtas"
+    ],
+    "food": [
+      "Galouti Kebab from Tunday Kababi",
+      "Lucknowi Dum Biryani",
+      "Sheermal & Kulcha Nihari",
+      "Prakash Kulfi",
+      "Basket Chaat at Royal Cafe"
+    ],
+    "shopping": [
+      "Chikankari fine white-on-white embroidery",
+      "Zardozi gold wire work",
+      "Kannauj Attar (natural perfumes)",
+      "Bone carving artifacts"
+    ],
+    "festivals": [
+      "Lucknow Mahotsav (Annual cultural showcase)",
+      "Muharram Tazia processions",
+      "Holi in Chowk"
+    ],
+    "nearbyDestinations": [
+      "Ayodhya (135 km)",
+      "Nawabganj Bird Sanctuary (45 km)",
+      "Kanpur (80 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "food",
+      "heritage",
+      "culture",
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "mathura-vrindavan",
+    "name": "Mathura & Vrindavan",
+    "aliases": [
+      "Brajbhoomi",
+      "Krishna Janmabhoomi"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The sacred epicenter of Lord Krishna's divine childhood leelas along the Yamuna River, adorned with thousands of vibrant temples, melodious kirtans, and world-famous Holi celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1545129139-1beb780cf337?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 27.4924,
+    "longitude": 77.6737,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "krishna-janmabhoomi",
+      "banke-bihari-temple",
+      "prem-mandir",
+      "iskcon-vrindavan",
+      "govardhan-parikrama",
+      "kusum-sarovar"
+    ],
+    "thingsToDo": [
+      "Witness the night laser fountain show at Prem Mandir",
+      "Perform the Govardhan Hill Parikrama",
+      "Experience ecstatic kirtan at ISKCON",
+      "Boat ride at Vishram Ghat Mathura"
+    ],
+    "food": [
+      "Mathura Peda",
+      "Makhan Mishri",
+      "Hing Ki Kachori",
+      "Ghevar",
+      "Braj Rabri with Malpua"
+    ],
+    "shopping": [
+      "Krishna idols & poshak dresses",
+      "Peacock feather ornaments",
+      "Incense & sandalwood sticks",
+      "Brass pooja items"
+    ],
+    "festivals": [
+      "Janmashtami (Grand midnight celebration)",
+      "Lathmar Holi (Barsana & Nandgaon)",
+      "Radhashtami",
+      "Guru Purnima"
+    ],
+    "nearbyDestinations": [
+      "Agra (58 km)",
+      "Barsana (45 km)",
+      "Gokul (15 km)",
+      "Bharatpur (40 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "family",
+      "culture"
+    ]
+  },
+  {
+    "id": "prayagraj",
+    "name": "Prayagraj",
+    "aliases": [
+      "Allahabad",
+      "Prayag",
+      "Tirtharaj"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The king of pilgrimages where the sacred Ganga, Yamuna, and mythical Saraswati meet at the holy Triveni Sangam. Venue of the world's largest gathering of humanity, the Kumbh Mela.",
+    "heroImage": "https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.4358,
+    "longitude": 81.8463,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "triveni-sangam-prayagraj",
+      "allahabad-fort",
+      "anand-bhavan",
+      "khusro-bagh"
+    ],
+    "thingsToDo": [
+      "Take a holy dip by boat at Triveni Sangam",
+      "Tour the Nehru family ancestral home at Anand Bhavan",
+      "Explore Mughal cenotaphs at Khusro Bagh",
+      "Attend the annual Magh Mela"
+    ],
+    "food": [
+      "Allahabadi Guava (Surkha)",
+      "Dehati Rasgulle",
+      "Kachori Dam Aloo",
+      "Lassi at Netram"
+    ],
+    "shopping": [
+      "Religious brassware",
+      "Sangam holy river containers",
+      "Traditional handloom"
+    ],
+    "festivals": [
+      "Kumbh Mela (Once in 12 years)",
+      "Ardh Kumbh Mela",
+      "Annual Magh Mela in January"
+    ],
+    "nearbyDestinations": [
+      "Varanasi (125 km)",
+      "Chitrakoot (130 km)",
+      "Ayodhya (165 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "family"
+    ]
+  },
+  {
+    "id": "chennai",
+    "name": "Chennai",
+    "aliases": [
+      "Madras",
+      "Gateway of South India"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Vibrant coastal metropolis blending ancient 7th-century Kapaleeshwarar temple heritage, the second-longest urban beach in the world (Marina Beach), and the epicenter of Carnatic classical arts.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "bestTimeToVisit": "November to February",
+    "topAttractions": [
+      "marina-beach",
+      "kapaleeshwarar-temple",
+      "fort-st-george",
+      "san-thome-basilica",
+      "government-museum-chennai",
+      "besant-nagar-beach",
+      "guindy-national-park",
+      "valluvar-kottam"
+    ],
+    "thingsToDo": [
+      "Sunset stroll on Marina Beach with sundal snack",
+      "Experience classical Bharatanatyam recital at Kalakshetra",
+      "Temple architectural tour in Mylapore",
+      "Colonial heritage trail in Fort St. George"
+    ],
+    "food": [
+      "Filter Coffee with Medu Vada",
+      "Murugan Idli with five chutneys",
+      "Chettinad Fish Curry",
+      "Kothu Parotta",
+      "Sundal on beach"
+    ],
+    "shopping": [
+      "Kanchipuram Silk Sarees in T. Nagar",
+      "Bronze idols in Mylapore",
+      "Handloom cottons at Fabindia & Khadi Gramodyog"
+    ],
+    "festivals": [
+      "Margazhi Music Festival (Dec-Jan world classical music season)",
+      "Pongal harvest festival",
+      "Mylapore Kapaleeshwarar Panguni Brahmotsavam"
+    ],
+    "nearbyDestinations": [
+      "Mahabalipuram (55 km)",
+      "Kanchipuram (75 km)",
+      "Pulicat Lake (55 km)",
+      "Pondicherry (150 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "culture",
+      "beaches",
+      "food",
+      "heritage",
+      "family"
+    ]
+  },
+  {
+    "id": "mahabalipuram",
+    "name": "Mahabalipuram",
+    "aliases": [
+      "Mamallapuram",
+      "Seven Pagodas"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "UNESCO World Heritage coastal town adorned with 7th-century monolithic rock-cut cave temples, the ocean-facing Shore Temple, and open-air bas-reliefs carved by master Pallava sculptors.",
+    "heroImage": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.6269,
+    "longitude": 80.1932,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "shore-temple",
+      "pancha-rathas",
+      "arjunas-penance",
+      "krishnas-butter-ball",
+      "mahabalipuram-beach"
+    ],
+    "thingsToDo": [
+      "Marvel at the balancing miracle of Krishna's Butter Ball",
+      "Explore rock-cut rathas carved from single stone boulders",
+      "Sunrise photography at the Shore Temple",
+      "Watch live stone carvers chisel granite sculptures"
+    ],
+    "food": [
+      "Fresh catch coastal seafood (Lobster, Pomfret)",
+      "Banana leaf South Indian meals",
+      "Crispy Masala Dosa",
+      "Coconut water by the beach"
+    ],
+    "shopping": [
+      "Handmade granite & soapstone sculptures",
+      "Seashell jewelry & handicrafts",
+      "Kalamkari painted fabrics"
+    ],
+    "festivals": [
+      "Mamallapuram Indian Dance Festival (Jan-Feb open-air classical dance by the beach)"
+    ],
+    "nearbyDestinations": [
+      "Chennai (55 km)",
+      "Kanchipuram (65 km)",
+      "Pondicherry (95 km)",
+      "Sadras Dutch Fort (15 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "beaches",
+      "couples",
+      "photography",
+      "family"
+    ]
+  },
+  {
+    "id": "madurai",
+    "name": "Madurai",
+    "aliases": [
+      "Thoonga Nagaram (City That Never Sleeps)",
+      "Temple City",
+      "Athens of the East"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Ancient Tamil cultural capital home to the breathtaking 14-towered Meenakshi Amman Temple, grand 17th-century Thirumalai Nayakkar Palace, and legendary late-night street food culture.",
+    "heroImage": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.9252,
+    "longitude": 78.1198,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "meenakshi-amman-temple",
+      "thirumalai-nayakkar-palace",
+      "gandhi-memorial-museum",
+      "alagar-koyil"
+    ],
+    "thingsToDo": [
+      "Witness the night procession of Lord Sundareswarar to Goddess Meenakshi's sanctum",
+      "Explore the 1,000-pillar hall with musical pillars",
+      "Evening light and sound show at Thirumalai Nayakkar Mahal",
+      "Late-night street food crawl for bun parotta"
+    ],
+    "food": [
+      "Bun Parotta with Kari Dosai",
+      "Madurai Jigarthanda (Famous royal beverage)",
+      "Mutton Chukka",
+      "Paruthi Paal (Cottonseed milk drink)",
+      "Kalkandu Bath"
+    ],
+    "shopping": [
+      "Madurai Sungudi tie-and-dye cotton sarees",
+      "Handcrafted brass lamps",
+      "Fragrant Madurai Malli (Jasmine flowers)"
+    ],
+    "festivals": [
+      "Chithirai Festival (Apr-May celestial wedding of Meenakshi)",
+      "Teppam Float Festival",
+      "Jallikattu bull taming in Alanganallur"
+    ],
+    "nearbyDestinations": [
+      "Rameswaram (170 km)",
+      "Kodaikanal (120 km)",
+      "Chettinad / Karaikudi (90 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "ooty",
+    "name": "Ooty",
+    "aliases": [
+      "Udhagamandalam",
+      "Queen of Hill Stations"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Nestled 2,240 meters high in the blue Nilgiri Mountains, featuring emerald tea slopes, colonial heritage bungalows, the UNESCO Nilgiri Mountain Railway toy train, and serene pine forests.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 11.4102,
+    "longitude": 76.695,
+    "bestTimeToVisit": "October to June",
+    "topAttractions": [
+      "ooty-lake",
+      "botanical-garden-ooty",
+      "doddabetta-peak",
+      "rose-garden-ooty",
+      "nilgiri-mountain-railway",
+      "avalanche-lake"
+    ],
+    "thingsToDo": [
+      "Ride the UNESCO vintage steam Toy Train from Mettupalayam/Coonoor",
+      "Row across the tranquil waters of Ooty Lake",
+      "Panoramic 360-degree views from Doddabetta Peak",
+      "Tour working tea factories and taste fresh orthodox teas"
+    ],
+    "food": [
+      "Nilgiri Homemade Dark Chocolates",
+      "Fresh Varkey (crisp Nilgiri pastry)",
+      "Hot cardamom tea",
+      "Steaming South Indian breakfast"
+    ],
+    "shopping": [
+      "Nilgiri eucalyptus & wintergreen oils",
+      "Freshly manufactured tea leaves",
+      "Handmade chocolates",
+      "Toda tribal embroidery shawls"
+    ],
+    "festivals": [
+      "Ooty Flower Show (Annual May spectacle in Botanical Garden)",
+      "Tea and Tourism Festival in January"
+    ],
+    "nearbyDestinations": [
+      "Coonoor (18 km)",
+      "Kotagiri (30 km)",
+      "Mudumalai Tiger Reserve (40 km)",
+      "Bandipur (50 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "nature",
+      "hill-stations",
+      "couples",
+      "family",
+      "adventure"
+    ]
+  },
+  {
+    "id": "kodaikanal",
+    "name": "Kodaikanal",
+    "aliases": [
+      "Princess of Hill Stations",
+      "Kodai"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Perched 2,133 meters atop the Palani Hills, blessed with a star-shaped lake, dramatic mist-swirled pillar rock formations, lush shola forests, and romantic cliff-edge promenades.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 10.2381,
+    "longitude": 77.4892,
+    "bestTimeToVisit": "September to May",
+    "topAttractions": [
+      "kodaikanal-lake",
+      "coakers-walk",
+      "bryant-park",
+      "pillar-rocks",
+      "pine-forest-kodai",
+      "guna-caves"
+    ],
+    "thingsToDo": [
+      "Cycle or row around the perimeter of Kodaikanal Lake",
+      "Walk through the clouds along Coaker's Walk cliff path",
+      "Hike into the towering pine forest canopy",
+      "Trek to Dolphin's Nose viewpoint"
+    ],
+    "food": [
+      "Kodai homemade artisan cheeses & chocolates",
+      "Plum & peach fresh fruit jams",
+      "Tibetan momos and thukpa near lake"
+    ],
+    "shopping": [
+      "Locally cured eucalyptus oils",
+      "Herbal spices & dried fruits",
+      "Handmade organic soaps"
+    ],
+    "festivals": [
+      "Kodai Summer Festival & Flower Show in May"
+    ],
+    "nearbyDestinations": [
+      "Madurai (120 km)",
+      "Palani (65 km)",
+      "Munnar (160 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "couples",
+      "nature",
+      "hill-stations",
+      "solo",
+      "family"
+    ]
+  },
+  {
+    "id": "rameswaram",
+    "name": "Rameswaram",
+    "aliases": [
+      "Island of Faith",
+      "Southern Dhama"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Sacred island pilgrimage destination where the Bay of Bengal meets the Indian Ocean, famous for the colossal 1,212-pillar corridors of Ramanathaswamy Temple, the Pamban Sea Bridge, and ghost town Dhanushkodi.",
+    "heroImage": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.2876,
+    "longitude": 79.3129,
+    "bestTimeToVisit": "October to April",
+    "topAttractions": [
+      "ramanathaswamy-temple",
+      "pamban-bridge",
+      "dhanushkodi-ghost-town",
+      "ariyaman-beach",
+      "apj-abdul-kalam-memorial"
+    ],
+    "thingsToDo": [
+      "Walk along the world's longest pillared temple corridor",
+      "Bathe in the 22 sacred teertham wells inside the temple",
+      "Drive to the edge of India at Dhanushkodi where Rama Setu begins",
+      "Train journey over the historic Pamban sea bridge"
+    ],
+    "food": [
+      "Authentic temple Prasadam",
+      "South Indian thali meals",
+      "Fresh coastal crab and prawn curry"
+    ],
+    "shopping": [
+      "Conch shells (Shankha) & coral crafts",
+      "Palm-leaf basketry",
+      "Seashell mirrors and ornaments"
+    ],
+    "festivals": [
+      "Maha Shivaratri",
+      "Ramalinga Prathishta Utsav",
+      "Thirukalyanam in July-August"
+    ],
+    "nearbyDestinations": [
+      "Dhanushkodi (18 km)",
+      "Mandapam (20 km)",
+      "Madurai (170 km)",
+      "Kanyakumari (310 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "photography",
+      "family"
+    ]
+  },
+  {
+    "id": "thanjavur",
+    "name": "Thanjavur",
+    "aliases": [
+      "Tanjore",
+      "Rice Bowl of Tamil Nadu"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "The imperial capital of the Chola Empire, home to the UNESCO Brihadeeswarar Temple (Big Temple) with its monolithic 80-tonne granite dome, royal Nayak palace, and exquisite gold leaf Tanjore art.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 10.787,
+    "longitude": 79.1378,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "brihadeeswarar-temple",
+      "thanjavur-palace",
+      "saraswathi-mahal-library"
+    ],
+    "thingsToDo": [
+      "Marvel at the shadow-defying architecture of the Big Temple",
+      "Examine ancient palm-leaf manuscripts at Saraswathi Mahal",
+      "Visit bronze casting master artisans in Swamimalai",
+      "Learn the technique of Tanjore gold foil painting"
+    ],
+    "food": [
+      "Tanjore Ashoka Halwa",
+      "Kumbakonam Degree Filter Coffee",
+      "Sambar Sadam with fried papad",
+      "Chettinad spicy meals"
+    ],
+    "shopping": [
+      "Tanjore Gold Foil Paintings (GI-tagged)",
+      "Thanjavur Dancing Dolls (Thalaiyatti Bommai)",
+      "Bronze Nataraja statues"
+    ],
+    "festivals": [
+      "Brahmotsavam in April",
+      "Sadhaya Vizha (Birthday of King Raja Raja Chola in October)"
+    ],
+    "nearbyDestinations": [
+      "Kumbakonam (40 km)",
+      "Tiruchirappalli (55 km)",
+      "Gangaikonda Cholapuram (70 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "spiritual",
+      "family"
+    ]
+  },
+  {
+    "id": "kanyakumari",
+    "name": "Kanyakumari",
+    "aliases": [
+      "Cape Comorin",
+      "The Land's End"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "The southernmost tip of the Indian mainland where the Arabian Sea, Indian Ocean, and Bay of Bengal converge. Renowned for simultaneous sunrise and moonrise spectacles, Vivekananda Rock Memorial, and Thiruvalluvar Statue.",
+    "heroImage": "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 8.0883,
+    "longitude": 77.5385,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "vivekananda-rock-memorial",
+      "thiruvalluvar-statue",
+      "kanyakumari-beach",
+      "sunset-point-kanyakumari",
+      "padmanabhapuram-palace"
+    ],
+    "thingsToDo": [
+      "Ferry ride to Vivekananda Rock Memorial & 133ft Thiruvalluvar Statue",
+      "Watch sunrise over the trisea confluence",
+      "Tour the wooden Kerala-style Padmanabhapuram Palace",
+      "Collect multicolored sands from Kanyakumari Beach"
+    ],
+    "food": [
+      "Nanjil Nadu fish curry",
+      "Kothu Parotta",
+      "Banana chips fried in coconut oil",
+      "Tender coconut water"
+    ],
+    "shopping": [
+      "Seashell souvenirs & lamps",
+      "Palm jaggery (Karupatti)",
+      "Handwoven lace & embroidery"
+    ],
+    "festivals": [
+      "Chitra Pournami (Witness simultaneous sunset & moonrise over the sea in April-May)",
+      "Cape Festival in October"
+    ],
+    "nearbyDestinations": [
+      "Padmanabhapuram Palace (35 km)",
+      "Vattakottai Fort (7 km)",
+      "Thiruvananthapuram (85 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "beaches",
+      "spiritual",
+      "family",
+      "couples",
+      "photography"
+    ]
+  },
+  {
+    "id": "bengaluru",
+    "name": "Bengaluru",
+    "aliases": [
+      "Bangalore",
+      "Garden City",
+      "Silicon Valley of India"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "India's cosmopolitan tech hub with tree-lined avenues, historic botanical gardens at Lalbagh and Cubbon Park, Tudor-style Bangalore Palace, and world-class craft microbreweries.",
+    "heroImage": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "bangalore-palace",
+      "lalbagh-botanical-garden",
+      "cubbon-park",
+      "vidhana-soudha",
+      "iskcon-temple-bangalore",
+      "ub-city-luxury"
+    ],
+    "thingsToDo": [
+      "Morning walk through Lalbagh Glasshouse and ancient rock",
+      "Explore Bangalore Palace Tudor towers",
+      "Microbrewery craft beer hopping in Indiranagar",
+      "Early morning Benne Dosa breakfast at CTR or Vidyarthi Bhavan"
+    ],
+    "food": [
+      "Butter Masala Dosa (Benne Dosa)",
+      "Bisi Bele Bath",
+      "Mangalore Buns",
+      "Mysore Pak from Anand Sweets",
+      "Artisan Filter Coffee"
+    ],
+    "shopping": [
+      "Mysore Silk Sarees at KSIC",
+      "Sandalwood carvings at Cauvery Emporium",
+      "Commercial Street fashion",
+      "UB City luxury retail"
+    ],
+    "festivals": [
+      "Bengaluru Karaga",
+      "Lalbagh Flower Show (Republic Day & Independence Day)",
+      "Kadalekai Parishe groundnut fair"
+    ],
+    "nearbyDestinations": [
+      "Nandi Hills (60 km)",
+      "Bannerghatta National Park (25 km)",
+      "Mysuru (145 km)",
+      "Shivagange (55 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "culture",
+      "food",
+      "family",
+      "solo",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mysuru",
+    "name": "Mysuru",
+    "aliases": [
+      "Mysore",
+      "City of Palaces",
+      "Heritage Capital of Karnataka"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Royal heritage city famous for the majestic Indo-Saracenic Mysore Palace illuminated by 100,000 golden bulbs, Chamundi Hills, fragrant sandalwood, and world-renowned Ashtanga yoga centers.",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f4446b1a?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.2958,
+    "longitude": 76.6394,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "mysore-palace",
+      "chamundi-hills",
+      "brindavan-gardens",
+      "st-philomenas-cathedral",
+      "mysuru-zoo"
+    ],
+    "thingsToDo": [
+      "Witness the Sunday night illumination of Mysore Palace",
+      "Climb 1,000 steps to Chamundi Temple & monolith Nandi",
+      "Musical fountain show at Brindavan Gardens",
+      "Visit Devaraja Market for flowers, spices, and incense"
+    ],
+    "food": [
+      "Authentic Mysore Pak from Guru Sweets",
+      "Mylari Dosa with white butter",
+      "Shavige Bath",
+      "Chiroti sweet pastry"
+    ],
+    "shopping": [
+      "Pure Mysore Silk Sarees (KSIC factory outlet)",
+      "Government Sandalwood Oil & Soap",
+      "Inlay woodwork furniture",
+      "Ganjifa playing cards"
+    ],
+    "festivals": [
+      "Mysuru Dasara (10 days of royal festivities and Jamboo Savari elephant procession)"
+    ],
+    "nearbyDestinations": [
+      "Srirangapatna (15 km)",
+      "Ranganathittu Bird Sanctuary (18 km)",
+      "Somnathapura Keshava Temple (35 km)",
+      "Coorg (120 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "family",
+      "culture",
+      "couples"
+    ]
+  },
+  {
+    "id": "hampi",
+    "name": "Hampi",
+    "aliases": [
+      "Vijayanagara Ruins",
+      "City of Ruins"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "UNESCO World Heritage wonderland of surreal granite boulder hills, ruined palaces, monolithic temples, and the iconic Stone Chariot from the 14th-century Vijayanagara Empire along the Tungabhadra River.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 15.335,
+    "longitude": 76.46,
+    "bestTimeToVisit": "October to February",
+    "topAttractions": [
+      "virupaksha-temple",
+      "vittala-temple",
+      "stone-chariot-hampi",
+      "hampi-bazaar",
+      "lotus-mahal",
+      "elephant-stables",
+      "matanga-hill"
+    ],
+    "thingsToDo": [
+      "Coracle round-boat ride on Tungabhadra River",
+      "Sunrise climb up Matanga Hill overlooking entire ruins",
+      "Bicycle tour through royal courtyards and queen's baths",
+      "Test musical resonance of pillars in Vittala Temple"
+    ],
+    "food": [
+      "North Karnataka Jolada Rotti Oota (Sorghum flatbreads with stuffed eggplant)",
+      "Mango tree banana leaf feasts",
+      "Fresh coconut water"
+    ],
+    "shopping": [
+      "Handmade leather footwear",
+      "Stone-carved miniatures",
+      "Lambani tribal mirror embroidery",
+      "Musical instruments"
+    ],
+    "festivals": [
+      "Hampi Utsav (November cultural mega-event)",
+      "Purandaradasa Aradhana",
+      "Virupaksha Chariot Festival"
+    ],
+    "nearbyDestinations": [
+      "Anegundi (5 km across river)",
+      "Badami (140 km)",
+      "Pattadakal (135 km)",
+      "Aihole (140 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "heritage",
+      "adventure",
+      "photography",
+      "solo",
+      "culture"
+    ]
+  },
+  {
+    "id": "coorg",
+    "name": "Coorg",
+    "aliases": [
+      "Kodagu",
+      "Scotland of India"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Misty Western Ghat hill haven blanketed in Arabica and Robusta coffee plantations, aromatic spice valleys, cascading waterfalls like Abbey Falls, and rich Kodava warrior culture.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.3375,
+    "longitude": 75.8069,
+    "bestTimeToVisit": "October to May",
+    "topAttractions": [
+      "abbey-falls",
+      "rajas-seat",
+      "dubare-elephant-camp",
+      "mandalpatti-peak",
+      "coffee-plantations-coorg"
+    ],
+    "thingsToDo": [
+      "4x4 Jeep safari to the windy ridges of Mandalpatti",
+      "Bathe and feed gentle pachyderms at Dubare Elephant Camp",
+      "Guided coffee plantation walking tour with bean tasting",
+      "Sunset views from Raja's Seat over rolling valleys"
+    ],
+    "food": [
+      "Coorg Pandi Curry with Akki Rotti (Rice flatbreads)",
+      "Kadambuttu (Steamed rice dumplings)",
+      "Bamboo Shoot Curry (Kani)",
+      "Wild orange & passion fruit homemade wines"
+    ],
+    "shopping": [
+      "Single-origin Coorg coffee beans",
+      "Organic black pepper, cardamom & vanilla",
+      "Pure Coorg forest honey",
+      "Homemade Kodava chocolates"
+    ],
+    "festivals": [
+      "Kailpodhu (Harvest & weapon festival in September)",
+      "Cauvery Sankramana (Tula Sankramana at Talakaveri in October)"
+    ],
+    "nearbyDestinations": [
+      "Talakaveri (45 km - Source of Cauvery River)",
+      "Nagarhole National Park (65 km)",
+      "Wayanad (110 km)",
+      "Mysuru (120 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "nature",
+      "couples",
+      "hill-stations",
+      "food",
+      "family"
+    ]
+  },
+  {
+    "id": "gokarna",
+    "name": "Gokarna",
+    "aliases": [
+      "Beach Paradise of Karnataka",
+      "Kashi of the South"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Laid-back coastal haven where pristine sandy coves like Om Beach and Kudle Beach meet sacred ancient temples dedicated to Lord Mahabaleshwar's Atmalinga.",
+    "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 14.5479,
+    "longitude": 74.3188,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "om-beach",
+      "kudle-beach",
+      "half-moon-beach",
+      "mahabaleshwar-temple-gokarna"
+    ],
+    "thingsToDo": [
+      "Beach trek connecting Kudle, Om, Half Moon, and Paradise Beach",
+      "Darshan of the sacred Atmalinga at Mahabaleshwar Temple",
+      "Beachside yoga and meditation at sunrise",
+      "Cliffside sunset dining at Kudle Beach cafes"
+    ],
+    "food": [
+      "Fresh grilled seafood",
+      "Nutella pancakes and Israeli shakshuka at beach shacks",
+      "Konkani vegetarian thali with kokum rasam"
+    ],
+    "shopping": [
+      "Hippie clothing & harem pants",
+      "Brass tridents & pooja trinkets",
+      "Seashell souvenirs"
+    ],
+    "festivals": [
+      "Maha Shivaratri (Enormous coastal chariot processions and celebrations)"
+    ],
+    "nearbyDestinations": [
+      "Murudeshwar (78 km - giant Shiva statue)",
+      "Yana Rocks (50 km)",
+      "Goa border (65 km)",
+      "Karwar (60 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "beaches",
+      "solo",
+      "spiritual",
+      "couples",
+      "adventure"
+    ]
+  },
+  {
+    "id": "badami",
+    "name": "Badami",
+    "aliases": [
+      "Vatapi",
+      "Chalukya Capital"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Ancient Chalukyan capital cradled in red sandstone cliffs around the holy Agastya Lake, celebrated for its 6th-century rock-cut cave temples and lakeside Bhutanatha shrines.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 15.9187,
+    "longitude": 75.6766,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "badami-cave-temples",
+      "agastya-lake",
+      "bhutanatha-temples"
+    ],
+    "thingsToDo": [
+      "Climb through four rock-cut caves carved with Nataraja and Vishnu",
+      "Watch reflection of Bhutanatha Temple across Agastya Lake at sunset",
+      "Bouldering on red sandstone cliffs",
+      "Day trip to Pattadakal UNESCO complex and Aihole"
+    ],
+    "food": [
+      "North Karnataka Shenga Chutney (Peanut powder)",
+      "Jowar Rotti with sprouted moong curry",
+      "Yennegai (Stuffed brinjal)",
+      "Dharwad Peda nearby"
+    ],
+    "shopping": [
+      "Guledgudd Khun fabric handlooms",
+      "Stone carved miniatures",
+      "Ilkal handwoven sarees nearby"
+    ],
+    "festivals": [
+      "Chalukya Utsav (February festival celebrating heritage in Badami & Pattadakal)"
+    ],
+    "nearbyDestinations": [
+      "Pattadakal UNESCO Site (22 km)",
+      "Aihole (35 km)",
+      "Mahakuta (14 km)",
+      "Hampi (140 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "adventure",
+      "photography"
+    ]
+  },
+  {
+    "id": "visakhapatnam",
+    "name": "Visakhapatnam",
+    "aliases": [
+      "Vizag",
+      "City of Destiny",
+      "Jewel of the East Coast"
+    ],
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "description": "Vibrant coastal port city flanked by the Eastern Ghats and the Bay of Bengal, featuring panoramic hilltop views at Kailasagiri, INS Kurusura submarine museum, and golden sandy beaches.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 17.6868,
+    "longitude": 83.2185,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "rk-beach-vizag",
+      "kailasagiri-vizag",
+      "ins-kurusura-submarine",
+      "yarada-beach",
+      "simhachalam-temple"
+    ],
+    "thingsToDo": [
+      "Tour inside actual decommissioned Soviet submarine INS Kurusura",
+      "Ropeway cable car ride to Kailasagiri hilltop park",
+      "Sunset walk on Ramakrishna (RK) Beach promenade",
+      "Drive along the scenic Bheemili coastal highway"
+    ],
+    "food": [
+      "Visakha seafood curries (Royyala Iguru - Prawn curry)",
+      "Andhra spicy thali on banana leaf",
+      "Madugula Halwa",
+      "Bongu Chicken (Bamboo chicken from Araku)"
+    ],
+    "shopping": [
+      "Etikoppaka wooden lacquer toys (GI-tagged)",
+      "Kalamkari painted textiles",
+      "Seashell crafts & pearl jewelry"
+    ],
+    "festivals": [
+      "Visakha Utsav on RK Beach in January",
+      "Rishi Konda Beach Carnival",
+      "Simhachalam Chandanotsavam"
+    ],
+    "nearbyDestinations": [
+      "Araku Valley (115 km)",
+      "Borra Caves (90 km)",
+      "Ananthagiri Hills (85 km)",
+      "Yarada Beach (15 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "beaches",
+      "family",
+      "couples",
+      "nature"
+    ]
+  },
+  {
+    "id": "tirupati",
+    "name": "Tirupati",
+    "aliases": [
+      "Tirumala",
+      "Spiritual Capital of Andhra"
+    ],
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "description": "World's most visited sacred pilgrimage hub, nestled in the holy Seshachalam Hills. Home to the legendary Dravidian temple of Lord Venkateswara (Balaji) atop Tirumala's seven peaks.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 13.6288,
+    "longitude": 79.4192,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "tirumala-venkateswara-temple",
+      "kapila-theertham",
+      "sri-padmavathi-temple",
+      "talakona-waterfalls"
+    ],
+    "thingsToDo": [
+      "Sacred Darshan of Lord Venkateswara atop Tirumala",
+      "Trek the traditional Alipiri or Srivari Mettu footpaths (3,550 stone steps)",
+      "Visit the sacred waterfall pool at Kapila Theertham",
+      "Day hike to the cascading Talakona Waterfalls in deciduous reserve"
+    ],
+    "food": [
+      "World-famous GI-tagged Tirupati Laddu",
+      "Srivari Anna Prasadam (Free temple meals)",
+      "Andhra Pesarattu with Ginger Pachadi"
+    ],
+    "shopping": [
+      "Tirupati Laddu prasadam",
+      "Brass Venkateswara murtis",
+      "Red sandalwood crafts",
+      "Tanjore style glass paintings"
+    ],
+    "festivals": [
+      "Srivari Brahmotsavam (Grand 9-day annual September/October festival)",
+      "Vaikunta Ekadasi"
+    ],
+    "nearbyDestinations": [
+      "Srikalahasti Temple (38 km)",
+      "Kanipakam Vinayaka Temple (70 km)",
+      "Chandragiri Fort (14 km)",
+      "Horsley Hills (125 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "family"
+    ]
+  },
+  {
+    "id": "araku-valley",
+    "name": "Araku Valley",
+    "aliases": [
+      "Ooty of Andhra Pradesh"
+    ],
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "description": "Picturesque hill station in the Eastern Ghats blanketed by organic tribal coffee estates, million-year-old Borra limestone caves, gushing waterfalls, and rich indigenous heritage.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 18.3273,
+    "longitude": 82.8775,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "araku-valley-plantations",
+      "borra-caves",
+      "tribal-museum-araku",
+      "katiki-waterfalls"
+    ],
+    "thingsToDo": [
+      "Scenic Vistadome glass-roof train ride through 58 tunnels from Vizag",
+      "Explore million-year-old stalactite and stalagmite formations at Borra Caves",
+      "Sip organic GI-tagged Araku Valley tribal filter coffee",
+      "Watch Dhimsa tribal folk dance performance"
+    ],
+    "food": [
+      "Bongu Chicken (Oil-free chicken roasted inside fresh bamboo stalks)",
+      "Madugula Halwa",
+      "Organic Araku single-origin Arabica coffee"
+    ],
+    "shopping": [
+      "Araku Valley packaged organic coffee beans",
+      "Tribal brass and wrought iron figurines",
+      "Wild forest pepper & honey"
+    ],
+    "festivals": [
+      "Araku Balloon Festival in January",
+      "Itika Pongal tribal spring festival"
+    ],
+    "nearbyDestinations": [
+      "Borra Caves (36 km)",
+      "Katiki Falls (39 km)",
+      "Ananthagiri Coffee Hills (26 km)",
+      "Visakhapatnam (115 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "nature",
+      "hill-stations",
+      "couples",
+      "adventure"
+    ]
+  },
+  {
+    "id": "gandikota",
+    "name": "Gandikota",
+    "aliases": [
+      "Grand Canyon of India"
+    ],
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "description": "Spectacular geological gorge carved by the Pennar River through the Erramala Hills, crowned by the massive 13th-century red sandstone Gandikota Fort, Raghunatha and Madhavaraya temples.",
+    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 14.8142,
+    "longitude": 78.2863,
+    "bestTimeToVisit": "October to February",
+    "topAttractions": [
+      "gandikota-fort",
+      "pennar-river-gorge",
+      "madhavaraya-temple-gandikota"
+    ],
+    "thingsToDo": [
+      "Camp under starry skies right at the edge of the canyon",
+      "Watch sunrise illuminate the red stone gorge walls",
+      "Explore ancient ramparts, granary, and Jama Masjid inside fort",
+      "Kayaking and rock rappelling down the Pennar river gorge"
+    ],
+    "food": [
+      "Rayalaseema Ragi Mudda with spicy Natu Kodi Pulusu (Country chicken curry)",
+      "Ulavacharu (Horse gram soup)",
+      "Kadapa Karam Dosa"
+    ],
+    "shopping": [
+      "Traditional brass lamps",
+      "Handwoven cottons from Kadapa"
+    ],
+    "festivals": [
+      "Gandikota Heritage Utsav in winter"
+    ],
+    "nearbyDestinations": [
+      "Belum Caves (60 km - India's second largest caves)",
+      "Yaganti Temple (85 km)",
+      "Lepakshi (210 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "adventure",
+      "nature",
+      "photography",
+      "solo"
+    ]
+  },
+  {
+    "id": "jaipur",
+    "name": "Jaipur",
+    "aliases": [
+      "The Pink City",
+      "Paris of India"
+    ],
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "description": "The royal jewel of Rajasthan and a UNESCO World Heritage walled city, celebrated for its terracotta-pink palace facades, hill-fort battlements at Amber and Nahargarh, and geometric astronomy at Jantar Mantar.",
+    "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.9124,
+    "longitude": 75.7873,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "amber-fort-jaipur",
+      "city-palace-jaipur",
+      "hawa-mahal",
+      "jantar-mantar-jaipur",
+      "jal-mahal",
+      "nahargarh-fort",
+      "jaigarh-fort"
+    ],
+    "thingsToDo": [
+      "Ascend the cobblestone ramparts of Amber Fort",
+      "Photograph the 953 honeycombed jharokha windows of Hawa Mahal",
+      "Sunset panorama over the Pink City from Nahargarh Fort",
+      "Experience evening sound & light spectacle at Amber Fort"
+    ],
+    "food": [
+      "Dal Baati Churma with garlic chutney",
+      "Pyaaz Ki Kachori from Rawat Mishthan Bhandar",
+      "Laal Maas (Fiery mutton)",
+      "Ghevar from LMB Johari Bazaar",
+      "Lassi at Lassiwala MI Road"
+    ],
+    "shopping": [
+      "Jaipur Blue Pottery",
+      "Gemstones & Kundan-Meenakari jewelry at Johari Bazaar",
+      "Block-printed quilts (Jaipuri Razai)",
+      "Mojari leather juttis"
+    ],
+    "festivals": [
+      "Jaipur Literature Festival (JLF in January)",
+      "Teej & Gangaur royal street processions",
+      "Elephant Festival"
+    ],
+    "nearbyDestinations": [
+      "Pushkar (145 km)",
+      "Ajmer (135 km)",
+      "Ranthambore (160 km)",
+      "Samode Palace (42 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "couples",
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "udaipur",
+    "name": "Udaipur",
+    "aliases": [
+      "City of Lakes",
+      "Venice of the East",
+      "White City"
+    ],
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "description": "Fairytale romantic destination set around tranquil Lake Pichola, adorned with marble island palaces, grand Mewar courtyards at City Palace, and sunset viewpoints over the Aravalli Hills.",
+    "heroImage": "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 24.5854,
+    "longitude": 73.7125,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "city-palace-udaipur",
+      "lake-pichola",
+      "jag-mandir-palace",
+      "sajjangarh-monsoon-palace",
+      "fateh-sagar-lake"
+    ],
+    "thingsToDo": [
+      "Sunset wooden boat cruise on Lake Pichola passing Lake Palace",
+      "Explore mirror-inlay courtyards of City Palace museum",
+      "Panoramic golden hour view from Monsoon Palace (Sajjangarh)",
+      "Dharohar folk dance show at Bagore Ki Haveli"
+    ],
+    "food": [
+      "Mewari Dal Baati",
+      "Kadhi Pakoda with bajra roti",
+      "Gatte Ki Sabzi",
+      "Jalebi with Rabri at Jagdish Chowk"
+    ],
+    "shopping": [
+      "Pichwai and miniature paintings on silk",
+      "Camel leather journals & bags",
+      "Silver ethnic jewelry in Hathi Pol"
+    ],
+    "festivals": [
+      "Mewar Festival in spring",
+      "Shilpgram Crafts Mela in December"
+    ],
+    "nearbyDestinations": [
+      "Kumbhalgarh Fort (85 km - 2nd longest wall in the world)",
+      "Ranakpur Jain Temples (95 km)",
+      "Chittorgarh Fort (115 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "couples",
+      "heritage",
+      "luxury",
+      "photography",
+      "culture"
+    ]
+  },
+  {
+    "id": "jodhpur",
+    "name": "Jodhpur",
+    "aliases": [
+      "The Blue City",
+      "Sun City"
+    ],
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "description": "Dominating the eastern edge of the Thar Desert, Jodhpur mesmerizes with its sea of indigo-washed Brahmin houses beneath the colossal cliffside ramparts of Mehrangarh Fort.",
+    "heroImage": "https://images.unsplash.com/photo-1597040663342-45b6af2b0a97?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.2389,
+    "longitude": 73.0243,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "mehrangarh-fort-jodhpur",
+      "jaswant-thada",
+      "umaid-bhawan-palace",
+      "clock-tower-market-jodhpur"
+    ],
+    "thingsToDo": [
+      "Zip-line (Flying Fox) across the battlements and moats of Mehrangarh",
+      "Wander through the cobalt-blue painted lanes of Navchokiya",
+      "Visit the golden sandstone cenotaph of Jaswant Thada",
+      "Sunset tea overlooking the city from Mehrangarh ramparts"
+    ],
+    "food": [
+      "Mirchi Vada & Mawa Kachori from Janta Sweet Home",
+      "Ker Sangri desert vegetables",
+      "Gulab Jamun Sabzi",
+      "Makhaniya Lassi at Clock Tower"
+    ],
+    "shopping": [
+      "Jodhpuri Juttis (embroidered leather shoes)",
+      "Bandhani & Leheriya tie-dye textiles",
+      "Antiques & wooden furniture"
+    ],
+    "festivals": [
+      "Rajasthan International Folk Festival (RIFF at Mehrangarh in October)",
+      "Marwar Festival"
+    ],
+    "nearbyDestinations": [
+      "Osian Desert Temples (65 km)",
+      "Bishnoi Village Safari (25 km)",
+      "Jaisalmer (280 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "photography",
+      "solo"
+    ]
+  },
+  {
+    "id": "jaisalmer",
+    "name": "Jaisalmer",
+    "aliases": [
+      "The Golden City"
+    ],
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "description": "Golden sandstone fortress rising like a desert mirage from the Thar Desert. Home to the living Jaisalmer Fort where a quarter of the city resides, honey-colored havelis, and undulating sand dunes at Sam.",
+    "heroImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.9157,
+    "longitude": 70.9083,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "jaisalmer-fort",
+      "patwon-ki-haveli",
+      "sam-sand-dunes",
+      "gadisar-lake",
+      "desert-national-park"
+    ],
+    "thingsToDo": [
+      "Camel trek and desert camping under stars at Sam Dunes",
+      "Walk inside the living fort through centuries-old havelis and Jain temples",
+      "Row a boat across Gadisar Lake at sunrise",
+      "Explore the intricate five-story stone lattices of Patwon Ki Haveli"
+    ],
+    "food": [
+      "Ker Sangri with Bajre Ki Roti and white butter",
+      "Ghotua Ladoo (Signature desert sweet)",
+      "Rajasthani Dal Baati"
+    ],
+    "shopping": [
+      "Camel leather footwear & bags",
+      "Embroidered mirror-work wall hangings",
+      "Yellow Jaisalmer fossil stone tableware"
+    ],
+    "festivals": [
+      "Jaisalmer Desert Festival (February annual camel races & turban tying)"
+    ],
+    "nearbyDestinations": [
+      "Kuldhara Ghost Village (18 km)",
+      "Tanot Mata Temple & Longewala Border (120 km)",
+      "Khuri Sand Dunes (48 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "adventure",
+      "heritage",
+      "photography",
+      "couples",
+      "solo"
+    ]
+  },
+  {
+    "id": "pushkar",
+    "name": "Pushkar",
+    "aliases": [
+      "Tirtharaj",
+      "Lotus City of Brahma"
+    ],
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "description": "Mystical holy oasis town curled around sacred Pushkar Lake, home to one of the world's very few active Lord Brahma temples, vibrant rooftop cafes, and the world-famous annual Camel Fair.",
+    "heroImage": "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.4899,
+    "longitude": 74.5511,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "pushkar-lake",
+      "brahma-temple-pushkar",
+      "pushkar-camel-fair-grounds"
+    ],
+    "thingsToDo": [
+      "Sit by the 52 ghats of Pushkar Lake during evening Aarti",
+      "Darshan at the 14th-century Jagatpita Brahma Temple",
+      "Early morning hike up to Savitri Temple hill for sunrise",
+      "Desert safari & quad biking in surrounding Thar dunes"
+    ],
+    "food": [
+      "Pushkar Malpua from Halwai Gali",
+      "Falafel & Hummus wraps at rooftop cafes",
+      "Rabri Lassi",
+      "Kachori Kadhi"
+    ],
+    "shopping": [
+      "Rose water & Gulkand from local rose gardens",
+      "Handmade silver jewelry",
+      "Bohemian clothing & block-printed shawls"
+    ],
+    "festivals": [
+      "Pushkar Camel Fair (Kartik Purnima November extravaganza)",
+      "Holi in Pushkar (World-famous celebration)"
+    ],
+    "nearbyDestinations": [
+      "Ajmer Dargah Sharif (14 km)",
+      "Jaipur (145 km)",
+      "Jodhpur (185 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "solo",
+      "culture",
+      "photography"
+    ]
+  },
+  {
+    "id": "ranthambore",
+    "name": "Ranthambore",
+    "aliases": [
+      "Tiger Capital of India",
+      "Sawai Madhopur"
+    ],
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "description": "Renowned wilderness sanctuary where majestic Royal Bengal Tigers roam freely against the ancient backdrop of the 10th-century UNESCO Ranthambore Fort, historic ruins, and crocodile-filled lakes.",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.0173,
+    "longitude": 76.5026,
+    "bestTimeToVisit": "October to April",
+    "topAttractions": [
+      "ranthambore-national-park",
+      "ranthambore-fort",
+      "ranthambore-wildlife-safari"
+    ],
+    "thingsToDo": [
+      "Open-top 4x4 Gypsy or Canter jungle safari to spot wild tigers",
+      "Hike up to the ancient Ranthambore Fort overlooking Padam Talao",
+      "Darshan at the Trinetra Ganesha Temple inside the fort",
+      "Birdwatching around Malik Talao and Rajbagh ruins"
+    ],
+    "food": [
+      "Rajasthani jungle meals",
+      "Dal Baati Churma",
+      "Fresh guavas from Sawai Madhopur orchards"
+    ],
+    "shopping": [
+      "Wildlife paintings & block prints",
+      "Dastkar Ranthambore handicraft textiles supporting local women"
+    ],
+    "festivals": [
+      "Ganesh Chaturthi at Trinetra Ganesha Temple (Millions gather at fort)"
+    ],
+    "nearbyDestinations": [
+      "Jaipur (160 km)",
+      "Chambal River Safari (45 km)",
+      "Bharatpur (180 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "wildlife",
+      "nature",
+      "adventure",
+      "family",
+      "photography"
+    ]
+  },
+  {
+    "id": "mumbai",
+    "name": "Mumbai",
+    "aliases": [
+      "Bombay",
+      "Maximum City",
+      "City of Dreams"
+    ],
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "description": "India's financial and entertainment powerhouse on the Arabian Sea, featuring the Gateway of India, Victorian Gothic and Art Deco UNESCO boulevards, Marine Drive's Queen's Necklace, and Bollywood energy.",
+    "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 18.922,
+    "longitude": 72.8347,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "gateway-of-india",
+      "marine-drive",
+      "csmt-railway-station",
+      "elephanta-caves",
+      "colaba-causeway",
+      "siddhivinayak-temple",
+      "juhu-beach",
+      "bandra-worli-sea-link"
+    ],
+    "thingsToDo": [
+      "Sunset stroll along Marine Drive curving around Back Bay",
+      "Ferry cruise from Gateway of India to 5th-century Elephanta rock caves",
+      "Heritage architecture walking tour through Fort and Kala Ghoda",
+      "Drive across the cable-stayed Bandra-Worli Sea Link"
+    ],
+    "food": [
+      "Vada Pav from Ashok Vada Pav Dadar",
+      "Pav Bhaji at Sardar Refreshments",
+      "Bombay Duck (Bombil Fry) at Gajalee",
+      "Bhel Puri at Chowpatty Beach",
+      "Bun Maska & Chai at historic Irani Cafes (Britannia & Co.)"
+    ],
+    "shopping": [
+      "Colaba Causeway street shopping",
+      "High street fashion on Linking Road Bandra",
+      "Antiques at Chor Bazaar",
+      "Spices at Crawford Market"
+    ],
+    "festivals": [
+      "Ganesh Chaturthi (Spectacular 10-day sea immersion processions)",
+      "Kala Ghoda Arts Festival in February",
+      "Bandra Fair"
+    ],
+    "nearbyDestinations": [
+      "Elephanta Island (10 km by ferry)",
+      "Alibaug (45 min by speedboat)",
+      "Lonavala (85 km)",
+      "Matheran (80 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "culture",
+      "food",
+      "heritage",
+      "luxury",
+      "solo"
+    ]
+  },
+  {
+    "id": "pune",
+    "name": "Pune",
+    "aliases": [
+      "Oxford of the East",
+      "Cultural Capital of Maharashtra"
+    ],
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "description": "The historical stronghold of the Maratha Empire and cultural capital of Maharashtra, featuring the historic Shaniwar Wada citadel, Aga Khan Palace, rock-cut Pataleshwar cave temple, and thriving youth culture.",
+    "heroImage": "https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 18.5204,
+    "longitude": 73.8567,
+    "bestTimeToVisit": "July to February",
+    "topAttractions": [
+      "shaniwar-wada",
+      "aga-khan-palace",
+      "sinhagad-fort",
+      "pataleshwar-cave-temple",
+      "raja-dinkar-kelkar-museum"
+    ],
+    "thingsToDo": [
+      "Trek to Sinhagad Fort for panoramic Sahyadri views & pithla bhakri",
+      "Walk through Shaniwar Wada, residence of the Peshwas",
+      "Visit the Mahatma Gandhi memorial at Aga Khan Palace",
+      "Explore 8th-century monolithic Pataleshwar rock cave temple"
+    ],
+    "food": [
+      "Misal Pav at Katakirrr / Bedekar",
+      "Puneri Bakarwadi from Chitale Bandhu",
+      "Pithla Bhakri with Thecha at Sinhagad",
+      "Sujata Mastani (Thick ice-cream milkshake)"
+    ],
+    "shopping": [
+      "Puneri Pagadi & Paithani sarees",
+      "Chitale Bakarwadi & mango barfi",
+      "FC Road & Tulsi Baug street shopping"
+    ],
+    "festivals": [
+      "Ganeshotsav (Historic Manache Ganpati processions with dhol tasha pathaks)",
+      "Sawai Gandharva Bhimsen Mahotsav classical music festival"
+    ],
+    "nearbyDestinations": [
+      "Lonavala & Khandala (65 km)",
+      "Lavasa (55 km)",
+      "Mahabaleshwar (120 km)",
+      "Karla & Bhaja Caves (55 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "food",
+      "adventure"
+    ]
+  },
+  {
+    "id": "chhatrapati-sambhaji-nagar",
+    "name": "Chhatrapati Sambhaji Nagar",
+    "aliases": [
+      "Aurangabad",
+      "Tourism Capital of Maharashtra"
+    ],
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "description": "World-renowned gateway to the UNESCO World Heritage rock-cut masterpieces of Ajanta and Ellora, featuring the monumental rock-carved Kailash Temple, Bibi Ka Maqbara (Taj of the Deccan), and Daulatabad Fort.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 19.8762,
+    "longitude": 75.3433,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "ajanta-caves",
+      "ellora-caves-kailash",
+      "bibi-ka-maqbara",
+      "daulatabad-fort",
+      "panchakki-aurangabad"
+    ],
+    "thingsToDo": [
+      "Stand in awe before Cave 16 (Kailash Temple) carved out of a single mountain cliff top-down",
+      "Examine 2,000-year-old Buddhist murals and frescoes inside Ajanta Caves",
+      "Climb the impregnable medieval moat and dark maze of Daulatabad Fort",
+      "Visit Bibi Ka Maqbara built by Prince Azam Shah"
+    ],
+    "food": [
+      "Naan Qalia (Slow-cooked spiced mutton stew with tandoor bread)",
+      "Tahri (Aromatic rice dish)",
+      "Imarti & Jalebi"
+    ],
+    "shopping": [
+      "Himroo shawls & stoles (woven with gold/silver threads)",
+      "Paithani silk sarees with peacock borders from nearby Paithan",
+      "Bidriware silver crafts"
+    ],
+    "festivals": [
+      "Ellora-Ajanta International Music & Dance Festival"
+    ],
+    "nearbyDestinations": [
+      "Ellora Caves (28 km)",
+      "Ajanta Caves (100 km)",
+      "Grishneshwar Jyotirlinga (30 km)",
+      "Lonar Meteorite Crater Lake (140 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "heritage",
+      "photography",
+      "culture",
+      "solo"
+    ]
+  },
+  {
+    "id": "mahabaleshwar",
+    "name": "Mahabaleshwar",
+    "aliases": [
+      "Strawberry Capital of India"
+    ],
+    "state": "Maharashtra",
+    "stateSlug": "mahabaleshwar",
+    "description": "Picturesque Western Ghat hill retreat situated 1,353 meters high, surrounded by deep green valleys, strawberry plantations, Venna Lake boating, and historic Maratha battlements at Pratapgad Fort.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 17.9237,
+    "longitude": 73.6586,
+    "bestTimeToVisit": "October to June",
+    "topAttractions": [
+      "venna-lake",
+      "arthurs-seat-viewpoint",
+      "pratapgad-fort",
+      "mapro-garden",
+      "elephants-head-point"
+    ],
+    "thingsToDo": [
+      "Pick fresh strawberries straight from organic farms",
+      "Boat on the misty waters of Venna Lake",
+      "Climb Pratapgad Fort where Shivaji Maharaj defeated Afzal Khan",
+      "Watch 2,000ft drop into Savitri Valley from Arthur's Seat"
+    ],
+    "food": [
+      "Fresh Strawberries with whipped cream",
+      "Mapro strawberry ice cream & grilled sandwiches",
+      "Corn patties and hot pakodas",
+      "Chana & chikki"
+    ],
+    "shopping": [
+      "Fresh strawberries, raspberries & blueberries",
+      "Mapro fruit syrups & jams",
+      "Handmade leather Kolhapuri chappals"
+    ],
+    "festivals": [
+      "Mahabaleshwar Strawberry Festival in March/April"
+    ],
+    "nearbyDestinations": [
+      "Panchgani (18 km)",
+      "Pratapgad Fort (20 km)",
+      "Tapola / Mini Kashmir (25 km)",
+      "Pune (120 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "nature",
+      "couples",
+      "hill-stations",
+      "family"
+    ]
+  },
+  {
+    "id": "kolkata",
+    "name": "Kolkata",
+    "aliases": [
+      "Calcutta",
+      "City of Joy",
+      "Cultural Capital of India"
+    ],
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "description": "Intellectual and artistic heartbeat of India on the Hooghly River, featuring the marble splendor of Victoria Memorial, iconic cantilever Howrah Bridge, historic yellow taxis, and grand Durga Puja celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 22.5726,
+    "longitude": 88.3639,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "victoria-memorial-kolkata",
+      "howrah-bridge",
+      "indian-museum-kolkata",
+      "st-pauls-cathedral-kolkata",
+      "dakshineswar-kali-temple",
+      "kalighat-temple",
+      "marble-palace-kolkata",
+      "science-city-kolkata"
+    ],
+    "thingsToDo": [
+      "Sunset ferry cruise on the Hooghly River under Howrah Bridge",
+      "Walk through Victoria Memorial gardens and museum galleries",
+      "Coffee and intellectual adda at College Street Coffee House",
+      "Visit potter's colony Kumartuli where clay Durga idols are sculpted"
+    ],
+    "food": [
+      "Kolkata Biryani with soft potato and egg",
+      "Kathi Rolls from Nizam's",
+      "Steamed Sandesh & Nolen Gur Rosogolla",
+      "Macher Jhol (Hilsa / Rohu mustard fish)",
+      "Phuchka (Crispy hollow spheres with spicy tamarind water)"
+    ],
+    "shopping": [
+      "Tant & Baluchari handloom silk sarees in Gariahat",
+      "Secondhand and rare books on College Street (Boi Para)",
+      "Terracotta crafts from Dakshinapan",
+      "Conch bangles (Shakha Pola)"
+    ],
+    "festivals": [
+      "Durga Puja (UNESCO Inscribed world cultural spectacle in October)",
+      "Kolkata International Film Festival",
+      "Poush Sankranti"
+    ],
+    "nearbyDestinations": [
+      "Sundarbans (100 km)",
+      "Shantiniketan (160 km)",
+      "Digha Beach (180 km)",
+      "Bishnupur (140 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "culture",
+      "heritage",
+      "food",
+      "photography",
+      "solo"
+    ]
+  },
+  {
+    "id": "darjeeling",
+    "name": "Darjeeling",
+    "aliases": [
+      "Queen of the Hills",
+      "Champagne of Teas"
+    ],
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "description": "Idyllic Himalayan hill station 2,042 meters high, framed by the staggering snow peaks of Mt. Kanchenjunga (world's 3rd highest peak), world-renowned tea estates, and the UNESCO Toy Train.",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 27.041,
+    "longitude": 88.2663,
+    "bestTimeToVisit": "March to May & October to December",
+    "topAttractions": [
+      "tiger-hill-darjeeling",
+      "darjeeling-toy-train",
+      "batasia-loop",
+      "hmi-darjeeling",
+      "tea-gardens-darjeeling",
+      "peace-pagoda-darjeeling"
+    ],
+    "thingsToDo": [
+      "Dawn sunrise view from Tiger Hill illuminating Kanchenjunga in gold",
+      "Ride the UNESCO vintage steam Toy Train loop at Batasia",
+      "Tour Happy Valley Tea Estate and taste First Flush teas",
+      "Himalayan Mountaineering Institute and high-altitude zoo"
+    ],
+    "food": [
+      "Steaming Tibetan Momos & Thukpa",
+      "Darjeeling First Flush Muscatel tea",
+      "Churpi (Himalayan hard cheese)",
+      "Nepali Thali with Gundruk"
+    ],
+    "shopping": [
+      "World-renowned packaged Darjeeling tea",
+      "Tibetan prayer wheels & singing bowls",
+      "Handwoven woolens at Chowrasta Mall"
+    ],
+    "festivals": [
+      "Darjeeling Carnival",
+      "Tibetan Losar (New Year)",
+      "Buddha Jayanti"
+    ],
+    "nearbyDestinations": [
+      "Kalimpong (50 km)",
+      "Mirik Lake (49 km)",
+      "Gangtok Sikkim (98 km)",
+      "Kurseong (32 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "nature",
+      "hill-stations",
+      "couples",
+      "adventure",
+      "family"
+    ]
+  },
+  {
+    "id": "sundarbans",
+    "name": "Sundarbans",
+    "aliases": [
+      "The Mangrove Realm",
+      "Tide Country"
+    ],
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "description": "The world's largest halophytic mangrove delta and a UNESCO World Heritage wilderness, home to swimming Royal Bengal Tigers, saltwater crocodiles, spotted deer, and thousands of migratory birds.",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 21.9497,
+    "longitude": 89.1833,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "sundarbans-national-park",
+      "mangrove-boat-safari",
+      "sajnekhali-watch-tower"
+    ],
+    "thingsToDo": [
+      "Multi-day boat cruise through silent tidal mangrove estuaries",
+      "Climb watchtowers at Sajnekhali, Sudhanyakhali, and Do Banki canopy walk",
+      "Spot swimming Royal Bengal Tigers and estuarine crocodiles",
+      "Experience local Bonbibi folklore village theatrical performance"
+    ],
+    "food": [
+      "Fresh river fish curries (Parshe, Bhetki, Prawns)",
+      "Wild mangrove honey (Mou)",
+      "Simple Bengali village meals"
+    ],
+    "shopping": [
+      "Pure raw Sundarbans mangrove forest honey",
+      "Handmade clay models and woodcrafts"
+    ],
+    "festivals": [
+      "Rash Mela at Dublar Char in November",
+      "Bonbibi Puja in January"
+    ],
+    "nearbyDestinations": [
+      "Kolkata (100 km gateway)",
+      "Bakkhali Beach (130 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "wildlife",
+      "nature",
+      "adventure",
+      "photography"
+    ]
+  },
+  {
+    "id": "shantiniketan",
+    "name": "Shantiniketan",
+    "aliases": [
+      "Abode of Peace",
+      "Tagore's Sanctuary"
+    ],
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "description": "UNESCO World Heritage cultural sanctuary founded by Nobel Laureate Rabindranath Tagore, centered around the open-air Visva-Bharati University, red soil landscapes (Rarh), and Baul folk music.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 23.68,
+    "longitude": 87.68,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "visva-bharati-university",
+      "tagore-ashram-heritage",
+      "sonajhuri-haat"
+    ],
+    "thingsToDo": [
+      "Saturday open-air Sonajhuri Haat market amidst sal trees listening to Baul singers",
+      "Tour Rabindra Bhavana museum housing Tagore's Nobel medal replica",
+      "Explore open-air classrooms under majestic banyan trees",
+      "Bicycle ride through the tranquil red-soil paths of Khoai"
+    ],
+    "food": [
+      "Traditional Bengali Rarh Thali with Posto (Poppy seed preparation)",
+      "Kheer Kodom sweets",
+      "Rice with Jhuri Aloo Bhaja"
+    ],
+    "shopping": [
+      "Shantiniketan embossed leather bags (GI-tagged)",
+      "Kantha embroidered kurtas & stoles",
+      "Dokra brass tribal figurines",
+      "Ektara musical instruments"
+    ],
+    "festivals": [
+      "Poush Mela in late December (Grand rural carnival)",
+      "Basanta Utsav (Spring festival of colors in March)"
+    ],
+    "nearbyDestinations": [
+      "Bishnupur Terracotta Temples (85 km)",
+      "Massanjore Dam (75 km)",
+      "Kolkata (160 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "culture",
+      "heritage",
+      "solo",
+      "photography"
+    ]
+  },
+  {
+    "id": "ahmedabad",
+    "name": "Ahmedabad",
+    "aliases": [
+      "Amdavad",
+      "India's First UNESCO World Heritage City"
+    ],
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "description": "India's premier UNESCO World Heritage City, straddling the Sabarmati River. Celebrated for Mahatma Gandhi's Sabarmati Ashram, intricately carved pols, five-story Adalaj Stepwell, and world-class textiles.",
+    "heroImage": "https://images.unsplash.com/photo-1597040663342-45b6af2b0a97?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 23.0225,
+    "longitude": 72.5714,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "sabarmati-ashram",
+      "adalaj-stepwell",
+      "sidi-saiyyed-mosque",
+      "kankaria-lake",
+      "science-city-ahmedabad"
+    ],
+    "thingsToDo": [
+      "Walk the guided Heritage Trail through Old City carved wooden pols",
+      "Contemplate at Gandhi's peaceful Hriday Kunj riverside cottage",
+      "Admire the intricate tree-of-life stone lattice window at Sidi Saiyyed Mosque",
+      "Evening street food frenzy at Manek Chowk night jewelry bazaar"
+    ],
+    "food": [
+      "Authentic Gujarati Thali at Agashiye",
+      "Fafda Jalebi breakfast",
+      "Khaman Dhokla & Khandvi",
+      "Late-night Pav Bhaji and Chocolate Sandwiches at Manek Chowk",
+      "Kulfi Falooda"
+    ],
+    "shopping": [
+      "Bandhani & Patola handloom silks",
+      "Mirror-work Gujarati chaniya cholis for Navratri",
+      "Khadi hand-spun cotton garments"
+    ],
+    "festivals": [
+      "Navratri (Nine nights of massive open-air Garba)",
+      "International Kite Festival (Makar Sankranti in January)"
+    ],
+    "nearbyDestinations": [
+      "Adalaj Stepwell (18 km)",
+      "Gandhinagar Akshardham (28 km)",
+      "Modhera Sun Temple (98 km)",
+      "Patan Rani ki Vav (125 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "food",
+      "family"
+    ]
+  },
+  {
+    "id": "dwarka",
+    "name": "Dwarka",
+    "aliases": [
+      "Kingdom of Lord Krishna",
+      "Char Dham Western Shrine"
+    ],
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "description": "One of Hinduism's sacred Char Dham and Sapta Puri holy pilgrimage cities, set on the westernmost tip of the Kathiawar peninsula where the Gomti River flows into the Arabian Sea.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 22.2442,
+    "longitude": 68.9685,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "dwarkadhish-temple",
+      "bet-dwarka-island",
+      "rukmini-temple",
+      "gomti-ghat-dwarka"
+    ],
+    "thingsToDo": [
+      "Witness the changing of the grand 52-yard flag (Dhwaja) atop Dwarkadhish spire",
+      "Ferry boat ride to Bet Dwarka island across the Gulf of Kutch",
+      "Holy dip at Gomti Ghat confluence with the sea",
+      "Sunset photography at Dwarka Beach lighthouse"
+    ],
+    "food": [
+      "Dwarka temple Mahaprasad",
+      "Kathiyawadi Thali with Bajra No Rotlo and Ringan No Olo (Smoked eggplant)",
+      "Khichdi Kadhi"
+    ],
+    "shopping": [
+      "Religious brass idols & conch shells",
+      "Kathiyawadi embroidered jackets",
+      "Gopi Chandan sacred clay"
+    ],
+    "festivals": [
+      "Janmashtami (Spectacular celebrations drawing lakhs of pilgrims worldwide)"
+    ],
+    "nearbyDestinations": [
+      "Bet Dwarka (30 km)",
+      "Nageshwar Jyotirlinga (17 km)",
+      "Porbandar (105 km)",
+      "Somnath (230 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "family",
+      "heritage"
+    ]
+  },
+  {
+    "id": "somnath",
+    "name": "Somnath",
+    "aliases": [
+      "The First Jyotirlinga",
+      "Prabhas Patan"
+    ],
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "description": "Revered as the first of the twelve sacred Jyotirlingas of Lord Shiva, the grand sea-facing golden sandstone temple stands majestically on the rugged Arabian Sea coastline.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 20.888,
+    "longitude": 70.401,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "somnath-temple",
+      "somnath-beach",
+      "triveni-sangam-somnath"
+    ],
+    "thingsToDo": [
+      "Attend the evening light & sound show narrated by Amitabh Bachchan",
+      "Witness the roaring waves crashing against the temple sea wall",
+      "Take a holy dip at Triveni Sangam (Confluence of Hiran, Kapila, and Saraswati)",
+      "Visit the arrow pillar (Baan Stambh) pointing unobstructed to Antarctica"
+    ],
+    "food": [
+      "Temple Prasadam laddus",
+      "Kathiyawadi spicy thali with garlic chutney",
+      "Refreshing sugarcane juice"
+    ],
+    "shopping": [
+      "Seashell crafts & conches",
+      "Religious photo frames and Rudraksha beads"
+    ],
+    "festivals": [
+      "Maha Shivaratri (Enormous 3-day spiritual fair and midnight aarti)"
+    ],
+    "nearbyDestinations": [
+      "Gir National Park (45 km)",
+      "Diu Island (85 km)",
+      "Junagadh (85 km)",
+      "Dwarka (230 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "family"
+    ]
+  },
+  {
+    "id": "kutch",
+    "name": "Kutch",
+    "aliases": [
+      "Great Rann of Kutch",
+      "The White Desert"
+    ],
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "description": "Ethereal expanse of 7,500 sq km of pure white salt desert glowing under full-moon skies, framed by traditional round mud Bhunga huts, nomadic craft villages, and the grand Rann Utsav.",
+    "heroImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 23.7337,
+    "longitude": 69.8597,
+    "bestTimeToVisit": "November to February",
+    "topAttractions": [
+      "rann-of-kutch-white-desert",
+      "dhordo-tent-city",
+      "kala-dungar-black-hill",
+      "kutch-handicraft-villages"
+    ],
+    "thingsToDo": [
+      "Sunset and moonrise walk on the crunchy white salt crust at Dhordo",
+      "Panoramic view over the entire Great Rann from Kala Dungar (Black Hill)",
+      "Visit artisan villages: Nirona (Rogan art), Hodka (leather), and Ajrakhpur (block print)",
+      "Stay in traditional eco-friendly circular mud Bhunga huts"
+    ],
+    "food": [
+      "Kutchi Dabeli",
+      "Gulab Pak (Signature dessert)",
+      "Bajra Roti with fresh churned white butter (Makhan)",
+      "Kutchi Kadhi with Khichdi"
+    ],
+    "shopping": [
+      "Rogan Art fabric paintings (Only master family in the world)",
+      "Ajrakh natural dye hand block prints",
+      "Bandhani silk dupattas",
+      "Copper coated Kutchi bells"
+    ],
+    "festivals": [
+      "Rann Utsav (Three-month desert festival with cultural tents, folk dances, hot air balloons)"
+    ],
+    "nearbyDestinations": [
+      "Bhuj (80 km)",
+      "Mandvi Beach & Vijay Vilas Palace (140 km)",
+      "Dholavira Harappan Site (220 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "adventure",
+      "culture",
+      "photography",
+      "couples",
+      "solo"
+    ]
+  },
+  {
+    "id": "gir",
+    "name": "Gir",
+    "aliases": [
+      "Sasan Gir",
+      "Last Abode of the Asiatic Lion"
+    ],
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "description": "The sole natural habitat of the endangered Asiatic Lion (Panthera leo persica) on the planet, spanning 1,412 sq km of dry deciduous teak forest and rocky ravines.",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 21.1243,
+    "longitude": 70.7946,
+    "bestTimeToVisit": "December to April",
+    "topAttractions": [
+      "gir-national-park-safari",
+      "sasan-gir-sanctuary",
+      "gir-wildlife-safari"
+    ],
+    "thingsToDo": [
+      "Open-top 4x4 Gypsy jungle safari in core forest tracking lion prides",
+      "Visit the Devalia Safari Park (Gir Interpretation Zone)",
+      "Birdwatching with over 300 resident and migratory avian species",
+      "Visit Maldhari tribal settlements living harmoniously with wild lions"
+    ],
+    "food": [
+      "Gir Kesar Mangoes (World-famous sweet mango in summer)",
+      "Kathiyawadi rural food with Sev Tameta and Bajra Rotla",
+      "Chhas (Fresh spiced buttermilk)"
+    ],
+    "shopping": [
+      "Kesar Mango gift boxes",
+      "Traditional Saurashtra embroidered garments",
+      "Wooden lion carvings"
+    ],
+    "festivals": [
+      "Maldhari tribal fairs in winter"
+    ],
+    "nearbyDestinations": [
+      "Somnath (45 km)",
+      "Junagadh (55 km)",
+      "Diu (105 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "wildlife",
+      "nature",
+      "family",
+      "adventure",
+      "photography"
+    ]
+  },
+  {
+    "id": "patan",
+    "name": "Patan",
+    "aliases": [
+      "Anhilpur Patan",
+      "Heritage Weaver Capital"
+    ],
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "description": "Medieval capital of Gujarat, renowned worldwide for the UNESCO World Heritage Rani ki Vav (an inverted stepwell subterranean temple) and legendary double-ikat Patola weaving.",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f4446b1a?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 23.8493,
+    "longitude": 72.1266,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "rani-ki-vav-patan",
+      "patola-weaving-patan"
+    ],
+    "thingsToDo": [
+      "Descend the seven subterranean tiers of Rani ki Vav stepwell with 800+ sculptures",
+      "Watch Master weavers tie and dye double-ikat silk threads at the Patola Museum",
+      "Visit Sahastralinga Talav reservoir ruins",
+      "Day trip to Modhera Sun Temple"
+    ],
+    "food": [
+      "Patan Devda (Layered flaky sweet delicacy)",
+      "Gujarati Farsan",
+      "Traditional Dal Bhaat"
+    ],
+    "shopping": [
+      "Genuine Patan Patola double-ikat silk sarees (Heirloom treasures)",
+      "Mashru silk-cotton fabric"
+    ],
+    "festivals": [
+      "Rani ki Vav Festival in winter",
+      "Modhera Dance Festival nearby in January"
+    ],
+    "nearbyDestinations": [
+      "Modhera Sun Temple (35 km)",
+      "Sidhpur Bohra Mansions (28 km)",
+      "Ahmedabad (125 km)"
+    ],
+    "recommendedDays": 1,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "photography"
+    ]
+  },
+  {
+    "id": "bhopal",
+    "name": "Bhopal",
+    "aliases": [
+      "City of Lakes",
+      "City of Begums"
+    ],
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "description": "Picturesque capital crowned by the historic Upper Lake (Bhojtal), grand Begum-era mosques like Taj-ul-Masajid, tribal artistic heritage at Bharat Bhavan, and proximity to prehistoric Bhimbetka and Sanchi.",
+    "heroImage": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 23.2599,
+    "longitude": 77.4126,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "upper-lake-bhopal",
+      "van-vihar-national-park",
+      "taj-ul-masajid",
+      "state-museum-bhopal"
+    ],
+    "thingsToDo": [
+      "Sunset boat cruise on Upper Lake (Bhojtal)",
+      "Visit Taj-ul-Masajid, one of the largest pink-stone mosques in Asia",
+      "Cycling safari through open-air Van Vihar National Park",
+      "Day trips to 30,000-year-old Bhimbetka Rock Shelters and Sanchi Stupa"
+    ],
+    "food": [
+      "Bhopali Gosht Korma",
+      "Bhopali Paan",
+      "Poha Jalebi",
+      "Biryani at Chatori Gali",
+      "Mawa Bati"
+    ],
+    "shopping": [
+      "Zardozi and velvet beadwork purses (Batua)",
+      "Chanderi and Maheshwari sarees",
+      "Gond tribal art paintings"
+    ],
+    "festivals": [
+      "Bhopal Utsav Mela",
+      "Lokrang Festival in January",
+      "Alami Tablighi Ijtima"
+    ],
+    "nearbyDestinations": [
+      "Bhimbetka Caves (45 km - UNESCO)",
+      "Sanchi Stupa (48 km - UNESCO)",
+      "Bhojpur Shiva Temple (28 km)",
+      "Islamnagar (14 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "nature",
+      "family"
+    ]
+  },
+  {
+    "id": "indore",
+    "name": "Indore",
+    "aliases": [
+      "Street Food Capital of India",
+      "Mini Bombay"
+    ],
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "description": "India's cleanest city for seven consecutive years, home to the seven-story Holkar Rajwada Palace and the legendary Sarafa Bazaar midnight street food street.",
+    "heroImage": "https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 22.7196,
+    "longitude": 75.8577,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "rajwada-palace-indore",
+      "lal-bagh-palace",
+      "sarafa-bazaar-indore",
+      "kanch-mandir-indore"
+    ],
+    "thingsToDo": [
+      "Midnight street food pilgrimage at Sarafa Bazaar (Jewelry market by day, food paradise by night)",
+      "Explore 7-story Holkar wooden-stone architecture at Rajwada",
+      "Tour opulent French Versailles-style rooms at Lal Bagh Palace",
+      "Admire glass-inlaid halls of Kanch Mandir"
+    ],
+    "food": [
+      "Indori Poha with Sev & Jeeravan",
+      "Bhutte Ka Kees (Spiced grated corn)",
+      "Garadu (Deep-fried yam with chaat masala)",
+      "Joshi Dahi Bada (With flying bowl act)",
+      "Kopra Patties & Jaleba"
+    ],
+    "shopping": [
+      "Maheshwari & Chanderi silk sarees",
+      "Indori Namkeen and Sev (Lauki, Ratlami, Hing)",
+      "Bagh print fabrics"
+    ],
+    "festivals": [
+      "Rangpanchami Gair (Massive citywide Holi carnival)",
+      "Anant Chaturdashi Jhaanki floats"
+    ],
+    "nearbyDestinations": [
+      "Ujjain Mahakaleshwar (55 km)",
+      "Omkareshwar Jyotirlinga (78 km)",
+      "Maheshwar (90 km)",
+      "Mandu (95 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "food",
+      "heritage",
+      "culture",
+      "family"
+    ]
+  },
+  {
+    "id": "ujjain",
+    "name": "Ujjain",
+    "aliases": [
+      "Avantika",
+      "City of Mahakal",
+      "Prime Meridian of Ancient India"
+    ],
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "description": "One of Hinduism's seven sacred Sapta Puri pilgrimage sites on the sacred Shipra River, famous for the Mahakaleshwar Jyotirlinga with its dawn Bhasma Aarti and the magnificent Mahakal Lok corridor.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 23.1765,
+    "longitude": 75.7885,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "mahakaleshwar-temple-ujjain",
+      "mahakal-lok-corridor",
+      "ram-ghat-shipra",
+      "kal-bhairav-temple-ujjain"
+    ],
+    "thingsToDo": [
+      "Witness the divine early morning Bhasma Aarti at Mahakaleshwar",
+      "Walk through the 900-meter Mahakal Lok corridor adorned with 200 Shiva murals and statues",
+      "Evening Aarti and holy dip at Ram Ghat on the Shipra River",
+      "Visit the mysterious Kal Bhairav temple where deity is offered liquor"
+    ],
+    "food": [
+      "Ujjaini Dal Bafla",
+      "Kachori with spicy hing water",
+      "Poha Jalebi",
+      "Bada & Rabri"
+    ],
+    "shopping": [
+      "Bhairavgarh Batik print fabrics",
+      "Rudraksha malas and Shiva lingams",
+      "Religious brass items"
+    ],
+    "festivals": [
+      "Simhastha Kumbh Mela (Once in 12 years)",
+      "Maha Shivaratri (Lakhs gather for 48-hour continuous darshan)",
+      "Sawant Mahakal Sawari every Monday of Shravan"
+    ],
+    "nearbyDestinations": [
+      "Indore (55 km)",
+      "Omkareshwar (135 km)",
+      "Mandu (150 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "culture"
+    ]
+  },
+  {
+    "id": "khajuraho",
+    "name": "Khajuraho",
+    "aliases": [
+      "Temples of Love & Devotion"
+    ],
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "description": "UNESCO World Heritage site celebrated for its 1,000-year-old Chandela dynasty sandstone temples, adorned with some of the world's most intricate sculptural masterpieces celebrating life, spirituality, and divine love.",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f4446b1a?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 24.8318,
+    "longitude": 79.9199,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "khajuraho-group-of-monuments",
+      "kandariya-mahadeva-temple",
+      "western-group-temples-khajuraho"
+    ],
+    "thingsToDo": [
+      "Marvel at 800+ life-sized sculptures on Kandariya Mahadeva Temple",
+      "Attend the prestigious annual Khajuraho Dance Festival in February",
+      "Sound and light show with voiceover by Amitabh Bachchan",
+      "Cycle tour connecting Western, Eastern, and Southern temple groups"
+    ],
+    "food": [
+      "Bundelkhandi Thali",
+      "Mawa Jalebi",
+      "Dal Bafla",
+      "Rogan Josh at local garden restaurants"
+    ],
+    "shopping": [
+      "Brass and stone erotic and deity miniatures",
+      "Tribal jewelry",
+      "Bundelkhand handwoven textiles"
+    ],
+    "festivals": [
+      "Khajuraho Dance Festival (Seven nights of classical dance before floodlit temples in February)"
+    ],
+    "nearbyDestinations": [
+      "Panna National Park Tiger Reserve (40 km)",
+      "Raneh Falls Grand Canyon (20 km)",
+      "Orchha (170 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "photography",
+      "couples",
+      "solo"
+    ]
+  },
+  {
+    "id": "gwalior",
+    "name": "Gwalior",
+    "aliases": [
+      "Pearl in the Necklace of Forts of India"
+    ],
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "description": "Historic princely bastion crowned by the hilltop Gwalior Fort with its cobalt blue tilework, the Italianate Jai Vilas Palace featuring the world's largest crystal chandeliers, and the musical tomb of Tansen.",
+    "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.2183,
+    "longitude": 78.1828,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "gwalior-fort",
+      "jai-vilas-palace",
+      "sas-bahu-temple-gwalior",
+      "tansen-tomb"
+    ],
+    "thingsToDo": [
+      "Climb through the monumental Elephant Gate of Gwalior Fort",
+      "Admire the royal dining table with silver electric train at Jai Vilas Palace",
+      "Explore rock-cut colossal Jain Tirthankara statues carved into cliff walls",
+      "Pay homage at the tomb of musical legend Tansen"
+    ],
+    "food": [
+      "Gwalior Bedai & Jalebi breakfast",
+      "Morena Gajak (Sesame-jaggery crisp)",
+      "Kachori with Hing spicy water",
+      "Paneer Jalebi"
+    ],
+    "shopping": [
+      "Morena Gajak & Chikki",
+      "Gwalior Chanderi silk sarees",
+      "Brass statues and musical trinkets"
+    ],
+    "festivals": [
+      "Tansen Samaroh (Prestigious national classical music festival in December)"
+    ],
+    "nearbyDestinations": [
+      "Mitawali & Padavali Temples (35 km)",
+      "Bateshwar Temple Complex (38 km)",
+      "Datia Palace (75 km)",
+      "Agra (120 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "music",
+      "family"
+    ]
+  },
+  {
+    "id": "hyderabad",
+    "name": "Hyderabad",
+    "aliases": [
+      "City of Pearls",
+      "Cyberabad",
+      "Biryani Capital"
+    ],
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "description": "Glamorous 400-year-old Nizami royal capital blending the minarets of Charminar, the diamond-trading ramparts of Golconda Fort, world-renowned Hyderabadi Dum Biryani, and modern HITEC City.",
+    "heroImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df8?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 17.385,
+    "longitude": 78.4867,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "charminar-hyderabad",
+      "golconda-fort",
+      "hussain-sagar-lake",
+      "salar-jung-museum",
+      "chowmahalla-palace",
+      "qutb-shahi-tombs",
+      "mecca-masjid",
+      "birla-mandir-hyderabad",
+      "ramoji-film-city"
+    ],
+    "thingsToDo": [
+      "Hear acoustics at Golconda Fort's clapping portico",
+      "Climb to the first tier of Charminar overlooking the Laad Bazaar bangle market",
+      "Boat ride to the 18m monolithic Buddha statue on Hussain Sagar Lake",
+      "Tour the opulent courtyards and vintage cars at Chowmahalla Palace",
+      "Full-day movie magic at Ramoji Film City (World's largest film studio complex)"
+    ],
+    "food": [
+      "Hyderabadi Dum Biryani at Paradise / Bawarchi / Cafe Bahar",
+      "Hyderabadi Haleem (GI-tagged mutton porridge)",
+      "Double Ka Meetha & Qubani Ka Meetha (Stewed apricot sweet)",
+      "Irani Chai with Osmania Biscuits at Nimrah Cafe",
+      "Mirchi Ka Salan"
+    ],
+    "shopping": [
+      "Natural pearls and Basra pearl necklaces",
+      "Laad Bazaar lacquer and glass bangles",
+      "Bidriware silver inlay vases",
+      "Pochampally Ikat silk sarees"
+    ],
+    "festivals": [
+      "Bonalu in monsoon with folk dancers",
+      "Bathukamma floral festival in autumn",
+      "Numaish industrial exhibition in Jan-Feb"
+    ],
+    "nearbyDestinations": [
+      "Warangal (145 km)",
+      "Nagarjuna Sagar Dam (150 km)",
+      "Bhongir Fort (50 km)",
+      "Bidar (140 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "heritage",
+      "food",
+      "culture",
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "warangal",
+    "name": "Warangal",
+    "aliases": [
+      "Orugallu",
+      "Kakatiya Capital"
+    ],
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "description": "Historic 12th-century capital of the Kakatiya Dynasty, featuring the UNESCO World Heritage Ramappa Temple with its floating bricks, the Thousand Pillar Temple, and the stone Thorana arches of Warangal Fort.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 17.9784,
+    "longitude": 79.5941,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "warangal-fort",
+      "thousand-pillar-temple",
+      "ramappa-temple-unesco",
+      "bhadrakali-temple-warangal"
+    ],
+    "thingsToDo": [
+      "Admire the UNESCO 1213 AD Ramappa Temple built with lightweight floating bricks",
+      "Explore the stone ruins of the 45-foot Kakatiya Thorana gate",
+      "Marvel at star-shaped Thousand Pillar Temple dedicated to Shiva, Vishnu, and Surya",
+      "Boating at Bhadrakali Lake"
+    ],
+    "food": [
+      "Telangana spicy mutton curry",
+      "Sarva Pindi (Crisp circular rice flour pancake)",
+      "Jowar Rotte with Gongura Pachadi",
+      "Sakinalu (Crisp sesame spirals)"
+    ],
+    "shopping": [
+      "Warangal Dhurries (Handwoven cotton carpets - GI tagged)",
+      "Brassware from Pembarti metal crafts",
+      "Lepakshi wooden items"
+    ],
+    "festivals": [
+      "Sammakka Saralamma Jatara at Medaram (Asia's largest tribal gathering, biennial)",
+      "Kakatiya Festival"
+    ],
+    "nearbyDestinations": [
+      "Ramappa Temple at Palampet (65 km)",
+      "Laknavaram Lake (75 km)",
+      "Pakhal Lake (50 km)",
+      "Hyderabad (145 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "nature",
+      "spiritual"
+    ]
+  },
+  {
+    "id": "bhongir",
+    "name": "Bhongir",
+    "aliases": [
+      "Bhuvanagiri"
+    ],
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "description": "Renowned for its monolithic egg-shaped granite hill fort rising 500 feet above the surrounding plains, built in the 10th century by Western Chalukya ruler Tribhuvanamalla Vikramaditya VI.",
+    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 17.5113,
+    "longitude": 78.8891,
+    "bestTimeToVisit": "October to February",
+    "topAttractions": [
+      "bhongir-fort"
+    ],
+    "thingsToDo": [
+      "Challenging rock trek up the sheer monolithic granite dome",
+      "Rock climbing and rappelling training with certified adventure instructors",
+      "Explore ancient citadel ruins, ponds, and armory at the fort summit"
+    ],
+    "food": [
+      "Telangana village meals",
+      "Hot mirchi bajji and tea near railway station"
+    ],
+    "shopping": [
+      "Local stone and handloom items from Yadadri corridor"
+    ],
+    "festivals": [
+      "Kalyanotsavam at nearby Yadadri Temple"
+    ],
+    "nearbyDestinations": [
+      "Yadadri Lakshmi Narasimha Temple (14 km)",
+      "Kolanupaka Jain Temple (30 km)",
+      "Hyderabad (50 km)"
+    ],
+    "recommendedDays": 1,
+    "travelStyles": [
+      "adventure",
+      "heritage",
+      "solo"
+    ]
+  },
+  {
+    "id": "kochi",
+    "name": "Kochi",
+    "aliases": [
+      "Cochin",
+      "Queen of the Arabian Sea"
+    ],
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "description": "Cosmopolitan coastal spice gateway where Chinese fishing nets line the harbour, Portuguese and Dutch history permeates Fort Kochi, antique shops fill Jew Town, and the Kochi-Muziris Biennale thrives.",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.9312,
+    "longitude": 76.2673,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "fort-kochi",
+      "chinese-fishing-nets",
+      "mattancherry-palace",
+      "jew-town-synagogue",
+      "st-francis-church-kochi",
+      "marine-drive-kochi"
+    ],
+    "thingsToDo": [
+      "Watch fishermen operate cantilever Chinese fishing nets at sunset",
+      "Stroll through colonial streets, boutique cafes, and art galleries in Fort Kochi",
+      "Browse 400-year-old Paradesi Synagogue and spice warehouses in Jew Town",
+      "Attend live Kathakali makeup and dance drama performance"
+    ],
+    "food": [
+      "Karimeen Pollichathu (Pearl spot fish in banana leaf)",
+      "Kerala Parotta with Beef Roast / Chicken Curry",
+      "Appam with vegetable stew",
+      "Fresh tiger prawns & calamari cooked to order",
+      "Puttu and Kadala Curry"
+    ],
+    "shopping": [
+      "Whole green cardamom, black pepper & cloves from Jew Town",
+      "Antiques & brass door locks",
+      "Kasavu Kerala gold-bordered cotton sarees",
+      "Handmade coir crafts"
+    ],
+    "festivals": [
+      "Cochin Carnival on New Year's Eve",
+      "Kochi-Muziris Biennale (Dec-April contemporary art)",
+      "Vypin Utsavam"
+    ],
+    "nearbyDestinations": [
+      "Athirappilly Waterfalls (70 km - Niagara of India)",
+      "Alappuzha Backwaters (55 km)",
+      "Munnar (130 km)",
+      "Cherai Beach (25 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "culture",
+      "heritage",
+      "food",
+      "couples",
+      "beaches"
+    ]
+  },
+  {
+    "id": "munnar",
+    "name": "Munnar",
+    "aliases": [
+      "Kashmir of South India",
+      "Emerald Tea Haven"
+    ],
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "description": "Idyllic hill resort situated 1,600m high at the confluence of three mountain rivers, blanketed with rolling tea carpet hills, rare endangered Nilgiri Tahr mountain goats, and mist-wrapped lakes.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 10.0889,
+    "longitude": 77.0595,
+    "bestTimeToVisit": "September to May",
+    "topAttractions": [
+      "munnar-tea-gardens",
+      "eravikulam-national-park",
+      "mattupetty-dam",
+      "top-station-munnar",
+      "kundala-lake"
+    ],
+    "thingsToDo": [
+      "Spot rare endangered Nilgiri Tahr at Eravikulam National Park",
+      "Speedboating across the forested waters of Mattupetty Dam",
+      "Panoramic views down into Tamil Nadu plains from Top Station",
+      "Visit the KDHP Tata Tea Museum and manufacture your own tea blend"
+    ],
+    "food": [
+      "Fresh brewed Munnar green and black teas",
+      "Steaming Kerala parotta with egg roast",
+      "Puttu with ripe banana",
+      "Ela Ada (Steamed rice parcels with coconut-jaggery)"
+    ],
+    "shopping": [
+      "Factory-fresh orthodox & green tea packets",
+      "Locally made scented essential oils (Lemongrass, Eucalyptus)",
+      "Homemade artisan chocolates",
+      "Spices like cardamom & cinnamon"
+    ],
+    "festivals": [
+      "Neelakurinji Blooming (Once in 12 years covering hills in purple flowers)"
+    ],
+    "nearbyDestinations": [
+      "Chinnar Wildlife Sanctuary (60 km)",
+      "Thekkady / Periyar (90 km)",
+      "Kochi (130 km)",
+      "Marayoor Sandalwood Forest (40 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "nature",
+      "hill-stations",
+      "couples",
+      "photography",
+      "family"
+    ]
+  },
+  {
+    "id": "alappuzha",
+    "name": "Alappuzha",
+    "aliases": [
+      "Alleppey",
+      "Venice of the East",
+      "Backwater Capital of the World"
+    ],
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "description": "Fabled labyrinth of palm-shaded canals, lagoons, and emerald paddy fields. Renowned globally for overnight luxury Kettuvallam houseboat cruises, coir handicrafts, and thrilling snake boat races.",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.4981,
+    "longitude": 76.3388,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "alappuzha-backwaters",
+      "houseboat-cruises-alleppey",
+      "alappuzha-beach-pier",
+      "kuttanad-below-sea-level"
+    ],
+    "thingsToDo": [
+      "Overnight cruise on a traditional thatched-roof Kettuvallam houseboat",
+      "Kayak through quiet narrow village canals inaccessible to big boats",
+      "Visit Kuttanad, the only place where farming is done below sea level",
+      "Watch sunset by the historic 150-year-old Alappuzha sea pier"
+    ],
+    "food": [
+      "Karimeen Pollichathu cooked on the houseboat",
+      "Duck Roast (Tharavu Roast) with appam",
+      "Toddy shop spicy fish curry (Meen Curry)",
+      "Payasam for dessert"
+    ],
+    "shopping": [
+      "Coir rugs, mats, and woven baskets",
+      "Coconut shell carvings",
+      "Ayurvedic massage oils",
+      "Spices"
+    ],
+    "festivals": [
+      "Nehru Trophy Boat Race (2nd Saturday of August on Punnamada Lake)",
+      "Champakkulam Moolam Boat Race"
+    ],
+    "nearbyDestinations": [
+      "Marari Beach (15 km)",
+      "Kumarakom (32 km)",
+      "Kochi (55 km)",
+      "Kollam (85 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "couples",
+      "nature",
+      "luxury",
+      "food",
+      "family"
+    ]
+  },
+  {
+    "id": "wayanad",
+    "name": "Wayanad",
+    "aliases": [
+      "Land of Paddy Fields",
+      "Green Paradise of Malabar"
+    ],
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "description": "Pristine highland plateau in the Western Ghats surrounded by prehistoric petroglyph caves, thundering waterfalls, Asia's second-largest earth dam at Banasura Sagar, and spice-rich forests.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 11.6854,
+    "longitude": 76.132,
+    "bestTimeToVisit": "October to May",
+    "topAttractions": [
+      "edakkal-caves",
+      "soochipara-falls",
+      "banasura-sagar-dam",
+      "wayanad-wildlife-sanctuary"
+    ],
+    "thingsToDo": [
+      "Trek up to Edakkal Caves to see Neolithic rock carvings from 6,000 BC",
+      "Speedboating on Banasura Sagar earth dam reservoir",
+      "Dip in natural pools at three-tiered Soochipara Waterfalls",
+      "Jungle jeep safari in Muthanga & Tholpetty wildlife sanctuaries"
+    ],
+    "food": [
+      "Malabar Parotta with Pepper Chicken",
+      "Nannari Sharbat",
+      "Bamboo Rice Payasam (Moongil Arisi)",
+      "Unniyappam"
+    ],
+    "shopping": [
+      "Spices (Cardamom, clove, pepper)",
+      "Bamboo handicrafts",
+      "Pure organic Wayanad forest honey",
+      "Herbal tea"
+    ],
+    "festivals": [
+      "Valliyoorkavu Bhagavathy Temple Festival in March",
+      "Wayanad Splash monsoon carnival"
+    ],
+    "nearbyDestinations": [
+      "Chembra Peak (heart-shaped lake - 35 km)",
+      "Kuruva Island (40 km)",
+      "Coorg (110 km)",
+      "Kozhikode (85 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "adventure",
+      "nature",
+      "couples",
+      "hill-stations"
+    ]
+  },
+  {
+    "id": "thekkady",
+    "name": "Thekkady",
+    "aliases": [
+      "Periyar",
+      "Spice Capital of Kerala"
+    ],
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "description": "Centering around the protected waters of Periyar Lake inside Periyar Tiger Reserve, Thekkady offers boat safaris to spot wild elephants, guided spice plantation walks, and bamboo rafting.",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.6031,
+    "longitude": 77.1615,
+    "bestTimeToVisit": "September to April",
+    "topAttractions": [
+      "periyar-national-park",
+      "periyar-lake-boating",
+      "spice-plantations-thekkady"
+    ],
+    "thingsToDo": [
+      "Lake boat safari spotting herds of wild elephants and gaur at water's edge",
+      "Guided walk through aromatic organic cardamom, clove, and pepper estates",
+      "Watch traditional Kalaripayattu martial arts show at Kadathanadan Kalari",
+      "Full-day bamboo rafting through deep core forest reserves"
+    ],
+    "food": [
+      "Kerala Syrian Christian Beef Fry",
+      "Appam with vegetable stew",
+      "Fresh cardamom tea",
+      "Avial with red rice"
+    ],
+    "shopping": [
+      "Premium grade green cardamom, black pepper, and nutmeg",
+      "Pure sandalwood soaps",
+      "Ayurvedic oils"
+    ],
+    "festivals": [
+      "Mangala Devi Temple Festival (Chitra Pournami in April inside forest)"
+    ],
+    "nearbyDestinations": [
+      "Gavi Eco-Tourism Village (40 km)",
+      "Munnar (90 km)",
+      "Madurai (140 km)",
+      "Kochi (155 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "wildlife",
+      "nature",
+      "adventure",
+      "family"
+    ]
+  },
+  {
+    "id": "varkala",
+    "name": "Varkala",
+    "aliases": [
+      "Papanasam Beach",
+      "Pearl of the Arabian Sea"
+    ],
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "description": "Unique coastal paradise where dramatic red laterite cliffs plunge directly into the golden sands of the Arabian Sea, lined with bohemian sunset cafes, yoga studios, and natural mineral springs.",
+    "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 8.7379,
+    "longitude": 76.7163,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "varkala-cliff-beach",
+      "papanasam-beach",
+      "janardhana-swamy-temple"
+    ],
+    "thingsToDo": [
+      "Sunset dinner on the North Cliff watching surfers and waves",
+      "Holy dip at Papanasam Beach (believed to cleanse all sins)",
+      "Morning beach yoga and Ayurvedic panchakarma massage",
+      "Visit the 2,000-year-old Janardhana Swamy Vishnu temple"
+    ],
+    "food": [
+      "Fresh ocean catch grilled on charcoal (Tiger prawns, Kingfish)",
+      "Tibetan momos and Mediterranean shakshuka at cliff cafes",
+      "Tender coconut water"
+    ],
+    "shopping": [
+      "Hippie clothing and tie-dye dresses",
+      "Handcrafted leather sandals",
+      "Aromatherapy oils and incense"
+    ],
+    "festivals": [
+      "Arattu Festival at Janardhana Swamy Temple in March",
+      "Sivagiri Pilgrimage in December"
+    ],
+    "nearbyDestinations": [
+      "Kappil Beach & Lake (7 km)",
+      "Anjengo Fort & Lighthouse (12 km)",
+      "Thiruvananthapuram (45 km)",
+      "Kovalam (60 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "beaches",
+      "couples",
+      "solo",
+      "nature"
+    ]
+  },
+  {
+    "id": "patna",
+    "name": "Patna",
+    "aliases": [
+      "Pataliputra",
+      "Ancient Mauryan Capital"
+    ],
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "description": "One of the world's oldest continuously inhabited cities on the south bank of the sacred River Ganga, former capital of the mighty Maurya and Gupta empires, famous for the Golghar and world-class Bihar Museum.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.5941,
+    "longitude": 85.1376,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "golghar-patna",
+      "patna-museum",
+      "bihar-museum",
+      "gandhi-ghat-patna",
+      "kumhrar-patna"
+    ],
+    "thingsToDo": [
+      "Climb the exterior spiral stairs of Golghar for panoramic Ganga views",
+      "Explore the world-class international Japanese-designed Bihar Museum",
+      "Evening Ganga Aarti at Gandhi Ghat on NIT Patna riverfront",
+      "Examine 80-pillared Mauryan hall ruins at ancient Kumhrar"
+    ],
+    "food": [
+      "Litti Chokha with ghee and green chutney",
+      "Anarsa (Rice flour and sesame sweet)",
+      "Khaja from Silao",
+      "Chana Ghugni",
+      "Sattu Sharbat"
+    ],
+    "shopping": [
+      "Authentic Madhubani (Mithila) paintings",
+      "Sikkigrass handmade baskets",
+      "Bihari Tikuli glass artwork"
+    ],
+    "festivals": [
+      "Chhath Puja (Grandest spiritual riverbank worship in Nov)",
+      "Patna Sahib Prakash Parv (Birth of Guru Gobind Singh)"
+    ],
+    "nearbyDestinations": [
+      "Nalanda (90 km)",
+      "Rajgir (100 km)",
+      "Bodh Gaya (115 km)",
+      "Vaishali (35 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "spiritual",
+      "family"
+    ]
+  },
+  {
+    "id": "bodh-gaya",
+    "name": "Bodh Gaya",
+    "aliases": [
+      "The Land of Buddha's Enlightenment",
+      "Mahabodhi"
+    ],
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "description": "The most sacred pilgrimage site in Buddhism where Prince Siddhartha attained supreme enlightenment under the sacred Bodhi Tree around 500 BC, crowned by the UNESCO Mahabodhi Temple.",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 24.6961,
+    "longitude": 84.9913,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "mahabodhi-temple-complex",
+      "bodhi-tree-bodhgaya",
+      "great-buddha-statue",
+      "thai-monastery-bodhgaya",
+      "tibetan-monastery-bodhgaya"
+    ],
+    "thingsToDo": [
+      "Meditate beneath the direct descendant of the sacred Bodhi Tree",
+      "Marvel at the 80-foot stone Great Buddha statue",
+      "Explore international monasteries built by Thailand, Japan, Bhutan, and Sri Lanka",
+      "Circumambulate the 55-meter tall pyramidal stone Mahabodhi temple spire"
+    ],
+    "food": [
+      "Tibetan Tingmo & Thukpa",
+      "Simple Buddhist vegetarian thali",
+      "Litti Chokha",
+      "Lai & Tilkut from nearby Gaya"
+    ],
+    "shopping": [
+      "Bodhi tree seed prayer malas",
+      "Brass and bronze Buddha statues",
+      "Tibetan singing bowls and prayer flags"
+    ],
+    "festivals": [
+      "Buddha Purnima / Buddha Jayanti (May celebration)",
+      "Kagyu Monlam Prayer Festival in winter"
+    ],
+    "nearbyDestinations": [
+      "Gaya Vishnupad Temple (15 km)",
+      "Dungeshwari Cave Temples (12 km)",
+      "Nalanda (75 km)",
+      "Rajgir (70 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "solo",
+      "heritage",
+      "culture"
+    ]
+  },
+  {
+    "id": "nalanda",
+    "name": "Nalanda",
+    "aliases": [
+      "World's Earliest Residential University"
+    ],
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "description": "UNESCO World Heritage site containing the red brick monastic ruins of ancient Nalanda Mahavihara, which flourished from the 5th to 12th century AD housing 10,000 scholars from China, Korea, and Japan.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.1357,
+    "longitude": 85.445,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "nalanda-mahavihara-ruins",
+      "nalanda-archaeological-museum",
+      "hsuan-tsang-memorial"
+    ],
+    "thingsToDo": [
+      "Walk through ancient red brick viharas, meditation cells, and stupas",
+      "Marvel at the monumental Sariputta Stupa with votive sculptures",
+      "Visit the Xuanzang (Hiuen Tsang) Memorial Hall celebrating the Chinese monk",
+      "View ancient bronzes and seals at Nalanda Archaeological Museum"
+    ],
+    "food": [
+      "Silao Khaja (GI-tagged multi-layered crisp sweet pastry)",
+      "Traditional Bihari thali",
+      "Sattu drink"
+    ],
+    "shopping": [
+      "Silao Khaja fresh boxes",
+      "Terracotta replicas of ancient Nalanda seals",
+      "Madhubani paintings"
+    ],
+    "festivals": [
+      "Nalanda Dance Festival in autumn"
+    ],
+    "nearbyDestinations": [
+      "Rajgir (14 km)",
+      "Pawapuri Jain Jal Mandir (20 km)",
+      "Bodh Gaya (75 km)",
+      "Patna (90 km)"
+    ],
+    "recommendedDays": 1,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "photography",
+      "solo"
+    ]
+  },
+  {
+    "id": "rajgir",
+    "name": "Rajgir",
+    "aliases": [
+      "Rajagriha",
+      "City of Kings"
+    ],
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "description": "Ancient Magadhan capital cradled within seven scenic hills, famous for the white marble Vishwa Shanti Stupa reached by aerial ropeway, Lord Buddha's favorite Gridhakuta peak, and natural sulfur hot springs.",
+    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.0306,
+    "longitude": 85.4214,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "rajgir-hills",
+      "vishwa-shanti-stupa-rajgir",
+      "gridhakuta-vulture-peak",
+      "rajgir-hot-springs"
+    ],
+    "thingsToDo": [
+      "Take single-chair aerial ropeway to the gleaming Vishwa Shanti Stupa",
+      "Hike up Gridhakuta (Vulture's Peak) where Buddha preached the Heart Sutra",
+      "Dip in the mineral-rich natural hot sulfur springs at Brahmakund",
+      "Walk on the new Glass Skywalk bridge in Rajgir Nature Safari"
+    ],
+    "food": [
+      "Silao Khaja",
+      "Litti Chokha",
+      "Chana Ghugni",
+      "Fresh sugar cane juice"
+    ],
+    "shopping": [
+      "Stone carvings and woodcrafts",
+      "Silao Khaja gift boxes"
+    ],
+    "festivals": [
+      "Rajgir Mahotsav (Three-day winter cultural festival in October/November)"
+    ],
+    "nearbyDestinations": [
+      "Nalanda (14 km)",
+      "Pawapuri (25 km)",
+      "Bodh Gaya (70 km)",
+      "Patna (100 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "nature",
+      "family"
+    ]
+  },
+  {
+    "id": "valmiki-nagar",
+    "name": "Valmiki Nagar",
+    "aliases": [
+      "Valmiki Tiger Reserve",
+      "Terai Gateway"
+    ],
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "description": "Bihar's sole national park and tiger reserve located at the foothills of the Himalayas along the Gandak River border with Nepal, teeming with Royal Bengal Tigers, one-horned rhinos, and sal forests.",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 27.4333,
+    "longitude": 83.9,
+    "bestTimeToVisit": "November to April",
+    "topAttractions": [
+      "valmiki-tiger-reserve",
+      "gandak-river-landscapes"
+    ],
+    "thingsToDo": [
+      "4x4 wildlife safari tracking tigers, leopards, and flying squirrels",
+      "Boat safari on the Gandak River watching gharials and mugger crocodiles",
+      "Trek to the historic Valmiki Ashram where sage Valmiki composed the Ramayana",
+      "Canopy walk through virgin Terai sal forests"
+    ],
+    "food": [
+      "Simple forest resthouse meals",
+      "Bihari rustic cuisine",
+      "Fresh river fish"
+    ],
+    "shopping": [
+      "Local honey and cane handicrafts"
+    ],
+    "festivals": [
+      "Makar Sankranti fair at Gandak River barrage"
+    ],
+    "nearbyDestinations": [
+      "Chitwan National Park Nepal (Across border)",
+      "Kushinagar (110 km)",
+      "Patna (290 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "wildlife",
+      "nature",
+      "adventure",
+      "photography"
+    ]
+  },
+  {
+    "id": "bhubaneswar",
+    "name": "Bhubaneswar",
+    "aliases": [
+      "Temple City of India",
+      "Ekamra Kshetra"
+    ],
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "description": "Ancient capital of Kalinga containing hundreds of magnificent 7th to 12th century red sandstone temples built in Kalinga architecture, the rock-cut Jain caves of Udayagiri, and Ashoka's peace edicts at Dhauli.",
+    "heroImage": "https://images.unsplash.com/photo-1627916607164-7b20241db935?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 20.2961,
+    "longitude": 85.8245,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "lingaraj-temple",
+      "udayagiri-khandagiri-caves",
+      "dhauli-shanti-stupa",
+      "mukteshwar-temple-bhubaneswar"
+    ],
+    "thingsToDo": [
+      "Admire the 10th-century carved torana arch at Mukteshwar Temple",
+      "Explore the 33 rock-cut Jain monastery caves of Udayagiri and Khandagiri",
+      "Visit Dhauli Shanti Stupa where Emperor Ashoka renounced warfare",
+      "Browse ancient palm leaf manuscripts at Odisha State Museum"
+    ],
+    "food": [
+      "Pahala Rasgulla (Warm caramelized brown rasgulla)",
+      "Chhena Poda (Baked cottage cheese cake)",
+      "Dalma with steamed rice",
+      "Cuttack Dahi Bara Aloo Dum"
+    ],
+    "shopping": [
+      "Pattachitra hand-painted palm leaf scrolls from nearby Raghurajpur",
+      "Sambalpuri Ikat silk sarees",
+      "Silver filigree (Tarakasi) jewelry from Cuttack"
+    ],
+    "festivals": [
+      "Rajarani Music Festival in January",
+      "Mukteswar Dance Festival",
+      "Lingaraj Rukuna Ratha Yatra in April"
+    ],
+    "nearbyDestinations": [
+      "Puri (60 km)",
+      "Konark (65 km)",
+      "Dhauli Giri (8 km)",
+      "Nandankanan Zoo (15 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "spiritual",
+      "culture",
+      "family"
+    ]
+  },
+  {
+    "id": "puri",
+    "name": "Puri",
+    "aliases": [
+      "Sri Kshetra",
+      "Jagannath Dham",
+      "Eastern Char Dham"
+    ],
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "description": "Sacred eastern Char Dham destination on the Bay of Bengal, home to the 12th-century Jagatnatha (Lord Jagannath) temple, the annual Ratha Yatra chariot festival, and certified Blue Flag Golden Beach.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 19.8135,
+    "longitude": 85.8312,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "jagannath-temple-puri",
+      "puri-golden-beach",
+      "raghurajpur-heritage-village",
+      "gundicha-temple-puri"
+    ],
+    "thingsToDo": [
+      "Witness the daily changing of the Patitapabana flag 214ft high on Jagannath spire",
+      "Stroll and swim on the clean Blue Flag certified Puri Golden Beach",
+      "Visit master Pattachitra painters and Gotipua dancers at Raghurajpur village",
+      "Watch sand artists sculpt monuments on Puri shoreline"
+    ],
+    "food": [
+      "Mahaprasad from the world's largest earthen pot kitchen (Ananda Bazar)",
+      "Chhena Poda",
+      "Khaja from Puri Temple alley",
+      "Fried coastal sea pomfret and prawns"
+    ],
+    "shopping": [
+      "Lord Jagannath neem wood idols",
+      "Pattachitra scroll paintings",
+      "Pipili applique lampshades & wall hangings",
+      "Seashell souvenirs"
+    ],
+    "festivals": [
+      "Puri Ratha Yatra (Annual world-famous million-pilgrim chariot procession in June/July)",
+      "Puri Beach Festival in November"
+    ],
+    "nearbyDestinations": [
+      "Konark Sun Temple (35 km via scenic Marine Drive)",
+      "Raghurajpur Artist Village (14 km)",
+      "Chilika Lake (Satapada) (50 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "beaches",
+      "heritage",
+      "culture"
+    ]
+  },
+  {
+    "id": "konark",
+    "name": "Konark",
+    "aliases": [
+      "Black Pagoda",
+      "The Sun Temple City"
+    ],
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "description": "Home to the monumental 13th-century UNESCO World Heritage Sun Temple, conceived as a colossal 24-wheeled chariot of Surya drawn by seven rearing horses, and pristine Chandrabhaga Beach.",
+    "heroImage": "https://images.unsplash.com/photo-1627916607164-7b20241db935?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 19.8876,
+    "longitude": 86.0945,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "konark-sun-temple",
+      "chandrabhaga-beach"
+    ],
+    "thingsToDo": [
+      "Decipher the astronomical sundials carved into the 24 stone chariot wheels",
+      "Watch the grand evening classical Konark Dance Festival with floodlit temple backdrop",
+      "Witness sunrise over the ocean at pristine Chandrabhaga Beach",
+      "Explore the new world-class Konark Interpretation Centre museum"
+    ],
+    "food": [
+      "Fresh grilled coastal seafood at Chandrabhaga",
+      "Chhena Jhili sweets from Nimapada nearby",
+      "Odia Dalma thali"
+    ],
+    "shopping": [
+      "Stone carvings in soapstone and sandstone",
+      "Miniature stone Konark wheels",
+      "Applique umbrellas and canopies from Pipili"
+    ],
+    "festivals": [
+      "Konark Dance Festival (1-5 December annual classical dance fest)",
+      "International Sand Art Festival on Chandrabhaga Beach"
+    ],
+    "nearbyDestinations": [
+      "Puri (35 km via Marine Drive)",
+      "Bhubaneswar (65 km)",
+      "Ramachandi Temple & River mouth (7 km)"
+    ],
+    "recommendedDays": 1,
+    "travelStyles": [
+      "heritage",
+      "beaches",
+      "photography",
+      "culture"
+    ]
+  },
+  {
+    "id": "chilika",
+    "name": "Chilika",
+    "aliases": [
+      "Chilika Lake",
+      "Asia's Largest Brackish Water Lagoon"
+    ],
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "description": "Vast 1,100 sq km coastal lagoon and Ramsar wetland home to playful endangered Irrawaddy dolphins, millions of migratory Siberian flamingos at Nalabana, and Kalijai island shrine.",
+    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 19.7167,
+    "longitude": 85.3167,
+    "bestTimeToVisit": "November to February",
+    "topAttractions": [
+      "chilika-lake-lagoon",
+      "satapada-dolphin-sanctuary",
+      "nalabana-bird-sanctuary",
+      "kalijai-island-shrine"
+    ],
+    "thingsToDo": [
+      "Motorboat cruise into the open lagoon to spot wild Irrawaddy dolphins",
+      "Birdwatching cruise around Nalabana Island witnessing migratory flamingos and pelicans",
+      "Ferry trip to Kalijai Island temple in the middle of the lake",
+      "Taste fresh Chilika giant mud crabs and jumbo tiger prawns"
+    ],
+    "food": [
+      "Chilika Crab Curry (Kankada Jholo)",
+      "Chilika Jumbo Prawn Masala (Chingudi Jhola)",
+      "Fish fry",
+      "Fresh curd with jaggery"
+    ],
+    "shopping": [
+      "Fresh pearl oysters from Satapada",
+      "Fisherfolk coir crafts and dried fish"
+    ],
+    "festivals": [
+      "Makar Mela on Kalijai Island in January"
+    ],
+    "nearbyDestinations": [
+      "Puri (50 km from Satapada)",
+      "Barkul / Rambha eco-resorts (110 km from Bhubaneswar)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "nature",
+      "wildlife",
+      "boating",
+      "photography"
+    ]
+  },
+  {
+    "id": "amritsar",
+    "name": "Amritsar",
+    "aliases": [
+      "Pool of Nectar",
+      "Holy City of the Golden Temple"
+    ],
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "description": "The spiritual and cultural capital of Sikhism, crowned by the radiant gold-leaf sanctum of Sri Harmandir Sahib (Golden Temple), the tragic solemnity of Jallianwala Bagh, and the patriotic thunder of Wagah Border.",
+    "heroImage": "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 31.634,
+    "longitude": 74.8723,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "golden-temple-amritsar",
+      "jallianwala-bagh",
+      "wagah-border-ceremony",
+      "partition-museum-amritsar",
+      "durgiana-temple",
+      "gobindgarh-fort"
+    ],
+    "thingsToDo": [
+      "Sit by the sacred Amrit Sarovar pool of the Golden Temple at sunrise and night",
+      "Volunteer (Seva) and eat at the world's largest community kitchen (Langar)",
+      "Experience goosebumps at the high-energy Wagah Border Beating Retreat ceremony",
+      "Reflect on human migration history at the poignant Partition Museum"
+    ],
+    "food": [
+      "Amritsari Kulcha with Chole at Kulcha Land / Bhai Kulwant Singh",
+      "Maa Ki Dal & Kadhai Paneer at Kesar Da Dhaba",
+      "Amritsari Machhi (Fried fish) at Makhan Fish",
+      "Thick creamy Malai Lassi at Ahuja Lassi",
+      "Jalebi at Gurdas Ram"
+    ],
+    "shopping": [
+      "Phulkari hand-embroidered dupattas and jackets",
+      "Traditional handcrafted Amritsari Juttis (leather shoes)",
+      "Amritsari Papad & Wadian (spiced sun-dried lentil balls)",
+      "Kirpan & Sikh ceremonial items"
+    ],
+    "festivals": [
+      "Baisakhi (Grand harvest and Khalsa festival in April)",
+      "Guru Nanak Jayanti with temple illumination",
+      "Diwali at Golden Temple (Bandi Chhor Divas)"
+    ],
+    "nearbyDestinations": [
+      "Wagah Border (28 km)",
+      "Tarn Taran Sahib (24 km)",
+      "Harike Wetland (55 km)",
+      "Lahore Pakistan (50 km across border)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "food",
+      "culture",
+      "family"
+    ]
+  },
+  {
+    "id": "anandpur-sahib",
+    "name": "Anandpur Sahib",
+    "aliases": [
+      "Holy City of Bliss",
+      "Cradle of the Khalsa"
+    ],
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "description": "Revered Sikh holy city at the foot of the Shivalik Hills where Guru Gobind Singh baptized the first Khalsa warriors in 1699, home to Takht Sri Kesgarh Sahib and the monumental Virasat-e-Khalsa museum.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 31.2389,
+    "longitude": 76.4997,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "takht-kesgarh-sahib",
+      "virasat-e-khalsa-museum"
+    ],
+    "thingsToDo": [
+      "Witness martial arts (Gatka) and mock horseback battles at Hola Mohalla",
+      "Darshan at Takht Sri Kesgarh Sahib where sacred weapons of the Gurus are displayed",
+      "Explore the world-class architecture and digital storytelling of Virasat-e-Khalsa",
+      "Walk along the serene banks of the Sutlej River"
+    ],
+    "food": [
+      "Guru ka Langar (Dal, Roti, Kheer)",
+      "Sarson Ka Saag with Makki Di Roti in winter",
+      "Sweet Pinni"
+    ],
+    "shopping": [
+      "Sikh religious literature & music",
+      "Traditional Phulkari shawls",
+      "Steel Karas and Kirpans"
+    ],
+    "festivals": [
+      "Hola Mohalla (Vibrant 3-day martial arts festival right after Holi in March)"
+    ],
+    "nearbyDestinations": [
+      "Bhakra Nangal Dam (35 km)",
+      "Naina Devi Temple (20 km)",
+      "Chandigarh (80 km)",
+      "Rupnagar (40 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "culture"
+    ]
+  },
+  {
+    "id": "patiala",
+    "name": "Patiala",
+    "aliases": [
+      "Royal City of Punjab"
+    ],
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "description": "Former princely kingdom renowned for royal Sikh and Mughal fusion architecture at Qila Mubarak, Sheesh Mahal mirror palace, the Patiala peg, and colorful Phulkari embroidery.",
+    "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 30.3398,
+    "longitude": 76.3869,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "qila-mubarak-patiala",
+      "sheesh-mahal-patiala",
+      "moti-bagh-palace"
+    ],
+    "thingsToDo": [
+      "Tour the 18th-century inner palace Ran Baas inside Qila Mubarak",
+      "Marvel at miniature Kangra and Rajasthani paintings at Sheesh Mahal museum",
+      "Walk through the sprawling gardens of Moti Bagh Palace",
+      "Shop for authentic hand-embroidered Phulkari in the historic bazaars"
+    ],
+    "food": [
+      "Patiala Shahi Chicken",
+      "Tandoori Kulcha",
+      "Makki Di Roti with Sarson Ka Saag",
+      "Sweet Patiala Lassi in tall brass glasses"
+    ],
+    "shopping": [
+      "Patiala Salwar Suits",
+      "Authentic Phulkari dupattas and jackets",
+      "Handmade Patiala Juttis with Zari work",
+      "Parandis (Hair braids)"
+    ],
+    "festivals": [
+      "Patiala Heritage Festival in February"
+    ],
+    "nearbyDestinations": [
+      "Chandigarh (70 km)",
+      "Ludhiana (90 km)",
+      "Ambala (50 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "food"
+    ]
+  },
+  {
+    "id": "rishikesh",
+    "name": "Rishikesh",
+    "aliases": [
+      "Yoga Capital of the World",
+      "Gateway to the Garhwal Himalayas"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "Spiritual and adventure capital straddling the emerald Ganges where it emerges from the Himalayas, celebrated worldwide for yoga retreats, suspension bridges (Laxman & Ram Jhula), Triveni Ghat Aarti, and whitewater rafting.",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 30.0869,
+    "longitude": 78.2676,
+    "bestTimeToVisit": "September to May",
+    "topAttractions": [
+      "laxman-jhula-area",
+      "ram-jhula-area",
+      "triveni-ghat-rishikesh",
+      "ganga-riverfront-rishikesh",
+      "yoga-meditation-ashrams"
+    ],
+    "thingsToDo": [
+      "Whitewater river rafting through grade III & IV rapids on the Ganges",
+      "Attend the soulful evening Maha Aarti with chanting and fire drums at Triveni Ghat",
+      "Visit the Beatles Ashram (Chaurasi Kutia) covered in vibrant graffiti art",
+      "Bungee jumping and giant swing in Mohan Chatti",
+      "Morning yoga and sound healing sessions by the river"
+    ],
+    "food": [
+      "Ayurvedic vegetarian sattvic thali",
+      "Wood-fired thin crust pizzas at riverfront cafes (Little Buddha Cafe)",
+      "Aloo Poori at Chotiwala",
+      "Ginger lemon honey tea"
+    ],
+    "shopping": [
+      "Yoga mats and organic meditation wear",
+      "Rudraksha beads & Himalayan crystals",
+      "Ayurvedic herbs and essential oils",
+      "Spiritual books"
+    ],
+    "festivals": [
+      "International Yoga Festival (March annual global gathering)",
+      "Ganga Dussehra"
+    ],
+    "nearbyDestinations": [
+      "Haridwar (25 km)",
+      "Dehradun (45 km)",
+      "Shivpuri (16 km - rafting hub)",
+      "Neelkanth Mahadev Temple (30 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "spiritual",
+      "adventure",
+      "nature",
+      "solo",
+      "couples"
+    ]
+  },
+  {
+    "id": "haridwar",
+    "name": "Haridwar",
+    "aliases": [
+      "Gateway to the Gods",
+      "Mayapuri"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "One of the seven holiest Hindu cities (Sapta Puri) where the River Ganga enters the Indo-Gangetic plains. Witness the mesmerizing evening Ganga Aarti at Har Ki Pauri where thousands of floating leaf lamps illuminate the river.",
+    "heroImage": "https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 29.9457,
+    "longitude": 78.1642,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "har-ki-pauri",
+      "ganga-aarti-haridwar",
+      "mansa-devi-temple",
+      "chandi-devi-temple"
+    ],
+    "thingsToDo": [
+      "Witness the grand sunset Ganga Aarti at Har Ki Pauri with floating diyas",
+      "Ropeway cable car ride to hilltop Mansa Devi and Chandi Devi temples",
+      "Take a holy dip in the rapid waters of Brahmakund",
+      "Walk through historic Moti Bazaar smelling fresh street sweets"
+    ],
+    "food": [
+      "Kachori with spicy Aloo Sabzi and Jalebi at Mohanji Puriwale",
+      "Rabri Malpua",
+      "Chhole Bhature",
+      "Lassi in earthen clay kulhad"
+    ],
+    "shopping": [
+      "Ganga Jal containers (brass and copper cans)",
+      "Rudraksha malas and Ayurvedic remedies",
+      "Religious brassware and deity statues"
+    ],
+    "festivals": [
+      "Haridwar Kumbh Mela & Ardh Kumbh",
+      "Somvati Amavasya",
+      "Kanwar Yatra in July-August"
+    ],
+    "nearbyDestinations": [
+      "Rishikesh (25 km)",
+      "Rajaji National Park (15 km)",
+      "Dehradun (55 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "family"
+    ]
+  },
+  {
+    "id": "dehradun",
+    "name": "Dehradun",
+    "aliases": [
+      "Capital of Devbhoomi",
+      "Doon Valley"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "Charming valley capital nestled between the Ganges and Yamuna rivers in the foothills of the Himalayas, famous for the colonial Greco-Roman Forest Research Institute, Robber's Cave, and Basmati rice.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 30.3165,
+    "longitude": 78.0322,
+    "bestTimeToVisit": "March to June & October to February",
+    "topAttractions": [
+      "robbers-cave-dehradun",
+      "sahastradhara-dehradun",
+      "forest-research-institute",
+      "tapkeshwar-temple"
+    ],
+    "thingsToDo": [
+      "Walk knee-deep through cold subterranean stream inside Robber's Cave (Guchhupani)",
+      "Tour the colossal colonial brick architecture and forestry museums at FRI",
+      "Bathe in the mineral-rich sulfur springs of Sahastradhara",
+      "Visit the ancient Shiva cave shrine of Tapkeshwar"
+    ],
+    "food": [
+      "Garhwali Kafuli with red rice",
+      "Bun Tikki at Dwarka Store",
+      "Bakery biscuits from Ellora's Melting Moments",
+      "Bal Mithai"
+    ],
+    "shopping": [
+      "Dehraduni Basmati rice",
+      "Ellora's stick biscuits & plum cake",
+      "Hand-knitted woolens on Paltan Bazaar"
+    ],
+    "festivals": [
+      "Jhanda Mela in March (Historical flag hoisting festival)"
+    ],
+    "nearbyDestinations": [
+      "Mussoorie (34 km)",
+      "Rishikesh (45 km)",
+      "Chakrata (85 km)",
+      "Dhanaulti (60 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "nature",
+      "family",
+      "heritage"
+    ]
+  },
+  {
+    "id": "mussoorie",
+    "name": "Mussoorie",
+    "aliases": [
+      "Queen of the Hills"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "Romantic colonial hill station perched 2,005m high overlooking the Doon Valley and snow-peaked Himalayan ranges, featuring the lively Mall Road promenade, Kempty Falls, and historic Gun Hill cable car.",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 30.4598,
+    "longitude": 78.0644,
+    "bestTimeToVisit": "March to June & September to November",
+    "topAttractions": [
+      "mall-road-mussoorie",
+      "gun-hill-mussoorie",
+      "kempty-falls",
+      "lal-tibba-viewpoint",
+      "camels-back-road"
+    ],
+    "thingsToDo": [
+      "Evening leisurely stroll along pedestrian Mall Road",
+      "Cable car ride to Gun Hill for views of Bunderpunch and Kedarnath peaks",
+      "Telescopic view of snow ranges from Lal Tibba in Landour",
+      "Morning horse ride or walk along Camel's Back Road"
+    ],
+    "food": [
+      "Tibetan momos and thukpa in Landour",
+      "Crepes and apple pie at Emily's Landour Bakehouse",
+      "Corn on the cob with lemon chili on Mall Road"
+    ],
+    "shopping": [
+      "Wooden walking sticks and oak craft",
+      "Warm woolens and pashmina shawls",
+      "Handmade fruit jams & preserves from Landour"
+    ],
+    "festivals": [
+      "Mussoorie Autumn Festival"
+    ],
+    "nearbyDestinations": [
+      "Landour (4 km peaceful cantonment)",
+      "Dhanaulti Eco Park (28 km)",
+      "Dehradun (34 km)",
+      "Kanatal (45 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "couples",
+      "hill-stations",
+      "nature",
+      "family"
+    ]
+  },
+  {
+    "id": "nainital",
+    "name": "Nainital",
+    "aliases": [
+      "City of Lakes",
+      "Lake District of India"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "Scenic Kumaoni hill retreat set around the emerald eye-shaped Naini Lake, guarded by seven forested mountains, colonial heritage schools, and the sacred Naina Devi temple.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 29.3919,
+    "longitude": 79.4542,
+    "bestTimeToVisit": "March to June & September to November",
+    "topAttractions": [
+      "naini-lake",
+      "naina-devi-temple-nainital",
+      "snow-view-point-nainital",
+      "tiffin-top-viewpoint",
+      "mall-road-nainital"
+    ],
+    "thingsToDo": [
+      "Yachting or pedal boating on the emerald waters of Naini Lake",
+      "Cable car ropeway ride to Snow View Point overlooking Nanda Devi",
+      "Horseback trek to Tiffin Top (Dorothy's Seat) for 360-degree views",
+      "Visit sacred lakeside shrine of Goddess Naina Devi"
+    ],
+    "food": [
+      "Kumaoni Bal Mithai & Singodi",
+      "Ras Bhath with Bhatt ki Churkani",
+      "Hot momos and sweet corn at Tibetan Market"
+    ],
+    "shopping": [
+      "Decorative carved candles (GI specialty)",
+      "Kumaoni homemade fruit jams & squashes",
+      "Woolen cardigans & shawls"
+    ],
+    "festivals": [
+      "Nanda Devi Fair in September (Historic celebration)",
+      "Nainital Winter Carnival"
+    ],
+    "nearbyDestinations": [
+      "Bhimtal (22 km)",
+      "Naukuchiatal (26 km)",
+      "Sattal (23 km)",
+      "Ranikhet (55 km)",
+      "Jim Corbett (65 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "nature",
+      "hill-stations",
+      "couples",
+      "family"
+    ]
+  },
+  {
+    "id": "jim-corbett",
+    "name": "Jim Corbett",
+    "aliases": [
+      "Corbett Tiger Reserve",
+      "India's First National Park"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "India's oldest national park (established in 1936 as Hailey National Park) nestled in the Shivalik foothills along the Ramganga River, world-famous for Royal Bengal Tigers, wild elephant herds, and dense sal jungles.",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 29.53,
+    "longitude": 78.7747,
+    "bestTimeToVisit": "November to June",
+    "topAttractions": [
+      "jim-corbett-national-park",
+      "dhikala-tourism-zone",
+      "corbett-wildlife-safari"
+    ],
+    "thingsToDo": [
+      "Jeep or canter safari through the famed Dhikala grassland zone",
+      "Stay overnight in historic British colonial rest houses inside core jungle",
+      "Elephant safari and birdwatching along the Ramganga riverbanks",
+      "Visit Corbett Museum at Kaladhungi (ancestral home of Jim Corbett)"
+    ],
+    "food": [
+      "Kumaoni Pahadi cuisine (Chainsoo, Bhatt ki Churkani)",
+      "Buffet dining at forest riverside luxury resorts"
+    ],
+    "shopping": [
+      "Wildlife photography books and memoirs of Jim Corbett",
+      "Handmade organic honey and herbal teas"
+    ],
+    "festivals": [
+      "Corbett Bird Festival in winter"
+    ],
+    "nearbyDestinations": [
+      "Nainital (65 km)",
+      "Ranikhet (90 km)",
+      "Pangot birding village (75 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "wildlife",
+      "adventure",
+      "nature",
+      "family",
+      "photography"
+    ]
+  },
+  {
+    "id": "char-dham-circuit",
+    "name": "Char Dham Circuit",
+    "aliases": [
+      "Chota Char Dham of Uttarakhand"
+    ],
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "description": "The supreme four high-altitude Himalayan pilgrimage shrines: Kedarnath (Shiva Jyotirlinga), Badrinath (Vishnu Dham), Gangotri (Goddess Ganga source), and Yamunotri (Goddess Yamuna source).",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 30.7352,
+    "longitude": 79.0669,
+    "bestTimeToVisit": "May to June & September to October (Closed during winter)",
+    "topAttractions": [
+      "kedarnath-temple",
+      "badrinath-temple",
+      "gangotri-shrine",
+      "yamunotri-shrine"
+    ],
+    "thingsToDo": [
+      "16-kilometer spiritual trek or helicopter flight to Kedarnath Temple at 3,584m",
+      "Darshan of black stone Badrinarayan idol at Badrinath with Tapt Kund hot springs",
+      "Holy dip at Gangotri where River Bhagirathi originates",
+      "Cook rice in natural boiling hot water spring at Surya Kund Yamunotri"
+    ],
+    "food": [
+      "Simple sattvic vegetarian langar and temple meals",
+      "Hot ginger tea and maggi noodles at high mountain camps"
+    ],
+    "shopping": [
+      "Sacred Shaligram stones",
+      "Himalayan Shilajit",
+      "Kedar & Badri prasad packets",
+      "Warm hand-knitted woolen caps"
+    ],
+    "festivals": [
+      "Kapat Opening Ceremony (Akshaya Tritiya in May)",
+      "Diwali Kapat Closing Ceremony (October/November)"
+    ],
+    "nearbyDestinations": [
+      "Mana (Last Indian Village - 3 km from Badrinath)",
+      "Vasudhara Falls",
+      "Valley of Flowers",
+      "Rudraprayag"
+    ],
+    "recommendedDays": 7,
+    "travelStyles": [
+      "spiritual",
+      "adventure",
+      "nature",
+      "solo"
+    ]
+  }
+];
+export const attractions = [
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage site and Wonder of the World, an ivory-white marble mausoleum commissioned in 1631 by Mughal Emperor Shah Jahan.",
+    "longDescription": "Standing gracefully on the southern bank of the Yamuna River, the Taj Mahal is an iconic monument of eternal love and peak Mughal architecture. Built over 22 years by thousands of master artisans, the complex features a crystalline white marble dome, delicate Pietra Dura inlay made from 28 types of precious stones, symmetrical four-part Persian Charbagh gardens, and reflecting pools.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.1751,
+      "longitude": 78.0421
+    },
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "highlights": [
+      "Symmetrical white marble main dome",
+      "Pietra Dura semi-precious stone inlay",
+      "Persian Charbagh gardens & reflecting pools",
+      "Sunrise color shifts from pink to gold"
+    ],
+    "activities": [
+      "Sunrise photography from Mehtab Bagh",
+      "Heritage walk through royal gardens",
+      "Visiting inner marble cenotaphs"
+    ],
+    "nearbyPlaces": [
+      "Agra Fort",
+      "Mehtab Bagh",
+      "Itmad-ud-Daulah's Tomb"
+    ],
+    "travelTips": [
+      "Closed on Fridays for prayers",
+      "Sunrise tickets have shortest queues and best morning light",
+      "Electric golf carts available from outer parking lots"
+    ],
+    "accessibility": "Wheelchair ramps available at east and west entry gates",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "wonder-of-world",
+      "mughal",
+      "marble",
+      "monument",
+      "agra"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "agra-fort",
+    "name": "Agra Fort",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "forts-palaces",
+    "shortDescription": "UNESCO World Heritage 16th-century red sandstone fortress that served as the primary residence of the Mughal emperors until 1638.",
+    "longDescription": "A colossal crescent-shaped red sandstone citadel stretching 2.5 km along the Yamuna River. Transformed by Emperor Akbar and later embellished with marble pavilions by Shah Jahan, it houses the Diwan-i-Aam, Diwan-i-Khas, Jahangiri Mahal, and the Musamman Burj tower where Shah Jahan spent his final years gazing at the Taj Mahal.",
+    "category": [
+      "heritage",
+      "forts-palaces",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.1795,
+      "longitude": 78.0211
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "highlights": [
+      "Amar Singh Gate grand ramparts",
+      "Jahangiri Mahal red sandstone carvings",
+      "Musamman Burj marble octagonal tower with Taj Mahal vistas",
+      "Sheesh Mahal mirror palace"
+    ],
+    "activities": [
+      "Exploring royal halls",
+      "Viewing Taj Mahal from riverside ramparts",
+      "Evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Taj Mahal",
+      "Jama Masjid Agra",
+      "Sadar Bazaar"
+    ],
+    "travelTips": [
+      "Hire an official ASI certified guide at the entrance gate",
+      "Combine with Taj Mahal visit on same day"
+    ],
+    "accessibility": "Wheelchair accessible up to lower courtyards",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "mughal-fort",
+      "akbar",
+      "shah-jahan",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "itmad-ud-daulah",
+    "name": "Itmad-ud-Daulah's Tomb",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "heritage",
+    "shortDescription": "Often described as the 'Baby Taj' or 'Jewel Box', this delicate marble mausoleum was commissioned by Empress Nur Jahan for her father.",
+    "longDescription": "Regarded as the architectural draft and precursor to the Taj Mahal, this tomb was the first Mughal structure built entirely of white marble embellished with intricate Pietra Dura mosaic inlays. Nestled quietly in walled riverside gardens, it exudes unmatched serenity and delicate artistry.",
+    "category": [
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.1929,
+      "longitude": 78.031
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Delicate marble lattice jali work",
+      "Persian cypress tree mosaics",
+      "Quiet riverside Charbagh setting"
+    ],
+    "activities": [
+      "Architectural photography",
+      "Riverside garden strolls"
+    ],
+    "nearbyPlaces": [
+      "Chini Ka Rauza",
+      "Mehtab Bagh",
+      "Agra Fort"
+    ],
+    "travelTips": [
+      "Much less crowded than the Taj Mahal, ideal for peaceful photography in late afternoon"
+    ],
+    "accessibility": "Paved pathways in gardens, steps to raised platform",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "baby-taj",
+      "nur-jahan",
+      "mughal",
+      "marble",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "mehtab-bagh",
+    "name": "Mehtab Bagh",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "nature",
+    "shortDescription": "The 'Moonlight Garden' charbagh complex situated directly across the Yamuna River, providing famous panoramic sunset vistas of the Taj Mahal.",
+    "longDescription": "Originally built by Emperor Babur and later restored by the Archaeological Survey of India, this 25-acre garden aligns perfectly with the Taj Mahal on the opposite riverbank. It offers prime vantage points for photographers to capture the Taj bathed in warm twilight without crowds.",
+    "category": [
+      "nature",
+      "heritage",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 2 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.1799,
+      "longitude": 78.0421
+    },
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Direct unobstructed river view of Taj Mahal",
+      "Sunset golden hour reflections",
+      "Fragrant hibiscus and citrus groves"
+    ],
+    "activities": [
+      "Sunset photography",
+      "Peaceful picnicking",
+      "Birdwatching along the Yamuna"
+    ],
+    "nearbyPlaces": [
+      "Taj Mahal",
+      "Itmad-ud-Daulah's Tomb"
+    ],
+    "travelTips": [
+      "Arrive 1 hour before sunset to find a comfortable viewing spot along the river fencing"
+    ],
+    "accessibility": "Flat paved pathways suitable for walking and wheelchairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "sunset-point",
+      "taj-view",
+      "gardens",
+      "photography"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "akbars-tomb",
+    "name": "Akbar's Tomb (Sikandra)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "heritage",
+    "shortDescription": "The monumental tiered tomb of Emperor Akbar the Great set within a deer park, fusing Hindu, Islamic, Buddhist, and Jain architectural motifs.",
+    "longDescription": "Located at Sikandra on the outskirts of Agra, this red sandstone and white marble mausoleum reflects Akbar's philosophy of religious syncretism (Din-i-Ilahi). The tomb stands in a 119-acre walled park inhabited by roaming blackbucks, peacocks, and monkeys.",
+    "category": [
+      "heritage",
+      "history",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.2206,
+      "longitude": 77.9505
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand Buland-style South Gate with geometric calligraphic inlays",
+      "Tiered pyramidal design",
+      "Spotted deer and peacocks roaming lawns"
+    ],
+    "activities": [
+      "Wildlife spotting in heritage gardens",
+      "Studying unique architectural fusion"
+    ],
+    "nearbyPlaces": [
+      "Mariam's Tomb",
+      "Agra City Center"
+    ],
+    "travelTips": [
+      "Ideal stop when traveling between Agra and Mathura on NH-19"
+    ],
+    "accessibility": "Ground level gardens accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "akbar",
+      "sikandra",
+      "mughal-tomb",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "fatehpur-sikri",
+    "name": "Fatehpur Sikri",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Fatehpur Sikri",
+    "citySlug": "fatehpur-sikri",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage fortified Mughal city founded by Akbar in 1571, featuring the soaring Buland Darwaza and Salim Chishti shrine.",
+    "longDescription": "Served as the imperial Mughal capital for 14 years before being abandoned due to water shortages. Today, this ghost city remains impeccably preserved, housing the 54-meter Buland Darwaza ('Gate of Magnificence'), the white marble Dargah of Sheikh Salim Chishti, the Panch Mahal five-story pavilion, and the Diwan-i-Khas with its iconic central lotus pillar.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.0945,
+      "longitude": 77.6679
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Buland Darwaza (World's highest gateway at 54m)",
+      "Tomb of Salim Chishti with mother-of-pearl inlays",
+      "Panch Mahal tiered wind tower",
+      "Lotus-headed pillar in Diwan-i-Khas"
+    ],
+    "activities": [
+      "Tying red sacred thread for wishes at Chishti Dargah",
+      "Exploring royal courtyards and Jodha Bai's Palace"
+    ],
+    "nearbyPlaces": [
+      "Agra (36 km)",
+      "Bharatpur Bird Sanctuary (22 km)"
+    ],
+    "travelTips": [
+      "Use official eco-friendly shuttle bus from parking lot to the monument gate"
+    ],
+    "accessibility": "Steep flight of stairs to Buland Darwaza; ramp access at side entrances",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "buland-darwaza",
+      "akbar-capital",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "kashi-vishwanath-temple",
+    "name": "Kashi Vishwanath Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "spiritual",
+    "shortDescription": "One of the 12 sacred Jyotirlingas of Lord Shiva, crowned by 800 kg of gold plating and seamlessly connected to the Ganga by a modern corridor.",
+    "longDescription": "The supreme spiritual epicentre of Varanasi, mentioned in ancient Puranas. The temple enshrines the Vishweshwara Jyotirlinga. Recently revamped with the monumental Kashi Vishwanath Corridor connecting the holy sanctum directly to Manikarnika and Lalita Ghats on the sacred Ganga.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.3109,
+      "longitude": 83.0107
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Gold-plated spires donated by Maharaja Ranjit Singh",
+      "Direct river corridor with marble colonnades",
+      "Daily Mangala and Shringar Aartis"
+    ],
+    "activities": [
+      "Participating in early morning Mangala Aarti",
+      "Holy Ganga snan before darshan",
+      "Exploring temple museum in corridor"
+    ],
+    "nearbyPlaces": [
+      "Dashashwamedh Ghat",
+      "Manikarnika Ghat",
+      "Annapurna Temple"
+    ],
+    "travelTips": [
+      "Electronic devices, leather items, and bags must be deposited in official lockers before entry",
+      "Book online Sugam Darshan tickets during peak festival times"
+    ],
+    "accessibility": "Modern corridor has ramps, escalators, and golf carts for senior citizens",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jyotirlinga",
+      "kashi",
+      "shiva-temple",
+      "spiritual",
+      "varanasi"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "dashashwamedh-ghat",
+    "name": "Dashashwamedh Ghat",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "spiritual",
+    "shortDescription": "The main and most vibrant riverfront ghat in Varanasi, world-famous for its choreographed evening Ganga Aarti ceremony.",
+    "longDescription": "According to legend, Lord Brahma sacrificed ten horses (dasa-ashwamedha) here. Every dusk, young saffron-clad priests perform a mesmerizing ritual with multi-tiered brass oil lamps, conch shells, incense, and chants while thousands watch from stone steps and wooden boats.",
+    "category": [
+      "spiritual",
+      "culture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 25.3076,
+      "longitude": 83.0104
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand evening Ganga Aarti with flaming brass lamps",
+      "Floating diya offerings on the sacred river",
+      "Vibrant ghat steps filled with sadhus and pilgrims"
+    ],
+    "activities": [
+      "Watching Aarti from a wooden river boat",
+      "Releasing floating marigold flower diyas",
+      "Evening river photography"
+    ],
+    "nearbyPlaces": [
+      "Kashi Vishwanath Temple",
+      "Manikarnika Ghat",
+      "Godowlia Market"
+    ],
+    "travelTips": [
+      "Arrive by 5:30 PM to secure prime front-row seating on the stone steps or hire a boat early"
+    ],
+    "accessibility": "Steep stone steps down to river; handrails available at central landings",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ganga-aarti",
+      "ghat",
+      "varanasi",
+      "spiritual",
+      "rituals"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "assi-ghat",
+    "name": "Assi Ghat",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "culture",
+    "shortDescription": "The southernmost major ghat where the Assi River meets the Ganga, famous for morning Subah-e-Banaras cultural performances and yoga.",
+    "longDescription": "A beloved gathering place for travelers, scholars, and spiritual seekers. Assi Ghat hosts the daily dawn 'Subah-e-Banaras' initiative featuring Vedic chanting, classical ragas, yoga sessions, and morning Ganga Aarti at sunrise. Filled with bohemian cafes, bookstores, and music schools.",
+    "category": [
+      "culture",
+      "spiritual",
+      "wellness"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 25.2899,
+      "longitude": 83.0069
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Subah-e-Banaras classical music and sunrise aarti",
+      "Open-air morning yoga on stone steps",
+      "Laid-back riverside cafes and lemon chai"
+    ],
+    "activities": [
+      "Sunrise yoga sessions",
+      "Sipping masala chai at Pappu Chai",
+      "Starting southern boat tour"
+    ],
+    "nearbyPlaces": [
+      "Tulsi Ghat",
+      "Banaras Hindu University (BHU)",
+      "Sankat Mochan Temple"
+    ],
+    "travelTips": [
+      "Wake up early to be at Assi Ghat by 5:15 AM for the magical sunrise musical ceremony"
+    ],
+    "accessibility": "Spacious wide steps and relatively easy vehicle drop-off compared to inner gallis",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "subah-e-banaras",
+      "yoga",
+      "ghat",
+      "sunrise",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "manikarnika-ghat",
+    "name": "Manikarnika Ghat",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "spiritual",
+    "shortDescription": "The primary and most sacred cremation ghat of Hinduism, revered as the Mahasmashana where liberation (Moksha) is attained.",
+    "longDescription": "Believed to hold a perpetual sacred fire lit thousands of years ago. In Hindu faith, dying or being cremated at Manikarnika frees the soul from the eternal cycle of rebirth (Samsara). It offers a profound, sobering contemplation on the transience of human life.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "45 minutes",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 25.3108,
+      "longitude": 83.0139
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred perpetual sacred cremation pyres",
+      "Chakrapushkarini sacred kund created by Lord Vishnu",
+      "Ancient Shiva temple tilted into the Ganga"
+    ],
+    "activities": [
+      "Contemplative observation from respectful distance on upper walkways or boat"
+    ],
+    "nearbyPlaces": [
+      "Scindia Ghat",
+      "Kashi Vishwanath Corridor",
+      "Dashashwamedh Ghat"
+    ],
+    "travelTips": [
+      "Strictly photography-free zone out of respect for grieving families; beware of touts asking for donations for wood"
+    ],
+    "accessibility": "Narrow crowded gallis and uneven steps",
+    "familyFriendly": false,
+    "budgetLevel": "budget",
+    "tags": [
+      "moksha",
+      "cremation-ghat",
+      "spiritual",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "sarnath",
+    "name": "Sarnath Deer Park & Dhamek Stupa",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Sarnath",
+    "citySlug": "sarnath",
+    "type": "heritage",
+    "shortDescription": "Sacred Buddhist pilgrimage site where Gautama Buddha delivered his first sermon and turned the Wheel of Law (Dharmachakra).",
+    "longDescription": "Located 10 km northeast of Varanasi, Sarnath is one of Buddhism's four primary pilgrimage sites. The site features the massive 43.6m Dhamek Stupa built by Emperor Ashoka, ancient monastery ruins, the sacred deer park, and the Archaeological Museum housing the original Ashokan Lion Capital (India's national emblem).",
+    "category": [
+      "heritage",
+      "spiritual",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.3811,
+      "longitude": 83.0214
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Colossal Dhamek Stupa with carved floral motifs",
+      "Ashokan Lion Capital at the Sarnath Archaeological Museum",
+      "Mulagandha Kuti Vihara modern Buddhist temple",
+      "International Buddhist temples (Thai, Japanese, Tibetan)"
+    ],
+    "activities": [
+      "Circling the Dhamek Stupa",
+      "Viewing national emblem sculpture in museum",
+      "Meditating under bodhi trees in the deer park"
+    ],
+    "nearbyPlaces": [
+      "Chaukhandi Stupa",
+      "Varanasi City (10 km)"
+    ],
+    "travelTips": [
+      "Museum is closed on Fridays; hire an audio guide for deep historical context"
+    ],
+    "accessibility": "Flat paved pathways across the stupa park and museum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "buddhism",
+      "stupa",
+      "ashoka",
+      "national-emblem",
+      "unesco-tentative"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "ganga-riverfront",
+    "name": "Ganga Riverfront & Ghats",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "nature",
+    "shortDescription": "The continuous crescent stretch of 84 stone ghats lining the sacred river Ganga, providing sunrise boat rides and living cultural panoramas.",
+    "longDescription": "Spanning over 6 kilometers along the curved bank of the Ganga, Varanasi's ghats form one of the world's most atmospheric riverfronts. Dawn boat rides reveal pilgrims performing snan, sadhus in orange robes meditating, students reciting shlokas, and palatial stone havelis glowing in pink morning light.",
+    "category": [
+      "nature",
+      "culture",
+      "spiritual",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 25.305,
+      "longitude": 83.01
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunrise boat cruise from Assi to Rajghat",
+      "Historic sandstone palaces built by Maratha, Rajput, and Bengali royals",
+      "Migratory Siberian seagulls during winter months"
+    ],
+    "activities": [
+      "Sunrise rowboat or motorboat cruise",
+      "Feeding winter migratory birds",
+      "Riverside walking along the continuous ghat trail"
+    ],
+    "nearbyPlaces": [
+      "Assi Ghat",
+      "Dashashwamedh Ghat",
+      "Panchganga Ghat"
+    ],
+    "travelTips": [
+      "Opt for a traditional wooden hand-rowed boat for silence and closer river proximity over loud diesel boats"
+    ],
+    "accessibility": "Stone steps with occasional ramp access at newly developed ghats",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ganga",
+      "riverfront",
+      "boat-ride",
+      "ghats",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ramnagar-fort",
+    "name": "Ramnagar Fort",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "forts-palaces",
+    "shortDescription": "18th-century cream sandstone fortification on the eastern bank of the Ganga, the ancestral palace of the Maharaja of Benares.",
+    "longDescription": "Built in 1750 by Kashi Naresh Raja Balwant Singh, this fort features Mughal-Rajput battlements, an eccentric museum of vintage royal cars, medieval weaponry, jewel-encrusted palanquins, and an astronomical clock crafted in 1852.",
+    "category": [
+      "forts-palaces",
+      "museums",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.2676,
+      "longitude": 83.027
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Rare 19th-century astronomical clock",
+      "Vintage royal American cars & gold palanquins",
+      "Riverside ramparts and sunset views over Benares"
+    ],
+    "activities": [
+      "Visiting Maharaja museum",
+      "Trying authentic Shivpur lassi outside fort gates"
+    ],
+    "nearbyPlaces": [
+      "Vyasa Temple",
+      "BHU Vishwanath Temple across the river"
+    ],
+    "travelTips": [
+      "Famous for the month-long Ramlila festival staged here in autumn"
+    ],
+    "accessibility": "Cobblestone courtyards and traditional stone staircases",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "fort",
+      "maharaja",
+      "museum",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "ram-mandir",
+    "name": "Shri Ram Janmabhoomi Mandir",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "Grand newly consecrated Nagara-style temple at the divine birthplace of Lord Rama, carved from pink Bansi Paharpur sandstone.",
+    "longDescription": "The majestic spiritual epicenter of Ayodhya, consecrated in January 2024. Designed by the renowned Sompura family in classic Nagara temple architecture, it spans three storeys supported by 392 intricately carved stone pillars, five mandapas, and houses the revered 51-inch black stone idol of Ram Lalla.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.7992,
+      "longitude": 82.2033
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pink Bansi Paharpur stone carving without iron or steel",
+      "51-inch Ram Lalla deity by Arun Yogiraj",
+      "392 carved mythological pillars & 44 teakwood doors",
+      "Grand Ram Janmabhoomi Teerth Kshetra complex"
+    ],
+    "activities": [
+      "Darshan of Ram Lalla",
+      "Circumambulating the temple corridors",
+      "Evening Aarti ceremonies"
+    ],
+    "nearbyPlaces": [
+      "Hanuman Garhi",
+      "Kanak Bhawan",
+      "Ram Ki Paidi"
+    ],
+    "travelTips": [
+      "Mobile phones, smartwatches, and wallets must be deposited in dedicated lockers before entering security queues"
+    ],
+    "accessibility": "Wheelchair ramps, golf carts, and shaded pilgrimage walkways available",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ram-mandir",
+      "ayodhya",
+      "nagara-architecture",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "hanuman-garhi",
+    "name": "Hanuman Garhi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "10th-century fortress temple perched atop 76 stone steps, housing Lord Hanuman as the guardian protector of Ayodhya.",
+    "longDescription": "According to local tradition, pilgrims must first take the blessings of Lord Hanuman here before visiting Ram Janmabhoomi. The fortress-like temple features four bastion towers, circular ramparts, and a gilded silver idol of child Hanuman seated on the lap of his mother Anjani.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.7967,
+      "longitude": 82.2017
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "76 grand red stone steps",
+      "Fortress battlements with citywide views",
+      "Silver-clad sanctum of Bal Hanuman"
+    ],
+    "activities": [
+      "Ascending 76 steps for morning darshan",
+      "Offering traditional laddus and sindoor"
+    ],
+    "nearbyPlaces": [
+      "Ram Mandir",
+      "Dashrath Mahal",
+      "Kanak Bhawan"
+    ],
+    "travelTips": [
+      "Watch out for lively monkeys on the stairs; keep sweets and flowers tucked inside bags"
+    ],
+    "accessibility": "Requires climbing 76 steps; sedan chairs (palki) available for elderly",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "hanuman-temple",
+      "ayodhya",
+      "fortress-temple",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "kanak-bhawan",
+    "name": "Kanak Bhawan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "The 'House of Gold' palace temple gifted by Queen Kaikeyi to Sita, celebrated for its Bundeli architecture and gold-crowned idols.",
+    "longDescription": "Renovated in 1891 by Queen Vrishbhanu Kunwari of Orchha, this opulent palace temple features elegant courtyards, arched pillared halls, and intricately painted ceilings. It enshrines gorgeous gold-crowned deities of Lord Rama and Devi Sita.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 26.802,
+      "longitude": 82.203
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Bundeli palace architecture with arched verandas",
+      "Gold-crowned idols of Sita and Rama",
+      "Soulful bhajan and kirtan performances in open courtyard"
+    ],
+    "activities": [
+      "Attending morning Shringar Aarti",
+      "Listening to devotional music",
+      "Viewing royal wall paintings"
+    ],
+    "nearbyPlaces": [
+      "Ram Mandir",
+      "Hanuman Garhi"
+    ],
+    "travelTips": [
+      "Visit in late afternoon to experience tranquil temple courtyard singing"
+    ],
+    "accessibility": "Ground level entry with minor steps at sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kanak-bhawan",
+      "sita-ram",
+      "palace-temple",
+      "ayodhya"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "saryu-river-ghats",
+    "name": "Saryu River Ghats & Aarti",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "Sacred riverfront ghats including Guptar Ghat and Naya Ghat, hosting grand evening Saryu Aarti ceremonies and holy snan.",
+    "longDescription": "The divine Saryu River is deeply intertwined with the Ramayana. The well-paved ghats feature evening Saryu Aarti with chanting, brass lamps, musical fountain shows, and peaceful boating against twilight reflections.",
+    "category": [
+      "spiritual",
+      "culture",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.8038,
+      "longitude": 82.2105
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand evening Saryu Aarti",
+      "Guptar Ghat where Lord Rama performed Jal Samadhi",
+      "Boating on calm waters"
+    ],
+    "activities": [
+      "Evening Aarti darshan",
+      "Boat ride across the Saryu",
+      "Floating earthen lamps"
+    ],
+    "nearbyPlaces": [
+      "Ram Ki Paidi",
+      "Nageshwarnath Temple"
+    ],
+    "travelTips": [
+      "The newly illuminated riverfront promenade is best visited between 6:00 PM and 8:00 PM"
+    ],
+    "accessibility": "Paved riverfront promenade with ramp access at Naya Ghat",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "saryu-river",
+      "aarti",
+      "ghats",
+      "ayodhya"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ram-ki-paidi",
+    "name": "Ram Ki Paidi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "culture",
+    "shortDescription": "Spectacular series of bathing ghats on the Saryu canal, setting Guinness World Records during the annual Diwali Deepotsav.",
+    "longDescription": "A wide stepped reservoir built along a channel of the Saryu River, modeled after Haridwar's Har Ki Pauri. During Diwali Deepotsav, over 2.5 million earthen diyas are lit simultaneously here, illuminating the water in a record-breaking sea of golden light.",
+    "category": [
+      "culture",
+      "spiritual",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March (Special during Diwali)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.8042,
+      "longitude": 82.2091
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Guinness World Record Deepotsav lamp lighting",
+      "Night laser and light water projections",
+      "Panoramic stepped ghat architecture"
+    ],
+    "activities": [
+      "Watching evening 3D laser water projection show",
+      "Strolling lit riverbanks",
+      "Attending Deepotsav celebrations"
+    ],
+    "nearbyPlaces": [
+      "Saryu River Ghats",
+      "Nageshwarnath Temple"
+    ],
+    "travelTips": [
+      "Laser show takes place daily after sundown around 7:00 PM"
+    ],
+    "accessibility": "Wide paved steps and broad flat upper plazas",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "deepotsav",
+      "ram-ki-paidi",
+      "diwali",
+      "ayodhya"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "bara-imambara",
+    "name": "Bara Imambara & Bhulbhulaiya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "18th-century Nawabi architectural marvel featuring the world's largest arched hall unsupported by beams, and a 3D labyrinth.",
+    "longDescription": "Commissioned in 1784 by Nawab Asaf-ud-Daula as a famine relief project, this grand monument houses an enormous central arched hall built without a single iron beam or wood girder. Above it sits the Bhulbhulaiya, an intricate three-dimensional maze of 489 identical doorways and corridors designed to confuse intruders, alongside the five-storey Shahi Baoli stepwell.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.869,
+      "longitude": 80.913
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's largest pillarless arched hall (50m x 16m)",
+      "Bhulbhulaiya 3D labyrinth maze with optical acoustics",
+      "Shahi Baoli stepwell palace",
+      "Rooftop terrace with views of the Old City"
+    ],
+    "activities": [
+      "Navigating the Bhulbhulaiya maze with a local storyteller guide",
+      "Exploring the multi-level stepwell"
+    ],
+    "nearbyPlaces": [
+      "Rumi Darwaza",
+      "Chota Imambara",
+      "Clock Tower"
+    ],
+    "travelTips": [
+      "Always hire an authorized guide for the Bhulbhulaiya maze; it is genuinely easy to lose one's way"
+    ],
+    "accessibility": "Ground floor hall accessible; maze requires climbing narrow dark stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "imambara",
+      "bhulbhulaiya",
+      "nawabi-heritage",
+      "lucknow"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "chota-imambara",
+    "name": "Chota Imambara (Palace of Lights)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "Gilded 19th-century Nawabi monument adorned with Belgian glass chandeliers, gold-domed towers, and calligraphic Islamic carvings.",
+    "longDescription": "Built by Nawab Muhammad Ali Shah in 1838. Known as the 'Palace of Lights' because hundreds of Belgian crystal chandeliers, colored glass globes, and silver lanterns are lit during Muharram. The compound also houses the Nawab's tomb and a miniature replica of the Taj Mahal.",
+    "category": [
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.8741,
+      "longitude": 80.9048
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Gilded gold dome and white turrets",
+      "Belgian crystal chandeliers and silver throne",
+      "Taj Mahal miniature replica tomb",
+      "Water canal reflecting pool"
+    ],
+    "activities": [
+      "Admiring antique European chandeliers",
+      "Photography of reflecting pools and calligraphy"
+    ],
+    "nearbyPlaces": [
+      "Bara Imambara",
+      "Rumi Darwaza",
+      "Satkhanda Tower"
+    ],
+    "travelTips": [
+      "Modest dress required; headscarves provided for visitors at entrance"
+    ],
+    "accessibility": "Courtyard and main prayer hall accessible via ramp",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "chota-imambara",
+      "palace-of-lights",
+      "chandeliers",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "rumi-darwaza",
+    "name": "Rumi Darwaza",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "The 60-foot iconic gateway of Lucknow, built in 1784 styled after the Sublime Porte of Istanbul with ornamental flower-petal arches.",
+    "longDescription": "Standing as the monumental grand gateway to the old city of Lucknow between Bara and Chota Imambara, the Rumi Darwaza is the city's official symbol. Crowned with an ornamental lantern turret and floral stone carvings, it looks distinct and majestic from both sides.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "45 minutes",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 26.8716,
+      "longitude": 80.9122
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "60-foot ornamental arch designed like an open lotus flower",
+      "Architectural twin perspective from east and west",
+      "Golden night illumination"
+    ],
+    "activities": [
+      "Street photography from heritage plaza",
+      "Evening illuminated heritage walk"
+    ],
+    "nearbyPlaces": [
+      "Bara Imambara",
+      "Clock Tower",
+      "Picture Gallery"
+    ],
+    "travelTips": [
+      "The surrounding heritage plaza is pedestrianized and beautifully lit after sunset"
+    ],
+    "accessibility": "Open street plaza with level pavements",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "rumi-darwaza",
+      "lucknow-gateway",
+      "architecture",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "british-residency",
+    "name": "British Residency",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "Historic British compound left preserved in ruins exactly as it survived the 147-day Siege of Lucknow during the 1857 First War of Independence.",
+    "longDescription": "Sprawling across 33 tranquil park acres, the Residency preserves cannon-scarred brick walls, ruined banqueting halls, subterranean begum quarters, and an evocative on-site museum documenting the 1857 Uprising. It offers a poignant, peaceful historical walk.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.8611,
+      "longitude": 80.9272
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Preserved cannonball scars on brick walls",
+      "Model diorama museum of the 1857 Siege",
+      "Well-maintained botanical lawns and flowerbeds"
+    ],
+    "activities": [
+      "Historical self-guided walking tour",
+      "Visiting on-site 1857 rebellion museum"
+    ],
+    "nearbyPlaces": [
+      "Shah Najaf Imambara",
+      "Hazratganj",
+      "Chhatar Manzil"
+    ],
+    "travelTips": [
+      "Very peaceful in late afternoon; carry water as the grounds are extensive"
+    ],
+    "accessibility": "Paved pathways across gardens, some steps into ruined cellars",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "1857-revolt",
+      "british-residency",
+      "history",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "hazratganj",
+    "name": "Hazratganj Heritage Market",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "shopping",
+    "shortDescription": "The century-old Victorian-era shopping boulevard of Lucknow, famous for 'Ganjing' strolls, Chikankari showrooms, and royal kebabs.",
+    "longDescription": "Established in 1810 by Nawab Amjad Ali Shah and renovated with uniform Victorian lampposts and black-and-white facades. 'Ganjing'—the leisurely art of walking through Hazratganj—is a cherished Lucknowi pastime, pairing shopping for delicate Chikankari silks with Royal Cafe's Basket Chaat.",
+    "category": [
+      "shopping",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.85,
+      "longitude": 80.945
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Uniform Victorian-style heritage storefronts",
+      "GI-tagged Chikankari and Zardozi garment boutiques",
+      "Iconic Royal Cafe Basket Chaat and Shukla Chaat"
+    ],
+    "activities": [
+      "Shopping for authentic Chikankari kurtas and sarees",
+      "Tasting Basket Chaat and kulfi falooda",
+      "Evening promenade strolls"
+    ],
+    "nearbyPlaces": [
+      "Ambedkar Memorial Park",
+      "British Residency"
+    ],
+    "travelTips": [
+      "Avoid visiting on Sunday afternoons when several historic shops are closed"
+    ],
+    "accessibility": "Wide pedestrian sidewalks with dropped curbs",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "hazratganj",
+      "shopping",
+      "chikankari",
+      "food-trail",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ambedkar-memorial-park",
+    "name": "Ambedkar Memorial Park",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "Monumental 107-acre architectural memorial built entirely of red sandstone from Rajasthan, featuring 62 life-sized stone elephants.",
+    "longDescription": "Located along the Gomti River in Gomti Nagar, this stupendous modern civic memorial honors Dr. B.R. Ambedkar and other social reformers. It features a towering 112-foot central memorial dome, grand colonnades, reflecting pools, and an imposing ceremonial avenue lined by 62 giant stone elephants.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 - 2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.8488,
+      "longitude": 80.978
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Avenue of 62 life-sized red sandstone elephants",
+      "112-foot stupa memorial dome",
+      "Dramatic night golden floodlighting"
+    ],
+    "activities": [
+      "Architectural photography",
+      "Evening riverside walks along Gomti Riverfront"
+    ],
+    "nearbyPlaces": [
+      "Gomti Riverfront Park",
+      "Janeshwar Mishra Park"
+    ],
+    "travelTips": [
+      "Visit just before twilight to witness the sandstone turn golden under nighttime illumination"
+    ],
+    "accessibility": "Broad flat stone plazas; golf buggies available for seniors",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ambedkar-park",
+      "monumental-architecture",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "krishna-janmabhoomi",
+    "name": "Shri Krishna Janmabhoomi Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "type": "spiritual",
+    "shortDescription": "The sacred prison cell (Garbha Griha) where Lord Krishna incarnated over 5,000 years ago, central to the holy Braj region.",
+    "longDescription": "The sanctum sanctorum of Mathura, built around the prison cell where King Kamsa held Vasudeva and Devaki. The sprawling temple complex features the Bhagvat Bhavan adorned with ceiling murals of Krishna's Leelas, the Potra Kund sacred pond, and vibrant Janmashtami celebrations.",
+    "category": [
+      "spiritual",
+      "temples",
+      "heritage"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.5053,
+      "longitude": 77.6698
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Garbha Griha subterranean birthplace chamber",
+      "Bhagvat Bhavan with intricate ceiling frescoes",
+      "Potra Kund historic sacred bathing tank"
+    ],
+    "activities": [
+      "Darshan at Garbha Griha",
+      "Tasting traditional Mathura Peda prasad",
+      "Joining evening Maha Aarti"
+    ],
+    "nearbyPlaces": [
+      "Dwarkadhish Temple",
+      "Vishram Ghat",
+      "Vrindavan (11 km)"
+    ],
+    "travelTips": [
+      "Strict electronic locker checks; cameras and mobile phones not permitted inside"
+    ],
+    "accessibility": "Ramps available through most temple corridors",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "krishna-birthplace",
+      "mathura",
+      "spiritual",
+      "braj"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "banke-bihari-temple",
+    "name": "Banke Bihari Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "type": "spiritual",
+    "shortDescription": "One of Hinduism's most revered Krishna temples, where the black stone deity is intermittently hidden behind curtains so His gaze does not overwhelm devotees.",
+    "longDescription": "Established by Swami Haridas, guru of musical legend Tansen. The temple houses the charming 'Tribhanga' (three-bent posture) idol of Banke Bihari. Devotees crowd the courtyard as velvet curtains are drawn and opened every few minutes amid joyful chants of 'Radhe Radhe'.",
+    "category": [
+      "spiritual",
+      "temples",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.5815,
+      "longitude": 77.7011
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred curtain darshan (Jhulan style)",
+      "Legend of Swami Haridas's musical devotion",
+      "Grand Phoolon Ki Holi (Holi of flowers)"
+    ],
+    "activities": [
+      "Darshan of Banke Bihari",
+      "Singing bhajans in the crowded courtyard",
+      "Tasting creamy rabri and hot pedas in surrounding alleys"
+    ],
+    "nearbyPlaces": [
+      "Radha Vallabh Temple",
+      "Nidhivan",
+      "ISKCON Vrindavan"
+    ],
+    "travelTips": [
+      "Keep spectacles, sunglasses, and bags secure from playful Vrindavan monkeys in temple alleys"
+    ],
+    "accessibility": "Crowded narrow lanes; enter early in morning to avoid heavy stampedes",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "banke-bihari",
+      "vrindavan",
+      "krishna-temple",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "iskcon-vrindavan",
+    "name": "ISKCON Vrindavan (Sri Krishna Balaram Mandir)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "type": "spiritual",
+    "shortDescription": "Magnificent white marble temple complex founded in 1975 by Srila Prabhupada, known for 24-hour ecstatic kirtan and international devotees.",
+    "longDescription": "The first ISKCON temple built in India, inaugurated by founder A.C. Bhaktivedanta Swami Prabhupada. Features three pristine marble altars dedicated to Sri Sri Gaura Nitai, Krishna-Balaram, and Radha Shyamasundar, accompanied by continuous 24-hour Hare Krishna maha-mantra chanting.",
+    "category": [
+      "spiritual",
+      "temples",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.5724,
+      "longitude": 77.6852
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Continuous 24-hour Kirtan Mandapa",
+      "Srila Prabhupada Samadhi Mandir in pure white marble",
+      "Govinda's vegetarian multi-cuisine restaurant"
+    ],
+    "activities": [
+      "Participating in ecstatic chanting and dancing kirtan",
+      "Visiting Prabhupada memorial museum",
+      "Dining at Govinda's restaurant"
+    ],
+    "nearbyPlaces": [
+      "Prem Mandir",
+      "Banke Bihari Temple"
+    ],
+    "travelTips": [
+      "Evening Sandhya Aarti at 7:00 PM is deeply immersive and joyous"
+    ],
+    "accessibility": "Smooth marble floors and wheelchair ramps available",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "iskcon",
+      "vrindavan",
+      "kirtan",
+      "krishna-balaram"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "prem-mandir",
+    "name": "Prem Mandir (Temple of Divine Love)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "type": "spiritual",
+    "shortDescription": "Colossal white Italian Carrara marble temple complex famous for its intricate carvings and spectacular evening multicolored LED light displays.",
+    "longDescription": "Constructed over 11 years using 30,000 tons of Italian Carrara marble under the guidance of Jagadguru Kripalu Maharaj. Surrounded by landscaped gardens featuring life-size dioramas of Krishna raising Govardhan Hill, Raas Leela, and Jhulan Leela, illuminated at night with chromatic LED illumination.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 27.5714,
+      "longitude": 77.6747
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pure Italian Carrara marble craftsmanship",
+      "Life-size outdoor Leela dioramas",
+      "Evening musical fountain and color-shifting illumination"
+    ],
+    "activities": [
+      "Watching night musical fountain show",
+      "Walking through illuminated Krishna pastimes gardens"
+    ],
+    "nearbyPlaces": [
+      "ISKCON Vrindavan",
+      "Chandrodaya Mandir"
+    ],
+    "travelTips": [
+      "Arrive around 5:30 PM to appreciate the white marble in daylight, then watch it transform during the evening light show"
+    ],
+    "accessibility": "Wide paved pathways, elevators, and wheelchair friendly access",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "prem-mandir",
+      "light-show",
+      "marble-temple",
+      "vrindavan"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "govardhan",
+    "name": "Govardhan Hill & Parikrama",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "type": "spiritual",
+    "shortDescription": "The sacred 21-kilometer hill lifted by Lord Krishna on His little finger to shelter the inhabitants of Braj from torrential deluge.",
+    "longDescription": "Revered as non-different from Lord Krishna Himself. Devotees from all over the world undertake the 21-kilometer circumambulation (Govardhan Parikrama) on foot, visiting holy ponds like Radha Kund, Shyam Kund, Mansi Ganga, and historic red sandstone palaces.",
+    "category": [
+      "spiritual",
+      "nature",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "4 - 6 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 27.502,
+      "longitude": 77.464
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "21-km sacred Govardhan Parikrama pilgrimage",
+      "Radha Kund and Shyam Kund holy theerthams",
+      "Mansi Ganga holy lake in central Govardhan"
+    ],
+    "activities": [
+      "Walking the holy 21-km parikrama",
+      "Taking holy dip at Radha Kund",
+      "Electric e-rickshaw parikrama tour for elders"
+    ],
+    "nearbyPlaces": [
+      "Kusum Sarovar",
+      "Jatipura",
+      "Barsana"
+    ],
+    "travelTips": [
+      "Start walking before dawn or in early evening to avoid daytime heat; barefoot walking is traditional but shoes are permitted on outer track"
+    ],
+    "accessibility": "Paved parikrama road; e-rickshaws available for elderly pilgrims",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "govardhan",
+      "parikrama",
+      "radha-kund",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "kusum-sarovar",
+    "name": "Kusum Sarovar",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "type": "heritage",
+    "shortDescription": "Stunning 460-foot emerald sacred reservoir flanked by tiered Rajput-Mughal sandstone chhatris built in memory of Maharaja Suraj Mal.",
+    "longDescription": "Set along the Govardhan Parikrama path, Kusum Sarovar is historically where the Gopis collected flowers for Krishna. In the 18th century, King Jawahar Singh erected magnificent carved sandstone pavilions with painted ceilings depicting Krishna and Radha's leelas.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 27.5255,
+      "longitude": 77.4891
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Carved red and buff sandstone chhatris",
+      "Ceiling frescoes of Braj Leela in royal pavilions",
+      "Mirror-like reflection of monuments in tranquil waters"
+    ],
+    "activities": [
+      "Photography of sandstone reflections",
+      "Sunset contemplation on ghat steps"
+    ],
+    "nearbyPlaces": [
+      "Govardhan Hill",
+      "Radha Kund"
+    ],
+    "travelTips": [
+      "One of the most photogenic monuments in all of Braj, especially at sunrise and sunset"
+    ],
+    "accessibility": "Flight of stone steps leads down to the reservoir; upper terrace accessible",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "kusum-sarovar",
+      "chhatris",
+      "rajput-architecture",
+      "govardhan"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "triveni-sangam",
+    "name": "Triveni Sangam",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "spiritual",
+    "shortDescription": "The holy confluence of three sacred rivers—Ganga, Yamuna, and mythical Saraswati—and epicenter of the world-famous Kumbh Mela.",
+    "longDescription": "The most sacred water confluence in Hinduism. Here, the clear greenish waters of the Yamuna visibly merge with the pale ochre current of the Ganga. Taking a holy bath at Sangam is believed to wash away sins and grant liberation. Hosts the largest gathering of humanity on earth during the Kumbh and Magh Melas.",
+    "category": [
+      "spiritual",
+      "nature",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March (Magh Mela in Jan-Feb)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.4262,
+      "longitude": 81.8841
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Visible color contrast of Ganga and Yamuna waters",
+      "Kumbh Mela sacred bathing epicenter",
+      "Boat ride to wooden bathing platforms at confluence"
+    ],
+    "activities": [
+      "Taking a boat ride to mid-river Sangam bathing platforms",
+      "Holy confluence snan (bath)",
+      "Feeding migratory Siberian gulls in winter"
+    ],
+    "nearbyPlaces": [
+      "Allahabad Fort",
+      "Bade Hanuman Temple",
+      "Alopi Devi Temple"
+    ],
+    "travelTips": [
+      "Negotiate boat fares at official boat union counters on the banks before boarding"
+    ],
+    "accessibility": "Sandy riverbank; wooden floating jetties assist boat boarding",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "sangam",
+      "kumbh-mela",
+      "ganga-yamuna",
+      "spiritual",
+      "prayagraj"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "allahabad-fort",
+    "name": "Allahabad Fort & Patalpuri Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "heritage",
+    "shortDescription": "Massive 1583 AD sandstone fort built by Mughal Emperor Akbar overlooking Sangam, housing the subterranean Patalpuri Temple and sacred Akshayavat tree.",
+    "longDescription": "Constructed at the strategic junction of Ganga and Yamuna, this fort features massive ramparts, moat, and Akbar's palace. While largely under Indian Army garrison, pilgrims can visit the underground Patalpuri Temple, the immortal banyan tree (Akshayavat), and view the 3rd-century BC Ashoka Pillar.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 25.43,
+      "longitude": 81.875
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Akshayavat (The Undying Banyan Tree)",
+      "Subterranean Patalpuri cavern temple",
+      "Polished 35-foot Ashoka Pillar with royal edicts"
+    ],
+    "activities": [
+      "Visiting sacred subterranean chambers",
+      "Viewing colossal Mughal ramparts from river boats"
+    ],
+    "nearbyPlaces": [
+      "Triveni Sangam",
+      "Bade Hanuman Temple"
+    ],
+    "travelTips": [
+      "ID proof required for entry as parts are an active military station"
+    ],
+    "accessibility": "Underground temple requires walking down stone steps",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "allahabad-fort",
+      "akshayavat",
+      "akbar",
+      "ashoka-pillar"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "anand-bhavan",
+    "name": "Anand Bhavan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "heritage",
+    "shortDescription": "Historic two-storey mansion of the Nehru-Gandhi family, nerve center of the Indian National Freedom Movement turned museum.",
+    "longDescription": "Purchased by Motilal Nehru in the 1930s, this historic estate saw crucial decisions for India's Independence crafted by Mahatma Gandhi, Jawaharlal Nehru, and Congress leaders. Now an evocative museum preserving personal rooms, independence memorabilia, and the Jawahar Planetarium.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.4611,
+      "longitude": 81.8597
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Preserved study and bedroom of Jawaharlal Nehru",
+      "Indira Gandhi's wedding and personal chambers",
+      "Jawahar Planetarium astronomy shows"
+    ],
+    "activities": [
+      "Museum walk through freedom struggle exhibits",
+      "Watching planetarium sky shows"
+    ],
+    "nearbyPlaces": [
+      "Swaraj Bhavan",
+      "Chandrashekhar Azad Park"
+    ],
+    "travelTips": [
+      "Closed on Mondays; tickets available at the main gate"
+    ],
+    "accessibility": "Ramps on ground floor; well-maintained flat garden pathways",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "anand-bhavan",
+      "nehru-family",
+      "freedom-movement",
+      "prayagraj"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "khusro-bagh",
+    "name": "Khusro Bagh",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "heritage",
+    "shortDescription": "Walled Mughal Charbagh garden housing three exquisite sandstone mausoleums of Prince Khusrau, his mother Manbhawati Bai, and sister Nithar Begum.",
+    "longDescription": "Spanning over 40 acres near Prayagraj Junction, this tranquil historic garden is a prime example of Mughal funerary architecture. The three-tiered carved sandstone tombs feature Persian frescoes, intricate jali screens, and lush guava orchards.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 25.4419,
+      "longitude": 81.8267
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Three magnificent carved Mughal sandstone tombs",
+      "Persian calligraphic inscriptions and painted ceilings",
+      "Historic Allahabad guava tree groves"
+    ],
+    "activities": [
+      "Heritage photography",
+      "Picnicking and strolling in walled gardens"
+    ],
+    "nearbyPlaces": [
+      "Prayagraj Junction",
+      "Civil Lines"
+    ],
+    "travelTips": [
+      "Tasting fresh Allahabad Surkha pink guavas during winter months"
+    ],
+    "accessibility": "Level walkways across the garden",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "khusro-bagh",
+      "mughal-gardens",
+      "heritage",
+      "prayagraj"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "marina-beach",
+    "name": "Marina Beach",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "beaches",
+    "shortDescription": "India's longest natural urban beach (13 km) along the Bay of Bengal, famous for vibrant evening carnivals, sundal snacks, and iconic statues.",
+    "longDescription": "Stretching along the Coromandel Coast from Fort St. George to Besant Nagar, Marina Beach is the beating cultural heart of Chennai. Its breezy promenade is lined with heritage colonial architecture, statues of Tamil literary legends, flying kites, merry-go-rounds, and sizzling stalls selling fresh fried fish and beachside sundal.",
+    "category": [
+      "beaches",
+      "nature",
+      "culture"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 13.05,
+      "longitude": 80.2824
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "13-km unbroken urban sandy coastline",
+      "Lighthouse offering 360-degree aerial views of Chennai",
+      "Iconic statues of Kannagi, Thiruvalluvar, and Triumph of Labour",
+      "Sizzling beachside snacks (Thengai Manga Pattani Sundal)"
+    ],
+    "activities": [
+      "Climbing the Marina Lighthouse",
+      "Horse riding along the shoreline",
+      "Enjoying beach carnival games and street food"
+    ],
+    "nearbyPlaces": [
+      "San Thome Basilica",
+      "Kapaleeshwarar Temple",
+      "Vivekanandar Illam"
+    ],
+    "travelTips": [
+      "Swimming is prohibited due to strong rip tides; visit after 4:30 PM to escape the afternoon heat"
+    ],
+    "accessibility": "Paved promenade with wheelchair ramps leading towards the beach sand near the lighthouse",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "marina-beach",
+      "chennai",
+      "beach",
+      "lighthouse",
+      "coromandel"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kapaleeshwarar-temple",
+    "name": "Kapaleeshwarar Temple (Mylapore)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "spiritual",
+    "shortDescription": "7th-century Dravidian architectural jewel dedicated to Lord Shiva and Goddess Karpagambal, crowned by a 120-foot multicolored gopuram.",
+    "longDescription": "Located in the historic cultural precinct of Mylapore, this ancient temple features a magnificent rainbow-hued 37-meter Eastern Rajagopuram depicting scenes from Hindu puranas. The complex houses a vast sacred theertham tank, brass lamp colonnades, and is the nerve center of Chennai's December Margazhi music season.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "1.5 - 2 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 13.0336,
+      "longitude": 80.2699
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "120-foot multicolored gopuram with hundreds of stucco sculptures",
+      "Pungai tree shrine where Goddess Parvati worshipped Shiva as a peahen",
+      "Vast sacred temple tank surrounded by traditional agraharams",
+      "Arupathumoovar 63 Nayanmar annual festival procession"
+    ],
+    "activities": [
+      "Participating in traditional Nadaswaram musical puja",
+      "Temple tank photography at twilight",
+      "Sipping Kumbakonam degree filter coffee in Mylapore gallis"
+    ],
+    "nearbyPlaces": [
+      "San Thome Basilica",
+      "Marina Beach",
+      "Ramakrishna Math"
+    ],
+    "travelTips": [
+      "Dress code strictly enforced: traditional Indian clothing (dhotis/sarees/salwars); footwear deposit available outside gate"
+    ],
+    "accessibility": "Spacious paved temple prakarams; low thresholds at inner sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kapaleeshwarar",
+      "mylapore",
+      "shiva-temple",
+      "dravidian",
+      "chennai"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "fort-st-george",
+    "name": "Fort St. George & Museum",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "heritage",
+    "shortDescription": "First English fortress in India founded in 1644, housing St. Mary's Church (oldest Anglican church in India) and colonial military museum.",
+    "longDescription": "The birthplace of the British Empire in India. Today the fortified complex houses the Tamil Nadu Legislative Assembly and Fort Museum exhibiting British colonial uniforms, East India Company coins, battle weapons, and original letters by Lord Clive.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 13.0797,
+      "longitude": 80.2872
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "St. Mary's Church (consecrated in 1680)",
+      "Fort Museum with 3,600 colonial artifacts",
+      "150-foot teakwood flagpole on ramparts"
+    ],
+    "activities": [
+      "Exploring the colonial military museum",
+      "Visiting historic St. Mary's Church"
+    ],
+    "nearbyPlaces": [
+      "High Court complex",
+      "Marina Beach"
+    ],
+    "travelTips": [
+      "Carry government photo ID for security entry; museum closed on Fridays"
+    ],
+    "accessibility": "Ground level museum accessible; ramp access to church",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "fort-st-george",
+      "british-raj",
+      "colonial-history",
+      "chennai"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "san-thome-basilica",
+    "name": "San Thome Basilica",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "spiritual",
+    "shortDescription": "Neo-Gothic Roman Catholic cathedral built over the tomb of St. Thomas the Apostle, one of only three churches in the world built over an apostle's tomb.",
+    "longDescription": "Originally built by Portuguese explorers in the 16th century and rebuilt in sparkling Neo-Gothic style by the British in 1896. Features soaring 183-foot spires, stained glass windows depicting biblical scenes, and an underground crypt containing relics of Apostle Thomas who reached India in 52 AD.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 13.0334,
+      "longitude": 80.2785
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Underground tomb crypt of St. Thomas the Apostle",
+      "Soaring 183-foot Neo-Gothic spire",
+      "Centuries-old statue of Our Lady of Mylapore"
+    ],
+    "activities": [
+      "Quiet prayer in the crypt chapel",
+      "Viewing on-site religious museum relics"
+    ],
+    "nearbyPlaces": [
+      "Marina Beach",
+      "Kapaleeshwarar Temple"
+    ],
+    "travelTips": [
+      "Very peaceful in early mornings before regular church services"
+    ],
+    "accessibility": "Wheelchair accessible with ramps at entrance and elevator access to crypt",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "san-thome",
+      "apostle-thomas",
+      "basilica",
+      "neo-gothic",
+      "chennai"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "government-museum-chennai",
+    "name": "Government Museum & National Art Gallery",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "museums",
+    "shortDescription": "India's second oldest museum complex, world-renowned for its supreme collection of ancient Chola bronze sculptures including Nataraja.",
+    "longDescription": "Established in 1851 at Egmore across six heritage buildings. Houses the world's most comprehensive gallery of 9th to 13th century Chola bronzes, Amaravati Buddhist marble friezes from 2nd century BC, and rare Roman gold coins found in South India.",
+    "category": [
+      "museums",
+      "heritage",
+      "culture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 13.07,
+      "longitude": 80.256
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's finest collection of Chola Bronzes (Ardhanariswara, Nataraja)",
+      "Amaravati Buddhist limestone stupa carvings",
+      "Indo-Saracenic Victoria Memorial Hall"
+    ],
+    "activities": [
+      "Exploring ancient bronze sculpture gallery",
+      "Studying Buddhist archaeological treasures"
+    ],
+    "nearbyPlaces": [
+      "Connemara Public Library",
+      "Egmore Railway Station"
+    ],
+    "travelTips": [
+      "Closed on Fridays; photographic permits available at ticket counter"
+    ],
+    "accessibility": "Wheelchair accessible on ground floors of main galleries",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "chola-bronze",
+      "museum",
+      "nataraja",
+      "archaeology",
+      "chennai"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "besant-nagar-beach",
+    "name": "Besant Nagar Beach (Edward Elliot's Beach)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "beaches",
+    "shortDescription": "Chennai's cleanest and chicest beach promenade, featuring the Karl Schmidt Memorial and upscale sea-facing cafes.",
+    "longDescription": "Popularly known as 'Bessie', Elliot's Beach forms the serene southern end of Chennai's coastline. Known for calm evening breezes, the prominent Karl Schmidt Memorial, jogging paths, and a vibrant row of cafes, gelato parlors, and seafood bistros.",
+    "category": [
+      "beaches",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.9995,
+      "longitude": 80.2707
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Historic Karl Schmidt Memorial monument",
+      "Pedestrian-only promenade on weekend mornings",
+      "Vibrant seafood and artisan coffee cafes"
+    ],
+    "activities": [
+      "Morning shoreline jogging",
+      "Sunset coffee overlooking waves",
+      "Visiting nearby Ashtalakshmi Temple"
+    ],
+    "nearbyPlaces": [
+      "Ashtalakshmi Temple",
+      "Arupadai Veedu Murugan Temple",
+      "Theosophical Society"
+    ],
+    "travelTips": [
+      "Bessie is closed to vehicular traffic on Sunday mornings between 6 AM and 9 AM for walking and cycling"
+    ],
+    "accessibility": "Wide level promenade along the beach road",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "elliots-beach",
+      "besant-nagar",
+      "bessie",
+      "beach-cafes"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "guindy-national-park",
+    "name": "Guindy National Park",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "wildlife",
+    "shortDescription": "One of the world's very few national parks situated entirely within city limits, home to wild blackbucks, spotted deer, and rare butterflies.",
+    "longDescription": "Covering 2.7 square kilometers of tropical dry evergreen scrub forest in the heart of Chennai, Guindy National Park is home to over 400 blackbucks, 2,000 spotted deer, jackals, civets, and 150 species of birds, along with the adjacent Guindy Snake Park and Children's Park.",
+    "category": [
+      "wildlife",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 13.0067,
+      "longitude": 80.2206
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Protected urban habitat for endangered blackbucks",
+      "Guindy Snake Park venom extraction demonstrations",
+      "Children's Park with aviaries and deer feeding"
+    ],
+    "activities": [
+      "Nature trails through dry evergreen forest",
+      "Birdwatching and butterfly spotting"
+    ],
+    "nearbyPlaces": [
+      "IIT Madras campus",
+      "Raj Bhavan",
+      "Gandhi Mandapam"
+    ],
+    "travelTips": [
+      "Closed on Tuesdays; early morning is the best time for deer spotting"
+    ],
+    "accessibility": "Paved walking trails throughout the public park section",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "guindy",
+      "blackbuck",
+      "national-park",
+      "urban-wildlife"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "valluvar-kottam",
+    "name": "Valluvar Kottam",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "type": "heritage",
+    "shortDescription": "Colossal chariot monument dedicated to saint-poet Thiruvalluvar, with all 1,330 verses of the Thirukkural carved into granite pillars.",
+    "longDescription": "Constructed in 1976, this architectural monument is modeled after the temple car of Thanjavur. A massive 39-meter granite stone chariot houses a life-size statue of Thiruvalluvar, surrounded by a 4,000-seat auditorium and corridors inscribing all 133 chapters of the sacred Tamil text Thirukkural.",
+    "category": [
+      "heritage",
+      "culture",
+      "architecture"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 13.0543,
+      "longitude": 80.2422
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "39-meter monolithic granite temple chariot",
+      "All 1,330 Thirukkural couplets inscribed in Tamil on polished stone",
+      "Spacious roof terrace with panoramic city vistas"
+    ],
+    "activities": [
+      "Reading timeless philosophical verses of Thirukkural",
+      "Admiring modern Dravidian stone masonry"
+    ],
+    "nearbyPlaces": [
+      "Nungambakkam",
+      "Semmozhi Poonga botanical garden"
+    ],
+    "travelTips": [
+      "Great peaceful stop in central Chennai; best visited in morning or late afternoon"
+    ],
+    "accessibility": "Flat courtyards; stairs to upper chariot terrace",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "valluvar-kottam",
+      "thirukkural",
+      "tamil-heritage",
+      "chennai"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "shore-temple",
+    "name": "Shore Temple (Mamallapuram)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 8th-century granite structural temple perched directly on the Bay of Bengal, surviving tsunamis and coastal breezes.",
+    "longDescription": "Built by Pallava King Narasimhavarman II (Rajasimha) around 700 AD, the Shore Temple is one of the oldest structural stone temples in South India. Overlooking the crashing waves of the Bay of Bengal, it comprises three shrines dedicated to Shiva and Vishnu, surrounded by hundreds of monolithic carved Nandi bull statues.",
+    "category": [
+      "heritage",
+      "architecture",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.6166,
+      "longitude": 80.1983
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Granite twin-pyramidal towers kissed by ocean waves",
+      "Reclining Vishnu (Anantasayana) sanctum",
+      "Row of monolithic carved Nandi statues along perimeter",
+      "Spectacular sunrise over the Bay of Bengal"
+    ],
+    "activities": [
+      "Sunrise photography of ocean and temple",
+      "Exploring Pallava stone carving heritage",
+      "Relaxing on adjacent sandy beach"
+    ],
+    "nearbyPlaces": [
+      "Pancha Rathas",
+      "Arjuna's Penance",
+      "Krishna's Butter Ball"
+    ],
+    "travelTips": [
+      "Single ASI entry ticket covers Shore Temple, Pancha Rathas, and monuments; visit at sunrise for stunning ocean light"
+    ],
+    "accessibility": "Paved pathways and ramps lead to the temple perimeter",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "shore-temple",
+      "pallava",
+      "mahabalipuram",
+      "bay-of-bengal"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "pancha-rathas",
+    "name": "Pancha Rathas (Five Rathas)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage monolithic rock-cut shrines carved out of a single continuous granite outcrop, named after the Pandavas.",
+    "longDescription": "Carved during the reign of Pallava King Narasimhavarman I in the 7th century, each ratha is carved from top to bottom out of a single giant boulder. Named after Dharmaraja, Bhima, Arjuna, Nakula-Sahadeva, and Draupadi, they served as experimental prototypes that defined South Indian temple architecture.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 12.6105,
+      "longitude": 80.193
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Five distinct monolithic rock-cut temple models",
+      "Life-size monolithic carved Elephant, Lion, and Nandi sculptures",
+      "Dharmaraja Ratha with multi-tiered vimana"
+    ],
+    "activities": [
+      "Studying proto-Dravidian architecture",
+      "Sculpture photography"
+    ],
+    "nearbyPlaces": [
+      "Shore Temple",
+      "Arjuna's Penance"
+    ],
+    "travelTips": [
+      "Hire an ASI guide to learn how each temple was chiselled top-down from a single stone"
+    ],
+    "accessibility": "Flat sandy courtyards around the monuments",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "pancha-rathas",
+      "monolithic",
+      "pallava",
+      "sculpture"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "arjunas-penance",
+    "name": "Arjuna's Penance (Descent of the Ganga)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "type": "heritage",
+    "shortDescription": "World's largest open-air rock bas-relief (96 ft x 43 ft), depicting the cosmic descent of River Ganga with over 100 celestial figures and animals.",
+    "longDescription": "A colossal sculptural masterpiece carved on two adjacent granite boulders. A natural vertical cleft represents the sacred Ganga descending from the heavens to earth, flanked by life-size elephants, celestial gandharvas, ascetics, and forest animals drawn to the water.",
+    "category": [
+      "heritage",
+      "architecture",
+      "culture"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 12.6175,
+      "longitude": 80.1925
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Life-size herd of elephants carved with remarkable naturalism",
+      "Ascetic in penance pose (Arjuna or Bhagiratha)",
+      "Famous humorous sculpture of the cat mimicking an ascetic to trick mice"
+    ],
+    "activities": [
+      "Spotting mythical creatures in the relief",
+      "Studying open-air rock craftsmanship"
+    ],
+    "nearbyPlaces": [
+      "Krishna's Butter Ball",
+      "Varaha Cave Temple"
+    ],
+    "travelTips": [
+      "Located right by the main roadside park; best photographed in morning light"
+    ],
+    "accessibility": "Level paved public park path directly in front of the relief",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "unesco",
+      "bas-relief",
+      "descent-of-ganga",
+      "arjuna-penance"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "krishnas-butter-ball",
+    "name": "Krishna's Butter Ball",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "type": "nature",
+    "shortDescription": "Gravity-defying 250-ton monolithic granite boulder perched precariously on a 45-degree smooth rock slope for over 1,200 years.",
+    "longDescription": "A geological wonder measuring 6 meters high and 5 meters wide, this colossal stone balances on a contact area of less than two feet on a slippery granite hill. Seven elephants under British Governor Lord Willingdon in 1908 failed to budge it an inch.",
+    "category": [
+      "nature",
+      "heritage",
+      "photography"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "45 minutes",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 12.619,
+      "longitude": 80.1932
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Gravity-defying balance on steep rock slope",
+      "Fun playful optical illusion photo poses",
+      "Natural smooth rock slide slopes nearby"
+    ],
+    "activities": [
+      "Creative illusion photography holding or pushing the boulder",
+      "Sliding down smooth granite hillside slopes"
+    ],
+    "nearbyPlaces": [
+      "Arjuna's Penance",
+      "Mahabalipuram Lighthouse"
+    ],
+    "travelTips": [
+      "Wear comfortable shoes with grip for walking on smooth granite rock surfaces"
+    ],
+    "accessibility": "Sloped rock terrain; accessible via lawn pathway from the park entrance",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "krishna-butter-ball",
+      "geological-marvel",
+      "gravity-defying",
+      "mahabalipuram"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "mahabalipuram-beach",
+    "name": "Mahabalipuram Beach",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "type": "beaches",
+    "shortDescription": "Golden sand beach lined with stone carving workshops, coastal seafood shacks, and rolling waves popular among international surfers.",
+    "longDescription": "Stretching beside the ancient Shore Temple, Mahabalipuram Beach is celebrated for its bohemian backpacker charm, stone carving artist workshops, and vibrant surfing culture. The beach offers scenic views of traditional catamarans and fresh catch seafood shacks.",
+    "category": [
+      "beaches",
+      "adventure",
+      "culture"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.615,
+      "longitude": 80.2
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Views of ancient Shore Temple from the surf",
+      "Certified surf schools and wave breaks",
+      "Artisan stone carvers chiseling granite statues along beach lanes"
+    ],
+    "activities": [
+      "Surfing lessons with local instructors",
+      "Dining on fresh catch fish at rooftop beach cafes",
+      "Shopping for handmade soapstone sculptures"
+    ],
+    "nearbyPlaces": [
+      "Shore Temple",
+      "Othavadai Street"
+    ],
+    "travelTips": [
+      "Othavadai Street behind the beach is packed with cozy cafes serving fresh calamari, wood-fired pizza, and cold coconuts"
+    ],
+    "accessibility": "Direct sandy beach access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "surfing",
+      "beach",
+      "stone-carvers",
+      "mahabalipuram"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "meenakshi-amman-temple",
+    "name": "Meenakshi Amman Temple",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "type": "spiritual",
+    "shortDescription": "Historic 14-gopuram Dravidian temple complex dedicated to Goddess Meenakshi and Lord Sundareswarar, housing the Hall of 1,000 Pillars.",
+    "longDescription": "The architectural zenith of Tamil culture, rebuilt under the Nayak rulers in the 16th-17th centuries. Spans 14 acres surrounded by 14 monumental gopurams reaching up to 52 meters, adorned with over 33,000 colorful stucco sculptures. Highlights include the Golden Lotus Pond (Potramarai Kulam) and the 985 carved pillars of the Thousand Pillar Hall.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 9.9195,
+      "longitude": 78.1193
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "14 towering gopurams with 33,000 stucco figures",
+      "Thousand Pillar Hall (Aayiram Kaal Mandapam) with musical pillars",
+      "Sacred Golden Lotus Pond where Sangam poets evaluated literary works",
+      "Nightly bedtime ceremony carrying Sundareswarar idol to Meenakshi sanctum"
+    ],
+    "activities": [
+      "Attending the nightly bed-chamber palanquin procession (9:00 PM)",
+      "Testing acoustic musical pillars in the museum",
+      "Walking through jasmine flower markets around the eastern gate"
+    ],
+    "nearbyPlaces": [
+      "Thirumalai Nayakkar Palace",
+      "Koodal Azhagar Temple",
+      "Puthu Mandapam"
+    ],
+    "travelTips": [
+      "Phones and cameras are completely prohibited inside; deposit them safely at official lockers at East or South gates"
+    ],
+    "accessibility": "Smooth stone corridors; wheelchair assistance available from temple security",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "meenakshi-temple",
+      "dravidian",
+      "thousand-pillars",
+      "madurai",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "thirumalai-nayakkar-palace",
+    "name": "Thirumalai Nayakkar Palace",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "type": "forts-palaces",
+    "shortDescription": "17th-century Italian-Dravidian royal palace famed for its stupendous 82-foot vaulted arches, giant stucco pillars, and evening light show.",
+    "longDescription": "Constructed in 1636 by King Thirumalai Nayak with the assistance of an Italian architect. The surviving Swarga Vilasam (Celestial Pavilion) features soaring 20-meter high white masonry pillars, turquoise domed ceilings with intricate stucco foliage, and a grand central courtyard.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 9.915,
+      "longitude": 78.1235
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Swarga Vilasam grand hall with 82-foot arches",
+      "Colossal cylindrical white pillars with stucco capitals",
+      "Daily English and Tamil Sound and Light Show"
+    ],
+    "activities": [
+      "Admiring Indo-Saracenic ceiling domes",
+      "Attending evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Meenakshi Amman Temple",
+      "Gandhi Memorial Museum"
+    ],
+    "travelTips": [
+      "English Sound and Light show is held daily from 6:45 PM to 7:35 PM"
+    ],
+    "accessibility": "Courtyard and main hall accessible at ground level",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "nayak-palace",
+      "madurai-palace",
+      "architecture",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "gandhi-memorial-museum-madurai",
+    "name": "Gandhi Memorial Museum",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "type": "museums",
+    "shortDescription": "Historic 17th-century Tamukkam summer palace housing the blood-stained dhoti worn by Mahatma Gandhi at his assassination.",
+    "longDescription": "Housed in the historic palace of Rani Mangammal. Madurai is where Mahatma Gandhi made the momentous decision in 1921 to shed elaborate attire and adopt the simple Indian loincloth (dhoti) to identify with poor peasants. The museum preserves the blood-stained garment worn on January 30, 1948.",
+    "category": [
+      "museums",
+      "history",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 9.93,
+      "longitude": 78.14
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Original blood-stained khadi dhoti worn by Mahatma Gandhi",
+      "Comprehensive photographic history of India's Freedom Movement",
+      "Historic Rani Mangammal palace architecture"
+    ],
+    "activities": [
+      "Studying the chronology of the Indian freedom struggle",
+      "Peaceful contemplation in the museum library and gardens"
+    ],
+    "nearbyPlaces": [
+      "Alagar Koyil",
+      "Meenakshi Temple"
+    ],
+    "travelTips": [
+      "Entry is free; open daily except public holidays"
+    ],
+    "accessibility": "Ground level museum displays accessible",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "gandhi-museum",
+      "freedom-movement",
+      "madurai",
+      "history"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "vaigai-river",
+    "name": "Vaigai Riverfront",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "type": "nature",
+    "shortDescription": "The lifeline river of ancient Pandya kingdom, center of the massive Chithirai Festival when Lord Alagar enters its waters.",
+    "longDescription": "Flowing gracefully through Madurai, the Vaigai River holds immense mythological and cultural prominence. During the annual Chithirai Festival in April/May, over one million devotees gather along its banks to witness Lord Kallazhagar riding a golden horse enter the riverbed.",
+    "category": [
+      "nature",
+      "culture",
+      "festivals"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 9.925,
+      "longitude": 78.125
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Epicenter of Chithirai Festival golden horse river entry",
+      "Historic causeways and Albert Victor Bridge",
+      "Sunset reflection across the wide river basin"
+    ],
+    "activities": [
+      "Watching Chithirai Festival celebrations in April",
+      "Evening walks along river bridges"
+    ],
+    "nearbyPlaces": [
+      "Meenakshi Temple",
+      "Goripalayam Dargah"
+    ],
+    "travelTips": [
+      "Water flow is seasonal; best visited during Chithirai festival or after monsoon rains"
+    ],
+    "accessibility": "Riverbank ghats and bridge sidewalks accessible",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "vaigai-river",
+      "chithirai-festival",
+      "madurai"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "alagar-koyil",
+    "name": "Alagar Koyil (Kallazhagar Temple)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "type": "spiritual",
+    "shortDescription": "Ancient Vishnu temple tucked into the forested Alagar Hills (21 km from Madurai), famous for natural springs and Pazhamudircholai Murugan shrine.",
+    "longDescription": "Dedicated to Lord Vishnu as Sundararajar (Kallazhagar). Set amid the lush green Alagar Hills, the temple features intricate stone-carved mandapas, natural medicinal springs (Silambaru), and is paired with the nearby Pazhamudircholai temple—the sixth sacred abode (Arupadaiveedu) of Lord Murugan.",
+    "category": [
+      "spiritual",
+      "nature",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.076,
+      "longitude": 78.214
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Forest-framed Dravidian temple architecture",
+      "Pazhamudircholai Murugan shrine uphill",
+      "Silambaru (Nupura Gangai) perennial medicinal holy water stream"
+    ],
+    "activities": [
+      "Holy bath at Nupura Gangai stream",
+      "Visiting Murugan's sixth sacred abode",
+      "Tasting traditional Alagar Koyil dosai prasad"
+    ],
+    "nearbyPlaces": [
+      "Madurai City (21 km)",
+      "Pazhamudircholai"
+    ],
+    "travelTips": [
+      "Don't miss the unique Alagar Kovil Dosa prasad fried in pure ghee with black pepper and ginger"
+    ],
+    "accessibility": "Paved pathways at lower temple; mini-buses take devotees up to the hill shrine",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "alagar-koyil",
+      "vishnu-temple",
+      "pazhamudircholai",
+      "alagar-hills"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ooty-lake",
+    "name": "Ooty Lake & Boathouse",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Artificial 65-acre lake created in 1824 by John Sullivan, surrounded by eucalyptus groves, offering motor, pedal, and row boating.",
+    "longDescription": "Nestled in the heart of Ooty, this scenic L-shaped lake was formed by damming mountain streams in 1824. Flanked by eucalyptus trees and Nilgiri hills, it features a bustling boathouse, mini toy train rides for children, cycling tracks, and horse rides along the banks.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to June",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 11.408,
+      "longitude": 76.687
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Row, pedal, and motor boating on calm waters",
+      "Mini amusement park and toy train track",
+      "Scenic cycling around the lake perimeter"
+    ],
+    "activities": [
+      "Pedal boating against Nilgiri mountain backdrop",
+      "Cycling around the lake trail",
+      "Tasting hot sweet corn and masala tea"
+    ],
+    "nearbyPlaces": [
+      "Botanical Garden",
+      "Thread Garden",
+      "Deer Park"
+    ],
+    "travelTips": [
+      "Arrive before 10 AM to avoid long boat rental queues during summer vacation months"
+    ],
+    "accessibility": "Paved pathways around boathouse jetty",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ooty-lake",
+      "boating",
+      "hill-station",
+      "nilgiris"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "botanical-garden-ooty",
+    "name": "Government Botanical Garden",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "type": "nature",
+    "shortDescription": "55-acre terraced botanical garden established in 1848, home to over 1,000 exotic floral species and a 20-million-year-old fossilized tree trunk.",
+    "longDescription": "Laid out on the slopes of Doddabetta peak by British botanist William Graham McIvor. The terraced gardens feature lush Italian and Japanese garden zones, glasshouses with rare orchids and ferns, extensive rose collections, and a preserved 20-million-year-old fossil tree.",
+    "category": [
+      "nature",
+      "family",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to June (Flower Show in May)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 11.4172,
+      "longitude": 76.7118
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Annual Ooty Summer Flower Show in May",
+      "20-million-year-old fossilized tree trunk",
+      "Italian and Japanese terraced floral landscaping"
+    ],
+    "activities": [
+      "Strolling terraced lawns",
+      "Photography of rare orchids and blooms"
+    ],
+    "nearbyPlaces": [
+      "Rose Garden",
+      "Toda Tribal Hamlet",
+      "Doddabetta Peak"
+    ],
+    "travelTips": [
+      "The Annual Flower Show held every May displays spectacular floral sculptures made with lakhs of cut flowers"
+    ],
+    "accessibility": "Gentle slopes on lower lawns; paved pathways throughout",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "botanical-garden",
+      "flower-show",
+      "ooty",
+      "nilgiris"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "doddabetta-peak",
+    "name": "Doddabetta Peak",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "type": "hill-stations",
+    "shortDescription": "The highest mountain in the Nilgiri Hills (2,637 m / 8,652 ft), featuring a telescope house with panoramic views of Coimbatore plains.",
+    "longDescription": "Located 9 km from Ooty at the junction of the Western and Eastern Ghats, Doddabetta ('Big Mountain' in Badaga language) is flanked by reserved shola forests. On clear days, the summit telescope house offers magnificent 360-degree vistas of misty valleys, tea estates, and distant Mysore plains.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 11.401,
+      "longitude": 76.735
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Highest vantage point in the Nilgiris at 2,637 meters",
+      "Telescope House with twin viewing telescopes",
+      "Cloud-kissed pine and rhododendron ridges"
+    ],
+    "activities": [
+      "Looking through summit telescopes",
+      "Tasting freshly boiled spiced sweet corn and Nilgiri tea"
+    ],
+    "nearbyPlaces": [
+      "Tea Park",
+      "Ooty Town (9 km)"
+    ],
+    "travelTips": [
+      "Visit in the morning before 11 AM as afternoon fog frequently blankets the viewpoint"
+    ],
+    "accessibility": "Paved road to summit; short flight of stairs to telescope chamber",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "doddabetta",
+      "highest-peak",
+      "nilgiris",
+      "viewpoint"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "rose-garden-ooty",
+    "name": "Government Rose Garden",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "type": "nature",
+    "shortDescription": "India's largest rose garden spread across 10 acres on Elk Hill slopes, housing over 20,000 varieties of vibrant hybrid tea roses and green roses.",
+    "longDescription": "Established to commemorate the centenary of Ooty flower shows, this terraced garden is designed in five curved tiers on Elk Hill. Recognized by the World Federation of Rose Societies, it features hybrid tea roses, miniature roses, ramblers, and rare unusual green and black rose cultivars.",
+    "category": [
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "March to June",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 11.408,
+      "longitude": 76.712
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Over 20,000 rose varieties from around the world",
+      "Terraced five-tier amphitheater design on Elk Hill",
+      "Panoramic views of Ooty town from rose pergolas"
+    ],
+    "activities": [
+      "Walking along flower tunnels and pergolas",
+      "Rose photography"
+    ],
+    "nearbyPlaces": [
+      "Botanical Garden",
+      "Charring Cross"
+    ],
+    "travelTips": [
+      "Peak blooming season is from April to June during early summer"
+    ],
+    "accessibility": "Terraced paved pathways with handrails on steps",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "rose-garden",
+      "ooty",
+      "flowers",
+      "nature"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "nilgiri-mountain-railway",
+    "name": "Nilgiri Mountain Railway (Toy Train)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage historic rack-and-pinion steam railway chugging through 16 tunnels, 250 bridges, and lush Nilgiri tea estates.",
+    "longDescription": "Built by the British in 1908, the NMR is Asia's steepest railway track using the Swiss Abt rack-and-pinion system on a meter-gauge line. The vintage steam locomotive chugs from Mettupalayam through Coonoor to Ooty across dramatic ravines, pine forests, and misty waterfalls.",
+    "category": [
+      "heritage",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "3 - 5 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 11.406,
+      "longitude": 76.702
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Mountain Railways of India status",
+      "Vintage coal-fired Swiss steam locomotive",
+      "Crosses 16 tunnels, 250 bridges, and steep mountain curves",
+      "Iconic shoot location for Chaiyya Chaiyya song"
+    ],
+    "activities": [
+      "Riding the scenic toy train between Coonoor and Ooty",
+      "Heritage railway photography at colonial stations"
+    ],
+    "nearbyPlaces": [
+      "Coonoor (19 km)",
+      "Ketti Valley"
+    ],
+    "travelTips": [
+      "Book tickets 120 days in advance on IRCTC as seats sell out instantly"
+    ],
+    "accessibility": "Standard meter-gauge passenger coaches; assistance required for wheelchairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "toy-train",
+      "nilgiri-railway",
+      "steam-locomotive"
+    ],
+    "featured": true,
+    "priorityRank": 5
+  },
+  {
+    "id": "avalanche-lake",
+    "name": "Avalanche Lake & Sanctuary",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Untouched pristine mountain lake (28 km from Ooty) encircled by rhododendron blooms, trout fisheries, and dense shola wilderness.",
+    "longDescription": "Formed naturally in 1823 after a massive landslide, Avalanche Lake remains one of the most serene and ecologically pristine regions in the Nilgiris. Controlled by the Tamil Nadu Forest Department, eco-tours by forest safari vehicles take visitors to Bhavani Amman Temple, Cauliflower Shola, and emerald lake shores.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "wildlife"
+    ],
+    "bestTimeToVisit": "September to May",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 11.3,
+      "longitude": 76.59
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pristine emerald lake waters free from commercial stalls",
+      "Forest Department safari through protected Shola biosphere",
+      "Spring rhododendron, orchid, and magnolia blossoms"
+    ],
+    "activities": [
+      "Forest Department safari bus tour",
+      "Trout fishing (with forest permit)",
+      "Nature photography"
+    ],
+    "nearbyPlaces": [
+      "Emerald Lake (7 km)",
+      "Upper Bhavani Lake"
+    ],
+    "travelTips": [
+      "Private vehicles not permitted past the forest checkpost; must board official eco-safari buses"
+    ],
+    "accessibility": "Forest safari buses provide scenic tour without strenuous walking",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "avalanche-lake",
+      "shola-forest",
+      "nilgiris",
+      "pristine-nature"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "kodaikanal-lake",
+    "name": "Kodaikanal Lake (Kodai Lake)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Iconic star-shaped artificial lake built in 1863, the heart of Kodaikanal, offering row and pedal boating and horse riding.",
+    "longDescription": "Created by Sir Vere Henry Levinge, the former Collector of Madurai. This 60-acre star-shaped lake sits in the town center, encircled by a 5-kilometer paved cycling and walking promenade lined with pine trees, flower stalls, and homemade chocolate shops.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to June",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.238,
+      "longitude": 77.489
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Star-shaped 60-acre mountain lake",
+      "5-km paved perimeter trail for cycling and tandem bikes",
+      "Tamil Nadu Tourism (TTDC) boating jetty"
+    ],
+    "activities": [
+      "Renting tandem bicycles around the lake path",
+      "Pedal and row boating",
+      "Horse riding along lake banks"
+    ],
+    "nearbyPlaces": [
+      "Bryant Park",
+      "Coaker's Walk"
+    ],
+    "travelTips": [
+      "Rent a tandem bicycle in the early morning mist for a magical ride around the lake"
+    ],
+    "accessibility": "Flat paved 5-km pathway completely accessible for wheelchairs and strollers",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kodai-lake",
+      "boating",
+      "cycling",
+      "hill-station"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "coakers-walk",
+    "name": "Coaker's Walk",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "type": "hill-stations",
+    "shortDescription": "1-kilometer pedestrian cliff-edge promenade offering breathtaking views of Dolphin's Nose, Pambar River valley, and plains of Madurai.",
+    "longDescription": "Constructed by Lt. Coaker in 1872, this paved pedestrian path winds along the edge of steep southern mountain slopes. Walking above swirling blankets of clouds, visitors can view the Vaigai Dam, Dolphin's Nose, and occasionally experience the rare 'Brocken Spectre' optical phenomenon.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 10.233,
+      "longitude": 77.493
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Walking high above fluffy cloud layers",
+      "Telescope House offering clear views of Vaigai Dam",
+      "Occasional Brocken Spectre halo shadow phenomenon"
+    ],
+    "activities": [
+      "Early morning cliffside walks",
+      "Telescope viewing of southern plains"
+    ],
+    "nearbyPlaces": [
+      "Bryant Park",
+      "Kodaikanal Lake"
+    ],
+    "travelTips": [
+      "Visit before 10 AM or around sunset when the fog is dramatic but not yet obscuring all valley views"
+    ],
+    "accessibility": "Paved, level walkway with railings along the cliff perimeter",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "coakers-walk",
+      "valley-view",
+      "clouds",
+      "kodaikanal"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "bryant-park",
+    "name": "Bryant Park",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "type": "nature",
+    "shortDescription": "20-acre botanical park situated adjacent to Kodai Lake, featuring 740 varieties of roses, glasshouses, and a 170-year-old eucalyptus tree.",
+    "longDescription": "Laid out in 1908 by British forest officer H.D. Bryant. This lush garden showcases landscaped lawns, a glasshouse filled with orchids and ornamental plants, an extensive rose garden with over 700 cultivars, and hosts the annual Kodaikanal Flower Show in May.",
+    "category": [
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to June (Flower Show in May)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 10.234,
+      "longitude": 77.491
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Annual May Flower Show with floral sculptures",
+      "170-year-old giant eucalyptus tree",
+      "Orchid and fern glasshouses"
+    ],
+    "activities": [
+      "Relaxing on trimmed botanical lawns",
+      "Macro flower photography"
+    ],
+    "nearbyPlaces": [
+      "Kodaikanal Lake",
+      "Coaker's Walk"
+    ],
+    "travelTips": [
+      "Direct walking shortcut from Bryant Park connects to Coaker's Walk"
+    ],
+    "accessibility": "Gently sloping paved pathways suitable for walking and wheelchairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "bryant-park",
+      "botanical-garden",
+      "kodaikanal"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "pillar-rocks",
+    "name": "Pillar Rocks",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "type": "hill-stations",
+    "shortDescription": "Dramatic trio of sheer monolithic granite boulders towering 122 meters (400 feet) high, creating a dizzying vertical cliff chasm.",
+    "longDescription": "One of Kodaikanal's most famous natural landmarks. Three vertical granite boulders stand upright shoulder to shoulder, reaching 400 feet into the sky. Managed by the forest department with terraced viewing gardens, mist continuously billows between the narrow gaps of the giant pillars.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 10.207,
+      "longitude": 77.47
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Trio of 122-meter sheer vertical granite monoliths",
+      "Dramatic mist drifting through the granite chasms",
+      "Forest department terraced viewpoints and mini gardens"
+    ],
+    "activities": [
+      "Landscape photography of vertical cliffs",
+      "Tasting fresh steamed plums and roasted corn"
+    ],
+    "nearbyPlaces": [
+      "Guna Caves",
+      "Pine Forest",
+      "Moir Point"
+    ],
+    "travelTips": [
+      "Wait patiently for 10-15 minutes if mist conceals the rocks; winds quickly blow the clouds away"
+    ],
+    "accessibility": "Terraced viewing platform with paved steps and safety railings",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "pillar-rocks",
+      "granite-cliffs",
+      "kodaikanal"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "pine-forest-kodai",
+    "name": "Kodaikanal Pine Forest",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "type": "nature",
+    "shortDescription": "Dense canopy of towering pine trees planted by Mr. Bryant in 1906, a dreamy movie shoot location with pine cone carpeted forest floors.",
+    "longDescription": "Planted over a century ago as timber reserves, these majestic pine forests create an enchanting natural cathedral. Sunlight streams dramatically through the tall slender trunks onto the pine-needle covered ground, making it a favorite for film shoots, nature walks, and horse riding.",
+    "category": [
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 10.215,
+      "longitude": 77.472
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Over 100-year-old towering pine tree groves",
+      "Atmospheric morning fog and filtered sunlight rays",
+      "Popular Indian cinema shooting location"
+    ],
+    "activities": [
+      "Walking through quiet pine paths",
+      "Horse riding through forest trails",
+      "Portrait and film photography"
+    ],
+    "nearbyPlaces": [
+      "Pillar Rocks",
+      "Guna Caves"
+    ],
+    "travelTips": [
+      "Wear sturdy shoes as the slope covered in pine cones can be slightly slippery"
+    ],
+    "accessibility": "Uneven forest ground with tree roots; roadside viewing is flat",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "pine-forest",
+      "kodaikanal",
+      "cinema-location",
+      "nature"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "guna-caves",
+    "name": "Guna Caves (Devil's Kitchen)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "type": "adventure",
+    "shortDescription": "Mysterious subterranean caverns hidden between three giant rock pillars, surrounded by tangled Shola tree roots and deep gorges.",
+    "longDescription": "Originally discovered by British officer B.S. Ward in 1821 and called 'Devil's Kitchen'. Renamed 'Guna Caves' after Kamal Haasan's cult movie 'Gunaa' was filmed here, and recently featured in the movie 'Manjummel Boys'. Enormous gnarled tree roots and sheer cliff crevices make it an evocative, thrilling sight.",
+    "category": [
+      "adventure",
+      "nature",
+      "history"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 10.211,
+      "longitude": 77.468
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Dramatic tangled prehistoric-looking Shola tree roots",
+      "Famed shooting location of Kamal Haasan's 'Gunaa' & 'Manjummel Boys'",
+      "Cool mountain air and dramatic pine-scented mist"
+    ],
+    "activities": [
+      "Walking the secured forest boardwalk trail",
+      "Photographing unique tangled root networks"
+    ],
+    "nearbyPlaces": [
+      "Pillar Rocks",
+      "Moir Point"
+    ],
+    "travelTips": [
+      "The deep cave crevices themselves are securely barricaded for safety; enjoy views from the safe forest boardwalk"
+    ],
+    "accessibility": "Paved forest walkway with steps through the root forest",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "guna-caves",
+      "devils-kitchen",
+      "manjummel-boys",
+      "kodaikanal"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "ramanathaswamy-temple",
+    "name": "Ramanathaswamy Temple",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "type": "spiritual",
+    "shortDescription": "One of the 12 Jyotirlingas of Lord Shiva and Char Dham pilgrimage site, famed for the world's longest pillared corridor and 22 sacred wells.",
+    "longDescription": "According to the Ramayana, Lord Rama worshipped Lord Shiva here to absolve the sin of killing Ravana. The temple is celebrated for its Third Corridor—the longest temple corridor in the world, spanning 1,212 meters with 1,212 intricately carved sandstone pillars. Pilgrims traditionally bathe in 22 sacred temple theerthams (wells).",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 9.2881,
+      "longitude": 79.3174
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's longest temple corridor with 1,212 carved sandstone pillars",
+      "One of the 12 sacred Jyotirlingas and India's Char Dham",
+      "Ritual holy snan at 22 sacred theerthams inside the temple complex",
+      "Agni Theertham sacred sea beach ritual bath"
+    ],
+    "activities": [
+      "Participating in the 22 holy theertham bath ritual",
+      "Darshan of the Spatika (crystal) Lingam during morning puja",
+      "Corridor architectural photography"
+    ],
+    "nearbyPlaces": [
+      "Agni Theertham",
+      "Pamban Bridge",
+      "Dhanushkodi"
+    ],
+    "travelTips": [
+      "Wear clothes suitable for getting drenched during the 22 wells bath, followed by changing into dry traditional clothing for inner darshan"
+    ],
+    "accessibility": "Paved temple corridors; smooth granite flooring throughout",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jyotirlinga",
+      "char-dham",
+      "longest-corridor",
+      "rameswaram",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "pamban-bridge",
+    "name": "Pamban Bridge & Sea Crossing",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "type": "heritage",
+    "shortDescription": "India's first sea bridge opened in 1914, spanning 2.06 km across the Palk Strait, featuring a central double-leaf bascule that opens for ships.",
+    "longDescription": "A miraculous engineering marvel connecting mainland Mandapam to Rameswaram Island across turquoise waters. Opened in 1914, it features a Scherzer rolling bascule lift span that opens to let large maritime ships pass through. Parallel to it stands the modern road bridge offering panoramic sea views.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 9.278,
+      "longitude": 79.205
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Historic 1914 railway sea bridge spanning 2.06 km",
+      "Scherzer bascule lift section that opens for sea vessels",
+      "Spectacular road bridge vantage point looking down at passing trains"
+    ],
+    "activities": [
+      "Watching trains cross over ocean waves",
+      "Sunset photography from the elevated Annai Indira Gandhi Road Bridge"
+    ],
+    "nearbyPlaces": [
+      "Mandapam",
+      "Rameswaram Town (12 km)"
+    ],
+    "travelTips": [
+      "Park your car safely at designated viewing bays on the road bridge for photos"
+    ],
+    "accessibility": "Pedestrian sidewalks on the road bridge provide easy access",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "pamban-bridge",
+      "sea-bridge",
+      "engineering-marvel",
+      "rameswaram"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "dhanushkodi",
+    "name": "Dhanushkodi Ghost Town & Ram Setu Point",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "type": "heritage",
+    "shortDescription": "Evocative ghost town destroyed in the 1964 cyclone at the tip of India, where the Bay of Bengal meets the Indian Ocean and Ram Setu begins.",
+    "longDescription": "Located at the southeastern tip of Pamban Island, just 18 miles from Sri Lanka. Dhanushkodi was a bustling port town until it was submerged by the devastating 1964 cyclone. Today, ruins of the railway station, church, and post office stand half-buried in pristine white sands. At Arichal Munai, the calm Bay of Bengal visibly meets the roaring Indian Ocean.",
+    "category": [
+      "heritage",
+      "beaches",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 9.178,
+      "longitude": 79.418
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Arichal Munai (Land's End) where two oceans meet",
+      "Ruins of the 1964 cyclone-hit church and railway station",
+      "Origin point of legendary Ram Setu (Adam's Bridge)",
+      "Smooth four-lane coastal highway jutting into the sea"
+    ],
+    "activities": [
+      "Driving along the scenic marine highway to Arichal Munai",
+      "Exploring atmospheric ruined stone church",
+      "Walking between calm and rough ocean shores"
+    ],
+    "nearbyPlaces": [
+      "Kothandaramaswamy Temple",
+      "Rameswaram Town (18 km)"
+    ],
+    "travelTips": [
+      "High security zone; visitors must exit Arichal Munai before 5:30 PM sundown"
+    ],
+    "accessibility": "Smooth newly constructed paved highway right up to Arichal Munai monument",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "dhanushkodi",
+      "ghost-town",
+      "ram-setu",
+      "arichal-munai",
+      "rameswaram"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "ariyaman-beach",
+    "name": "Ariyaman Beach (Kushi Beach)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "type": "beaches",
+    "shortDescription": "Clean, calm-water beach along Palk Bay lined with casuarina groves, water sports, parasailing, and boat rides.",
+    "longDescription": "Located 21 km from Rameswaram along Palk Bay, Ariyaman Beach features gentle waves, shallow crystal-clear water, and shade-giving casuarina trees. It is the premier recreational beach in the region, offering jet skis, parasailing, and speed boating.",
+    "category": [
+      "beaches",
+      "adventure",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 9.31,
+      "longitude": 79.08
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Shallow calm waters safe for swimming",
+      "Water sports (Jet skiing, banana rides, parasailing)",
+      "Casuarina pine tree grove picnic spots"
+    ],
+    "activities": [
+      "Swimming in calm bay waters",
+      "Parasailing over Palk Bay"
+    ],
+    "nearbyPlaces": [
+      "Pamban Bridge",
+      "Rameswaram"
+    ],
+    "travelTips": [
+      "Ideal family beach for swimming compared to Rameswaram's open sea ghats"
+    ],
+    "accessibility": "Direct sandy beach access from paved parking lot",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ariyaman-beach",
+      "water-sports",
+      "palk-bay",
+      "swimming"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "apj-abdul-kalam-memorial",
+    "name": "Dr. A.P.J. Abdul Kalam National Memorial",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "type": "heritage",
+    "shortDescription": "Grand national memorial built by DRDO honoring the People's President and missile visionary, reflecting India's scientific heritage.",
+    "longDescription": "Inaugurated in 2017 at Pei Karumbu, this beautiful yellow sandstone memorial resembles India Gate and Mughal architecture. Designed by DRDO, it showcases replicas of India's missiles (Agni, Prithvi), hundreds of paintings, Dr. Kalam's personal belongings, and his burial shrine.",
+    "category": [
+      "heritage",
+      "museums",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 9.282,
+      "longitude": 79.285
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Full-scale replica models of Agni and Prithvi missiles",
+      "Sheesh Mahal style glass ceiling and Chettinad stone doors",
+      "Exhibits on Dr. Kalam's Pokhran tests and space research milestones"
+    ],
+    "activities": [
+      "Paying homage at Dr. Kalam's samadhi",
+      "Exploring the science and space achievement galleries"
+    ],
+    "nearbyPlaces": [
+      "House of Kalam (Ancestral home)",
+      "Rameswaram Railway Station"
+    ],
+    "travelTips": [
+      "Also visit the nearby 'House of Kalam' in town where his elder brother maintained his childhood home"
+    ],
+    "accessibility": "Wheelchair accessible with ramps and wide landscaped courtyards",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "abdul-kalam",
+      "drdo",
+      "memorial",
+      "missile-man",
+      "rameswaram"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "brihadeeswarar-temple",
+    "name": "Brihadeeswarar Temple (Big Temple)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Thanjavur",
+    "citySlug": "thanjavur",
+    "type": "spiritual",
+    "shortDescription": "UNESCO World Heritage 11th-century Chola masterpiece, built entirely of granite with a 216-foot soaring vimana and an 80-ton monolithic stone cupola.",
+    "longDescription": "Consecrated in 1010 AD by Emperor Raja Raja Chola I, the 'Peruvudaiyar Kovil' is the apex of Dravidian architecture. The entire temple is constructed without mortar using interlocking granite blocks in an area where no granite quarries exist for 60 km. The 66-meter central tower (Vimana) is capped by a single carved granite block weighing 81 tons, housing one of India's largest monolithic Shiva lingams.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.7828,
+      "longitude": 79.1318
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "216-foot granite Vimana that dominates the skyline",
+      "81-ton monolithic granite capstone (Kumbam)",
+      "Massive monolithic Nandi bull carved from a single 25-ton stone",
+      "Ancient 1,000-year-old Tamil inscriptions on temple base"
+    ],
+    "activities": [
+      "Circling the vast paved courtyard at golden hour",
+      "Studying ancient Chola fresco paintings and Tamil script",
+      "Admiring sunset glow on the golden granite spire"
+    ],
+    "nearbyPlaces": [
+      "Thanjavur Maratha Palace",
+      "Saraswathi Mahal Library"
+    ],
+    "travelTips": [
+      "Visit in late afternoon (around 4:30 PM) when the granite stones cool down and the temple radiates golden light"
+    ],
+    "accessibility": "Ramps available at the main moat entrance and outer corridors",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "unesco",
+      "big-temple",
+      "chola",
+      "granite-marvel",
+      "thanjavur"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "thanjavur-palace",
+    "name": "Thanjavur Maratha Palace",
+    "state": "Tamil Nadu",
+    "stateSlug": "thanjavur",
+    "city": "Thanjavur",
+    "citySlug": "thanjavur",
+    "type": "forts-palaces",
+    "shortDescription": "16th-century royal palace complex built by Nayak and Maratha rulers, housing the Bell Tower, Arsenal Tower, and Royal Art Gallery.",
+    "longDescription": "Built originally by the Thanjavur Nayaks in 1550 and later expanded by the Marathas. The sprawling palace complex houses the seven-storey Arsenal Tower, the Bell Tower (Mani Mandapam), the Maratha Durbar Hall decorated with vibrant stucco murals, and an exceptional bronze sculpture gallery.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.7925,
+      "longitude": 79.1378
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Maratha Durbar Hall with colorful royal stucco ceiling murals",
+      "Seven-storey Arsenal Tower",
+      "Art Gallery with priceless Chola stone and bronze sculptures"
+    ],
+    "activities": [
+      "Viewing historic royal throne and weaponry",
+      "Climbing Bell Tower for views of Thanjavur"
+    ],
+    "nearbyPlaces": [
+      "Saraswathi Mahal Library",
+      "Brihadeeswarar Temple"
+    ],
+    "travelTips": [
+      "Combined tickets available covering the Art Gallery, Palace, and Library"
+    ],
+    "accessibility": "Courtyards accessible; multi-storey towers require climbing stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "thanjavur-palace",
+      "maratha",
+      "durbar-hall",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "saraswathi-mahal-library",
+    "name": "Saraswathi Mahal Library",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Thanjavur",
+    "citySlug": "thanjavur",
+    "type": "museums",
+    "shortDescription": "One of the oldest libraries in Asia, housing over 60,000 ancient palm-leaf and paper manuscripts collected by King Serfoji II.",
+    "longDescription": "Established in the 16th century by Nayak kings and enriched by Maratha scholar-king Serfoji II. Preserves rare palm-leaf manuscripts in Tamil, Sanskrit, Marathi, and Telugu covering medicine, astronomy, music, and literature, along with antique European atlases and King Serfoji's anatomical drawings.",
+    "category": [
+      "museums",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 10.7928,
+      "longitude": 79.1372
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Over 60,000 ancient palm-leaf manuscripts",
+      "Centuries-old miniature paintings and botanical treatises",
+      "King Serfoji II's personal collection of European books and atlases"
+    ],
+    "activities": [
+      "Viewing preserved 500-year-old palm-leaf scripts",
+      "Exploring historical medical manuscript exhibits"
+    ],
+    "nearbyPlaces": [
+      "Thanjavur Palace",
+      "Brihadeeswarar Temple"
+    ],
+    "travelTips": [
+      "Closed on Wednesdays; photography prohibited in manuscript viewing rooms"
+    ],
+    "accessibility": "Ground level library museum accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "saraswathi-mahal",
+      "ancient-library",
+      "palm-leaf-manuscripts",
+      "serfoji"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "vivekananda-rock-memorial",
+    "name": "Vivekananda Rock Memorial",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "type": "spiritual",
+    "shortDescription": "Sacred offshore island monument 500 meters into the Laccadive Sea where Swami Vivekananda meditated and attained spiritual enlightenment in 1892.",
+    "longDescription": "Constructed in 1970 atop two rocky islets where the Bay of Bengal, Arabian Sea, and Indian Ocean meet (Triveni Sangam). The memorial features the Vivekananda Mandapam and Shripada Mandapam (housing the divine footprint of Goddess Kanya Kumari), reachable by ferry boat across rolling waves.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 8.078,
+      "longitude": 77.555
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Built atop an ocean rock where three seas converge",
+      "Dhyana Mandapam quiet meditation hall with perpetual 'Om' resonance",
+      "Short scenic ferry ride across turquoise sea"
+    ],
+    "activities": [
+      "Ferry ride across ocean waters to the rock",
+      "Silent meditation in the subterranean Dhyana Mandapam",
+      "Taking 360-degree ocean photos"
+    ],
+    "nearbyPlaces": [
+      "Thiruvalluvar Statue",
+      "Kanyakumari Beach",
+      "Sunset Point"
+    ],
+    "travelTips": [
+      "Ferry services run from 8:00 AM to 4:00 PM; opt for special entry ticket to skip long ferry queues during peak tourist season"
+    ],
+    "accessibility": "Ferries have boarding ramps; stairs lead up onto the rock monument",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "vivekananda-rock",
+      "triveni-sangam",
+      "ferry-ride",
+      "kanyakumari",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "thiruvalluvar-statue",
+    "name": "Thiruvalluvar Statue",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "type": "heritage",
+    "shortDescription": "Colossal 133-foot stone statue of Tamil saint-poet Thiruvalluvar, standing on a nearby rock islet symbolizing the 133 chapters of Thirukkural.",
+    "longDescription": "Designed by renowned temple architect Dr. V. Ganapati Sthapati and sculpted by 500 stone masons. Rising 133 feet (representing the 133 chapters of the Thirukkural), the pedestal stands 38 feet high (signifying the 38 chapters of Virtue/Aram) and the statue stands 95 feet (wealth and love).",
+    "category": [
+      "heritage",
+      "architecture",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 8.077,
+      "longitude": 77.554
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "133-foot monolithic-style granite statue standing in the open sea",
+      "Glass bridge connecting Vivekananda Rock to Thiruvalluvar Statue",
+      "Engineered to withstand ocean typhoons and earthquakes"
+    ],
+    "activities": [
+      "Ferry trip to the monument base",
+      "Walking through the hollow pedestal hall inscribed with verses"
+    ],
+    "nearbyPlaces": [
+      "Vivekananda Rock Memorial",
+      "Kanyakumari Beach"
+    ],
+    "travelTips": [
+      "A brand new 77-meter glass pedestrian walkway connects Vivekananda Rock to this statue"
+    ],
+    "accessibility": "Ferry access; internal staircase inside pedestal",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "thiruvalluvar-statue",
+      "monumental-sculpture",
+      "kanyakumari"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "kanyakumari-beach",
+    "name": "Kanyakumari Beach & Triveni Sangam",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "type": "beaches",
+    "shortDescription": "The southernmost land tip of mainland India, where multi-colored sand and three great waters—Bay of Bengal, Arabian Sea, and Indian Ocean—converge.",
+    "longDescription": "At the southern apex of the Indian subcontinent, Kanyakumari Beach is famed for its unique multi-colored sand grains, dramatic rock barriers, and the rare geographical marvel where visitors can watch both sunrise and sunset over the open ocean from the same shoreline.",
+    "category": [
+      "beaches",
+      "nature",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 8.081,
+      "longitude": 77.553
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Southernmost tip of mainland India",
+      "Visible convergence of three oceans (Triveni Sangam)",
+      "Unique multi-colored sand dunes on the shoreline",
+      "Simultaneous full moon rise and sun set on Chitra Pournami"
+    ],
+    "activities": [
+      "Watching sunrise over the Bay of Bengal",
+      "Shopping for conch shells and seashell handicrafts",
+      "Holy dip at Triveni Sangam bathing ghat"
+    ],
+    "nearbyPlaces": [
+      "Bhagavathy Amman Temple",
+      "Gandhi Memorial Mandapam"
+    ],
+    "travelTips": [
+      "The rocky shoreline has strong undertows; bathing should only be done in designated shallow stone ghat enclosures"
+    ],
+    "accessibility": "Paved viewing promenades with protective railings",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "kanyakumari-beach",
+      "southern-tip",
+      "triveni-sangam",
+      "three-oceans"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "sunset-point-kanyakumari",
+    "name": "Sunset Point (Kanyakumari)",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "type": "nature",
+    "shortDescription": "Scenic western coastal promenade dedicated to viewing the brilliant crimson ball of the sun sinking into the Arabian Sea.",
+    "longDescription": "Located about 1.5 km southwest of the main town center, Sunset Point offers an unobstructed panoramic view of the horizon where the sun plunges into the crimson waters of the Arabian Sea. In April during Chitra Pournami, you can witness the sun setting on one side while the full moon rises on the other.",
+    "category": [
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 8.079,
+      "longitude": 77.538
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Direct sunset into the Arabian Sea horizon",
+      "Chitra Pournami simultaneous sunset and moonrise",
+      "Refreshing coastal sea breezes"
+    ],
+    "activities": [
+      "Sunset photography",
+      "Enjoying fresh spicy fried fish and raw mango slices at beach stalls"
+    ],
+    "nearbyPlaces": [
+      "Kanyakumari Beach",
+      "Vivekananda Rock Memorial"
+    ],
+    "travelTips": [
+      "Arrive by 5:15 PM to claim a comfortable spot along the sea wall before sunset at 6:15 PM"
+    ],
+    "accessibility": "Paved sea-view promenade with benches",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "sunset-point",
+      "arabian-sea",
+      "kanyakumari"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "padmanabhapuram-palace",
+    "name": "Padmanabhapuram Palace",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "type": "forts-palaces",
+    "shortDescription": "16th-century wooden palace masterpiece of the Travancore Maharajas, built in traditional Kerala architectural style at the foot of Veli Hills.",
+    "longDescription": "Located 37 km from Kanyakumari, this palace was the seat of the Kingdom of Travancore. Constructed almost entirely of teak and rosewood, it is an engineering wonder featuring polished black granite floors made of egg-white and coconut shells, intricate wooden lattice screens, a four-storey King's bedchamber, and a clock tower operating since 1832.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 8.2508,
+      "longitude": 77.3275
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Asia's largest wooden palace complex",
+      "Miraculous mirror-polished black floors made of herbal concoction",
+      "Mantrasala (King's Council Chamber) with mica windows",
+      "Royal carved four-poster bed made from 64 medicinal woods"
+    ],
+    "activities": [
+      "Barefoot walking on centuries-old polished herbal floors",
+      "Studying traditional Kerala timber joinery architecture"
+    ],
+    "nearbyPlaces": [
+      "Thiruparappu Waterfalls",
+      "Mathur Hanging Trough"
+    ],
+    "travelTips": [
+      "Footwear must be deposited outside as visitors walk barefoot to preserve the polished heritage floors; closed on Mondays"
+    ],
+    "accessibility": "Ground floor accessible; narrow traditional wooden stairs to upper chambers",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "padmanabhapuram-palace",
+      "wooden-palace",
+      "travancore",
+      "architecture"
+    ],
+    "featured": true,
+    "priorityRank": 5
+  },
+  {
+    "id": "bangalore-palace",
+    "name": "Bangalore Palace",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "forts-palaces",
+    "shortDescription": "Tudor-revival royal palace built in 1878 inspired by England's Windsor Castle, featuring fortified towers, battlements, and Spanish ceramic benches.",
+    "longDescription": "Purchased by the Mysore royal family (Wodeyars) in 1884, Bangalore Palace is an extraordinary specimen of Tudor-style architecture in South India. Featuring wooden battlements, fortified crenellations, stained glass windows, and grand durbar halls with yellow ceramic tiles and 19th-century paintings by Raja Ravi Varma.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.9988,
+      "longitude": 77.5921
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Windsor Castle-inspired Tudor architectural facade",
+      "Durbar Hall with stained glass and yellow Spanish tiles",
+      "Original Raja Ravi Varma paintings collection",
+      "Sprawling royal lawns that host international rock concerts"
+    ],
+    "activities": [
+      "Audio-guided heritage palace tour",
+      "Exploring royal carriage and vintage photography rooms"
+    ],
+    "nearbyPlaces": [
+      "Sankey Tank",
+      "Cubbon Park",
+      "National Gallery of Modern Art"
+    ],
+    "travelTips": [
+      "Audio guide in multiple languages included with admission ticket; photography fee is separate"
+    ],
+    "accessibility": "Ground floor accessible; staircase to upper Durbar Hall",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "bangalore-palace",
+      "wodeyar",
+      "tudor-architecture",
+      "bengaluru"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "lalbagh-botanical-garden",
+    "name": "Lalbagh Botanical Garden",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "nature",
+    "shortDescription": "Historic 240-acre botanical garden commissioned by Hyder Ali in 1760, famous for its London Crystal Palace-modeled Glass House and ancient rock.",
+    "longDescription": "Commissioned by Hyder Ali and completed by Tipu Sultan, Lalbagh houses over 1,850 species of rare exotic flora and trees centuries old. The focal point is the grand cast-iron Glass House modeled after London's Crystal Palace, which hosts iconic Republic Day and Independence Day flower shows, alongside a 3-billion-year-old Peninsular Gneiss rock formation.",
+    "category": [
+      "nature",
+      "heritage",
+      "family"
+    ],
+    "bestTimeToVisit": "Year-round (Flower shows in Jan & Aug)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.9507,
+      "longitude": 77.5848
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Victorian Glass House modeled after Crystal Palace",
+      "Lalbagh Rock (3,000-million-year-old Peninsular Gneiss)",
+      "Annual Republic Day and Independence Day mega flower shows",
+      "Lake and lotus ponds with resident aquatic birds"
+    ],
+    "activities": [
+      "Early morning joggers walk",
+      "Flower show photography",
+      "Climbing the ancient rock to Kempegowda watchtower"
+    ],
+    "nearbyPlaces": [
+      "MTR (Mavalli Tiffin Room for iconic masala dosa)",
+      "Cubbon Park"
+    ],
+    "travelTips": [
+      "Don't miss breakfast at historic MTR located right beside Lalbagh's Main Gate"
+    ],
+    "accessibility": "Paved pathways throughout; electric buggy rides available for senior citizens",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "lalbagh",
+      "glass-house",
+      "botanical-garden",
+      "flower-show",
+      "bengaluru"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "cubbon-park",
+    "name": "Cubbon Park",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "nature",
+    "shortDescription": "The green lungs of Bengaluru spanning 300 acres, filled with bamboo thickets, colonial statues, and heritage red brick public buildings.",
+    "longDescription": "Established in 1870 by British Commissioner Sir Mark Cubbon. This lush sanctuary features over 6,000 trees, wide asphalted walking avenues, and prominent heritage buildings including the neoclassical red-brick Attara Kacheri (High Court), Seshadri Iyer Memorial Library, and Bal Bhavan.",
+    "category": [
+      "nature",
+      "culture",
+      "family"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 12.9763,
+      "longitude": 77.5929
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "300 acres of dense urban canopy with bamboo groves",
+      "Attara Kacheri (Historic red brick High Court)",
+      "Seshadri Iyer Memorial Library with rose garden",
+      "Vehicle-free on Sundays for cyclists, dog lovers, and walkers"
+    ],
+    "activities": [
+      "Morning running and rollerblading",
+      "Sunday dog park social gatherings",
+      "Reading outside the heritage red library"
+    ],
+    "nearbyPlaces": [
+      "Vidhana Soudha",
+      "UB City",
+      "Visvesvaraya Industrial & Technological Museum"
+    ],
+    "travelTips": [
+      "Sundays are completely pedestrianized with fun flea markets and open-air pet meetups"
+    ],
+    "accessibility": "Smooth wide paved avenues ideal for prams and wheelchairs",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "cubbon-park",
+      "green-lungs",
+      "bengaluru",
+      "running",
+      "dogs"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "vidhana-soudha",
+    "name": "Vidhana Soudha",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "heritage",
+    "shortDescription": "Asia's largest legislative building, an imposing 1956 Neo-Dravidian granite marvel inscribed with 'Government Work is God's Work'.",
+    "longDescription": "Constructed under Chief Minister Kengal Hanumanthaiah between 1951 and 1956 using thousands of convict stone masons. Built entirely of Bangalore granite in the Neo-Dravidian architectural style, it features four-faced Ashoka lion capitals, grand stone stairs, and is illuminated on Sunday evenings by 10,000 incandescent lamps.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.9797,
+      "longitude": 77.5907
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand Neo-Dravidian granite architectural facade",
+      "Famous inscription 'Government Work is God's Work'",
+      "Brilliant illumination on Sunday and holiday evenings (6:00 PM - 8:30 PM)",
+      "Attara Kacheri red stone building directly opposite"
+    ],
+    "activities": [
+      "Exterior architectural photography",
+      "Viewing Sunday evening night illumination"
+    ],
+    "nearbyPlaces": [
+      "Cubbon Park",
+      "Vikasa Soudha",
+      "High Court of Karnataka"
+    ],
+    "travelTips": [
+      "Public entry to the interior is restricted without official passes; the exterior view and Sunday lighting are public and breathtaking"
+    ],
+    "accessibility": "Paved viewing plaza with level walking paths",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "vidhana-soudha",
+      "neo-dravidian",
+      "granite",
+      "bengaluru"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "iskcon-bangalore",
+    "name": "ISKCON Sri Radha Krishna Temple",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "spiritual",
+    "shortDescription": "Monumental hill-temple atop Hare Krishna Hill combining modern glass-and-granite architecture with traditional gopuram aesthetics.",
+    "longDescription": "Inaugurated in 1997 by Shankar Dayal Sharma, this is one of the largest ISKCON temple complexes in the world. Situated on a seven-acre hillock at Rajajinagar, it features a 56-foot gold-plated dhwaja-stambha, multiple gilded sanctums, open-air amphitheaters, and the global headquarters of the Akshaya Patra Foundation.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 13.0098,
+      "longitude": 77.5511
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "56-foot gold-plated flag post (Dhwaja Stambha)",
+      "Intricate glass arch ceilings and chandelier lighting",
+      "Continuous melodious Hare Krishna maha-mantra chanting",
+      "Delicious hot khichdi and sweet prasadam distributed to all"
+    ],
+    "activities": [
+      "Darshan of Radha Krishna deities",
+      "Attending evening grand Maha Aarti",
+      "Sampling traditional South Indian sweets at Higher Taste"
+    ],
+    "nearbyPlaces": [
+      "Orion Mall",
+      "World Trade Center Bangalore"
+    ],
+    "travelTips": [
+      "Footwear counters and electronic lockers available; avoid visiting during peak Sunday noon rush if seeking quiet prayer"
+    ],
+    "accessibility": "Escalators and elevators assist devotees reaching the hilltop sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "iskcon",
+      "radha-krishna",
+      "hare-krishna-hill",
+      "bengaluru"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ub-city",
+    "name": "UB City Luxury Boulevard",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "type": "shopping",
+    "shortDescription": "India's premier luxury commercial and lifestyle landmark featuring global haute couture fashion houses, fine dining terraces, and open-air amphitheater.",
+    "longDescription": "Developed jointly by Dr. Vijay Mallya and Prestige Group on Vittal Mallya Road. UB City encompasses four towers crowned with Greco-Roman arches, luxury fashion flagships (Louis Vuitton, Rolex, Burberry), rooftop lounge restaurants, and the Sublime Galleria art gallery.",
+    "category": [
+      "shopping",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.9716,
+      "longitude": 77.5958
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Ultra-luxury global fashion brand boutiques",
+      "Rooftop dining with skyline views of Bengaluru",
+      "Sublime Galleria contemporary art gallery on sky bridge",
+      "Piazza open-air amphitheater hosting jazz concerts"
+    ],
+    "activities": [
+      "Fine dining at open-air rooftop lounges",
+      "Luxury window shopping and art gallery browsing"
+    ],
+    "nearbyPlaces": [
+      "Cubbon Park",
+      "MG Road",
+      "Lavelle Road"
+    ],
+    "travelTips": [
+      "Book rooftop tables in advance for weekend dinners; dress code is smart casual"
+    ],
+    "accessibility": "Elevators, escalators, and wheelchair ramps throughout all four towers",
+    "familyFriendly": true,
+    "budgetLevel": "luxury",
+    "tags": [
+      "ub-city",
+      "luxury-shopping",
+      "fine-dining",
+      "skyline",
+      "bengaluru"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "mysore-palace",
+    "name": "Mysore Palace (Amba Vilas Palace)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "forts-palaces",
+    "shortDescription": "India's most visited royal palace after the Taj Mahal, an Indo-Saracenic marvel illuminated by 97,000 golden incandescent bulbs every Sunday.",
+    "longDescription": "Designed by British architect Henry Irwin and completed in 1912 after the original wooden palace burned down. The official residence of the Wadiyar dynasty features three-storey grey granite battlements, marble domes, the dazzling stained-glass Peacock Pavilion (Kalyana Mandapa), and the Golden Throne carved from 200 kg of pure gold.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March (Special during Dasara)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.3051,
+      "longitude": 76.6551
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunday night illumination by 97,000 golden bulbs",
+      "Peacock Pavilion (Kalyana Mandapa) stained-glass dome",
+      "Indo-Saracenic rose marble domes and grey granite arches",
+      "Epicenter of the world-famous 10-day Mysuru Dasara festival"
+    ],
+    "activities": [
+      "Audio-guided palace interior tour",
+      "Watching Sunday illumination and police brass band performance",
+      "Attending Mysore Dasara Jumboo Savari procession in autumn"
+    ],
+    "nearbyPlaces": [
+      "Chamundi Hills",
+      "Devaraja Market",
+      "Mysuru Zoo"
+    ],
+    "travelTips": [
+      "Do not miss Sunday evening illumination from 7:00 PM to 7:45 PM; footwear must be deposited outside before entering the palace interior"
+    ],
+    "accessibility": "Ramps and golf buggies for elders across the vast palace courtyard",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "mysore-palace",
+      "amba-vilas",
+      "dasara",
+      "illumination",
+      "wadiyar"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "chamundi-hills",
+    "name": "Chamundi Hills & Monolithic Nandi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "spiritual",
+    "shortDescription": "Sacred 1,000-meter hilltop shrine dedicated to Goddess Chamundeshwari, featuring a 1,008-step pilgrimage trail and a 16-foot monolithic Nandi.",
+    "longDescription": "Rising 1,062 meters above sea level overlooking Mysuru, this hill is crowned by the 17th-century Chamundeshwari Temple with a seven-tier gopuram. Halfway up the traditional 1,008-step walking route sits the colossal 16-foot high, 24-foot long monolithic black granite Nandi bull carved in 1659.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.2724,
+      "longitude": 76.671
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "16-foot monolithic black granite Nandi Bull",
+      "Panoramic views of Mysore Palace and city from hill summit",
+      "Seven-tiered golden painted gopuram of Chamundeshwari",
+      "Statue of demon Mahishasura at hill entry"
+    ],
+    "activities": [
+      "Climbing the 1,008 ancient stone stairs",
+      "Darshan of Goddess Chamundeshwari",
+      "Viewing illuminated Mysuru city at night"
+    ],
+    "nearbyPlaces": [
+      "Mysore Palace",
+      "Karanji Lake"
+    ],
+    "travelTips": [
+      "City buses run frequently from Mysore city bus stand directly to the hilltop temple"
+    ],
+    "accessibility": "Motorable road to the top; VIP darshan queues provide expedited access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "chamundi-hills",
+      "nandi-monolith",
+      "chamundeshwari",
+      "mysuru"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "brindavan-gardens",
+    "name": "Brindavan Gardens & KRS Dam",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "nature",
+    "shortDescription": "Famous 60-acre terraced garden laid out across the Kaveri River below Krishnarajasagara Dam, famed for its evening musical fountain show.",
+    "longDescription": "Laid out between 1927 and 1932 by Sir Mirza Ismail, Dewan of Mysore, across the majestic Krishna Raja Sagara (KRS) dam built by Sir M. Visvesvaraya. The terraced Mughal-style garden features illuminated fountains, topiaries, flowerbeds, and a computerized dancing musical fountain show.",
+    "category": [
+      "nature",
+      "family",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.423,
+      "longitude": 76.572
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Computerized dancing musical fountain show",
+      "Terraced Mughal-style water cascades below KRS Dam",
+      "Row and motor boating on the connecting lake channel",
+      "Spectacular night multicolored lighting"
+    ],
+    "activities": [
+      "Watching the evening musical fountain water show",
+      "Boating across the river channel between North and South gardens"
+    ],
+    "nearbyPlaces": [
+      "Ranganathittu Bird Sanctuary",
+      "Srirangapatna"
+    ],
+    "travelTips": [
+      "Musical fountain show starts around 6:30 PM on weekdays and 6:30 PM & 7:30 PM on weekends"
+    ],
+    "accessibility": "Wide paved terraces; stairs lead between upper and lower garden levels",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "brindavan-gardens",
+      "musical-fountain",
+      "krs-dam",
+      "mysuru"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "st-philomenas-cathedral",
+    "name": "St. Philomena's Cathedral",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "spiritual",
+    "shortDescription": "One of the tallest churches in Asia, a 175-foot twin-spired Neo-Gothic cathedral designed after Germany's Cologne Cathedral.",
+    "longDescription": "Constructed in 1936 by French architect Daly under Maharaja Nalvadi Krishnaraja Wadiyar. The twin spires rise 175 feet above the city skyline. Inside, the cathedral features French stained glass windows depicting the Last Supper and Crucifixion, and an underground crypt preserving relics of 3rd-century Saint Philomena.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 12.3211,
+      "longitude": 76.658
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "175-foot soaring twin Neo-Gothic spires",
+      "Imported French stained glass windows",
+      "Underground subterranean crypt with Saint Philomena's relic statue"
+    ],
+    "activities": [
+      "Admiring stained glass biblical scenes",
+      "Visiting the subterranean crypt chapel"
+    ],
+    "nearbyPlaces": [
+      "Mysore Palace",
+      "Devaraja Market"
+    ],
+    "travelTips": [
+      "Modest dress required; silence observed inside main prayer hall"
+    ],
+    "accessibility": "Main cathedral hall accessible; steps lead into underground crypt",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "st-philomenas",
+      "neo-gothic",
+      "cologne-style",
+      "mysuru"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "mysuru-zoo",
+    "name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "type": "wildlife",
+    "shortDescription": "One of the oldest and most acclaimed zoos in India (established in 1892), home to giraffes, elephants, white rhinos, and big cats in lush moated enclosures.",
+    "longDescription": "Established in 1892 by Maharaja Chamarajendra Wadiyar across 157 acres near Chamundi Hills. Known internationally for spacious naturalistic moated enclosures, captive breeding of rare species, and a picturesque walk around Karanji Lake.",
+    "category": [
+      "wildlife",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.302,
+      "longitude": 76.666
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Over 168 animal species from 25 countries",
+      "Naturalistic green enclosures with African elephants, zebras, and giraffes",
+      "Battery-operated safari carts for children and seniors"
+    ],
+    "activities": [
+      "Family walking tour through wooded animal enclosures",
+      "Battery cart ride across the zoo"
+    ],
+    "nearbyPlaces": [
+      "Karanji Lake",
+      "Mysore Palace"
+    ],
+    "travelTips": [
+      "Closed on Tuesdays; carry water as the walking circuit is around 3.5 km"
+    ],
+    "accessibility": "Paved, shaded, flat walking paths; battery buggies available",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "mysuru-zoo",
+      "wildlife",
+      "family",
+      "zoological-gardens"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "virupaksha-temple",
+    "name": "Virupaksha Temple",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "spiritual",
+    "shortDescription": "Ancient 7th-century sacred temple that has functioned uninterrupted since before Vijayanagara, crowned by a 160-foot gopuram on the Tungabhadra.",
+    "longDescription": "The spiritual heart of Hampi, dedicated to Lord Shiva as Virupaksha (consort of local river goddess Pampa). Features an imposing 50-meter eastern gopuram, pillared halls with ceiling frescoes of Mahabharata epics, a pinhole camera effect demonstrating inverted shadow projection, and Lakshmi the resident temple elephant.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 15.3353,
+      "longitude": 76.46
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "160-foot nine-tiered Rajagopuram",
+      "Pinhole camera effect casting inverted shadow of the gopuram on inner wall",
+      "Uninterrupted worship since the 7th century AD",
+      "Blessings from Lakshmi the temple elephant"
+    ],
+    "activities": [
+      "Early morning darshan and elephant blessings",
+      "Studying Vijayanagara ceiling frescoes in the Ranga Mandapa",
+      "Witnessing inverted tower shadow through wall slit"
+    ],
+    "nearbyPlaces": [
+      "Hampi Bazaar",
+      "Hemakuta Hill",
+      "Matanga Hill"
+    ],
+    "travelTips": [
+      "Visit early in the morning when the elephant takes its morning bath in the Tungabhadra River"
+    ],
+    "accessibility": "Flat stone courtyard; small thresholds at inner shrines",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "virupaksha",
+      "hampi",
+      "shiva-temple",
+      "pinhole-camera"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "vittala-temple",
+    "name": "Vittala Temple & Musical Pillars",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage pinnacle of Vijayanagara architecture, featuring the world-famous Stone Chariot and 56 musical pillars.",
+    "longDescription": "Dedicated to Lord Vittala (an aspect of Vishnu). Constructed in the 16th century under King Devaraya II and expanded by Krishnadevaraya. The Ranga Mandapa features 56 slender monolithic pillars that resonate with musical notes (Sa Re Ga Ma) when tapped. In the open courtyard stands the iconic Stone Chariot (Garuda shrine), printed on India's ₹50 currency note.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 15.3364,
+      "longitude": 76.4789
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Iconic Stone Chariot (depicted on ₹50 currency note)",
+      "56 acoustic musical stone pillars (Saregama pillars)",
+      "Intricately carved Kalyana Mandapa wedding hall",
+      "Electric golf cart ride along ancient market street"
+    ],
+    "activities": [
+      "Photography of the Stone Chariot at golden hour",
+      "Exploring the vast ruined marketplace leading to Tungabhadra River"
+    ],
+    "nearbyPlaces": [
+      "King's Balance",
+      "Purandara Dasa Mandapa",
+      "Virupaksha Temple"
+    ],
+    "travelTips": [
+      "Battery-operated eco-carts run from the parking area to the temple gate (1.5 km); visit in late afternoon for golden lighting on the granite"
+    ],
+    "accessibility": "Electric buggy from parking; flat sandy and stone courtyard",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "stone-chariot",
+      "vittala-temple",
+      "musical-pillars",
+      "50-rupee-note"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "stone-chariot",
+    "name": "The Stone Chariot of Hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "One of India's three famous stone chariots, an exquisitely carved monolithic shrine dedicated to Garuda with revolving wheels.",
+    "longDescription": "Standing proudly in the courtyard of the Vittala Temple complex, this is actually a shrine dedicated to Garuda (the eagle mount of Vishnu). Built from interlocking granite slabs, its wheels were once capable of rotating and are embellished with floral motifs, guarded by stone elephants.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 15.3364,
+      "longitude": 76.4788
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Symbol of Karnataka Tourism and featured on ₹50 note",
+      "Intricately assembled stone joinery disguised as monolithic carving",
+      "Pair of stone elephants flanking the front shaft"
+    ],
+    "activities": [
+      "Iconic portrait photography",
+      "Comparing the monument with the ₹50 banknote"
+    ],
+    "nearbyPlaces": [
+      "Vittala Temple",
+      "Ranga Mandapa"
+    ],
+    "travelTips": [
+      "Bring a ₹50 Indian currency note to take the famous perspective photo aligning the note with the chariot"
+    ],
+    "accessibility": "Flat courtyard ground",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "stone-chariot",
+      "garuda",
+      "hampi-symbol",
+      "unesco"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "lotus-mahal",
+    "name": "Lotus Mahal & Zenana Enclosure",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "Elegant two-storey Indo-Islamic pleasure pavilion shaped like a blossoming lotus bud, designed with ingenious subterranean water cooling.",
+    "longDescription": "Located within the walled Zenana Enclosure (Queen's quarters). The Lotus Mahal features recessed multi-cusped arches resembling lotus petals, Islamic domes, and decorative plaster medallions. The hollow pillars originally held terracotta pipes pumping water from nearby wells to cool the royal chambers in summer.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 15.32,
+      "longitude": 76.47
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Indo-Islamic multi-lobed arched architecture",
+      "Ancient pipeline air-cooling technology",
+      "Guarded watchtowers in royal Zenana enclosure",
+      "Manicured green lawns"
+    ],
+    "activities": [
+      "Studying Indo-Islamic synthesis architecture",
+      "Walking through the manicured queen's gardens"
+    ],
+    "nearbyPlaces": [
+      "Elephant Stables",
+      "Queen's Bath",
+      "Hazara Rama Temple"
+    ],
+    "travelTips": [
+      "The ticket for Vittala Temple covers the Zenana Enclosure and Lotus Mahal if visited on the same day"
+    ],
+    "accessibility": "Lawn pathways; entry inside the upper level is restricted for preservation",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "lotus-mahal",
+      "zenana",
+      "indo-islamic",
+      "hampi"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "elephant-stables",
+    "name": "Elephant Stables",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "heritage",
+    "shortDescription": "Monumental row of 11 domed chambers built in Indo-Islamic style to house the royal ceremonial state elephants of the Vijayanagara Empire.",
+    "longDescription": "One of the few royal secular buildings that survived the destruction of Vijayanagara virtually intact. A long, symmetrical structure featuring 11 spacious chambers, each topped with a distinct architectural dome (fluted, ribbed, and octagonal), linked by arched doorways with iron rings in ceilings once used to chain the elephants.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 15.3205,
+      "longitude": 76.4725
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "11 grand domed chambers with diverse Islamic architectural domes",
+      "Survived intact from the 16th century",
+      "Sprawling green lawns ideal for resting between monument visits"
+    ],
+    "activities": [
+      "Architectural photography of the long symmetrical facade",
+      "Exploring adjacent archaeological museum gallery"
+    ],
+    "nearbyPlaces": [
+      "Lotus Mahal",
+      "Guards Quarters",
+      "Hazara Rama Temple"
+    ],
+    "travelTips": [
+      "Located directly behind the Zenana Enclosure through a small garden gate"
+    ],
+    "accessibility": "Spacious flat green lawns with easy walking access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "elephant-stables",
+      "vijayanagara",
+      "heritage",
+      "hampi"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "matanga-hill",
+    "name": "Matanga Hill Sunrise Trek",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "type": "adventure",
+    "shortDescription": "The highest vantage point in central Hampi, offering an unforgettable 360-degree sunrise view over boulder-strewn landscapes and ancient ruins.",
+    "longDescription": "Mentioned in the Ramayana as the hermitage of sage Matanga where Sugriva sought refuge from Vali. A moderate 30-minute hike up ancient rock-cut stairs leads to the Veerabhadra Temple atop the summit, unveiling a surreal Martian panorama of golden granite boulders, banana plantations, and the winding Tungabhadra River.",
+    "category": [
+      "adventure",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 15.331,
+      "longitude": 76.467
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Best sunrise and sunset 360-degree viewpoint in all of Hampi",
+      "Surreal boulder-strewn landscape vistas",
+      "Veerabhadra Temple roof terrace at summit"
+    ],
+    "activities": [
+      "Early morning sunrise hike (start at 5:30 AM)",
+      "Landscape photography capturing morning mist over Tungabhadra"
+    ],
+    "nearbyPlaces": [
+      "Hampi Bazaar",
+      "Virupaksha Temple",
+      "Achyutaraya Temple"
+    ],
+    "travelTips": [
+      "Start climbing 45 minutes before sunrise; carry a flashlight for the early morning ascent and wear shoes with good rubber traction"
+    ],
+    "accessibility": "Requires climbing steep, uneven ancient stone stairs; not wheelchair accessible",
+    "familyFriendly": false,
+    "budgetLevel": "free",
+    "tags": [
+      "matanga-hill",
+      "sunrise",
+      "trekking",
+      "boulders",
+      "hampi"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "abbey-falls",
+    "name": "Abbey Falls (Abbi Falls)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "lakes-waterfalls",
+    "shortDescription": "70-foot roaring waterfall cascading through lush private coffee estates and spice plantations, viewed from a scenic hanging bridge.",
+    "longDescription": "Located 8 km from Madikeri, Abbey Falls tumbles down granite cliffs where early mountain streams unite into the Kaveri River. A short paved walk through fragrant Arabica coffee bushes and black pepper vines leads to a hanging pedestrian bridge directly facing the thunderous cascades.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "July to December (Peak flow after monsoon)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 12.454,
+      "longitude": 75.717
+    },
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "70-foot waterfall framed by coffee and pepper plantations",
+      "Hanging suspension bridge viewpoint",
+      "Lush rainforest walk"
+    ],
+    "activities": [
+      "Photography from the hanging bridge",
+      "Walking through aromatic coffee and spice trees"
+    ],
+    "nearbyPlaces": [
+      "Madikeri Fort",
+      "Raja's Seat"
+    ],
+    "travelTips": [
+      "Swimming is strictly prohibited due to strong currents and submerged rocks; wear comfortable shoes for the 200-step descent"
+    ],
+    "accessibility": "Requires descending and climbing back up ~200 concrete steps through the coffee estate",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "abbey-falls",
+      "waterfall",
+      "coorg",
+      "coffee-plantations"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "rajas-seat",
+    "name": "Raja's Seat",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "nature",
+    "shortDescription": "Seasonal garden and pavilion in Madikeri where the Kings of Kodagu once watched sunsets over layered rolling mist-draped Western Ghats valleys.",
+    "longDescription": "Perched on a cliff edge overlooking deep green valleys, Raja's Seat features a small brick pavilion surrounded by seasonal flowerbeds and musical fountains. In the evenings, mist sweeps up from the valleys below while the setting sun paints the sky in shades of amber and magenta.",
+    "category": [
+      "nature",
+      "hill-stations",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 12.418,
+      "longitude": 75.738
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Historic pavilion where Kodagu Kings relaxed with queens",
+      "Spectacular sunset view over undulating Western Ghats hills",
+      "Evening musical fountain show and toy train for kids"
+    ],
+    "activities": [
+      "Sunset photography",
+      "Evening strolls through flower gardens"
+    ],
+    "nearbyPlaces": [
+      "Madikeri Fort",
+      "Omkareshwara Temple"
+    ],
+    "travelTips": [
+      "Arrive by 5:15 PM to enjoy the golden hour before sunset; musical fountain begins at 7:00 PM"
+    ],
+    "accessibility": "Flat paved garden pathways; wheelchair friendly",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "rajas-seat",
+      "sunset",
+      "valley-view",
+      "coorg",
+      "madikeri"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "dubare-elephant-camp",
+    "name": "Dubare Elephant Camp",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "wildlife",
+    "shortDescription": "Forest department camp on the banks of the Kaveri River where visitors can participate in elephant bathing and feeding interactions.",
+    "longDescription": "Historically the training camp for elephants used in the Mysore Dasara procession. Operated by Jungle Lodges and Resorts, visitors cross the Kaveri River by boat or foot to scrub and bathe elephants with coconut husk brushes in the river, feed them jaggery and ragi balls, and learn about wildlife conservation.",
+    "category": [
+      "wildlife",
+      "adventure",
+      "family"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 12.368,
+      "longitude": 75.903
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Elephant bathing in Kaveri River with coconut husks",
+      "Preparing and hand-feeding nutritious ragi balls",
+      "River crossing by motorboat or walking across rocks",
+      "River rafting along Kaveri during monsoon"
+    ],
+    "activities": [
+      "Hands-on elephant grooming and scrubbing",
+      "White water rafting (during monsoon)",
+      "Birdwatching along riverbanks"
+    ],
+    "nearbyPlaces": [
+      "Kaveri Nisargadhama",
+      "Kushalnagar Tibetan Golden Temple"
+    ],
+    "travelTips": [
+      "Elephant bathing takes place strictly between 9:00 AM and 11:00 AM; arrive early to buy activity tokens"
+    ],
+    "accessibility": "Requires crossing the river by boat and walking on uneven riverbank sand",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "dubare",
+      "elephant-camp",
+      "kaveri-river",
+      "wildlife",
+      "coorg"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "mandalpatti",
+    "name": "Mandalpatti Peak 4x4 Jeep Safari",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "type": "adventure",
+    "shortDescription": "Thrilling off-road 4x4 Jeep trail climbing 4,050 feet to the 'Market of Mists' with endless windswept grassland ridges.",
+    "longDescription": "Located 18 km from Madikeri within the Pushpagiri Wildlife Sanctuary. The journey involves a rugged off-road Jeep climb across rocky streams and mud tracks to reach the windswept summit at 4,050 feet. Clouds literally brush against visitors on the panoramic grasslands overlooking evergreen shola forests.",
+    "category": [
+      "adventure",
+      "nature",
+      "hill-stations"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 12.518,
+      "longitude": 75.7
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Rugged off-road 4x4 Jeep ride through forest trails",
+      "360-degree panorama of rolling Western Ghats ridges",
+      "Dramatic sea of clouds swirling around peak watchtower"
+    ],
+    "activities": [
+      "4x4 Jeep off-roading adventure",
+      "Trekking on windswept grassy ridge trails"
+    ],
+    "nearbyPlaces": [
+      "Madikeri Town",
+      "Abbey Falls"
+    ],
+    "travelTips": [
+      "Hire a local 4x4 Jeep from Madikeri or the base checkpost; normal private cars cannot navigate the rocky terrain"
+    ],
+    "accessibility": "Bumpy off-road Jeep ride; watchtower reached via short uphill walk",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "mandalpatti",
+      "jeep-safari",
+      "adventure",
+      "clouds",
+      "coorg"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "om-beach",
+    "name": "Om Beach",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "beaches",
+    "shortDescription": "World-famous crescent beach shaped naturally in the sacred Hindu symbol 'ॐ' (Om), offering water sports, dolphin boat trips, and beach shacks.",
+    "longDescription": "Named because its two adjoining semicircular coves naturally form the auspicious shape of the sacred syllable 'Om'. Fringed by black rocky outcrops, golden sands, and coconut palms, it offers banana boat rides, jet skiing, surfing, and laid-back cliffside cafes like Namaste Cafe.",
+    "category": [
+      "beaches",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 14.518,
+      "longitude": 74.316
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Natural geographical formation of sacred 'Om' (ॐ) shape",
+      "Namaste Cafe cliffside dining overlooking waves",
+      "Dolphin spotting boat rides into the Arabian Sea",
+      "Starting point for the famous Gokarna 5-beach trek"
+    ],
+    "activities": [
+      "Swimming in sheltered coves",
+      "Trekking to Half Moon and Paradise beaches",
+      "Speedboat rides and dolphin spotting"
+    ],
+    "nearbyPlaces": [
+      "Kudle Beach",
+      "Half Moon Beach",
+      "Mahabaleshwar Temple"
+    ],
+    "travelTips": [
+      "Watch the sunset from the rocky promontory separating the two curves of the 'Om'"
+    ],
+    "accessibility": "Paved stairs lead down from the cliff parking lot to the beach sand",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "om-beach",
+      "gokarna",
+      "beach-trek",
+      "arabian-sea",
+      "water-sports"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kudle-beach",
+    "name": "Kudle Beach",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "beaches",
+    "shortDescription": "Vast white-sand crescent cove backed by palm-fringed cliffs, famous for beach yoga, glowing sunsets, and candlelit seafood shacks.",
+    "longDescription": "A wide, gentle sandy bay located just over the hill from Gokarna town. Beloved by backpackers, yogis, and travelers seeking tranquility. By day, visitors swim and practice yoga; by night, beach shacks light up with bamboo lanterns and candles serving wood-fired pizzas and fresh grilled fish.",
+    "category": [
+      "beaches",
+      "wellness",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 14.529,
+      "longitude": 74.314
+    },
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Wide crescent bay ideal for morning beach yoga",
+      "Romantic sunset dining with tables set right on the sand",
+      "Gentle swimming conditions compared to open ocean beaches"
+    ],
+    "activities": [
+      "Morning yoga on the beach",
+      "Sunset watching and candlelit beach dining",
+      "Swimming in the Arabian Sea"
+    ],
+    "nearbyPlaces": [
+      "Om Beach",
+      "Gokarna Main Beach"
+    ],
+    "travelTips": [
+      "Vehicles cannot go directly onto the beach; park on the hilltop and take the pleasant 5-minute footpath down"
+    ],
+    "accessibility": "Footpath descent from cliff parking",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kudle-beach",
+      "yoga",
+      "sunset-cafes",
+      "gokarna"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "half-moon-beach",
+    "name": "Half Moon Beach & Paradise Beach",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "beaches",
+    "shortDescription": "Secluded hidden coves accessible only by hiking over rocky coastal cliffs or taking a fishing boat, offering pure untouched coastal wilderness.",
+    "longDescription": "Tucked away beyond Om Beach, Half Moon Beach is a small secluded crescent cove with pristine turquoise water. A further 20-minute hike over coastal headlands leads to Paradise Beach (Full Moon Beach), surrounded by dramatic granite boulders and tranquil waves away from all road traffic.",
+    "category": [
+      "beaches",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 14.512,
+      "longitude": 74.323
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "No road access ensures undisturbed natural serenity",
+      "Coastal cliff trek connecting Om, Half Moon, and Paradise beaches",
+      "Crystal clear shallow water for peaceful swimming"
+    ],
+    "activities": [
+      "Coastal cliff trekking",
+      "Hiring local wooden fishing boats for transfers",
+      "Unplugged relaxation"
+    ],
+    "nearbyPlaces": [
+      "Om Beach",
+      "Paradise Beach"
+    ],
+    "travelTips": [
+      "Carry sufficient water and snacks as there are limited commercial facilities; wear sturdy shoes for cliff trails"
+    ],
+    "accessibility": "Requires hiking across rocky cliff paths or hiring a boat",
+    "familyFriendly": false,
+    "budgetLevel": "budget",
+    "tags": [
+      "half-moon-beach",
+      "paradise-beach",
+      "secluded",
+      "trek",
+      "gokarna"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "mahabaleshwar-temple-gokarna",
+    "name": "Mahabaleshwar Temple (Atmalinga)",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "type": "spiritual",
+    "shortDescription": "4th-century Dravidian granite shrine enshrining the legendary Atmalinga of Lord Shiva, making Gokarna known as the 'Kashi of the South'.",
+    "longDescription": "According to mythology, demon king Ravana obtained the potent Atmalinga from Lord Shiva with the condition that it must never be placed on the earth. Lord Ganesha in the guise of a Brahmin boy tricked Ravana and placed the lingam firmly into the ground at Gokarna. Devotees touch the sacred lingam through a hole in the carved stone floor.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March (Special during Maha Shivaratri)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 14.5427,
+      "longitude": 74.3184
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred Atmalinga of Lord Shiva touched by devotees",
+      "Ancient 4th-century Kadamba and Dravidian granite architecture",
+      "Holy Kotiteertha temple tank nearby for ritual ablutions",
+      "Grand chariot festival during Maha Shivaratri"
+    ],
+    "activities": [
+      "Touching the sacred Atmalinga during puja",
+      "Holy bath at Kotiteertha sacred tank",
+      "Visiting the adjacent Maha Ganapathi Temple"
+    ],
+    "nearbyPlaces": [
+      "Kotiteertha",
+      "Maha Ganapathi Temple",
+      "Gokarna Main Beach"
+    ],
+    "travelTips": [
+      "Traditional dress code: Men must remove shirts and wear dhotis; women must wear sarees or salwar suits"
+    ],
+    "accessibility": "Paved temple prakaram; stone floor inside inner sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "atmalinga",
+      "shiva-temple",
+      "kashi-of-south",
+      "gokarna",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "badami-cave-temples",
+    "name": "Badami Cave Temples",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Badami",
+    "citySlug": "badami",
+    "type": "heritage",
+    "shortDescription": "Four magnificent 6th-century rock-cut cave temples carved into red sandstone cliffs by the Early Chalukyas, overlooking Agastya Lake.",
+    "longDescription": "The capital of the Early Chalukya dynasty from 540 to 757 AD. Four rock-cut caves carved into towering red sandstone cliffs represent Hindu (Shiva and Vishnu) and Jain faiths. Cave 1 features the famed 18-armed dancing Nataraja executing 81 Bharatanatyam postures; Cave 3 showcases colossal carved sculptures of Vishnu as Narasimha and Varaha.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 15.9185,
+      "longitude": 75.676
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "18-armed dancing Shiva Nataraja with 81 classical dance poses",
+      "Massive rock-cut reliefs of Vishnu, Varaha, and Trivikrama",
+      "Spectacular views overlooking Agastya Lake and Bhutanatha Temple",
+      "Carved red sandstone pillars and painted ceiling friezes"
+    ],
+    "activities": [
+      "Studying 6th-century rock-cut iconography",
+      "Climbing between the four cliff caves",
+      "Photography across the red canyon"
+    ],
+    "nearbyPlaces": [
+      "Agastya Lake",
+      "Bhutanatha Temples",
+      "Badami Fort"
+    ],
+    "travelTips": [
+      "Visit in late afternoon when the warm western sun lights up the red sandstone carvings; watch out for monkeys on the stone stairs"
+    ],
+    "accessibility": "Requires climbing stone staircases connecting the four cave levels",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco-tentative",
+      "badami-caves",
+      "chalukya",
+      "rock-cut",
+      "nataraja"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "agastya-lake",
+    "name": "Agastya Lake & Bhutanatha Temples",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "city": "Badami",
+    "citySlug": "badami",
+    "type": "heritage",
+    "shortDescription": "Sacred artificial lake cradled by towering red cliffs, featuring the 7th-century sandstone Bhutanatha Temples extending right into the water.",
+    "longDescription": "Created in the 5th century and believed to possess miraculous healing waters. Flanked by the Northern and Southern rock cliffs of Badami, the lake's eastern shore houses the poetic Bhutanatha Group of Temples, whose stone plinths are lapped by the emerald waters during monsoon, creating one of India's most evocative architectural reflections.",
+    "category": [
+      "heritage",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 15.92,
+      "longitude": 75.684
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Bhutanatha Temple plinth reflected in emerald waters",
+      "Red sandstone cliff amphitheater surrounding the lake",
+      "Historic stone ghats where locals bathe and wash clothes",
+      "Rock carvings of Vishnu's avatars behind the temple"
+    ],
+    "activities": [
+      "Sunset photography of temple reflections",
+      "Walking along the quiet lake banks",
+      "Bouldering on adjacent red sandstone cliffs"
+    ],
+    "nearbyPlaces": [
+      "Badami Cave Temples",
+      "Archaeological Museum Badami"
+    ],
+    "travelTips": [
+      "The best photography angle is from the western ghats looking east towards Bhutanatha Temple at sunset"
+    ],
+    "accessibility": "Paved footpath along lake edge to the temple",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "agastya-lake",
+      "bhutanatha-temple",
+      "reflections",
+      "badami"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "rk-beach-vizag",
+    "name": "Ramakrishna Beach (RK Beach)",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "type": "beaches",
+    "shortDescription": "Vibrant coastal promenade along the Bay of Bengal, featuring submarine and aircraft museums, war memorials, and seaside street food.",
+    "longDescription": "The premier beachfront of Visakhapatnam stretching along Beach Road. Flanked by green headlands, it features an extensive paved walking esplanade, the historic Victory at Sea 1971 war memorial, INS Kurusura submarine museum, TU 142 aircraft museum, and lively evening chaat stalls.",
+    "category": [
+      "beaches",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 17.7126,
+      "longitude": 83.3188
+    },
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Scenic Beach Road seaside promenade",
+      "Victory at Sea 1971 war memorial",
+      "INS Kurusura submarine museum on beach sands",
+      "Sizzling beachside snacks (Muri Mixture)"
+    ],
+    "activities": [
+      "Evening promenade walking",
+      "Visiting maritime museum complexes",
+      "Seafood street dining"
+    ],
+    "nearbyPlaces": [
+      "INS Kurusura Submarine",
+      "Kailasagiri",
+      "Rushikonda Beach"
+    ],
+    "travelTips": [
+      "Strong undercurrents make swimming hazardous; enjoy the breezes from the safety of the paved promenade"
+    ],
+    "accessibility": "Paved beach road esplanade with ramps",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "rk-beach",
+      "vizag",
+      "bay-of-bengal",
+      "promenade"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kailasagiri-vizag",
+    "name": "Kailasagiri Hilltop Park",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "type": "hill-stations",
+    "shortDescription": "360-foot hilltop park reached by coastal ropeway cable car, crowned by 40-foot white statues of Shiva and Parvati overlooking the sea.",
+    "longDescription": "Sprawling across 380 acres atop a 360-foot hill overlooking both Visakhapatnam city and the Bay of Bengal. Reachable by an exciting ropeway cable car, it features manicured floral clocks, Titanic viewpoint, circular toy train, and 40-foot colossal statues of Lord Shiva and Goddess Parvati.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 17.749,
+      "longitude": 83.342
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Coastal passenger ropeway cable car ride",
+      "40-foot white statues of Shiva and Parvati",
+      "Titanic viewpoint with panoramic ocean and city views",
+      "Circular hilltop toy train track"
+    ],
+    "activities": [
+      "Riding the scenic ropeway cable car",
+      "Toy train tour of the hilltop perimeter",
+      "Panoramic sunset landscape photography"
+    ],
+    "nearbyPlaces": [
+      "RK Beach",
+      "Rushikonda Beach",
+      "Tenneti Park"
+    ],
+    "travelTips": [
+      "Take the ropeway up for panoramic views and take the winding road down or vice versa"
+    ],
+    "accessibility": "Paved hilltop walkways; ropeway cabins require short step boarding",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kailasagiri",
+      "ropeway",
+      "shiva-statue",
+      "viewpoint",
+      "vizag"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "ins-kurusura-submarine",
+    "name": "INS Kurusura Submarine Museum",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "type": "museums",
+    "shortDescription": "South Asia's first submarine museum, a decommissioned Soviet-built submarine beached on the sands of RK Beach for guided walkthroughs.",
+    "longDescription": "A decommissioned Foxtrot-class submarine of the Indian Navy that served for 31 years and participated in the 1971 Indo-Pak war. Hauled onto the sands of RK Beach in 2001, visitors walk through the control rooms, periscope, torpedo bay, and crew quarters guided by retired naval submariners.",
+    "category": [
+      "museums",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 17.7166,
+      "longitude": 83.3283
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Walk through actual decommissioned 91-meter submarine",
+      "Working periscopes, control rooms, and sonar stations",
+      "Guided tours narrated by retired Indian Navy submariners",
+      "TU-142 anti-submarine warfare aircraft museum directly opposite"
+    ],
+    "activities": [
+      "Looking through submarine periscopes",
+      "Learning about underwater naval warfare"
+    ],
+    "nearbyPlaces": [
+      "TU-142 Aircraft Museum",
+      "RK Beach",
+      "Matsyadarshini Aquarium"
+    ],
+    "travelTips": [
+      "Closed on Mondays; tickets sell out quickly on weekend afternoons, book online or arrive early"
+    ],
+    "accessibility": "Narrow internal hatches and metal stairs make wheelchair access inside the submarine impossible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "submarine-museum",
+      "kurusura",
+      "naval-history",
+      "vizag"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "yarada-beach",
+    "name": "Yarada Beach",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "type": "beaches",
+    "shortDescription": "Secluded golden sand beach flanked on three sides by lush green hills of Dolphin's Nose, offering pristine untouched coastal serenity.",
+    "longDescription": "Located 15 km from Vizag city behind Dolphin's Nose hill, Yarada Beach is an unspoiled paradise. Enclosed by rolling emerald hills and banana plantations, the beach features golden sand, crashing blue surf, and a dramatic drive over the Dolphin's Nose ridge overlooking Vizag harbor.",
+    "category": [
+      "beaches",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 17.653,
+      "longitude": 83.27
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Framed by green hills on three sides and the ocean on the fourth",
+      "Clean uncrowded golden sands",
+      "Scenic coastal drive past Dolphin's Nose lighthouse"
+    ],
+    "activities": [
+      "Beachcombing and relaxing away from city crowds",
+      "Panoramic photography of coastline from Dolphin's Nose hill"
+    ],
+    "nearbyPlaces": [
+      "Dolphin's Nose Lighthouse",
+      "Gangavaram Port"
+    ],
+    "travelTips": [
+      "The sea is deep with strong riptides here, avoid venturing deep into the water; carry refreshments as shack options are minimal"
+    ],
+    "accessibility": "Descent down steps to the beach sand",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "yarada-beach",
+      "secluded-beach",
+      "dolphins-nose",
+      "vizag"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "simhachalam-temple",
+    "name": "Sri Varaha Lakshmi Narasimha Temple (Simhachalam)",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "type": "spiritual",
+    "shortDescription": "11th-century hill shrine dedicated to Lord Narasimha, where the deity is perpetually covered in a thick layer of sandalwood paste.",
+    "longDescription": "Perched 800 feet atop Simhachalam Hill, this historic temple fuses Kalinga and Chola architectural traditions with stone inscriptions dating from 1087 AD. The idol of Lord Narasimha is kept covered in an oval shape under a thick layer of sandalwood paste (Chandan) throughout the year, revealed in its natural form (Nijaroopa) on only one sacred day during Chandanotsavam.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 17.7667,
+      "longitude": 83.25
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Lord Narasimha idol covered in 480 kg of sandalwood paste",
+      "Richly sculpted 16th-century stone Kalyana Mandapa with 96 pillars",
+      "Panoramic hillside views over Visakhapatnam valley",
+      "Famous annual Chandanotsavam festival in Akshaya Tritiya"
+    ],
+    "activities": [
+      "Hill temple darshan",
+      "Studying Kalinga stone carvings",
+      "Tasting traditional Simhachalam Laddu and Pulihora prasad"
+    ],
+    "nearbyPlaces": [
+      "Visakhapatnam (16 km)",
+      "Kambalakonda Wildlife Sanctuary"
+    ],
+    "travelTips": [
+      "Special darshan tickets available online or at the hill temple counter to skip long queues"
+    ],
+    "accessibility": "Motorable ghat road right to temple entrance; steps to sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "simhachalam",
+      "narasimha-temple",
+      "kalinga-architecture",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "tirumala-venkateswara-temple",
+    "name": "Sri Venkateswara Swamy Temple (Tirumala Balaji)",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "type": "spiritual",
+    "shortDescription": "The world's richest and most visited temple, perched atop the seven holy peaks of Seshachalam Hills, crowned by the golden Ananda Nilayam.",
+    "longDescription": "Dedicated to Lord Venkateswara (an incarnation of Vishnu). Located on the seventh peak (Venkatadri) of Tirumala Hills, the temple attracts over 75,000 pilgrims daily. Features the gold-gilded Ananda Nilayam vimana tower, centuries of royal patronage from Vijayanagara Emperor Krishnadevaraya, and the world-renowned GI-tagged Tirupati Laddu.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "4 - 6 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 13.6833,
+      "longitude": 79.3472
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Golden Ananda Nilayam vimana tower",
+      "GI-tagged sacred Tirupati Laddu prasadam",
+      "Vaikunta Dwaram and Swami Pushkarini holy tank",
+      "Alipiri and Srivari Mettu traditional footpath trekking trails"
+    ],
+    "activities": [
+      "Darshan of Lord Venkateswara",
+      "Trekking the 3,550 stone steps of Alipiri footpath",
+      "Holy dip at Swami Pushkarini tank"
+    ],
+    "nearbyPlaces": [
+      "Akasa Ganga",
+      "Silathoranam natural rock arch",
+      "Kapila Theertham"
+    ],
+    "travelTips": [
+      "Book online Special Entry Darshan (SED ₹300) tickets months in advance on the official TTD portal"
+    ],
+    "accessibility": "Wheelchair assistance and dedicated senior citizen darshan queues available",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "tirumala",
+      "balaji",
+      "tirupati-temple",
+      "ananda-nilayam",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kapila-theertham",
+    "name": "Kapila Theertham & Waterfall",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "type": "spiritual",
+    "shortDescription": "Sacred Shiva temple situated at the base of Tirumala Hills where a mountain waterfall cascades into a natural holy temple pool.",
+    "longDescription": "The only temple dedicated to Lord Shiva in Tirupati town. Sage Kapila is said to have meditated here. A mountain spring cascades down the red rock cliffs of Seshachalam Hills directly into the temple tank (Kapila Sarovar), creating a holy waterfall pool where pilgrims bathe before ascending to Tirumala.",
+    "category": [
+      "spiritual",
+      "lakes-waterfalls",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March (Spectacular after monsoon rains)",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 13.654,
+      "longitude": 79.423
+    },
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Natural mountain waterfall cascading into sacred temple tank",
+      "Sage Kapila's historic rock cave shrine",
+      "Entrance gateway at the base of Tirumala hills"
+    ],
+    "activities": [
+      "Holy dip in the waterfall pool",
+      "Shiva darshan before beginning Tirumala pilgrimage"
+    ],
+    "nearbyPlaces": [
+      "Alipiri (Foot of Tirumala)",
+      "ISCKON Tirupati"
+    ],
+    "travelTips": [
+      "The waterfall is at its most dramatic right after the northeast monsoon (November - January)"
+    ],
+    "accessibility": "Paved stairs lead down to the temple courtyard and tank",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kapila-theertham",
+      "shiva-temple",
+      "waterfall-pool",
+      "tirupati"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "sri-padmavathi-temple",
+    "name": "Sri Padmavathi Ammavari Temple (Tiruchanur)",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "type": "spiritual",
+    "shortDescription": "Sacred temple of Goddess Padmavathi (consort of Lord Venkateswara) in Tiruchanur, traditionally visited following Tirumala darshan.",
+    "longDescription": "Located 5 km from Tirupati in Tiruchanur. Goddess Lakshmi incarnated here as Padmavathi in a golden lotus pond (Padma Sarovaram). Pilgrimage tradition dictates that a journey to Tirupati is complete only after visiting Goddess Padmavathi.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 13.612,
+      "longitude": 79.45
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred abode of Goddess Padmavathi",
+      "Padma Sarovaram holy lotus theertham",
+      "Annual Karthika Brahmotsavam festival with golden chariot"
+    ],
+    "activities": [
+      "Darshan of Goddess Padmavathi",
+      "Holy parikrama around Padma Sarovaram"
+    ],
+    "nearbyPlaces": [
+      "Tirupati Town (5 km)",
+      "Govindaraja Swamy Temple"
+    ],
+    "travelTips": [
+      "Visit in the evening after completing Tirumala darshan; special darshan tickets available"
+    ],
+    "accessibility": "Paved corridors and wheelchair friendly temple access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "padmavathi-temple",
+      "tiruchanur",
+      "lakshmi",
+      "tirupati"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "talakona-waterfalls",
+    "name": "Talakona Waterfalls",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Andhra Pradesh's highest waterfall (270 feet) plunging into Sri Venkateswara National Park, surrounded by medicinal plants and canopy walks.",
+    "longDescription": "Located 49 km from Tirupati in Nerabailu village, Talakona ('head hill') is the highest waterfall in Andhra Pradesh. Cascading 270 feet through deep deciduous forests, the water is enriched with medicinal forest herbs. Features a 240-meter canopy rope walk, bamboo huts, and Lord Siddheswara Swamy shrine.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "September to January",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 13.805,
+      "longitude": 79.215
+    },
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Highest waterfall in Andhra Pradesh (270 feet)",
+      "Medicinal mineral-rich natural waterfall pool",
+      "240-meter tree canopy ropeway bridge walk",
+      "Sri Venkateswara National Park dense biosphere"
+    ],
+    "activities": [
+      "Trekking 2 km through dense forest to the fall base",
+      "Walking the elevated tree canopy bridge",
+      "Swimming in the cool natural pool"
+    ],
+    "nearbyPlaces": [
+      "Tirupati (49 km)",
+      "Chandragiri Fort"
+    ],
+    "travelTips": [
+      "Wear sturdy shoes for the 2-km forest trail; pack a change of clothes if swimming in the plunge pool"
+    ],
+    "accessibility": "2 km forest trekking trail with uneven stones; not wheelchair accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "talakona",
+      "highest-waterfall",
+      "andhra-pradesh",
+      "canopy-walk",
+      "trekking"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "borra-caves",
+    "name": "Borra Caves",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Araku",
+    "citySlug": "araku",
+    "type": "nature",
+    "shortDescription": "Million-year-old limestone karst caves extending 80 meters deep, filled with dramatic stalactites, stalagmites, and multicolored illumination.",
+    "longDescription": "Discovered in 1807 by British geologist William King in the Ananthagiri hills. Carved over millions of years by the subterranean Gosthani River, these caves feature spectacular calcium carbonate speleothems, natural Shiva lingam formations, and a rainbow LED lighting system operated by AP Tourism.",
+    "category": [
+      "nature",
+      "adventure",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.28,
+      "longitude": 83.04
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Spectacular million-year-old stalactites and stalagmites",
+      "Subterranean Gosthani River flow",
+      "Naturally sculpted Shiva-Parvati rock formation with hilltop shrine",
+      "Dynamic multicolored LED light illumination inside cavern chambers"
+    ],
+    "activities": [
+      "Exploring deep limestone cavern pathways",
+      "Climbing to the natural cave Shiva shrine",
+      "Tasting famous bamboo chicken right outside cave gates"
+    ],
+    "nearbyPlaces": [
+      "Katiki Waterfalls (7 km)",
+      "Araku Valley (36 km)"
+    ],
+    "travelTips": [
+      "The Vistadome scenic train from Vizag stops right at Borra Guhalu railway station"
+    ],
+    "accessibility": "Steep concrete steps and metal stairways inside the cave; requires moderate walking stamina",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "borra-caves",
+      "limestone-caves",
+      "stalactites",
+      "araku-valley"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "araku-valley-plantations",
+    "name": "Araku Valley Coffee Plantations & Tribal Museum",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Araku",
+    "citySlug": "araku",
+    "type": "nature",
+    "shortDescription": "Misty Eastern Ghats hill retreat blanketed with organic GI-tagged tribal coffee plantations, Dhimsa folk dance, and indigenous museums.",
+    "longDescription": "Perched at 3,000 feet in the Eastern Ghats, Araku Valley produces world-renowned organic Arabica coffee cultivated by indigenous adivasi tribes. The town features the Araku Coffee Museum, Tribal Cultural Museum showcasing clay dioramas of Eastern Ghats indigenous traditions, and Padmapuram botanical gardens.",
+    "category": [
+      "nature",
+      "hill-stations",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 18.3273,
+      "longitude": 82.8775
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "GI-tagged Araku Valley organic Arabica coffee",
+      "Tribal Museum with live Dhimsa dance performances",
+      "Scenic Vistadome train ride through 58 mountain tunnels",
+      "Padmapuram Gardens with hanging tree cottages"
+    ],
+    "activities": [
+      "Sipping fresh pour-over coffee at Araku Coffee House",
+      "Watching Dhimsa tribal dance",
+      "Staying in eco-resort tree cottages"
+    ],
+    "nearbyPlaces": [
+      "Borra Caves",
+      "Chaparai Water Cascades"
+    ],
+    "travelTips": [
+      "Book the glass-domed Vistadome coach on the Vizag-Kirandul Express for panoramic tunnel and gorge views"
+    ],
+    "accessibility": "Paved town roads and flat garden paths",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "araku-valley",
+      "tribal-coffee",
+      "hill-station",
+      "vistadome",
+      "eastern-ghats"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "gandikota-fort",
+    "name": "Gandikota Fort & Pennar River Gorge",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "city": "Gandikota",
+    "citySlug": "gandikota",
+    "type": "heritage",
+    "shortDescription": "The 'Grand Canyon of India'—a dramatic 300-foot red sandstone gorge cut by the Pennar River, crowned by the 13th-century Gandikota Fort.",
+    "longDescription": "Formed by the Pennar River slicing through the Erramala Hills, creating a spectacular layered red sandstone canyon reminiscent of Arizona's Grand Canyon. Crowned by the massive 13th-century Gandikota Fort housing the Raghunatha Swamy Temple, the grand Madhavaraya Temple with soaring gopuram, Jama Masjid, and royal granary.",
+    "category": [
+      "heritage",
+      "adventure",
+      "nature",
+      "forts-palaces"
+    ],
+    "bestTimeToVisit": "October to February",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 14.8142,
+      "longitude": 78.2863
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand Canyon of India canyon overlook",
+      "13th-century Gandikota Fort ramparts and battlements",
+      "Madhavaraya Temple with soaring carved gopuram",
+      "Camping under the stars on the canyon rim"
+    ],
+    "activities": [
+      "Sunrise and sunset photography over the red canyon",
+      "Kayaking and rock rappelling on the Pennar River",
+      "Overnight cliffside tent camping"
+    ],
+    "nearbyPlaces": [
+      "Belum Caves (60 km)",
+      "Yaganti Temple (85 km)"
+    ],
+    "travelTips": [
+      "Camp overnight or stay at Haritha Resort to catch both sunset and sunrise; pack a flashlight for exploring fort ruins after dusk"
+    ],
+    "accessibility": "Uneven rocky paths across the fort and canyon rim; sturdy walking shoes required",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "gandikota",
+      "grand-canyon-of-india",
+      "pennar-gorge",
+      "fort",
+      "adventure"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "amber-fort",
+    "name": "Amber Fort & Palace (Amer)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "forts-palaces",
+    "shortDescription": "UNESCO World Heritage 16th-century hilltop citadel crafted from yellow and pink sandstone, famed for the Sheesh Mahal mirror palace.",
+    "longDescription": "Perched dramatically on the Cheel ka Teela (Hill of Eagles) overlooking Maota Lake, Amer Fort was built by Raja Man Singh I in 1592. Blending Rajput and Mughal styles, it houses the legendary Sheesh Mahal (Palace of Mirrors) where a single candle illuminates the entire ceiling with thousands of convex mirror reflections, Diwan-i-Aam, and Sukh Niwas with artificial water cooling.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.9855,
+      "longitude": 75.8513
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sheesh Mahal (Palace of Mirrors) with convex Belgian mirrors",
+      "Ganesh Pol painted royal gate with fresco medallions",
+      "Maota Lake and Kesar Kyari saffron garden reflections",
+      "Evening Sound and Light show narrated by Amitabh Bachchan"
+    ],
+    "activities": [
+      "Jeep ride or elephant trek up the cobbled ramparts",
+      "Audio-guided exploration of royal courtyards",
+      "Evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Jaigarh Fort",
+      "Nahargarh Fort",
+      "Jal Mahal"
+    ],
+    "travelTips": [
+      "Amber Fort is connected to Jaigarh Fort by subterranean fortified tunnels; composite ticket covers Amer, Hawa Mahal, and Jantar Mantar"
+    ],
+    "accessibility": "Cobblestone slope; 4x4 Jeeps take visitors directly to the upper Suraj Pol entrance",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "amber-fort",
+      "sheesh-mahal",
+      "jaipur",
+      "hill-fort"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "hawa-mahal",
+    "name": "Hawa Mahal (Palace of Winds)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "heritage",
+    "shortDescription": "Iconic five-storey pink sandstone facade built in 1799 shaped like Lord Krishna's crown, featuring 953 honeycombed jharokha windows.",
+    "longDescription": "Commissioned by Maharaja Sawai Pratap Singh and designed by Lal Chand Ustad. The extraordinary 50-foot honeycomb facade was designed with 953 delicately carved jharokhas to allow royal ladies of the court to observe daily street processions in the bazaar below without being seen. The Venturi effect of the windows created a natural breeze even in scorching desert summers.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.9239,
+      "longitude": 75.8267
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "953 intricately carved stone jharokha lattice windows",
+      "Unique crown-like pyramidal five-tier architecture",
+      "Rooftop cafes across the street (Tattoo Cafe, Wind View Cafe) with prime photo views",
+      "Stained glass windows projecting rainbow patterns into inner chambers"
+    ],
+    "activities": [
+      "Rooftop cafe photography from across the street at sunrise",
+      "Walking through narrow winding ramps inside the palace",
+      "Exploring Johari and Bapu Bazaars below"
+    ],
+    "nearbyPlaces": [
+      "City Palace",
+      "Jantar Mantar",
+      "Johari Bazaar"
+    ],
+    "travelTips": [
+      "Best photographed from the front at sunrise when morning sunlight illuminates the pink facade; enter from the rear gate for the interior museum"
+    ],
+    "accessibility": "No staircases inside; floors are linked by gentle sloping ramps designed for palanquins",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "hawa-mahal",
+      "palace-of-winds",
+      "pink-city",
+      "jharokha",
+      "jaipur"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "city-palace-jaipur",
+    "name": "City Palace (Jaipur)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "forts-palaces",
+    "shortDescription": "The royal seat of the Maharaja of Jaipur, featuring the Chandra Mahal, the peacock-carved Pritam Niwas Chowk, and the world's largest silver urns.",
+    "longDescription": "Built by Maharaja Sawai Jai Singh II between 1729 and 1732. A splendid fusion of Rajput, Mughal, and European architecture. The seven-storey Chandra Mahal remains the private residence of the titular Maharaja, while the Mubarak Mahal museum displays royal costumes and pashmina shawls. Diwan-i-Khas houses two colossal sterling silver vessels (Gangajalis) recorded in the Guinness World Records.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.9258,
+      "longitude": 75.8236
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pritam Niwas Chowk four seasonal courtyards (Peacock, Lotus, Rose, Wave)",
+      "Guinness World Record silver Gangajali urns (345 kg each)",
+      "Mubarak Mahal textile and royal costume museum",
+      "Chandra Mahal royal private chambers (with special ticket)"
+    ],
+    "activities": [
+      "Photographing the vibrant Peacock Gate",
+      "Studying medieval Rajput weaponry in the royal armory",
+      "Private royal tour of Chandra Mahal"
+    ],
+    "nearbyPlaces": [
+      "Jantar Mantar",
+      "Hawa Mahal",
+      "Tripolia Gate"
+    ],
+    "travelTips": [
+      "Buy the composite ticket or the Royal Splendour pass if you wish to tour the blue chambers (Sukh Niwas) of the private Chandra Mahal"
+    ],
+    "accessibility": "Paved courtyards; wheelchair accessible throughout main public museum sectors",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "city-palace",
+      "peacock-gate",
+      "maharaja",
+      "silver-urns",
+      "jaipur"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "jantar-mantar-jaipur",
+    "name": "Jantar Mantar (Jaipur)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage collection of 19 monumental astronomical instruments built in 1734, housing the world's largest stone sundial.",
+    "longDescription": "Constructed by astronomer-king Maharaja Sawai Jai Singh II. This stone astronomical observatory features 19 geometric instruments designed to measure time, track stars, and predict eclipses with naked-eye accuracy. Its centerpiece is the Vrihat Samrat Yantra—the world's largest stone sundial, measuring 27 meters tall with an accuracy of 2 seconds.",
+    "category": [
+      "heritage",
+      "history",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 - 2 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.9248,
+      "longitude": 75.8246
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Vrihat Samrat Yantra (World's largest stone sundial, accurate to 2 seconds)",
+      "Jai Prakash Yantra bowl-shaped celestial mapping instruments",
+      "UNESCO World Heritage designation",
+      "Fascinating blend of geometry, architecture, and Vedic astronomy"
+    ],
+    "activities": [
+      "Hiring an astronomy guide to read real-time solar hours on instruments",
+      "Studying zodiac sign alignment instruments (Rasivalaya)"
+    ],
+    "nearbyPlaces": [
+      "City Palace",
+      "Hawa Mahal"
+    ],
+    "travelTips": [
+      "Visit around solar noon (between 11:30 AM and 1:00 PM) to see the instruments cast direct, sharp astronomical shadows"
+    ],
+    "accessibility": "Flat paved open-air observatory courtyards",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "jantar-mantar",
+      "astronomy",
+      "sundial",
+      "jaipur"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "jal-mahal",
+    "name": "Jal Mahal (Water Palace)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "heritage",
+    "shortDescription": "Poetic 18th-century palace appearing to float in the center of Man Sagar Lake, framed by the rugged Aravalli mountain ranges.",
+    "longDescription": "Constructed in 1799 by Maharaja Sawai Pratap Singh as a duck hunting lodge. Built of pink sandstone, four of its five storeys remain submerged underwater when Man Sagar Lake is full, leaving only the top floor with its arched chhatris visible against reflections of the Aravalli hills.",
+    "category": [
+      "heritage",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.9534,
+      "longitude": 75.8462
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Floating water palace illusion in Man Sagar Lake",
+      "Framed by the rugged ridges of the Aravalli Hills",
+      "Illuminated by golden floodlights at night",
+      "Pedestrian lakefront promenade with camel rides"
+    ],
+    "activities": [
+      "Sunset and evening illuminated photography from the promenade",
+      "Shopping for Rajasthani mojari shoes and puppets from lakefront stalls",
+      "Camel rides along the shore"
+    ],
+    "nearbyPlaces": [
+      "Amber Fort",
+      "Kanak Vrindavan Gardens"
+    ],
+    "travelTips": [
+      "Entry inside the palace itself is closed to the general public; the view and promenade stroll from the lakeside road are free and spectacular"
+    ],
+    "accessibility": "Paved, level pedestrian promenade along the lakefront",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "jal-mahal",
+      "water-palace",
+      "man-sagar-lake",
+      "jaipur"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "nahargarh-fort",
+    "name": "Nahargarh Fort",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "forts-palaces",
+    "shortDescription": "Hilltop fortress crowning the Aravalli ridge, famed for sunset views over the entire Pink City and the Madhavendra Bhawan royal suites.",
+    "longDescription": "Built in 1734 by Maharaja Sawai Jai Singh II as a formidable retreat atop the edge of the Aravalli Hills. Houses the Madhavendra Bhawan, featuring nine identical interconnected suites for the king's nine queens, linked by open corridors with delicate murals, and an open-air stepwell restaurant overlooking Jaipur city.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.9372,
+      "longitude": 75.8156
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Best panoramic sunset vantage point over all of Jaipur",
+      "Madhavendra Bhawan with nine identical queen suites",
+      "Jaipur Wax Museum and Sheesh Mahal on site",
+      "Padao open-air restaurant on fort ramparts"
+    ],
+    "activities": [
+      "Watching sunset over the Pink City horizon",
+      "Enjoying refreshments at Padao cafe on the edge of the ramparts"
+    ],
+    "nearbyPlaces": [
+      "Jaigarh Fort",
+      "Amber Fort"
+    ],
+    "travelTips": [
+      "Drive up before 5:00 PM to catch golden hour; the winding hill road is scenic and well paved"
+    ],
+    "accessibility": "Paved pathways inside palace courtyards",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "nahargarh-fort",
+      "sunset-point",
+      "aravalli",
+      "jaipur-views"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "jaigarh-fort",
+    "name": "Jaigarh Fort & Jaivana Cannon",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "type": "forts-palaces",
+    "shortDescription": "Formidable hilltop victory fort overlooking Amer, housing the Jaivana Cannon—the world's largest cannon on wheels cast in 1720.",
+    "longDescription": "Built by Jai Singh II in 1726 to protect Amber Fort, with which it connects via fortified underground passages. Unlike Amber, Jaigarh is a strictly military fortress featuring massive thick red battlements, underground water reservoirs, and the mighty 50-ton Jaivana Cannon, which was fired only once and sent a cannonball 35 kilometers away.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.985,
+      "longitude": 75.845
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Jaivana Cannon (World's largest cannon on wheels at 50 tons)",
+      "Aerial bird's-eye view looking straight down at Amber Fort and Maota Lake",
+      "Subterranean escape tunnels connecting to Amer Fort"
+    ],
+    "activities": [
+      "Viewing the gigantic bronze Jaivana Cannon",
+      "Walking the elevated fortified ramparts"
+    ],
+    "nearbyPlaces": [
+      "Amber Fort",
+      "Nahargarh Fort"
+    ],
+    "travelTips": [
+      "Cars can be driven right up into the inner courtyard of Jaigarh Fort"
+    ],
+    "accessibility": "Cobblestone ramps and battlements",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jaigarh-fort",
+      "jaivana-cannon",
+      "military-fort",
+      "jaipur"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "city-palace-udaipur",
+    "name": "City Palace (Udaipur)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "type": "forts-palaces",
+    "shortDescription": "Rajasthan's largest royal palace complex, a 400-year-old granite-and-marble palace towering over the eastern shore of Lake Pichola.",
+    "longDescription": "Founded in 1559 by Maharana Udai Singh II and embellished by 22 successive Maharanas. Built atop a ridge on Lake Pichola, this majestic complex fuses Rajasthani and Mughal architectural styles. Featuring the Sheesh Mahal, Moti Mahal with mirror mosaics, Mor Chowk (Peacock Courtyard) adorned with 5,000 glass mosaic tiles, and the vintage Crystal Gallery.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 24.5764,
+      "longitude": 73.6835
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Mor Chowk with 5,000 brilliant glass mosaic peacocks",
+      "Sweeping aerial views of Lake Pichola, Taj Lake Palace, and Jag Mandir",
+      "Zenana Mahal and royal silver and weaponry galleries",
+      "Evening Sound and Light show in the Manek Chowk"
+    ],
+    "activities": [
+      "Exploring labyrinthine royal corridors with audio guide",
+      "Boat cruise departure from royal Bansi Ghat jetty onto Lake Pichola"
+    ],
+    "nearbyPlaces": [
+      "Lake Pichola",
+      "Jagdish Temple",
+      "Bagore Ki Haveli"
+    ],
+    "travelTips": [
+      "Purchase the combined boat cruise ticket at the City Palace ticket counter to board the official boat directly from Bansi Ghat"
+    ],
+    "accessibility": "Multi-level palace with narrow historical staircases; courtyards are accessible",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "city-palace-udaipur",
+      "mewar",
+      "lake-pichola",
+      "mor-chowk",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "lake-pichola",
+    "name": "Lake Pichola & Boat Cruise",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Iconic artificial freshwater lake created in 1362, home to the white marble Taj Lake Palace and romantic sunset cruises.",
+    "longDescription": "Created in 1362 by a Banjara tribesman and later expanded by Maharana Udai Singh II. Four islands float on its waters: Jag Niwas (site of the world-famous Taj Lake Palace), Jag Mandir, Mohan Mandir, and Arsi Vilas. A sunset boat cruise reveals views of bathing ghats, City Palace walls, and green Aravalli hills glowing pink in the twilight.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 24.57,
+      "longitude": 73.67
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunset boat ride with stopover at Jag Mandir island palace",
+      "Views of white marble Taj Lake Palace floating on calm water",
+      "Illuminated City Palace reflecting off the lake at dusk",
+      "Ambrai Ghat and Gangaur Ghat lively evening steps"
+    ],
+    "activities": [
+      "Sunset boat cruise on Lake Pichola",
+      "Dinner at lakeside heritage haveli restaurants (Ambrai, Upre)"
+    ],
+    "nearbyPlaces": [
+      "City Palace",
+      "Jag Mandir",
+      "Fateh Sagar Lake"
+    ],
+    "travelTips": [
+      "The 5:00 PM sunset cruise is the most sought-after; book your boat slot early in the afternoon"
+    ],
+    "accessibility": "Jetties have boarding gangways for boats",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "lake-pichola",
+      "boat-cruise",
+      "lake-palace",
+      "sunset",
+      "udaipur"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "jag-mandir",
+    "name": "Jag Mandir (Lake Garden Palace)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "type": "forts-palaces",
+    "shortDescription": "17th-century island palace in Lake Pichola, where Mughal Prince Khurram (later Emperor Shah Jahan) took refuge, inspiring the Taj Mahal.",
+    "longDescription": "Completed by Maharana Jagat Singh I in 1646. Guarded by a row of life-size carved marble elephants at the jetty, this island retreat features the octagonal Gul Mahal tower where young Prince Khurram stayed in exile. Legend holds that its marble domes and pietra dura stone inlays inspired Shah Jahan when designing the Taj Mahal.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 24.5678,
+      "longitude": 73.6744
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Eight life-sized carved stone elephants greeting boats at the jetty",
+      "Gul Mahal yellow sandstone tower where Shah Jahan took refuge",
+      "Lush island gardens with lake-facing cafe and royal courtyards"
+    ],
+    "activities": [
+      "Exploring the historical refuge of Shah Jahan",
+      "Having high tea at the island cafe overlooking City Palace"
+    ],
+    "nearbyPlaces": [
+      "City Palace",
+      "Taj Lake Palace"
+    ],
+    "travelTips": [
+      "Reachable exclusively by boat from the City Palace Bansi Ghat; boat tickets include admission and a 45-minute stopover on the island"
+    ],
+    "accessibility": "Boat boarding required; level island gardens",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "jag-mandir",
+      "island-palace",
+      "shah-jahan",
+      "lake-pichola",
+      "udaipur"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "sajjangarh-palace",
+    "name": "Sajjangarh Palace (Monsoon Palace)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "type": "forts-palaces",
+    "shortDescription": "Palace perched 3,100 feet atop Bansdara Peak in the Aravallis, built in 1884 to track monsoon clouds, offering sunset views over Udaipur's lakes.",
+    "longDescription": "Constructed by Maharana Sajjan Singh in 1884 as an astronomical and monsoon observatory. Built of white marble high atop a mountain ridge in the Sajjangarh Wildlife Sanctuary, it looks down at Lake Pichola, Fateh Sagar, and surrounding countryside, famous as the lair of Kamal Khan in the James Bond movie 'Octopussy'.",
+    "category": [
+      "forts-palaces",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "July to March (Especially scenic during Monsoon)",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 24.59,
+      "longitude": 73.63
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "3,100-foot hilltop vantage point overlooking Udaipur and five lakes",
+      "Famous filming location of the James Bond film 'Octopussy'",
+      "Spectacular sunset vista watching the sun sink into Aravalli ridges"
+    ],
+    "activities": [
+      "Sunset photography",
+      "Spotting sambar deer in Sajjangarh Wildlife Sanctuary during the drive up"
+    ],
+    "nearbyPlaces": [
+      "Sajjangarh Biological Park",
+      "Fateh Sagar Lake"
+    ],
+    "travelTips": [
+      "Take shared forest department electric vehicles or registered taxis from the base gate to the summit"
+    ],
+    "accessibility": "Paved hilltop terrace with safety railings",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "monsoon-palace",
+      "sajjangarh",
+      "sunset-point",
+      "james-bond",
+      "udaipur"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "fateh-sagar-lake",
+    "name": "Fateh Sagar Lake",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Scenic lake surrounded by mountains, featuring three islands including Nehru Park with boat rides and solar observatory.",
+    "longDescription": "Built originally by Maharana Jai Singh in 1678 and rebuilt by Maharana Fateh Singh. Bordered by the winding Fateh Sagar Paal promenade, it houses three islands: Nehru Park (an island park with a floating restaurant), a public park with water jet fountains, and the Udaipur Solar Observatory—one of Asia's finest solar observing facilities.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "family"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 24.6,
+      "longitude": 73.67
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Nehru Park island garden reached by motorboat",
+      "Udaipur Solar Observatory on an isolated island",
+      "Bustling Mumbai Market street food promenade on lake banks",
+      "Speedboating on open waters"
+    ],
+    "activities": [
+      "Speedboat rides to Nehru Park island",
+      "Evening coffee and chaat at Fateh Sagar Paal"
+    ],
+    "nearbyPlaces": [
+      "Moti Magri (Maharana Pratap Memorial)",
+      "Saheliyon Ki Bari"
+    ],
+    "travelTips": [
+      "The lakeside street food stalls at 'Bombay Market' on the paal are famous for hot kulhad coffee and pav bhaji"
+    ],
+    "accessibility": "Flat paved lakefront promenade",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "fateh-sagar",
+      "nehru-park",
+      "boating",
+      "udaipur"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "mehrangarh-fort",
+    "name": "Mehrangarh Fort",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "type": "forts-palaces",
+    "shortDescription": "Colossal 15th-century fortress rising 400 feet above the Blue City of Jodhpur, hailed by Rudyard Kipling as 'the work of giants'.",
+    "longDescription": "Founded in 1459 by Rao Jodha atop a sheer perpendicular cliff. Its burnished red sandstone battlements reach 120 feet high. Inside lie palatial courtyards including the Sheesh Mahal, Phool Mahal (Palace of Flowers), Moti Mahal, and one of India's finest palace museums exhibiting royal howdahs, palanquins, and paintings. Ramparts offer views over the indigo-blue painted houses of the old city.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "museums",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.2978,
+      "longitude": 73.0185
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sheer 400-foot cliffside fortress battlements",
+      "Phool Mahal with gilded ceilings and stained glass",
+      "Iconic bird's-eye view of Jodhpur's blue-painted Brahmin houses",
+      "Flying Fox zipline circuit across moat and battlements"
+    ],
+    "activities": [
+      "World-class audio tour of palace galleries",
+      "Ziplining with Flying Fox over fort walls and lakes",
+      "Visiting Chamunda Devi Temple on the southern ramparts"
+    ],
+    "nearbyPlaces": [
+      "Jaswant Thada",
+      "Rao Jodha Desert Rock Park",
+      "Clock Tower"
+    ],
+    "travelTips": [
+      "The audio guide narrated by the Maharaja is widely praised as the best in India; elevator access available to upper courtyards"
+    ],
+    "accessibility": "Elevator available from the base gate to the palace courtyards for elderly and disabled visitors",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "mehrangarh",
+      "blue-city",
+      "hill-fort",
+      "jodhpur",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "jaswant-thada",
+    "name": "Jaswant Thada",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "type": "heritage",
+    "shortDescription": "The 'Taj Mahal of Marwar', a 1899 royal white marble memorial built of translucent Makrana marble sheets that glow in the sunlight.",
+    "longDescription": "Built by Maharaja Sardar Singh in 1899 to commemorate his father Maharaja Jaswant Singh II. Constructed of polished sheets of translucent Makrana white marble that glow with a warm amber light when struck by the sun. Set beside a peaceful lake with tiered gardens, carved marble gazebos, and memorials to Rathore rulers.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 26.304,
+      "longitude": 73.024
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Translucent Makrana marble that glows in sunlight",
+      "Delicate carved marble lattice screens (jalis)",
+      "Mirror reflection in the sacred lakeside theertham",
+      "View looking up at Mehrangarh Fort's colossal battlements"
+    ],
+    "activities": [
+      "Architectural photography of glowing marble",
+      "Relaxing by the tranquil lakeside gardens"
+    ],
+    "nearbyPlaces": [
+      "Mehrangarh Fort",
+      "Rao Jodha Desert Rock Park"
+    ],
+    "travelTips": [
+      "Located just 1 km downhill from Mehrangarh Fort gate; visit right after Mehrangarh"
+    ],
+    "accessibility": "Paved garden pathways and gentle steps leading to the main cenotaph platform",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jaswant-thada",
+      "taj-mahal-of-marwar",
+      "marble-cenotaph",
+      "jodhpur"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "umaid-bhawan-palace",
+    "name": "Umaid Bhawan Palace & Museum",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "type": "forts-palaces",
+    "shortDescription": "One of the world's largest private royal residences, a 347-room Art Deco and Beaux-Arts palace built of golden Chittar sandstone.",
+    "longDescription": "Commissioned by Maharaja Umaid Singh and completed in 1943 as a famine relief project employing 3,000 workers for 15 years. Designed by British architect Henry Lanchester in Beaux-Arts and Art Deco styles using interlocking golden-yellow sandstone without mortar. Part of the palace is a luxury Taj hotel, part is the Maharaja's private home, and part is a museum housing vintage royal cars, clocks, and regalia.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.2808,
+      "longitude": 73.0475
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Majestic 105-foot central Art Deco cupola dome",
+      "Vintage car museum showcasing royal Rolls-Royces and Cadillacs",
+      "Antique clock collection with windmill and train clocks",
+      "Golden Chittar sandstone exterior"
+    ],
+    "activities": [
+      "Touring the royal museum galleries",
+      "Viewing the Maharaja's vintage automobile collection"
+    ],
+    "nearbyPlaces": [
+      "Mehrangarh Fort",
+      "Clock Tower"
+    ],
+    "travelTips": [
+      "The hotel wing and private residence are restricted to hotel guests; the public museum and vintage car court are open daily to all visitors"
+    ],
+    "accessibility": "Wheelchair accessible throughout the museum and grounds",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "umaid-bhawan",
+      "art-deco-palace",
+      "vintage-cars",
+      "jodhpur"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "clock-tower-jodhpur",
+    "name": "Ghanta Ghar (Clock Tower) & Sardar Market",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "type": "shopping",
+    "shortDescription": "Century-old clock tower surrounded by Sardar Market, famous for Mathania red chillies, blue pottery, and Shahi Samosa.",
+    "longDescription": "Built by Maharaja Sardar Singh between 1880 and 1911 in the heart of old Jodhpur. The four-sided English clock tower is encircled by the chaotic, colorful lanes of Sardar Market filled with spice merchants selling world-famous Mathania red chillies, tie-dye Bandhani fabrics, antique brassware, and iconic snacks.",
+    "category": [
+      "shopping",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.295,
+      "longitude": 73.023
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Historic British-made clock mechanism still ticking",
+      "Bustling Sardar Market bazaar lanes",
+      "Iconic Shahi Samosa and Mishrilal Makhaniya Lassi stalls",
+      "Toorji Ka Jhalra historic stepwell nearby"
+    ],
+    "activities": [
+      "Climbing the Clock Tower for bazaar views",
+      "Tasting saffron Makhaniya Lassi at Shri Mishrilal Hotel",
+      "Visiting Toorji Ka Jhalra stepwell"
+    ],
+    "nearbyPlaces": [
+      "Toorji Ka Jhalra",
+      "Mehrangarh Fort"
+    ],
+    "travelTips": [
+      "Try the rich creamy Makhaniya Lassi at Shri Mishrilal Hotel right by the southern market gate"
+    ],
+    "accessibility": "Bustling pedestrian market lanes; narrow stairs inside clock tower",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ghanta-ghar",
+      "clock-tower",
+      "sardar-market",
+      "street-food",
+      "jodhpur"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "jaisalmer-fort",
+    "name": "Jaisalmer Fort (Sonar Qila / Golden Fort)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "type": "forts-palaces",
+    "shortDescription": "UNESCO World Heritage 'living fort' where one-fourth of the city's population still resides inside 12th-century golden sandstone walls.",
+    "longDescription": "Built in 1156 AD by Rajput ruler Rawal Jaisal atop Trikuta Hill in the Thar Desert. Constructed without mortar using yellow sandstone that glows tawny-lion by day and honey-gold at sundown, earning it the name Sonar Qila. Home to 4,000 residents, ancient havelis, seven ornate 12th-century Jain temples, and the Maharaja's Palace.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.9124,
+      "longitude": 70.9126
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's most famous 'Living Fort' with resident families and shops",
+      "Seven interconnected yellow sandstone Jain temples with micro-carvings",
+      "Fort cannon ramparts overlooking the Golden City",
+      "Inspiration for Satyajit Ray's classic detective film 'Sonar Kella'"
+    ],
+    "activities": [
+      "Heritage walking tour through winding fortress gallis",
+      "Visiting the Raj Mahal palace museum",
+      "Exploring the 12th-century Jain temples"
+    ],
+    "nearbyPlaces": [
+      "Patwon Ki Haveli",
+      "Gadisar Lake"
+    ],
+    "travelTips": [
+      "The Jain temples inside the fort are open to non-Jains between 8:00 AM and 12:00 PM; leather items must be left outside"
+    ],
+    "accessibility": "Cobblestone lanes and stone slopes; motor vehicles not allowed inside inner gates",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "jaisalmer-fort",
+      "sonar-qila",
+      "golden-fort",
+      "living-fort"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "patwon-ki-haveli",
+    "name": "Patwon Ki Haveli",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "type": "heritage",
+    "shortDescription": "Spectacular cluster of five five-storey havelis built between 1805 and 1860, renowned for their lace-like carved yellow sandstone jharokhas.",
+    "longDescription": "Commissioned by wealthy brocade and opium trader Guman Chand Patwa for his five sons. Taking 50 years to complete, this five-storey yellow sandstone mansion is the grandest haveli in Jaisalmer. Features over 60 balconies carved with such delicacy that the stone resembles wooden filigree or lace, adorned with gold leaf murals.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.915,
+      "longitude": 70.916
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Lace-like stone jharokha balconies chiselled from yellow sandstone",
+      "Gold leaf wall paintings and stained-glass Belgian windows",
+      "Kothari's Patwa Haveli private museum displaying 19th-century opium sets and royal attire"
+    ],
+    "activities": [
+      "Studying intricate sandstone filigree carvings",
+      "Exploring period rooms showing 19th-century merchant lifestyle"
+    ],
+    "nearbyPlaces": [
+      "Salim Singh Ki Haveli",
+      "Nathmal Ki Haveli",
+      "Jaisalmer Fort"
+    ],
+    "travelTips": [
+      "Hire a local guide to point out the hidden optical illusion carvings on the facade"
+    ],
+    "accessibility": "Narrow wooden and stone steps between floors; not wheelchair accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "patwon-ki-haveli",
+      "sandstone-filigree",
+      "jharokha",
+      "jaisalmer"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "sam-sand-dunes",
+    "name": "Sam Sand Dunes & Thar Desert Safari",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "type": "adventure",
+    "shortDescription": "Dramatic 30-meter rippling wind-swept sand dunes in the Thar Desert (42 km from Jaisalmer), offering camel rides, quad biking, and Kalbelia folk dances.",
+    "longDescription": "Located 42 km west of Jaisalmer near the edge of Desert National Park. The Sam Sand Dunes feature miles of soft, golden, rippling dunes devoid of vegetation. Visitors take camel safaris or 4x4 Jeep dune bashing tours to watch dramatic desert sunsets, followed by nights in luxury desert camps with Kalbelia folk dance and campfire dinners under starry skies.",
+    "category": [
+      "adventure",
+      "culture",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 night / 2 days",
+    "estimatedVisitTime": "Overnight",
+    "coordinates": {
+      "latitude": 26.833,
+      "longitude": 70.5
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "30-meter high golden sand dunes in the Thar Desert",
+      "Sunset camel safaris across crests of dunes",
+      "4x4 Jeep dune bashing thrills",
+      "Evening Kalbelia dance and Ghoomar performance around campfire"
+    ],
+    "activities": [
+      "Camel safari into deep desert dunes",
+      "4x4 Jeep dune bashing",
+      "Overnight stay in traditional luxury Swiss desert tents",
+      "Stargazing under pollution-free desert skies"
+    ],
+    "nearbyPlaces": [
+      "Kuldhara Abandoned Ghost Village",
+      "Desert National Park"
+    ],
+    "travelTips": [
+      "Book an overnight desert camp package that includes camel safari, cultural dance show, and dinner"
+    ],
+    "accessibility": "Soft sand terrain; 4x4 Jeeps transport guests right up to the dune ridges",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "sam-sand-dunes",
+      "desert-safari",
+      "camel-ride",
+      "thar-desert",
+      "jaisalmer"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "gadisar-lake",
+    "name": "Gadisar Lake",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Historic 14th-century rainwater reservoir surrounded by carved sandstone temples, chhatris, and the ornate Titton Ki Boli gateway.",
+    "longDescription": "Built by Maharawal Gadsi Singh in 1367 as Jaisalmer's sole source of drinking water. Surrounded by carved sandstone temples, ghats, and chhatris that seem to float on water. Entered through the magnificent Tilon Ki Pol gateway erected by a courtesan in 1909.",
+    "category": [
+      "lakes-waterfalls",
+      "heritage",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 26.908,
+      "longitude": 70.923
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Tilon Ki Pol carved sandstone gateway arch",
+      "Sandstone chhatris emerging directly from the water",
+      "Pedal and row boating with water birds",
+      "Catfish feeding from the ghat steps"
+    ],
+    "activities": [
+      "Boating on calm desert lake waters",
+      "Sunrise photography of temples glowing gold"
+    ],
+    "nearbyPlaces": [
+      "Jaisalmer Fort",
+      "Desert Cultural Centre"
+    ],
+    "travelTips": [
+      "Visit at sunrise when the morning sun turns the sandstone shrines into glowing gold and desert sparrows flock to the water"
+    ],
+    "accessibility": "Paved ghat walkways with steps to the water's edge",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "gadisar-lake",
+      "tilon-ki-pol",
+      "boating",
+      "sunrise",
+      "jaisalmer"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "desert-national-park",
+    "name": "Desert National Park",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "type": "wildlife",
+    "shortDescription": "Over 3,162 sq km of Thar Desert ecosystem, the last stronghold of the critically endangered Great Indian Bustard, chinkaras, and desert foxes.",
+    "longDescription": "One of the largest national parks in India, spanning 3,162 square kilometers across Jaisalmer and Barmer. Preserves the delicate Thar Desert fragile ecosystem, fixed sand dunes, and salt lake bottoms. It is the premier sanctuary for the critically endangered Great Indian Bustard (Godawan), alongside chinkara gazelles, desert cats, and migratory eagles.",
+    "category": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.85,
+      "longitude": 70.4
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Critically endangered Great Indian Bustard sightings",
+      "Desert wildlife safari with Chinkara gazelles and desert foxes",
+      "Akal Wood Fossil Park with 180-million-year-old Jurassic fossils nearby"
+    ],
+    "activities": [
+      "Jeep wildlife safari through desert terrain",
+      "Birdwatching for steppe eagles and rare raptors"
+    ],
+    "nearbyPlaces": [
+      "Sam Sand Dunes",
+      "Khuri Dunes"
+    ],
+    "travelTips": [
+      "Must obtain Forest Department safari permit; hire an experienced local naturalist tracker for bustard spotting"
+    ],
+    "accessibility": "Jeep safari accommodates passengers directly across rugged desert tracks",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "great-indian-bustard",
+      "desert-national-park",
+      "thar-wildlife",
+      "safari"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "pushkar-lake",
+    "name": "Pushkar Lake & 52 Ghats",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Pushkar",
+    "citySlug": "pushkar",
+    "type": "spiritual",
+    "shortDescription": "Sacred teardrop lake created where Lord Brahma dropped a lotus petal, surrounded by 52 bathing ghats and 500 whitewashed temples.",
+    "longDescription": "Revered as 'Tirtha Raj' (King of all Pilgrimage sites). Legend says the lake was formed when Lord Brahma dropped a blue lotus flower (pushpa) to vanquish a demon. Devotees take ritual purification dips across 52 stone ghats (especially Varaha Ghat and Brahma Ghat) against a backdrop of sacred chants, evening lamps, and temple bells.",
+    "category": [
+      "spiritual",
+      "culture",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March (Special during Kartik Purnima)",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.488,
+      "longitude": 74.553
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "52 sacred stone bathing ghats around calm holy waters",
+      "Evening Maha Aarti ceremony at Varaha Ghat",
+      "500 surrounding whitewashed temples creating an amphitheater of prayer",
+      "Devotees releasing floating marigold diyas onto water"
+    ],
+    "activities": [
+      "Watching evening lakeside Maha Aarti with drums and bells",
+      "Circumambulating the lake ghats at sunset",
+      "Listening to evening temple chimes"
+    ],
+    "nearbyPlaces": [
+      "Brahma Temple",
+      "Savitri Temple",
+      "Pushkar Bazaar"
+    ],
+    "travelTips": [
+      "Footwear must be removed before stepping onto any of the 52 ghats; politely decline persistent priests offering expensive puja threads (the 'Pushkar passport')"
+    ],
+    "accessibility": "Stone steps down to the lake; upper promenades are paved",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "pushkar-lake",
+      "52-ghats",
+      "brahma",
+      "kartik-purnima",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "brahma-temple-pushkar",
+    "name": "Jagatpita Brahma Mandir",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Pushkar",
+    "citySlug": "pushkar",
+    "type": "spiritual",
+    "shortDescription": "The world's most prominent temple dedicated to Lord Brahma the Creator, featuring a distinctive red spire and silver turtle symbol.",
+    "longDescription": "One of very few existing temples in the world dedicated to Lord Brahma. Dating to the 14th century with older foundations from sage Vishwamitra's era. Built of marble and stone slabs, it features a distinctive red spire (shikhara), a motif of a silver turtle on the marble floor, and the four-faced image of Lord Brahma accompanied by Goddess Gayatri.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 26.489,
+      "longitude": 74.551
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Rare sacred shrine dedicated to Lord Brahma the Creator",
+      "Distinctive red spire and Hans (Swan) bird emblem",
+      "Four-headed life-sized idol of Lord Brahma (Chathurmukhi)",
+      "Silver coins embedded in marble floor by devotees"
+    ],
+    "activities": [
+      "Darshan of Lord Brahma",
+      "Shopping for rose water and gulkand in temple alleys"
+    ],
+    "nearbyPlaces": [
+      "Pushkar Lake",
+      "Varaha Temple"
+    ],
+    "travelTips": [
+      "Phones and cameras must be deposited in dedicated lockers outside before entering temple steps"
+    ],
+    "accessibility": "Requires climbing around 25 marble steps",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "brahma-temple",
+      "creator",
+      "pushkar",
+      "rare-temple",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "pushkar-camel-fair",
+    "name": "Pushkar Camel Fair Grounds (Mela Ground)",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Pushkar",
+    "citySlug": "pushkar",
+    "type": "culture",
+    "shortDescription": "Epicenter of the world-famous annual Pushkar Fair in Kartik Purnima, where 50,000 decorated camels, horses, and traders assemble.",
+    "longDescription": "Held every November during Kartik Purnima, the Pushkar Camel Fair is one of the world's most extraordinary livestock and cultural spectacles. Over 50,000 camels, horses, and cattle are traded. Features camel beauty contests, mustache competitions, hot air balloon flights, and Rajasthani folk dances.",
+    "category": [
+      "culture",
+      "festivals",
+      "photography"
+    ],
+    "bestTimeToVisit": "October / November (Annual Kartik Purnima dates)",
+    "recommendedDuration": "2 - 3 days during fair",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 26.492,
+      "longitude": 74.545
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "50,000 decorated camels with beads, pom-poms, and leather embroidery",
+      "Hot air balloon festival over Pushkar sands",
+      "Longest mustache and bridal makeup competitions",
+      "Vibrant Rajasthani folk dance and music performances"
+    ],
+    "activities": [
+      "Hot air ballooning over desert dunes",
+      "Photographing pastoral Rabari camel herders",
+      "Watching camel racing and beauty pageants"
+    ],
+    "nearbyPlaces": [
+      "Pushkar Lake",
+      "Brahma Temple"
+    ],
+    "travelTips": [
+      "Check the exact lunar dates for Kartik Purnima; camel trading peaks in the first 4 days before religious bathing commences"
+    ],
+    "accessibility": "Open sandy fairgrounds",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "pushkar-fair",
+      "camel-mela",
+      "kartik-purnima",
+      "rajasthan-culture"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "ranthambore-national-park",
+    "name": "Ranthambore National Park & Tiger Safari",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Ranthambore",
+    "citySlug": "ranthambore",
+    "type": "wildlife",
+    "shortDescription": "India's premier tiger reserve, where Royal Bengal Tigers roam freely amidst ancient 10th-century fort ruins, banyan trees, and lotus lakes.",
+    "longDescription": "Once the private hunting grounds of the Maharajas of Jaipur. Spanning 1,334 square kilometers across Sawai Madhopur, Ranthambore is internationally acclaimed as the best place in the world to observe wild Royal Bengal Tigers hunting and raising cubs in daylight. Dotted with ancient cenotaphs, lakes (Padam Talao, Rajbagh), and the UNESCO World Heritage Ranthambore Fort.",
+    "category": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to June (Peak tiger sightings in March - May)",
+    "recommendedDuration": "2 - 3 days (3-4 safaris)",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 26.0173,
+      "longitude": 76.5026
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's best wild Bengal Tiger day sightings",
+      "Tigers prowling through medieval stone arches and lake palaces",
+      "Open-top 6-seater Gypsy and 20-seater Canter jungle safaris",
+      "Padam Talao lake with Jogi Mahal and giant banyan tree"
+    ],
+    "activities": [
+      "Morning and afternoon open-top Gypsy tiger safaris",
+      "Wildlife photography of leopards, sloth bears, and marsh crocodiles",
+      "Visiting ancient Jogi Mahal hunting pavilion"
+    ],
+    "nearbyPlaces": [
+      "Ranthambore Fort",
+      "Sawai Madhopur (14 km)"
+    ],
+    "travelTips": [
+      "Book safari zones (Zones 1-5 are prime core zones) 90 days in advance on the Rajasthan Forest Department portal; carry warm layers for early morning winter safaris"
+    ],
+    "accessibility": "Safari vehicles navigate the entire park; boarding assistance provided",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "ranthambore",
+      "bengal-tiger",
+      "tiger-safari",
+      "wildlife",
+      "project-tiger"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "ranthambore-fort",
+    "name": "Ranthambore Fort & Trinetra Ganesha Temple",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "city": "Ranthambore",
+    "citySlug": "ranthambore",
+    "type": "forts-palaces",
+    "shortDescription": "UNESCO World Heritage 10th-century Chauhan hill fort inside the tiger reserve, housing the sacred three-eyed Trinetra Ganesha Temple.",
+    "longDescription": "Perched 700 feet high on a plateau in the heart of the national park, this UNESCO fortress was founded in 944 AD. Famed for brave Rajput resistance against Alauddin Khilji. Features 7-km ramparts, 32-pillared chhatri, and the revered Trinetra (three-eyed) Ganesha Temple to which thousands of wedding invitation cards are mailed daily from all across India.",
+    "category": [
+      "forts-palaces",
+      "spiritual",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to June",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.02,
+      "longitude": 76.453
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Hill Fort of Rajasthan",
+      "Trinetra Ganesha Temple receiving thousands of postal wedding invites daily",
+      "Bird's-eye view looking down at tigers and lakes inside the tiger reserve",
+      "Ancient 32-pillared carved cenotaph"
+    ],
+    "activities": [
+      "Trekking up to the fortress gates",
+      "Sending prayers to Trinetra Ganesha",
+      "Panoramic wildlife spotting from ramparts"
+    ],
+    "nearbyPlaces": [
+      "Ranthambore National Park",
+      "Padam Talao"
+    ],
+    "travelTips": [
+      "Be mindful of langur monkeys on the climb; keep prasad packets tucked inside a secure backpack"
+    ],
+    "accessibility": "Requires climbing stone steps through multiple fortified gates up the hill",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "ranthambore-fort",
+      "trinetra-ganesha",
+      "hill-fort",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "gateway-of-india",
+    "name": "Gateway of India",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "Iconic 1924 basalt arch monument on the Mumbai harbour front, built to commemorate King George V and Queen Mary's landing in India.",
+    "longDescription": "Mumbai's most famous landmark, designed by Scottish architect George Wittet in the Indo-Saracenic architectural style. Overlooking the Arabian Sea in Colaba, it combines 16th-century Gujarati architectural motifs with Muslim triumphal arch elements. It was the ceremonial departure point for the last British troops leaving independent India in 1948.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 2 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 18.922,
+      "longitude": 72.8347
+    },
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "26-meter yellow basalt arch facing the Arabian Sea",
+      "Directly opposite the historic Taj Mahal Palace Hotel",
+      "Ferry departure terminal for Elephanta Caves island",
+      "Vibrant seaside promenade with street photographers"
+    ],
+    "activities": [
+      "Seaside promenade strolls",
+      "Boarding passenger ferry to Elephanta Caves",
+      "Photographing the monument against the Taj Mahal Palace"
+    ],
+    "nearbyPlaces": [
+      "Taj Mahal Palace Hotel",
+      "Colaba Causeway",
+      "Regal Cinema"
+    ],
+    "travelTips": [
+      "Early morning around 6:30 AM is peaceful before large crowds and touts arrive"
+    ],
+    "accessibility": "Flat paved plaza with wheelchair ramp access",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "gateway-of-india",
+      "mumbai-symbol",
+      "colaba",
+      "indo-saracenic",
+      "harbour"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "marine-drive",
+    "name": "Marine Drive (Queen's Necklace)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "beaches",
+    "shortDescription": "3.6-kilometer arc-shaped promenade along the Arabian Sea, named Queen's Necklace for its string of glowing streetlights at night.",
+    "longDescription": "A world-famous C-shaped six-lane boulevard connecting Nariman Point to Babulnath and Malabar Hill. Backed by the world's second-largest collection of Art Deco buildings (UNESCO World Heritage Site), its wide promenade and sea-facing tetrapods are Mumbai's beloved gathering spot for morning runners and sunset lovers.",
+    "category": [
+      "beaches",
+      "nature",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 18.9432,
+      "longitude": 72.823
+    },
+    "image": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "3.6-km curved waterfront promenade with cool sea breezes",
+      "UNESCO World Heritage Art Deco residential precinct",
+      "The glowing 'Queen's Necklace' curve seen from Malabar Hill at night",
+      "Giant concrete tetrapods along the sea wall"
+    ],
+    "activities": [
+      "Sitting on the promenade wall watching Arabian Sea waves",
+      "Evening chai and roasted corn on the cob (Bhutta)",
+      "Watching Mumbai skyline light up at dusk"
+    ],
+    "nearbyPlaces": [
+      "Girgaon Chowpatty",
+      "Nariman Point",
+      "Wankhede Stadium"
+    ],
+    "travelTips": [
+      "Head to Girgaon Chowpatty at the northern end for Mumbai's famous Bhelpuri and Kulfi"
+    ],
+    "accessibility": "Wide level pedestrian promenade with curb ramps",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "marine-drive",
+      "queens-necklace",
+      "mumbai",
+      "sunset",
+      "art-deco"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "csmt-station",
+    "name": "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage railway terminus designed by F.W. Stevens, blending Victorian Italianate Gothic Revival with traditional Indian craftsmanship.",
+    "longDescription": "Completed in 1887 to mark Queen Victoria's Golden Jubilee (originally Victoria Terminus). A supreme example of Victorian Gothic Revival architecture in India, it features an octagonal ribbed dome topped by the statue of 'Progress', gargoyles, stained glass windows, vaulted tile ceilings, and decorative iron grillwork.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 18.94,
+      "longitude": 72.8353
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Gothic Revival architectural facade",
+      "Octagonal ribbed central dome and stone gargoyles",
+      "Night multicolored architectural illumination",
+      "Heritage railway museum inside the administrative wing"
+    ],
+    "activities": [
+      "Viewing the illuminated stone facade from the viewing gallery",
+      "Heritage walking tour through the central hall"
+    ],
+    "nearbyPlaces": [
+      "BMC Headquarters",
+      "Crawford Market",
+      "Flora Fountain"
+    ],
+    "travelTips": [
+      "The elevated pedestrian bridge opposite the terminus provides the best vantage point for full facade photos, especially when lit up at night"
+    ],
+    "accessibility": "Wheelchair ramps at main station concourse",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "unesco",
+      "csmt",
+      "victoria-terminus",
+      "gothic-architecture",
+      "mumbai"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "elephanta-caves",
+    "name": "Elephanta Caves",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 6th-century rock-cut cave temples on Elephanta Island, housing the monumental 20-foot three-headed Sadashiva sculpture.",
+    "longDescription": "Located on Gharapuri Island in Mumbai Harbour (a 1-hour ferry ride from Gateway of India). Carved between the 5th and 8th centuries AD, Cave 1 is dedicated to Lord Shiva. Its crowning masterpiece is the 20-foot high Trimurti / Sadashiva monolithic bust depicting Shiva as the Creator, Preserver, and Destroyer.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours (including ferry)",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.9633,
+      "longitude": 72.9315
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage rock-cut cave complex",
+      "20-foot Trimurti (Sadashiva) three-headed masterwork sculpture",
+      "Ardhanarishvara and Nataraja stone carvings",
+      "Scenic 1-hour ferry boat ride across Mumbai Harbour"
+    ],
+    "activities": [
+      "Harbour ferry boat ride",
+      "Toy train ride from island jetty to village",
+      "Studying rock-cut Shaivite sculpture"
+    ],
+    "nearbyPlaces": [
+      "Gateway of India",
+      "Mumbai Harbour"
+    ],
+    "travelTips": [
+      "Caves closed on Mondays; take the morning ferry from Gateway of India before 10 AM to avoid crowds and heat"
+    ],
+    "accessibility": "Mini toy train connects ferry jetty to steps; ~120 steps up to cave entrance (palanquins available for seniors)",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "elephanta-caves",
+      "trimurti",
+      "rock-cut",
+      "mumbai-island"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "colaba-causeway",
+    "name": "Colaba Causeway (Shahid Bhagat Singh Road)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "shopping",
+    "shortDescription": "Vibrant shopping arcade and street market lined with quirky antique stores, silver jewellery, leather goods, and iconic Leopold Cafe.",
+    "longDescription": "Mumbai's famous street market corridor connecting Colaba to the old Fort area. Lined with stalls selling brass trinkets, vintage Bollywood posters, silver jewellery, and Kolhapuri sandals, flanked by historic culinary institutions like Leopold Cafe (established 1871) and Cafe Mondegar with Mario Miranda cartoon murals.",
+    "category": [
+      "shopping",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 18.915,
+      "longitude": 72.825
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Bustling street stalls for junk jewellery, books, and antiques",
+      "Iconic Leopold Cafe & Bar (operating since 1871)",
+      "Cafe Mondegar featuring Mario Miranda wall cartoons",
+      "Short walk to Gateway of India"
+    ],
+    "activities": [
+      "Bargaining for unique souvenirs and handicrafts",
+      "Enjoying chilled draught beer and snacks at Leopold Cafe"
+    ],
+    "nearbyPlaces": [
+      "Gateway of India",
+      "Sassoon Docks"
+    ],
+    "travelTips": [
+      "Friendly bargaining is standard at street stalls; visit Cafe Mondegar early to grab a booth by the vintage jukebox"
+    ],
+    "accessibility": "Crowded sidewalks; flat terrain",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "colaba-causeway",
+      "street-shopping",
+      "leopold-cafe",
+      "mumbai"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "siddhivinayak-temple",
+    "name": "Shri Siddhivinayak Ganapati Mandir",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "spiritual",
+    "shortDescription": "One of India's richest and most beloved Ganesha temples, consecrated in 1801 in Prabhadevi, visited by millions of devotees and celebrities.",
+    "longDescription": "Dedicated to Lord Ganesha as Siddhivinayak ('Ganesha who grants your wish'). The sanctum features a small two-and-a-half-foot black stone Ganesha with his trunk turned to the right (a rare and potent attribute). Crowned by a gilded gold dome and visited by thousands of devotees every Tuesday.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "Year-round (Special on Tuesdays)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 19.0168,
+      "longitude": 72.8302
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred right-trunked (Navasacha Ganapati) black stone idol",
+      "Gold-plated sanctum dome (Kalas)",
+      "Celebrity and public pilgrimage epicenter of Mumbai",
+      "Rich tradition of offering Modak and Durva grass"
+    ],
+    "activities": [
+      "Darshan of Lord Siddhivinayak",
+      "Whispering wishes into the ears of silver mouse statues outside the sanctum"
+    ],
+    "nearbyPlaces": [
+      "Shivaji Park",
+      "Dadark Chowpatty"
+    ],
+    "travelTips": [
+      "Tuesdays are extremely crowded with hours-long lines; consider booking online VIP darshan or visit on other weekdays"
+    ],
+    "accessibility": "Wheelchair ramps and special assistance counters for elderly pilgrims",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "siddhivinayak",
+      "ganesha-temple",
+      "mumbai-spiritual",
+      "prabhadevi"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "juhu-beach",
+    "name": "Juhu Beach",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "beaches",
+    "shortDescription": "Mumbai's most famous suburban beach, celebrated for its legendary Pav Bhaji and Pani Puri stalls and celebrity residential neighborhood.",
+    "longDescription": "Stretching along the Arabian Sea in Mumbai's upscale western suburbs, Juhu Beach is legendary for street food stalls serving buttery Pav Bhaji, Sev Puri, Kala Khatta gola, and coconut water. Bordered by bungalows of Bollywood superstars like Amitabh Bachchan and the iconic ISKCON Juhu temple.",
+    "category": [
+      "beaches",
+      "food",
+      "lifestyle"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 19.0988,
+      "longitude": 72.8264
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Legendary beachside street food stalls (Pav Bhaji, Sev Puri, Bhel Puri)",
+      "Spotting Bollywood celebrity bungalows nearby",
+      "Lively carnival atmosphere with horse rides and toy vendors",
+      "Golden sunset over the Arabian Sea"
+    ],
+    "activities": [
+      "Tasting authentic Mumbai Pav Bhaji from beach stalls",
+      "Sunset walks along the shoreline sand",
+      "Visiting nearby ISKCON Juhu Temple"
+    ],
+    "nearbyPlaces": [
+      "Prithvi Theatre",
+      "ISKCON Juhu",
+      "Mukteshwar Temple"
+    ],
+    "travelTips": [
+      "Grab coffee and attend an evening play at the legendary Prithvi Theatre just a short walk from the beach"
+    ],
+    "accessibility": "Paved entrance plazas lead onto the sandy beach",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "juhu-beach",
+      "pav-bhaji",
+      "bollywood-suburb",
+      "sunset",
+      "mumbai"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "bandra-worli-sea-link",
+    "name": "Bandra-Worli Sea Link (Rajiv Gandhi Sea Link)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "type": "heritage",
+    "shortDescription": "5.6-kilometer cable-stayed engineering marvel spanning Mahim Bay, symbolizing modern Mumbai with its soaring steel cable pylons.",
+    "longDescription": "Opened in 2009, this eight-lane cable-stayed bridge connects Bandra in the Western Suburbs to Worli in South Mumbai across the open Arabian Sea. Its majestic steel pylon towers rise 128 meters into the sky, illuminated with chromatic lighting at night and framed from Bandra Fort promenade.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 19.03,
+      "longitude": 72.815
+    },
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "5.6-km eight-lane cable-stayed expressway over open sea",
+      "128-meter tall soaring steel cable pylons",
+      "Spectacular view looking back at the Mumbai skyline",
+      "Best photographed from the historic ramparts of Bandra Fort (Castella de Aguada)"
+    ],
+    "activities": [
+      "Driving across the sea link",
+      "Watching sunset and illuminated bridge pylons from Bandra Fort"
+    ],
+    "nearbyPlaces": [
+      "Bandra Fort",
+      "Bandra Bandstand (Mannat)",
+      "Worli Sea Face"
+    ],
+    "travelTips": [
+      "Pedestrians and two-wheelers are prohibited on the bridge itself; enjoy panoramic walking views from Bandra Fort or Worli Sea Face promenade"
+    ],
+    "accessibility": "Viewable from paved promenade at Worli Sea Face and Bandra Fort",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "sea-link",
+      "bandra-worli",
+      "cable-stayed",
+      "modern-marvel",
+      "mumbai"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "shaniwar-wada",
+    "name": "Shaniwar Wada",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Pune",
+    "citySlug": "pune",
+    "type": "forts-palaces",
+    "shortDescription": "Historic 18th-century fortified seat of the Maratha Peshwa rulers, famous for its spiked Dilli Darwaza and tragic Bajirao-Mastani lore.",
+    "longDescription": "Built in 1732 by Peshwa Baji Rao I as the palace fort of the Maratha Empire. Though much of the seven-storey timber palace was destroyed by an unexplained fire in 1828, its massive stone ramparts, nine bastion towers, spiked Delhi Gate (designed to deter elephant battering), and lotus-shaped fountain (Hazari Karanje) remain standing.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.5196,
+      "longitude": 73.8553
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Massive Dilli Darwaza with steel elephant-repelling spikes",
+      "Hazari Karanje (Fountain of a Thousand Jets)",
+      "Surviving stone fortifications and rampart battlements",
+      "Evening Sound and Light show recreating Maratha history"
+    ],
+    "activities": [
+      "Walking atop the elevated fortress ramparts",
+      "Attending evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Dagdusheth Halwai Ganpati",
+      "Lal Mahal",
+      "Tulsi Baug"
+    ],
+    "travelTips": [
+      "Visit nearby Shreemant Dagdusheth Ganpati temple right across the street in the same trip"
+    ],
+    "accessibility": "Level courtyards; stairs to upper ramparts",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "shaniwar-wada",
+      "peshwa",
+      "maratha-empire",
+      "bajirao-mastani",
+      "pune"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "aga-khan-palace",
+    "name": "Aga Khan Palace",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Pune",
+    "citySlug": "pune",
+    "type": "heritage",
+    "shortDescription": "Italianate palace built in 1892, where Mahatma Gandhi was imprisoned during the Quit India movement, housing Gandhi and Kasturba memorials.",
+    "longDescription": "Built by Sultan Muhammed Shah Aga Khan III in 1892 as a famine relief measure. It is a monument of national importance where Mahatma Gandhi, his wife Kasturba Gandhi, and secretary Mahadev Desai were imprisoned following the Quit India resolution in 1942. The serene garden grounds house the samadhis of Kasturba Gandhi and Mahadev Desai, along with an extensive Gandhi memorial museum.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.5524,
+      "longitude": 73.9015
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Italianate arches and spacious sweeping garden lawns",
+      "Preserved rooms where Mahatma Gandhi lived during detention",
+      "Samadhi memorials of Kasturba Gandhi and Mahadev Desai",
+      "Personal artifacts, khadi looms, and letters of Mahatma Gandhi"
+    ],
+    "activities": [
+      "Self-guided memorial museum walk",
+      "Peaceful contemplation in the memorial gardens"
+    ],
+    "nearbyPlaces": [
+      "Osho International Meditation Resort",
+      "Koregaon Park"
+    ],
+    "travelTips": [
+      "Very peaceful and quiet; ideal for historical photography and reflection"
+    ],
+    "accessibility": "Paved garden pathways and ramp access to ground floor museum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "aga-khan-palace",
+      "gandhi-memorial",
+      "quit-india",
+      "pune",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "ajanta-caves",
+    "name": "Ajanta Caves",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage masterpiece of 30 rock-cut Buddhist caves dating from 2nd century BCE, world-renowned for exquisite mural frescoes.",
+    "longDescription": "Carved into the sheer cliff face of a horseshoe-shaped gorge along the Waghur River. Discovered in 1819 by British officer John Smith during a tiger hunt. The caves contain masterworks of ancient Buddhist religious art, depicting Jataka tales, the life of Buddha, and the celebrated Padmapani and Vajrapani Bodhisattva frescoes painted with natural mineral pigments.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "4 - 5 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 20.5519,
+      "longitude": 75.7033
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's finest surviving ancient Buddhist fresco paintings",
+      "Padmapani Bodhisattva holding the blue lotus flower",
+      "Horseshoe-shaped canyon amphitheater setting",
+      "Cave 26 colossal 29-foot Reclining Buddha mahaparinirvana sculpture"
+    ],
+    "activities": [
+      "Studying 2,000-year-old fresco murals with torchlight",
+      "Hiking to the hilltop viewpoint across the gorge"
+    ],
+    "nearbyPlaces": [
+      "Ellora Caves",
+      "Chhatrapati Sambhaji Nagar (100 km)"
+    ],
+    "travelTips": [
+      "Closed on Mondays; eco-friendly shuttle buses take visitors from the T-junction amenities center to cave entrance"
+    ],
+    "accessibility": "Ramp and pathway along cliff; sedan chairs (palki) available for elderly visitors",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "ajanta-caves",
+      "buddhist-art",
+      "padmapani",
+      "rock-cut"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "ellora-caves",
+    "name": "Ellora Caves & Kailash Temple",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage site of 34 rock-cut temples, featuring the Kailash Temple—the world's largest monolithic rock-cut structure carved top-down.",
+    "longDescription": "Spanning 2 kilometers of Charanandri basalt cliffs, Ellora comprises 34 monasteries and temples representing Buddhist, Hindu, and Jain traditions. Cave 16 (Kailash Temple), commissioned by Rashtrakuta King Krishna I, was carved top-down out of a single volcanic basalt cliff, removing 200,000 tons of rock with chisels and hammers to reveal a multi-storey temple twice the size of the Parthenon.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "4 - 5 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 20.0268,
+      "longitude": 75.1792
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Kailash Temple (Cave 16) - World's largest monolithic stone monument",
+      "Carved top-down without scaffolding from a single giant cliff",
+      "Harmonious coexistence of Hindu, Buddhist, and Jain cave monuments",
+      "Ravana shaking Mount Kailash rock relief sculpture"
+    ],
+    "activities": [
+      "Marveling at the monumental Kailash Temple monolith",
+      "Exploring the multi-storey Buddhist Chaitya Cave 10 (Carpenter's Cave)",
+      "Visiting Indra Sabha Jain cave carvings"
+    ],
+    "nearbyPlaces": [
+      "Grishneshwar Jyotirlinga Temple",
+      "Daulatabad Fort",
+      "Bibi Ka Maqbara"
+    ],
+    "travelTips": [
+      "Closed on Tuesdays; rent an official audio guide at the entrance gate"
+    ],
+    "accessibility": "Cave 16 is accessible at ground level; side caves require walking across paved paths",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "kailash-temple",
+      "ellora-caves",
+      "monolithic",
+      "rashtrakuta"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "bibi-ka-maqbara",
+    "name": "Bibi Ka Maqbara (Taj of the Deccan)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "heritage",
+    "shortDescription": "The 'Dakkhani Taj' commissioned in 1668 by Mughal Prince Azam Shah for his mother Dilras Banu Begum, closely resembling the Taj Mahal.",
+    "longDescription": "Built between 1660 and 1668 by Prince Azam Shah in memory of his mother, Empress Dilras Banu Begum (Rabia-ud-Daurani). Designed by architect Ata-Ullah (son of Ustad Ahmad Lahori, principal architect of the Taj Mahal). Surrounded by a Charbagh garden with reflecting water pools and four soaring minarets, it stands as an impressive Deccan counterpart to the Taj Mahal.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 19.9014,
+      "longitude": 75.32
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Striking architectural resemblance to the Taj Mahal",
+      "White marble octagonal central tomb with lattice jalis",
+      "Four freestanding 100-foot minarets at the corners",
+      "Charbagh Persian garden and reflecting waterways"
+    ],
+    "activities": [
+      "Heritage photography comparing with Taj Mahal",
+      "Strolling through the Charbagh gardens"
+    ],
+    "nearbyPlaces": [
+      "Panchakki",
+      "Daulatabad Fort",
+      "Ellora Caves"
+    ],
+    "travelTips": [
+      "Visit in late afternoon to catch warm sunset lighting on the marble dome"
+    ],
+    "accessibility": "Paved garden pathways and ramp access to the raised mausoleum plinth",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "bibi-ka-maqbara",
+      "deccan-taj",
+      "mughal-architecture",
+      "aurangabad"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "daulatabad-fort",
+    "name": "Daulatabad Fort (Devagiri)",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "type": "forts-palaces",
+    "shortDescription": "Impregnable 12th-century conical rock fortress featuring a 200-meter sheer cliff, moat with crocodiles, and pitch-black labyrinth trap (Andhari).",
+    "longDescription": "Originally Devagiri under the Yadava dynasty, renamed Daulatabad by Muhammad bin Tughluq who infamously ordered the entire population of Delhi to march 1,100 km here in 1327. One of the most impregnable fortresses of medieval India, it features three concentric concentric defensive rings, a 50-foot moat, and the pitch-black 'Andhari' maze engineered with deadly optical traps and false steps.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 19.9431,
+      "longitude": 75.2131
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Conical pyramid rock hill rising 200 meters vertically",
+      "The dark labyrinth 'Andhari' maze designed to trap invaders",
+      "110-foot pinkish-red Chand Minar victory tower",
+      "Colossal Mendha Top cannon on summit ramparts"
+    ],
+    "activities": [
+      "Navigating the pitch-black Andhari maze with a torch guide",
+      "Climbing to the summit for 360-degree Deccan views"
+    ],
+    "nearbyPlaces": [
+      "Ellora Caves",
+      "Bibi Ka Maqbara"
+    ],
+    "travelTips": [
+      "Hire a local guide with a lamp to guide you safely through the subterranean pitch-black Andhari passage"
+    ],
+    "accessibility": "Strenuous uphill climb involving over 750 stone steps; not wheelchair accessible",
+    "familyFriendly": false,
+    "budgetLevel": "budget",
+    "tags": [
+      "daulatabad-fort",
+      "devagiri",
+      "andhari-maze",
+      "tughluq",
+      "medieval-fort"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "victoria-memorial",
+    "name": "Victoria Memorial Hall",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "heritage",
+    "shortDescription": "Majestic white Makrana marble monument commissioned by Lord Curzon in 1906, set in 64 acres of royal gardens, the pride of Kolkata.",
+    "longDescription": "Built between 1906 and 1921 to commemorate Queen Victoria. Designed by Sir William Emerson in Indo-Saracenic and British neoclassical styles using the same Makrana marble as the Taj Mahal. Topped by a 16-foot bronze Angel of Victory that rotates with the wind. The interior houses 25 galleries showcasing British Raj paintings by Thomas Daniell, historical maps, and royal memorabilia.",
+    "category": [
+      "heritage",
+      "architecture",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.5448,
+      "longitude": 88.3426
+    },
+    "image": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "White Makrana marble monument with 184-foot central dome",
+      "16-foot rotating bronze 'Angel of Victory' weather vane",
+      "Royal Gallery with paintings of Queen Victoria and Prince Albert",
+      "64 acres of landscaped gardens with reflecting pools"
+    ],
+    "activities": [
+      "Self-guided tour of the grand marble galleries",
+      "Evening Sound and Light Show 'Pride & Glory'",
+      "Strolling along reflecting pools"
+    ],
+    "nearbyPlaces": [
+      "St. Paul's Cathedral",
+      "Maidan",
+      "Indian Museum"
+    ],
+    "travelTips": [
+      "Closed on Mondays; separate tickets for garden access and interior museum galleries"
+    ],
+    "accessibility": "Wheelchair ramps at museum entrance; flat paved garden pathways",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "victoria-memorial",
+      "kolkata",
+      "makrana-marble",
+      "british-raj",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "howrah-bridge",
+    "name": "Howrah Bridge (Rabindra Setu)",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "heritage",
+    "shortDescription": "The world's busiest cantilever bridge, a 1943 engineering marvel built with 26,500 tons of high-tensile steel without a single nut or bolt.",
+    "longDescription": "Spanning 705 meters across the Hooghly River, connecting Kolkata and Howrah. Commissioned in 1943, this iconic balanced cantilever bridge was constructed using Tata steel without any nuts or bolts, held together entirely by hot rivets. It carries over 100,000 vehicles and 150,000 pedestrians daily.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 22.5851,
+      "longitude": 88.3468
+    },
+    "image": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's busiest cantilever bridge constructed without nuts or bolts",
+      "Iconic symbol of Kolkata seen in countless films",
+      "Howrah Flower Market bustling under the bridge arches",
+      "Spectacular night lighting illuminating the steel lattice"
+    ],
+    "activities": [
+      "Walking across the pedestrian footpath across the Hooghly",
+      "Visiting the vibrant wholesale Howrah Flower Market at sunrise",
+      "Ferry boat ride between Howrah and Babu Ghat for prime water views"
+    ],
+    "nearbyPlaces": [
+      "Howrah Railway Station",
+      "Mallick Ghat Flower Market",
+      "Prinsep Ghat"
+    ],
+    "travelTips": [
+      "Take a ₹6 public river ferry from Fairlie Place Ghat to Howrah for the most dramatic angle looking up at the steel bridge from water level"
+    ],
+    "accessibility": "Pedestrian sidewalks on both sides of the bridge",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "howrah-bridge",
+      "rabindra-setu",
+      "cantilever",
+      "hooghly-river",
+      "kolkata"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "dakshineswar-kali-temple",
+    "name": "Dakshineswar Kali Temple",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "spiritual",
+    "shortDescription": "19th-century Navaratna nine-spired temple on the eastern bank of the Hooghly, where mystic saint Sri Ramakrishna Paramahamsa served as head priest.",
+    "longDescription": "Built in 1855 by philanthropist Rani Rashmoni. Dedicated to Bhavatarini, an aspect of Goddess Kali. The nine-spired Navaratna temple is surrounded by 12 identical Shiva temples along the river ghat, a shrine to Radha Krishna, and the preserved room of Sri Ramakrishna Paramahamsa who achieved divine visions here.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.653,
+      "longitude": 88.357
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Navaratna (nine-spired) traditional Bengali architectural temple",
+      "Preserved living room and Panchavati garden of Sri Ramakrishna",
+      "Row of 12 riverside Shiva temples along the holy Hooghly ghat",
+      "Ferry connection directly across the river to Belur Math"
+    ],
+    "activities": [
+      "Darshan of Goddess Bhavatarini",
+      "Meditating in Ramakrishna's sacred Panchavati grove",
+      "Taking the scenic river ferry across to Belur Math"
+    ],
+    "nearbyPlaces": [
+      "Belur Math (Across the river)",
+      "Adyapith Temple"
+    ],
+    "travelTips": [
+      "Take the country ferry boat from Dakshineswar Ghat directly across the river to Belur Math for an iconic spiritual twin-pilgrimage"
+    ],
+    "accessibility": "Paved temple courtyard; skywalk connects Dakshineswar railway station directly to temple gates",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "dakshineswar",
+      "kali-temple",
+      "ramakrishna",
+      "rani-rashmoni",
+      "hooghly"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "indian-museum-kolkata",
+    "name": "Indian Museum (Jadu Ghar)",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "type": "museums",
+    "shortDescription": "Ninth oldest regular museum in the world (founded in 1814), housing a 4,000-year-old Egyptian mummy and Bharhut Buddhist stupa railings.",
+    "longDescription": "Known locally as 'Jadu Ghar' (House of Magic). Founded in 1814 by Danish botanist Dr. Nathaniel Wallich at the Asiatic Society of Bengal. Spanning 35 galleries in an imposing neoclassical colonnaded building, it houses rare dinosaur fossils, the Gandhara Buddha sculptures, an actual 4,000-year-old Egyptian mummy, and meteorites.",
+    "category": [
+      "museums",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.558,
+      "longitude": 88.351
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "4,000-year-old preserved Egyptian mummy",
+      "2nd-century BCE Bharhut Buddhist sandstone stupa railings",
+      "Prehistoric dinosaur and Siwalik mammal fossil skeletons",
+      "Rare collection of meteorites and gemstones"
+    ],
+    "activities": [
+      "Exploring the archaeological sculpture galleries",
+      "Viewing ancient Egyptian mummy artifacts"
+    ],
+    "nearbyPlaces": [
+      "Park Street",
+      "New Market",
+      "Victoria Memorial"
+    ],
+    "travelTips": [
+      "Closed on Mondays; located right on Park Street metro station"
+    ],
+    "accessibility": "Ground floor accessible; elevators available to upper galleries",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "indian-museum",
+      "jadu-ghar",
+      "mummy",
+      "oldest-museum",
+      "kolkata"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "tiger-hill-darjeeling",
+    "name": "Tiger Hill Sunrise",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "type": "hill-stations",
+    "shortDescription": "Vantage point at 8,482 feet (2,590 m) famous for dawn vistas of sunrise illuminating Mount Kanchenjunga and Mount Everest in golden light.",
+    "longDescription": "Located 11 km from Darjeeling town. As dawn breaks over the Eastern Himalayas, the sun's first rays illuminate the snowy twin peaks of Mount Kanchenjunga (world's 3rd highest peak) in shades of indigo, gold, and blazing crimson. On exceptionally clear mornings, the tip of Mount Everest (8,848m) is visible in the distant western horizon.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to December & March to April",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Early Morning (4:00 AM)",
+    "coordinates": {
+      "latitude": 27,
+      "longitude": 88.28
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunrise over Mount Kanchenjunga turning peaks from pink to gold",
+      "Distant views of Mount Everest, Lhotse, and Makalu on clear mornings",
+      "Multi-tiered glass-enclosed observatory tower"
+    ],
+    "activities": [
+      "Waking up at 3:30 AM for the pre-dawn mountain drive",
+      "Watching sunrise over the Himalayan range",
+      "Sipping hot ginger lemon tea from local vendors at freezing dawn"
+    ],
+    "nearbyPlaces": [
+      "Batasia Loop",
+      "Ghoom Monastery"
+    ],
+    "travelTips": [
+      "Book your shared taxi or private cab the previous evening; leave your hotel by 4:00 AM to beat heavy traffic at the summit gate"
+    ],
+    "accessibility": "Paved viewing tower with stairs; lower courtyard accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "tiger-hill",
+      "kanchenjunga",
+      "everest-view",
+      "sunrise",
+      "darjeeling"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "darjeeling-himalayan-railway",
+    "name": "Darjeeling Himalayan Railway (DHR Toy Train)",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 2-foot narrow gauge railway operating since 1881, featuring vintage steam engines and loops around Batasia.",
+    "longDescription": "Inaugurated in 1881, the DHR was the first mountain railway in India to achieve UNESCO World Heritage status. Climbing from New Jalpaiguri at 100 meters to Ghoom at 2,258 meters using ingenious loops and Z-reverses, the iconic 'Joy Ride' steam train runs between Darjeeling, Batasia Loop, and Ghoom.",
+    "category": [
+      "heritage",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "2 hours (Joy Ride)",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.04,
+      "longitude": 88.26
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Mountain Railways status",
+      "Vintage British-era steam locomotives blowing plumes of white smoke",
+      "Scenic 2-hour Joy Ride between Darjeeling and Ghoom",
+      "360-degree loop around the Batasia war memorial garden"
+    ],
+    "activities": [
+      "Riding the vintage steam locomotive Joy Ride",
+      "Visiting the DHR Railway Museum at Ghoom Station (India's highest railway station)"
+    ],
+    "nearbyPlaces": [
+      "Batasia Loop",
+      "Ghoom Monastery",
+      "The Mall Road"
+    ],
+    "travelTips": [
+      "Choose the steam engine option rather than diesel for the authentic historical experience; book early on IRCTC"
+    ],
+    "accessibility": "Narrow-gauge historic railway coaches; assistance required for boarding",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "toy-train",
+      "dhr",
+      "steam-engine",
+      "darjeeling"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "batasia-loop",
+    "name": "Batasia Loop & War Memorial",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "type": "heritage",
+    "shortDescription": "Ingenious spiral railway loop set in a manicured flower garden, offering 360-degree views of the Kanchenjunga snow range.",
+    "longDescription": "Constructed in 1919 to enable the toy train to gently negotiate a steep 140-foot gradient by spiraling 360 degrees around itself. At the center of this circular floral garden stands the Gorkha War Memorial honoring brave soldiers of the Gorkha regiments. As the toy train circles the loop, passengers enjoy unobstructed panoramas of the Kanchenjunga massif.",
+    "category": [
+      "heritage",
+      "nature",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 27.0167,
+      "longitude": 88.2467
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Ingenious 360-degree spiral railway loop",
+      "Gorkha War Memorial cenotaph",
+      "Lush botanical gardens with seasonal rhododendrons",
+      "Classic postcard photo of the Toy Train with Mount Kanchenjunga in the background"
+    ],
+    "activities": [
+      "Watching the steam toy train negotiate the spiral loop",
+      "Photographing Kanchenjunga across the circular gardens"
+    ],
+    "nearbyPlaces": [
+      "Ghoom Monastery",
+      "Tiger Hill",
+      "Darjeeling Town (5 km)"
+    ],
+    "travelTips": [
+      "The DHR Joy Ride stops here for 10 minutes; can also be reached easily by road taxi"
+    ],
+    "accessibility": "Paved, level circular garden pathways",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "batasia-loop",
+      "toy-train",
+      "gorkha-memorial",
+      "kanchenjunga",
+      "darjeeling"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "sundarbans-national-park",
+    "name": "Sundarbans National Park & Tiger Reserve",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "city": "Sundarbans",
+    "citySlug": "sundarbans",
+    "type": "wildlife",
+    "shortDescription": "UNESCO World Heritage mangrove forest, the world's largest delta and only habitat where Royal Bengal Tigers swim in saline tidal waters.",
+    "longDescription": "Formed by the confluence of the Ganga, Brahmaputra, and Meghna rivers across India and Bangladesh. Covering 10,000 square kilometers, it is the world's largest halophytic mangrove forest. Famous for the unique swimming Royal Bengal Tigers, saltwater crocodiles, Irrawaddy dolphins, and spotted deer navigating dense sundari tree root networks.",
+    "category": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "November to March",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day (Multi-Day Cruise)",
+    "coordinates": {
+      "latitude": 21.9497,
+      "longitude": 89.1833
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage & Biosphere Reserve",
+      "Only mangrove habitat inhabited by wild Royal Bengal Tigers",
+      "Exclusive boat cruise safaris through narrow tidal channels and creeks",
+      "Saltwater crocodiles basking on mudbanks"
+    ],
+    "activities": [
+      "Boat safari cruises through dense mangrove estuaries",
+      "Visiting watchtowers at Sajnekhali, Sudhanyakhali, and Do Banki",
+      "Canopy walkway through mangrove tree crowns at Do Banki"
+    ],
+    "nearbyPlaces": [
+      "Sajnekhali Bird Sanctuary",
+      "Pakhiralay",
+      "Kolkata (100 km)"
+    ],
+    "travelTips": [
+      "All exploration is conducted strictly from motorized wooden boats; no walking safaris permitted in core tiger zones"
+    ],
+    "accessibility": "Requires boarding safari boats and climbing watchtower staircases",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "sundarbans",
+      "mangroves",
+      "swimming-tigers",
+      "delta",
+      "wildlife"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "sabarmati-ashram",
+    "name": "Sabarmati Ashram (Gandhi Smarak Sangrahalaya)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Ahmedabad",
+    "citySlug": "ahmedabad",
+    "type": "heritage",
+    "shortDescription": "Mahatma Gandhi's peaceful riverside headquarters from 1917 to 1930, launchpad of the historic 1930 Dandi Salt March.",
+    "longDescription": "Situated on the tranquil banks of the Sabarmati River. Established in 1917 by Mahatma Gandhi and Kasturba Gandhi. The compound houses Hriday Kunj (Gandhi's personal residence), Vinoba-Mira Kutir, the Magan Niwas spinning wheel institute, and Charles Correa's renowned open-air museum preserving original letters, spectacles, and spinning charkhas.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 23.0605,
+      "longitude": 72.58
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Hriday Kunj (Mahatma Gandhi's personal writing room and desk)",
+      "Original charkhas (spinning wheels) and handwritten letters",
+      "Starting point of the 1930 historic Dandi Salt March",
+      "Open-air museum designed by architect Charles Correa"
+    ],
+    "activities": [
+      "Learning to spin cotton on a traditional wooden charkha",
+      "Walking through the quiet riverfront gardens"
+    ],
+    "nearbyPlaces": [
+      "Sabarmati Riverfront Promenade",
+      "Adalaj Stepwell",
+      "Calico Museum of Textiles"
+    ],
+    "travelTips": [
+      "Visit in the early morning for peaceful reflection along the riverbank; entry is free"
+    ],
+    "accessibility": "Level walkways, shaded courtyards, and wheelchair accessible museum pavilions",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "sabarmati-ashram",
+      "mahatma-gandhi",
+      "dandi-march",
+      "freedom-movement",
+      "ahmedabad"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "adalaj-stepwell",
+    "name": "Adalaj Stepwell (Adalaj Ni Vav)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Ahmedabad",
+    "citySlug": "ahmedabad",
+    "type": "heritage",
+    "shortDescription": "Stunning 1498 five-storey subterranean stepwell fusing Solanki and Indo-Islamic carvings, built by Queen Rudadevi.",
+    "longDescription": "Built in 1498 by Queen Rudadevi in memory of King Rana Veer Singh. A brilliant specimen of Indian subterranean water architecture, descending five levels below ground into the cool water table. Intricately carved stone pillars, octagonal shafts, friezes of musicians, dancing women, and mythological motifs remain 5 degrees cooler than the surface heat.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 23.1667,
+      "longitude": 72.58
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Five subterranean storeys carved from buff sandstone",
+      "Octagonal well shafts filtering dramatic rays of daylight",
+      "Delicate floral Indo-Islamic and Hindu Solanki stone friezes",
+      "Naturally climate-controlled underground atmosphere"
+    ],
+    "activities": [
+      "Descending subterranean levels to photograph light beams",
+      "Studying stone-carved Navagraha and Kalpavriksha panels"
+    ],
+    "nearbyPlaces": [
+      "Gandhinagar Akshardham (15 km)",
+      "Sabarmati Ashram"
+    ],
+    "travelTips": [
+      "The best light for photography inside the deep octagonal shafts occurs between 11:00 AM and 2:00 PM when the sun shines directly down"
+    ],
+    "accessibility": "Requires walking down stone flights of stairs to reach lower subterranean platforms",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "adalaj-stepwell",
+      "vav",
+      "water-architecture",
+      "solanki",
+      "ahmedabad"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "sidi-saiyyed-mosque",
+    "name": "Sidi Saiyyed Mosque (Tree of Life)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Ahmedabad",
+    "citySlug": "ahmedabad",
+    "type": "heritage",
+    "shortDescription": "1573 mosque celebrated for its world-famous 'Tree of Life' stone lattice jali window, the global symbol of IIM Ahmedabad.",
+    "longDescription": "Constructed in 1573 by Sidi Saiyyed in the retinue of Bilal Jhajar Khan. World-renowned for its ten semi-circular stone windows filled with intricate pierced lattice jalis. The twin central jalis represent the 'Tree of Life' with intertwined banyan tree branches and palm foliage chiseled with gossamer delicacy from solid sandstone.",
+    "category": [
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "45 minutes",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 23.027,
+      "longitude": 72.581
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Iconic 'Tree of Life' sandstone jali lattice window",
+      "Official logo emblem of Indian Institute of Management Ahmedabad (IIMA)",
+      "Gossamer filigree stone carving precision"
+    ],
+    "activities": [
+      "Admiring and photographing the intricate lattice windows from the courtyard"
+    ],
+    "nearbyPlaces": [
+      "Bhadra Fort",
+      "Teen Darwaza",
+      "Manek Chowk"
+    ],
+    "travelTips": [
+      "Located in central Lal Darwaza; best viewed from the outside courtyard in afternoon sunlight when light filters through the foliage jali"
+    ],
+    "accessibility": "Level street and courtyard entry",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "tree-of-life",
+      "sidi-saiyyed",
+      "jali-lattice",
+      "iim-ahmedabad",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "dwarkadhish-temple",
+    "name": "Dwarkadhish Temple (Jagat Mandir)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Dwarka",
+    "citySlug": "dwarka",
+    "type": "spiritual",
+    "shortDescription": "One of the four supreme Char Dham pilgrimage shrines, a 2,200-year-old five-storey limestone temple dedicated to Lord Krishna 'King of Dwarka'.",
+    "longDescription": "Located at the tip of the Kathiawar peninsula on the Gomti River mouth. Built over 2,200 years ago by Krishna's great-grandson Vajranabha. The 78-meter high Chalukya-style spire is crowned by a 52-yard triangular silk flag (Dhvaja) depicting the sun and moon, hoisted five times daily by dedicated priests against Arabian Sea breezes.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March (Special during Janmashtami)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 22.2376,
+      "longitude": 68.9678
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "One of the sacred Char Dham abodes of Hinduism",
+      "78-meter limestone spire supported by 72 carved sandstone pillars",
+      "Changing of the 52-yard sacred silk flag (Dhvaja Arohan) five times daily",
+      "Gomti Ghat and Sudama Setu suspension bridge directly adjacent"
+    ],
+    "activities": [
+      "Darshan of Lord Dwarkadhish in royal regal attire",
+      "Watching the ceremonial Dhvaja Arohan flag hoisting",
+      "Crossing the Sudama Setu suspension bridge to Arabian Sea sands"
+    ],
+    "nearbyPlaces": [
+      "Bet Dwarka",
+      "Nageshwar Jyotirlinga",
+      "Rukmini Devi Temple"
+    ],
+    "travelTips": [
+      "Mobiles and electronic gadgets are strictly prohibited inside; deposit them in official security lockers before entry"
+    ],
+    "accessibility": "56 steps lead up to Swarga Dwar entry; elevator facilities available for seniors",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "char-dham",
+      "dwarkadhish",
+      "krishna-capital",
+      "jagat-mandir",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "somnath-temple",
+    "name": "Shri Somnath Jyotirlinga Temple",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Somnath",
+    "citySlug": "somnath",
+    "type": "spiritual",
+    "shortDescription": "The first among the twelve sacred Jyotirlingas of Lord Shiva, rebuilt in majestic Maru-Gurjara style right on the roaring Arabian Sea shore.",
+    "longDescription": "Revered as 'The Eternal Shrine'. Located where the Saraswati, Hiranya, and Kapila rivers merge into the Arabian Sea. Repeatedly destroyed by foreign invaders and rebuilt seven times throughout history, its present grand form was consecrated in 1951 under Sardar Vallabhbhai Patel. The sea-facing arrow pillar (Baan Stambh) marks an unobstructed sea route directly to Antarctica.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 20.888,
+      "longitude": 70.401
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "First of the 12 sacred Jyotirlingas of Lord Shiva",
+      "Grand Maru-Gurjara stone architecture right on the breaking sea waves",
+      "Historic Baan Stambh (Arrow Pillar) pointing directly to the South Pole",
+      "Evening 3D Sound and Light projection show narrated by Amitabh Bachchan"
+    ],
+    "activities": [
+      "Darshan of the revered Somnath Jyotirlinga",
+      "Watching the evening coastal Sound and Light Show",
+      "Walking the paved sea promenade (Somnath Promenade)"
+    ],
+    "nearbyPlaces": [
+      "Somnath Beach",
+      "Triveni Sangam",
+      "Bhalka Tirth"
+    ],
+    "travelTips": [
+      "Strict security: no electronic devices, belts, or leather wallets allowed inside; lockers provided outside"
+    ],
+    "accessibility": "Wheelchair ramps throughout the vast sea-facing temple promenade",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jyotirlinga",
+      "somnath",
+      "eternal-shrine",
+      "arabian-sea",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "rann-of-kutch",
+    "name": "Great Rann of Kutch & White Desert (Dhordo)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Kutch",
+    "citySlug": "kutch",
+    "type": "nature",
+    "shortDescription": "The world's largest salt desert spanning 7,500 sq km, transforming into a glowing white wonderland under the full moon during Rann Utsav.",
+    "longDescription": "A seasonal salt marsh located in the Thar Desert biosphere. During the dry winter months, the evaporated sea water leaves behind an unbroken, blinding-white expanse of pure crystalline salt that stretches to the horizon. Dhordo is the tent city hub for the world-famous Rann Utsav (November to February), featuring camel cart safaris, paramotoring, and Kutchi music.",
+    "category": [
+      "nature",
+      "culture",
+      "adventure"
+    ],
+    "bestTimeToVisit": "November to February (Rann Utsav / Full Moon nights)",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 23.8333,
+      "longitude": 69.8333
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Vast endless crystalline white salt desert stretching to Pakistan border",
+      "Magical silver full moon night vistas over the salt crust",
+      "Rann Utsav luxury tent city with camel carts and cultural stages",
+      "Paramotoring, ATV desert biking, and stargazing"
+    ],
+    "activities": [
+      "Walking out onto the crunchy white salt flats at sunset",
+      "Camel cart ride across the White Desert",
+      "Paramotoring over the salt pans",
+      "Shopping for Rogan art and Ajrakh block prints in artisan villages"
+    ],
+    "nearbyPlaces": [
+      "Kala Dungar (Black Hill)",
+      "Nirona Handicraft Village",
+      "Dholavira Harappan Site"
+    ],
+    "travelTips": [
+      "Visit during the 3 days around the monthly full moon (Purnima) when the desert glows silver; tourist permit required at Bhirandiyara checkpost"
+    ],
+    "accessibility": "Boardwalk and camel carts carry visitors out onto the firm salt crust",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "white-desert",
+      "rann-utsav",
+      "dhordo",
+      "salt-desert",
+      "kutch"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kala-dungar",
+    "name": "Kala Dungar (Black Hill) & Dattatreya Temple",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Kutch",
+    "citySlug": "kutch",
+    "type": "nature",
+    "shortDescription": "The highest point in Kutch at 458 meters, offering views where the White Desert merges with the blue sky, and wild jackal feeding rituals.",
+    "longDescription": "Located 97 km from Bhuj, Kala Dungar ('Black Hill') is the highest elevation in Kutch. From the summit viewing platform, the panoramic curve of the earth is visible where the blinding white salt desert meets the horizon and Pakistan border. Famous for the 400-year-old Dattatreya Temple, where priests feed wild jackals boiled rice and jaggery twice daily.",
+    "category": [
+      "nature",
+      "spiritual",
+      "viewpoint"
+    ],
+    "bestTimeToVisit": "November to February",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 23.93,
+      "longitude": 69.8
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Highest point in Kutch at 458 meters above sea level",
+      "Unmatched panoramic view of the Great Rann merging with the sky",
+      "400-year-old Lord Dattatreya hilltop temple",
+      "Daily afternoon feeding of wild desert jackals by temple priests"
+    ],
+    "activities": [
+      "Landscape photography from summit watchtowers",
+      "Observing wild jackals arrive for temple feast"
+    ],
+    "nearbyPlaces": [
+      "Dhordo White Desert (40 km)",
+      "Khavda Craft Village"
+    ],
+    "travelTips": [
+      "Visit in late afternoon to catch both the jackal feeding ritual and the breathtaking desert sunset"
+    ],
+    "accessibility": "Motorable road to the hilltop; short walk and steps to the viewing platform",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kala-dungar",
+      "black-hill",
+      "dattatreya",
+      "jackal-feeding",
+      "kutch"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "gir-national-park",
+    "name": "Gir National Park (Sasan Gir)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Gir",
+    "citySlug": "gir",
+    "type": "wildlife",
+    "shortDescription": "The only natural habitat on planet Earth of the wild Asiatic Lion (Panthera leo leo), protected across 1,412 sq km of dry teak forest.",
+    "longDescription": "Once brought to the brink of extinction with barely 20 individuals surviving in the early 1900s, protected by the Nawab of Junagadh. Today, Gir is home to over 674 wild Asiatic Lions. Open-top Gypsy safaris take visitors through dry deciduous scrub and teak forests alongside leopards, chital, sambar, and the indigenous Maldhari pastoral tribes.",
+    "category": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "December to April",
+    "recommendedDuration": "2 days (2-3 safaris)",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 21.1242,
+      "longitude": 70.8242
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sole natural wild habitat of the majestic Asiatic Lion in the world",
+      "Over 674 wild lions roaming free in open deciduous jungle",
+      "Open-top 6-seater Gypsy safaris across 13 jungle routes",
+      "Devalia Safari Park (Gir Interpretation Zone) for guaranteed sightings"
+    ],
+    "activities": [
+      "Morning open Gypsy safari in core jungle",
+      "Visiting Maldhari pastoralist tribal nesses (hamlets)",
+      "Birdwatching for over 300 bird species"
+    ],
+    "nearbyPlaces": [
+      "Somnath (45 km)",
+      "Junagadh (60 km)"
+    ],
+    "travelTips": [
+      "Book safari permits well in advance on the official Gujarat Forest Department portal; closed during monsoon (mid-June to mid-October)"
+    ],
+    "accessibility": "Open Gypsy safaris with boarding assistance",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "asiatic-lion",
+      "gir-national-park",
+      "sasan-gir",
+      "wildlife",
+      "safari"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "rani-ki-vav",
+    "name": "Rani ki Vav (The Queen's Stepwell)",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "city": "Patan",
+    "citySlug": "patan",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 11th-century inverted temple stepwell built by Queen Udayamati, featuring over 800 exquisite Vishnu sculptures.",
+    "longDescription": "Built in 1063 AD by Queen Udayamati as a memorial to King Bhima I of the Chaulukya dynasty. Designed as an inverted subterranean temple highlighting the sanctity of water, descending seven storeys. Embellished with over 500 principal sculptures and 1,000 minor ones of Vishnu's Dashavatara avatars, Apsaras, and celestial nymphs chiselled with microscopic detail. Depicted on the reverse of India's ₹100 banknote.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 23.8589,
+      "longitude": 72.1017
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage subterranean stepwell masterpiece",
+      "Featured on the lavender-colored ₹100 Indian currency note",
+      "Over 800 intricate sculptures of Vishnu, Sheshashayi, and Dashavatara",
+      "Seven magnificent terraced subterranean pavilion levels"
+    ],
+    "activities": [
+      "Studying the seven subterranean storeys of stone carvings",
+      "Photographing the monument aligning with a ₹100 banknote",
+      "Visiting adjacent Patan Patola double-ikat silk weaving workshops"
+    ],
+    "nearbyPlaces": [
+      "Modhera Sun Temple (35 km)",
+      "Patan Patola Heritage Museum"
+    ],
+    "travelTips": [
+      "Bring a ₹100 Indian banknote to hold up against the monument for the iconic photo; visit nearby Patola weaving families to see real double-ikat sarees"
+    ],
+    "accessibility": "Paved garden pathways and viewing terraces at ground level; stone steps descend into the well",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "rani-ki-vav",
+      "stepwell",
+      "100-rupee-note",
+      "solanki",
+      "patan"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "khajuraho-temples",
+    "name": "Khajuraho Group of Monuments",
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "city": "Khajuraho",
+    "citySlug": "khajuraho",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 10th-century Chandela temples celebrated for sublime Nagara spires and legendary erotic sculptural friezes.",
+    "longDescription": "Built between 950 and 1050 AD by the Chandela dynasty. Of the original 85 temples, 25 survive today across Western, Eastern, and Southern groups. Celebrated worldwide for their soaring Nagara-style spires simulating Mount Kailash, and thousands of masterwork stone sculptures depicting daily medieval life, musicians, celestial apsaras, and mithuna erotic art symbolizing human passion and divine cosmic union.",
+    "category": [
+      "heritage",
+      "architecture",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "October to March (Khajuraho Dance Festival in Feb)",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 24.8318,
+      "longitude": 79.9199
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Kandariya Mahadeva Temple with 84 miniature spires and 870 sculptures",
+      "Lakshmana Temple with boar avatar Varaha monolithic statue",
+      "Western Group of Temples set in manicured ASI lawns",
+      "Annual Khajuraho Dance Festival staged against illuminated temples"
+    ],
+    "activities": [
+      "Audio-guided exploration of the Western Temple Group",
+      "Attending the evening Sound and Light Show",
+      "Watching classical Bharatanatyam and Kathak during the February Dance Festival"
+    ],
+    "nearbyPlaces": [
+      "Raneh Falls canyon",
+      "Panna National Park (25 km)"
+    ],
+    "travelTips": [
+      "The Western Group contains the finest and most intact temples; hire an authorized ASI guide to appreciate the spiritual symbology behind the erotic carvings"
+    ],
+    "accessibility": "Paved pathways through the Western Group lawns; temples stand on raised stone plinths reached by stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "khajuraho",
+      "kandariya-mahadeva",
+      "chandela",
+      "nagara-architecture"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "mahakaleshwar-temple",
+    "name": "Shri Mahakaleshwar Jyotirlinga & Mahakal Lok",
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "city": "Ujjain",
+    "citySlug": "ujjain",
+    "type": "spiritual",
+    "shortDescription": "One of the 12 sacred Jyotirlingas, the only south-facing (Dakshinmukhi) Shiva shrine, famous for the dawn Bhasma Aarti and 900-meter Mahakal Lok.",
+    "longDescription": "Located on the banks of the sacred Shipra River in the ancient prime meridian city of Ujjain (Avanti). Lord Shiva resides here as Mahakal, the Lord of Time and Death. The lingam is Dakshinmukhi (south-facing), a unique tantric attribute. World-famous for the sacred pre-dawn 4:00 AM Bhasma Aarti where the lingam is anointed with fresh sacred ash, and the newly unveiled 900-meter Mahakal Lok corridor with 200 mythological sculptures.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March (Special during Shravan & Kumbh Mela)",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 23.1827,
+      "longitude": 75.7682
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Only south-facing (Dakshinmukhi) Jyotirlinga of Lord Shiva",
+      "World-renowned pre-dawn 4:00 AM Bhasma Aarti ritual",
+      "Grand newly constructed 900-meter 'Mahakal Lok' corridor with Rudrasagar lake",
+      "Kumbh Mela (Simhastha) sacred pilgrimage destination"
+    ],
+    "activities": [
+      "Participating in the sacred pre-dawn Bhasma Aarti",
+      "Walking the illuminated 900-meter Mahakal Lok corridor at night",
+      "Holy bath in the sacred Shipra River at Ram Ghat"
+    ],
+    "nearbyPlaces": [
+      "Ram Ghat",
+      "Kal Bhairav Temple",
+      "Harsiddhi Temple"
+    ],
+    "travelTips": [
+      "Advance online registration on the temple portal is mandatory for attending the 4:00 AM Bhasma Aarti; traditional dress strictly enforced (Dhoti for men, Saree for women)"
+    ],
+    "accessibility": "Electric golf carts and wheelchair ramps throughout the modern Mahakal Lok corridor",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jyotirlinga",
+      "mahakal",
+      "bhasma-aarti",
+      "mahakal-lok",
+      "ujjain",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "gwalior-fort",
+    "name": "Gwalior Fort & Man Mandir Palace",
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "city": "Gwalior",
+    "citySlug": "gwalior",
+    "type": "forts-palaces",
+    "shortDescription": "The 'Pearl of Indian Fortresses', an 8th-century hill citadel rising 300 feet, famous for vibrant turquoise glazed tile peacocks and Jain rock statues.",
+    "longDescription": "Described by Mughal Emperor Babur as 'the pearl amongst kingdoms of Hind'. Perched atop a sheer 3-km sandstone plateau. Highlights include Raja Man Singh Tomar's 15th-century Man Mandir Palace adorned with vibrant yellow ducks and blue turquoise tile mosaics, the 8th-century Teli Ka Mandir, the twin Sas Bahu temples, and the colossal rock-cut Jain Tirthankara statues lining the Gopachal Parvat slope.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.2307,
+      "longitude": 78.1695
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Vibrant blue and yellow glazed ceramic tile peacocks on Man Mandir facade",
+      "Colossal 58-foot rock-cut Jain Tirthankara statues along Gopachal hill slope",
+      "Teli Ka Mandir (oldest monument in the fort with unique Dravidian roof)",
+      "Sound and Light show narrated in Amitabh Bachchan's voice"
+    ],
+    "activities": [
+      "Exploring the subterranean acoustic chambers of Man Mandir Palace",
+      "Studying rock-cut Jain statues along the hill road",
+      "Watching evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Jai Vilas Palace",
+      "Tomb of Tansen",
+      "Sun Temple Gwalior"
+    ],
+    "travelTips": [
+      "Vehicles can drive directly up to the summit parking via the western Urvai Gate, passing colossal rock-cut Jain statues"
+    ],
+    "accessibility": "Road access to summit; cobblestone palace courtyards",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "gwalior-fort",
+      "pearl-of-fortresses",
+      "man-mandir",
+      "teli-ka-mandir",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "charminar",
+    "name": "Charminar",
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "type": "heritage",
+    "shortDescription": "The global icon of Hyderabad built in 1591 by Muhammad Quli Qutb Shah, a four-minaret triumphal monument surrounded by Laad Bazaar pearl stalls.",
+    "longDescription": "Erected in 1591 to commemorate the eradication of a deadly plague. Standing at the intersection of historic trade routes, this square granite-and-lime mortar monument features four grand arches facing the cardinal directions, surmounted by four 48.7-meter ornamental minarets. Houses Hyderabad's oldest surviving mosque on the upper terrace, encircled by the lacquer bangle shops of Laad Bazaar.",
+    "category": [
+      "heritage",
+      "architecture",
+      "shopping"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 17.3616,
+      "longitude": 78.4747
+    },
+    "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Four 48.7-meter stucco carved minarets with spiral staircases",
+      "Laad Bazaar famous for shimmering lacquer bangles and Hyderabadi pearls",
+      "Mecca Masjid adjacent to the monument",
+      "Irani Chai and Osmania biscuits at iconic Nimrah Cafe right beside Charminar"
+    ],
+    "activities": [
+      "Climbing the first floor for views of old city bazaars",
+      "Sipping hot Irani Chai at Nimrah Cafe",
+      "Shopping for pearls and bangles in Laad Bazaar"
+    ],
+    "nearbyPlaces": [
+      "Mecca Masjid",
+      "Chowmahalla Palace",
+      "Salar Jung Museum"
+    ],
+    "travelTips": [
+      "Sip hot Irani Chai with maska bun at Nimrah Cafe & Bakery facing Charminar during golden hour"
+    ],
+    "accessibility": "Paved pedestrianized plaza surrounding the monument; climbing upper terrace requires spiral stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "charminar",
+      "hyderabad-symbol",
+      "qutb-shahi",
+      "laad-bazaar",
+      "irani-chai"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "golconda-fort",
+    "name": "Golconda Fort",
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "type": "forts-palaces",
+    "shortDescription": "Massive 16th-century diamond-trading citadel famed for acoustic marvels where a handclap at the entrance echoes 1 km uphill to the Bala Hissar pavilion.",
+    "longDescription": "The capital of the medieval Qutb Shahi Sultanate, world-renowned as the trade center for legendary diamonds from Kollur Mine (including the Koh-i-Noor, Hope Diamond, and Daria-i-Noor). Spanning 11 km of granite battlements, the fort is celebrated for its acoustic engineering: a clap at the outer Fateh Darwaza reverberates clearly at the Bala Hissar pavilion 1 km away.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 17.3833,
+      "longitude": 78.4011
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Acoustic marvel: claps at Fateh Darwaza echo up to Bala Hissar summit",
+      "Historic vault that once held the Koh-i-Noor diamond",
+      "Breathtaking panoramic sunset view of Hyderabad skyline from the summit",
+      "Evening Sound and Light Show narrated by Amitabh Bachchan"
+    ],
+    "activities": [
+      "Testing the acoustic handclap phenomenon at the entrance dome",
+      "Trekking 380 stone steps to the hilltop Bala Hissar royal pavilion",
+      "Attending evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Qutb Shahi Tombs (2 km)",
+      "Taramati Baradari"
+    ],
+    "travelTips": [
+      "Hire a licensed guide to demonstrate the acoustics and hidden water supply systems; wear comfortable walking shoes for the 380-step climb"
+    ],
+    "accessibility": "Requires climbing around 380 stone steps to reach the top pavilion; lower courtyards are level",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "golconda-fort",
+      "koh-i-noor",
+      "acoustics",
+      "qutb-shahi",
+      "hyderabad"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "ramappa-temple",
+    "name": "Ramappa Temple (Rudreshwara Temple)",
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "city": "Warangal",
+    "citySlug": "warangal",
+    "type": "spiritual",
+    "shortDescription": "UNESCO World Heritage 13th-century Kakatiya temple built with floating bricks and earthquake-resistant sandbox foundations, named after its sculptor.",
+    "longDescription": "Constructed in 1213 AD by General Recharla Rudra under Kakatiya ruler Ganapati Deva. Uniquely named after its master sculptor Ramappa rather than the presiding deity. Built using lightweight 'floating bricks' that can float on water and earthquake-resistant 'sandbox' foundation technology. Features lustrous black basalt brackets carved with dancing celestial maidens (Madanikas).",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 18.26,
+      "longitude": 79.94
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage designation (inscribed 2021)",
+      "Super-lightweight 'floating bricks' used in the temple vimana tower",
+      "Mirror-polished black basalt carved Madanika dancing sculptures",
+      "Historic Ramappa Lake water reservoir adjacent to temple"
+    ],
+    "activities": [
+      "Studying Kakatiya stone carving precision",
+      "Boat ride on adjacent Ramappa Lake"
+    ],
+    "nearbyPlaces": [
+      "Warangal (65 km)",
+      "Thousand Pillar Temple",
+      "Laknavaram Lake"
+    ],
+    "travelTips": [
+      "Located at Palampet (65 km from Warangal city); combine with a visit to Laknavaram hanging bridge lake on the same day"
+    ],
+    "accessibility": "Ramp and stone plinth access",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "ramappa-temple",
+      "kakatiya",
+      "floating-bricks",
+      "warangal"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "chinese-fishing-nets",
+    "name": "Chinese Fishing Nets (Cheena Vala)",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "type": "heritage",
+    "shortDescription": "Iconic shore-operated cantilever fishing nets introduced in the 14th century by Chinese explorer Zheng He's court, silhouetted against Kochi sunsets.",
+    "longDescription": "Stretching along the promenade of Fort Kochi where the backwaters meet the Arabian Sea. Introduced by traders from the court of Kublai Khan or Chinese navigator Zheng He. These colossal cantilevered wooden structures use counterbalanced stone weights and require a team of four to six fishermen to lower into the sea and hoist up with the tide.",
+    "category": [
+      "heritage",
+      "culture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 9.9674,
+      "longitude": 76.2427
+    },
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Centuries-old counterweighted bamboo and teakwood fishing nets",
+      "Spectacular sunset silhouette against Arabian Sea waves",
+      "Buying fresh catch directly from fishermen and having it grilled at seaside stalls"
+    ],
+    "activities": [
+      "Helping fishermen pull the counterweight ropes to haul in the net",
+      "Sunset photography along Vasco da Gama Square promenade"
+    ],
+    "nearbyPlaces": [
+      "St. Francis Church",
+      "Fort Kochi Beach",
+      "Mattancherry Palace"
+    ],
+    "travelTips": [
+      "The best time to photograph the nets is at sunset from Vasco da Gama Square; fishermen welcome visitors to try operating the ropes for a small voluntary tip"
+    ],
+    "accessibility": "Paved waterfront promenade with benches",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "chinese-fishing-nets",
+      "fort-kochi",
+      "cheena-vala",
+      "sunset",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "mattancherry-palace",
+    "name": "Mattancherry Palace (Dutch Palace)",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "type": "forts-palaces",
+    "shortDescription": "Portuguese-built palace gifted to the Raja of Kochi in 1555, famed for its Ramayana mural frescoes and traditional Nalukettu courtyard.",
+    "longDescription": "Constructed by the Portuguese in 1555 and later renovated by the Dutch in 1663. Built in traditional Kerala 'Nalukettu' architectural style with sloping tiled roofs, wooden balconies, and polished black floors made of burnt coconut shells and egg whites. Features 300 square meters of wall frescoes depicting the Ramayana and Bhagavata Purana painted in vibrant vegetable pigments.",
+    "category": [
+      "forts-palaces",
+      "heritage",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 9.9583,
+      "longitude": 76.2592
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World-renowned 16th-century Ramayana tempera wall frescoes",
+      "Traditional Kerala Nalukettu central courtyard and timber joinery",
+      "Royal royal palanquins, coronation robes, and brass oil lamps"
+    ],
+    "activities": [
+      "Studying classical Kerala tempera mural art",
+      "Exploring adjacent Jew Town and Paradesi Synagogue"
+    ],
+    "nearbyPlaces": [
+      "Paradesi Synagogue",
+      "Jew Town",
+      "Fort Kochi"
+    ],
+    "travelTips": [
+      "Closed on Fridays; combine with a visit to the adjacent 1568 Paradesi Synagogue in Jew Town"
+    ],
+    "accessibility": "First floor palace reached by a flight of wooden stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "dutch-palace",
+      "mattancherry",
+      "kerala-murals",
+      "kochi"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "tea-gardens-munnar",
+    "name": "Munnar Tea Plantations & Tata Tea Museum",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Munnar",
+    "citySlug": "munnar",
+    "type": "hill-stations",
+    "shortDescription": "Rolling emerald carpet of tea plantations rising up to 7,000 feet in the Western Ghats, featuring live tea processing and tea tasting sessions.",
+    "longDescription": "Located at the confluence of three mountain streams (Mudrapuzha, Nallathanni, Kundala). Munnar was the British Raj's summer capital in South India. Countless rolling green tea estates (primarily KDHP / Tata Tea) carpet the mist-wrapped hillsides. The Tea Museum at KDHP's Nallathanni Estate showcases the century-old history of tea manufacturing, antique CTC rollers, and artisanal tea tasting.",
+    "category": [
+      "hill-stations",
+      "nature",
+      "agriculture"
+    ],
+    "bestTimeToVisit": "September to May",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.0889,
+      "longitude": 77.0595
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Endless rolling emerald green tea estate hillsides",
+      "Tata Tea Museum with live tea tasting sessions and factory demo",
+      "Tea pluckers harvesting fresh green leaves with traditional shears",
+      "Aromatic fresh cardamom, clove, and cinnamon spice gardens"
+    ],
+    "activities": [
+      "Guided tea tasting session sampling white, green, and orthodox teas",
+      "Tea plantation walking tour and photography",
+      "Buying fresh single-estate tea packets and homemade chocolates"
+    ],
+    "nearbyPlaces": [
+      "Eravikulam National Park",
+      "Mattupetty Dam",
+      "Top Station"
+    ],
+    "travelTips": [
+      "Visit the tea factory in the morning when the fresh green tea leaf batch is being crushed, torn, and curled (CTC process)"
+    ],
+    "accessibility": "Tea museum is ground-level accessible; plantation tracks are hilly",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "munnar-tea",
+      "tea-plantations",
+      "hill-station",
+      "western-ghats",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "eravikulam-national-park",
+    "name": "Eravikulam National Park (Rajamalai)",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Munnar",
+    "citySlug": "munnar",
+    "type": "wildlife",
+    "shortDescription": "Sanctuary of the endangered Nilgiri Tahr mountain goat, home to Anamudi (South India's highest peak at 2,695m) and Neelakurinji blooms.",
+    "longDescription": "Spanning 97 square kilometers of high-altitude rolling montane shola-grassland in the Kannan Devan Hills. Home to the world's largest population (over 800) of the endangered Nilgiri Tahr (wild mountain goat), which graze fearlessly alongside visitor trails. Crowned by Anamudi (2,695m), the highest peak in India south of the Himalayas, and famous for the Neelakurinji flower that blooms once every 12 years.",
+    "category": [
+      "wildlife",
+      "nature",
+      "hill-stations"
+    ],
+    "bestTimeToVisit": "September to January (Park closed Feb-Mar for Tahr calving)",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 10.15,
+      "longitude": 77.0667
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Close-up sightings of the endangered Nilgiri Tahr mountain goat",
+      "Panoramic view of Anamudi Peak (2,695 m, highest in South India)",
+      "Eco-safari bus drive up the scenic mountain slopes",
+      "Once-in-12-years blooming phenomenon of the purple Neelakurinji flower"
+    ],
+    "activities": [
+      "Boarding the forest department eco-bus up to Rajamalai",
+      "Gentle 1.5-km uphill nature walk on the paved mountain trail",
+      "Spotting Nilgiri Tahr against mountain backdrops"
+    ],
+    "nearbyPlaces": [
+      "Munnar Town (15 km)",
+      "Lakkam Waterfalls",
+      "Marayoor Sandalwood Forests"
+    ],
+    "travelTips": [
+      "Book your safari entry time-slot online to skip long ticket queues at the base booking counter; park is closed in February and March for the calving season"
+    ],
+    "accessibility": "Forest eco-buses take visitors up to the trailhead; a paved 1.5-km road has a gentle slope",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "nilgiri-tahr",
+      "eravikulam",
+      "anamudi",
+      "neelakurinji",
+      "munnar"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "alappuzha-backwaters",
+    "name": "Alappuzha Backwaters & Kettuvallam Houseboat Cruise",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Alappuzha",
+    "citySlug": "alappuzha",
+    "type": "nature",
+    "shortDescription": "The 'Venice of the East', an intricate labyrinth of palm-fringed lagoons, canals, and paddy fields navigated on traditional luxury thatched houseboats.",
+    "longDescription": "Formed by a network of interconnected brackish lagoons, rivers, and canals running parallel to the Arabian Sea. The hallmark Kerala travel experience: boarding an overnight 'Kettuvallam'—a traditional wooden rice barge constructed from anjili wood tied with coir ropes and thatched with palm leaves. Cruises meander past village homes, duck farms, coir makers, and water lilies while personal chefs prepare Karimeen Pollichathu.",
+    "category": [
+      "nature",
+      "culture",
+      "luxury",
+      "lakes-waterfalls"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "1 - 2 days (Overnight stay)",
+    "estimatedVisitTime": "Overnight Cruise",
+    "coordinates": {
+      "latitude": 9.4981,
+      "longitude": 76.3388
+    },
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Overnight stay aboard traditional wooden thatched Kettuvallam houseboat",
+      "Gliding silently through emerald lagoons and canals flanked by coconut palms",
+      "Freshly cooked Kerala Sadya and Pearl Spot (Karimeen) fish on banana leaves",
+      "Epicenter of the annual Nehru Trophy Snake Boat Race on Punnamada Lake"
+    ],
+    "activities": [
+      "Overnight houseboat cruising through Vembanad Lake",
+      "Village canoe (Shikara) rides through narrow village canals",
+      "Watching rural duck farming and toddy tapping"
+    ],
+    "nearbyPlaces": [
+      "Vembanad Lake",
+      "Alappuzha Beach",
+      "Marari Beach"
+    ],
+    "travelTips": [
+      "Take a smaller non-motorized wooden Shikara boat or government ferry to explore the narrower, picturesque inner canals where large houseboats cannot enter"
+    ],
+    "accessibility": "Houseboats have comfortable flat wooden decks; crew assists with boarding from wooden jetties",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "houseboat",
+      "kettuvallam",
+      "backwaters",
+      "venice-of-east",
+      "alappuzha",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "periyar-national-park",
+    "name": "Periyar National Park & Lake Boat Safari",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Thekkady",
+    "citySlug": "thekkady",
+    "type": "wildlife",
+    "shortDescription": "Famous tiger reserve and elephant sanctuary centered on an artificial lake created in 1895, offering boat safaris where wild herds drink at the water's edge.",
+    "longDescription": "Spanning 925 square kilometers high in the Cardamom and Pandalam Hills. Centered on the scenic 26-sq-km artificial Periyar Lake formed by the Mullaperiyar Dam in 1895. Submerged dead tree trunks emerge from the water. Two-hour boat safaris allow visitors to view wild elephant herds, sambar deer, gaur (Indian bison), and otters along the forested water's edge without disturbing the jungle.",
+    "category": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to May",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 9.4679,
+      "longitude": 77.1425
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Boat safari on scenic Periyar Lake among submerged tree trunks",
+      "Wild elephant herds bathing and grazing along the water banks",
+      "Bamboo rafting and jungle trekking expeditions led by tribal trackers",
+      "Spice plantation tours smelling fresh green cardamom and vanilla pods"
+    ],
+    "activities": [
+      "Periyar Lake morning boat safari",
+      "Full-day bamboo rafting through deep jungle",
+      "Visiting aromatic spice plantations and watching Kathakali performances"
+    ],
+    "nearbyPlaces": [
+      "Kumily Spice Market",
+      "Murikkady Spice Valley"
+    ],
+    "travelTips": [
+      "The early morning 7:30 AM boat cruise has the highest probability of spotting wild elephants and bison drinking at the lakeshore"
+    ],
+    "accessibility": "Two-deck motorboats accommodate passengers from paved boarding jetties",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "periyar",
+      "thekkady",
+      "wild-elephants",
+      "lake-safari",
+      "tiger-reserve"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "varkala-cliff",
+    "name": "Varkala Cliff & Papanasam Beach",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "city": "Varkala",
+    "citySlug": "varkala",
+    "type": "beaches",
+    "shortDescription": "Dramatic red laterite sea cliffs towering over the Arabian Sea, designated a National Geological Monument, with yoga cafes and natural holy springs.",
+    "longDescription": "Known as the 'Papanasam Beach' (cleanser of sins). Varkala is unique along Kerala's coastline for its sheer red laterite cliffs bordering the beach, designated a geo-heritage site by the Geological Survey of India. The North Cliff promenade is lined with bohemian cafes, yoga shalas, Tibetan craft shops, and Ayurvedic massage centers looking out over turquoise waves.",
+    "category": [
+      "beaches",
+      "wellness",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 8.7379,
+      "longitude": 76.7032
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Dramatic red laterite geological cliff edge overlooking the ocean",
+      "Papanasam Beach holy mineral springs believed to wash away sins",
+      "Cliff-top pedestrian trail packed with seafood shacks and candlelit cafes",
+      "2,000-year-old Janardhana Swamy Temple on southern cliff"
+    ],
+    "activities": [
+      "Practicing sunrise yoga on cliff viewpoints",
+      "Surfing and swimming in turquoise Arabian Sea waves",
+      "Dining on fresh catch fish under the stars along the cliff path"
+    ],
+    "nearbyPlaces": [
+      "Janardhana Swamy Temple",
+      "Kappil Beach & Lake",
+      "Anjengo Fort"
+    ],
+    "travelTips": [
+      "North Cliff is the vibrant backpacker hub with cafes; South Cliff is much quieter and peaceful for yoga retreats"
+    ],
+    "accessibility": "Cliff top is a flat pedestrian path; bamboo and concrete steps lead down to the beach below",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "varkala-cliff",
+      "papanasam-beach",
+      "geo-heritage",
+      "yoga",
+      "kerala"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "mahabodhi-temple",
+    "name": "Mahabodhi Temple Complex & Bodhi Tree",
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "city": "Bodh Gaya",
+    "citySlug": "bodh-gaya",
+    "type": "spiritual",
+    "shortDescription": "UNESCO World Heritage site where Prince Siddhartha attained Supreme Enlightenment (Bodhi) under the sacred Bodhi Tree in 531 BCE.",
+    "longDescription": "The supreme pilgrimage site of world Buddhism. Consecrated originally by Emperor Ashoka in the 3rd century BCE, the current 55-meter grand pyramidal brick temple dates from the 5th-6th century CE. Houses the Vajrasana (Diamond Throne) and stands directly behind the direct descendant of the sacred Bodhi Tree (Ficus religiosa) under which Gautama Buddha meditated and attained supreme spiritual liberation.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 24.6959,
+      "longitude": 84.9914
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage designation",
+      "Sacred Bodhi Tree under which Gautama Buddha attained enlightenment",
+      "Vajrasana (Diamond Throne) placed by Emperor Ashoka",
+      "55-meter grand pyramidal shikhara tower crowned by golden kalash",
+      "Muchalinda Lake where the serpent king sheltered meditating Buddha"
+    ],
+    "activities": [
+      "Quiet meditation beneath the sacred Bodhi Tree",
+      "Prostrations and chanting with international monks from around the globe",
+      "Visiting international monasteries (Thai, Bhutanese, Tibetan, Japanese)"
+    ],
+    "nearbyPlaces": [
+      "Great Buddha Statue (80-foot)",
+      "Dungeshwari Cave Temples",
+      "Gaya (15 km)"
+    ],
+    "travelTips": [
+      "Mobile phones are strictly prohibited inside the inner complex; lockers available at the entrance; photography permits required for DSLRs"
+    ],
+    "accessibility": "Wheelchair ramps and level marble courtyards throughout the temple precinct",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "bodhi-tree",
+      "mahabodhi-temple",
+      "buddha-enlightenment",
+      "bodh-gaya"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "nalanda-mahavihara",
+    "name": "Nalanda Mahavihara Archaeological Ruins",
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "city": "Nalanda",
+    "citySlug": "nalanda",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage ruins of the world's first residential international university (5th - 12th century CE), housing 10,000 monks and scholars.",
+    "longDescription": "Established in the 5th century CE under the Gupta Empire and patronized by Emperor Harshavardhana and the Pala dynasty. A flourishing global university for over 700 years attracting scholars from China (Xuanzang), Korea, Japan, Tibet, and Persia. Spans 14 hectares of excavated red brick monasteries and temples, including the iconic multi-tiered Sariputra Stupa.",
+    "category": [
+      "heritage",
+      "history",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.1357,
+      "longitude": 85.445
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage ancient university ruins",
+      "Iconic tiered Temple 3 (Sariputra Stupa) with sculpted stucco panels",
+      "Excavated dormitory monasteries with student prayer cells and lecture podiums",
+      "Nalanda Archaeological Museum housing bronze statues and seals"
+    ],
+    "activities": [
+      "Guided walking tour through excavated student dormitories and meditation cells",
+      "Visiting the Xuanzang Memorial Hall nearby",
+      "Exploring ancient library ruins (Dharmaganja)"
+    ],
+    "nearbyPlaces": [
+      "Rajgir (15 km)",
+      "Hiuen Tsang Memorial Hall",
+      "Kundalpur"
+    ],
+    "travelTips": [
+      "Hire a certified ASI guide at the entry gate to understand the functioning of this ancient residential campus; museum closed on Fridays"
+    ],
+    "accessibility": "Paved pathways and ramps through the excavated monument complex",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "nalanda-university",
+      "ancient-monastery",
+      "sariputra-stupa",
+      "bihar"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "konark-sun-temple",
+    "name": "Konark Sun Temple (Black Pagoda)",
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "city": "Konark",
+    "citySlug": "konark",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 13th-century stone chariot of Surya the Sun God, featuring 24 colossal sundial wheels and 7 carved horses.",
+    "longDescription": "Conceived by Eastern Ganga King Narasimhadeva I in 1250 AD on the shores of the Bay of Bengal. Sculpted in the Kalinga architectural style from Khondalite stone as a monumental 100-foot high chariot with 12 pairs of intricately carved wheels (serving as sundials accurate to a minute) pulled by seven galloping horses. Famed for its Natya Mandapa (Hall of Dance) depicting every classical Odissi dance posture.",
+    "category": [
+      "heritage",
+      "architecture",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "October to March (Konark Dance Festival in Dec)",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 19.8876,
+      "longitude": 86.0945
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "UNESCO World Heritage Monument",
+      "24 monumental carved stone chariot wheels serving as accurate astronomical sundials",
+      "Natya Mandapa featuring every classical Odissi dance mudra in stone",
+      "Evening Sound and Light show and Konark Dance Festival in December"
+    ],
+    "activities": [
+      "Learning to calculate precise solar time using the shadow of the spoke on the chariot wheel",
+      "Studying Kalinga stone sculptures of celestial dancers and war elephants",
+      "Sunset walk on nearby Chandrabhaga Beach"
+    ],
+    "nearbyPlaces": [
+      "Chandrabhaga Beach (3 km)",
+      "Puri (35 km)",
+      "Raghurajpur Heritage Crafts Village"
+    ],
+    "travelTips": [
+      "Take a photo aligning an Indian ₹10 currency note with the iconic Konark wheel depicted on its reverse"
+    ],
+    "accessibility": "Paved garden pathways; stairs lead onto the main stone plinth",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "unesco",
+      "konark-sun-temple",
+      "black-pagoda",
+      "sundial-wheel",
+      "kalinga-art"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "jagannath-temple-puri",
+    "name": "Shri Jagannath Temple (Puri)",
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "city": "Puri",
+    "citySlug": "puri",
+    "type": "spiritual",
+    "shortDescription": "One of the sacred Char Dham shrines of India, a 12th-century Kalinga temple famous for the world-renowned annual Ratha Yatra chariot festival.",
+    "longDescription": "Built by King Anantavarman Chodaganga Deva in the 12th century. The sacred abode of Lord Jagannath, his brother Balabhadra, and sister Subhadra. Spans 10 acres enclosed by double defensive walls (Meghanada Pacheri). Known for its colossal 214-foot Vimana, the Rosaghara (world's largest traditional temple kitchen cooking for 100,000 pilgrims daily in clay pots over wood fire), and the legendary Ratha Yatra.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March (Special during Ratha Yatra in June/July)",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 19.8049,
+      "longitude": 85.8179
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "One of the supreme Char Dham pilgrimage destinations",
+      "World's largest kitchen (Ananda Bazar) feeding 100,000 pilgrims daily",
+      "Annual Ratha Yatra pulling giant 45-foot chariots down Grand Road (Bada Danda)",
+      "Neelachakra (Blue Wheel) made of Ashtadhatu atop the 214-foot spire"
+    ],
+    "activities": [
+      "Darshan of Lord Jagannath, Balabhadra, and Subhadra",
+      "Tasting Mahaprasad at Ananda Bazar cooked in clay pots stacked 7-high",
+      "Watching evening Patita Pavana flag changing ceremony atop the spire"
+    ],
+    "nearbyPlaces": [
+      "Puri Golden Beach",
+      "Gundicha Temple",
+      "Konark Sun Temple"
+    ],
+    "travelTips": [
+      "Entry inside the temple is traditionally restricted to practicing Hindus; non-Hindus can view the temple from the roof of Raghunandan Library opposite the Lion Gate"
+    ],
+    "accessibility": "Requires climbing the 22 sacred stone stairs (Baisi Pahacha); wheelchair assistance available at Lion Gate",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "char-dham",
+      "jagannath-puri",
+      "ratha-yatra",
+      "mahaprasad",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "golden-temple",
+    "name": "Sri Harmandir Sahib (The Golden Temple)",
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "city": "Amritsar",
+    "citySlug": "amritsar",
+    "type": "spiritual",
+    "shortDescription": "The holiest Gurdwara of Sikhism, coated in 500 kg of pure gold foil, resting in the Amrit Sarovar, serving free meals to 100,000 people daily.",
+    "longDescription": "Founded in 1577 by Guru Ram Das, the fourth Sikh Guru. Built with four entrances facing all cardinal directions symbolizing universal brotherhood welcoming people of all castes and creeds. The two-storey sanctum was embellished with gilded marble and 500 kg of gold leaf by Maharaja Ranjit Singh in 1830. Houses the holy Guru Granth Sahib and the world's largest free community kitchen (Guru Ka Langar).",
+    "category": [
+      "spiritual",
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 31.62,
+      "longitude": 74.8765
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pure gold-plated marble sanctum floating in the Amrit Sarovar holy pool",
+      "Guru Ka Langar serving free vegetarian meals to 100,000 people every day",
+      "Continuous live 24-hour Gurbani Kirtan recitations",
+      "Night Palki Sahib procession carrying the Guru Granth Sahib to Akal Takht"
+    ],
+    "activities": [
+      "Taking a holy dip (Ishnan) in the sacred Amrit Sarovar",
+      "Participating in Langar volunteer seva (washing plates or making rotis)",
+      "Watching the 9:30 PM Palki Sahib bedtime ceremony"
+    ],
+    "nearbyPlaces": [
+      "Jallianwala Bagh",
+      "Partition Museum",
+      "Heritage Street"
+    ],
+    "travelTips": [
+      "Head covering is mandatory for everyone (scarves available free outside); shoes must be checked in at free cloakrooms; open 24/7"
+    ],
+    "accessibility": "Wheelchair ramps, dedicated elevators, and loaner wheelchairs available at main entrance gates",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "golden-temple",
+      "harmandir-sahib",
+      "langar",
+      "sikh-shrine",
+      "amritsar",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "wagah-border",
+    "name": "Wagah-Attari Border Beating Retreat Ceremony",
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "city": "Amritsar",
+    "citySlug": "amritsar",
+    "type": "heritage",
+    "shortDescription": "Electrifying military flag-lowering drill staged daily at sunset between the Indian BSF and Pakistan Rangers in a 25,000-seat amphitheater.",
+    "longDescription": "Located 28 km west of Amritsar on the Grand Trunk Road at the international border between India and Pakistan. Staged daily since 1959. The Border Security Force (BSF) and Pakistan Rangers perform a 45-minute synchronized military drill featuring rapid stomping, high kicks, and flag-lowering ceremonies amid thunderous cheers of patriotic crowds.",
+    "category": [
+      "heritage",
+      "culture",
+      "patriotic"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours (including travel)",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 31.6044,
+      "longitude": 74.5731
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Synchronized high-kicking drill between Indian BSF and Pakistan Rangers",
+      "Ceremonial opening of international border gates and flag-lowering",
+      "25,000-seat stadium with energetic patriotic music and crowd cheering",
+      "Swarn Jayanti Dwar grand border entrance monument"
+    ],
+    "activities": [
+      "Watching the sunset Beating Retreat military ceremony",
+      "Patriotic singing and dancing before the ceremony starts"
+    ],
+    "nearbyPlaces": [
+      "Amritsar City (28 km)",
+      "Ram Tirath Temple"
+    ],
+    "travelTips": [
+      "Arrive at the border by 3:30 PM (winter) or 4:30 PM (summer) to clear security and secure good grandstand seats; bags are prohibited, carry only phone and wallet"
+    ],
+    "accessibility": "Wheelchair accessible seating ramp in the special lower seating enclosure",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "wagah-border",
+      "beating-retreat",
+      "bsf",
+      "attari",
+      "amritsar"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "rishikesh-ganga-aarti",
+    "name": "Triveni Ghat Ganga Aarti & Yoga Capital",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Rishikesh",
+    "citySlug": "rishikesh",
+    "type": "spiritual",
+    "shortDescription": "The 'Yoga Capital of the World', where the emerald Ganga emerges from the Himalayas, celebrated for evening Maha Aarti and white-water rafting.",
+    "longDescription": "Set in the Himalayan foothills where the holy River Ganga emerges onto the northern plains. Renowned globally as the world capital of yoga, meditation, and spiritual ashrams (famed for The Beatles' 1968 stay at Chaurasi Kutia). Features iconic suspension bridges (Laxman Jhula, Ram Jhula), evening Maha Aarti ceremonies at Triveni Ghat and Parmarth Niketan, and Grade III/IV white-water river rafting.",
+    "category": [
+      "spiritual",
+      "wellness",
+      "adventure",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to April",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 30.1033,
+      "longitude": 78.2948
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Evening Ganga Aarti with flaming brass lamps and Vedic chants at Triveni Ghat",
+      "White-water river rafting from Shivpuri (Grade III/IV rapids)",
+      "The Beatles Ashram (Chaurasi Kutia) with psychedelic graffiti murals",
+      "Parmarth Niketan riverside spiritual satsangs"
+    ],
+    "activities": [
+      "Morning yoga and meditation by the riverbank",
+      "16-km white-water rafting down the roaring Ganga",
+      "Releasing floating flower diyas at twilight Triveni Ghat Aarti"
+    ],
+    "nearbyPlaces": [
+      "Haridwar (25 km)",
+      "Neelkanth Mahadev Temple",
+      "Vashistha Cave"
+    ],
+    "travelTips": [
+      "Parmarth Niketan's Ganga Aarti starts at 6:00 PM; arrive 30 minutes early to sit on the riverside steps overlooking the Shiva statue"
+    ],
+    "accessibility": "Paved riverfront ghats with wide steps",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "rishikesh",
+      "yoga-capital",
+      "ganga-aarti",
+      "river-rafting",
+      "beatles-ashram"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "har-ki-pauri",
+    "name": "Har Ki Pauri & Ganga Aarti",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Haridwar",
+    "citySlug": "haridwar",
+    "type": "spiritual",
+    "shortDescription": "The most sacred bathing ghat on the Ganga, where Lord Vishnu left his footprint, famous for the magical evening Ganga Aarti with thousands of floating lamps.",
+    "longDescription": "Literally 'Steps of Lord Shiva'. Constructed by King Vikramaditya in the 1st century BCE. The exact spot where drops of Amrit (nectar of immortality) fell from the celestial urn during the churning of the cosmic ocean. Every evening at dusk, priests perform the grand Ganga Aarti with massive multi-tiered flaming brass lamps while thousands of pilgrims release marigold leaf-boats with flickering candles onto the fast-flowing emerald river.",
+    "category": [
+      "spiritual",
+      "culture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to April (Special during Kumbh Mela)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 29.957,
+      "longitude": 78.172
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Mesmerizing evening Ganga Aarti with clanging gongs and flaming brass lamps",
+      "Brahmakund sacred bathing pool with Lord Vishnu's footprint (Charan Paduka)",
+      "A sea of thousands of floating marigold leaf lamps (diyas) drifting downstream",
+      "Mansa Devi and Chandi Devi ropeway cable cars nearby"
+    ],
+    "activities": [
+      "Watching the evening Ganga Aarti from the ghat steps",
+      "Holy dip in the fast-flowing Ganga water at Brahmakund",
+      "Releasing a floating leaf diya with your prayers"
+    ],
+    "nearbyPlaces": [
+      "Mansa Devi Temple (Ropeway)",
+      "Chandi Devi Temple",
+      "Rishikesh (25 km)"
+    ],
+    "travelTips": [
+      "Arrive by 5:15 PM to get seated on the stone steps across the river channel for an unobstructed front view of the priests performing the aarti"
+    ],
+    "accessibility": "Paved bridges and ramps connect across the river channels to the ghats",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "har-ki-pauri",
+      "ganga-aarti",
+      "haridwar",
+      "kumbh-mela",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "naini-lake",
+    "name": "Naini Lake & Naina Devi Temple",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Nainital",
+    "citySlug": "nainital",
+    "type": "lakes-waterfalls",
+    "shortDescription": "Natural emerald eye-shaped lake surrounded by seven forested peaks, offering yachting, pedal boating, and the sacred lakeside Naina Devi shrine.",
+    "longDescription": "According to Hindu mythology, Naini Lake was formed where the eyes (Naina) of Goddess Sati fell to earth. Set at 6,350 feet in the Kumaon Himalayas, this natural eye-shaped lake is flanked by seven forested hills. Visitors enjoy colorful yachting, pedal and row boating, walking the lively Mall Road, and taking the aerial ropeway to Snow View Point.",
+    "category": [
+      "lakes-waterfalls",
+      "nature",
+      "hill-stations"
+    ],
+    "bestTimeToVisit": "March to June & September to November",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 29.3919,
+      "longitude": 79.4542
+    },
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Emerald eye-shaped high-altitude lake ringed by pine-covered hills",
+      "Sailing colorful yachts and row boating on calm mountain water",
+      "Sacred lakeside Naina Devi Shaktipeeth temple",
+      "Aerial ropeway cable car to Snow View Point overlooking Nanda Devi"
+    ],
+    "activities": [
+      "Boating and yachting across Naini Lake",
+      "Evening stroll on Mall Road tasting hot momos and bhutta",
+      "Taking the cable car to Snow View Point"
+    ],
+    "nearbyPlaces": [
+      "Snow View Point",
+      "Tiffin Top (Dorothy's Seat)",
+      "Bhimtal (22 km)"
+    ],
+    "travelTips": [
+      "Walk along Thandi Sadak on the quiet pedestrian-only side of the lake for a tranquil pine-scented morning walk away from vehicle traffic"
+    ],
+    "accessibility": "Flat paved lakeside promenades on both Mall Road and Thandi Sadak",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "naini-lake",
+      "boating",
+      "hill-station",
+      "kumaon",
+      "nainital"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "jim-corbett-national-park",
+    "name": "Jim Corbett National Park & Dhikala Zone",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Jim Corbett",
+    "citySlug": "jim-corbett",
+    "type": "wildlife",
+    "shortDescription": "India's first national park (established 1936), nestled in the Shivalik foothills along the Ramganga River, world-famous for wild tigers and elephants.",
+    "longDescription": "Established in 1936 as Hailey National Park and later renamed after legendary naturalist-author Jim Corbett. Spanning 520 square kilometers of dense sal forests, riverine grasslands, and hills along the Ramganga River. The prime Dhikala tourism zone offers historic British rest houses inside the deep forest, Royal Bengal Tiger safaris, and wild Asian elephant herds.",
+    "category": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "bestTimeToVisit": "November to June (Dhikala zone opens November 15)",
+    "recommendedDuration": "2 - 3 days",
+    "estimatedVisitTime": "Full Day (Multi-Day Safaris)",
+    "coordinates": {
+      "latitude": 29.53,
+      "longitude": 78.7747
+    },
+    "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "India's oldest national park and birthplace of Project Tiger (1973)",
+      "Famed Dhikala grassland zone with wild elephant herds along Ramganga River",
+      "Overnight stay inside core forest British-era heritage rest houses",
+      "Over 250 Royal Bengal Tigers and 600 bird species"
+    ],
+    "activities": [
+      "Jeep and Canter safaris in Dhikala, Bijrani, and Jhirna zones",
+      "Staying inside the core forest at Dhikala Forest Lodge",
+      "Visiting Corbett Museum at Kaladhungi"
+    ],
+    "nearbyPlaces": [
+      "Corbett Waterfall",
+      "Garjiya Devi Temple",
+      "Nainital (65 km)"
+    ],
+    "travelTips": [
+      "Dhikala night-stay bookings open on the Uttarakhand Forest Department portal 45 days in advance and sell out within minutes"
+    ],
+    "accessibility": "4x4 Gypsy and Canter safaris with boarding assistance",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "jim-corbett",
+      "project-tiger",
+      "dhikala",
+      "oldest-national-park",
+      "wildlife"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "kedarnath-temple",
+    "name": "Kedarnath Temple (Shiva Jyotirlinga)",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Char Dham Circuit",
+    "citySlug": "char-dham-circuit",
+    "type": "spiritual",
+    "shortDescription": "The highest of the 12 Jyotirlingas at 3,584m in the Garhwal Himalayas, an ancient stone shrine surrounded by snow-capped Kedarnath peaks.",
+    "longDescription": "Set at an altitude of 3,584 meters (11,759 ft) near the Mandakini River glacier. Revered as one of the 12 Jyotirlingas and the most prominent of the Panch Kedar temples, traditionally built by the Pandavas and revived by Adi Shankaracharya. The massive grey stone temple survived the catastrophic 2013 Himalayan deluge virtually untouched thanks to the 'Bhim Shila' boulder that diverted floodwaters.",
+    "category": [
+      "spiritual",
+      "adventure",
+      "heritage"
+    ],
+    "bestTimeToVisit": "May to June & September to October (Closed during winter)",
+    "recommendedDuration": "2 - 3 days (16-km trek from Gaurikund)",
+    "estimatedVisitTime": "Full Day (Trek / Helicopter)",
+    "coordinates": {
+      "latitude": 30.7352,
+      "longitude": 79.0669
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Highest of the 12 sacred Jyotirlingas at 3,584 meters altitude",
+      "Framed against the 22,000-foot snow-capped Kedarnath Peak",
+      "Historic Bhim Shila boulder that miraculously protected the temple during 2013 floods",
+      "Challenging 16-km scenic trek along the rushing Mandakini River"
+    ],
+    "activities": [
+      "Trekking the 16-km trail from Gaurikund (or helicopter transfer)",
+      "Early morning darshan of the triangular Shiva Jyotirlinga",
+      "Visiting Adi Shankaracharya Samadhi monument behind the temple"
+    ],
+    "nearbyPlaces": [
+      "Bhairavnath Temple",
+      "Gandhi Sarovar glacier",
+      "Gaurikund base"
+    ],
+    "travelTips": [
+      "Mandatory biometric registration required on the Uttarakhand Char Dham portal; carry warm thermal clothing even in summer as night temperatures drop near freezing"
+    ],
+    "accessibility": "Requires a 16-km steep mountain trek; ponies, palanquins, and helicopter services available from Phata/Guptkashi",
+    "familyFriendly": false,
+    "budgetLevel": "moderate",
+    "tags": [
+      "kedarnath",
+      "jyotirlinga",
+      "himalayan-temple",
+      "char-dham",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "badrinath-temple",
+    "name": "Badrinath Temple (Badri Vishal)",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "city": "Char Dham Circuit",
+    "citySlug": "char-dham-circuit",
+    "type": "spiritual",
+    "shortDescription": "Primary Vishnu shrine of India's Char Dham at 3,133m between Nar and Narayana mountain ranges, famous for Tapt Kund hot sulfur springs.",
+    "longDescription": "Located at an altitude of 3,133 meters along the banks of the Alaknanda River. The supreme shrine of Lord Vishnu, established by Adi Shankaracharya in the 9th century. Features a vibrant rainbow-painted facade, a one-meter black stone (Saligram) idol of Lord Badrinarayan seated in Padmasana posture, and natural natural boiling sulfur hot springs (Tapt Kund) where pilgrims bathe before darshan.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "May to June & September to October (Closed in winter)",
+    "recommendedDuration": "1 - 2 days",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 30.7448,
+      "longitude": 79.493
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Primary Vishnu shrine of both All-India Char Dham and Chota Char Dham",
+      "Black stone Shaligram idol of Lord Badrinarayan under gold canopy",
+      "Natural healing hot sulfur spring pool at Tapt Kund (55°C)",
+      "Located just 3 km from Mana, officially India's first/last border village"
+    ],
+    "activities": [
+      "Bathing in the natural hot spring of Tapt Kund",
+      "Darshan of Lord Badri Vishal",
+      "Visiting Mana Village (India's first village) and Bheem Pul natural stone bridge"
+    ],
+    "nearbyPlaces": [
+      "Mana Village (3 km)",
+      "Vasudhara Falls",
+      "Vyasa Cave"
+    ],
+    "travelTips": [
+      "Unlike Kedarnath, Badrinath is directly accessible by motorable road via Joshimath; visit Mana village 3 km ahead to see Saraswati River emerge from the mountain"
+    ],
+    "accessibility": "Motorable road to temple entrance; gentle ramps and stone stairs to sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "badrinath",
+      "char-dham",
+      "vishnu-shrine",
+      "tapt-kund",
+      "mana-village"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  }
+];
+export const categories = [
+  {
+    "id": "heritage",
+    "name": "Heritage & Architecture",
+    "slug": "heritage",
+    "icon": "Landmark",
+    "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Millennia of Living History & Architectural Wonders",
+    "description": "Explore India's peerless architectural legacy spanning 3,000 years—from soaring Dravidian temple gopurams and monolithic rock-cut cave temples to impregnable Rajput hill citadels and symmetrical white marble Mughal mausoleums.",
+    "topDestinations": [
+      "Taj Mahal",
+      "Brihadeeswarar Temple",
+      "Hampi Stone Chariot",
+      "Amer Fort",
+      "Kailash Temple Ellora",
+      "Konark Sun Temple"
+    ],
+    "count": 123
+  },
+  {
+    "id": "spiritual",
+    "name": "Spiritual & Sacred Sites",
+    "slug": "spiritual",
+    "icon": "Flame",
+    "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Sacred Confluences, Jyotirlingas & Eternal Ghats",
+    "description": "Experience the timeless spiritual heartbeat of India. Journey across the 12 Jyotirlingas, the four supreme Char Dham holy abodes, eternal Ganga Aarti rituals along Varanasi's sacred ghats, and golden gurdwaras serving universal brotherhood.",
+    "topDestinations": [
+      "Kashi Vishwanath (Varanasi)",
+      "Golden Temple (Amritsar)",
+      "Mahabodhi Temple (Bodh Gaya)",
+      "Tirumala Balaji",
+      "Meenakshi Temple",
+      "Kedarnath Temple"
+    ],
+    "count": 58
+  },
+  {
+    "id": "beaches",
+    "name": "Beaches & Coastal Escapes",
+    "slug": "beaches",
+    "icon": "Palmtree",
+    "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Sun-Kissed Sands, Red Cliffs & Arabian Sea Breezes",
+    "description": "Discover over 7,500 kilometers of sun-blessed coastline—from the golden crescent bays of Gokarna and dramatic red laterite cliffs of Varkala to the world-famous Marina promenade in Chennai and untouched white sands in Rameswaram.",
+    "topDestinations": [
+      "Om Beach (Gokarna)",
+      "Varkala Cliff Beach",
+      "Marina Beach (Chennai)",
+      "Yarada Beach (Vizag)",
+      "Radhanagar",
+      "Mahabalipuram Beach"
+    ],
+    "count": 14
+  },
+  {
+    "id": "hill-stations",
+    "name": "Hill Stations & Mountains",
+    "slug": "hill-stations",
+    "icon": "Mountain",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Misty Valleys, Pine Cathedrals & Snow-Crowned Peaks",
+    "description": "Ascend to cool mountain retreats cradled by the Himalayas, Western Ghats, and Nilgiris. Ride vintage UNESCO toy trains through tea estates in Ooty and Darjeeling, boat across emerald mountain lakes in Nainital, and walk cloud-draped cliff ridges in Kodaikanal.",
+    "topDestinations": [
+      "Ooty (Nilgiris)",
+      "Darjeeling (Kanchenjunga)",
+      "Munnar (Tea Hills)",
+      "Kodaikanal",
+      "Nainital Lake",
+      "Coorg"
+    ],
+    "count": 11
+  },
+  {
+    "id": "wildlife",
+    "name": "Wildlife & Nature Reserves",
+    "slug": "wildlife",
+    "icon": "Compass",
+    "heroImage": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Royal Bengal Tigers, Asiatic Lions & Wild Elephants",
+    "description": "Immerse yourself in India's untamed wilderness. Track Royal Bengal Tigers prowling ancient stone ruins in Ranthambore and Jim Corbett, observe the world's last wild Asiatic Lions in Gir, and watch wild elephant herds bathe in the pristine waters of Periyar.",
+    "topDestinations": [
+      "Ranthambore National Park",
+      "Jim Corbett National Park",
+      "Gir Forest (Asiatic Lions)",
+      "Sundarbans Delta",
+      "Periyar Wildlife Sanctuary",
+      "Eravikulam (Nilgiri Tahr)"
+    ],
+    "count": 11
+  },
+  {
+    "id": "adventure",
+    "name": "Adventure & Thrills",
+    "slug": "adventure",
+    "icon": "Compass",
+    "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "White-Water Rafting, Desert Safaris & High-Altitude Treks",
+    "description": "Fuel your wanderlust with high-octane expeditions across varied geography: battle Grade IV Himalayan white-water rapids in Rishikesh, bash 30-meter sand dunes in Jaisalmer's Thar Desert, and trek along boulder-strewn volcanic trails in Hampi.",
+    "topDestinations": [
+      "White-Water Rafting (Rishikesh)",
+      "Thar Desert Dune Bashing (Sam Dunes)",
+      "High-Altitude Trek to Kedarnath",
+      "Flying Fox Zipline (Mehrangarh)",
+      "Pennar Gorge Kayaking (Gandikota)"
+    ],
+    "count": 25
+  },
+  {
+    "id": "food",
+    "name": "Culinary Heritage & Food Trails",
+    "slug": "food",
+    "icon": "Coffee",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Royal Nawabi Dastarkhwans, Spicy Chettinad & Street Chaat",
+    "description": "Embark on an unforgettable sensory feast celebrating India's rich culinary traditions: melt-in-mouth Galouti Kebabs and Awadhi biryanis in Lucknow, fiery pepper crab in Chettinad, buttery pav bhaji on Juhu beach, and aromatic single-estate filter coffees.",
+    "topDestinations": [
+      "Lucknow (Awadhi Kebabs)",
+      "Madurai & Chettinad (Spicy curries)",
+      "Amritsar (Kulcha & Lassi)",
+      "Hyderabad (Dum Biryani)",
+      "Kolkata (Kathi Rolls & Rosogolla)"
+    ],
+    "count": 7
+  },
+  {
+    "id": "culture",
+    "name": "Culture, Arts & Festivals",
+    "slug": "culture",
+    "icon": "Sparkles",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "tagline": "Living Folk Traditions, Classical Dance & World Records",
+    "description": "Celebrate the colorful kaleidoscope of India's living heritage: witness millions of earthen oil lamps ignite at Ayodhya's Deepotsav, dance at Gujarat's 9-night Navratri Garba, marvel at Kathakali theatre in Kerala, and experience the Pushkar Camel Fair.",
+    "topDestinations": [
+      "Pushkar Camel Fair",
+      "Ayodhya Deepotsav",
+      "Kumbh Mela (Prayagraj)",
+      "Mysuru Dasara",
+      "Rann Utsav (Kutch)",
+      "Khajuraho Dance Festival"
+    ],
+    "count": 30
+  }
+];
+export const travelStyles = [
+  {
+    "id": "family",
+    "name": "Family Trips",
+    "description": "Safe, comfortable, and wonder-filled journeys suitable for all generations.",
+    "icon": "Users"
+  },
+  {
+    "id": "couples",
+    "name": "Couples & Honeymoon",
+    "description": "Romantic getaways with sunset boat rides, luxury palaces, and mist-wrapped hills.",
+    "icon": "Heart"
+  },
+  {
+    "id": "solo",
+    "name": "Solo Travel",
+    "description": "Soul-stirring adventures, peaceful ashrams, and budget-friendly backpacker hubs.",
+    "icon": "Compass"
+  },
+  {
+    "id": "friends",
+    "name": "Friends & Groups",
+    "description": "High-energy road trips, water sports, camping, and vibrant night markets.",
+    "icon": "Smile"
+  },
+  {
+    "id": "weekend",
+    "name": "Weekend Trips",
+    "description": "Quick, refreshing 2-3 day escapes easily accessible from major metropolitan hubs.",
+    "icon": "Clock"
+  },
+  {
+    "id": "luxury",
+    "name": "Royal Luxury",
+    "description": "Palace hotels, private heritage chauffeurs, and world-class fine dining.",
+    "icon": "Crown"
+  },
+  {
+    "id": "budget",
+    "name": "Budget Travel",
+    "description": "Authentic, high-value discoveries with local transport, ashrams, and street food.",
+    "icon": "DollarSign"
+  },
+  {
+    "id": "spiritual",
+    "name": "Spiritual Pilgrimage",
+    "description": "Devotional circuits across sacred rivers, jyotirlingas, and divine shrines.",
+    "icon": "Flame"
+  },
+  {
+    "id": "heritage",
+    "name": "Heritage & History",
+    "description": "Deep architectural explorations of UNESCO sites, forts, and ancient museums.",
+    "icon": "Landmark"
+  },
+  {
+    "id": "nature",
+    "name": "Nature & Wilderness",
+    "description": "Dense green forests, waterfalls, tea estates, and starry night skies.",
+    "icon": "Trees"
+  },
+  {
+    "id": "adventure",
+    "name": "Adventure & Thrills",
+    "description": "River rafting, desert safaris, rock climbing, and mountain trekking.",
+    "icon": "Zap"
+  },
+  {
+    "id": "beach",
+    "name": "Beach Leisure",
+    "description": "Laid-back days on golden sand, swimming in warm surf, and seafood shacks.",
+    "icon": "Palmtree"
+  }
+];
+export const itineraries = [
+  {
+    "id": "rajasthan-royal-splendour-3d",
+    "title": "3 Days in Royal Rajasthan: Jaipur & Pushkar",
+    "state": "Rajasthan",
+    "destination": "Jaipur & Pushkar",
+    "durationDays": 3,
+    "travelStyle": "heritage",
+    "budget": "moderate",
+    "heroImage": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "summary": "Experience the ultimate 3-day royal circuit through the Pink City of Jaipur and the sacred desert oasis of Pushkar. Marvel at the golden ramparts of Amber Fort, the 953 honeycomb windows of Hawa Mahal, and the tranquil evening ghats of Pushkar Lake.",
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Fortresses & Palaces of the Pink City",
+        "morning": "Ascend the cobbled slopes of Amber Fort to explore the Sheesh Mahal mirror palace and Ganesh Pol courtyards.",
+        "afternoon": "Tour the royal Chandra Mahal and courtyards of City Palace; study astronomical stone instruments at UNESCO Jantar Mantar.",
+        "evening": "Capture golden hour photos in front of Hawa Mahal's 953 pink jharokhas; enjoy sunset views over Jaipur from the ramparts of Nahargarh Fort."
+      },
+      {
+        "dayNumber": 2,
+        "title": "Water Palaces & Old Jaipur Bazaars",
+        "morning": "Admire the floating illusion of Jal Mahal on Man Sagar Lake followed by traditional block printing workshops in Amer village.",
+        "afternoon": "Savor authentic Rajasthani Dal Baati Churma at LMB in Johari Bazaar; shop for Blue Pottery and gemstone jewellery in Bapu Bazaar.",
+        "evening": "Drive through the Aravalli Hills towards the sacred town of Pushkar; check into your desert heritage haveli."
+      },
+      {
+        "dayNumber": 3,
+        "title": "Sacred Oasis & Desert Sunset in Pushkar",
+        "morning": "Participate in early morning prayers at the 14th-century Jagatpita Brahma Temple and walk barefoot along the sacred 52 stone ghats.",
+        "afternoon": "Browse vibrant handicraft lanes for rose water, camel leather bags, and embroidered textiles; sip sweet falooda lassi by the lake.",
+        "evening": "Embark on a sunset camel safari into the Thar Desert dunes as folk musicians play the ravanahatha under the evening sky."
+      }
+    ]
+  },
+  {
+    "id": "tamil-nadu-temple-trail-5d",
+    "title": "5 Days Tamil Nadu Temple & Heritage Trail",
+    "state": "Tamil Nadu",
+    "destination": "Chennai, Mahabalipuram, Thanjavur & Madurai",
+    "durationDays": 5,
+    "travelStyle": "spiritual",
+    "budget": "moderate",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "summary": "Journey through 1,500 years of unbroken Dravidian architectural brilliance: from the sea-carved Pallava monoliths of Mahabalipuram to the 216-foot granite Vimana of Thanjavur's Big Temple and the multi-tiered gopurams of Madurai.",
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Colonial Chennai & Pallava Ocean Shore",
+        "morning": "Visit the 7th-century Kapaleeshwarar Temple in Mylapore and historic San Thome Basilica.",
+        "afternoon": "Drive along the scenic East Coast Road (ECR) to UNESCO World Heritage site Mahabalipuram.",
+        "evening": "Explore the monolithic Pancha Rathas and watch the waves crash against the 8th-century Shore Temple at sunset."
+      },
+      {
+        "dayNumber": 2,
+        "title": "Monolithic Wonders & Descent of the Ganga",
+        "morning": "Marvel at Arjuna's Penance bas-relief and pose by the gravity-defying Krishna's Butter Ball.",
+        "afternoon": "Depart for the ancient Chola imperial capital of Thanjavur across the fertile Kaveri Delta.",
+        "evening": "Arrive in Thanjavur; stroll through the illuminated moat surrounding the Brihadeeswarar Temple complex."
+      },
+      {
+        "dayNumber": 3,
+        "title": "The Chola Granite Marvel in Thanjavur",
+        "morning": "Tour Brihadeeswarar Temple (Big Temple), studying its 81-ton monolithic granite cupola and thousand-year-old Tamil inscriptions.",
+        "afternoon": "Visit the Thanjavur Maratha Palace, Saraswathi Mahal Library, and royal bronze casting ateliers.",
+        "evening": "Drive through the Chettinad heritage mansion belt towards Madurai; dinner featuring authentic Chettinad pepper chicken."
+      },
+      {
+        "dayNumber": 4,
+        "title": "The Soul of Madurai & Goddess Meenakshi",
+        "morning": "Enter the magnificent Meenakshi Amman Temple to marvel at the Hall of 1,000 Pillars and sacred Golden Lotus Pond.",
+        "afternoon": "Explore the monumental 82-foot stucco arches of Thirumalai Nayakkar Palace and the historic Gandhi Memorial Museum.",
+        "evening": "Witness the divine 9:00 PM Bed-Chamber palanquin procession inside Meenakshi Temple with nadaswaram music."
+      },
+      {
+        "dayNumber": 5,
+        "title": "Jasmine Markets & Alagar Hills Departure",
+        "morning": "Walk through Madurai's bustling wholesale jasmine flower market (Madurai Malli) and taste fluffy Idlis at Murugan Idli Shop.",
+        "afternoon": "Take a scenic drive to Alagar Koyil temple nestled in forested hills; taste sacred pepper dosai prasad.",
+        "evening": "Transfer to Madurai Airport or Railway Station for onward travel."
+      }
+    ]
+  },
+  {
+    "id": "kerala-backwaters-and-hills-5d",
+    "title": "5 Days Kerala Backwaters, Tea Hills & Coast",
+    "state": "Kerala",
+    "destination": "Kochi, Munnar & Alappuzha",
+    "durationDays": 5,
+    "travelStyle": "nature",
+    "budget": "luxury",
+    "heroImage": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+    "summary": "Discover God's Own Country: explore colonial Portuguese and Dutch history in Fort Kochi, breathe fresh cardamom air in the mist-wrapped tea plantations of Munnar, and cruise silent emerald lagoons on a private thatched houseboat in Alleppey.",
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Colonial Charm of Fort Kochi",
+        "morning": "Stroll along Fort Kochi to watch fishermen operate the 14th-century Chinese Fishing Nets against the morning tide.",
+        "afternoon": "Visit the 16th-century Mattancherry Palace with its Ramayana murals and browse antique shops in historic Jew Town.",
+        "evening": "Attend an authentic Kathakali classical dance performance with live makeup demonstration; dine on fresh grilled seafood."
+      },
+      {
+        "dayNumber": 2,
+        "title": "Ascent into the Misty Tea Hills of Munnar",
+        "morning": "Drive through lush Western Ghats mountain roads, stopping at Cheeyappara and Valara waterfalls.",
+        "afternoon": "Arrive in Munnar; walk through aromatic cardamom, cinnamon, and pepper spice gardens.",
+        "evening": "Check into a cliffside tea estate bungalow; sip fresh single-estate brew as evening fog blankets the hills."
+      },
+      {
+        "dayNumber": 3,
+        "title": "Tea Plantations & Endangered Nilgiri Tahr",
+        "morning": "Board the eco-safari bus at Eravikulam National Park to spot the rare Nilgiri Tahr grazing near Anamudi Peak.",
+        "afternoon": "Tour the Tata Tea Museum for an artisan tea tasting session and live CTC manufacturing demonstration.",
+        "evening": "Enjoy pedal boating at Mattupetty Dam reservoir and panoramic views from Top Station looking into Tamil Nadu."
+      },
+      {
+        "dayNumber": 4,
+        "title": "Houseboat Living on Alleppey Backwaters",
+        "morning": "Scenic descent from the mountains towards the palm-fringed backwater hub of Alappuzha (Alleppey).",
+        "afternoon": "Board your private luxury thatched Kettuvallam houseboat; glide silently through Vembanad Lake and narrow palm canals.",
+        "evening": "Feast on freshly caught Pearl Spot (Karimeen) fish and Kerala Sadya prepared by your onboard chef under starry skies."
+      },
+      {
+        "dayNumber": 5,
+        "title": "Sunrise Canal Cruise & Departure",
+        "morning": "Wake up to mist drifting over water lilies; take a quiet morning canoe ride through rural village coir-making canals.",
+        "afternoon": "Disembark from the houseboat; stroll along Alappuzha Beach and its historic 160-year-old colonial pier.",
+        "evening": "Transfer to Cochin International Airport (COK) for your flight home."
+      }
+    ]
+  },
+  {
+    "id": "uttar-pradesh-spiritual-circuit-4d",
+    "title": "4 Days Spiritual Heartland: Varanasi, Ayodhya & Lucknow",
+    "state": "Uttar Pradesh",
+    "destination": "Varanasi, Ayodhya & Lucknow",
+    "durationDays": 4,
+    "travelStyle": "spiritual",
+    "budget": "moderate",
+    "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "summary": "A profound spiritual and cultural odyssey across the holy rivers Ganga and Saryu to the Nawabi capital of Lucknow. Experience dawn boat rides along Varanasi's 84 ghats, darshan at the grand new Ram Mandir in Ayodhya, and Awadhi culinary royalty.",
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "The Eternal City of Kashi (Varanasi)",
+        "morning": "Sunrise wooden boat ride along the 84 sacred ghats; witness morning snan and classical Subah-e-Banaras ragas at Assi Ghat.",
+        "afternoon": "Walk through the Kashi Vishwanath Corridor to take darshan of the gold-spired Shiva Jyotirlinga.",
+        "evening": "Witness the magnificent choreographed evening Dashashwamedh Ganga Aarti from stone steps; release floating marigold lamps."
+      },
+      {
+        "dayNumber": 2,
+        "title": "Buddha's Sarnath & Road to Ayodhya",
+        "morning": "Visit Sarnath (10 km away) to meditate by the 43-meter Dhamek Stupa and see the Ashokan Lion Capital at the museum.",
+        "afternoon": "Scenic highway drive or Vande Bharat Express ride to the holy city of Ayodhya on the sacred Saryu River.",
+        "evening": "Attend the serene evening Saryu River Aarti at Naya Ghat; walk the illuminated pathways of Ram Ki Paidi."
+      },
+      {
+        "dayNumber": 3,
+        "title": "Sacred Ayodhya & Shri Ram Janmabhoomi",
+        "morning": "Climb the 76 steps to Hanuman Garhi fortress temple before sacred darshan at the magnificent new Shri Ram Janmabhoomi Mandir.",
+        "afternoon": "Visit the ornate Bundeli palace temple of Kanak Bhawan; sample traditional Ayodhya pedas and rabri.",
+        "evening": "Drive on the Purvanchal Expressway to the regal city of Lucknow; check into your heritage hotel."
+      },
+      {
+        "dayNumber": 4,
+        "title": "Nawabi Heritage & Awadhi Gastronomy in Lucknow",
+        "morning": "Navigate the mysterious 3D labyrinth of Bhulbhulaiya atop the monumental Bara Imambara and admire Rumi Darwaza.",
+        "afternoon": "Walk through the British Residency ruins; shop for authentic GI-tagged Chikankari embroidery in Hazratganj.",
+        "evening": "Feast on melt-in-mouth Galouti and Tunday Kebabs with Ulte Tawe Ka Paratha in Aminabad before departure."
+      }
+    ]
+  },
+  {
+    "id": "karnataka-heritage-wonders-4d",
+    "title": "4 Days Karnataka Heritage: Hampi & Badami",
+    "state": "Karnataka",
+    "destination": "Hampi & Badami",
+    "durationDays": 4,
+    "travelStyle": "heritage",
+    "budget": "moderate",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "summary": "Explore the golden ruins of the Vijayanagara Empire at UNESCO World Heritage Hampi, and the 6th-century Chalukyan rock-cut cave temples of Badami overlooking emerald Agastya Lake.",
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Sacred Ruins & Boulder Landscapes of Hampi",
+        "morning": "Receive morning blessings from Lakshmi the elephant at Virupaksha Temple; explore ancient Hampi Bazaar ruins.",
+        "afternoon": "Hike up boulder-strewn Hemakuta Hill to view early Chalukyan shrines and the giant Kadalekalu Ganesha monolithic statue.",
+        "evening": "Climb Matanga Hill for an unforgettable 360-degree sunset view over the Tungabhadra River and ruined empire."
+      },
+      {
+        "dayNumber": 2,
+        "title": "The Stone Chariot & Royal Enclosure",
+        "morning": "Tour the Vittala Temple complex, marveling at the world-famous Stone Chariot and testing the acoustic musical pillars.",
+        "afternoon": "Explore the royal Zenana Enclosure, the Indo-Islamic Lotus Mahal, and the 11 grand domed Elephant Stables.",
+        "evening": "Coracle boat ride on the rushing waters of the Tungabhadra River; cafe hopping in bohemian Sanapur village."
+      },
+      {
+        "dayNumber": 3,
+        "title": "Rock-Cut Caves of Badami & Agastya Lake",
+        "morning": "Drive to Badami; climb through the four 6th-century rock-cut cave temples chiseled into soaring red sandstone cliffs.",
+        "afternoon": "Admire the 18-armed dancing Nataraja in Cave 1 and colossal Vishnu sculptures in Cave 3 overlooking Agastya Lake.",
+        "evening": "Walk around the quiet shores of Agastya Lake to watch sunset reflect off the water plinth of Bhutanatha Temple."
+      },
+      {
+        "dayNumber": 4,
+        "title": "UNESCO Pattadakal & Cradle of Temple Architecture",
+        "morning": "Visit the UNESCO World Heritage temple complex at Pattadakal (22 km) displaying early Dravidian and Nagara temple fusions.",
+        "afternoon": "Explore the historic 5th-century rock temples of Aihole (Durga Temple and Lad Khan Temple).",
+        "evening": "Return to Hubballi or Bengaluru for onward travel."
+      }
+    ]
+  },
+  {
+    "id": "uttarakhand-himalayan-expedition-5d",
+    "title": "5 Days Devbhoomi Uttarakhand: Rishikesh, Nainital & Corbett",
+    "state": "Uttarakhand",
+    "destination": "Rishikesh, Haridwar, Jim Corbett & Nainital",
+    "durationDays": 5,
+    "travelStyle": "adventure",
+    "budget": "moderate",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The ultimate Himalayan sampler: from holy evening Ganga Aartis and white-water rapids in Rishikesh and Haridwar to wild Bengal Tiger safaris in Jim Corbett and boating on emerald Naini Lake.",
+    "days": [
+      {
+        "dayNumber": 1,
+        "title": "Holy River & Evening Aarti in Haridwar",
+        "morning": "Take the cable car up to Mansa Devi Temple on Bilwa Parvat overlooking the Ganga valley.",
+        "afternoon": "Walk through the bustling Moti Bazaar; taste hot kachoris and rabri jalebi.",
+        "evening": "Secure stone seats at Har Ki Pauri for the awe-inspiring evening Ganga Aarti with flaming brass lamps and floating diyas."
+      },
+      {
+        "dayNumber": 2,
+        "title": "Yoga & White-Water Rafting in Rishikesh",
+        "morning": "Experience thrilling Grade III/IV white-water river rafting from Shivpuri, navigating Roller Coaster and Golf Course rapids.",
+        "afternoon": "Walk across Ram Jhula; explore The Beatles Ashram (Chaurasi Kutia) with its psychedelic murals.",
+        "evening": "Attend the serene sunset Ganga Aarti at Parmarth Niketan facing the majestic Shiva statue in the river."
+      },
+      {
+        "dayNumber": 3,
+        "title": "Tiger Safari in India's Oldest National Park",
+        "morning": "Scenic drive through the Shivalik foothills to Jim Corbett National Park.",
+        "afternoon": "Board an open-top 4x4 Gypsy safari into Bijrani or Jhirna zones; track Bengal Tigers, Asian elephants, and spotted deer.",
+        "evening": "Relax around a bonfire at your riverside jungle resort along the Kosi River."
+      },
+      {
+        "dayNumber": 4,
+        "title": "Emerald Mountain Lake in Nainital",
+        "morning": "Drive through Kumaoni pine ridges to the picturesque hill station of Nainital (6,350 ft).",
+        "afternoon": "Yachting and pedal boating on the emerald waters of Naini Lake; visit the sacred lakeside Naina Devi Temple.",
+        "evening": "Take the aerial ropeway cable car to Snow View Point for vistas of Mount Nanda Devi; stroll the lively Mall Road."
+      },
+      {
+        "dayNumber": 5,
+        "title": "Himalayan Viewpoints & Departure",
+        "morning": "Horseback ride or nature hike to Tiffin Top (Dorothy's Seat) for 360-degree vistas over Kumaon hills.",
+        "afternoon": "Shop for aromatic hand-carved decorative candles and fresh fruit jams at Tibetan Market.",
+        "evening": "Transfer to Kathgodam railway station or Pantnagar airport for departure."
+      }
+    ]
+  }
+];
+
+export default {
+  metadata,
+  states,
+  cities,
+  attractions,
+  categories,
+  travelStyles,
+  itineraries
+};

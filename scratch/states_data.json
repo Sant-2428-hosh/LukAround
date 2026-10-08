@@ -1,0 +1,1596 @@
+[
+  {
+    "id": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "slug": "uttar-pradesh",
+    "priorityRank": 1,
+    "domesticTouristVisits2024": 320000000,
+    "capital": "Lucknow",
+    "description": "Uttar Pradesh is the spiritual and cultural heartland of India, cradled by the holy rivers Ganga and Yamuna. Home to the timeless Taj Mahal, the eternal sacred ghats of Varanasi, the divine birthplace of Lord Rama in Ayodhya, and the regal Nawabi heritage of Lucknow, Uttar Pradesh presents an unmatched tapestry of living history, magnificent Mughal and Hindu architecture, world-renowned culinary traditions, and vibrant cultural festivities.",
+    "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "spiritual",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Agra",
+      "Varanasi",
+      "Lucknow",
+      "Ayodhya",
+      "Prayagraj",
+      "Mathura",
+      "Vrindavan",
+      "Kanpur",
+      "Jhansi",
+      "Chitrakoot",
+      "Sarnath",
+      "Kushinagar",
+      "Fatehpur Sikri",
+      "Meerut",
+      "Bareilly"
+    ],
+    "topDestinations": [
+      "Taj Mahal",
+      "Kashi Vishwanath Temple",
+      "Ram Mandir",
+      "Bara Imambara",
+      "Triveni Sangam",
+      "Fatehpur Sikri",
+      "Prem Mandir"
+    ],
+    "popularFoods": [
+      {
+        "name": "Lucknowi Awadhi Biryani",
+        "description": "Fragrant dum-cooked rice and marinated meat infused with saffron and royal spices"
+      },
+      {
+        "name": "Galouti & Tunday Kebabs",
+        "description": "Mouth-melting kebabs created with over 160 secret aromatic herbs and spices"
+      },
+      {
+        "name": "Agra Petha",
+        "description": "Translucent candied ash gourd sweet in saffron, pan, and almond varieties"
+      },
+      {
+        "name": "Banarasi Kachori & Jalebi",
+        "description": "Crisp urad dal stuffed poori served with spicy aloo and fresh syrup-soaked jalebi"
+      },
+      {
+        "name": "Mathura Peda",
+        "description": "Caramelized reduced milk sweet renowned for its rich mawa flavor"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Kumbh Mela (Prayagraj)",
+        "description": "The largest human spiritual gathering on earth at the sacred Triveni Sangam"
+      },
+      {
+        "name": "Dev Deepawali (Varanasi)",
+        "description": "Lakhs of clay earthen lamps illuminate all 84 ghats on Kartik Purnima"
+      },
+      {
+        "name": "Braj Ki Holi (Mathura/Barsana)",
+        "description": "Spectacular multi-day celebration of colors, flowers, and Lathmar Holi"
+      },
+      {
+        "name": "Deepotsav (Ayodhya)",
+        "description": "Millions of oil lamps lit along the Saryu River setting world records"
+      }
+    ],
+    "culture": "Uttar Pradesh is the birthplace of Kathak, one of the eight classical dance forms of India, and the home of the prestigious Benares and Lucknow gharanas of Hindustani classical music. The state is renowned for Chikankari embroidery, Banarasi silk weaving, brassware of Moradabad, and perfumed attar from Kannauj.",
+    "transportation": {
+      "airports": [
+        "Chhatrapati Shivaji Maharaj International (Lucknow - LKO)",
+        "Lal Bahadur Shastri International (Varanasi - VNS)",
+        "Maharishi Valmiki International (Ayodhya - AYJ)",
+        "Agra Airport (AGR)"
+      ],
+      "railway": [
+        "Prayagraj Junction",
+        "Varanasi Junction",
+        "Lucknow Charbagh",
+        "Agra Cantt",
+        "Kanpur Central",
+        "Mathura Junction"
+      ],
+      "road": [
+        "Yamuna Expressway",
+        "Agra-Lucknow Expressway",
+        "Purvanchal Expressway",
+        "Bundelkhand Expressway"
+      ]
+    },
+    "unescoSites": [
+      "Taj Mahal (Agra)",
+      "Agra Fort (Agra)",
+      "Fatehpur Sikri"
+    ]
+  },
+  {
+    "id": "tamil-nadu",
+    "name": "Tamil Nadu",
+    "slug": "tamil-nadu",
+    "priorityRank": 2,
+    "domesticTouristVisits2024": 286000000,
+    "capital": "Chennai",
+    "description": "Tamil Nadu is India's sanctuary of Dravidian architectural genius, classical arts, and timeless coastal beauty. From the soaring gopurams of Madurai, Thanjavur, and Rameswaram to the mist-wrapped Nilgiri hill stations of Ooty and Kodaikanal, and the meeting of three oceans at Kanyakumari, Tamil Nadu offers over two millennia of unbroken classical Tamil heritage, world-famous temple art, and spicy Chettinad culinary grandeur.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "spiritual",
+      "beaches",
+      "hill-stations",
+      "culture"
+    ],
+    "bestTimeToVisit": "November to March",
+    "majorCities": [
+      "Chennai",
+      "Coimbatore",
+      "Madurai",
+      "Ooty",
+      "Kodaikanal",
+      "Kanyakumari",
+      "Rameswaram",
+      "Thanjavur",
+      "Tiruchirappalli",
+      "Mahabalipuram",
+      "Kanchipuram",
+      "Yercaud",
+      "Coonoor",
+      "Valparai",
+      "Tirunelveli",
+      "Vellore",
+      "Salem"
+    ],
+    "topDestinations": [
+      "Meenakshi Amman Temple",
+      "Brihadeeswarar Temple",
+      "Shore Temple",
+      "Ramanathaswamy Temple",
+      "Vivekananda Rock Memorial",
+      "Ooty Lake",
+      "Kodaikanal Lake"
+    ],
+    "popularFoods": [
+      {
+        "name": "Chettinad Pepper Chicken / Chukka",
+        "description": "Fiercely aromatic curry ground with black peppercorns, kalpasi stone flower, and freshly roasted spices"
+      },
+      {
+        "name": "Madurai Jigarthanda",
+        "description": "Iconic cooling royal beverage made with badam pisin almond gum, nannari syrup, and basundi ice cream"
+      },
+      {
+        "name": "Kanchipuram Idli",
+        "description": "Traditional spiced steamed cakes seasoned with crushed peppercorns, cumin, and ginger"
+      },
+      {
+        "name": "Filter Coffee (Kumbakonam Degree)",
+        "description": "Frothy, rich chicory-drip decoction blended with boiled cow's milk served in brass dabara-tumbler"
+      },
+      {
+        "name": "Tirunelveli Halwa",
+        "description": "Ghee-drenched wheat milk halwa cooked with pure Thamirabarani river water"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Pongal",
+        "description": "Four-day harvest celebration featuring boiling milk in earthen pots, Jallikattu, and kolam designs"
+      },
+      {
+        "name": "Chithirai Festival (Madurai)",
+        "description": "Grand celebration of the celestial wedding of Goddess Meenakshi and Lord Sundareswarar"
+      },
+      {
+        "name": "Margazhi Music Season (Chennai)",
+        "description": "The world's largest classical Carnatic music and Bharatanatyam dance festival"
+      },
+      {
+        "name": "Natyanjali Dance Festival (Chidambaram)",
+        "description": "Classical dancers offer performances to Lord Nataraja against temple sanctums"
+      }
+    ],
+    "culture": "Tamil Nadu preserves the ancient Sangam literary traditions, Bharatanatyam classical dance, intricate Tanjore paintings with 22-carat gold foil, Kanchipuram silk sarees handwoven on pit looms, and world-renowned bronze casting techniques practiced since the Chola dynasty.",
+    "transportation": {
+      "airports": [
+        "Chennai International (MAA)",
+        "Coimbatore International (CJB)",
+        "Madurai International (IXM)",
+        "Tiruchirappalli International (TRZ)"
+      ],
+      "railway": [
+        "Chennai Central (MAS)",
+        "Madurai Junction",
+        "Coimbatore Junction",
+        "Tiruchirappalli Junction"
+      ],
+      "road": [
+        "Grand Southern Trunk Road (NH 45)",
+        "NH 44 (Kanyakumari Highway)",
+        "East Coast Road (ECR scenic corridor)"
+      ]
+    },
+    "unescoSites": [
+      "Great Living Chola Temples (Thanjavur, Gangaikonda Cholapuram, Darasuram)",
+      "Group of Monuments at Mahabalipuram",
+      "Nilgiri Mountain Railway"
+    ]
+  },
+  {
+    "id": "karnataka",
+    "name": "Karnataka",
+    "slug": "karnataka",
+    "priorityRank": 3,
+    "domesticTouristVisits2024": 245000000,
+    "capital": "Bengaluru",
+    "description": "Karnataka embodies a wondrous harmony of prehistoric boulder-strewn ruins, opulent royal palaces, pristine coffee-draped Western Ghats, and sparkling coastal shorelines. From the UNESCO monument wonderland of Hampi to the golden palace of Mysuru, the misty hills of Coorg and Chikmagalur, and the untouched sacred beaches of Gokarna, Karnataka is an extraordinary travel mosaic.",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f4446b1a?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "nature",
+      "hill-stations",
+      "wildlife",
+      "beaches"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Bengaluru",
+      "Mysuru",
+      "Hampi",
+      "Coorg",
+      "Chikmagalur",
+      "Udupi",
+      "Gokarna",
+      "Mangaluru",
+      "Badami",
+      "Aihole",
+      "Pattadakal",
+      "Belur",
+      "Halebeedu",
+      "Shivamogga",
+      "Dandeli",
+      "Kabini",
+      "Bandipur",
+      "Jog Falls",
+      "Hubballi",
+      "Srirangapatna"
+    ],
+    "topDestinations": [
+      "Hampi Ruins & Stone Chariot",
+      "Mysore Palace",
+      "Om Beach Gokarna",
+      "Abbey Falls Coorg",
+      "Badami Cave Temples",
+      "Jog Falls",
+      "Belur-Halebeedu"
+    ],
+    "popularFoods": [
+      {
+        "name": "Mysore Pak",
+        "description": "Silky, melt-in-mouth dessert crafted with gram flour, pure ghee, and sugar crystals"
+      },
+      {
+        "name": "Bisi Bele Bath",
+        "description": "Spiced hot lentil-rice delicacy simmered with vegetables, tamarind, and aromatic spice blend"
+      },
+      {
+        "name": "Coorg Pandi Curry",
+        "description": "Signature Kodava dish spiced with indigenous Kachampuli black vinegar and roasted coriander"
+      },
+      {
+        "name": "Mangalorean Ghee Roast",
+        "description": "Spicy and tangy coastal specialty roasted in generous ladles of country ghee"
+      },
+      {
+        "name": "Mysore Masala Dosa",
+        "description": "Crisp golden crepe smeared with spicy red garlic chutney and stuffed with spiced potato"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Mysuru Dasara",
+        "description": "Ten days of royal spectacle featuring the illuminated palace with 100,000 bulbs and Jamboo Savari"
+      },
+      {
+        "name": "Hampi Utsav",
+        "description": "Multi-colored illumination of 14th-century Vijayanagara ruins with classical music and dance"
+      },
+      {
+        "name": "Kambala Buffalo Race",
+        "description": "Traditional coastal slush-track buffalo race celebrating agrarian folklore"
+      },
+      {
+        "name": "Karaga Shaktyotsava (Bengaluru)",
+        "description": "Ancient firewalking festival honoring Draupadi across Old Bengaluru"
+      }
+    ],
+    "culture": "Karnataka's heritage spans the Chalukya, Hoysala, and Vijayanagara empires. Folk art forms include the energetic Yakshagana theater, Dollu Kunitha drum dancing, Channapatna wooden lacquerware toys, and Bidriware silver inlay metalwork.",
+    "transportation": {
+      "airports": [
+        "Kempegowda International Bengaluru (BLR)",
+        "Mangaluru International (IXE)",
+        "Mysuru Airport (MYQ)",
+        "Hubballi Airport (HBX)"
+      ],
+      "railway": [
+        "KSR Bengaluru (SBC)",
+        "Yesvantpur Junction",
+        "Mysuru Junction",
+        "Hubballi Junction"
+      ],
+      "road": [
+        "Bengaluru-Mysuru Expressway",
+        "NH 48 (Pune-Bengaluru Highway)",
+        "NH 66 (Coastal Konkan Highway)"
+      ]
+    },
+    "unescoSites": [
+      "Group of Monuments at Hampi",
+      "Group of Monuments at Pattadakal",
+      "Sacred Ensembles of the Hoysalas (Belur, Halebeedu, Somanathapura)"
+    ]
+  },
+  {
+    "id": "andhra-pradesh",
+    "name": "Andhra Pradesh",
+    "slug": "andhra-pradesh",
+    "priorityRank": 4,
+    "domesticTouristVisits2024": 192000000,
+    "capital": "Amaravati",
+    "description": "Andhra Pradesh stretches across 974 kilometers of breathtaking Coromandel coastline, sacred hill shrines, prehistoric limestone caves, and majestic river canyons. Home to the world-renowned sacred shrine of Tirupati, the coastal jewel of Visakhapatnam, the Grand Canyon of India at Gandikota, and the mist-shrouded coffee valleys of Araku, Andhra Pradesh blends divine devotion with rugged natural wonder.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "beaches",
+      "nature",
+      "heritage",
+      "adventure"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Visakhapatnam",
+      "Tirupati",
+      "Vijayawada",
+      "Amaravati",
+      "Araku Valley",
+      "Rajahmundry",
+      "Srisailam",
+      "Kurnool",
+      "Nellore",
+      "Kakinada",
+      "Horsley Hills",
+      "Gandikota",
+      "Lepakshi",
+      "Papikondalu"
+    ],
+    "topDestinations": [
+      "Tirumala Venkateswara Temple",
+      "Borra Caves",
+      "Gandikota Gorge",
+      "Lepakshi Veerabhadra Temple",
+      "Kailasagiri Visakhapatnam",
+      "Srisailam Jyotirlinga"
+    ],
+    "popularFoods": [
+      {
+        "name": "Tirupati Laddu",
+        "description": "World-famous GI-tagged sacred offering crafted with besan, sugar, cashews, cardamom, and pure ghee"
+      },
+      {
+        "name": "Andhra Gongura Mutton / Chicken",
+        "description": "Fiery curry flavored with tart sorrel leaves (gongura) and red Guntur chilies"
+      },
+      {
+        "name": "Pesarattu Upma",
+        "description": "Whole green gram dosa crisped on griddle and stuffed with hot ginger-flavored rava upma"
+      },
+      {
+        "name": "Pootharekulu (Paper Sweet)",
+        "description": "Ultra-thin rice starch edible paper rolls layered with powdered sugar and ghee from Atreyapuram"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Tirumala Brahmotsavam",
+        "description": "Nine-day spiritual festival with spectacular processions of Lord Malayappa Swami on sacred vahanas"
+      },
+      {
+        "name": "Visakha Utsav",
+        "description": "Three-day coastal celebration on RK Beach showcasing tribal dance, beach sports, and cuisine"
+      },
+      {
+        "name": "Ugadi",
+        "description": "Telugu New Year celebrated with Ugadi Pachadi combining six distinct tastes of life"
+      },
+      {
+        "name": "Lepakshi Utsav",
+        "description": "Celebration of Vijayanagara stone architecture, dance, and music at the Veerabhadra temple"
+      }
+    ],
+    "culture": "Andhra Pradesh is the cradle of Kuchipudi classical dance, Kondapalli wooden toys, Kalamkari hand-painted textiles, and the intricate stone carving traditions of Lepakshi with its legendary hanging pillar.",
+    "transportation": {
+      "airports": [
+        "Visakhapatnam International (VTZ)",
+        "Vijayawada International (VGA)",
+        "Tirupati Airport (TIR)",
+        "Rajahmundry Airport (RJA)"
+      ],
+      "railway": [
+        "Visakhapatnam Junction",
+        "Vijayawada Junction (one of India's busiest)",
+        "Tirupati Railway Station"
+      ],
+      "road": [
+        "NH 16 (Chennai-Kolkata Coastal Highway)",
+        "NH 40 (Rayalaseema Highway)"
+      ]
+    },
+    "unescoSites": [
+      "Tentative: Lepakshi Veerabhadra Temple",
+      "Tentative: Gandikota Canyon Complex"
+    ]
+  },
+  {
+    "id": "rajasthan",
+    "name": "Rajasthan",
+    "slug": "rajasthan",
+    "priorityRank": 5,
+    "domesticTouristVisits2024": 180000000,
+    "capital": "Jaipur",
+    "description": "Rajasthan is the land of kings, desert romanticism, massive hilltop battlements, and mirror-work palaces. From the rose-tinted architecture of Jaipur to the cobalt blue streets of Jodhpur, the romantic lakeside palaces of Udaipur, and the golden sand dunes of Jaisalmer, Rajasthan offers an unforgettable journey through heroic chivalry, folk melodies, and royal opulence.",
+    "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "culture",
+      "wildlife",
+      "adventure",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Jaipur",
+      "Udaipur",
+      "Jodhpur",
+      "Jaisalmer",
+      "Pushkar",
+      "Ajmer",
+      "Bikaner",
+      "Mount Abu",
+      "Chittorgarh",
+      "Ranthambore",
+      "Bharatpur",
+      "Bundi",
+      "Alwar",
+      "Kota",
+      "Neemrana"
+    ],
+    "topDestinations": [
+      "Amber Fort",
+      "Hawa Mahal",
+      "City Palace Udaipur",
+      "Mehrangarh Fort Jodhpur",
+      "Jaisalmer Golden Fort",
+      "Ranthambore Tiger Reserve",
+      "Pushkar Lake"
+    ],
+    "popularFoods": [
+      {
+        "name": "Dal Baati Churma",
+        "description": "Hard wheat dough balls baked on cow-dung coals, soaked in ghee, and served with spicy panchmel dal and sweet churma"
+      },
+      {
+        "name": "Laal Maas",
+        "description": "Fiery Rajput mutton curry simmered with authentic Mathania red chilies and smoked cloves"
+      },
+      {
+        "name": "Ghevar",
+        "description": "Disc-shaped honeycomb dessert soaked in sugar syrup, crowned with mawa and silver leaf"
+      },
+      {
+        "name": "Ker Sangri",
+        "description": "Desert bean and berry vegetable preparation cooked with mustard oil and dry spices"
+      },
+      {
+        "name": "Pyaaz Kachori",
+        "description": "Flaky, crisp golden pastry filled with spiced caramelized onion mixture"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Pushkar Camel Fair",
+        "description": "World's largest livestock trading spectacle accompanied by folk dancers, turbans, and hot-air balloons"
+      },
+      {
+        "name": "Desert Festival (Jaisalmer)",
+        "description": "Three days of camel polo, turban tying, and folk singing on the Sam sand dunes"
+      },
+      {
+        "name": "Jaipur Literature Festival",
+        "description": "The world's greatest free literary gathering hosted at the historic Diggi Palace"
+      },
+      {
+        "name": "Teej & Gangaur",
+        "description": "Joyous women's processions of Goddess Parvati across the old walled Pink City"
+      }
+    ],
+    "culture": "Famed for Ghoomar and Kalbelia folk dances, soulful Langas and Manganiyars singers, blue pottery of Jaipur, block printing of Sanganer and Bagru, and intricate Kundan-Meenakari royal jewelry.",
+    "transportation": {
+      "airports": [
+        "Jaipur International (JAI)",
+        "Udaipur Maharana Pratap (UDR)",
+        "Jodhpur Airport (JDH)",
+        "Jaisalmer Airport (JSA)"
+      ],
+      "railway": [
+        "Jaipur Junction",
+        "Jodhpur Junction",
+        "Udaipur City",
+        "Ajmer Junction"
+      ],
+      "road": [
+        "Delhi-Mumbai Expressway",
+        "NH 48 (Delhi-Jaipur Corridor)",
+        "NH 11 (Bikaner-Agra)"
+      ]
+    },
+    "unescoSites": [
+      "Hill Forts of Rajasthan (Chittorgarh, Kumbhalgarh, Sawai Madhopur, Jaisalmer, Amber, Gagron)",
+      "Jaipur Walled City",
+      "Jantar Mantar Jaipur",
+      "Keoladeo National Park Bharatpur"
+    ]
+  },
+  {
+    "id": "maharashtra",
+    "name": "Maharashtra",
+    "slug": "maharashtra",
+    "priorityRank": 6,
+    "domesticTouristVisits2024": 172000000,
+    "capital": "Mumbai",
+    "description": "Maharashtra is a powerhouse state where ancient cave artistry meets soaring modern skylines and rugged Maratha hill battlements. Ranging from Mumbai's Bollywood energy and Victorian Gothic UNESCO architecture to the rock-cut cave wonders of Ajanta and Ellora, the serene vineyards of Nashik, and the Sahyadri hill retreats of Mahabaleshwar and Lonavala, Maharashtra is an electrifying journey.",
+    "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "beaches",
+      "hill-stations",
+      "nature",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Mumbai",
+      "Pune",
+      "Nashik",
+      "Mahabaleshwar",
+      "Lonavala",
+      "Khandala",
+      "Chhatrapati Sambhaji Nagar",
+      "Alibaug",
+      "Kolhapur",
+      "Nagpur",
+      "Shirdi",
+      "Matheran",
+      "Ratnagiri",
+      "Panchgani",
+      "Ajanta",
+      "Ellora"
+    ],
+    "topDestinations": [
+      "Gateway of India",
+      "Marine Drive",
+      "Ajanta Caves",
+      "Ellora Kailash Temple",
+      "Shaniwar Wada",
+      "Elephanta Caves",
+      "Bibi Ka Maqbara"
+    ],
+    "popularFoods": [
+      {
+        "name": "Vada Pav",
+        "description": "Spiced potato dumpling dipped in chickpea batter, fried crisp, and tucked in pav with garlic chutney"
+      },
+      {
+        "name": "Misal Pav",
+        "description": "Spicy sprout curry topped with farsan, onions, coriander, and served with buttered pav and extra tari"
+      },
+      {
+        "name": "Puran Poli",
+        "description": "Sweet flatbread stuffed with delicate mixture of chana dal, jaggery, cardamom, and nutmeg"
+      },
+      {
+        "name": "Bombil Fry (Bombay Duck)",
+        "description": "Semolina-crusted crispy fried coastal lizardfish seasoned with spicy green masala"
+      },
+      {
+        "name": "Kolhapuri Tambda-Pandhra Rassa",
+        "description": "Fiery red meat broth paired with soothing coconut-milk white soup"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Ganesh Chaturthi",
+        "description": "Ten days of massive public pandals, dhol-tasha pathaks, and emotional sea immersion processions"
+      },
+      {
+        "name": "Gudi Padwa",
+        "description": "Traditional Marathi New Year marked by raising decorated victory flags (gudis) and shobha yatras"
+      },
+      {
+        "name": "Ellora-Ajanta Festival",
+        "description": "Classical musicians and dancers perform against the illuminated backdrop of ancient stone caves"
+      },
+      {
+        "name": "Parihar / Pandharpur Wari",
+        "description": "Century-old pilgrimage on foot where millions of Warkaris walk singing abhangas"
+      }
+    ],
+    "culture": "Maharashtra boasts Lavani dance, Powada martial ballads of Chhatrapati Shivaji Maharaj, Paithani silk sarees with peacock motifs, and Warli geometric tribal paintings.",
+    "transportation": {
+      "airports": [
+        "Chhatrapati Shivaji Maharaj International Mumbai (BOM)",
+        "Pune International (PNQ)",
+        "Dr. Babasaheb Ambedkar Nagpur (NAG)",
+        "Shirdi Airport (SAG)"
+      ],
+      "railway": [
+        "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+        "Mumbai Central",
+        "Pune Junction"
+      ],
+      "road": [
+        "Mumbai-Pune Expressway",
+        "Samruddhi Mahamarg (Mumbai-Nagpur)",
+        "Atal Setu (MTHL)"
+      ]
+    },
+    "unescoSites": [
+      "Ajanta Caves",
+      "Ellora Caves",
+      "Elephanta Caves",
+      "Chhatrapati Shivaji Maharaj Terminus",
+      "Victorian Gothic and Art Deco Ensembles of Mumbai"
+    ]
+  },
+  {
+    "id": "west-bengal",
+    "name": "West Bengal",
+    "slug": "west-bengal",
+    "priorityRank": 7,
+    "domesticTouristVisits2024": 155000000,
+    "capital": "Kolkata",
+    "description": "West Bengal stretches from the snow-capped Himalayan peaks of Kanchenjunga in Darjeeling down to the world's largest mangrove delta in the Sundarbans. Famous for Kolkata's colonial grandeur, intellectual cafes, Rabindranath Tagore's sanctuary at Shantiniketan, Terracotta temples of Bishnupur, and the euphoria of Durga Puja, Bengal is a poetic feast for travellers.",
+    "heroImage": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "culture",
+      "nature",
+      "wildlife",
+      "food"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Kolkata",
+      "Darjeeling",
+      "Kalimpong",
+      "Siliguri",
+      "Digha",
+      "Sundarbans",
+      "Shantiniketan",
+      "Murshidabad",
+      "Bishnupur",
+      "Jalpaiguri",
+      "Kurseong"
+    ],
+    "topDestinations": [
+      "Victoria Memorial",
+      "Howrah Bridge",
+      "Tiger Hill Darjeeling",
+      "Darjeeling Toy Train",
+      "Sundarbans National Park",
+      "Dakshineswar Kali Temple",
+      "Visva-Bharati"
+    ],
+    "popularFoods": [
+      {
+        "name": "Rosogolla & Sandesh",
+        "description": "Spongy chhena dumplings in sugar syrup and soft cottage cheese sweets infused with nolen gur date-palm jaggery"
+      },
+      {
+        "name": "Macher Jhol",
+        "description": "Traditional mustard-scented hilsa (Ilish) or rohu fish curry cooked with nigella seeds and green chilies"
+      },
+      {
+        "name": "Kolkata Biryani",
+        "description": "Fragrant Awadhi-rooted biryani enriched with slow-cooked spiced potatoes and boiled egg"
+      },
+      {
+        "name": "Kathi Roll",
+        "description": "Flaky paratha wrapped around char-grilled chicken or paneer with lime and sliced onions"
+      },
+      {
+        "name": "Shorshe Ilish",
+        "description": "Prized Hilsa fish steamed in pungent yellow and black mustard seed paste"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Durga Puja (UNESCO Heritage)",
+        "description": "Spectacular multi-day public art installation celebration with monumental pandals and dhaak drums"
+      },
+      {
+        "name": "Poush Mela (Shantiniketan)",
+        "description": "Winter folk fair featuring Baul singers, tribal dances, and Dokra metal craft"
+      },
+      {
+        "name": "Kolkata Book Fair",
+        "description": "World's third-largest book fair and highest-attended non-trade book exposition"
+      },
+      {
+        "name": "Ganga Sagar Mela",
+        "description": "Massive Makar Sankranti holy dip festival at Sagar Island where the Ganga meets the Bay of Bengal"
+      }
+    ],
+    "culture": "Nobel laureates, Satyajit Ray cinema, Baul mystic singing, Kantha embroidery, Terracotta horse pottery of Bankura, and the UNESCO-inscribed celebration of Durga Puja.",
+    "transportation": {
+      "airports": [
+        "Netaji Subhash Chandra Bose International Kolkata (CCU)",
+        "Bagdogra Airport Siliguri (IXB)",
+        "Kazi Nazrul Islam Durgapur (RDP)"
+      ],
+      "railway": [
+        "Howrah Junction (India's oldest & largest)",
+        "Sealdah",
+        "New Jalpaiguri (NJP)"
+      ],
+      "road": [
+        "NH 12 (Kolkata-Siliguri Corridor)",
+        "NH 16",
+        "Durgapur Expressway"
+      ]
+    },
+    "unescoSites": [
+      "Sundarbans National Park",
+      "Darjeeling Himalayan Railway (Mountain Railways of India)",
+      "Santiniketan",
+      "Durga Puja in Kolkata (Intangible Cultural Heritage)"
+    ]
+  },
+  {
+    "id": "gujarat",
+    "name": "Gujarat",
+    "slug": "gujarat",
+    "priorityRank": 8,
+    "domesticTouristVisits2024": 148000000,
+    "capital": "Gandhinagar",
+    "description": "Gujarat is India's western frontier of boundless white salt deserts, Asiatic lion wilderness, Harappan antiquity, and sacred coastal pilgrimage sites. From the hypnotic moonlight over the Great Rann of Kutch to the ancient Harappan citadel of Dholavira, the architectural perfection of Rani ki Vav, and the sacred sea temples of Dwarka and Somnath, Gujarat radiates entrepreneurship, textiles, and vibrant folk celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1597040663342-45b6af2b0a97?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "wildlife",
+      "spiritual",
+      "culture",
+      "food"
+    ],
+    "bestTimeToVisit": "November to February",
+    "majorCities": [
+      "Ahmedabad",
+      "Vadodara",
+      "Surat",
+      "Rajkot",
+      "Dwarka",
+      "Somnath",
+      "Kutch",
+      "Bhuj",
+      "Gir",
+      "Junagadh",
+      "Gandhinagar",
+      "Saputara",
+      "Modhera",
+      "Patan",
+      "Champaner",
+      "Dholavira"
+    ],
+    "topDestinations": [
+      "Rann of Kutch White Desert",
+      "Gir National Park Lions",
+      "Rani ki Vav Stepwell",
+      "Somnath Temple",
+      "Dwarkadhish Temple",
+      "Statue of Unity",
+      "Sabarmati Ashram"
+    ],
+    "popularFoods": [
+      {
+        "name": "Gujarati Thali",
+        "description": "Balanced sweet, salty, and sour platter featuring dal, kadhi, rotli, shaak, farsan, and sweet shrikhand"
+      },
+      {
+        "name": "Dhokla & Khandvi",
+        "description": "Steamed fermented gram flour savory sponge and paper-thin rolled gram rolls tempered with mustard and sesame"
+      },
+      {
+        "name": "Undhiyu",
+        "description": "Winter harvest pot casserole of seasonal root vegetables, surti papdi, and fenugreek muthiyas cooked upside down"
+      },
+      {
+        "name": "Fafda Jalebi",
+        "description": "Crispy chickpea flour strips served with hot sweet jalebi, raw papaya sambharo, and fried green chilies"
+      },
+      {
+        "name": "Dabeli (Kutch)",
+        "description": "Pav stuffed with spicy mashed potato filling, peanuts, pomegranate seeds, and garlic chutney"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Navratri Garba",
+        "description": "World's longest nine-night dance festival where millions dance Garba and Dandiya Raas in kaleidoscopic chaniya cholis"
+      },
+      {
+        "name": "Rann Utsav (Dhordo)",
+        "description": "Three-month tent city celebration of music, crafts, and full-moon desert safaris"
+      },
+      {
+        "name": "International Kite Festival (Uttarayan)",
+        "description": "Skies across Ahmedabad and Surat filled with millions of kites and night lanterns"
+      },
+      {
+        "name": "Modhera Dance Festival",
+        "description": "Classical dance recital staged against the illuminated 11th-century Sun Temple stepwell"
+      }
+    ],
+    "culture": "Gujarat is the land of Mahatma Gandhi, Patola double-ikat silk weaving, Bandhani tie-dye, Rogan fabric painting, copper bell making, and Ajrakh block printing.",
+    "transportation": {
+      "airports": [
+        "Sardar Vallabhbhai Patel International Ahmedabad (AMD)",
+        "Surat Airport (STV)",
+        "Vadodara Airport (BDQ)",
+        "Rajkot International (HSR)"
+      ],
+      "railway": [
+        "Ahmedabad Junction",
+        "Surat Railway Station",
+        "Vadodara Junction"
+      ],
+      "road": [
+        "National Expressway 1 (Ahmedabad-Vadodara)",
+        "Delhi-Mumbai Expressway corridor",
+        "NH 48"
+      ]
+    },
+    "unescoSites": [
+      "Historic City of Ahmadabad",
+      "Rani-ki-Vav (the Queen’s Stepwell) at Patan",
+      "Champaner-Pavagadh Archaeological Park",
+      "Dholavira: a Harappan City"
+    ]
+  },
+  {
+    "id": "madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "slug": "madhya-pradesh",
+    "priorityRank": 9,
+    "domesticTouristVisits2024": 135000000,
+    "capital": "Bhopal",
+    "description": "Madhya Pradesh is the geographical and ecological heart of India, harboring the densest Royal Bengal Tiger reserves, thousands of years of prehistoric rock cave art, and the finest sensual temple carvings in the world. From the Buddhist stupas of Sanchi and erotic sculptural marvels of Khajuraho to the jungle realms of Kanha, Bandhavgarh, and Pench that inspired Kipling's Jungle Book, Madhya Pradesh is an unmissable destination.",
+    "heroImage": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "wildlife",
+      "spiritual",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to April",
+    "majorCities": [
+      "Bhopal",
+      "Indore",
+      "Ujjain",
+      "Khajuraho",
+      "Gwalior",
+      "Jabalpur",
+      "Sanchi",
+      "Pachmarhi",
+      "Orchha",
+      "Mandu",
+      "Kanha",
+      "Bandhavgarh",
+      "Pench",
+      "Panna",
+      "Chanderi"
+    ],
+    "topDestinations": [
+      "Khajuraho Temples",
+      "Gwalior Fort",
+      "Mahakaleshwar Ujjain",
+      "Sanchi Stupa",
+      "Bhimbetka Rock Shelters",
+      "Kanha Tiger Reserve",
+      "Orchha Fort Complex"
+    ],
+    "popularFoods": [
+      {
+        "name": "Indori Poha & Jalebi",
+        "description": "Steamed flattened rice spiced with fennel and crowned with spicy sev, pomegranate, and paired with hot jalebi"
+      },
+      {
+        "name": "Dal Bafla",
+        "description": "Boiled and then ghee-roasted wheat dough balls served with spicy lentil curry, garlic chutney, and laddoos"
+      },
+      {
+        "name": "Bhopali Gosht Korma",
+        "description": "Slow-simmered rich mutton preparation in rich yogurt and nut gravy"
+      },
+      {
+        "name": "Bhutte Ka Kees",
+        "description": "Grated sweet corn cooked in milk, spiced with mustard seeds, green chilies, and coconut"
+      },
+      {
+        "name": "Mawa Bati",
+        "description": "Deep-fried rich milk solid dumpling stuffed with mawa, dry fruits, and steeped in sugar syrup"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Khajuraho Dance Festival",
+        "description": "World-class classical Indian dance performances staged before the Western Group of temples"
+      },
+      {
+        "name": "Ujjain Simhastha Kumbh",
+        "description": "Sacred once-in-12-years holy bath ritual along the Shipra riverbanks"
+      },
+      {
+        "name": "Tansen Samaroh (Gwalior)",
+        "description": "Prestigious national musical tribute to legend Mian Tansen at his tomb"
+      },
+      {
+        "name": "Mandu Festival",
+        "description": "Hot-air balloons, heritage cycles, and music amidst romantic Afghan architecture"
+      }
+    ],
+    "culture": "Bhimbetka rock shelters demonstrate 30,000-year-old human art. The state is renowned for Chanderi and Maheshwari handloom sarees with gossamer silk-cotton weave, Gond tribal paintings, and Dhokra bell-metal craft.",
+    "transportation": {
+      "airports": [
+        "Devi Ahilyabai Holkar Indore (IDR)",
+        "Raja Bhoj Bhopal (BHO)",
+        "Gwalior Airport (GWL)",
+        "Khajuraho Airport (HJR)",
+        "Jabalpur Airport (JLR)"
+      ],
+      "railway": [
+        "Bhopal Junction",
+        "Rani Kamlapati (India's premier modern station)",
+        "Indore Junction",
+        "Gwalior Junction"
+      ],
+      "road": [
+        "NH 44",
+        "NH 46",
+        "Delhi-Mumbai Expressway corridor through MP"
+      ]
+    },
+    "unescoSites": [
+      "Khajuraho Group of Monuments",
+      "Buddhist Monuments at Sanchi",
+      "Rock Shelters of Bhimbetka"
+    ]
+  },
+  {
+    "id": "telangana",
+    "name": "Telangana",
+    "slug": "telangana",
+    "priorityRank": 10,
+    "domesticTouristVisits2024": 122000000,
+    "capital": "Hyderabad",
+    "description": "Telangana blends four centuries of grand Qutb Shahi and Asaf Jahi royal heritage with Kakatiya architectural brilliance and cutting-edge cosmopolitan energy. Centered on the iconic minarets of Charminar, the diamond-trading ramparts of Golconda Fort, and the floating UNESCO Kakatiya marvel at Ramappa Temple, Telangana is an intoxicating hub of pearl bazaars, royal biryani, and rich folklore.",
+    "heroImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df8?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "food",
+      "culture",
+      "spiritual"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Hyderabad",
+      "Warangal",
+      "Karimnagar",
+      "Nizamabad",
+      "Khammam",
+      "Medak",
+      "Yadadri",
+      "Nagarjuna Sagar",
+      "Bhongir"
+    ],
+    "topDestinations": [
+      "Charminar",
+      "Golconda Fort",
+      "Ramappa Temple",
+      "Chowmahalla Palace",
+      "Warangal Fort",
+      "Ramoji Film City",
+      "Salar Jung Museum"
+    ],
+    "popularFoods": [
+      {
+        "name": "Hyderabadi Dum Biryani",
+        "description": "Legendary fragrant basmati rice layered with raw marinated meat cooked on slow charcoal heat with dough-sealed pot"
+      },
+      {
+        "name": "Hyderabadi Haleem",
+        "description": "GI-tagged slow-cooked Ramadan porridge of pounded wheat, lentils, ghee, and tender meat spiced with rose petals"
+      },
+      {
+        "name": "Double Ka Meetha",
+        "description": "Rich Mughlai bread pudding fried in ghee, simmered in reduced saffron-infused milk, and crowned with pistachios"
+      },
+      {
+        "name": "Mirchi Ka Salan",
+        "description": "Tangy, nutty curry made with green chilies, roasted peanuts, sesame seeds, and dry coconut"
+      },
+      {
+        "name": "Irani Chai with Osmania Biscuits",
+        "description": "Rich creamy milk tea paired with sweet-salty butter biscuits at historic Irani cafes"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Bathukamma",
+        "description": "Nine-day floral festival where women arrange vibrant seasonal flowers in cone-shaped towers and sing folklore"
+      },
+      {
+        "name": "Bonalu",
+        "description": "Vibrant monsoon thanksgiving festival honoring Goddess Mahakali with decorated brass pots (bonam) and Pothuraju dancers"
+      },
+      {
+        "name": "Sammakka Saralamma Jatara (Medaram)",
+        "description": "Asia's largest tribal gathering commemorating valor of tribal warrior mothers"
+      },
+      {
+        "name": "Numaish (All India Industrial Exhibition)",
+        "description": "Historic 45-day winter exhibition held at Hyderabad Exhibition Grounds since 1938"
+      }
+    ],
+    "culture": "Home to Pochampally Ikat sarees (GI tagged for geometric dyed patterns), Bidriware silver inlay, Cheriyal scroll paintings, and Nirmal lacquered toys.",
+    "transportation": {
+      "airports": [
+        "Rajiv Gandhi International Hyderabad (HYD - world ranked)"
+      ],
+      "railway": [
+        "Secunderabad Junction (SCR Headquarters)",
+        "Hyderabad Deccan (Nampally)",
+        "Kacheguda",
+        "Kazipet Junction"
+      ],
+      "road": [
+        "Hyderabad Outer Ring Road (ORR - 158 km expressway)",
+        "NH 44",
+        "NH 65"
+      ]
+    },
+    "unescoSites": [
+      "Kakatiya Rudreshwara (Ramappa) Temple at Palampet",
+      "Tentative: Qutb Shahi Monuments of Hyderabad (Golconda Fort, Qutb Shahi Tombs, Charminar)"
+    ]
+  },
+  {
+    "id": "kerala",
+    "name": "Kerala",
+    "slug": "kerala",
+    "priorityRank": 11,
+    "domesticTouristVisits2024": 115000000,
+    "capital": "Thiruvananthapuram",
+    "description": "Revered as 'God's Own Country', Kerala is a tropical paradise of tranquil emerald backwaters, cloud-kissed Western Ghat tea plantations, pristine Arabian Sea cliffs, and ancient Ayurvedic healing traditions. Experience slow-paced wooden houseboat cruises through palm-fringed lagoons, dramatic Kathakali dance dramas, and fragrant spice trails across Malabar.",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "nature",
+      "beaches",
+      "hill-stations",
+      "wildlife",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "majorCities": [
+      "Kochi",
+      "Thiruvananthapuram",
+      "Munnar",
+      "Alappuzha",
+      "Wayanad",
+      "Thekkady",
+      "Varkala",
+      "Kovalam",
+      "Kumarakom",
+      "Vagamon",
+      "Bekal",
+      "Kozhikode",
+      "Kannur",
+      "Thrissur",
+      "Kollam"
+    ],
+    "topDestinations": [
+      "Alappuzha Backwaters",
+      "Munnar Tea Hills",
+      "Fort Kochi & Chinese Nets",
+      "Varkala Cliff Beach",
+      "Periyar Tiger Reserve",
+      "Athirappilly Waterfalls",
+      "Edakkal Caves"
+    ],
+    "popularFoods": [
+      {
+        "name": "Kerala Sadhya",
+        "description": "Grand 26-dish vegetarian feast served on banana leaf featuring Avial, Sambar, Olan, Thoran, and Payasam"
+      },
+      {
+        "name": "Malabar Parotta & Beef Fry / Curry",
+        "description": "Multi-layered flaky spiral parotta served with slow-roasted spiced coconut meat"
+      },
+      {
+        "name": "Karimeen Pollichathu",
+        "description": "Pearl spot fish marinated in spicy shallot paste, wrapped in banana leaf, and pan-roasted"
+      },
+      {
+        "name": "Appam with Ishtu (Stew)",
+        "description": "Crisp-laced fluffy fermented rice hopper served with mild coconut milk and vegetable/chicken stew"
+      },
+      {
+        "name": "Thalassery Biryani",
+        "description": "Fragrant short-grain Khaima rice biryani cooked with Malabar spices, ghee, and fried onions"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Onam",
+        "description": "Ten-day state festival with floral pookkalam carpets, snake boat races, Kathakali, and Onasadya feasts"
+      },
+      {
+        "name": "Thrissur Pooram",
+        "description": "Spectacular temple festival with caparisoned elephant face-off (Kudamattom) and Ilanjithara Melam percussion"
+      },
+      {
+        "name": "Nehru Trophy Boat Race (Alappuzha)",
+        "description": "Thrilling snake boat (Chundan Vallam) rowing race on Punnamada Lake"
+      },
+      {
+        "name": "Theyyam (North Malabar)",
+        "description": "Mesmerizing ritual dance of living deities with towering headdresses and fiery embers"
+      }
+    ],
+    "culture": "Kerala is the birthplace of Kathakali, Mohiniyattam classical dance, and Kalaripayattu, the world's oldest martial art. It is globally famous for traditional Ayurvedic rejuvenation retreats and wooden snake boat craft.",
+    "transportation": {
+      "airports": [
+        "Cochin International (COK - world's 1st solar-powered airport)",
+        "Trivandrum International (TRV)",
+        "Calicut International (CCJ)",
+        "Kannur International (CNN)"
+      ],
+      "railway": [
+        "Ernakulam Junction",
+        "Thiruvananthapuram Central",
+        "Kozhikode",
+        "Shoranur Junction"
+      ],
+      "road": [
+        "NH 66 (Coastal Highway)",
+        "NH 544",
+        "MC Road"
+      ]
+    },
+    "unescoSites": [
+      "Western Ghats (Agasthyamalai, Periyar, Silent Valley clusters)",
+      "Koodiyattam (Intangible Cultural Heritage)",
+      "Mudiyettu (Intangible Cultural Heritage)"
+    ]
+  },
+  {
+    "id": "bihar",
+    "name": "Bihar",
+    "slug": "bihar",
+    "priorityRank": 12,
+    "domesticTouristVisits2024": 108000000,
+    "capital": "Patna",
+    "description": "Bihar is the ancient cradle of Buddhism, Jainism, and the world's earliest residential universities. Centered on Bodh Gaya, where Prince Siddhartha attained supreme enlightenment under the Bodhi tree, and Nalanda, which welcomed 10,000 scholars from across Asia 1,500 years ago, Bihar offers profound spiritual depth, Emperor Ashoka's monumental edicts, and the scenic Himalayan foothills of Valmiki Tiger Reserve.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "heritage",
+      "culture",
+      "wildlife"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Patna",
+      "Bodh Gaya",
+      "Nalanda",
+      "Rajgir",
+      "Vaishali",
+      "Pawapuri",
+      "Gaya",
+      "Vikramshila",
+      "Valmiki Nagar"
+    ],
+    "topDestinations": [
+      "Mahabodhi Temple Complex",
+      "Ancient Nalanda University Ruins",
+      "Vishwa Shanti Stupa Rajgir",
+      "Bodh Gaya Bodhi Tree",
+      "Golghar Patna",
+      "Valmiki Tiger Reserve"
+    ],
+    "popularFoods": [
+      {
+        "name": "Litti Chokha",
+        "description": "Roasted whole wheat dough balls stuffed with spiced roasted gram sattu, dipped in ghee and served with charred eggplant-tomato chokha"
+      },
+      {
+        "name": "Khaja (Silao)",
+        "description": "GI-tagged multi-layered crisp sweet pastry fried in ghee and dipped in light sugar syrup"
+      },
+      {
+        "name": "Chana Ghugni",
+        "description": "Spiced black chickpea curry tempered with cumin and garam masala, eaten with flattened poha"
+      },
+      {
+        "name": "Tilkut (Gaya)",
+        "description": "Crisp sesame seed and jaggery/sugar sweet beaten wafer-thin"
+      },
+      {
+        "name": "Sattu Paratha & Sharbat",
+        "description": "Protein-rich roasted gram flour flatbreads and cooling refreshing summer beverage"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Chhath Puja",
+        "description": "Sacred, austere Vedic sun-worship festival where millions offer Arghya to rising and setting sun in river waters"
+      },
+      {
+        "name": "Sonepur Cattle Fair",
+        "description": "One of Asia's largest historic rural livestock fairs held at the confluence of Ganga and Gandak"
+      },
+      {
+        "name": "Buddha Jayanti (Bodh Gaya)",
+        "description": "Thousands of Buddhist monks and pilgrims worldwide assemble under the Bodhi Tree"
+      },
+      {
+        "name": "Rajgir Mahotsav",
+        "description": "Classical dance and music extravaganza held amidst the historic seven hills of Rajgir"
+      }
+    ],
+    "culture": "Bihar is globally celebrated for Madhubani (Mithila) folk paintings created with natural mineral dyes, Sujani quilt embroidery, Manjusha art, and terracotta artifacts from ancient Magadha.",
+    "transportation": {
+      "airports": [
+        "Jay Prakash Narayan International Patna (PAT)",
+        "Gaya International (GAY - major pilgrimage gateway)",
+        "Darbhanga Airport (DBR)"
+      ],
+      "railway": [
+        "Patna Junction",
+        "Gaya Junction",
+        "Pandit Deen Dayal Upadhyaya Junction (nearby hub)",
+        "Muzaffarpur Junction"
+      ],
+      "road": [
+        "Purvanchal Expressway connectivity",
+        "NH 19",
+        "NH 31",
+        "Patna Marine Drive"
+      ]
+    },
+    "unescoSites": [
+      "Mahabodhi Temple Complex at Bodh Gaya",
+      "Archaeological Site of Nalanda Mahavihara at Nalanda"
+    ]
+  },
+  {
+    "id": "odisha",
+    "name": "Odisha",
+    "slug": "odisha",
+    "priorityRank": 13,
+    "domesticTouristVisits2024": 98000000,
+    "capital": "Bhubaneswar",
+    "description": "Odisha is India's jewel of Kalinga stone architecture, sacred coastal pilgrimage, and pristine coastal ecosystems. From the monumental 13th-century Sun Temple chariot at Konark and the legendary abode of Lord Jagannath at Puri to Asia's largest brackish lagoon at Chilika with its playful Irrawaddy dolphins and the thousands of ancient sandstone shrines of Bhubaneswar, Odisha is a treasure of sacred art and coastal peace.",
+    "heroImage": "https://images.unsplash.com/photo-1627916607164-7b20241db935?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "heritage",
+      "spiritual",
+      "beaches",
+      "wildlife",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Bhubaneswar",
+      "Puri",
+      "Konark",
+      "Cuttack",
+      "Chilika",
+      "Gopalpur",
+      "Rourkela",
+      "Sambalpur",
+      "Koraput",
+      "Baripada",
+      "Dhenkanal"
+    ],
+    "topDestinations": [
+      "Konark Sun Temple",
+      "Jagannath Temple Puri",
+      "Chilika Lake & Dolphins",
+      "Lingaraj Temple",
+      "Udayagiri & Khandagiri Caves",
+      "Dhauli Shanti Stupa",
+      "Puri Golden Beach"
+    ],
+    "popularFoods": [
+      {
+        "name": "Pahala Rasgulla",
+        "description": "GI-tagged soft, warm, caramelized brown chhena sweet originating from Pahala village"
+      },
+      {
+        "name": "Chhena Poda",
+        "description": "World's original baked cheesecake made with cottage cheese, sugar, cardamom, and baked in sal leaves till crust is caramelized"
+      },
+      {
+        "name": "Dalma",
+        "description": "Nutritious lentil dish cooked with raw papaya, pumpkin, eggplant, and tempered with pancha phutana"
+      },
+      {
+        "name": "Pakhala Bhata",
+        "description": "Fermented cooked rice water cooling dish served with fried fish, badi chura, and roasted potatoes on Pakhala Dibasa"
+      },
+      {
+        "name": "Chhena Jhili",
+        "description": "Soft cottage cheese dough fried and soaked in delicate sugar syrup from Nimapada"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Ratha Yatra (Puri)",
+        "description": "World's most monumental chariot procession where Lord Jagannath, Balabhadra, and Subhadra are pulled by millions"
+      },
+      {
+        "name": "Konark Dance Festival",
+        "description": "Classical Indian dance masters perform with the floodlit Sun Temple as an open-air backdrop"
+      },
+      {
+        "name": "Puri Beach Festival",
+        "description": "Coastal celebration of sand art, folk dances, maritime cuisine, and beach games"
+      },
+      {
+        "name": "Bali Jatra (Cuttack)",
+        "description": "Massive historic fair celebrating ancient maritime sea trade voyages of Sadhavas to Bali and Sumatra"
+      }
+    ],
+    "culture": "Odisha is the home of Odissi classical dance, world-renowned sand sculptures by Sudarsan Pattnaik on Puri beach, Pattachitra scroll paintings of Raghurajpur, Sambalpuri Ikat handloom, and Cuttack's filigree silver work (Tarakasi).",
+    "transportation": {
+      "airports": [
+        "Biju Patnaik International Bhubaneswar (BBI)",
+        "Jharsuguda Veer Surendra Sai (JRG)"
+      ],
+      "railway": [
+        "Bhubaneswar Railway Station",
+        "Puri Railway Station",
+        "Cuttack Junction"
+      ],
+      "road": [
+        "NH 16 (Golden Quadrilateral Corridor)",
+        "Puri-Konark Marine Drive"
+      ]
+    },
+    "unescoSites": [
+      "Sun Temple, Konârak",
+      "Tentative: Chilika Lake",
+      "Tentative: Ekamra Kshetra – The Temple City, Bhubaneswar"
+    ]
+  },
+  {
+    "id": "punjab",
+    "name": "Punjab",
+    "slug": "punjab",
+    "priorityRank": 14,
+    "domesticTouristVisits2024": 85000000,
+    "capital": "Chandigarh",
+    "description": "Punjab is the golden land of five rivers, boundless hospitality, brave warrior history, and the spiritual radiance of Sikhism. Crowned by the sacred sanctum of Harmandir Sahib (the Golden Temple) in Amritsar, the historic battlements of Patiala, the patriotic fever of the Wagah Border parade, and lush emerald mustard fields, Punjab welcomes every traveler with open arms and hearty dhabas.",
+    "heroImage": "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "heritage",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "majorCities": [
+      "Amritsar",
+      "Ludhiana",
+      "Patiala",
+      "Jalandhar",
+      "Anandpur Sahib",
+      "Bathinda",
+      "Pathankot",
+      "Kapurthala",
+      "Fatehgarh Sahib",
+      "Rupnagar"
+    ],
+    "topDestinations": [
+      "Golden Temple (Harmandir Sahib)",
+      "Jallianwala Bagh",
+      "Wagah Border Ceremony",
+      "Partition Museum",
+      "Virasat-e-Khalsa Anandpur Sahib",
+      "Qila Mubarak Patiala"
+    ],
+    "popularFoods": [
+      {
+        "name": "Amritsari Kulcha with Chole",
+        "description": "Flaky tandoor-baked flatbread stuffed with spiced potatoes and onions, topped with melting butter and tangy imli chutney"
+      },
+      {
+        "name": "Makki di Roti & Sarson da Saag",
+        "description": "Winter staple of slow-cooked mustard greens tempered with garlic, served with cornmeal flatbread and fresh white butter"
+      },
+      {
+        "name": "Butter Chicken & Tandoori Chicken",
+        "description": "Charcoal-tandoor smoked chicken in rich velvet tomato, butter, and cream gravy"
+      },
+      {
+        "name": "Amritsari Machhi (Fish Fry)",
+        "description": "Crisp carom-seed spiced gram flour coated freshwater fish fried to golden perfection"
+      },
+      {
+        "name": "Patiala Lassi",
+        "description": "Thick, churned yogurt drink served in tall brass tumblers topped with a thick dollop of clotted cream (malai)"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Baisakhi",
+        "description": "Vibrant harvest festival marking the founding of the Khalsa Panth in 1699 by Guru Gobind Singh"
+      },
+      {
+        "name": "Hola Mohalla (Anandpur Sahib)",
+        "description": "Thrilling three-day display of martial arts, mock battles, horsemanship, and Gatka by Nihang Sikhs"
+      },
+      {
+        "name": "Lohri",
+        "description": "Winter bonfire celebration with traditional songs, rewri, popcorn, and dance to mark winter solstice"
+      },
+      {
+        "name": "Gurpurab Celebrations",
+        "description": "Spectacular golden illumination and fireworks at the Golden Temple for Guru Nanak Jayanti"
+      }
+    ],
+    "culture": "World-famous for Bhangra and Giddha folk dances, vibrant Phulkari floral embroidery, Punjabi Jutti footwear, Gatka martial arts, and the world's largest community kitchen (Langar) feeding over 100,000 people daily for free at the Golden Temple.",
+    "transportation": {
+      "airports": [
+        "Sri Guru Ram Dass Jee International Amritsar (ATQ)",
+        "Shaheed Bhagat Singh International Chandigarh (IXC)"
+      ],
+      "railway": [
+        "Amritsar Junction",
+        "Ludhiana Junction",
+        "Jalandhar City",
+        "Bathinda Junction"
+      ],
+      "road": [
+        "Grand Trunk Road (NH 44)",
+        "Delhi-Amritsar-Katra Expressway",
+        "NH 5"
+      ]
+    },
+    "unescoSites": [
+      "Tentative: Sri Harmandir Sahib (The Golden Temple)",
+      "Virasat-e-Khalsa Complex"
+    ]
+  },
+  {
+    "id": "uttarakhand",
+    "name": "Uttarakhand",
+    "slug": "uttarakhand",
+    "priorityRank": 15,
+    "domesticTouristVisits2024": 76000000,
+    "capital": "Dehradun (Winter) / Gairshain (Summer)",
+    "description": "Revered as 'Devbhoomi' (Land of the Gods), Uttarakhand is an alpine sanctuary of snow-crowned Himalayan peaks, sacred glacial river sources, premier yoga capitals, and dense tiger wilderness. From the holy Char Dham pilgrimage shrines high in the Garhwal Himalayas to the sunset Ganga Aarti at Haridwar and Rishikesh, the ski slopes of Auli, and the mist-draped colonial hill stations of Mussoorie and Nainital, Uttarakhand inspires deep reverence and outdoor adventure.",
+    "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=85",
+    "categories": [
+      "spiritual",
+      "hill-stations",
+      "adventure",
+      "wildlife",
+      "nature"
+    ],
+    "bestTimeToVisit": "March to June & September to November",
+    "majorCities": [
+      "Dehradun",
+      "Mussoorie",
+      "Rishikesh",
+      "Haridwar",
+      "Nainital",
+      "Jim Corbett",
+      "Kedarnath",
+      "Badrinath",
+      "Gangotri",
+      "Yamunotri",
+      "Auli",
+      "Almora",
+      "Ranikhet",
+      "Lansdowne",
+      "Kausani",
+      "Pithoragarh",
+      "Valley of Flowers"
+    ],
+    "topDestinations": [
+      "Kedarnath Temple",
+      "Badrinath Temple",
+      "Har Ki Pauri Haridwar",
+      "Triveni Ghat Rishikesh",
+      "Naini Lake Nainital",
+      "Jim Corbett National Park",
+      "Auli Ski Resort",
+      "Valley of Flowers"
+    ],
+    "popularFoods": [
+      {
+        "name": "Kafuli",
+        "description": "Thick nutrient-dense gravy of spinach and fenugreek leaves cooked in iron kadhai with rice paste"
+      },
+      {
+        "name": "Chainsoo & Phaanu",
+        "description": "Roasted black gram dal and lentil preparations packed with mountain spices and ghee"
+      },
+      {
+        "name": "Bal Mithai (Almora)",
+        "description": "Brown chocolate-like fudgy roasted khoya sweet coated with white sugar balls"
+      },
+      {
+        "name": "Singodi",
+        "description": "Khowa dessert wrapped in fragrant Maalu leaves with sweet cardamom essence"
+      },
+      {
+        "name": "Bhatt ki Churkani",
+        "description": "Hearty black soybean stew eaten with steamed mountain red rice on chilly evenings"
+      }
+    ],
+    "festivals": [
+      {
+        "name": "Ganga Dussehra (Haridwar & Rishikesh)",
+        "description": "Ten days celebrating the descent of the sacred river Ganga onto earth with millions of floating diyas"
+      },
+      {
+        "name": "International Yoga Festival (Rishikesh)",
+        "description": "World yoga masters and seekers converge on the banks of the holy Ganges"
+      },
+      {
+        "name": "Nanda Devi Raj Jat Yatra",
+        "description": "Sacred once-in-12-years 280-kilometer Himalayan pilgrimage traversing high mountain passes"
+      },
+      {
+        "name": "Phool Dei",
+        "description": "Spring festival where children place freshly picked mountain flowers at village thresholds for good fortune"
+      }
+    ],
+    "culture": "Garhwali and Kumaoni folklore, Jhora and Chholiya sword dances, sacred pilgrimage culture, Aipan geometric floor rituals, and the deep conservation legacy of the Chipko movement.",
+    "transportation": {
+      "airports": [
+        "Jolly Grant Airport Dehradun (DED)",
+        "Pantnagar Airport (PGH)"
+      ],
+      "railway": [
+        "Haridwar Railway Station",
+        "Dehradun Railway Station",
+        "Kathgodam (Gateway to Nainital/Kumaon)"
+      ],
+      "road": [
+        "All-Weather Char Dham Highway",
+        "NH 7",
+        "Delhi-Dehradun Expressway"
+      ]
+    },
+    "unescoSites": [
+      "Nanda Devi and Valley of Flowers National Parks"
+    ]
+  }
+]

@@ -1,0 +1,1831 @@
+[
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage site and Wonder of the World, an ivory-white marble mausoleum commissioned in 1631 by Mughal Emperor Shah Jahan.",
+    "longDescription": "Standing gracefully on the southern bank of the Yamuna River, the Taj Mahal is an iconic monument of eternal love and peak Mughal architecture. Built over 22 years by thousands of master artisans, the complex features a crystalline white marble dome, delicate Pietra Dura inlay made from 28 types of precious stones, symmetrical four-part Persian Charbagh gardens, and reflecting pools.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.1751,
+      "longitude": 78.0421
+    },
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "highlights": [
+      "Symmetrical white marble main dome",
+      "Pietra Dura semi-precious stone inlay",
+      "Persian Charbagh gardens & reflecting pools",
+      "Sunrise color shifts from pink to gold"
+    ],
+    "activities": [
+      "Sunrise photography from Mehtab Bagh",
+      "Heritage walk through royal gardens",
+      "Visiting inner marble cenotaphs"
+    ],
+    "nearbyPlaces": [
+      "Agra Fort",
+      "Mehtab Bagh",
+      "Itmad-ud-Daulah's Tomb"
+    ],
+    "travelTips": [
+      "Closed on Fridays for prayers",
+      "Sunrise tickets have shortest queues and best morning light",
+      "Electric golf carts available from outer parking lots"
+    ],
+    "accessibility": "Wheelchair ramps available at east and west entry gates",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "wonder-of-world",
+      "mughal",
+      "marble",
+      "monument",
+      "agra"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "agra-fort",
+    "name": "Agra Fort",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "forts-palaces",
+    "shortDescription": "UNESCO World Heritage 16th-century red sandstone fortress that served as the primary residence of the Mughal emperors until 1638.",
+    "longDescription": "A colossal crescent-shaped red sandstone citadel stretching 2.5 km along the Yamuna River. Transformed by Emperor Akbar and later embellished with marble pavilions by Shah Jahan, it houses the Diwan-i-Aam, Diwan-i-Khas, Jahangiri Mahal, and the Musamman Burj tower where Shah Jahan spent his final years gazing at the Taj Mahal.",
+    "category": [
+      "heritage",
+      "forts-palaces",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.1795,
+      "longitude": 78.0211
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "highlights": [
+      "Amar Singh Gate grand ramparts",
+      "Jahangiri Mahal red sandstone carvings",
+      "Musamman Burj marble octagonal tower with Taj Mahal vistas",
+      "Sheesh Mahal mirror palace"
+    ],
+    "activities": [
+      "Exploring royal halls",
+      "Viewing Taj Mahal from riverside ramparts",
+      "Evening Sound and Light Show"
+    ],
+    "nearbyPlaces": [
+      "Taj Mahal",
+      "Jama Masjid Agra",
+      "Sadar Bazaar"
+    ],
+    "travelTips": [
+      "Hire an official ASI certified guide at the entrance gate",
+      "Combine with Taj Mahal visit on same day"
+    ],
+    "accessibility": "Wheelchair accessible up to lower courtyards",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "mughal-fort",
+      "akbar",
+      "shah-jahan",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "itmad-ud-daulah",
+    "name": "Itmad-ud-Daulah's Tomb",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "heritage",
+    "shortDescription": "Often described as the 'Baby Taj' or 'Jewel Box', this delicate marble mausoleum was commissioned by Empress Nur Jahan for her father.",
+    "longDescription": "Regarded as the architectural draft and precursor to the Taj Mahal, this tomb was the first Mughal structure built entirely of white marble embellished with intricate Pietra Dura mosaic inlays. Nestled quietly in walled riverside gardens, it exudes unmatched serenity and delicate artistry.",
+    "category": [
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.1929,
+      "longitude": 78.031
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Delicate marble lattice jali work",
+      "Persian cypress tree mosaics",
+      "Quiet riverside Charbagh setting"
+    ],
+    "activities": [
+      "Architectural photography",
+      "Riverside garden strolls"
+    ],
+    "nearbyPlaces": [
+      "Chini Ka Rauza",
+      "Mehtab Bagh",
+      "Agra Fort"
+    ],
+    "travelTips": [
+      "Much less crowded than the Taj Mahal, ideal for peaceful photography in late afternoon"
+    ],
+    "accessibility": "Paved pathways in gardens, steps to raised platform",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "baby-taj",
+      "nur-jahan",
+      "mughal",
+      "marble",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "mehtab-bagh",
+    "name": "Mehtab Bagh",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "nature",
+    "shortDescription": "The 'Moonlight Garden' charbagh complex situated directly across the Yamuna River, providing famous panoramic sunset vistas of the Taj Mahal.",
+    "longDescription": "Originally built by Emperor Babur and later restored by the Archaeological Survey of India, this 25-acre garden aligns perfectly with the Taj Mahal on the opposite riverbank. It offers prime vantage points for photographers to capture the Taj bathed in warm twilight without crowds.",
+    "category": [
+      "nature",
+      "heritage",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 2 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.1799,
+      "longitude": 78.0421
+    },
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Direct unobstructed river view of Taj Mahal",
+      "Sunset golden hour reflections",
+      "Fragrant hibiscus and citrus groves"
+    ],
+    "activities": [
+      "Sunset photography",
+      "Peaceful picnicking",
+      "Birdwatching along the Yamuna"
+    ],
+    "nearbyPlaces": [
+      "Taj Mahal",
+      "Itmad-ud-Daulah's Tomb"
+    ],
+    "travelTips": [
+      "Arrive 1 hour before sunset to find a comfortable viewing spot along the river fencing"
+    ],
+    "accessibility": "Flat paved pathways suitable for walking and wheelchairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "sunset-point",
+      "taj-view",
+      "gardens",
+      "photography"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "akbars-tomb",
+    "name": "Akbar's Tomb (Sikandra)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "type": "heritage",
+    "shortDescription": "The monumental tiered tomb of Emperor Akbar the Great set within a deer park, fusing Hindu, Islamic, Buddhist, and Jain architectural motifs.",
+    "longDescription": "Located at Sikandra on the outskirts of Agra, this red sandstone and white marble mausoleum reflects Akbar's philosophy of religious syncretism (Din-i-Ilahi). The tomb stands in a 119-acre walled park inhabited by roaming blackbucks, peacocks, and monkeys.",
+    "category": [
+      "heritage",
+      "history",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.2206,
+      "longitude": 77.9505
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand Buland-style South Gate with geometric calligraphic inlays",
+      "Tiered pyramidal design",
+      "Spotted deer and peacocks roaming lawns"
+    ],
+    "activities": [
+      "Wildlife spotting in heritage gardens",
+      "Studying unique architectural fusion"
+    ],
+    "nearbyPlaces": [
+      "Mariam's Tomb",
+      "Agra City Center"
+    ],
+    "travelTips": [
+      "Ideal stop when traveling between Agra and Mathura on NH-19"
+    ],
+    "accessibility": "Ground level gardens accessible",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "akbar",
+      "sikandra",
+      "mughal-tomb",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "fatehpur-sikri",
+    "name": "Fatehpur Sikri",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Fatehpur Sikri",
+    "citySlug": "fatehpur-sikri",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage fortified Mughal city founded by Akbar in 1571, featuring the soaring Buland Darwaza and Salim Chishti shrine.",
+    "longDescription": "Served as the imperial Mughal capital for 14 years before being abandoned due to water shortages. Today, this ghost city remains impeccably preserved, housing the 54-meter Buland Darwaza ('Gate of Magnificence'), the white marble Dargah of Sheikh Salim Chishti, the Panch Mahal five-story pavilion, and the Diwan-i-Khas with its iconic central lotus pillar.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.0945,
+      "longitude": 77.6679
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Buland Darwaza (World's highest gateway at 54m)",
+      "Tomb of Salim Chishti with mother-of-pearl inlays",
+      "Panch Mahal tiered wind tower",
+      "Lotus-headed pillar in Diwan-i-Khas"
+    ],
+    "activities": [
+      "Tying red sacred thread for wishes at Chishti Dargah",
+      "Exploring royal courtyards and Jodha Bai's Palace"
+    ],
+    "nearbyPlaces": [
+      "Agra (36 km)",
+      "Bharatpur Bird Sanctuary (22 km)"
+    ],
+    "travelTips": [
+      "Use official eco-friendly shuttle bus from parking lot to the monument gate"
+    ],
+    "accessibility": "Steep flight of stairs to Buland Darwaza; ramp access at side entrances",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "unesco",
+      "buland-darwaza",
+      "akbar-capital",
+      "heritage"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "kashi-vishwanath-temple",
+    "name": "Kashi Vishwanath Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "spiritual",
+    "shortDescription": "One of the 12 sacred Jyotirlingas of Lord Shiva, crowned by 800 kg of gold plating and seamlessly connected to the Ganga by a modern corridor.",
+    "longDescription": "The supreme spiritual epicentre of Varanasi, mentioned in ancient Puranas. The temple enshrines the Vishweshwara Jyotirlinga. Recently revamped with the monumental Kashi Vishwanath Corridor connecting the holy sanctum directly to Manikarnika and Lalita Ghats on the sacred Ganga.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.3109,
+      "longitude": 83.0107
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Gold-plated spires donated by Maharaja Ranjit Singh",
+      "Direct river corridor with marble colonnades",
+      "Daily Mangala and Shringar Aartis"
+    ],
+    "activities": [
+      "Participating in early morning Mangala Aarti",
+      "Holy Ganga snan before darshan",
+      "Exploring temple museum in corridor"
+    ],
+    "nearbyPlaces": [
+      "Dashashwamedh Ghat",
+      "Manikarnika Ghat",
+      "Annapurna Temple"
+    ],
+    "travelTips": [
+      "Electronic devices, leather items, and bags must be deposited in official lockers before entry",
+      "Book online Sugam Darshan tickets during peak festival times"
+    ],
+    "accessibility": "Modern corridor has ramps, escalators, and golf carts for senior citizens",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "jyotirlinga",
+      "kashi",
+      "shiva-temple",
+      "spiritual",
+      "varanasi"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "dashashwamedh-ghat",
+    "name": "Dashashwamedh Ghat",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "spiritual",
+    "shortDescription": "The main and most vibrant riverfront ghat in Varanasi, world-famous for its choreographed evening Ganga Aarti ceremony.",
+    "longDescription": "According to legend, Lord Brahma sacrificed ten horses (dasa-ashwamedha) here. Every dusk, young saffron-clad priests perform a mesmerizing ritual with multi-tiered brass oil lamps, conch shells, incense, and chants while thousands watch from stone steps and wooden boats.",
+    "category": [
+      "spiritual",
+      "culture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 25.3076,
+      "longitude": 83.0104
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand evening Ganga Aarti with flaming brass lamps",
+      "Floating diya offerings on the sacred river",
+      "Vibrant ghat steps filled with sadhus and pilgrims"
+    ],
+    "activities": [
+      "Watching Aarti from a wooden river boat",
+      "Releasing floating marigold flower diyas",
+      "Evening river photography"
+    ],
+    "nearbyPlaces": [
+      "Kashi Vishwanath Temple",
+      "Manikarnika Ghat",
+      "Godowlia Market"
+    ],
+    "travelTips": [
+      "Arrive by 5:30 PM to secure prime front-row seating on the stone steps or hire a boat early"
+    ],
+    "accessibility": "Steep stone steps down to river; handrails available at central landings",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ganga-aarti",
+      "ghat",
+      "varanasi",
+      "spiritual",
+      "rituals"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "assi-ghat",
+    "name": "Assi Ghat",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "culture",
+    "shortDescription": "The southernmost major ghat where the Assi River meets the Ganga, famous for morning Subah-e-Banaras cultural performances and yoga.",
+    "longDescription": "A beloved gathering place for travelers, scholars, and spiritual seekers. Assi Ghat hosts the daily dawn 'Subah-e-Banaras' initiative featuring Vedic chanting, classical ragas, yoga sessions, and morning Ganga Aarti at sunrise. Filled with bohemian cafes, bookstores, and music schools.",
+    "category": [
+      "culture",
+      "spiritual",
+      "wellness"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 25.2899,
+      "longitude": 83.0069
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Subah-e-Banaras classical music and sunrise aarti",
+      "Open-air morning yoga on stone steps",
+      "Laid-back riverside cafes and lemon chai"
+    ],
+    "activities": [
+      "Sunrise yoga sessions",
+      "Sipping masala chai at Pappu Chai",
+      "Starting southern boat tour"
+    ],
+    "nearbyPlaces": [
+      "Tulsi Ghat",
+      "Banaras Hindu University (BHU)",
+      "Sankat Mochan Temple"
+    ],
+    "travelTips": [
+      "Wake up early to be at Assi Ghat by 5:15 AM for the magical sunrise musical ceremony"
+    ],
+    "accessibility": "Spacious wide steps and relatively easy vehicle drop-off compared to inner gallis",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "subah-e-banaras",
+      "yoga",
+      "ghat",
+      "sunrise",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "manikarnika-ghat",
+    "name": "Manikarnika Ghat",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "spiritual",
+    "shortDescription": "The primary and most sacred cremation ghat of Hinduism, revered as the Mahasmashana where liberation (Moksha) is attained.",
+    "longDescription": "Believed to hold a perpetual sacred fire lit thousands of years ago. In Hindu faith, dying or being cremated at Manikarnika frees the soul from the eternal cycle of rebirth (Samsara). It offers a profound, sobering contemplation on the transience of human life.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "bestTimeToVisit": "Year-round",
+    "recommendedDuration": "45 minutes",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 25.3108,
+      "longitude": 83.0139
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred perpetual sacred cremation pyres",
+      "Chakrapushkarini sacred kund created by Lord Vishnu",
+      "Ancient Shiva temple tilted into the Ganga"
+    ],
+    "activities": [
+      "Contemplative observation from respectful distance on upper walkways or boat"
+    ],
+    "nearbyPlaces": [
+      "Scindia Ghat",
+      "Kashi Vishwanath Corridor",
+      "Dashashwamedh Ghat"
+    ],
+    "travelTips": [
+      "Strictly photography-free zone out of respect for grieving families; beware of touts asking for donations for wood"
+    ],
+    "accessibility": "Narrow crowded gallis and uneven steps",
+    "familyFriendly": false,
+    "budgetLevel": "budget",
+    "tags": [
+      "moksha",
+      "cremation-ghat",
+      "spiritual",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "sarnath",
+    "name": "Sarnath Deer Park & Dhamek Stupa",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Sarnath",
+    "citySlug": "sarnath",
+    "type": "heritage",
+    "shortDescription": "Sacred Buddhist pilgrimage site where Gautama Buddha delivered his first sermon and turned the Wheel of Law (Dharmachakra).",
+    "longDescription": "Located 10 km northeast of Varanasi, Sarnath is one of Buddhism's four primary pilgrimage sites. The site features the massive 43.6m Dhamek Stupa built by Emperor Ashoka, ancient monastery ruins, the sacred deer park, and the Archaeological Museum housing the original Ashokan Lion Capital (India's national emblem).",
+    "category": [
+      "heritage",
+      "spiritual",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.3811,
+      "longitude": 83.0214
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Colossal Dhamek Stupa with carved floral motifs",
+      "Ashokan Lion Capital at the Sarnath Archaeological Museum",
+      "Mulagandha Kuti Vihara modern Buddhist temple",
+      "International Buddhist temples (Thai, Japanese, Tibetan)"
+    ],
+    "activities": [
+      "Circling the Dhamek Stupa",
+      "Viewing national emblem sculpture in museum",
+      "Meditating under bodhi trees in the deer park"
+    ],
+    "nearbyPlaces": [
+      "Chaukhandi Stupa",
+      "Varanasi City (10 km)"
+    ],
+    "travelTips": [
+      "Museum is closed on Fridays; hire an audio guide for deep historical context"
+    ],
+    "accessibility": "Flat paved pathways across the stupa park and museum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "buddhism",
+      "stupa",
+      "ashoka",
+      "national-emblem",
+      "unesco-tentative"
+    ],
+    "featured": true,
+    "priorityRank": 3
+  },
+  {
+    "id": "ganga-riverfront",
+    "name": "Ganga Riverfront & Ghats",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "nature",
+    "shortDescription": "The continuous crescent stretch of 84 stone ghats lining the sacred river Ganga, providing sunrise boat rides and living cultural panoramas.",
+    "longDescription": "Spanning over 6 kilometers along the curved bank of the Ganga, Varanasi's ghats form one of the world's most atmospheric riverfronts. Dawn boat rides reveal pilgrims performing snan, sadhus in orange robes meditating, students reciting shlokas, and palatial stone havelis glowing in pink morning light.",
+    "category": [
+      "nature",
+      "culture",
+      "spiritual",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Morning",
+    "coordinates": {
+      "latitude": 25.305,
+      "longitude": 83.01
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sunrise boat cruise from Assi to Rajghat",
+      "Historic sandstone palaces built by Maratha, Rajput, and Bengali royals",
+      "Migratory Siberian seagulls during winter months"
+    ],
+    "activities": [
+      "Sunrise rowboat or motorboat cruise",
+      "Feeding winter migratory birds",
+      "Riverside walking along the continuous ghat trail"
+    ],
+    "nearbyPlaces": [
+      "Assi Ghat",
+      "Dashashwamedh Ghat",
+      "Panchganga Ghat"
+    ],
+    "travelTips": [
+      "Opt for a traditional wooden hand-rowed boat for silence and closer river proximity over loud diesel boats"
+    ],
+    "accessibility": "Stone steps with occasional ramp access at newly developed ghats",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ganga",
+      "riverfront",
+      "boat-ride",
+      "ghats",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ramnagar-fort",
+    "name": "Ramnagar Fort",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "type": "forts-palaces",
+    "shortDescription": "18th-century cream sandstone fortification on the eastern bank of the Ganga, the ancestral palace of the Maharaja of Benares.",
+    "longDescription": "Built in 1750 by Kashi Naresh Raja Balwant Singh, this fort features Mughal-Rajput battlements, an eccentric museum of vintage royal cars, medieval weaponry, jewel-encrusted palanquins, and an astronomical clock crafted in 1852.",
+    "category": [
+      "forts-palaces",
+      "museums",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.2676,
+      "longitude": 83.027
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Rare 19th-century astronomical clock",
+      "Vintage royal American cars & gold palanquins",
+      "Riverside ramparts and sunset views over Benares"
+    ],
+    "activities": [
+      "Visiting Maharaja museum",
+      "Trying authentic Shivpur lassi outside fort gates"
+    ],
+    "nearbyPlaces": [
+      "Vyasa Temple",
+      "BHU Vishwanath Temple across the river"
+    ],
+    "travelTips": [
+      "Famous for the month-long Ramlila festival staged here in autumn"
+    ],
+    "accessibility": "Cobblestone courtyards and traditional stone staircases",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "fort",
+      "maharaja",
+      "museum",
+      "varanasi"
+    ],
+    "featured": false,
+    "priorityRank": 8
+  },
+  {
+    "id": "ram-mandir",
+    "name": "Shri Ram Janmabhoomi Mandir",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "Grand newly consecrated Nagara-style temple at the divine birthplace of Lord Rama, carved from pink Bansi Paharpur sandstone.",
+    "longDescription": "The majestic spiritual epicenter of Ayodhya, consecrated in January 2024. Designed by the renowned Sompura family in classic Nagara temple architecture, it spans three storeys supported by 392 intricately carved stone pillars, five mandapas, and houses the revered 51-inch black stone idol of Ram Lalla.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "3 - 4 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.7992,
+      "longitude": 82.2033
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pink Bansi Paharpur stone carving without iron or steel",
+      "51-inch Ram Lalla deity by Arun Yogiraj",
+      "392 carved mythological pillars & 44 teakwood doors",
+      "Grand Ram Janmabhoomi Teerth Kshetra complex"
+    ],
+    "activities": [
+      "Darshan of Ram Lalla",
+      "Circumambulating the temple corridors",
+      "Evening Aarti ceremonies"
+    ],
+    "nearbyPlaces": [
+      "Hanuman Garhi",
+      "Kanak Bhawan",
+      "Ram Ki Paidi"
+    ],
+    "travelTips": [
+      "Mobile phones, smartwatches, and wallets must be deposited in dedicated lockers before entering security queues"
+    ],
+    "accessibility": "Wheelchair ramps, golf carts, and shaded pilgrimage walkways available",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ram-mandir",
+      "ayodhya",
+      "nagara-architecture",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "hanuman-garhi",
+    "name": "Hanuman Garhi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "10th-century fortress temple perched atop 76 stone steps, housing Lord Hanuman as the guardian protector of Ayodhya.",
+    "longDescription": "According to local tradition, pilgrims must first take the blessings of Lord Hanuman here before visiting Ram Janmabhoomi. The fortress-like temple features four bastion towers, circular ramparts, and a gilded silver idol of child Hanuman seated on the lap of his mother Anjani.",
+    "category": [
+      "spiritual",
+      "heritage",
+      "temples"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.7967,
+      "longitude": 82.2017
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "76 grand red stone steps",
+      "Fortress battlements with citywide views",
+      "Silver-clad sanctum of Bal Hanuman"
+    ],
+    "activities": [
+      "Ascending 76 steps for morning darshan",
+      "Offering traditional laddus and sindoor"
+    ],
+    "nearbyPlaces": [
+      "Ram Mandir",
+      "Dashrath Mahal",
+      "Kanak Bhawan"
+    ],
+    "travelTips": [
+      "Watch out for lively monkeys on the stairs; keep sweets and flowers tucked inside bags"
+    ],
+    "accessibility": "Requires climbing 76 steps; sedan chairs (palki) available for elderly",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "hanuman-temple",
+      "ayodhya",
+      "fortress-temple",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "kanak-bhawan",
+    "name": "Kanak Bhawan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "The 'House of Gold' palace temple gifted by Queen Kaikeyi to Sita, celebrated for its Bundeli architecture and gold-crowned idols.",
+    "longDescription": "Renovated in 1891 by Queen Vrishbhanu Kunwari of Orchha, this opulent palace temple features elegant courtyards, arched pillared halls, and intricately painted ceilings. It enshrines gorgeous gold-crowned deities of Lord Rama and Devi Sita.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 26.802,
+      "longitude": 82.203
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Bundeli palace architecture with arched verandas",
+      "Gold-crowned idols of Sita and Rama",
+      "Soulful bhajan and kirtan performances in open courtyard"
+    ],
+    "activities": [
+      "Attending morning Shringar Aarti",
+      "Listening to devotional music",
+      "Viewing royal wall paintings"
+    ],
+    "nearbyPlaces": [
+      "Ram Mandir",
+      "Hanuman Garhi"
+    ],
+    "travelTips": [
+      "Visit in late afternoon to experience tranquil temple courtyard singing"
+    ],
+    "accessibility": "Ground level entry with minor steps at sanctum",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "kanak-bhawan",
+      "sita-ram",
+      "palace-temple",
+      "ayodhya"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "saryu-river-ghats",
+    "name": "Saryu River Ghats & Aarti",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "spiritual",
+    "shortDescription": "Sacred riverfront ghats including Guptar Ghat and Naya Ghat, hosting grand evening Saryu Aarti ceremonies and holy snan.",
+    "longDescription": "The divine Saryu River is deeply intertwined with the Ramayana. The well-paved ghats feature evening Saryu Aarti with chanting, brass lamps, musical fountain shows, and peaceful boating against twilight reflections.",
+    "category": [
+      "spiritual",
+      "culture",
+      "nature"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.8038,
+      "longitude": 82.2105
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Grand evening Saryu Aarti",
+      "Guptar Ghat where Lord Rama performed Jal Samadhi",
+      "Boating on calm waters"
+    ],
+    "activities": [
+      "Evening Aarti darshan",
+      "Boat ride across the Saryu",
+      "Floating earthen lamps"
+    ],
+    "nearbyPlaces": [
+      "Ram Ki Paidi",
+      "Nageshwarnath Temple"
+    ],
+    "travelTips": [
+      "The newly illuminated riverfront promenade is best visited between 6:00 PM and 8:00 PM"
+    ],
+    "accessibility": "Paved riverfront promenade with ramp access at Naya Ghat",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "saryu-river",
+      "aarti",
+      "ghats",
+      "ayodhya"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ram-ki-paidi",
+    "name": "Ram Ki Paidi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "type": "culture",
+    "shortDescription": "Spectacular series of bathing ghats on the Saryu canal, setting Guinness World Records during the annual Diwali Deepotsav.",
+    "longDescription": "A wide stepped reservoir built along a channel of the Saryu River, modeled after Haridwar's Har Ki Pauri. During Diwali Deepotsav, over 2.5 million earthen diyas are lit simultaneously here, illuminating the water in a record-breaking sea of golden light.",
+    "category": [
+      "culture",
+      "spiritual",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March (Special during Diwali)",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.8042,
+      "longitude": 82.2091
+    },
+    "image": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Guinness World Record Deepotsav lamp lighting",
+      "Night laser and light water projections",
+      "Panoramic stepped ghat architecture"
+    ],
+    "activities": [
+      "Watching evening 3D laser water projection show",
+      "Strolling lit riverbanks",
+      "Attending Deepotsav celebrations"
+    ],
+    "nearbyPlaces": [
+      "Saryu River Ghats",
+      "Nageshwarnath Temple"
+    ],
+    "travelTips": [
+      "Laser show takes place daily after sundown around 7:00 PM"
+    ],
+    "accessibility": "Wide paved steps and broad flat upper plazas",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "deepotsav",
+      "ram-ki-paidi",
+      "diwali",
+      "ayodhya"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "bara-imambara",
+    "name": "Bara Imambara & Bhulbhulaiya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "18th-century Nawabi architectural marvel featuring the world's largest arched hall unsupported by beams, and a 3D labyrinth.",
+    "longDescription": "Commissioned in 1784 by Nawab Asaf-ud-Daula as a famine relief project, this grand monument houses an enormous central arched hall built without a single iron beam or wood girder. Above it sits the Bhulbhulaiya, an intricate three-dimensional maze of 489 identical doorways and corridors designed to confuse intruders, alongside the five-storey Shahi Baoli stepwell.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.869,
+      "longitude": 80.913
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "World's largest pillarless arched hall (50m x 16m)",
+      "Bhulbhulaiya 3D labyrinth maze with optical acoustics",
+      "Shahi Baoli stepwell palace",
+      "Rooftop terrace with views of the Old City"
+    ],
+    "activities": [
+      "Navigating the Bhulbhulaiya maze with a local storyteller guide",
+      "Exploring the multi-level stepwell"
+    ],
+    "nearbyPlaces": [
+      "Rumi Darwaza",
+      "Chota Imambara",
+      "Clock Tower"
+    ],
+    "travelTips": [
+      "Always hire an authorized guide for the Bhulbhulaiya maze; it is genuinely easy to lose one's way"
+    ],
+    "accessibility": "Ground floor hall accessible; maze requires climbing narrow dark stairs",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "imambara",
+      "bhulbhulaiya",
+      "nawabi-heritage",
+      "lucknow"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "chota-imambara",
+    "name": "Chota Imambara (Palace of Lights)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "Gilded 19th-century Nawabi monument adorned with Belgian glass chandeliers, gold-domed towers, and calligraphic Islamic carvings.",
+    "longDescription": "Built by Nawab Muhammad Ali Shah in 1838. Known as the 'Palace of Lights' because hundreds of Belgian crystal chandeliers, colored glass globes, and silver lanterns are lit during Muharram. The compound also houses the Nawab's tomb and a miniature replica of the Taj Mahal.",
+    "category": [
+      "heritage",
+      "architecture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 - 1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 26.8741,
+      "longitude": 80.9048
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Gilded gold dome and white turrets",
+      "Belgian crystal chandeliers and silver throne",
+      "Taj Mahal miniature replica tomb",
+      "Water canal reflecting pool"
+    ],
+    "activities": [
+      "Admiring antique European chandeliers",
+      "Photography of reflecting pools and calligraphy"
+    ],
+    "nearbyPlaces": [
+      "Bara Imambara",
+      "Rumi Darwaza",
+      "Satkhanda Tower"
+    ],
+    "travelTips": [
+      "Modest dress required; headscarves provided for visitors at entrance"
+    ],
+    "accessibility": "Courtyard and main prayer hall accessible via ramp",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "chota-imambara",
+      "palace-of-lights",
+      "chandeliers",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "rumi-darwaza",
+    "name": "Rumi Darwaza",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "The 60-foot iconic gateway of Lucknow, built in 1784 styled after the Sublime Porte of Istanbul with ornamental flower-petal arches.",
+    "longDescription": "Standing as the monumental grand gateway to the old city of Lucknow between Bara and Chota Imambara, the Rumi Darwaza is the city's official symbol. Crowned with an ornamental lantern turret and floral stone carvings, it looks distinct and majestic from both sides.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "45 minutes",
+    "estimatedVisitTime": "1 hour",
+    "coordinates": {
+      "latitude": 26.8716,
+      "longitude": 80.9122
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "60-foot ornamental arch designed like an open lotus flower",
+      "Architectural twin perspective from east and west",
+      "Golden night illumination"
+    ],
+    "activities": [
+      "Street photography from heritage plaza",
+      "Evening illuminated heritage walk"
+    ],
+    "nearbyPlaces": [
+      "Bara Imambara",
+      "Clock Tower",
+      "Picture Gallery"
+    ],
+    "travelTips": [
+      "The surrounding heritage plaza is pedestrianized and beautifully lit after sunset"
+    ],
+    "accessibility": "Open street plaza with level pavements",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "rumi-darwaza",
+      "lucknow-gateway",
+      "architecture",
+      "heritage"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  },
+  {
+    "id": "british-residency",
+    "name": "British Residency",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "Historic British compound left preserved in ruins exactly as it survived the 147-day Siege of Lucknow during the 1857 First War of Independence.",
+    "longDescription": "Sprawling across 33 tranquil park acres, the Residency preserves cannon-scarred brick walls, ruined banqueting halls, subterranean begum quarters, and an evocative on-site museum documenting the 1857 Uprising. It offers a poignant, peaceful historical walk.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 26.8611,
+      "longitude": 80.9272
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Preserved cannonball scars on brick walls",
+      "Model diorama museum of the 1857 Siege",
+      "Well-maintained botanical lawns and flowerbeds"
+    ],
+    "activities": [
+      "Historical self-guided walking tour",
+      "Visiting on-site 1857 rebellion museum"
+    ],
+    "nearbyPlaces": [
+      "Shah Najaf Imambara",
+      "Hazratganj",
+      "Chhatar Manzil"
+    ],
+    "travelTips": [
+      "Very peaceful in late afternoon; carry water as the grounds are extensive"
+    ],
+    "accessibility": "Paved pathways across gardens, some steps into ruined cellars",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "1857-revolt",
+      "british-residency",
+      "history",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "hazratganj",
+    "name": "Hazratganj Heritage Market",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "shopping",
+    "shortDescription": "The century-old Victorian-era shopping boulevard of Lucknow, famous for 'Ganjing' strolls, Chikankari showrooms, and royal kebabs.",
+    "longDescription": "Established in 1810 by Nawab Amjad Ali Shah and renovated with uniform Victorian lampposts and black-and-white facades. 'Ganjing'—the leisurely art of walking through Hazratganj—is a cherished Lucknowi pastime, pairing shopping for delicate Chikankari silks with Royal Cafe's Basket Chaat.",
+    "category": [
+      "shopping",
+      "food",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.85,
+      "longitude": 80.945
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Uniform Victorian-style heritage storefronts",
+      "GI-tagged Chikankari and Zardozi garment boutiques",
+      "Iconic Royal Cafe Basket Chaat and Shukla Chaat"
+    ],
+    "activities": [
+      "Shopping for authentic Chikankari kurtas and sarees",
+      "Tasting Basket Chaat and kulfi falooda",
+      "Evening promenade strolls"
+    ],
+    "nearbyPlaces": [
+      "Ambedkar Memorial Park",
+      "British Residency"
+    ],
+    "travelTips": [
+      "Avoid visiting on Sunday afternoons when several historic shops are closed"
+    ],
+    "accessibility": "Wide pedestrian sidewalks with dropped curbs",
+    "familyFriendly": true,
+    "budgetLevel": "moderate",
+    "tags": [
+      "hazratganj",
+      "shopping",
+      "chikankari",
+      "food-trail",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "ambedkar-memorial-park",
+    "name": "Ambedkar Memorial Park",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "type": "heritage",
+    "shortDescription": "Monumental 107-acre architectural memorial built entirely of red sandstone from Rajasthan, featuring 62 life-sized stone elephants.",
+    "longDescription": "Located along the Gomti River in Gomti Nagar, this stupendous modern civic memorial honors Dr. B.R. Ambedkar and other social reformers. It features a towering 112-foot central memorial dome, grand colonnades, reflecting pools, and an imposing ceremonial avenue lined by 62 giant stone elephants.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 - 2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 26.8488,
+      "longitude": 80.978
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Avenue of 62 life-sized red sandstone elephants",
+      "112-foot stupa memorial dome",
+      "Dramatic night golden floodlighting"
+    ],
+    "activities": [
+      "Architectural photography",
+      "Evening riverside walks along Gomti Riverfront"
+    ],
+    "nearbyPlaces": [
+      "Gomti Riverfront Park",
+      "Janeshwar Mishra Park"
+    ],
+    "travelTips": [
+      "Visit just before twilight to witness the sandstone turn golden under nighttime illumination"
+    ],
+    "accessibility": "Broad flat stone plazas; golf buggies available for seniors",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "ambedkar-park",
+      "monumental-architecture",
+      "lucknow"
+    ],
+    "featured": false,
+    "priorityRank": 7
+  },
+  {
+    "id": "krishna-janmabhoomi",
+    "name": "Shri Krishna Janmabhoomi Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "type": "spiritual",
+    "shortDescription": "The sacred prison cell (Garbha Griha) where Lord Krishna incarnated over 5,000 years ago, central to the holy Braj region.",
+    "longDescription": "The sanctum sanctorum of Mathura, built around the prison cell where King Kamsa held Vasudeva and Devaki. The sprawling temple complex features the Bhagvat Bhavan adorned with ceiling murals of Krishna's Leelas, the Potra Kund sacred pond, and vibrant Janmashtami celebrations.",
+    "category": [
+      "spiritual",
+      "temples",
+      "heritage"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.5053,
+      "longitude": 77.6698
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Garbha Griha subterranean birthplace chamber",
+      "Bhagvat Bhavan with intricate ceiling frescoes",
+      "Potra Kund historic sacred bathing tank"
+    ],
+    "activities": [
+      "Darshan at Garbha Griha",
+      "Tasting traditional Mathura Peda prasad",
+      "Joining evening Maha Aarti"
+    ],
+    "nearbyPlaces": [
+      "Dwarkadhish Temple",
+      "Vishram Ghat",
+      "Vrindavan (11 km)"
+    ],
+    "travelTips": [
+      "Strict electronic locker checks; cameras and mobile phones not permitted inside"
+    ],
+    "accessibility": "Ramps available through most temple corridors",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "krishna-birthplace",
+      "mathura",
+      "spiritual",
+      "braj"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "banke-bihari-temple",
+    "name": "Banke Bihari Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "type": "spiritual",
+    "shortDescription": "One of Hinduism's most revered Krishna temples, where the black stone deity is intermittently hidden behind curtains so His gaze does not overwhelm devotees.",
+    "longDescription": "Established by Swami Haridas, guru of musical legend Tansen. The temple houses the charming 'Tribhanga' (three-bent posture) idol of Banke Bihari. Devotees crowd the courtyard as velvet curtains are drawn and opened every few minutes amid joyful chants of 'Radhe Radhe'.",
+    "category": [
+      "spiritual",
+      "temples",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 27.5815,
+      "longitude": 77.7011
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Sacred curtain darshan (Jhulan style)",
+      "Legend of Swami Haridas's musical devotion",
+      "Grand Phoolon Ki Holi (Holi of flowers)"
+    ],
+    "activities": [
+      "Darshan of Banke Bihari",
+      "Singing bhajans in the crowded courtyard",
+      "Tasting creamy rabri and hot pedas in surrounding alleys"
+    ],
+    "nearbyPlaces": [
+      "Radha Vallabh Temple",
+      "Nidhivan",
+      "ISKCON Vrindavan"
+    ],
+    "travelTips": [
+      "Keep spectacles, sunglasses, and bags secure from playful Vrindavan monkeys in temple alleys"
+    ],
+    "accessibility": "Crowded narrow lanes; enter early in morning to avoid heavy stampedes",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "banke-bihari",
+      "vrindavan",
+      "krishna-temple",
+      "spiritual"
+    ],
+    "featured": true,
+    "priorityRank": 2
+  },
+  {
+    "id": "iskcon-vrindavan",
+    "name": "ISKCON Vrindavan (Sri Krishna Balaram Mandir)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "type": "spiritual",
+    "shortDescription": "Magnificent white marble temple complex founded in 1975 by Srila Prabhupada, known for 24-hour ecstatic kirtan and international devotees.",
+    "longDescription": "The first ISKCON temple built in India, inaugurated by founder A.C. Bhaktivedanta Swami Prabhupada. Features three pristine marble altars dedicated to Sri Sri Gaura Nitai, Krishna-Balaram, and Radha Shyamasundar, accompanied by continuous 24-hour Hare Krishna maha-mantra chanting.",
+    "category": [
+      "spiritual",
+      "temples",
+      "culture"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 27.5724,
+      "longitude": 77.6852
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Continuous 24-hour Kirtan Mandapa",
+      "Srila Prabhupada Samadhi Mandir in pure white marble",
+      "Govinda's vegetarian multi-cuisine restaurant"
+    ],
+    "activities": [
+      "Participating in ecstatic chanting and dancing kirtan",
+      "Visiting Prabhupada memorial museum",
+      "Dining at Govinda's restaurant"
+    ],
+    "nearbyPlaces": [
+      "Prem Mandir",
+      "Banke Bihari Temple"
+    ],
+    "travelTips": [
+      "Evening Sandhya Aarti at 7:00 PM is deeply immersive and joyous"
+    ],
+    "accessibility": "Smooth marble floors and wheelchair ramps available",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "iskcon",
+      "vrindavan",
+      "kirtan",
+      "krishna-balaram"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "prem-mandir",
+    "name": "Prem Mandir (Temple of Divine Love)",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "type": "spiritual",
+    "shortDescription": "Colossal white Italian Carrara marble temple complex famous for its intricate carvings and spectacular evening multicolored LED light displays.",
+    "longDescription": "Constructed over 11 years using 30,000 tons of Italian Carrara marble under the guidance of Jagadguru Kripalu Maharaj. Surrounded by landscaped gardens featuring life-size dioramas of Krishna raising Govardhan Hill, Raas Leela, and Jhulan Leela, illuminated at night with chromatic LED illumination.",
+    "category": [
+      "spiritual",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "September to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Evening",
+    "coordinates": {
+      "latitude": 27.5714,
+      "longitude": 77.6747
+    },
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Pure Italian Carrara marble craftsmanship",
+      "Life-size outdoor Leela dioramas",
+      "Evening musical fountain and color-shifting illumination"
+    ],
+    "activities": [
+      "Watching night musical fountain show",
+      "Walking through illuminated Krishna pastimes gardens"
+    ],
+    "nearbyPlaces": [
+      "ISKCON Vrindavan",
+      "Chandrodaya Mandir"
+    ],
+    "travelTips": [
+      "Arrive around 5:30 PM to appreciate the white marble in daylight, then watch it transform during the evening light show"
+    ],
+    "accessibility": "Wide paved pathways, elevators, and wheelchair friendly access",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "prem-mandir",
+      "light-show",
+      "marble-temple",
+      "vrindavan"
+    ],
+    "featured": true,
+    "priorityRank": 4
+  },
+  {
+    "id": "govardhan",
+    "name": "Govardhan Hill & Parikrama",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "type": "spiritual",
+    "shortDescription": "The sacred 21-kilometer hill lifted by Lord Krishna on His little finger to shelter the inhabitants of Braj from torrential deluge.",
+    "longDescription": "Revered as non-different from Lord Krishna Himself. Devotees from all over the world undertake the 21-kilometer circumambulation (Govardhan Parikrama) on foot, visiting holy ponds like Radha Kund, Shyam Kund, Mansi Ganga, and historic red sandstone palaces.",
+    "category": [
+      "spiritual",
+      "nature",
+      "heritage"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "4 - 6 hours",
+    "estimatedVisitTime": "Full Day",
+    "coordinates": {
+      "latitude": 27.502,
+      "longitude": 77.464
+    },
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "21-km sacred Govardhan Parikrama pilgrimage",
+      "Radha Kund and Shyam Kund holy theerthams",
+      "Mansi Ganga holy lake in central Govardhan"
+    ],
+    "activities": [
+      "Walking the holy 21-km parikrama",
+      "Taking holy dip at Radha Kund",
+      "Electric e-rickshaw parikrama tour for elders"
+    ],
+    "nearbyPlaces": [
+      "Kusum Sarovar",
+      "Jatipura",
+      "Barsana"
+    ],
+    "travelTips": [
+      "Start walking before dawn or in early evening to avoid daytime heat; barefoot walking is traditional but shoes are permitted on outer track"
+    ],
+    "accessibility": "Paved parikrama road; e-rickshaws available for elderly pilgrims",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "govardhan",
+      "parikrama",
+      "radha-kund",
+      "spiritual"
+    ],
+    "featured": false,
+    "priorityRank": 5
+  },
+  {
+    "id": "kusum-sarovar",
+    "name": "Kusum Sarovar",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "type": "heritage",
+    "shortDescription": "Stunning 460-foot emerald sacred reservoir flanked by tiered Rajput-Mughal sandstone chhatris built in memory of Maharaja Suraj Mal.",
+    "longDescription": "Set along the Govardhan Parikrama path, Kusum Sarovar is historically where the Gopis collected flowers for Krishna. In the 18th century, King Jawahar Singh erected magnificent carved sandstone pavilions with painted ceilings depicting Krishna and Radha's leelas.",
+    "category": [
+      "heritage",
+      "architecture",
+      "photography"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1 hour",
+    "estimatedVisitTime": "1.5 hours",
+    "coordinates": {
+      "latitude": 27.5255,
+      "longitude": 77.4891
+    },
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Carved red and buff sandstone chhatris",
+      "Ceiling frescoes of Braj Leela in royal pavilions",
+      "Mirror-like reflection of monuments in tranquil waters"
+    ],
+    "activities": [
+      "Photography of sandstone reflections",
+      "Sunset contemplation on ghat steps"
+    ],
+    "nearbyPlaces": [
+      "Govardhan Hill",
+      "Radha Kund"
+    ],
+    "travelTips": [
+      "One of the most photogenic monuments in all of Braj, especially at sunrise and sunset"
+    ],
+    "accessibility": "Flight of stone steps leads down to the reservoir; upper terrace accessible",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "kusum-sarovar",
+      "chhatris",
+      "rajput-architecture",
+      "govardhan"
+    ],
+    "featured": false,
+    "priorityRank": 6
+  },
+  {
+    "id": "triveni-sangam",
+    "name": "Triveni Sangam",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "spiritual",
+    "shortDescription": "The holy confluence of three sacred rivers—Ganga, Yamuna, and mythical Saraswati—and epicenter of the world-famous Kumbh Mela.",
+    "longDescription": "The most sacred water confluence in Hinduism. Here, the clear greenish waters of the Yamuna visibly merge with the pale ochre current of the Ganga. Taking a holy bath at Sangam is believed to wash away sins and grant liberation. Hosts the largest gathering of humanity on earth during the Kumbh and Magh Melas.",
+    "category": [
+      "spiritual",
+      "nature",
+      "culture"
+    ],
+    "bestTimeToVisit": "October to March (Magh Mela in Jan-Feb)",
+    "recommendedDuration": "2 - 3 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.4262,
+      "longitude": 81.8841
+    },
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Visible color contrast of Ganga and Yamuna waters",
+      "Kumbh Mela sacred bathing epicenter",
+      "Boat ride to wooden bathing platforms at confluence"
+    ],
+    "activities": [
+      "Taking a boat ride to mid-river Sangam bathing platforms",
+      "Holy confluence snan (bath)",
+      "Feeding migratory Siberian gulls in winter"
+    ],
+    "nearbyPlaces": [
+      "Allahabad Fort",
+      "Bade Hanuman Temple",
+      "Alopi Devi Temple"
+    ],
+    "travelTips": [
+      "Negotiate boat fares at official boat union counters on the banks before boarding"
+    ],
+    "accessibility": "Sandy riverbank; wooden floating jetties assist boat boarding",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "sangam",
+      "kumbh-mela",
+      "ganga-yamuna",
+      "spiritual",
+      "prayagraj"
+    ],
+    "featured": true,
+    "priorityRank": 1
+  },
+  {
+    "id": "allahabad-fort",
+    "name": "Allahabad Fort & Patalpuri Temple",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "heritage",
+    "shortDescription": "Massive 1583 AD sandstone fort built by Mughal Emperor Akbar overlooking Sangam, housing the subterranean Patalpuri Temple and sacred Akshayavat tree.",
+    "longDescription": "Constructed at the strategic junction of Ganga and Yamuna, this fort features massive ramparts, moat, and Akbar's palace. While largely under Indian Army garrison, pilgrims can visit the underground Patalpuri Temple, the immortal banyan tree (Akshayavat), and view the 3rd-century BC Ashoka Pillar.",
+    "category": [
+      "heritage",
+      "spiritual",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 25.43,
+      "longitude": 81.875
+    },
+    "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Akshayavat (The Undying Banyan Tree)",
+      "Subterranean Patalpuri cavern temple",
+      "Polished 35-foot Ashoka Pillar with royal edicts"
+    ],
+    "activities": [
+      "Visiting sacred subterranean chambers",
+      "Viewing colossal Mughal ramparts from river boats"
+    ],
+    "nearbyPlaces": [
+      "Triveni Sangam",
+      "Bade Hanuman Temple"
+    ],
+    "travelTips": [
+      "ID proof required for entry as parts are an active military station"
+    ],
+    "accessibility": "Underground temple requires walking down stone steps",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "allahabad-fort",
+      "akshayavat",
+      "akbar",
+      "ashoka-pillar"
+    ],
+    "featured": false,
+    "priorityRank": 2
+  },
+  {
+    "id": "anand-bhavan",
+    "name": "Anand Bhavan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "heritage",
+    "shortDescription": "Historic two-storey mansion of the Nehru-Gandhi family, nerve center of the Indian National Freedom Movement turned museum.",
+    "longDescription": "Purchased by Motilal Nehru in the 1930s, this historic estate saw crucial decisions for India's Independence crafted by Mahatma Gandhi, Jawaharlal Nehru, and Congress leaders. Now an evocative museum preserving personal rooms, independence memorabilia, and the Jawahar Planetarium.",
+    "category": [
+      "heritage",
+      "history",
+      "museums"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "2 hours",
+    "estimatedVisitTime": "Half Day",
+    "coordinates": {
+      "latitude": 25.4611,
+      "longitude": 81.8597
+    },
+    "image": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Preserved study and bedroom of Jawaharlal Nehru",
+      "Indira Gandhi's wedding and personal chambers",
+      "Jawahar Planetarium astronomy shows"
+    ],
+    "activities": [
+      "Museum walk through freedom struggle exhibits",
+      "Watching planetarium sky shows"
+    ],
+    "nearbyPlaces": [
+      "Swaraj Bhavan",
+      "Chandrashekhar Azad Park"
+    ],
+    "travelTips": [
+      "Closed on Mondays; tickets available at the main gate"
+    ],
+    "accessibility": "Ramps on ground floor; well-maintained flat garden pathways",
+    "familyFriendly": true,
+    "budgetLevel": "budget",
+    "tags": [
+      "anand-bhavan",
+      "nehru-family",
+      "freedom-movement",
+      "prayagraj"
+    ],
+    "featured": false,
+    "priorityRank": 3
+  },
+  {
+    "id": "khusro-bagh",
+    "name": "Khusro Bagh",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "type": "heritage",
+    "shortDescription": "Walled Mughal Charbagh garden housing three exquisite sandstone mausoleums of Prince Khusrau, his mother Manbhawati Bai, and sister Nithar Begum.",
+    "longDescription": "Spanning over 40 acres near Prayagraj Junction, this tranquil historic garden is a prime example of Mughal funerary architecture. The three-tiered carved sandstone tombs feature Persian frescoes, intricate jali screens, and lush guava orchards.",
+    "category": [
+      "heritage",
+      "architecture",
+      "history"
+    ],
+    "bestTimeToVisit": "October to March",
+    "recommendedDuration": "1.5 hours",
+    "estimatedVisitTime": "2 hours",
+    "coordinates": {
+      "latitude": 25.4419,
+      "longitude": 81.8267
+    },
+    "image": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [],
+    "highlights": [
+      "Three magnificent carved Mughal sandstone tombs",
+      "Persian calligraphic inscriptions and painted ceilings",
+      "Historic Allahabad guava tree groves"
+    ],
+    "activities": [
+      "Heritage photography",
+      "Picnicking and strolling in walled gardens"
+    ],
+    "nearbyPlaces": [
+      "Prayagraj Junction",
+      "Civil Lines"
+    ],
+    "travelTips": [
+      "Tasting fresh Allahabad Surkha pink guavas during winter months"
+    ],
+    "accessibility": "Level walkways across the garden",
+    "familyFriendly": true,
+    "budgetLevel": "free",
+    "tags": [
+      "khusro-bagh",
+      "mughal-gardens",
+      "heritage",
+      "prayagraj"
+    ],
+    "featured": false,
+    "priorityRank": 4
+  }
+]

@@ -7,11 +7,15 @@ import logoWordmarkLight from "../assets/logo-wordmark-light.png";
 
 const NAV_LINKS = [
   { label: "Home",          path: "/" },
-  { label: "Destinations",  path: "/destinations" },
-  { label: "Itinerary",     path: "/itinerary" },
+  { label: "Explore India", path: "/explore" },
+  { label: "States",        path: "/states" },
+  { label: "Cities",        path: "/cities" },
+  { label: "Attractions",   path: "/attractions" },
+  { label: "Themes",        path: "/categories" },
+  { label: "Trip Planner",  path: "/planner" },
   { label: "Hotels",        path: "/hotels" },
-  { label: "Budget",        path: "/budget" },
   { label: "Safety & SOS",  path: "/safety" },
+  { label: "About Us",      path: "/about" },
 ];
 
 const CITIES = ["Jaipur", "Goa", "Munnar", "Varanasi", "Delhi", "Ooty"];

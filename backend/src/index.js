@@ -14,6 +14,7 @@ const adminRouter = require('./routes/admin');
 const translateRouter = require('./routes/translate');
 const destinationsRouter = require('./routes/destinations');
 const chatRouter = require('./routes/chat');
+const tourismRouter = require('./routes/tourism');
 const userStore = require('./services/userStore');
 
 const app = express();
@@ -42,6 +43,7 @@ app.use((req, res, next) => {
 
 // API Routes
 app.use('/api/health', healthRouter);
+app.use('/api/tourism', tourismRouter);
 app.use('/api/cities', citiesRouter);
 app.use('/api/itinerary', itineraryRouter);
 app.use('/api/transport', transportRouter);

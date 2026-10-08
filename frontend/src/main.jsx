@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
+import './styles/IndiaTourism.css';
 
 // ── Google Translate & DOM Translation React Reconciliation Guard ──
 // Prevents React fatal "NotFoundError: Failed to execute 'removeChild' on 'Node'" when translation engines wrap text nodes

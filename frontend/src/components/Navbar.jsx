@@ -20,7 +20,8 @@ import {
   Building2,
   DollarSign,
   HeartHandshake,
-  Globe
+  Globe,
+  Landmark
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import logoMark from '../assets/logo-mark.png';
@@ -126,10 +127,12 @@ export default function Navbar() {
   // Authentic verified navigation translations (instant 0ms response, zero mutilation)
   const CORE_NAV_TRANSLATIONS = {
     home: { en: "Home", ta: "முகப்பு", hi: "होम", te: "హోమ్", kn: "ಮುಖಪುಟ" },
-    destinations: { en: "Destinations", ta: "இடங்கள்", hi: "गंतव्य", te: "గమ్యస్థానాలు", kn: "ತಾಣಗಳು" },
-    itinerary: { en: "Itinerary", ta: "திட்டம்", hi: "यात्रा योजना", te: "ప్రణాళిక", kn: "ಪ್ರವಾಸ ಯೋಜನೆ" },
+    explore: { en: "Explore India", ta: "இந்தியா சுற்று", hi: "भारत खोजें", te: "భారత్ అన్వేషణ", kn: "ಭಾರತ ಅನ್ವೇಷಿಸಿ" },
+    states: { en: "States", ta: "மாநிலங்கள்", hi: "राज्य", te: "రాష్ట్రాలు", kn: "ರಾಜ್ಯಗಳು" },
+    cities: { en: "Cities", ta: "நகரங்கள்", hi: "शहर", te: "నగరాలు", kn: "ನಗರಗಳು" },
+    attractions: { en: "Attractions", ta: "ஈர்ப்புகள்", hi: "आकर्षण", te: "ఆకర్షణలు", kn: "ಆಕರ್ಷಣೆಗಳು" },
+    planner: { en: "Planner", ta: "திட்டமிடு", hi: "योजना", te: "ప్లానర్", kn: "ಯೋಜನೆ" },
     hotels: { en: "Hotels", ta: "தங்குமிடம்", hi: "होटल", te: "హోటళ్ళు", kn: "ಹೋಟೆಲ್‌ಗಳು" },
-    budget: { en: "Budget", ta: "பட்ஜெட்", hi: "बजट", te: "బడ్జెట్", kn: "ಬಜೆಟ್" },
     safety: { en: "Safety", ta: "பாதுகாப்பு", hi: "सुरक्षा", te: "భద్రత", kn: "ಸುರಕ್ಷತೆ" }
   };
 
@@ -144,10 +147,12 @@ export default function Navbar() {
   // Clean core navigation links translated with getNavLabel()
   const coreNavLinks = [
     { label: getNavLabel("home", "Home"), path: "/", icon: <Compass size={15} color="var(--color-primary)" strokeWidth={2} /> },
-    { label: getNavLabel("destinations", "Destinations"), path: "/destinations", icon: <MapPin size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
-    { label: getNavLabel("itinerary", "Itinerary"), path: "/itinerary", icon: <Calendar size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("explore", "Explore India"), path: "/explore", icon: <Globe size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("states", "States"), path: "/states", icon: <MapPin size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("cities", "Cities"), path: "/cities", icon: <Building2 size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("attractions", "Attractions"), path: "/attractions", icon: <Landmark size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
+    { label: getNavLabel("planner", "Planner"), path: "/planner", icon: <Calendar size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
     { label: getNavLabel("hotels", "Hotels"), path: "/hotels", icon: <Building2 size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
-    { label: getNavLabel("budget", "Budget"), path: "/budget", icon: <DollarSign size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
     { label: getNavLabel("safety", "Safety"), path: "/safety", icon: <HeartHandshake size={15} color="var(--color-ink-secondary)" strokeWidth={2} /> },
   ];
 

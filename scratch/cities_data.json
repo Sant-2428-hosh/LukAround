@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "agra",
+    "name": "Agra",
+    "aliases": [
+      "City of the Taj",
+      "Akbarabad"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "Former Mughal imperial capital nestled on the banks of the Yamuna River, renowned globally for the Taj Mahal, Agra Fort, and exquisite Pietra Dura marble inlay craftsmanship.",
+    "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 27.1767,
+    "longitude": 78.0081,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "taj-mahal",
+      "agra-fort",
+      "itmad-ud-daulah",
+      "mehtab-bagh",
+      "akbars-tomb",
+      "fatehpur-sikri"
+    ],
+    "thingsToDo": [
+      "Watch Taj Mahal sunrise from Mehtab Bagh",
+      "Explore Mughal marble inlay workshops",
+      "Heritage walk through Old Agra bazaars",
+      "Mughlai food trail in Sadar Bazaar"
+    ],
+    "food": [
+      "Agra Petha (Kesar, Angoori)",
+      "Mughlai Biryani",
+      "Bedmi Poori with Aloo Sabzi",
+      "Jalebi & Rabri",
+      "Dalmoth namkeen"
+    ],
+    "shopping": [
+      "Marble inlay handicrafts",
+      "Leather footwear & bags at Sadar Bazaar",
+      "Zardozi hand embroidery",
+      "Brass artifacts"
+    ],
+    "festivals": [
+      "Taj Mahotsav (10-day February cultural fiesta)",
+      "Ram Barat",
+      "Bateshwar Cattle Fair"
+    ],
+    "nearbyDestinations": [
+      "Fatehpur Sikri (36 km)",
+      "Mathura (56 km)",
+      "Bharatpur Bird Sanctuary (54 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "family",
+      "couples",
+      "heritage",
+      "photography",
+      "luxury"
+    ]
+  },
+  {
+    "id": "varanasi",
+    "name": "Varanasi",
+    "aliases": [
+      "Kashi",
+      "Benares",
+      "City of Light"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "One of the world's oldest continually inhabited sacred cities. Experience divine twilight Ganga Aarti rituals, sacred riverfront ghats, labyrinthine heritage alleys, and ancient classical music traditions.",
+    "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.3176,
+    "longitude": 82.9739,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "kashi-vishwanath-temple",
+      "dashashwamedh-ghat",
+      "assi-ghat",
+      "manikarnika-ghat",
+      "sarnath-deer-park",
+      "ramnagar-fort"
+    ],
+    "thingsToDo": [
+      "Sunrise wooden boat ride along the 84 ghats",
+      "Witness the grand Dashashwamedh Ganga Aarti",
+      "Heritage walking tour through narrow gallis",
+      "Visit Sarnath where Buddha gave his first sermon"
+    ],
+    "food": [
+      "Banarasi Paan",
+      "Kachori Jalebi at Ram Bhandar",
+      "Tamatar Chaat at Kashi Chaat Bhandar",
+      "Malaiyo (Winter saffron foam sweet)",
+      "Thandai with Rabri"
+    ],
+    "shopping": [
+      "Banarasi Silk Sarees & Brocades",
+      "Brass deities & prayer lamps",
+      "Wooden lacquer toys",
+      "Gulabi Meenakari pink enamel craft"
+    ],
+    "festivals": [
+      "Dev Deepawali (All ghats lit with 1M lamps)",
+      "Mahashivratri",
+      "Ganga Mahotsav",
+      "Dhrupad Mela classical music"
+    ],
+    "nearbyDestinations": [
+      "Sarnath (10 km)",
+      "Chunar Fort (42 km)",
+      "Prayagraj (125 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "spiritual",
+      "solo",
+      "heritage",
+      "culture",
+      "photography"
+    ]
+  },
+  {
+    "id": "ayodhya",
+    "name": "Ayodhya",
+    "aliases": [
+      "Saket",
+      "Ram Janmabhoomi"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The revered birthplace of Lord Rama on the banks of the sacred Saryu River, featuring the magnificent new Ram Mandir, historic Hanuman Garhi, and vibrant Deepotsav celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1707343843437-caacff5cfa74?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.7922,
+    "longitude": 82.1998,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "ram-mandir-ayodhya",
+      "hanuman-garhi",
+      "kanak-bhawan",
+      "saryu-ghats",
+      "ram-ki-paidi"
+    ],
+    "thingsToDo": [
+      "Attend evening Saryu River Aarti",
+      "Darshan at Shri Ram Janmabhoomi Mandir",
+      "Walk through Ram Ki Paidi riverfront",
+      "Explore Kanak Bhawan palace shrine"
+    ],
+    "food": [
+      "Ayodhya Rabri & Khurchan",
+      "Pedas from Hanuman Garhi",
+      "Poori Sabzi",
+      "Laddus from Ram Lalla Prasad"
+    ],
+    "shopping": [
+      "Ayodhya Ram Darbar brass idols",
+      "Wooden temple miniatures",
+      "Tulsi malas & prayer beads"
+    ],
+    "festivals": [
+      "Deepotsav (World Record earthen lamp illumination)",
+      "Ram Navami",
+      "Sita Vivah",
+      "Shravan Jhula Utsav"
+    ],
+    "nearbyDestinations": [
+      "Lucknow (135 km)",
+      "Prayagraj (165 km)",
+      "Varanasi (200 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "family",
+      "heritage"
+    ]
+  },
+  {
+    "id": "lucknow",
+    "name": "Lucknow",
+    "aliases": [
+      "City of Nawabs",
+      "Golden City of the East"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The graceful capital of Uttar Pradesh, renowned for its Awadhi royal etiquette (Tehzeeb), soaring arched gateways, architectural marvels like the gravity-defying Bara Imambara, and world-beating gastronomy.",
+    "heroImage": "https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 26.8467,
+    "longitude": 80.9462,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "bara-imambara",
+      "chota-imambara",
+      "rumi-darwaza",
+      "british-residency",
+      "hazratganj-promenade",
+      "ambedkar-memorial-park"
+    ],
+    "thingsToDo": [
+      "Navigate the mysterious Bhool Bhulaiya labyrinth",
+      "Walk down the heritage colonial boulevard of Hazratganj",
+      "Awadhi royal kebab culinary crawl",
+      "Shop for authentic hand-embroidered Chikankari kurtas"
+    ],
+    "food": [
+      "Galouti Kebab from Tunday Kababi",
+      "Lucknowi Dum Biryani",
+      "Sheermal & Kulcha Nihari",
+      "Prakash Kulfi",
+      "Basket Chaat at Royal Cafe"
+    ],
+    "shopping": [
+      "Chikankari fine white-on-white embroidery",
+      "Zardozi gold wire work",
+      "Kannauj Attar (natural perfumes)",
+      "Bone carving artifacts"
+    ],
+    "festivals": [
+      "Lucknow Mahotsav (Annual cultural showcase)",
+      "Muharram Tazia processions",
+      "Holi in Chowk"
+    ],
+    "nearbyDestinations": [
+      "Ayodhya (135 km)",
+      "Nawabganj Bird Sanctuary (45 km)",
+      "Kanpur (80 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "food",
+      "heritage",
+      "culture",
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "mathura-vrindavan",
+    "name": "Mathura & Vrindavan",
+    "aliases": [
+      "Brajbhoomi",
+      "Krishna Janmabhoomi"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The sacred epicenter of Lord Krishna's divine childhood leelas along the Yamuna River, adorned with thousands of vibrant temples, melodious kirtans, and world-famous Holi celebrations.",
+    "heroImage": "https://images.unsplash.com/photo-1545129139-1beb780cf337?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 27.4924,
+    "longitude": 77.6737,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "krishna-janmabhoomi",
+      "banke-bihari-temple",
+      "prem-mandir",
+      "iskcon-vrindavan",
+      "govardhan-parikrama",
+      "kusum-sarovar"
+    ],
+    "thingsToDo": [
+      "Witness the night laser fountain show at Prem Mandir",
+      "Perform the Govardhan Hill Parikrama",
+      "Experience ecstatic kirtan at ISKCON",
+      "Boat ride at Vishram Ghat Mathura"
+    ],
+    "food": [
+      "Mathura Peda",
+      "Makhan Mishri",
+      "Hing Ki Kachori",
+      "Ghevar",
+      "Braj Rabri with Malpua"
+    ],
+    "shopping": [
+      "Krishna idols & poshak dresses",
+      "Peacock feather ornaments",
+      "Incense & sandalwood sticks",
+      "Brass pooja items"
+    ],
+    "festivals": [
+      "Janmashtami (Grand midnight celebration)",
+      "Lathmar Holi (Barsana & Nandgaon)",
+      "Radhashtami",
+      "Guru Purnima"
+    ],
+    "nearbyDestinations": [
+      "Agra (58 km)",
+      "Barsana (45 km)",
+      "Gokul (15 km)",
+      "Bharatpur (40 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "family",
+      "culture"
+    ]
+  },
+  {
+    "id": "prayagraj",
+    "name": "Prayagraj",
+    "aliases": [
+      "Allahabad",
+      "Prayag",
+      "Tirtharaj"
+    ],
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "description": "The king of pilgrimages where the sacred Ganga, Yamuna, and mythical Saraswati meet at the holy Triveni Sangam. Venue of the world's largest gathering of humanity, the Kumbh Mela.",
+    "heroImage": "https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 25.4358,
+    "longitude": 81.8463,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "triveni-sangam-prayagraj",
+      "allahabad-fort",
+      "anand-bhavan",
+      "khusro-bagh"
+    ],
+    "thingsToDo": [
+      "Take a holy dip by boat at Triveni Sangam",
+      "Tour the Nehru family ancestral home at Anand Bhavan",
+      "Explore Mughal cenotaphs at Khusro Bagh",
+      "Attend the annual Magh Mela"
+    ],
+    "food": [
+      "Allahabadi Guava (Surkha)",
+      "Dehati Rasgulle",
+      "Kachori Dam Aloo",
+      "Lassi at Netram"
+    ],
+    "shopping": [
+      "Religious brassware",
+      "Sangam holy river containers",
+      "Traditional handloom"
+    ],
+    "festivals": [
+      "Kumbh Mela (Once in 12 years)",
+      "Ardh Kumbh Mela",
+      "Annual Magh Mela in January"
+    ],
+    "nearbyDestinations": [
+      "Varanasi (125 km)",
+      "Chitrakoot (130 km)",
+      "Ayodhya (165 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "family"
+    ]
+  },
+  {
+    "id": "chennai",
+    "name": "Chennai",
+    "aliases": [
+      "Madras",
+      "Gateway of South India"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Vibrant coastal metropolis blending ancient 7th-century Kapaleeshwarar temple heritage, the second-longest urban beach in the world (Marina Beach), and the epicenter of Carnatic classical arts.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "bestTimeToVisit": "November to February",
+    "topAttractions": [
+      "marina-beach",
+      "kapaleeshwarar-temple",
+      "fort-st-george",
+      "san-thome-basilica",
+      "government-museum-chennai",
+      "besant-nagar-beach",
+      "guindy-national-park",
+      "valluvar-kottam"
+    ],
+    "thingsToDo": [
+      "Sunset stroll on Marina Beach with sundal snack",
+      "Experience classical Bharatanatyam recital at Kalakshetra",
+      "Temple architectural tour in Mylapore",
+      "Colonial heritage trail in Fort St. George"
+    ],
+    "food": [
+      "Filter Coffee with Medu Vada",
+      "Murugan Idli with five chutneys",
+      "Chettinad Fish Curry",
+      "Kothu Parotta",
+      "Sundal on beach"
+    ],
+    "shopping": [
+      "Kanchipuram Silk Sarees in T. Nagar",
+      "Bronze idols in Mylapore",
+      "Handloom cottons at Fabindia & Khadi Gramodyog"
+    ],
+    "festivals": [
+      "Margazhi Music Festival (Dec-Jan world classical music season)",
+      "Pongal harvest festival",
+      "Mylapore Kapaleeshwarar Panguni Brahmotsavam"
+    ],
+    "nearbyDestinations": [
+      "Mahabalipuram (55 km)",
+      "Kanchipuram (75 km)",
+      "Pulicat Lake (55 km)",
+      "Pondicherry (150 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "culture",
+      "beaches",
+      "food",
+      "heritage",
+      "family"
+    ]
+  },
+  {
+    "id": "mahabalipuram",
+    "name": "Mahabalipuram",
+    "aliases": [
+      "Mamallapuram",
+      "Seven Pagodas"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "UNESCO World Heritage coastal town adorned with 7th-century monolithic rock-cut cave temples, the ocean-facing Shore Temple, and open-air bas-reliefs carved by master Pallava sculptors.",
+    "heroImage": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.6269,
+    "longitude": 80.1932,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "shore-temple",
+      "pancha-rathas",
+      "arjunas-penance",
+      "krishnas-butter-ball",
+      "mahabalipuram-beach"
+    ],
+    "thingsToDo": [
+      "Marvel at the balancing miracle of Krishna's Butter Ball",
+      "Explore rock-cut rathas carved from single stone boulders",
+      "Sunrise photography at the Shore Temple",
+      "Watch live stone carvers chisel granite sculptures"
+    ],
+    "food": [
+      "Fresh catch coastal seafood (Lobster, Pomfret)",
+      "Banana leaf South Indian meals",
+      "Crispy Masala Dosa",
+      "Coconut water by the beach"
+    ],
+    "shopping": [
+      "Handmade granite & soapstone sculptures",
+      "Seashell jewelry & handicrafts",
+      "Kalamkari painted fabrics"
+    ],
+    "festivals": [
+      "Mamallapuram Indian Dance Festival (Jan-Feb open-air classical dance by the beach)"
+    ],
+    "nearbyDestinations": [
+      "Chennai (55 km)",
+      "Kanchipuram (65 km)",
+      "Pondicherry (95 km)",
+      "Sadras Dutch Fort (15 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "beaches",
+      "couples",
+      "photography",
+      "family"
+    ]
+  },
+  {
+    "id": "madurai",
+    "name": "Madurai",
+    "aliases": [
+      "Thoonga Nagaram (City That Never Sleeps)",
+      "Temple City",
+      "Athens of the East"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Ancient Tamil cultural capital home to the breathtaking 14-towered Meenakshi Amman Temple, grand 17th-century Thirumalai Nayakkar Palace, and legendary late-night street food culture.",
+    "heroImage": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.9252,
+    "longitude": 78.1198,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "meenakshi-amman-temple",
+      "thirumalai-nayakkar-palace",
+      "gandhi-memorial-museum",
+      "alagar-koyil"
+    ],
+    "thingsToDo": [
+      "Witness the night procession of Lord Sundareswarar to Goddess Meenakshi's sanctum",
+      "Explore the 1,000-pillar hall with musical pillars",
+      "Evening light and sound show at Thirumalai Nayakkar Mahal",
+      "Late-night street food crawl for bun parotta"
+    ],
+    "food": [
+      "Bun Parotta with Kari Dosai",
+      "Madurai Jigarthanda (Famous royal beverage)",
+      "Mutton Chukka",
+      "Paruthi Paal (Cottonseed milk drink)",
+      "Kalkandu Bath"
+    ],
+    "shopping": [
+      "Madurai Sungudi tie-and-dye cotton sarees",
+      "Handcrafted brass lamps",
+      "Fragrant Madurai Malli (Jasmine flowers)"
+    ],
+    "festivals": [
+      "Chithirai Festival (Apr-May celestial wedding of Meenakshi)",
+      "Teppam Float Festival",
+      "Jallikattu bull taming in Alanganallur"
+    ],
+    "nearbyDestinations": [
+      "Rameswaram (170 km)",
+      "Kodaikanal (120 km)",
+      "Chettinad / Karaikudi (90 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "food",
+      "culture"
+    ]
+  },
+  {
+    "id": "ooty",
+    "name": "Ooty",
+    "aliases": [
+      "Udhagamandalam",
+      "Queen of Hill Stations"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Nestled 2,240 meters high in the blue Nilgiri Mountains, featuring emerald tea slopes, colonial heritage bungalows, the UNESCO Nilgiri Mountain Railway toy train, and serene pine forests.",
+    "heroImage": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 11.4102,
+    "longitude": 76.695,
+    "bestTimeToVisit": "October to June",
+    "topAttractions": [
+      "ooty-lake",
+      "botanical-garden-ooty",
+      "doddabetta-peak",
+      "rose-garden-ooty",
+      "nilgiri-mountain-railway",
+      "avalanche-lake"
+    ],
+    "thingsToDo": [
+      "Ride the UNESCO vintage steam Toy Train from Mettupalayam/Coonoor",
+      "Row across the tranquil waters of Ooty Lake",
+      "Panoramic 360-degree views from Doddabetta Peak",
+      "Tour working tea factories and taste fresh orthodox teas"
+    ],
+    "food": [
+      "Nilgiri Homemade Dark Chocolates",
+      "Fresh Varkey (crisp Nilgiri pastry)",
+      "Hot cardamom tea",
+      "Steaming South Indian breakfast"
+    ],
+    "shopping": [
+      "Nilgiri eucalyptus & wintergreen oils",
+      "Freshly manufactured tea leaves",
+      "Handmade chocolates",
+      "Toda tribal embroidery shawls"
+    ],
+    "festivals": [
+      "Ooty Flower Show (Annual May spectacle in Botanical Garden)",
+      "Tea and Tourism Festival in January"
+    ],
+    "nearbyDestinations": [
+      "Coonoor (18 km)",
+      "Kotagiri (30 km)",
+      "Mudumalai Tiger Reserve (40 km)",
+      "Bandipur (50 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "nature",
+      "hill-stations",
+      "couples",
+      "family",
+      "adventure"
+    ]
+  },
+  {
+    "id": "kodaikanal",
+    "name": "Kodaikanal",
+    "aliases": [
+      "Princess of Hill Stations",
+      "Kodai"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Perched 2,133 meters atop the Palani Hills, blessed with a star-shaped lake, dramatic mist-swirled pillar rock formations, lush shola forests, and romantic cliff-edge promenades.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 10.2381,
+    "longitude": 77.4892,
+    "bestTimeToVisit": "September to May",
+    "topAttractions": [
+      "kodaikanal-lake",
+      "coakers-walk",
+      "bryant-park",
+      "pillar-rocks",
+      "pine-forest-kodai",
+      "guna-caves"
+    ],
+    "thingsToDo": [
+      "Cycle or row around the perimeter of Kodaikanal Lake",
+      "Walk through the clouds along Coaker's Walk cliff path",
+      "Hike into the towering pine forest canopy",
+      "Trek to Dolphin's Nose viewpoint"
+    ],
+    "food": [
+      "Kodai homemade artisan cheeses & chocolates",
+      "Plum & peach fresh fruit jams",
+      "Tibetan momos and thukpa near lake"
+    ],
+    "shopping": [
+      "Locally cured eucalyptus oils",
+      "Herbal spices & dried fruits",
+      "Handmade organic soaps"
+    ],
+    "festivals": [
+      "Kodai Summer Festival & Flower Show in May"
+    ],
+    "nearbyDestinations": [
+      "Madurai (120 km)",
+      "Palani (65 km)",
+      "Munnar (160 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "couples",
+      "nature",
+      "hill-stations",
+      "solo",
+      "family"
+    ]
+  },
+  {
+    "id": "rameswaram",
+    "name": "Rameswaram",
+    "aliases": [
+      "Island of Faith",
+      "Southern Dhama"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "Sacred island pilgrimage destination where the Bay of Bengal meets the Indian Ocean, famous for the colossal 1,212-pillar corridors of Ramanathaswamy Temple, the Pamban Sea Bridge, and ghost town Dhanushkodi.",
+    "heroImage": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 9.2876,
+    "longitude": 79.3129,
+    "bestTimeToVisit": "October to April",
+    "topAttractions": [
+      "ramanathaswamy-temple",
+      "pamban-bridge",
+      "dhanushkodi-ghost-town",
+      "ariyaman-beach",
+      "apj-abdul-kalam-memorial"
+    ],
+    "thingsToDo": [
+      "Walk along the world's longest pillared temple corridor",
+      "Bathe in the 22 sacred teertham wells inside the temple",
+      "Drive to the edge of India at Dhanushkodi where Rama Setu begins",
+      "Train journey over the historic Pamban sea bridge"
+    ],
+    "food": [
+      "Authentic temple Prasadam",
+      "South Indian thali meals",
+      "Fresh coastal crab and prawn curry"
+    ],
+    "shopping": [
+      "Conch shells (Shankha) & coral crafts",
+      "Palm-leaf basketry",
+      "Seashell mirrors and ornaments"
+    ],
+    "festivals": [
+      "Maha Shivaratri",
+      "Ramalinga Prathishta Utsav",
+      "Thirukalyanam in July-August"
+    ],
+    "nearbyDestinations": [
+      "Dhanushkodi (18 km)",
+      "Mandapam (20 km)",
+      "Madurai (170 km)",
+      "Kanyakumari (310 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "spiritual",
+      "heritage",
+      "photography",
+      "family"
+    ]
+  },
+  {
+    "id": "thanjavur",
+    "name": "Thanjavur",
+    "aliases": [
+      "Tanjore",
+      "Rice Bowl of Tamil Nadu"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "The imperial capital of the Chola Empire, home to the UNESCO Brihadeeswarar Temple (Big Temple) with its monolithic 80-tonne granite dome, royal Nayak palace, and exquisite gold leaf Tanjore art.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 10.787,
+    "longitude": 79.1378,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "brihadeeswarar-temple",
+      "thanjavur-palace",
+      "saraswathi-mahal-library"
+    ],
+    "thingsToDo": [
+      "Marvel at the shadow-defying architecture of the Big Temple",
+      "Examine ancient palm-leaf manuscripts at Saraswathi Mahal",
+      "Visit bronze casting master artisans in Swamimalai",
+      "Learn the technique of Tanjore gold foil painting"
+    ],
+    "food": [
+      "Tanjore Ashoka Halwa",
+      "Kumbakonam Degree Filter Coffee",
+      "Sambar Sadam with fried papad",
+      "Chettinad spicy meals"
+    ],
+    "shopping": [
+      "Tanjore Gold Foil Paintings (GI-tagged)",
+      "Thanjavur Dancing Dolls (Thalaiyatti Bommai)",
+      "Bronze Nataraja statues"
+    ],
+    "festivals": [
+      "Brahmotsavam in April",
+      "Sadhaya Vizha (Birthday of King Raja Raja Chola in October)"
+    ],
+    "nearbyDestinations": [
+      "Kumbakonam (40 km)",
+      "Tiruchirappalli (55 km)",
+      "Gangaikonda Cholapuram (70 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "culture",
+      "spiritual",
+      "family"
+    ]
+  },
+  {
+    "id": "kanyakumari",
+    "name": "Kanyakumari",
+    "aliases": [
+      "Cape Comorin",
+      "The Land's End"
+    ],
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "description": "The southernmost tip of the Indian mainland where the Arabian Sea, Indian Ocean, and Bay of Bengal converge. Renowned for simultaneous sunrise and moonrise spectacles, Vivekananda Rock Memorial, and Thiruvalluvar Statue.",
+    "heroImage": "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 8.0883,
+    "longitude": 77.5385,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "vivekananda-rock-memorial",
+      "thiruvalluvar-statue",
+      "kanyakumari-beach",
+      "sunset-point-kanyakumari",
+      "padmanabhapuram-palace"
+    ],
+    "thingsToDo": [
+      "Ferry ride to Vivekananda Rock Memorial & 133ft Thiruvalluvar Statue",
+      "Watch sunrise over the trisea confluence",
+      "Tour the wooden Kerala-style Padmanabhapuram Palace",
+      "Collect multicolored sands from Kanyakumari Beach"
+    ],
+    "food": [
+      "Nanjil Nadu fish curry",
+      "Kothu Parotta",
+      "Banana chips fried in coconut oil",
+      "Tender coconut water"
+    ],
+    "shopping": [
+      "Seashell souvenirs & lamps",
+      "Palm jaggery (Karupatti)",
+      "Handwoven lace & embroidery"
+    ],
+    "festivals": [
+      "Chitra Pournami (Witness simultaneous sunset & moonrise over the sea in April-May)",
+      "Cape Festival in October"
+    ],
+    "nearbyDestinations": [
+      "Padmanabhapuram Palace (35 km)",
+      "Vattakottai Fort (7 km)",
+      "Thiruvananthapuram (85 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "beaches",
+      "spiritual",
+      "family",
+      "couples",
+      "photography"
+    ]
+  },
+  {
+    "id": "bengaluru",
+    "name": "Bengaluru",
+    "aliases": [
+      "Bangalore",
+      "Garden City",
+      "Silicon Valley of India"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "India's cosmopolitan tech hub with tree-lined avenues, historic botanical gardens at Lalbagh and Cubbon Park, Tudor-style Bangalore Palace, and world-class craft microbreweries.",
+    "heroImage": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "bestTimeToVisit": "September to March",
+    "topAttractions": [
+      "bangalore-palace",
+      "lalbagh-botanical-garden",
+      "cubbon-park",
+      "vidhana-soudha",
+      "iskcon-temple-bangalore",
+      "ub-city-luxury"
+    ],
+    "thingsToDo": [
+      "Morning walk through Lalbagh Glasshouse and ancient rock",
+      "Explore Bangalore Palace Tudor towers",
+      "Microbrewery craft beer hopping in Indiranagar",
+      "Early morning Benne Dosa breakfast at CTR or Vidyarthi Bhavan"
+    ],
+    "food": [
+      "Butter Masala Dosa (Benne Dosa)",
+      "Bisi Bele Bath",
+      "Mangalore Buns",
+      "Mysore Pak from Anand Sweets",
+      "Artisan Filter Coffee"
+    ],
+    "shopping": [
+      "Mysore Silk Sarees at KSIC",
+      "Sandalwood carvings at Cauvery Emporium",
+      "Commercial Street fashion",
+      "UB City luxury retail"
+    ],
+    "festivals": [
+      "Bengaluru Karaga",
+      "Lalbagh Flower Show (Republic Day & Independence Day)",
+      "Kadalekai Parishe groundnut fair"
+    ],
+    "nearbyDestinations": [
+      "Nandi Hills (60 km)",
+      "Bannerghatta National Park (25 km)",
+      "Mysuru (145 km)",
+      "Shivagange (55 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "culture",
+      "food",
+      "family",
+      "solo",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mysuru",
+    "name": "Mysuru",
+    "aliases": [
+      "Mysore",
+      "City of Palaces",
+      "Heritage Capital of Karnataka"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Royal heritage city famous for the majestic Indo-Saracenic Mysore Palace illuminated by 100,000 golden bulbs, Chamundi Hills, fragrant sandalwood, and world-renowned Ashtanga yoga centers.",
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f4446b1a?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.2958,
+    "longitude": 76.6394,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "mysore-palace",
+      "chamundi-hills",
+      "brindavan-gardens",
+      "st-philomenas-cathedral",
+      "mysuru-zoo"
+    ],
+    "thingsToDo": [
+      "Witness the Sunday night illumination of Mysore Palace",
+      "Climb 1,000 steps to Chamundi Temple & monolith Nandi",
+      "Musical fountain show at Brindavan Gardens",
+      "Visit Devaraja Market for flowers, spices, and incense"
+    ],
+    "food": [
+      "Authentic Mysore Pak from Guru Sweets",
+      "Mylari Dosa with white butter",
+      "Shavige Bath",
+      "Chiroti sweet pastry"
+    ],
+    "shopping": [
+      "Pure Mysore Silk Sarees (KSIC factory outlet)",
+      "Government Sandalwood Oil & Soap",
+      "Inlay woodwork furniture",
+      "Ganjifa playing cards"
+    ],
+    "festivals": [
+      "Mysuru Dasara (10 days of royal festivities and Jamboo Savari elephant procession)"
+    ],
+    "nearbyDestinations": [
+      "Srirangapatna (15 km)",
+      "Ranganathittu Bird Sanctuary (18 km)",
+      "Somnathapura Keshava Temple (35 km)",
+      "Coorg (120 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "family",
+      "culture",
+      "couples"
+    ]
+  },
+  {
+    "id": "hampi",
+    "name": "Hampi",
+    "aliases": [
+      "Vijayanagara Ruins",
+      "City of Ruins"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "UNESCO World Heritage wonderland of surreal granite boulder hills, ruined palaces, monolithic temples, and the iconic Stone Chariot from the 14th-century Vijayanagara Empire along the Tungabhadra River.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 15.335,
+    "longitude": 76.46,
+    "bestTimeToVisit": "October to February",
+    "topAttractions": [
+      "virupaksha-temple",
+      "vittala-temple",
+      "stone-chariot-hampi",
+      "hampi-bazaar",
+      "lotus-mahal",
+      "elephant-stables",
+      "matanga-hill"
+    ],
+    "thingsToDo": [
+      "Coracle round-boat ride on Tungabhadra River",
+      "Sunrise climb up Matanga Hill overlooking entire ruins",
+      "Bicycle tour through royal courtyards and queen's baths",
+      "Test musical resonance of pillars in Vittala Temple"
+    ],
+    "food": [
+      "North Karnataka Jolada Rotti Oota (Sorghum flatbreads with stuffed eggplant)",
+      "Mango tree banana leaf feasts",
+      "Fresh coconut water"
+    ],
+    "shopping": [
+      "Handmade leather footwear",
+      "Stone-carved miniatures",
+      "Lambani tribal mirror embroidery",
+      "Musical instruments"
+    ],
+    "festivals": [
+      "Hampi Utsav (November cultural mega-event)",
+      "Purandaradasa Aradhana",
+      "Virupaksha Chariot Festival"
+    ],
+    "nearbyDestinations": [
+      "Anegundi (5 km across river)",
+      "Badami (140 km)",
+      "Pattadakal (135 km)",
+      "Aihole (140 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "heritage",
+      "adventure",
+      "photography",
+      "solo",
+      "culture"
+    ]
+  },
+  {
+    "id": "coorg",
+    "name": "Coorg",
+    "aliases": [
+      "Kodagu",
+      "Scotland of India"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Misty Western Ghat hill haven blanketed in Arabica and Robusta coffee plantations, aromatic spice valleys, cascading waterfalls like Abbey Falls, and rich Kodava warrior culture.",
+    "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 12.3375,
+    "longitude": 75.8069,
+    "bestTimeToVisit": "October to May",
+    "topAttractions": [
+      "abbey-falls",
+      "rajas-seat",
+      "dubare-elephant-camp",
+      "mandalpatti-peak",
+      "coffee-plantations-coorg"
+    ],
+    "thingsToDo": [
+      "4x4 Jeep safari to the windy ridges of Mandalpatti",
+      "Bathe and feed gentle pachyderms at Dubare Elephant Camp",
+      "Guided coffee plantation walking tour with bean tasting",
+      "Sunset views from Raja's Seat over rolling valleys"
+    ],
+    "food": [
+      "Coorg Pandi Curry with Akki Rotti (Rice flatbreads)",
+      "Kadambuttu (Steamed rice dumplings)",
+      "Bamboo Shoot Curry (Kani)",
+      "Wild orange & passion fruit homemade wines"
+    ],
+    "shopping": [
+      "Single-origin Coorg coffee beans",
+      "Organic black pepper, cardamom & vanilla",
+      "Pure Coorg forest honey",
+      "Homemade Kodava chocolates"
+    ],
+    "festivals": [
+      "Kailpodhu (Harvest & weapon festival in September)",
+      "Cauvery Sankramana (Tula Sankramana at Talakaveri in October)"
+    ],
+    "nearbyDestinations": [
+      "Talakaveri (45 km - Source of Cauvery River)",
+      "Nagarhole National Park (65 km)",
+      "Wayanad (110 km)",
+      "Mysuru (120 km)"
+    ],
+    "recommendedDays": 3,
+    "travelStyles": [
+      "nature",
+      "couples",
+      "hill-stations",
+      "food",
+      "family"
+    ]
+  },
+  {
+    "id": "gokarna",
+    "name": "Gokarna",
+    "aliases": [
+      "Beach Paradise of Karnataka",
+      "Kashi of the South"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Laid-back coastal haven where pristine sandy coves like Om Beach and Kudle Beach meet sacred ancient temples dedicated to Lord Mahabaleshwar's Atmalinga.",
+    "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 14.5479,
+    "longitude": 74.3188,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "om-beach",
+      "kudle-beach",
+      "half-moon-beach",
+      "mahabaleshwar-temple-gokarna"
+    ],
+    "thingsToDo": [
+      "Beach trek connecting Kudle, Om, Half Moon, and Paradise Beach",
+      "Darshan of the sacred Atmalinga at Mahabaleshwar Temple",
+      "Beachside yoga and meditation at sunrise",
+      "Cliffside sunset dining at Kudle Beach cafes"
+    ],
+    "food": [
+      "Fresh grilled seafood",
+      "Nutella pancakes and Israeli shakshuka at beach shacks",
+      "Konkani vegetarian thali with kokum rasam"
+    ],
+    "shopping": [
+      "Hippie clothing & harem pants",
+      "Brass tridents & pooja trinkets",
+      "Seashell souvenirs"
+    ],
+    "festivals": [
+      "Maha Shivaratri (Enormous coastal chariot processions and celebrations)"
+    ],
+    "nearbyDestinations": [
+      "Murudeshwar (78 km - giant Shiva statue)",
+      "Yana Rocks (50 km)",
+      "Goa border (65 km)",
+      "Karwar (60 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "beaches",
+      "solo",
+      "spiritual",
+      "couples",
+      "adventure"
+    ]
+  },
+  {
+    "id": "badami",
+    "name": "Badami",
+    "aliases": [
+      "Vatapi",
+      "Chalukya Capital"
+    ],
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "description": "Ancient Chalukyan capital cradled in red sandstone cliffs around the holy Agastya Lake, celebrated for its 6th-century rock-cut cave temples and lakeside Bhutanatha shrines.",
+    "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+    "latitude": 15.9187,
+    "longitude": 75.6766,
+    "bestTimeToVisit": "October to March",
+    "topAttractions": [
+      "badami-cave-temples",
+      "agastya-lake",
+      "bhutanatha-temples"
+    ],
+    "thingsToDo": [
+      "Climb through four rock-cut caves carved with Nataraja and Vishnu",
+      "Watch reflection of Bhutanatha Temple across Agastya Lake at sunset",
+      "Bouldering on red sandstone cliffs",
+      "Day trip to Pattadakal UNESCO complex and Aihole"
+    ],
+    "food": [
+      "North Karnataka Shenga Chutney (Peanut powder)",
+      "Jowar Rotti with sprouted moong curry",
+      "Yennegai (Stuffed brinjal)",
+      "Dharwad Peda nearby"
+    ],
+    "shopping": [
+      "Guledgudd Khun fabric handlooms",
+      "Stone carved miniatures",
+      "Ilkal handwoven sarees nearby"
+    ],
+    "festivals": [
+      "Chalukya Utsav (February festival celebrating heritage in Badami & Pattadakal)"
+    ],
+    "nearbyDestinations": [
+      "Pattadakal UNESCO Site (22 km)",
+      "Aihole (35 km)",
+      "Mahakuta (14 km)",
+      "Hampi (140 km)"
+    ],
+    "recommendedDays": 2,
+    "travelStyles": [
+      "heritage",
+      "adventure",
+      "photography"
+    ]
+  }
+]
