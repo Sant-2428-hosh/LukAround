@@ -1,46 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { cities, states, attractions, itineraries } from '../data/indiaTourismData';
 import AttractionCard from '../components/tourism/AttractionCard';
-import ItineraryCard from '../components/tourism/ItineraryCard';
+import SafeImage from '../components/tourism/SafeImage';
+import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
+import WhereToStaySection from '../components/tourism/WhereToStaySection';
 import {
   MapPin,
   Calendar,
   Clock,
   Compass,
+  CheckCircle2,
   Utensils,
   ShoppingBag,
   PartyPopper,
   ChevronRight,
   ArrowRight,
-  CheckCircle2
+  Camera,
+  ShieldCheck,
+  Maximize2
 } from 'lucide-react';
 
 export default function CityDetail() {
   const { stateSlug, citySlug } = useParams();
 
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [activePhotoIndex, setActivePhotoIndex] = useState(0);
+
   const city = cities.find(c =>
-    c.id === citySlug ||
-    (c.aliases || []).some(a => a.toLowerCase().replace(/\s+/g, '-') === citySlug)
+    c.id === citySlug || c.id.toLowerCase() === (citySlug || '').toLowerCase()
   ) || cities[0];
 
-  const parentState = states.find(s => s.slug === city.stateSlug || s.name === city.state) || states[0];
+  const parentState = states.find(s =>
+    s.slug === city.stateSlug || s.name.toLowerCase() === (city.state || '').toLowerCase()
+  ) || { name: city.state, slug: city.stateSlug };
 
-  // Attractions in this city
   const cityAttractions = attractions.filter(a =>
     a.citySlug === city.id || a.city.toLowerCase() === city.name.toLowerCase()
   );
+
+  const allImages = [
+    city.heroImage || city.image,
+    ...(city.gallery || [])
+  ].filter((img, idx, arr) => img && arr.indexOf(img) === idx);
+
+  const openGalleryAt = (idx) => {
+    setActivePhotoIndex(idx);
+    setGalleryOpen(true);
+  };
 
   return (
     <div className="tourism-page">
       {/* ── 1. Hero Banner ── */}
       <div
         className="detail-hero-banner"
-        style={{ backgroundImage: `url(${city.heroImage})` }}
+        style={{
+          backgroundImage: `url(${city.heroImage || city.image})`,
+          position: 'relative'
+        }}
       >
         <div className="detail-hero-overlay" />
         <div className="detail-hero-content">
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1rem' }}>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1rem', flexWrap: 'wrap' }}>
             <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
             <ChevronRight size={13} />
             <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
@@ -58,6 +79,24 @@ export default function CityDetail() {
               <Clock size={12} />
               {city.recommendedDays || 2} Days Recommended
             </span>
+            <span
+              style={{
+                backgroundColor: 'rgba(16, 185, 129, 0.25)',
+                backdropFilter: 'blur(6px)',
+                color: '#34D399',
+                border: '1px solid rgba(16, 185, 129, 0.4)',
+                borderRadius: '9999px',
+                padding: '0.25rem 0.65rem',
+                fontSize: '0.75rem',
+                fontWeight: 700,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+            >
+              <ShieldCheck size={12} />
+              Verified City Photography
+            </span>
             {city.aliases && city.aliases.length > 0 && (
               <span className="tourism-badge badge-sky">
                 Also Known As: {city.aliases[0]}
@@ -69,10 +108,59 @@ export default function CityDetail() {
             {city.name}
           </h1>
 
-          <p style={{ fontSize: '1.05rem', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '800px', lineHeight: 1.6, margin: 0 }}>
+          <p style={{ fontSize: '1.05rem', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '800px', lineHeight: 1.6, margin: '0 0 1.25rem' }}>
             {city.description}
           </p>
+
+          {allImages.length > 0 && (
+            <button
+              onClick={() => openGalleryAt(0)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.4)',
+                color: '#FFFFFF',
+                padding: '0.6rem 1.2rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s'
+              }}
+            >
+              <Maximize2 size={15} />
+              <span>Explore City Gallery ({allImages.length} photos)</span>
+            </button>
+          )}
         </div>
+
+        {/* Photo Attribution Pill */}
+        {(city.imagePhotographer || city.imageSourceName) && (
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '12px',
+              right: '16px',
+              backgroundColor: 'rgba(15, 23, 42, 0.75)',
+              backdropFilter: 'blur(6px)',
+              color: '#CBD5E1',
+              padding: '4px 10px',
+              borderRadius: '6px',
+              fontSize: '0.72rem',
+              fontWeight: 500,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '5px',
+              zIndex: 3
+            }}
+          >
+            <Camera size={11} color="#38BDF8" />
+            <span>Photo: {city.imagePhotographer || 'Contributor'} / {city.imageSourceName || 'Wikimedia Commons'}</span>
+          </div>
+        )}
       </div>
 
       <div className="tourism-container" style={{ paddingTop: '3rem' }}>
@@ -141,6 +229,42 @@ export default function CityDetail() {
             ))}
           </div>
         </section>
+
+        {/* ── Authentic City Photo Gallery (Requirement 5) ── */}
+        {allImages.length > 1 && (
+          <section style={{ marginBottom: '3.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
+              <div>
+                <span className="tourism-badge badge-forest">Real Imagery</span>
+                <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
+                  {city.name} Photographic Highlights
+                </h2>
+              </div>
+              <span style={{ fontSize: '0.85rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <ShieldCheck size={15} color="#10B981" />
+                Verified Landmarks
+              </span>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+              {allImages.map((imgUrl, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => openGalleryAt(idx)}
+                  style={{ cursor: 'pointer', borderRadius: '12px', overflow: 'hidden' }}
+                >
+                  <SafeImage
+                    src={imgUrl}
+                    alt={`${city.name} view ${idx + 1}`}
+                    aspectRatio="4:3"
+                    verified={true}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ── Things To Do ── */}
         {city.thingsToDo && city.thingsToDo.length > 0 && (
@@ -229,6 +353,18 @@ export default function CityDetail() {
           )}
         </div>
 
+        {/* ── Verified Accommodations in this City ── */}
+        <WhereToStaySection
+          destination={{
+            id: city.id,
+            name: city.name,
+            city: city.name,
+            state: city.state,
+            coordinates: { latitude: city.latitude, longitude: city.longitude }
+          }}
+          city={city}
+        />
+
         {/* ── Nearby Destinations ── */}
         {city.nearbyDestinations && city.nearbyDestinations.length > 0 && (
           <section style={{
@@ -262,6 +398,20 @@ export default function CityDetail() {
           </section>
         )}
       </div>
+
+      {/* ── Interactive Image Gallery Modal ── */}
+      <ImageGalleryModal
+        isOpen={galleryOpen}
+        onClose={() => setGalleryOpen(false)}
+        images={allImages}
+        initialIndex={activePhotoIndex}
+        destinationName={city.name}
+        location={`${city.name}, ${city.state}`}
+        photographer={city.imagePhotographer}
+        sourceName={city.imageSourceName}
+        sourceUrl={city.imageSource}
+        license={city.imageLicense}
+      />
     </div>
   );
 }

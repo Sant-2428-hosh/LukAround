@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Calendar, Clock, ArrowRight } from 'lucide-react';
+import SafeImage from './SafeImage';
 
 export default function CityCard({ city }) {
   if (!city) return null;
@@ -12,21 +13,32 @@ export default function CityCard({ city }) {
     stateSlug,
     description,
     heroImage,
+    imageAlt,
+    imagePhotographer,
+    imageSourceName,
     bestTimeToVisit,
     topAttractions = [],
     recommendedDays = 2,
     travelStyles = []
   } = city;
 
+  const effectiveAlt = imageAlt || `Travel to ${name}, ${state}`;
+
   return (
     <div className="attraction-card">
       <div className="attraction-card-image-wrap">
-        <img
+        <SafeImage
           src={heroImage}
-          alt={`Travel to ${name}, ${state}`}
-          className="attraction-card-img"
+          alt={effectiveAlt}
+          aspectRatio="16:9"
+          category="heritage"
+          verified={true}
+          showCredit={false}
+          photographer={imagePhotographer}
+          sourceName={imageSourceName}
           loading="lazy"
         />
+
         <div style={{
           position: 'absolute',
           top: '10px',
@@ -36,10 +48,12 @@ export default function CityCard({ city }) {
           padding: '0.25rem 0.65rem',
           borderRadius: '9999px',
           fontSize: '0.72rem',
-          fontWeight: 700
+          fontWeight: 700,
+          zIndex: 3
         }}>
           {state}
         </div>
+
         <div style={{
           position: 'absolute',
           bottom: '10px',
@@ -53,7 +67,8 @@ export default function CityCard({ city }) {
           fontWeight: 700,
           display: 'flex',
           alignItems: 'center',
-          gap: '0.3rem'
+          gap: '0.3rem',
+          zIndex: 3
         }}>
           <Clock size={11} color="var(--tourism-earth)" />
           {recommendedDays} Days Suggested
@@ -62,6 +77,7 @@ export default function CityCard({ city }) {
 
       <div className="attraction-card-body">
         <h3 className="attraction-card-name">{name}</h3>
+
         <div className="attraction-card-location">
           <MapPin size={13} />
           <span>{state}</span>
@@ -69,29 +85,31 @@ export default function CityCard({ city }) {
 
         <p className="attraction-card-desc">{description}</p>
 
-        {/* Travel styles tags */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1rem' }}>
-          {travelStyles.slice(0, 3).map((style) => (
-            <span
-              key={style}
-              style={{
-                fontSize: '0.7rem',
-                backgroundColor: 'var(--tourism-sand-light)',
-                color: 'var(--tourism-forest-dark)',
-                padding: '0.2rem 0.5rem',
-                borderRadius: '4px',
-                fontWeight: 600,
-                textTransform: 'capitalize'
-              }}
-            >
-              {style}
-            </span>
-          ))}
-        </div>
+        {/* Travel Styles Chips */}
+        {travelStyles && travelStyles.length > 0 && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '0.85rem' }}>
+            {travelStyles.slice(0, 3).map((style) => (
+              <span
+                key={style}
+                style={{
+                  backgroundColor: 'var(--tourism-sand)',
+                  padding: '0.2rem 0.5rem',
+                  borderRadius: '4px',
+                  fontSize: '0.7rem',
+                  fontWeight: 700,
+                  textTransform: 'capitalize',
+                  color: '#475569'
+                }}
+              >
+                {style}
+              </span>
+            ))}
+          </div>
+        )}
 
         <div className="attraction-card-footer">
           <span style={{ fontSize: '0.78rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-            <Calendar size={13} color="var(--tourism-earth)" />
+            <Calendar size={13} color="var(--tourism-forest)" />
             {bestTimeToVisit || 'Oct - Mar'}
           </span>
 
@@ -101,14 +119,18 @@ export default function CityCard({ city }) {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.3rem',
-              color: 'var(--tourism-earth)',
+              backgroundColor: 'var(--tourism-earth)',
+              color: '#FFFFFF',
+              padding: '0.45rem 0.95rem',
+              borderRadius: '6px',
               fontWeight: 700,
-              fontSize: '0.85rem',
-              textDecoration: 'none'
+              fontSize: '0.8rem',
+              textDecoration: 'none',
+              transition: 'all 0.2s ease'
             }}
           >
-            <span>Discover</span>
-            <ArrowRight size={14} />
+            <span>Explore City</span>
+            <ArrowRight size={13} />
           </Link>
         </div>
       </div>

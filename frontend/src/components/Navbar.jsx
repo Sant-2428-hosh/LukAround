@@ -127,12 +127,12 @@ export default function Navbar() {
   // Authentic verified navigation translations (instant 0ms response, zero mutilation)
   const CORE_NAV_TRANSLATIONS = {
     home: { en: "Home", ta: "முகப்பு", hi: "होम", te: "హోమ్", kn: "ಮುಖಪುಟ" },
-    explore: { en: "Explore India", ta: "இந்தியா சுற்று", hi: "भारत खोजें", te: "భారత్ అన్వేషణ", kn: "ಭಾರತ ಅನ್ವೇಷಿಸಿ" },
+    explore: { en: "Explore India", ta: "சுற்றுலா", hi: "भारत", te: "భారత్", kn: "ಭಾರತ" },
     states: { en: "States", ta: "மாநிலங்கள்", hi: "राज्य", te: "రాష్ట్రాలు", kn: "ರಾಜ್ಯಗಳು" },
     cities: { en: "Cities", ta: "நகரங்கள்", hi: "शहर", te: "నగరాలు", kn: "ನಗರಗಳು" },
-    attractions: { en: "Attractions", ta: "ஈர்ப்புகள்", hi: "आकर्षण", te: "ఆకర్షణలు", kn: "ಆಕರ್ಷಣೆಗಳು" },
-    planner: { en: "Planner", ta: "திட்டமிடு", hi: "योजना", te: "ప్లానర్", kn: "ಯೋಜನೆ" },
-    hotels: { en: "Hotels", ta: "தங்குமிடம்", hi: "होटल", te: "హోటళ్ళు", kn: "ಹೋಟೆಲ್‌ಗಳು" },
+    attractions: { en: "Attractions", ta: "இடங்கள்", hi: "आकर्षण", te: "ఆకర్షణలు", kn: "ಆಕರ್ಷಣೆಗಳು" },
+    planner: { en: "Planner", ta: "திட்டம்", hi: "योजना", te: "ప్లానర్", kn: "ಯೋಜನೆ" },
+    hotels: { en: "Hotels", ta: "விடுதிகள்", hi: "होटल", te: "హోటళ్ళు", kn: "ಹೋಟೆಲ್‌ಗಳು" },
     safety: { en: "Safety", ta: "பாதுகாப்பு", hi: "सुरक्षा", te: "భద్రత", kn: "ಸುರಕ್ಷತೆ" }
   };
 

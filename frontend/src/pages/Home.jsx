@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import SearchBar from '../components/tourism/SearchBar';
 import StateCard from '../components/tourism/StateCard';
@@ -11,8 +11,71 @@ import {
 } from '../data/indiaTourismData';
 import {
   Compass, MapPin, ArrowRight, Sparkles, Award, Calendar,
-  CheckCircle2, Flame, Star, Globe, Zap
+  CheckCircle2, Flame, Star, Globe, Zap, ChevronLeft, ChevronRight
 } from 'lucide-react';
+
+const HERO_SLIDES = [
+  {
+    id: 'taj-mahal',
+    place: 'The Taj Mahal',
+    location: 'Agra, Uttar Pradesh',
+    stateSlug: 'uttar-pradesh',
+    tag: '✦ AGRA, UTTAR PRADESH · WORLD WONDER',
+    badgeColor: '#F59E0B',
+    line1: 'Where Marble Whispers Eternity',
+    accentText: 'The Taj Mahal',
+    accentClass: 'accent-taj',
+    subtitle: 'An ivory poem of immortal love, bathed in rosy dawn and timeless grace.',
+    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=2400&q=85',
+    tabLabel: 'Taj Mahal',
+    tabLocation: 'Agra, UP'
+  },
+  {
+    id: 'kerala-backwaters',
+    place: 'Kerala Backwaters',
+    location: 'Alleppey & Kumarakom, Kerala',
+    stateSlug: 'kerala',
+    tag: '✦ ALLEPPEY, KERALA · GOD’S OWN SANCTUARY',
+    badgeColor: '#10B981',
+    line1: 'Where Palms Dance on Glass Waters',
+    accentText: 'Kerala Backwaters',
+    accentClass: 'accent-kerala',
+    subtitle: 'Drift through peaceful emerald lagoons where tranquil ripples compose nature’s song.',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2400&q=85',
+    tabLabel: 'Alleppey Lagoons',
+    tabLocation: 'Kerala'
+  },
+  {
+    id: 'royal-rajasthan',
+    place: 'Amber Fort & Palaces',
+    location: 'Jaipur & Udaipur, Rajasthan',
+    stateSlug: 'rajasthan',
+    tag: '✦ JAIPUR, RAJASTHAN · LAND OF KINGS',
+    badgeColor: '#F97316',
+    line1: 'Where Golden Forts Crown Desert Skies',
+    accentText: 'Royal Rajasthan',
+    accentClass: 'accent-rajasthan',
+    subtitle: 'Ascend soaring clifftop fortresses and fairy-tale palaces under fiery desert sunsets.',
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=2400&q=85',
+    tabLabel: 'Amber Fort',
+    tabLocation: 'Jaipur, Rajasthan'
+  },
+  {
+    id: 'sacred-himalayas',
+    place: 'Sacred Himalayas',
+    location: 'Kedarnath & Rishikesh, Uttarakhand',
+    stateSlug: 'uttarakhand',
+    tag: '✦ UTTARAKHAND · THRONE OF THE GODS',
+    badgeColor: '#06B6D4',
+    line1: 'Where Glacial Titans Pierce the Heavens',
+    accentText: 'Sacred Himalayas',
+    accentClass: 'accent-himalayas',
+    subtitle: 'Mighty snow-crested peaks and sacred emerald rivers touching the divine.',
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=2400&q=85',
+    tabLabel: 'Sacred Himalayas',
+    tabLocation: 'Uttarakhand'
+  }
+];
 
 function useCounter(target, duration) {
   if (duration === undefined) duration = 1800;
@@ -55,6 +118,35 @@ export default function Home() {
   const [attractionFilter, setAttractionFilter] = useState('all');
   const [hoveredStyle, setHoveredStyle] = useState(null);
 
+  // 4-Destination Hero Slideshow state
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [progressKey, setProgressKey] = useState(0);
+
+  useEffect(() => {
+    if (isPaused) return;
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+      setProgressKey((k) => k + 1);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [isPaused, currentSlide]);
+
+  const goToSlide = (idx) => {
+    setCurrentSlide(idx);
+    setProgressKey((k) => k + 1);
+  };
+
+  const nextSlide = () => {
+    goToSlide((currentSlide + 1) % HERO_SLIDES.length);
+  };
+
+  const prevSlide = () => {
+    goToSlide((currentSlide - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
+  };
+
+  const activeSlide = HERO_SLIDES[currentSlide];
+
   const sortedStates = [...states].sort(function(a, b) {
     if (stateSortOrder === 'name') return a.name.localeCompare(b.name);
     if (stateSortOrder === 'domesticVisits') return (b.domesticTouristVisits2024 || 0) - (a.domesticTouristVisits2024 || 0);
@@ -82,61 +174,99 @@ export default function Home() {
   return (
     <div className="tourism-page">
 
-      {/* ══ 1. CINEMATIC HERO ══ */}
-      <section className="tourism-hero-epic">
-        <div className="hero-particle-1" />
-        <div className="hero-particle-2" />
-        <div className="hero-particle-3" />
+      {/* ══ 1. REFINED LUXURY 4-PLACE AUTO-SLIDESHOW HERO ══ */}
+      <section
+        className="tourism-hero-epic"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        {/* Slideshow Background Layers with smooth crossfade */}
+        <div className="hero-slideshow-container" aria-hidden="true">
+          {HERO_SLIDES.map((slide, idx) => (
+            <div
+              key={slide.id}
+              className={`hero-slide-bg ${idx === currentSlide ? 'active' : ''}`}
+              style={{ backgroundImage: `url(${slide.image})` }}
+            />
+          ))}
+          <div className="hero-slide-overlay" />
+        </div>
 
-        <div className="tourism-hero-content-epic">
+        {/* Prev / Next Slide Arrow Controls */}
+        <button
+          type="button"
+          className="hero-arrow-btn prev"
+          onClick={prevSlide}
+          aria-label="Previous destination"
+        >
+          <ChevronLeft size={22} />
+        </button>
+        <button
+          type="button"
+          className="hero-arrow-btn next"
+          onClick={nextSlide}
+          aria-label="Next destination"
+        >
+          <ChevronRight size={22} />
+        </button>
 
+        {/* Clean, Uncluttered Hero Content */}
+        <div className="tourism-hero-content-epic" key={`slide-content-${currentSlide}`}>
+
+          {/* Place-Specific Heritage Badge */}
           <div className="hero-trust-badge">
-            <Sparkles size={13} color="#FDBA74" />
-            <span>India's Most Comprehensive Travel Discovery Platform</span>
-            <span className="hero-badge-dot" />
-            <span style={{ color: '#86EFAC', fontWeight: 800 }}>15 States · 77 Cities · 198+ Wonders</span>
+            <Sparkles size={13} color={activeSlide.badgeColor} />
+            <span style={{ color: activeSlide.badgeColor, fontWeight: 700 }}>{activeSlide.tag}</span>
           </div>
 
+          {/* Refined, Smaller, 2-Line Editorial Title */}
           <h1 className="tourism-hero-title-epic">
-            <span className="hero-title-line-1">Where Every</span>
-            <span className="hero-title-line-2">Horizon Holds</span>
-            <span className="hero-title-line-3">
-              <span className="hero-title-gradient">a Story</span>
+            <span className="hero-title-line-1">{activeSlide.line1}</span>
+            <span className={`hero-accent-text ${activeSlide.accentClass}`}>
+              {activeSlide.accentText}
             </span>
           </h1>
 
+          {/* Simple and Sweet 1-Line Subtitle */}
           <p className="tourism-hero-subtitle-epic">
-            From the snow-kissed peaks of the Himalayas to the sun-drenched shores of Kerala —
-            unlock the raw, unfiltered soul of <strong>Incredible India</strong> through
-            curated journeys, hidden sanctuaries, and timeless wonders that will leave you breathless.
+            {activeSlide.subtitle}
           </p>
 
+          {/* Clean, Centered Search Bar */}
           <div className="hero-search-wrapper">
             <SearchBar placeholder="Search a state, monument, beach, hill station or experience..." />
           </div>
 
-          <form onSubmit={handleStateJump} className="hero-state-selector">
-            <Globe size={14} color="rgba(255,255,255,0.6)" />
-            <span className="hero-selector-label">Teleport to →</span>
-            <select
-              value={selectedStateForJump}
-              onChange={(e) => setSelectedStateForJump(e.target.value)}
-              className="hero-state-select"
-              aria-label="Select an Indian state"
-            >
-              <option value="" style={{ color: '#0F172A' }}>Choose a State…</option>
-              {states.map((s) => (
-                <option key={s.id} value={s.slug} style={{ color: '#0F172A' }}>
-                  #{s.priorityRank} {s.name}
-                </option>
-              ))}
-            </select>
-            <button type="submit" disabled={!selectedStateForJump} className="hero-state-btn">
-              <Zap size={14} />
-              Explore Now
-            </button>
-          </form>
+          {/* 4 Places Slideshow Navigation Switcher */}
+          <div className="hero-slideshow-nav" role="tablist" aria-label="Iconic Indian Destinations">
+            {HERO_SLIDES.map((slide, idx) => {
+              const isActive = idx === currentSlide;
+              return (
+                <button
+                  key={slide.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  className={`hero-nav-card ${isActive ? 'active' : ''}`}
+                  onClick={() => goToSlide(idx)}
+                >
+                  <div className="hero-nav-card-header">
+                    <span className="hero-nav-number">0{idx + 1}</span>
+                    <span className="hero-nav-tag">{slide.tabLocation}</span>
+                  </div>
+                  <div className="hero-nav-place">{slide.tabLabel}</div>
+                  {isActive && (
+                    <div
+                      className={`hero-nav-progress ${isPaused ? 'paused' : ''}`}
+                      key={`prog-${idx}-${progressKey}`}
+                    />
+                  )}
+                </button>
+              );
+            })}
+          </div>
 
+          {/* Category Quick Filter Pills */}
           <div className="hero-category-pills">
             <Link to="/categories/heritage" className="hero-pill-btn">🏰 Ancient Heritage</Link>
             <Link to="/categories/beaches" className="hero-pill-btn">🌊 Coastal Escapes</Link>

@@ -368,4 +368,134 @@ router.get('/search', (req, res) => {
   });
 });
 
+// ── GET /api/tourism/images/audit ──
+// Requirements 18 & 20: Real-time image validation audit report
+router.get('/images/audit', (req, res) => {
+  const totalStates = tourismData.states.length;
+  const totalCities = tourismData.cities.length;
+  const totalAttractions = tourismData.attractions.length;
+
+  let imagesFound = 0;
+  let imagesVerified = 0;
+  let missingImages = 0;
+  let missingAttribution = 0;
+
+  const urlMap = new Map();
+  const duplicates = [];
+
+  tourismData.attractions.forEach(a => {
+    if (a.image && typeof a.image === 'string' && a.image.trim().length > 0) {
+      imagesFound++;
+      if (a.verified) imagesVerified++;
+      if (!a.imageCredit || !a.imageSourceName) missingAttribution++;
+
+      if (urlMap.has(a.image)) {
+        duplicates.push({ id: a.id, name: a.name, originalId: urlMap.get(a.image), url: a.image });
+      } else {
+        urlMap.set(a.image, a.id);
+      }
+    } else {
+      missingImages++;
+    }
+  });
+
+  res.json({
+    success: true,
+    report: {
+      totalStates,
+      totalCities,
+      totalAttractions,
+      imagesFound,
+      imagesVerified,
+      missingImages,
+      duplicateCount: duplicates.length,
+      missingAttribution,
+      duplicates,
+      verifiedPercentage: totalAttractions > 0 ? Math.round((imagesVerified / totalAttractions) * 100) : 0,
+      timestamp: new Date().toISOString()
+    }
+  });
+});
+
+// ── GET /api/tourism/images/registry ──
+// Requirement 17 & 18: Central Image Registry Query with filtering
+router.get('/images/registry', (req, res) => {
+  const { search, state, verified, page = 1, limit = 50 } = req.query;
+  const registryPath = path.join(__dirname, '..', 'data', 'imageRegistry.json');
+
+  let entries = [];
+  try {
+    if (fs.existsSync(registryPath)) {
+      entries = JSON.parse(fs.readFileSync(registryPath, 'utf8'));
+    }
+  } catch (err) {
+    console.error('Failed to read imageRegistry.json:', err);
+  }
+
+  // Filter
+  let filtered = [...entries];
+  if (search) {
+    const q = search.toLowerCase();
+    filtered = filtered.filter(e =>
+      (e.destinationName || '').toLowerCase().includes(q) ||
+      (e.city || '').toLowerCase().includes(q) ||
+      (e.state || '').toLowerCase().includes(q)
+    );
+  }
+  if (state) {
+    filtered = filtered.filter(e => (e.state || '').toLowerCase() === state.toLowerCase());
+  }
+  if (verified !== undefined) {
+    const isV = verified === 'true';
+    filtered = filtered.filter(e => e.verified === isV);
+  }
+
+  const total = filtered.length;
+  const p = parseInt(page, 10);
+  const l = parseInt(limit, 10);
+  const paginated = filtered.slice((p - 1) * l, p * l);
+
+  res.json({
+    success: true,
+    total,
+    page: p,
+    limit: l,
+    images: paginated
+  });
+});
+
+// ── PUT /api/tourism/images/:id ──
+// Requirement 18: Admin update image details
+router.put('/images/:id', (req, res) => {
+  const { id } = req.params;
+  const { url, altText, photographer, source, license, verified } = req.body;
+
+  const attractionIndex = tourismData.attractions.findIndex(a => a.id === id);
+  if (attractionIndex === -1) {
+    return res.status(404).json({ success: false, error: 'Attraction not found' });
+  }
+
+  const target = tourismData.attractions[attractionIndex];
+  if (url) target.image = url;
+  if (altText) target.imageAlt = altText;
+  if (photographer) target.imagePhotographer = photographer;
+  if (source) target.imageSourceName = source;
+  if (license) target.imageLicense = license;
+  if (verified !== undefined) target.verified = Boolean(verified);
+  target.imageCredit = `Photo: ${target.imagePhotographer || 'Contributor'} / ${target.imageSourceName || 'Wikimedia Commons'}`;
+
+  // Persist to json
+  try {
+    const dataPath = path.join(__dirname, '..', 'data', 'indiaTourismData.json');
+    fs.writeFileSync(dataPath, JSON.stringify(tourismData, null, 2), 'utf8');
+  } catch (err) {
+    console.error('Failed to persist tourismData:', err);
+  }
+
+  res.json({
+    success: true,
+    attraction: target
+  });
+});
+
 module.exports = router;

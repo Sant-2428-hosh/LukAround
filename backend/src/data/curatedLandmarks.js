@@ -152,7 +152,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.3389,
         lng: 76.4750,
         wikiQuery: 'Vittala Temple, Hampi',
-        imageUrl: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Hampi_-_Vittala_Temple_-_Kalyana_Mandapa_Columns.jpg/1280px-Hampi_-_Vittala_Temple_-_Kalyana_Mandapa_Columns.jpg',
         rating: '4.9',
         reviewsCount: 28900
       },
@@ -928,7 +928,7 @@ const CURATED_DESTINATIONS = {
         lat: 25.3811,
         lng: 83.0244,
         wikiQuery: 'Dhamek Stupa',
-        imageUrl: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Dhamek_Stupa%2C_Sarnath.jpg/1280px-Dhamek_Stupa%2C_Sarnath.jpg',
         rating: '4.8',
         reviewsCount: 16200
       }

@@ -22,11 +22,13 @@ import About from './pages/About';
 import Destinations from './pages/Destinations';
 import Itinerary from './pages/Itinerary';
 import Hotels from './pages/Hotels';
+import HotelDetail from './pages/HotelDetail';
 import Safety from './pages/Safety';
 import Budget from './pages/Budget';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import AdminPanel from './pages/AdminPanel';
+import AdminImageManager from './pages/AdminImageManager';
 
 export default function App() {
   return (
@@ -69,6 +71,7 @@ export default function App() {
             <Route path="destinations" element={<Destinations />} />
             <Route path="itinerary" element={<Itinerary />} />
             <Route path="hotels" element={<Hotels />} />
+            <Route path="hotels/:slug" element={<HotelDetail />} />
             <Route path="safety" element={<Safety />} />
             <Route path="budget" element={<Budget />} />
 
@@ -80,6 +83,10 @@ export default function App() {
                   <AdminPanel />
                 </ProtectedRoute>
               }
+            />
+            <Route
+              path="admin/images"
+              element={<AdminImageManager />}
             />
           </Route>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Calendar, Compass, ArrowRight, Award } from 'lucide-react';
+import SafeImage from './SafeImage';
 
 export default function StateCard({ state }) {
   if (!state) return null;
@@ -13,26 +14,38 @@ export default function StateCard({ state }) {
     domesticTouristVisits2024,
     description,
     heroImage,
+    imageAlt,
+    imagePhotographer,
+    imageSourceName,
     majorCities = [],
     topDestinations = [],
     bestTimeToVisit,
     unescoSites = []
   } = state;
 
+  const effectiveAlt = imageAlt || `Discover authentic landmarks of ${name}, India`;
+
   return (
     <div className="state-card">
       <div className="state-card-image-wrap">
-        <img
+        <SafeImage
           src={heroImage}
-          alt={`Discover ${name}, India`}
-          className="state-card-img"
+          alt={effectiveAlt}
+          aspectRatio="16:9"
+          category="heritage"
+          verified={true}
+          showCredit={false}
+          photographer={imagePhotographer}
+          sourceName={imageSourceName}
           loading="lazy"
         />
+
         {priorityRank && (
-          <div className="state-card-priority-badge">
+          <div className="state-card-priority-badge" style={{ zIndex: 3 }}>
             #{priorityRank} in Tourism
           </div>
         )}
+
         {unescoSites && unescoSites.length > 0 && (
           <div style={{
             position: 'absolute',
@@ -47,7 +60,8 @@ export default function StateCard({ state }) {
             fontWeight: 700,
             display: 'flex',
             alignItems: 'center',
-            gap: '0.3rem'
+            gap: '0.3rem',
+            zIndex: 3
           }}>
             <Award size={12} />
             {unescoSites.length} UNESCO Sites
@@ -60,48 +74,44 @@ export default function StateCard({ state }) {
         <p className="state-card-desc">{description}</p>
 
         <div className="state-card-meta">
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+          <div className="state-card-meta-item">
             <Calendar size={13} color="var(--tourism-earth)" />
-            {bestTimeToVisit || 'October to March'}
-          </span>
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+            <span>{bestTimeToVisit || 'October to March'}</span>
+          </div>
+
+          <div className="state-card-meta-item">
             <MapPin size={13} color="var(--tourism-forest)" />
-            {majorCities.length} Cities
-          </span>
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+            <span>{majorCities.length} Cities</span>
+          </div>
+
+          <div className="state-card-meta-item">
             <Compass size={13} color="var(--tourism-sky)" />
-            {topDestinations.length} Top Places
-          </span>
+            <span>{topDestinations.length} Top Places</span>
+          </div>
         </div>
 
-        {/* Popular Cities Pills */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1.25rem' }}>
-          {majorCities.slice(0, 4).map((city) => (
-            <span
-              key={city}
-              style={{
-                fontSize: '0.72rem',
-                backgroundColor: '#F1F5F9',
-                color: '#475569',
-                padding: '0.2rem 0.5rem',
-                borderRadius: '4px',
-                fontWeight: 600
-              }}
-            >
-              {city}
-            </span>
-          ))}
-          {majorCities.length > 4 && (
-            <span style={{ fontSize: '0.72rem', color: '#94A3B8', alignSelf: 'center' }}>
-              +{majorCities.length - 4} more
-            </span>
-          )}
-        </div>
+        {/* Cities Preview Chips */}
+        {majorCities && majorCities.length > 0 && (
+          <div className="state-card-chips">
+            {majorCities.slice(0, 4).map((city) => (
+              <span key={city} className="state-card-chip">
+                {city}
+              </span>
+            ))}
+            {majorCities.length > 4 && (
+              <span className="state-card-chip" style={{ color: 'var(--tourism-earth)', fontWeight: 700 }}>
+                +{majorCities.length - 4} more
+              </span>
+            )}
+          </div>
+        )}
 
-        <Link to={`/india/${slug || id}`} className="state-card-btn">
-          <span>Explore {name}</span>
-          <ArrowRight size={15} />
-        </Link>
+        <div className="state-card-footer">
+          <Link to={`/india/${slug}`} className="state-card-cta">
+            <span>Explore {name}</span>
+            <ArrowRight size={14} />
+          </Link>
+        </div>
       </div>
     </div>
   );

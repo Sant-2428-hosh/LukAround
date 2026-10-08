@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    LUK AROUND — INDIA TOURISM & TRAVEL DISCOVERY STYLES
    Cinematic Edition — Earth, Sand, Sky, Forest & Ocean Palettes
    ========================================================================== */
@@ -92,58 +92,109 @@
 .section-header-split { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
 
 /* ══════════════════════════════════════════════════════════
-   CINEMATIC HERO SECTION
+   CINEMATIC HERO SECTION & 4-DESTINATION AUTO-SLIDESHOW
    ══════════════════════════════════════════════════════════ */
 .tourism-hero-epic {
   position: relative;
-  min-height: 100vh;
+  min-height: 94vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(5, 10, 30, 0.72) 0%, rgba(10, 20, 55, 0.82) 55%, rgba(15, 23, 42, 0.92) 100%),
-    url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=2400&q=90') center/cover no-repeat;
+  background: #060B18;
   color: #FFFFFF;
-  padding: 8rem 1.5rem 5rem;
+  padding: 6.5rem 1.5rem 3.5rem;
   text-align: center;
 }
 
-/* Animated ambient glow particles */
-.hero-particle-1 {
+/* 4-Destination Slideshow Layering with smooth crossfade */
+.hero-slideshow-container {
   position: absolute;
-  width: 600px; height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(200, 90, 50, 0.18) 0%, transparent 70%);
-  top: -150px; right: -100px;
-  animation: heroFloat 8s ease-in-out infinite;
+  inset: 0;
+  z-index: 1;
   pointer-events: none;
+  overflow: hidden;
 }
-.hero-particle-2 {
+
+.hero-slide-bg {
   position: absolute;
-  width: 500px; height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(2, 132, 199, 0.14) 0%, transparent 70%);
-  bottom: -100px; left: -80px;
-  animation: heroFloat2 11s ease-in-out infinite;
-  pointer-events: none;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.3s cubic-bezier(0.4, 0, 0.2, 1), transform 8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: opacity, transform;
+  filter: contrast(1.08) brightness(1.04) saturate(1.15);
 }
-.hero-particle-3 {
+
+.hero-slide-bg.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Subtle, transparent photographer overlay so background photo is 100% visible */
+.hero-slide-overlay {
   position: absolute;
-  width: 350px; height: 350px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(217, 119, 6, 0.12) 0%, transparent 70%);
-  top: 40%; left: 15%;
-  animation: heroFloat3 14s ease-in-out infinite;
+  inset: 0;
+  background:
+    linear-gradient(180deg, 
+      rgba(4, 8, 20, 0.45) 0%, 
+      rgba(4, 8, 20, 0.1) 32%, 
+      rgba(5, 10, 24, 0.35) 68%, 
+      rgba(6, 11, 24, 0.85) 100%
+    );
   pointer-events: none;
 }
 
+/* Prev / Next Slide Arrow Controls */
+.hero-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(10, 16, 36, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 25;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+.hero-arrow-btn:hover {
+  background: rgba(249, 115, 22, 0.95);
+  border-color: #F97316;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.6);
+}
+.hero-arrow-btn.prev { left: 1.5rem; }
+.hero-arrow-btn.next { right: 1.5rem; }
+
+/* Content Container: Clean & Transparent (No giant dark box!) */
 .tourism-hero-content-epic {
   position: relative;
-  z-index: 2;
-  max-width: 980px;
+  z-index: 10;
+  max-width: 920px;
   margin: 0 auto;
-  animation: fadeSlideUp 0.9s ease-out;
+  animation: heroTextReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroTextReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Trust Badge */
@@ -151,59 +202,169 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 0.45rem 1.2rem;
+  background: rgba(8, 14, 32, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 1.15rem;
   border-radius: 9999px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
-  letter-spacing: 0.2px;
-}
-.hero-badge-dot {
-  width: 4px; height: 4px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.4);
-  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #FFFFFF;
+  letter-spacing: 0.4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
-/* Epic Hero Title */
+/* Refined Editorial Title - Smaller, Classy, High Impact */
 .tourism-hero-title-epic {
   font-family: var(--font-display, 'Outfit', sans-serif);
-  font-size: clamp(3rem, 7.5vw, 6rem);
-  font-weight: 900;
-  line-height: 1.08;
-  letter-spacing: -0.04em;
-  margin-bottom: 1.75rem;
-  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  font-size: clamp(2rem, 4.2vw, 3.4rem);
+  font-weight: 850;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.05em;
+  gap: 0.15em;
+  text-shadow: none;
 }
-.hero-title-line-1 { color: rgba(255, 255, 255, 0.92); }
-.hero-title-line-2 { color: #FFFFFF; }
-.hero-title-line-3 { }
-.hero-title-gradient {
-  background: linear-gradient(135deg, #FDBA74 0%, #FB923C 35%, #F97316 65%, #EA580C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(0 4px 16px rgba(251, 146, 60, 0.5));
+.hero-title-line-1 {
+  color: #FFFFFF;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85), 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Hero Subtitle */
-.tourism-hero-subtitle-epic {
-  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-  color: rgba(255, 255, 255, 0.82);
-  line-height: 1.65;
-  max-width: 750px;
-  margin: 0 auto 2.5rem;
-  font-weight: 400;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+/* Accent Destination Text - 100% Solid, Crisp, Luminous (Zero Blur Bug!) */
+.hero-accent-text {
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
-.tourism-hero-subtitle-epic strong { color: #FDBA74; font-weight: 700; }
+.hero-accent-text.accent-taj {
+  color: #FBBF24;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9), 0 0 24px rgba(251, 191, 36, 0.35);
+}
+.hero-accent-text.accent-kerala {
+  color: #34D399;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9), 0 0 24px rgba(52, 211, 153, 0.35);
+}
+.hero-accent-text.accent-rajasthan {
+  color: #FB923C;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9), 0 0 24px rgba(251, 146, 60, 0.35);
+}
+.hero-accent-text.accent-himalayas {
+  color: #38BDF8;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9), 0 0 24px rgba(56, 189, 248, 0.35);
+}
+
+/* Hero Subtitle - Simple and Sweet */
+.tourism-hero-subtitle-epic {
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.55;
+  max-width: 680px;
+  margin: 0 auto 1.75rem;
+  font-weight: 450;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+/* Search Wrapper */
+.hero-search-wrapper {
+  margin-bottom: 1.75rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
+
+/* 4 Places Slideshow Navigation Cards */
+.hero-slideshow-nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0 auto 2.25rem;
+  flex-wrap: wrap;
+  z-index: 15;
+  position: relative;
+  max-width: 880px;
+}
+.hero-nav-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.8rem 1.15rem;
+  background: rgba(8, 14, 32, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: left;
+  min-width: 170px;
+  flex: 1 1 170px;
+  user-select: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+.hero-nav-card:hover {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px -5px rgba(0, 0, 0, 0.45);
+}
+.hero-nav-card.active {
+  background: rgba(10, 18, 42, 0.96);
+  border-color: rgba(253, 186, 116, 0.95);
+  color: #FFFFFF;
+  box-shadow: 0 8px 30px -4px rgba(249, 115, 22, 0.4), 0 0 20px rgba(253, 186, 116, 0.25);
+}
+.hero-nav-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+.hero-nav-number {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #FDBA74;
+  letter-spacing: 0.5px;
+}
+.hero-nav-tag {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.hero-nav-place {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+.hero-nav-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #F97316, #FDBA74);
+  width: 100%;
+  animation: heroProgress 6s linear forwards;
+}
+.hero-nav-progress.paused {
+  animation-play-state: paused;
+}
+@keyframes heroProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
 
 /* Search Glow Wrapper */
 .hero-search-wrapper {
@@ -662,7 +823,21 @@
   .tourism-grid-3, .tourism-grid-4 { grid-template-columns: 1fr; }
   .tourism-search-box { border-radius: 16px; flex-direction: column; padding: 0.75rem; }
   .tourism-search-btn { width: 100%; justify-content: center; }
-  .tourism-hero-epic { min-height: auto; padding: 6rem 1.25rem 4rem; }
+  .tourism-hero-epic { min-height: auto; padding: 5.5rem 1rem 3.5rem; }
+  .hero-arrow-btn { display: none; }
+  .hero-slideshow-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .hero-nav-card {
+    min-width: 0;
+    padding: 0.6rem 0.75rem;
+  }
+  .hero-nav-place {
+    font-size: 0.8rem;
+  }
   .metrics-grid { flex-direction: column; }
   .metric-divider { width: 80%; height: 1px; }
   .grand-cta-buttons { flex-direction: column; }

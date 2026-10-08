@@ -1,0 +1,1784 @@
+[
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "city": "Agra",
+    "citySlug": "agra",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "agra-fort",
+    "name": "Agra Fort",
+    "city": "Agra",
+    "citySlug": "agra",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "itmad-ud-daulah",
+    "name": "Itmad-ud-Daulah's Tomb",
+    "city": "Agra",
+    "citySlug": "agra",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "mehtab-bagh",
+    "name": "Mehtab Bagh",
+    "city": "Agra",
+    "citySlug": "agra",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "nature"
+  },
+  {
+    "id": "akbars-tomb",
+    "name": "Akbar's Tomb (Sikandra)",
+    "city": "Agra",
+    "citySlug": "agra",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "fatehpur-sikri",
+    "name": "Fatehpur Sikri",
+    "city": "Fatehpur Sikri",
+    "citySlug": "fatehpur-sikri",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "kashi-vishwanath-temple",
+    "name": "Kashi Vishwanath Temple",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "dashashwamedh-ghat",
+    "name": "Dashashwamedh Ghat",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "assi-ghat",
+    "name": "Assi Ghat",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "culture"
+  },
+  {
+    "id": "manikarnika-ghat",
+    "name": "Manikarnika Ghat",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "sarnath",
+    "name": "Sarnath Deer Park & Dhamek Stupa",
+    "city": "Sarnath",
+    "citySlug": "sarnath",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "ganga-riverfront",
+    "name": "Ganga Riverfront & Ghats",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "nature"
+  },
+  {
+    "id": "ramnagar-fort",
+    "name": "Ramnagar Fort",
+    "city": "Varanasi",
+    "citySlug": "varanasi",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "ram-mandir",
+    "name": "Shri Ram Janmabhoomi Mandir",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "hanuman-garhi",
+    "name": "Hanuman Garhi",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "kanak-bhawan",
+    "name": "Kanak Bhawan",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "saryu-river-ghats",
+    "name": "Saryu River Ghats & Aarti",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "ram-ki-paidi",
+    "name": "Ram Ki Paidi",
+    "city": "Ayodhya",
+    "citySlug": "ayodhya",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "culture"
+  },
+  {
+    "id": "bara-imambara",
+    "name": "Bara Imambara & Bhulbhulaiya",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "chota-imambara",
+    "name": "Chota Imambara (Palace of Lights)",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "rumi-darwaza",
+    "name": "Rumi Darwaza",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "british-residency",
+    "name": "British Residency",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "hazratganj",
+    "name": "Hazratganj Heritage Market",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "shopping"
+  },
+  {
+    "id": "ambedkar-memorial-park",
+    "name": "Ambedkar Memorial Park",
+    "city": "Lucknow",
+    "citySlug": "lucknow",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "krishna-janmabhoomi",
+    "name": "Shri Krishna Janmabhoomi Temple",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "banke-bihari-temple",
+    "name": "Banke Bihari Temple",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "iskcon-vrindavan",
+    "name": "ISKCON Vrindavan (Sri Krishna Balaram Mandir)",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "prem-mandir",
+    "name": "Prem Mandir (Temple of Divine Love)",
+    "city": "Vrindavan",
+    "citySlug": "vrindavan",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "govardhan",
+    "name": "Govardhan Hill & Parikrama",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "kusum-sarovar",
+    "name": "Kusum Sarovar",
+    "city": "Mathura",
+    "citySlug": "mathura",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "triveni-sangam",
+    "name": "Triveni Sangam",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "allahabad-fort",
+    "name": "Allahabad Fort & Patalpuri Temple",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "anand-bhavan",
+    "name": "Anand Bhavan",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "khusro-bagh",
+    "name": "Khusro Bagh",
+    "city": "Prayagraj",
+    "citySlug": "prayagraj",
+    "state": "Uttar Pradesh",
+    "stateSlug": "uttar-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "marina-beach",
+    "name": "Marina Beach",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "beaches"
+  },
+  {
+    "id": "kapaleeshwarar-temple",
+    "name": "Kapaleeshwarar Temple (Mylapore)",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "fort-st-george",
+    "name": "Fort St. George & Museum",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "san-thome-basilica",
+    "name": "San Thome Basilica",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "government-museum-chennai",
+    "name": "Government Museum & National Art Gallery",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "museums"
+  },
+  {
+    "id": "besant-nagar-beach",
+    "name": "Besant Nagar Beach (Edward Elliot's Beach)",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "beaches"
+  },
+  {
+    "id": "guindy-national-park",
+    "name": "Guindy National Park",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "wildlife"
+  },
+  {
+    "id": "valluvar-kottam",
+    "name": "Valluvar Kottam",
+    "city": "Chennai",
+    "citySlug": "chennai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "shore-temple",
+    "name": "Shore Temple (Mamallapuram)",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "pancha-rathas",
+    "name": "Pancha Rathas (Five Rathas)",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "arjunas-penance",
+    "name": "Arjuna's Penance (Descent of the Ganga)",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "krishnas-butter-ball",
+    "name": "Krishna's Butter Ball",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "mahabalipuram-beach",
+    "name": "Mahabalipuram Beach",
+    "city": "Mahabalipuram",
+    "citySlug": "mahabalipuram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "beaches"
+  },
+  {
+    "id": "meenakshi-amman-temple",
+    "name": "Meenakshi Amman Temple",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "thirumalai-nayakkar-palace",
+    "name": "Thirumalai Nayakkar Palace",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "gandhi-memorial-museum-madurai",
+    "name": "Gandhi Memorial Museum",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "museums"
+  },
+  {
+    "id": "vaigai-river",
+    "name": "Vaigai Riverfront",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "alagar-koyil",
+    "name": "Alagar Koyil (Kallazhagar Temple)",
+    "city": "Madurai",
+    "citySlug": "madurai",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "ooty-lake",
+    "name": "Ooty Lake & Boathouse",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "botanical-garden-ooty",
+    "name": "Government Botanical Garden",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "doddabetta-peak",
+    "name": "Doddabetta Peak",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "hill-stations"
+  },
+  {
+    "id": "rose-garden-ooty",
+    "name": "Government Rose Garden",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "nilgiri-mountain-railway",
+    "name": "Nilgiri Mountain Railway (Toy Train)",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "avalanche-lake",
+    "name": "Avalanche Lake & Sanctuary",
+    "city": "Ooty",
+    "citySlug": "ooty",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "kodaikanal-lake",
+    "name": "Kodaikanal Lake (Kodai Lake)",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "coakers-walk",
+    "name": "Coaker's Walk",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "hill-stations"
+  },
+  {
+    "id": "bryant-park",
+    "name": "Bryant Park",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "pillar-rocks",
+    "name": "Pillar Rocks",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "hill-stations"
+  },
+  {
+    "id": "pine-forest-kodai",
+    "name": "Kodaikanal Pine Forest",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "guna-caves",
+    "name": "Guna Caves (Devil's Kitchen)",
+    "city": "Kodaikanal",
+    "citySlug": "kodaikanal",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "adventure"
+  },
+  {
+    "id": "ramanathaswamy-temple",
+    "name": "Ramanathaswamy Temple",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "pamban-bridge",
+    "name": "Pamban Bridge & Sea Crossing",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "dhanushkodi",
+    "name": "Dhanushkodi Ghost Town & Ram Setu Point",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "ariyaman-beach",
+    "name": "Ariyaman Beach (Kushi Beach)",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "beaches"
+  },
+  {
+    "id": "apj-abdul-kalam-memorial",
+    "name": "Dr. A.P.J. Abdul Kalam National Memorial",
+    "city": "Rameswaram",
+    "citySlug": "rameswaram",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "brihadeeswarar-temple",
+    "name": "Brihadeeswarar Temple (Big Temple)",
+    "city": "Thanjavur",
+    "citySlug": "thanjavur",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "thanjavur-palace",
+    "name": "Thanjavur Maratha Palace",
+    "city": "Thanjavur",
+    "citySlug": "thanjavur",
+    "state": "Tamil Nadu",
+    "stateSlug": "thanjavur",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "saraswathi-mahal-library",
+    "name": "Saraswathi Mahal Library",
+    "city": "Thanjavur",
+    "citySlug": "thanjavur",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "museums"
+  },
+  {
+    "id": "vivekananda-rock-memorial",
+    "name": "Vivekananda Rock Memorial",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "spiritual"
+  },
+  {
+    "id": "thiruvalluvar-statue",
+    "name": "Thiruvalluvar Statue",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "heritage"
+  },
+  {
+    "id": "kanyakumari-beach",
+    "name": "Kanyakumari Beach & Triveni Sangam",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "beaches"
+  },
+  {
+    "id": "sunset-point-kanyakumari",
+    "name": "Sunset Point (Kanyakumari)",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "nature"
+  },
+  {
+    "id": "padmanabhapuram-palace",
+    "name": "Padmanabhapuram Palace",
+    "city": "Kanyakumari",
+    "citySlug": "kanyakumari",
+    "state": "Tamil Nadu",
+    "stateSlug": "tamil-nadu",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "bangalore-palace",
+    "name": "Bangalore Palace",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "lalbagh-botanical-garden",
+    "name": "Lalbagh Botanical Garden",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "nature"
+  },
+  {
+    "id": "cubbon-park",
+    "name": "Cubbon Park",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "nature"
+  },
+  {
+    "id": "vidhana-soudha",
+    "name": "Vidhana Soudha",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "iskcon-bangalore",
+    "name": "ISKCON Sri Radha Krishna Temple",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "spiritual"
+  },
+  {
+    "id": "ub-city",
+    "name": "UB City Luxury Boulevard",
+    "city": "Bengaluru",
+    "citySlug": "bengaluru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "shopping"
+  },
+  {
+    "id": "mysore-palace",
+    "name": "Mysore Palace (Amba Vilas Palace)",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "chamundi-hills",
+    "name": "Chamundi Hills & Monolithic Nandi",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "spiritual"
+  },
+  {
+    "id": "brindavan-gardens",
+    "name": "Brindavan Gardens & KRS Dam",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "nature"
+  },
+  {
+    "id": "st-philomenas-cathedral",
+    "name": "St. Philomena's Cathedral",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "spiritual"
+  },
+  {
+    "id": "mysuru-zoo",
+    "name": "Sri Chamarajendra Zoological Gardens (Mysuru Zoo)",
+    "city": "Mysuru",
+    "citySlug": "mysuru",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "wildlife"
+  },
+  {
+    "id": "virupaksha-temple",
+    "name": "Virupaksha Temple",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "spiritual"
+  },
+  {
+    "id": "vittala-temple",
+    "name": "Vittala Temple & Musical Pillars",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "stone-chariot",
+    "name": "The Stone Chariot of Hampi",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "lotus-mahal",
+    "name": "Lotus Mahal & Zenana Enclosure",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "elephant-stables",
+    "name": "Elephant Stables",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "matanga-hill",
+    "name": "Matanga Hill Sunrise Trek",
+    "city": "Hampi",
+    "citySlug": "hampi",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "adventure"
+  },
+  {
+    "id": "abbey-falls",
+    "name": "Abbey Falls (Abbi Falls)",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "rajas-seat",
+    "name": "Raja's Seat",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "nature"
+  },
+  {
+    "id": "dubare-elephant-camp",
+    "name": "Dubare Elephant Camp",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "wildlife"
+  },
+  {
+    "id": "mandalpatti",
+    "name": "Mandalpatti Peak 4x4 Jeep Safari",
+    "city": "Coorg",
+    "citySlug": "coorg",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "adventure"
+  },
+  {
+    "id": "om-beach",
+    "name": "Om Beach",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "beaches"
+  },
+  {
+    "id": "kudle-beach",
+    "name": "Kudle Beach",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "beaches"
+  },
+  {
+    "id": "half-moon-beach",
+    "name": "Half Moon Beach & Paradise Beach",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "beaches"
+  },
+  {
+    "id": "mahabaleshwar-temple-gokarna",
+    "name": "Mahabaleshwar Temple (Atmalinga)",
+    "city": "Gokarna",
+    "citySlug": "gokarna",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "spiritual"
+  },
+  {
+    "id": "badami-cave-temples",
+    "name": "Badami Cave Temples",
+    "city": "Badami",
+    "citySlug": "badami",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "agastya-lake",
+    "name": "Agastya Lake & Bhutanatha Temples",
+    "city": "Badami",
+    "citySlug": "badami",
+    "state": "Karnataka",
+    "stateSlug": "karnataka",
+    "type": "heritage"
+  },
+  {
+    "id": "rk-beach-vizag",
+    "name": "Ramakrishna Beach (RK Beach)",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "beaches"
+  },
+  {
+    "id": "kailasagiri-vizag",
+    "name": "Kailasagiri Hilltop Park",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "hill-stations"
+  },
+  {
+    "id": "ins-kurusura-submarine",
+    "name": "INS Kurusura Submarine Museum",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "museums"
+  },
+  {
+    "id": "yarada-beach",
+    "name": "Yarada Beach",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "beaches"
+  },
+  {
+    "id": "simhachalam-temple",
+    "name": "Sri Varaha Lakshmi Narasimha Temple (Simhachalam)",
+    "city": "Visakhapatnam",
+    "citySlug": "visakhapatnam",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "tirumala-venkateswara-temple",
+    "name": "Sri Venkateswara Swamy Temple (Tirumala Balaji)",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "kapila-theertham",
+    "name": "Kapila Theertham & Waterfall",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "sri-padmavathi-temple",
+    "name": "Sri Padmavathi Ammavari Temple (Tiruchanur)",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "talakona-waterfalls",
+    "name": "Talakona Waterfalls",
+    "city": "Tirupati",
+    "citySlug": "tirupati",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "borra-caves",
+    "name": "Borra Caves",
+    "city": "Araku",
+    "citySlug": "araku",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "nature"
+  },
+  {
+    "id": "araku-valley-plantations",
+    "name": "Araku Valley Coffee Plantations & Tribal Museum",
+    "city": "Araku",
+    "citySlug": "araku",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "nature"
+  },
+  {
+    "id": "gandikota-fort",
+    "name": "Gandikota Fort & Pennar River Gorge",
+    "city": "Gandikota",
+    "citySlug": "gandikota",
+    "state": "Andhra Pradesh",
+    "stateSlug": "andhra-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "amber-fort",
+    "name": "Amber Fort & Palace (Amer)",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "hawa-mahal",
+    "name": "Hawa Mahal (Palace of Winds)",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "heritage"
+  },
+  {
+    "id": "city-palace-jaipur",
+    "name": "City Palace (Jaipur)",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "jantar-mantar-jaipur",
+    "name": "Jantar Mantar (Jaipur)",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "heritage"
+  },
+  {
+    "id": "jal-mahal",
+    "name": "Jal Mahal (Water Palace)",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "heritage"
+  },
+  {
+    "id": "nahargarh-fort",
+    "name": "Nahargarh Fort",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "jaigarh-fort",
+    "name": "Jaigarh Fort & Jaivana Cannon",
+    "city": "Jaipur",
+    "citySlug": "jaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "city-palace-udaipur",
+    "name": "City Palace (Udaipur)",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "lake-pichola",
+    "name": "Lake Pichola & Boat Cruise",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "jag-mandir",
+    "name": "Jag Mandir (Lake Garden Palace)",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "sajjangarh-palace",
+    "name": "Sajjangarh Palace (Monsoon Palace)",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "fateh-sagar-lake",
+    "name": "Fateh Sagar Lake",
+    "city": "Udaipur",
+    "citySlug": "udaipur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "mehrangarh-fort",
+    "name": "Mehrangarh Fort",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "jaswant-thada",
+    "name": "Jaswant Thada",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "heritage"
+  },
+  {
+    "id": "umaid-bhawan-palace",
+    "name": "Umaid Bhawan Palace & Museum",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "clock-tower-jodhpur",
+    "name": "Ghanta Ghar (Clock Tower) & Sardar Market",
+    "city": "Jodhpur",
+    "citySlug": "jodhpur",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "shopping"
+  },
+  {
+    "id": "jaisalmer-fort",
+    "name": "Jaisalmer Fort (Sonar Qila / Golden Fort)",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "patwon-ki-haveli",
+    "name": "Patwon Ki Haveli",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "heritage"
+  },
+  {
+    "id": "sam-sand-dunes",
+    "name": "Sam Sand Dunes & Thar Desert Safari",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "adventure"
+  },
+  {
+    "id": "gadisar-lake",
+    "name": "Gadisar Lake",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "desert-national-park",
+    "name": "Desert National Park",
+    "city": "Jaisalmer",
+    "citySlug": "jaisalmer",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "wildlife"
+  },
+  {
+    "id": "pushkar-lake",
+    "name": "Pushkar Lake & 52 Ghats",
+    "city": "Pushkar",
+    "citySlug": "pushkar",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "spiritual"
+  },
+  {
+    "id": "brahma-temple-pushkar",
+    "name": "Jagatpita Brahma Mandir",
+    "city": "Pushkar",
+    "citySlug": "pushkar",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "spiritual"
+  },
+  {
+    "id": "pushkar-camel-fair",
+    "name": "Pushkar Camel Fair Grounds (Mela Ground)",
+    "city": "Pushkar",
+    "citySlug": "pushkar",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "culture"
+  },
+  {
+    "id": "ranthambore-national-park",
+    "name": "Ranthambore National Park & Tiger Safari",
+    "city": "Ranthambore",
+    "citySlug": "ranthambore",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "wildlife"
+  },
+  {
+    "id": "ranthambore-fort",
+    "name": "Ranthambore Fort & Trinetra Ganesha Temple",
+    "city": "Ranthambore",
+    "citySlug": "ranthambore",
+    "state": "Rajasthan",
+    "stateSlug": "rajasthan",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "gateway-of-india",
+    "name": "Gateway of India",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "marine-drive",
+    "name": "Marine Drive (Queen's Necklace)",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "beaches"
+  },
+  {
+    "id": "csmt-station",
+    "name": "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "elephanta-caves",
+    "name": "Elephanta Caves",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "colaba-causeway",
+    "name": "Colaba Causeway (Shahid Bhagat Singh Road)",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "shopping"
+  },
+  {
+    "id": "siddhivinayak-temple",
+    "name": "Shri Siddhivinayak Ganapati Mandir",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "spiritual"
+  },
+  {
+    "id": "juhu-beach",
+    "name": "Juhu Beach",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "beaches"
+  },
+  {
+    "id": "bandra-worli-sea-link",
+    "name": "Bandra-Worli Sea Link (Rajiv Gandhi Sea Link)",
+    "city": "Mumbai",
+    "citySlug": "mumbai",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "shaniwar-wada",
+    "name": "Shaniwar Wada",
+    "city": "Pune",
+    "citySlug": "pune",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "aga-khan-palace",
+    "name": "Aga Khan Palace",
+    "city": "Pune",
+    "citySlug": "pune",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "ajanta-caves",
+    "name": "Ajanta Caves",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "ellora-caves",
+    "name": "Ellora Caves & Kailash Temple",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "bibi-ka-maqbara",
+    "name": "Bibi Ka Maqbara (Taj of the Deccan)",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "heritage"
+  },
+  {
+    "id": "daulatabad-fort",
+    "name": "Daulatabad Fort (Devagiri)",
+    "city": "Chhatrapati Sambhaji Nagar",
+    "citySlug": "chhatrapati-sambhaji-nagar",
+    "state": "Maharashtra",
+    "stateSlug": "maharashtra",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "victoria-memorial",
+    "name": "Victoria Memorial Hall",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "heritage"
+  },
+  {
+    "id": "howrah-bridge",
+    "name": "Howrah Bridge (Rabindra Setu)",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "heritage"
+  },
+  {
+    "id": "dakshineswar-kali-temple",
+    "name": "Dakshineswar Kali Temple",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "spiritual"
+  },
+  {
+    "id": "indian-museum-kolkata",
+    "name": "Indian Museum (Jadu Ghar)",
+    "city": "Kolkata",
+    "citySlug": "kolkata",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "museums"
+  },
+  {
+    "id": "tiger-hill-darjeeling",
+    "name": "Tiger Hill Sunrise",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "hill-stations"
+  },
+  {
+    "id": "darjeeling-himalayan-railway",
+    "name": "Darjeeling Himalayan Railway (DHR Toy Train)",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "heritage"
+  },
+  {
+    "id": "batasia-loop",
+    "name": "Batasia Loop & War Memorial",
+    "city": "Darjeeling",
+    "citySlug": "darjeeling",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "heritage"
+  },
+  {
+    "id": "sundarbans-national-park",
+    "name": "Sundarbans National Park & Tiger Reserve",
+    "city": "Sundarbans",
+    "citySlug": "sundarbans",
+    "state": "West Bengal",
+    "stateSlug": "west-bengal",
+    "type": "wildlife"
+  },
+  {
+    "id": "sabarmati-ashram",
+    "name": "Sabarmati Ashram (Gandhi Smarak Sangrahalaya)",
+    "city": "Ahmedabad",
+    "citySlug": "ahmedabad",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "heritage"
+  },
+  {
+    "id": "adalaj-stepwell",
+    "name": "Adalaj Stepwell (Adalaj Ni Vav)",
+    "city": "Ahmedabad",
+    "citySlug": "ahmedabad",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "heritage"
+  },
+  {
+    "id": "sidi-saiyyed-mosque",
+    "name": "Sidi Saiyyed Mosque (Tree of Life)",
+    "city": "Ahmedabad",
+    "citySlug": "ahmedabad",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "heritage"
+  },
+  {
+    "id": "dwarkadhish-temple",
+    "name": "Dwarkadhish Temple (Jagat Mandir)",
+    "city": "Dwarka",
+    "citySlug": "dwarka",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "spiritual"
+  },
+  {
+    "id": "somnath-temple",
+    "name": "Shri Somnath Jyotirlinga Temple",
+    "city": "Somnath",
+    "citySlug": "somnath",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "spiritual"
+  },
+  {
+    "id": "rann-of-kutch",
+    "name": "Great Rann of Kutch & White Desert (Dhordo)",
+    "city": "Kutch",
+    "citySlug": "kutch",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "nature"
+  },
+  {
+    "id": "kala-dungar",
+    "name": "Kala Dungar (Black Hill) & Dattatreya Temple",
+    "city": "Kutch",
+    "citySlug": "kutch",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "nature"
+  },
+  {
+    "id": "gir-national-park",
+    "name": "Gir National Park (Sasan Gir)",
+    "city": "Gir",
+    "citySlug": "gir",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "wildlife"
+  },
+  {
+    "id": "rani-ki-vav",
+    "name": "Rani ki Vav (The Queen's Stepwell)",
+    "city": "Patan",
+    "citySlug": "patan",
+    "state": "Gujarat",
+    "stateSlug": "gujarat",
+    "type": "heritage"
+  },
+  {
+    "id": "khajuraho-temples",
+    "name": "Khajuraho Group of Monuments",
+    "city": "Khajuraho",
+    "citySlug": "khajuraho",
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "type": "heritage"
+  },
+  {
+    "id": "mahakaleshwar-temple",
+    "name": "Shri Mahakaleshwar Jyotirlinga & Mahakal Lok",
+    "city": "Ujjain",
+    "citySlug": "ujjain",
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "type": "spiritual"
+  },
+  {
+    "id": "gwalior-fort",
+    "name": "Gwalior Fort & Man Mandir Palace",
+    "city": "Gwalior",
+    "citySlug": "gwalior",
+    "state": "Madhya Pradesh",
+    "stateSlug": "madhya-pradesh",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "charminar",
+    "name": "Charminar",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "type": "heritage"
+  },
+  {
+    "id": "golconda-fort",
+    "name": "Golconda Fort",
+    "city": "Hyderabad",
+    "citySlug": "hyderabad",
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "ramappa-temple",
+    "name": "Ramappa Temple (Rudreshwara Temple)",
+    "city": "Warangal",
+    "citySlug": "warangal",
+    "state": "Telangana",
+    "stateSlug": "telangana",
+    "type": "spiritual"
+  },
+  {
+    "id": "chinese-fishing-nets",
+    "name": "Chinese Fishing Nets (Cheena Vala)",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "heritage"
+  },
+  {
+    "id": "mattancherry-palace",
+    "name": "Mattancherry Palace (Dutch Palace)",
+    "city": "Kochi",
+    "citySlug": "kochi",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "forts-palaces"
+  },
+  {
+    "id": "tea-gardens-munnar",
+    "name": "Munnar Tea Plantations & Tata Tea Museum",
+    "city": "Munnar",
+    "citySlug": "munnar",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "hill-stations"
+  },
+  {
+    "id": "eravikulam-national-park",
+    "name": "Eravikulam National Park (Rajamalai)",
+    "city": "Munnar",
+    "citySlug": "munnar",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "wildlife"
+  },
+  {
+    "id": "alappuzha-backwaters",
+    "name": "Alappuzha Backwaters & Kettuvallam Houseboat Cruise",
+    "city": "Alappuzha",
+    "citySlug": "alappuzha",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "nature"
+  },
+  {
+    "id": "periyar-national-park",
+    "name": "Periyar National Park & Lake Boat Safari",
+    "city": "Thekkady",
+    "citySlug": "thekkady",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "wildlife"
+  },
+  {
+    "id": "varkala-cliff",
+    "name": "Varkala Cliff & Papanasam Beach",
+    "city": "Varkala",
+    "citySlug": "varkala",
+    "state": "Kerala",
+    "stateSlug": "kerala",
+    "type": "beaches"
+  },
+  {
+    "id": "mahabodhi-temple",
+    "name": "Mahabodhi Temple Complex & Bodhi Tree",
+    "city": "Bodh Gaya",
+    "citySlug": "bodh-gaya",
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "type": "spiritual"
+  },
+  {
+    "id": "nalanda-mahavihara",
+    "name": "Nalanda Mahavihara Archaeological Ruins",
+    "city": "Nalanda",
+    "citySlug": "nalanda",
+    "state": "Bihar",
+    "stateSlug": "bihar",
+    "type": "heritage"
+  },
+  {
+    "id": "konark-sun-temple",
+    "name": "Konark Sun Temple (Black Pagoda)",
+    "city": "Konark",
+    "citySlug": "konark",
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "type": "heritage"
+  },
+  {
+    "id": "jagannath-temple-puri",
+    "name": "Shri Jagannath Temple (Puri)",
+    "city": "Puri",
+    "citySlug": "puri",
+    "state": "Odisha",
+    "stateSlug": "odisha",
+    "type": "spiritual"
+  },
+  {
+    "id": "golden-temple",
+    "name": "Sri Harmandir Sahib (The Golden Temple)",
+    "city": "Amritsar",
+    "citySlug": "amritsar",
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "type": "spiritual"
+  },
+  {
+    "id": "wagah-border",
+    "name": "Wagah-Attari Border Beating Retreat Ceremony",
+    "city": "Amritsar",
+    "citySlug": "amritsar",
+    "state": "Punjab",
+    "stateSlug": "punjab",
+    "type": "heritage"
+  },
+  {
+    "id": "rishikesh-ganga-aarti",
+    "name": "Triveni Ghat Ganga Aarti & Yoga Capital",
+    "city": "Rishikesh",
+    "citySlug": "rishikesh",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "type": "spiritual"
+  },
+  {
+    "id": "har-ki-pauri",
+    "name": "Har Ki Pauri & Ganga Aarti",
+    "city": "Haridwar",
+    "citySlug": "haridwar",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "type": "spiritual"
+  },
+  {
+    "id": "naini-lake",
+    "name": "Naini Lake & Naina Devi Temple",
+    "city": "Nainital",
+    "citySlug": "nainital",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "type": "lakes-waterfalls"
+  },
+  {
+    "id": "jim-corbett-national-park",
+    "name": "Jim Corbett National Park & Dhikala Zone",
+    "city": "Jim Corbett",
+    "citySlug": "jim-corbett",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "type": "wildlife"
+  },
+  {
+    "id": "kedarnath-temple",
+    "name": "Kedarnath Temple (Shiva Jyotirlinga)",
+    "city": "Char Dham Circuit",
+    "citySlug": "char-dham-circuit",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "type": "spiritual"
+  },
+  {
+    "id": "badrinath-temple",
+    "name": "Badrinath Temple (Badri Vishal)",
+    "city": "Char Dham Circuit",
+    "citySlug": "char-dham-circuit",
+    "state": "Uttarakhand",
+    "stateSlug": "uttarakhand",
+    "type": "spiritual"
+  }
+]

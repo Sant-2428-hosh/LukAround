@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Calendar, Star, ArrowRight } from 'lucide-react';
+import SafeImage from './SafeImage';
 
 export default function AttractionCard({ attraction }) {
   if (!attraction) return null;
@@ -16,22 +17,33 @@ export default function AttractionCard({ attraction }) {
     type,
     shortDescription,
     image,
+    imageAlt,
+    imagePhotographer,
+    imageSourceName,
+    verified,
     bestTimeToVisit,
     recommendedDuration,
     featured
   } = attraction;
 
   const primaryCategory = category[0] || type || 'heritage';
+  const effectiveAlt = imageAlt || `Real photograph of ${name} in ${city}, ${state}`;
 
   return (
     <div className="attraction-card">
       <div className="attraction-card-image-wrap">
-        <img
+        <SafeImage
           src={image}
-          alt={`Visit ${name} in ${city}, ${state}`}
-          className="attraction-card-img"
+          alt={effectiveAlt}
+          aspectRatio="4:3"
+          category={primaryCategory}
+          verified={verified !== false}
+          showCredit={false}
+          photographer={imagePhotographer}
+          sourceName={imageSourceName}
           loading="lazy"
         />
+
         <div style={{
           position: 'absolute',
           top: '10px',
@@ -43,7 +55,8 @@ export default function AttractionCard({ attraction }) {
           borderRadius: '9999px',
           fontSize: '0.72rem',
           fontWeight: 700,
-          textTransform: 'capitalize'
+          textTransform: 'capitalize',
+          zIndex: 3
         }}>
           {primaryCategory}
         </div>
@@ -59,7 +72,8 @@ export default function AttractionCard({ attraction }) {
             borderRadius: '6px',
             fontSize: '0.68rem',
             fontWeight: 800,
-            letterSpacing: '0.5px'
+            letterSpacing: '0.5px',
+            zIndex: 3
           }}>
             FEATURED
           </div>
@@ -76,7 +90,7 @@ export default function AttractionCard({ attraction }) {
 
         <p className="attraction-card-desc">{shortDescription}</p>
 
-        {/* Rating Placeholder & Duration */}
+        {/* Rating & Duration */}
         <div style={{
           display: 'flex',
           alignItems: 'center',

@@ -551,6 +551,7 @@ export default function AdminPanel() {
         >
           {[
             { id: 'traffic', label: '🛰️ Live Traffic Radar', badge: `${visitors.length}` },
+            { id: 'images', label: '📸 Real Tourism Image Studio', badge: '198' },
             { id: 'users', label: '👥 User & Admin Command', badge: `${usersList.length}` },
             { id: 'maintenance', label: '🛠️ User Maintenance', badge: 'SYSTEM' },
             { id: 'broadcast', label: '📢 Global Broadcast Banner', badge: broadcastForm.active ? 'ACTIVE' : null },
@@ -559,7 +560,13 @@ export default function AdminPanel() {
           ].map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => {
+                if (tab.id === 'images') {
+                  navigate('/admin/images');
+                } else {
+                  setActiveTab(tab.id);
+                }
+              }}
               style={{
                 display: 'flex',
                 alignItems: 'center',

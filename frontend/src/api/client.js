@@ -192,12 +192,26 @@ export async function getTransportInfo(from, to, distanceKm) {
 }
 
 /**
- * Fetch hotel listings GET /api/hotels?city=X&tier=Y
+ * Fetch hotel listings GET /api/hotels
+ * Supports either legacy getHotels(city, tier) or options object getHotels({ city, state, stars, ... })
  */
-export async function getHotels(city, tier = 'all') {
+export async function getHotels(arg1, arg2 = 'all') {
   try {
-    const query = new URLSearchParams({ city, ...(tier ? { tier } : {}) });
-    const response = await fetch(`${API_BASE_URL}/hotels?${query.toString()}`, {
+    let params = {};
+    if (typeof arg1 === 'string') {
+      params = { city: arg1, ...(arg2 && arg2 !== 'all' ? { tier: arg2 } : {}) };
+    } else if (typeof arg1 === 'object' && arg1 !== null) {
+      params = { ...arg1 };
+    }
+
+    const cleanParams = new URLSearchParams();
+    Object.entries(params).forEach(([k, v]) => {
+      if (v !== undefined && v !== null && v !== '') {
+        cleanParams.append(k, v);
+      }
+    });
+
+    const response = await fetch(`${API_BASE_URL}/hotels?${cleanParams.toString()}`, {
       headers: { 'Accept': 'application/json' }
     });
     if (!response.ok) {
@@ -206,9 +220,78 @@ export async function getHotels(city, tier = 'all') {
     return await response.json();
   } catch (error) {
     console.error('Failed to fetch hotels:', error);
-    return { data: [], source: 'error', error: error.message };
+    return { data: [], hotels: [], source: 'error', error: error.message };
   }
 }
+
+/**
+ * Fetch nearby verified hotels for attraction or coordinates GET /api/hotels/nearby
+ */
+export async function getNearbyHotels({ destinationId, latitude, longitude, radius = 20, stars, limit = 20, sortBy = 'recommended' } = {}) {
+  try {
+    const params = new URLSearchParams();
+    if (destinationId) params.append('destinationId', destinationId);
+    if (latitude != null) params.append('latitude', latitude);
+    if (longitude != null) params.append('longitude', longitude);
+    if (radius) params.append('radius', radius);
+    if (stars) params.append('stars', stars);
+    if (limit) params.append('limit', limit);
+    if (sortBy) params.append('sortBy', sortBy);
+
+    const response = await fetch(`${API_BASE_URL}/hotels/nearby?${params.toString()}`, {
+      headers: { 'Accept': 'application/json' }
+    });
+    if (!response.ok) {
+      throw new Error(`Nearby hotels failed (${response.status})`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to fetch nearby hotels:', error);
+    return { hotels: [], count: 0, error: error.message };
+  }
+}
+
+/**
+ * Fetch single hotel details by slug or ID GET /api/hotels/:idOrSlug
+ */
+export async function getHotelBySlug(slugOrId) {
+  try {
+    const response = await fetch(`${API_BASE_URL}/hotels/${encodeURIComponent(slugOrId)}`, {
+      headers: { 'Accept': 'application/json' }
+    });
+    if (!response.ok) {
+      throw new Error(`Hotel lookup failed (${response.status})`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to fetch hotel details:', error);
+    return null;
+  }
+}
+
+/**
+ * Fetch navigation directions for hotel GET /api/hotels/:id/directions
+ */
+export async function getHotelDirections(hotelId, originCoords = null) {
+  try {
+    const params = new URLSearchParams();
+    if (originCoords && originCoords.latitude && originCoords.longitude) {
+      params.append('originLat', originCoords.latitude);
+      params.append('originLng', originCoords.longitude);
+    }
+    const response = await fetch(`${API_BASE_URL}/hotels/${encodeURIComponent(hotelId)}/directions?${params.toString()}`, {
+      headers: { 'Accept': 'application/json' }
+    });
+    if (!response.ok) {
+      throw new Error(`Directions query failed (${response.status})`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to fetch hotel directions:', error);
+    return null;
+  }
+}
+
 
 /**
  * Fetch nearby places based on coordinates GET /api/destinations/nearby?lat=...&lng=...&radius=...
