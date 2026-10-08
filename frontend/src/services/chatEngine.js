@@ -76,7 +76,7 @@ export async function fetchSuggestions(city) {
 /** Local intent-based fallback (works offline) */
 function getLocalFallback(message, city) {
   const c = city || 'your destination';
-  return `I'm your LukAround Culinary AI! Here are the best restaurants, iconic local dishes, and dining spots in ${c}.`;
+  return `I'm Dishly, your personal LukAround culinary & dining concierge! Here are top-rated restaurants, iconic local foods, and must-try dining spots in ${c}.`;
 }
 
 /** Default suggestion chips */
@@ -92,7 +92,7 @@ export function getDefaultSuggestions(city) {
 }
 
 /** Word-by-word typing animation helper */
-export function createTypingAnimator(text, onUpdate, onDone, speed = 28) {
+export function createTypingAnimator(text, onUpdate, onDone, speed = 24) {
   const words = text.split(' ');
   let idx = 0;
   let current = '';
@@ -111,23 +111,62 @@ export function createTypingAnimator(text, onUpdate, onDone, speed = 28) {
   return () => clearInterval(interval); // cleanup
 }
 
-/** Session storage key for chat history */
+/** Storage keys for Dishly sessions and active chat */
 export const CHAT_STORAGE_KEY = 'luk_chat_history';
+export const DISHLY_SESSIONS_STORAGE_KEY = 'dishly_chat_sessions_v2';
+export const DISHLY_ACTIVE_SESSION_KEY = 'dishly_active_session_id';
 
-/** Load chat history from session storage */
+/** Load chat history from storage */
 export function loadChatHistory() {
   try {
-    const saved = sessionStorage.getItem(CHAT_STORAGE_KEY);
+    const saved = localStorage.getItem(CHAT_STORAGE_KEY) || sessionStorage.getItem(CHAT_STORAGE_KEY);
     return saved ? JSON.parse(saved) : [];
   } catch {
     return [];
   }
 }
 
-/** Save chat history to session storage */
+/** Save chat history to storage */
 export function saveChatHistory(messages) {
   try {
-    // Only save last 20 messages to keep storage lean
-    sessionStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify(messages.slice(-20)));
+    const payload = JSON.stringify(messages.slice(-30));
+    localStorage.setItem(CHAT_STORAGE_KEY, payload);
+    sessionStorage.setItem(CHAT_STORAGE_KEY, payload);
+  } catch { /* ignore */ }
+}
+
+/** Load all saved Dishly chat sessions from localStorage */
+export function loadDishlySessions() {
+  try {
+    const raw = localStorage.getItem(DISHLY_SESSIONS_STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+/** Save all Dishly chat sessions to localStorage */
+export function saveDishlySessions(sessions) {
+  try {
+    localStorage.setItem(DISHLY_SESSIONS_STORAGE_KEY, JSON.stringify(sessions.slice(0, 30)));
+  } catch { /* ignore */ }
+}
+
+/** Get currently active session ID */
+export function getActiveSessionId() {
+  try {
+    return localStorage.getItem(DISHLY_ACTIVE_SESSION_KEY) || null;
+  } catch {
+    return null;
+  }
+}
+
+/** Set currently active session ID */
+export function setActiveSessionId(id) {
+  try {
+    if (id) localStorage.setItem(DISHLY_ACTIVE_SESSION_KEY, id);
+    else localStorage.removeItem(DISHLY_ACTIVE_SESSION_KEY);
   } catch { /* ignore */ }
 }

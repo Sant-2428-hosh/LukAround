@@ -16,6 +16,34 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791438518400_9xf",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-08T05:48:38.400Z"
+    },
+    {
+      "id": "log_1791391566412_4du",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T16:46:06.412Z"
+    },
+    {
+      "id": "log_1791389649203_lft",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T16:14:09.203Z"
+    },
+    {
+      "id": "log_1791388486745_9ga",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-07T15:54:46.745Z"
+    },
+    {
       "id": "log_1791385795152_vlq",
       "action": "FEATURE_FLAG_TOGGLE",
       "details": "Toggled feature maintenanceMode to ENABLED",
