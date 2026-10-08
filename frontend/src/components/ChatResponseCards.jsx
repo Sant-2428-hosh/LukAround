@@ -412,7 +412,18 @@ export function SeasonCard({ data, city }) {
 
 // ── Restaurants & Dining Card ─────────────────────────────────────────────────
 
-export function RestaurantsCard({ data, city }) {
+const getCuisineEmoji = (category = '', cuisine = '') => {
+  const c = (category + ' ' + cuisine).toLowerCase();
+  if (c.includes('veg') || c.includes('thali')) return '🥗';
+  if (c.includes('street') || c.includes('snack') || c.includes('chaat')) return '🍢';
+  if (c.includes('fine') || c.includes('palace') || c.includes('royal')) return '🍷';
+  if (c.includes('cafe') || c.includes('tea') || c.includes('coffee')) return '☕';
+  if (c.includes('fish') || c.includes('seafood') || c.includes('coastal')) return '🦞';
+  if (c.includes('meat') || c.includes('biryani') || c.includes('curry')) return '🥘';
+  return '🍽️';
+};
+
+export function RestaurantsCard({ data, city, onSelectSuggestion }) {
   const [filter, setFilter] = useState('All');
   const restaurants = Array.isArray(data) ? data : (data?.restaurants || []);
   const cityName = city || data?.city || 'Your Destination';
@@ -438,9 +449,9 @@ export function RestaurantsCard({ data, city }) {
         <div className="chat-card-header-left">
           <span className="chat-card-emoji">🍽️</span>
           <div>
-            <div className="chat-card-title">Top Restaurants in {cityName}</div>
+            <div className="chat-card-title">Top Dining Spots in {cityName}</div>
             <div className="chat-card-subtitle">
-              <span>{displayList.length} verified culinary spots & ratings</span>
+              <span>{displayList.length} hand-picked culinary spots & ratings</span>
             </div>
           </div>
         </div>
@@ -465,13 +476,17 @@ export function RestaurantsCard({ data, city }) {
         {displayList.map((rest, idx) => (
           <div key={rest.id || idx} className="chat-restaurant-item">
             <div className="chat-restaurant-top">
-              <div>
-                <div className="chat-restaurant-name">{rest.name}</div>
-                <div className="chat-restaurant-cuisine">{rest.cuisine}</div>
+              <div className="chat-restaurant-identity">
+                <span className="chat-restaurant-cuisine-icon">{getCuisineEmoji(rest.category, rest.cuisine)}</span>
+                <div>
+                  <div className="chat-restaurant-name">{rest.name}</div>
+                  <div className="chat-restaurant-cuisine">{rest.cuisine}</div>
+                </div>
               </div>
               <div className="chat-restaurant-rating">
                 <Star size={11} fill="#F59E0B" color="#F59E0B" />
                 <span>{rest.rating}</span>
+                {rest.reviews && <span className="chat-restaurant-reviews">({rest.reviews})</span>}
               </div>
             </div>
 
@@ -479,6 +494,7 @@ export function RestaurantsCard({ data, city }) {
               <span className="chat-restaurant-tag">{rest.category || 'Dining'}</span>
               <span className="chat-restaurant-price">{rest.priceForTwo}</span>
               <span className="chat-restaurant-area"><MapPin size={10} /> {rest.area}</span>
+              {rest.timings && <span className="chat-restaurant-timings"><Clock size={9} /> {rest.timings}</span>}
             </div>
 
             {rest.mustTry && (
@@ -489,16 +505,28 @@ export function RestaurantsCard({ data, city }) {
 
             <div className="chat-restaurant-footer">
               <span className="chat-restaurant-ambiance">{rest.ambiance || rest.highlight}</span>
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${rest.name} ${cityName}`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="chat-restaurant-map-link"
-                title="View on Google Maps"
-              >
-                <span>Directions</span>
-                <ExternalLink size={10} />
-              </a>
+              <div className="chat-restaurant-actions">
+                {onSelectSuggestion && (
+                  <button
+                    type="button"
+                    className="chat-restaurant-ask-btn"
+                    onClick={() => onSelectSuggestion(`Tell me about signature specialties and best time to visit ${rest.name} in ${cityName}`)}
+                    title="Ask Dishly about this restaurant"
+                  >
+                    <span>Ask Dishly</span>
+                  </button>
+                )}
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${rest.name} ${cityName}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chat-restaurant-map-link"
+                  title="View on Google Maps"
+                >
+                  <span>Directions</span>
+                  <ExternalLink size={10} />
+                </a>
+              </div>
             </div>
           </div>
         ))}
@@ -512,12 +540,12 @@ export function RestaurantsCard({ data, city }) {
 /**
  * Renders the appropriate rich card based on response type
  */
-export default function ChatResponseCard({ type, data, city, days, compact = false }) {
+export default function ChatResponseCard({ type, data, city, days, compact = false, onSelectSuggestion }) {
   switch (type) {
     case 'restaurants':
     case 'food':
     case 'dining':
-      return <RestaurantsCard data={data} city={city} />;
+      return <RestaurantsCard data={data} city={city} onSelectSuggestion={onSelectSuggestion} />;
     case 'itinerary':
       return <ItineraryCard data={data} city={city} days={days} compact={compact} />;
     case 'hotels':

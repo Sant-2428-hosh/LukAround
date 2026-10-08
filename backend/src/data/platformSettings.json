@@ -16,6 +16,27 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791447134931_dy4",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-08T08:12:14.931Z"
+    },
+    {
+      "id": "log_1791446448318_ox6",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-08T08:00:48.319Z"
+    },
+    {
+      "id": "log_1791439880612_s1m",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-08T06:11:20.612Z"
+    },
+    {
       "id": "log_1791439294256_k5w",
       "action": "USER_REGISTER",
       "details": "User viji (vijii12@gmail.com) registered with role: USER",

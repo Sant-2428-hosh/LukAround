@@ -1661,29 +1661,75 @@ header {
    AI CHAT WIDGET — MindTrip-Inspired, India-Focused
    ========================================================================== */
 
-/* ── Dishly Floating Toggle Button ── */
-.dishly-toggle-btn {
+/* ── World-Class Dishly Floating Launcher Capsule ── */
+.dishly-launcher-wrap {
   position: fixed;
   bottom: 1.75rem;
   right: 1.75rem;
   z-index: 9000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+/* Floating Hover Tooltip Pill */
+.dishly-launcher-hover-pill {
+  background: rgba(17, 17, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(6px) scale(0.96);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.dishly-launcher-wrap:hover .dishly-launcher-hover-pill {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.dishly-hover-sparkle {
+  color: #FDE047;
+  animation: dishlySparkle 2s ease infinite;
+}
+
+/* Floating Toggle Button Capsule */
+.dishly-toggle-btn {
+  position: relative;
   padding: 6px 14px 6px 8px !important;
   min-height: 52px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, var(--color-primary, #C0293C) 0%, var(--color-primary-dark, #7A1626) 100%);
+  background: linear-gradient(135deg, #C0293C 0%, #881337 50%, #4C0519 100%);
   color: #fff;
-  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
   cursor: pointer;
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 28px rgba(192, 41, 60, 0.38), 0 3px 10px rgba(0, 0, 0, 0.18);
-  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 10px 32px -4px rgba(192, 41, 60, 0.48), 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .dishly-toggle-btn:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 12px 36px rgba(192, 41, 60, 0.48), 0 4px 14px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 16px 42px -4px rgba(192, 41, 60, 0.6), 0 6px 16px rgba(0, 0, 0, 0.26), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.dishly-toggle-btn:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .dishly-toggle-btn--open {
@@ -1692,17 +1738,19 @@ header {
   height: 52px !important;
   padding: 0 !important;
   border-radius: 50% !important;
-  background: linear-gradient(135deg, #374151 0%, #111827 100%) !important;
+  background: linear-gradient(135deg, #27272A 0%, #09090B 100%) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
 }
 
 .dishly-toggle-btn--pulse {
-  animation: dishlyPulse 2.4s cubic-bezier(0.66, 0, 0, 1) infinite;
+  animation: dishlyPulse 2.6s cubic-bezier(0.66, 0, 0, 1) infinite;
 }
 
 @keyframes dishlyPulse {
-  0%   { box-shadow: 0 8px 28px rgba(192, 41, 60, 0.38), 0 0 0 0 rgba(192, 41, 60, 0.55); }
-  70%  { box-shadow: 0 8px 28px rgba(192, 41, 60, 0.38), 0 0 0 16px rgba(192, 41, 60, 0); }
-  100% { box-shadow: 0 8px 28px rgba(192, 41, 60, 0.38), 0 0 0 0 rgba(192, 41, 60, 0); }
+  0%   { box-shadow: 0 10px 32px -4px rgba(192, 41, 60, 0.48), 0 0 0 0 rgba(192, 41, 60, 0.6); }
+  70%  { box-shadow: 0 10px 32px -4px rgba(192, 41, 60, 0.48), 0 0 0 18px rgba(192, 41, 60, 0); }
+  100% { box-shadow: 0 10px 32px -4px rgba(192, 41, 60, 0.48), 0 0 0 0 rgba(192, 41, 60, 0); }
 }
 
 .dishly-toggle-inner {
@@ -1716,12 +1764,17 @@ header {
   height: 38px;
   border-radius: 50%;
   background: #ffffff;
-  padding: 3px;
+  padding: 3.5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(0,0,0,0.06);
   flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.dishly-toggle-btn:hover .dishly-toggle-logo-ring {
+  transform: rotate(5deg) scale(1.05);
 }
 
 .dishly-toggle-logo {
@@ -1738,23 +1791,32 @@ header {
 }
 
 .dishly-toggle-title {
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: #ffffff;
+  font-family: var(--font-body);
 }
 
 .dishly-toggle-tag {
   font-size: 0.58rem;
   font-weight: 800;
   color: #FFE4E6;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  opacity: 0.92;
 }
 
-.dishly-toggle-sparkle {
+.dishly-toggle-sparkle-pill {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FDE047;
-  animation: dishlySparkle 2s ease infinite;
+  flex-shrink: 0;
 }
 
 @keyframes dishlySparkle {
@@ -1766,11 +1828,12 @@ header {
   position: absolute;
   top: 2px;
   right: 2px;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   background: #10B981;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 0 8px #10B981;
   animation: chatBlink 1.5s ease infinite;
 }
 
@@ -1779,30 +1842,30 @@ header {
   50% { opacity: 0.4; }
 }
 
-/* ── Dishly Panel ── */
+/* ── World-Class Dishly Main Panel Shell ── */
 .chat-panel.dishly-panel,
 .chat-panel {
   position: fixed;
-  bottom: 5.6rem;
+  bottom: 5.8rem;
   right: 1.75rem;
   z-index: 9000;
-  width: 415px;
-  max-width: calc(100vw - 2rem);
-  height: 565px;
+  width: 425px;
+  max-width: calc(100vw - 1.8rem);
+  height: 580px;
   max-height: calc(100vh - 7rem);
   background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: 24px;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22), 0 8px 24px rgba(192, 41, 60, 0.12);
+  backdrop-filter: blur(36px) saturate(190%);
+  -webkit-backdrop-filter: blur(36px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 26px;
+  box-shadow: 0 32px 90px -15px rgba(0, 0, 0, 0.28), 0 12px 36px -6px rgba(192, 41, 60, 0.16), inset 0 1px 1px rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transform: translateY(20px) scale(0.96);
+  transform: translateY(24px) scale(0.95);
   opacity: 0;
   pointer-events: none;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
   transform-origin: bottom right;
 }
 
@@ -1812,17 +1875,17 @@ header {
   pointer-events: all !important;
 }
 
-/* ── Dishly Header ── */
+/* ── Luxury Header ── */
 .chat-panel-header.dishly-header,
 .chat-panel-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 1.1rem;
-  background: linear-gradient(135deg, var(--color-primary, #C0293C) 0%, var(--color-primary-dark, #7A1626) 100%);
+  padding: 0.95rem 1.15rem;
+  background: linear-gradient(135deg, #9F1239 0%, #881337 40%, #580B1F 100%);
   color: #ffffff;
   flex-shrink: 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
   position: relative;
   z-index: 10;
 }
@@ -1831,22 +1894,27 @@ header {
 .chat-panel-header-left {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.8rem;
 }
 
-/* LukAround Logo Emblem */
+/* 3D Glass Logo Capsule */
 .dishly-logo-badge {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 13px;
   padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(0,0,0,0.06);
   flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.dishly-logo-badge:hover {
+  transform: scale(1.05);
 }
 
 .dishly-header-logo-img {
@@ -1859,47 +1927,55 @@ header {
   position: absolute;
   bottom: -2px;
   right: -2px;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   background: #10B981;
-  border: 2px solid #ffffff;
+  border: 2.5px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 6px #10B981;
+  box-shadow: 0 0 8px #10B981;
   animation: chatBlink 1.8s ease infinite;
 }
 
 .dishly-title-row {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.5rem;
 }
 
 .dishly-brand-name {
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: #ffffff;
   font-family: var(--font-body);
 }
 
 .dishly-ai-badge {
-  font-size: 0.58rem;
+  font-size: 0.6rem;
   font-weight: 800;
   background: rgba(255, 255, 255, 0.22);
   color: #FFE4E6;
-  padding: 2px 6px;
+  padding: 2.5px 7px;
   border-radius: 6px;
   letter-spacing: 0.05em;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .dishly-sub {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.92);
+  gap: 0.4rem;
+  font-size: 0.73rem;
+  color: rgba(255, 255, 255, 0.94);
   margin-top: 2px;
+}
+
+.dishly-current-city {
+  color: #FDE047;
+  font-weight: 700;
 }
 
 .chat-online-dot {
@@ -1911,49 +1987,54 @@ header {
   animation: chatBlink 2s ease infinite;
 }
 
-/* ── Header Actions & High-Contrast Visible Cross Button ── */
+/* ── Action Buttons Cluster ── */
 .dishly-header-actions,
 .chat-panel-header-actions {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
 }
 
 .chat-header-btn.dishly-action-btn,
 .chat-header-btn.dishly-close-btn,
 .chat-header-btn {
   padding: 0 !important;
-  width: 32px !important;
-  min-width: 32px !important;
-  height: 32px !important;
-  min-height: 32px !important;
-  border-radius: 10px !important;
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  border-radius: 11px !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   box-shadow: none !important;
-  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   background: rgba(255, 255, 255, 0.16) !important;
   color: #ffffff !important;
   cursor: pointer;
   position: relative;
-  transition: all 0.18s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .dishly-action-btn:hover,
 .chat-header-btn:hover {
   background: rgba(255, 255, 255, 0.28) !important;
-  transform: translateY(-1px);
+  transform: translateY(-1.5px);
+}
+
+.dishly-new-chat-btn:hover svg {
+  transform: rotate(90deg);
+  transition: transform 0.25s ease;
 }
 
 .dishly-action-btn--active {
   background: #ffffff !important;
-  color: var(--color-primary, #C0293C) !important;
+  color: #9F1239 !important;
   border-color: #ffffff !important;
 }
 
 .dishly-action-btn--active svg {
-  stroke: var(--color-primary, #C0293C) !important;
+  stroke: #9F1239 !important;
 }
 
 .dishly-history-badge {
@@ -1964,29 +2045,30 @@ header {
   color: #ffffff;
   font-size: 0.58rem;
   font-weight: 800;
-  min-width: 15px;
-  height: 15px;
+  min-width: 16px;
+  height: 16px;
   border-radius: 999px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 3px;
-  border: 1.5px solid var(--color-primary-dark, #7A1626);
+  border: 1.5px solid #580B1F;
 }
 
-/* CRITICAL: High-Contrast Visible Cross / Close Button */
+/* CRITICAL: High-Contrast Visible Cross Symbol Button */
 .chat-header-btn.dishly-close-btn {
   background: rgba(0, 0, 0, 0.35) !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.55) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
   color: #ffffff !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
 }
 
 .chat-header-btn.dishly-close-btn:hover {
-  background: #DC2626 !important;
-  border-color: #EF4444 !important;
+  background: #E11D48 !important;
+  border-color: #FDA4AF !important;
   color: #ffffff !important;
-  transform: scale(1.08);
+  transform: scale(1.08) rotate(90deg);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.45) !important;
 }
 
 .chat-header-btn.dishly-close-btn svg {
@@ -1995,13 +2077,13 @@ header {
   display: block !important;
 }
 
-/* ── Location Quick-Adaptation Bar ── */
+/* ── Location Quick-Adaptation Ribbon ── */
 .chat-location-bar.dishly-location-bar,
 .chat-location-bar {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.85rem;
+  gap: 0.5rem;
+  padding: 0.5rem 0.95rem;
   background: #FFF1F2;
   border-bottom: 1px solid #FFE4E6;
   flex-shrink: 0;
@@ -2011,20 +2093,20 @@ header {
 .chat-location-bar-label {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.3rem;
   font-size: 0.68rem;
-  font-weight: 700;
-  color: #BE123C;
+  font-weight: 800;
+  color: #9F1239;
   white-space: nowrap;
   flex-shrink: 0;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
 .chat-location-chips {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.38rem;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -2038,31 +2120,32 @@ header {
 .chat-location-pill {
   font-size: 0.72rem;
   font-weight: 600;
-  padding: 0.25rem 0.65rem !important;
+  padding: 0.25rem 0.68rem !important;
   border-radius: 999px;
-  background: #fff;
+  background: #ffffff;
   color: var(--color-ink-secondary);
-  border: 1px solid rgba(190, 18, 60, 0.2);
+  border: 1px solid rgba(190, 18, 60, 0.18);
   cursor: pointer;
   white-space: nowrap;
   flex-shrink: 0;
-  box-shadow: none !important;
-  transition: all 0.15s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .chat-location-pill:hover {
   background: #FEE2E2;
-  color: #BE123C;
+  color: #9F1239;
   border-color: #BE123C;
-  transform: translateY(-1px);
+  transform: translateY(-1.5px);
 }
 
 .chat-location-pill--active {
-  background: linear-gradient(135deg, #E11D48 0%, #BE123C 100%) !important;
+  background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%) !important;
   color: #fff !important;
-  border-color: #BE123C !important;
+  border-color: transparent !important;
   font-weight: 700;
-  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.28) !important;
+  box-shadow: 0 3px 10px rgba(225, 29, 72, 0.32) !important;
+  transform: scale(1.03);
 }
 
 /* ── History Drawer Overlay ── */
@@ -2084,7 +2167,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1.1rem;
   background: #ffffff;
   border-bottom: 1px solid var(--color-rule);
 }
@@ -2096,16 +2179,16 @@ header {
 }
 
 .dishly-history-title {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--color-ink);
 }
 
 .dishly-history-new-btn {
-  padding: 0.35rem 0.75rem !important;
+  padding: 0.38rem 0.85rem !important;
   font-size: 0.76rem !important;
   font-weight: 700 !important;
-  border-radius: 8px !important;
+  border-radius: 9px !important;
   background: var(--color-primary-light, #FFE4E6) !important;
   color: var(--color-primary, #C0293C) !important;
   border: 1px solid rgba(192, 41, 60, 0.25) !important;
@@ -2114,21 +2197,22 @@ header {
   align-items: center;
   gap: 0.35rem;
   box-shadow: none !important;
-  transition: all 0.15s ease;
+  transition: all 0.18s ease;
 }
 
 .dishly-history-new-btn:hover {
   background: var(--color-primary, #C0293C) !important;
   color: #ffffff !important;
+  transform: translateY(-1px);
 }
 
 .dishly-history-list {
   flex: 1;
   overflow-y: auto;
-  padding: 0.75rem;
+  padding: 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.55rem;
 }
 
 .dishly-history-empty {
@@ -2137,13 +2221,24 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3rem 1.5rem;
-  gap: 0.5rem;
+  padding: 3.5rem 1.5rem;
+  gap: 0.6rem;
   color: var(--color-ink-tertiary);
 }
 
+.dishly-empty-icon-ring {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #FFE4E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
 .dishly-history-empty-title {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--color-ink-secondary);
 }
@@ -2157,32 +2252,32 @@ header {
 .dishly-history-item {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  padding: 0.65rem 0.8rem;
+  gap: 0.75rem;
+  padding: 0.75rem 0.85rem;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid var(--color-rule);
   cursor: pointer;
-  transition: all 0.18s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
 }
 
 .dishly-history-item:hover {
   border-color: rgba(190, 18, 60, 0.35);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1.5px);
 }
 
 .dishly-history-item--active {
-  border-color: var(--color-primary, #C0293C);
-  background: #FFFBFB;
-  box-shadow: 0 2px 8px rgba(192, 41, 60, 0.12);
+  border-color: #E11D48;
+  background: #FFFDFD;
+  box-shadow: 0 2px 10px rgba(225, 29, 72, 0.12);
 }
 
 .dishly-history-item-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
   background: var(--color-canvas-subtle);
   display: flex;
   align-items: center;
@@ -2196,7 +2291,7 @@ header {
 }
 
 .dishly-history-item-title {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 700;
   color: var(--color-ink);
   white-space: nowrap;
@@ -2208,25 +2303,25 @@ header {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.68rem;
+  font-size: 0.69rem;
   color: var(--color-ink-tertiary);
   margin-top: 2px;
 }
 
 .dishly-history-city-tag {
   background: #FFE4E6;
-  color: #BE123C;
-  padding: 1px 5px;
+  color: #9F1239;
+  padding: 1px 6px;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 0.64rem;
+  font-size: 0.65rem;
 }
 
 .dishly-history-delete-btn {
   padding: 0 !important;
-  width: 26px !important;
-  height: 26px !important;
-  border-radius: 6px !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 7px !important;
   background: transparent !important;
   border: none !important;
   display: inline-flex !important;
@@ -2234,7 +2329,7 @@ header {
   justify-content: center !important;
   cursor: pointer;
   box-shadow: none !important;
-  opacity: 0.6;
+  opacity: 0.55;
   transition: all 0.15s ease;
 }
 
@@ -2248,7 +2343,7 @@ header {
 }
 
 .dishly-history-footer {
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1.1rem;
   background: #ffffff;
   border-top: 1px solid var(--color-rule);
   display: flex;
@@ -2256,13 +2351,13 @@ header {
 }
 
 .dishly-clear-all-btn {
-  padding: 0.35rem 0.75rem !important;
+  padding: 0.35rem 0.8rem !important;
   font-size: 0.72rem !important;
   font-weight: 600 !important;
   color: #EF4444 !important;
   background: #FEF2F2 !important;
   border: 1px solid #FECDD3 !important;
-  border-radius: 6px !important;
+  border-radius: 7px !important;
   cursor: pointer;
   display: inline-flex !important;
   align-items: center;
@@ -2274,33 +2369,33 @@ header {
   background: #FEE2E2 !important;
 }
 
-/* ── Messages Area ── */
+/* ── Messages Stream ── */
 .chat-messages-area {
   flex: 1;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.95rem;
   background: linear-gradient(180deg, #FAFAF8 0%, #FFFFFF 100%);
   scrollbar-width: thin;
   scrollbar-color: var(--color-rule) transparent;
 }
 
-.chat-messages-area::-webkit-scrollbar { width: 4px; }
-.chat-messages-area::-webkit-scrollbar-thumb { background: var(--color-rule); border-radius: 2px; }
+.chat-messages-area::-webkit-scrollbar { width: 5px; }
+.chat-messages-area::-webkit-scrollbar-thumb { background: var(--color-rule); border-radius: 3px; }
 
 /* ── Message Row ── */
 .chat-msg-row {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   align-items: flex-start;
-  animation: chatMsgIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation: chatMsgIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes chatMsgIn {
-  from { opacity: 0; transform: translateY(10px) scale(0.97); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(12px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .chat-msg-user {
@@ -2309,8 +2404,8 @@ header {
 
 /* ── Avatars with LukAround Logo Branding ── */
 .chat-avatar {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   flex-shrink: 0;
   display: flex;
@@ -2321,9 +2416,9 @@ header {
 
 .chat-avatar.dishly-bot-avatar {
   background: #ffffff !important;
-  border: 1.5px solid rgba(190, 18, 60, 0.25) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
-  padding: 3px !important;
+  border: 1.5px solid rgba(190, 18, 60, 0.28) !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
+  padding: 3.5px !important;
   overflow: hidden !important;
 }
 
@@ -2343,7 +2438,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 84%;
+  max-width: 85%;
 }
 
 .chat-msg-user .chat-bubble-wrap {
@@ -2351,27 +2446,28 @@ header {
 }
 
 .chat-bubble {
-  padding: 0.65rem 0.9rem;
-  border-radius: 16px;
-  font-size: 0.84rem;
-  line-height: 1.55;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  font-size: 0.85rem;
+  line-height: 1.58;
   position: relative;
   max-width: 100%;
+  letter-spacing: -0.01em;
 }
 
 .chat-bubble-bot {
-  background: #fff;
+  background: #ffffff;
   color: var(--color-ink);
-  border: 1px solid var(--color-rule);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-top-left-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
 }
 
 .chat-bubble-user {
-  background: linear-gradient(135deg, var(--color-primary, #C0293C) 0%, var(--color-primary-dark, #7A1626) 100%);
+  background: linear-gradient(135deg, #BE123C 0%, #881337 100%);
   color: #fff;
   border-top-right-radius: 4px;
-  box-shadow: 0 2px 8px rgba(192,41,60,0.3);
+  box-shadow: 0 4px 14px rgba(190, 18, 60, 0.32);
 }
 
 .chat-bubble-content {
@@ -2380,16 +2476,16 @@ header {
 
 .chat-copy-btn {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 6px;
-  width: 20px !important;
-  height: 20px !important;
-  min-width: 20px !important;
-  min-height: 20px !important;
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
   padding: 0 !important;
   border: none !important;
   background: rgba(0,0,0,0.04) !important;
-  border-radius: 4px !important;
+  border-radius: 5px !important;
   color: var(--color-ink-tertiary) !important;
   cursor: pointer;
   display: inline-flex !important;
@@ -2397,18 +2493,19 @@ header {
   justify-content: center !important;
   box-shadow: none !important;
   opacity: 0.7;
-  transition: opacity 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .chat-copy-btn:hover {
   opacity: 1;
   background: rgba(0,0,0,0.08) !important;
+  transform: scale(1.08);
 }
 
 .chat-cursor {
   display: inline;
   animation: chatCursorBlink 0.7s step-end infinite;
-  color: var(--color-primary);
+  color: #BE123C;
 }
 
 @keyframes chatCursorBlink {
@@ -2417,57 +2514,71 @@ header {
 }
 
 /* ── Typing Indicator ── */
-.chat-typing-indicator {
+.chat-typing-indicator.dishly-typing-bubble {
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 0.7rem 0.9rem;
+  gap: 5px;
+  padding: 0.75rem 1rem;
   width: fit-content;
 }
 
-.chat-typing-indicator span {
+.dishly-dot {
   width: 6px;
   height: 6px;
-  background: var(--color-primary);
+  background: #E11D48;
   border-radius: 50%;
   animation: chatTypeDot 1.2s ease infinite;
 }
 
-.chat-typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
-.chat-typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+.dishly-dot:nth-child(2) { animation-delay: 0.2s; }
+.dishly-dot:nth-child(3) { animation-delay: 0.4s; }
 
 @keyframes chatTypeDot {
-  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
-  30%           { transform: translateY(-6px); opacity: 1; }
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.35; }
+  30%           { transform: translateY(-7px); opacity: 1; }
 }
 
-/* ── Suggestion Chips ── */
+/* ── Interactive Smart Suggestion Chips ── */
 .chat-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.25rem;
+  gap: 0.45rem;
+  margin-top: 0.35rem;
 }
 
-.chat-chip {
+.chat-chip.dishly-smart-chip {
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.3rem 0.65rem !important;
+  padding: 0.35rem 0.75rem !important;
   border-radius: 100px;
-  background: var(--color-primary-light, #FFE4E6);
-  color: var(--color-primary, #C0293C);
-  border: 1px solid rgba(192,41,60,0.2);
+  background: #FFF1F2;
+  color: #9F1239;
+  border: 1px solid rgba(225, 29, 72, 0.2);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   white-space: nowrap;
-  box-shadow: none !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02) !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.chat-chip:hover {
-  background: var(--color-primary, #C0293C) !important;
+.dishly-chip-sparkle {
+  color: #F59E0B;
+  opacity: 0.7;
+}
+
+.chat-chip.dishly-smart-chip:hover {
+  background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%) !important;
   color: #fff !important;
-  border-color: var(--color-primary, #C0293C) !important;
-  transform: translateY(-1px);
+  border-color: transparent !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.28) !important;
+}
+
+.chat-chip.dishly-smart-chip:hover .dishly-chip-sparkle {
+  color: #ffffff;
+  opacity: 1;
 }
 
 /* ── Voice Input Listening Banner ── */
@@ -2475,7 +2586,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.45rem 0.9rem;
+  padding: 0.5rem 1rem;
   background: #FFF1F2;
   border-top: 1px solid #FECDD3;
   border-bottom: 1px solid #FECDD3;
@@ -2486,37 +2597,38 @@ header {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  font-size: 0.74rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #BE123C;
+  color: #9F1239;
 }
 
 .dishly-listening-dot {
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   background: #EF4444;
   border-radius: 50%;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
   animation: chatBlink 1s infinite;
 }
 
 .dishly-soundwave {
   display: flex;
   align-items: center;
-  gap: 3px;
-  height: 16px;
+  gap: 3.5px;
+  height: 18px;
 }
 
 .dishly-soundwave span {
   width: 3px;
   background: #BE123C;
-  border-radius: 2px;
+  border-radius: 3px;
   animation: soundwave 1s ease-in-out infinite;
 }
 
 .dishly-soundwave span:nth-child(1) { height: 6px; animation-delay: 0.1s; }
-.dishly-soundwave span:nth-child(2) { height: 14px; animation-delay: 0.3s; }
-.dishly-soundwave span:nth-child(3) { height: 10px; animation-delay: 0.15s; }
-.dishly-soundwave span:nth-child(4) { height: 16px; animation-delay: 0.4s; }
+.dishly-soundwave span:nth-child(2) { height: 16px; animation-delay: 0.3s; }
+.dishly-soundwave span:nth-child(3) { height: 11px; animation-delay: 0.15s; }
+.dishly-soundwave span:nth-child(4) { height: 18px; animation-delay: 0.4s; }
 .dishly-soundwave span:nth-child(5) { height: 8px; animation-delay: 0.2s; }
 
 @keyframes soundwave {
@@ -2525,26 +2637,26 @@ header {
 }
 
 .dishly-listening-stop-btn {
-  padding: 0.2rem 0.55rem !important;
-  font-size: 0.7rem !important;
+  padding: 0.25rem 0.65rem !important;
+  font-size: 0.72rem !important;
   font-weight: 700 !important;
-  border-radius: 6px !important;
-  background: #BE123C !important;
+  border-radius: 7px !important;
+  background: #9F1239 !important;
   color: #fff !important;
   border: none !important;
   cursor: pointer;
   box-shadow: none !important;
 }
 
-/* ── Input Area ── */
+/* ── Modern Floating Input Dock ── */
 .chat-input-area.dishly-input-area,
 .chat-input-area {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.65rem 0.85rem;
-  border-top: 1px solid var(--color-rule);
-  background: #fff;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background: #ffffff;
   flex-shrink: 0;
 }
 
@@ -2553,16 +2665,16 @@ header {
   flex: 1;
   border: 1.5px solid var(--color-rule);
   border-radius: 14px;
-  padding: 0.55rem 0.85rem;
+  padding: 0.58rem 0.9rem;
   font-family: var(--font-body);
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   color: var(--color-ink);
   resize: none !important;
   height: 40px;
   min-height: 40px !important;
   max-height: 80px;
-  background: var(--color-canvas-warm);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #F8F8FA;
+  transition: all 0.2s ease;
   line-height: 1.35;
   overflow-y: hidden !important;
   overflow-x: hidden !important;
@@ -2588,9 +2700,9 @@ header {
 
 .chat-input.dishly-input:focus,
 .chat-input:focus {
-  border-color: var(--color-primary, #C0293C);
-  box-shadow: 0 0 0 3px var(--color-primary-light, #FFE4E6);
-  background: #fff;
+  border-color: #E11D48;
+  box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.15);
+  background: #ffffff;
   outline: none;
 }
 
@@ -2604,7 +2716,7 @@ header {
   padding: 0 !important;
   border-radius: 12px !important;
   border: 1.5px solid var(--color-rule) !important;
-  background: var(--color-canvas-subtle) !important;
+  background: #F8F8FA !important;
   color: var(--color-ink-secondary) !important;
   cursor: pointer;
   display: inline-flex !important;
@@ -2612,14 +2724,14 @@ header {
   justify-content: center !important;
   box-shadow: none !important;
   flex-shrink: 0;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .dishly-mic-btn:hover {
   background: #FFE4E6 !important;
-  border-color: var(--color-primary, #C0293C) !important;
-  color: var(--color-primary, #C0293C) !important;
-  transform: translateY(-1px);
+  border-color: #BE123C !important;
+  color: #BE123C !important;
+  transform: translateY(-1.5px);
 }
 
 .dishly-mic-btn--active {
@@ -2631,11 +2743,11 @@ header {
 
 @keyframes micPulse {
   0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); }
-  70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+  70% { box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
   100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
 }
 
-/* Send Button */
+/* Send / Quick Discover Button */
 .chat-send-btn.dishly-send-btn,
 .chat-send-btn {
   width: 40px !important;
@@ -2644,29 +2756,62 @@ header {
   min-height: 40px !important;
   padding: 0 !important;
   border-radius: 12px !important;
-  border: none !important;
-  background: var(--color-rule) !important;
-  color: var(--color-ink-tertiary) !important;
+  border: 1.5px solid var(--color-rule) !important;
+  background: #F8F8FA !important;
+  color: var(--color-ink-secondary) !important;
   cursor: pointer;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   box-shadow: none !important;
   flex-shrink: 0;
-  transition: all 0.2s ease;
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.chat-send-btn.dishly-send-btn svg,
+.chat-send-btn svg {
+  stroke: #4A4A52 !important;
+  stroke-width: 2.4 !important;
+  display: block !important;
+  transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+.chat-send-btn.dishly-send-btn:hover,
+.chat-send-btn:hover {
+  background: #FFE4E6 !important;
+  border-color: #BE123C !important;
+  transform: translateY(-1.5px);
+}
+
+.chat-send-btn.dishly-send-btn:hover svg,
+.chat-send-btn:hover svg {
+  stroke: #BE123C !important;
+  transform: translateX(1.5px) translateY(-1.5px) scale(1.1);
 }
 
 .dishly-send-btn--active,
 .chat-send-btn--active {
-  background: linear-gradient(135deg, var(--color-primary, #C0293C) 0%, var(--color-primary-dark, #7A1626) 100%) !important;
+  background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%) !important;
+  border-color: transparent !important;
   color: #fff !important;
-  box-shadow: 0 4px 14px rgba(192,41,60,0.38) !important;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.38) !important;
+}
+
+.dishly-send-btn--active svg,
+.chat-send-btn--active svg {
+  stroke: #ffffff !important;
 }
 
 .dishly-send-btn--active:hover,
 .chat-send-btn--active:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(192,41,60,0.48) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(225, 29, 72, 0.48) !important;
+}
+
+.dishly-send-btn--active:hover svg,
+.chat-send-btn--active:hover svg {
+  stroke: #ffffff !important;
+  transform: translateX(2px) translateY(-2px) scale(1.08);
 }
 
 .dishly-input-hint,
@@ -2674,12 +2819,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  font-size: 0.65rem;
+  gap: 0.4rem;
+  font-size: 0.67rem;
   color: var(--color-ink-tertiary);
-  padding: 0 1rem 0.45rem;
+  padding: 0 1rem 0.5rem;
   background: #fff;
   flex-shrink: 0;
+}
+
+.dishly-hint-badge {
+  color: #9F1239;
+  font-weight: 700;
 }
 
 /* ── Rich Response Cards (inside chat) ── */
@@ -2707,179 +2857,204 @@ header {
 .chat-budget-card    { border-top: 3px solid #F59E0B; }
 .chat-restaurants-card { border-top: 3px solid #E11D48; }
 
-/* ── Restaurant Card Styles ── */
+/* ── Michelin-Grade Dishly Restaurant Cards ── */
 .chat-restaurant-filters {
   display: flex;
-  gap: 0.35rem;
-  padding: 0.45rem 0.65rem;
-  background: var(--color-canvas-subtle);
+  gap: 0.4rem;
+  padding: 0.55rem 0.85rem;
+  background: #FDF4F5;
   overflow-x: auto;
-  border-bottom: 1px solid var(--color-rule);
+  border-bottom: 1px solid #FCE7EA;
+  scrollbar-width: none;
+}
+
+.chat-restaurant-filters::-webkit-scrollbar {
+  display: none;
 }
 
 .chat-filter-btn {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  padding: 0.2rem 0.55rem;
+  padding: 0.25rem 0.65rem !important;
   border-radius: 999px;
-  border: 1px solid var(--color-rule);
-  background: #fff;
+  border: 1px solid rgba(190, 18, 60, 0.2);
+  background: #ffffff;
   color: var(--color-ink-secondary);
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.15s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .chat-filter-btn:hover {
-  border-color: #E11D48;
-  color: #E11D48;
+  border-color: #BE123C;
+  color: #BE123C;
+  transform: translateY(-1px);
 }
 
 .chat-filter-btn--active {
-  background: #E11D48;
-  color: #fff;
-  border-color: #E11D48;
+  background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(225, 29, 72, 0.3) !important;
 }
 
 .chat-restaurants-list {
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  padding: 0.65rem;
-  max-height: 290px;
+  gap: 0.65rem;
+  padding: 0.75rem 0.85rem;
+  max-height: 310px;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-rule) transparent;
 }
 
 .chat-restaurant-item {
-  background: #fff;
-  border: 1px solid var(--color-rule);
-  border-radius: 10px;
-  padding: 0.55rem 0.7rem;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 14px;
+  padding: 0.7rem 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  transition: all 0.15s ease;
+  gap: 0.4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .chat-restaurant-item:hover {
-  border-color: #CBD5E1;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-color: #FECDD3;
+  box-shadow: 0 8px 20px rgba(190, 18, 60, 0.1);
+  transform: translateY(-2px);
 }
 
 .chat-restaurant-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 0.45rem;
+  gap: 0.5rem;
 }
 
 .chat-restaurant-name {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 800;
   color: var(--color-ink);
+  letter-spacing: -0.01em;
   line-height: 1.25;
 }
 
 .chat-restaurant-cuisine {
-  font-size: 0.7rem;
-  color: var(--color-ink-secondary);
-  margin-top: 0.1rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #64748B;
+  margin-top: 0.15rem;
 }
 
 .chat-restaurant-rating {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #B45309;
+  gap: 0.25rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #92400E;
   background: #FEF3C7;
-  padding: 0.15rem 0.38rem;
-  border-radius: 6px;
+  border: 1px solid #FDE68A;
+  padding: 0.15rem 0.45rem;
+  border-radius: 7px;
   flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(245, 158, 11, 0.15);
 }
 
 .chat-restaurant-details {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  font-size: 0.68rem;
+  gap: 0.4rem;
+  font-size: 0.69rem;
   color: var(--color-ink-tertiary);
 }
 
 .chat-restaurant-tag {
   background: #F1F5F9;
   color: #334155;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.67rem;
 }
 
 .chat-restaurant-price {
-  font-weight: 600;
-  color: #0F766E;
-  background: #F0FDFA;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
+  font-weight: 700;
+  color: #047857;
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  padding: 0.15rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.67rem;
 }
 
 .chat-restaurant-area {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  font-weight: 500;
 }
 
 .chat-restaurant-must-try {
-  font-size: 0.7rem;
+  font-size: 0.73rem;
   background: #FFF1F2;
-  border: 1px solid #FFE4E6;
-  border-radius: 6px;
-  padding: 0.3rem 0.5rem;
+  border: 1px solid #FECDD3;
+  border-radius: 8px;
+  padding: 0.35rem 0.65rem;
   color: #9F1239;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .chat-restaurant-must-try .must-try-label {
-  font-weight: 700;
-  color: #BE123C;
+  font-weight: 800;
+  margin-right: 0.2rem;
 }
 
 .chat-restaurant-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.15rem;
-  padding-top: 0.3rem;
-  border-top: 1px dashed var(--color-rule);
-  font-size: 0.68rem;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+  padding-top: 0.35rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.08);
 }
 
 .chat-restaurant-ambiance {
-  color: var(--color-ink-tertiary);
+  font-size: 0.68rem;
+  color: #64748B;
   font-style: italic;
-  max-width: 68%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 185px;
 }
 
 .chat-restaurant-map-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  color: var(--color-primary);
+  gap: 0.3rem;
+  color: #ffffff !important;
   font-weight: 700;
+  font-size: 0.68rem;
   text-decoration: none;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
-  background: var(--color-primary-light);
-  transition: all 0.15s ease;
+  padding: 0.22rem 0.6rem;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #E11D48 0%, #BE123C 100%);
+  box-shadow: 0 2px 6px rgba(225, 29, 72, 0.25);
+  transition: all 0.18s ease;
 }
 
 .chat-restaurant-map-link:hover {
-  filter: brightness(0.95);
   transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(225, 29, 72, 0.4);
+  filter: brightness(1.05);
 }
 
 .chat-card-header {
@@ -3307,430 +3482,826 @@ header {
 /* ── Section Shell ── */
 .hcs-section {
   position: relative;
-  padding: 4.5rem 1.5rem 3.5rem;
+  padding: 5.5rem 1.5rem 4.5rem;
   overflow: hidden;
-  background: linear-gradient(160deg, #0b0720 0%, #1a1040 40%, #0d1f3c 75%, #0a0f28 100%);
+  background: radial-gradient(circle at 50% -10%, #201138 0%, #110926 42%, #080516 78%, #04030d 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   isolation: isolate;
 }
 
-/* Ambient orbs */
+/* Atmospheric Ambient Glowing Orbs */
 .hcs-orb {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
-  filter: blur(80px);
-  opacity: 0.35;
-  animation: hcsOrbFloat 12s ease-in-out infinite alternate;
+  filter: blur(90px);
+  opacity: 0.45;
+  animation: hcsOrbFloat 14s ease-in-out infinite alternate;
 }
+
 .hcs-orb--left {
-  width: 480px; height: 480px;
-  left: -160px; top: -120px;
-  background: radial-gradient(circle, #c0293c 0%, #7a1626 60%, transparent 100%);
+  width: 540px;
+  height: 540px;
+  left: -180px;
+  top: -120px;
+  background: radial-gradient(circle, #E11D48 0%, #9F1239 40%, rgba(159, 18, 57, 0) 70%);
   animation-delay: 0s;
 }
+
 .hcs-orb--right {
-  width: 420px; height: 420px;
-  right: -140px; bottom: -100px;
-  background: radial-gradient(circle, #4f46e5 0%, #1e1b4b 60%, transparent 100%);
-  animation-delay: -5s;
+  width: 520px;
+  height: 520px;
+  right: -160px;
+  bottom: -100px;
+  background: radial-gradient(circle, #F59E0B 0%, #D97706 35%, rgba(217, 119, 6, 0) 70%);
+  opacity: 0.32;
+  animation-delay: -6s;
 }
+
 .hcs-orb--center {
-  width: 360px; height: 360px;
-  left: 50%; top: 50%;
+  width: 460px;
+  height: 460px;
+  left: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(192,41,60,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.28) 0%, rgba(139, 92, 246, 0.12) 45%, transparent 70%);
   animation-delay: -9s;
 }
-@keyframes hcsOrbFloat {
-  0%   { transform: translateY(0)   scale(1); }
-  100% { transform: translateY(28px) scale(1.06); }
-}
-.hcs-orb--center { animation-name: none; } /* static center */
 
-/* Grid pattern overlay */
-.hcs-section::before {
-  content: "";
+@keyframes hcsOrbFloat {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-22px) scale(1.08) rotate(4deg); }
+  100% { transform: translateY(24px) scale(0.96) rotate(-3deg); }
+}
+
+/* Starlight constellation particle grid overlay */
+.hcs-starlight-grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-  background-size: 48px 48px;
+    radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    radial-gradient(rgba(225, 29, 72, 0.15) 1px, transparent 1px);
+  background-size: 36px 36px, 72px 72px;
+  background-position: 0 0, 18px 18px;
   pointer-events: none;
   z-index: 0;
+  opacity: 0.75;
 }
 
-/* Bottom fade */
+/* Top & Bottom gradient vignettes */
+.hcs-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(4, 3, 13, 0.8), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .hcs-section::after {
   content: "";
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 80px;
-  background: linear-gradient(to bottom, transparent, rgba(10,15,40,0.6));
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(4, 3, 13, 0.85));
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
-/* ── Container ── */
+/* ── Centered Container ── */
 .hcs-container {
   position: relative;
-  z-index: 1;
-  max-width: 820px;
+  z-index: 2;
+  max-width: 860px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.65rem;
   text-align: center;
 }
 
-/* ── Badge ── */
+/* ── Luxury Glowing Badge ── */
 .hcs-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.35rem 1rem;
-  border-radius: 100px;
-  background: rgba(192,41,60,0.15);
-  border: 1px solid rgba(192,41,60,0.4);
-  color: #fca5a5;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  gap: 0.5rem;
+  padding: 0.38rem 1.15rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFE4E6;
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  backdrop-filter: blur(8px);
-  animation: hcsFadeSlideDown 0.6s ease both;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  animation: hcsFadeSlideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  transition: all 0.25s ease;
 }
 
-/* ── Title ── */
+.hcs-badge:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1.5px);
+  box-shadow: 0 8px 24px rgba(225, 29, 72, 0.25);
+}
+
+.hcs-badge-dot {
+  width: 7px;
+  height: 7px;
+  background: #10B981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10B981;
+  animation: chatBlink 1.8s ease infinite;
+}
+
+.hcs-badge-sparkle {
+  color: #FDE047;
+  animation: dishlySparkle 2.2s infinite ease-in-out;
+}
+
+/* ── Hero Headline with Radiant Shimmer ── */
 .hcs-title {
   font-family: var(--font-display);
-  font-size: clamp(1.65rem, 4.5vw, 2.4rem);
+  font-size: clamp(2rem, 5vw, 2.85rem);
   font-weight: 800;
-  color: #fff;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-shadow: 0 4px 32px rgba(0,0,0,0.4);
-  animation: hcsFadeSlideDown 0.65s 0.05s ease both;
+  color: #ffffff;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  animation: hcsFadeSlideDown 0.65s 0.05s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
 .hcs-title__accent {
-  background: linear-gradient(120deg, #ff6b6b 0%, #ffd93d 50%, #c0293c 100%);
+  background: linear-gradient(120deg, #FF6B6B 0%, #FFA07A 25%, #FFD166 50%, #FF6B6B 75%, #FFA07A 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  position: relative;
+  display: inline-block;
+  animation: hcsTextShimmer 4s linear infinite;
+  text-shadow: none;
 }
 
-/* ── Subtitle ── */
+@keyframes hcsTextShimmer {
+  to { background-position: 200% center; }
+}
+
+/* ── Hero Subtitle ── */
 .hcs-subtitle {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.6);
-  line-height: 1.6;
-  max-width: 520px;
-  animation: hcsFadeSlideDown 0.7s 0.1s ease both;
-}
-.hcs-subtitle em {
-  color: rgba(255,255,255,0.9);
-  font-style: normal;
-  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  max-width: 580px;
+  letter-spacing: -0.01em;
+  animation: hcsFadeSlideDown 0.7s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* ── Search Wrap ── */
+.hcs-subtitle em {
+  color: #FDE047;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ── Search Container & Floating Capsule Dock ── */
 .hcs-search-wrap {
   width: 100%;
   position: relative;
-  animation: hcsFadeSlideDown 0.75s 0.15s ease both;
+  animation: hcsFadeSlideDown 0.75s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* ── Search Bar ── */
 .hcs-search-bar {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  background: rgba(255,255,255,0.97);
-  border: 2px solid transparent;
-  border-radius: 18px;
-  padding: 0.55rem 0.55rem 0.55rem 1rem;
+  gap: 0.5rem;
+  background: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 22px;
+  padding: 0.5rem 0.55rem 0.5rem 0.85rem;
   box-shadow:
-    0 8px 40px rgba(0,0,0,0.3),
-    0 2px 8px rgba(0,0,0,0.2),
-    inset 0 1px 0 rgba(255,255,255,0.8);
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
-}
-.hcs-search-bar--focused {
-  border-color: var(--color-primary);
-  box-shadow:
-    0 8px 40px rgba(0,0,0,0.3),
-    0 0 0 5px rgba(192,41,60,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.8);
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 24px 64px -14px rgba(0, 0, 0, 0.6),
+    0 0 45px rgba(225, 29, 72, 0.16),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Compass icon */
-.hcs-search-icon {
+.hcs-search-bar--focused {
+  border-color: #E11D48;
+  box-shadow:
+    0 0 0 4px rgba(225, 29, 72, 0.22),
+    0 28px 75px -12px rgba(0, 0, 0, 0.7),
+    0 0 60px rgba(225, 29, 72, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* Compass Shield Icon Badge */
+.hcs-search-icon-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  background: #FFF1F2;
+  border: 1px solid #FFE4E6;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: #BE123C;
   flex-shrink: 0;
-  color: var(--color-primary);
-  transition: color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(190, 18, 60, 0.1);
+  transition: transform 0.25s ease, background 0.25s ease;
 }
-.hcs-search-bar--focused .hcs-search-icon { color: var(--color-primary-dark); }
 
-/* Input */
-.hcs-search-input {
+.hcs-search-bar--focused .hcs-search-icon-badge {
+  background: #FFE4E6;
+  color: #9F1239;
+  transform: rotate(25deg);
+}
+
+.hcs-search-compass {
+  transition: transform 0.3s ease;
+}
+
+/* Input Wrapper & Typewriter Input */
+.hcs-input-inner {
   flex: 1;
   min-width: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 0.35rem;
+}
+
+.hcs-search-input {
+  width: 100%;
   border: none;
   background: transparent;
   font-family: var(--font-body);
-  font-size: 0.93rem;
-  font-weight: 500;
-  color: var(--color-ink);
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #0F172A;
   outline: none;
-}
-.hcs-search-input::placeholder {
-  color: var(--color-ink-tertiary);
-  transition: opacity 0.3s ease;
+  letter-spacing: -0.01em;
 }
 
-/* Duration pill group */
+.hcs-search-input::placeholder {
+  color: #94A3B8;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.hcs-clear-btn {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  background: #F1F5F9 !important;
+  color: #64748B !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+  transition: all 0.15s ease;
+  margin-left: 0.25rem;
+}
+
+.hcs-clear-btn:hover {
+  background: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+/* Trip Duration Segmented Control */
 .hcs-duration-group {
   display: flex;
-  gap: 0.15rem;
-  background: var(--color-canvas-subtle);
-  border-radius: 11px;
-  padding: 0.18rem;
+  gap: 2px;
+  background: #F1F5F9;
+  border-radius: 14px;
+  padding: 3px;
   flex-shrink: 0;
 }
+
 .hcs-dur-btn {
-  padding: 0.28rem 0.6rem;
-  border-radius: 8px;
-  border: none;
-  background: transparent;
-  color: var(--color-ink-secondary);
-  font-size: 0.71rem;
-  font-weight: 800;
+  padding: 0.38rem 0.75rem !important;
+  border-radius: 11px !important;
+  border: none !important;
+  background: transparent !important;
+  color: #64748B !important;
+  font-size: 0.76rem !important;
+  font-weight: 800 !important;
   font-family: var(--font-body);
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.15s ease;
-  letter-spacing: 0.02em;
-}
-.hcs-dur-btn--active {
-  background: var(--color-primary);
-  color: #fff;
-  box-shadow: 0 2px 6px rgba(192,41,60,0.35);
-}
-.hcs-dur-btn:hover:not(.hcs-dur-btn--active) {
-  background: rgba(0,0,0,0.06);
-  color: var(--color-ink);
+  box-shadow: none !important;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  letter-spacing: 0.01em;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Vertical divider */
+.hcs-dur-short {
+  display: none;
+}
+
+.hcs-dur-btn:hover:not(.hcs-dur-btn--active) {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #0F172A !important;
+}
+
+.hcs-dur-btn--active {
+  background: linear-gradient(135deg, #E11D48 0%, #BE123C 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(225, 29, 72, 0.35) !important;
+  transform: scale(1.02);
+}
+
+/* Vertical Divider */
 .hcs-divider {
   width: 1px;
-  height: 28px;
-  background: var(--color-rule);
+  height: 30px;
+  background: #E2E8F0;
   flex-shrink: 0;
+  margin: 0 0.15rem;
 }
 
-/* CTA Button */
+/* ── Primary CTA Button (Plan My Trip) ── */
 .hcs-cta {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
-  padding: 0.7rem 1.25rem;
-  border-radius: 14px;
-  border: none;
-  background: linear-gradient(135deg, #c0293c 0%, #7a1626 100%);
-  color: #fff;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem !important;
+  border-radius: 16px !important;
+  border: none !important;
+  background: linear-gradient(135deg, #E11D48 0%, #BE123C 50%, #9F1239 100%) !important;
+  color: #ffffff !important;
   font-family: var(--font-body);
-  font-size: 0.86rem;
-  font-weight: 800;
+  font-size: 0.9rem !important;
+  font-weight: 800 !important;
   letter-spacing: 0.01em;
   white-space: nowrap;
   flex-shrink: 0;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
-  box-shadow: 0 4px 16px rgba(192,41,60,0.5);
-  min-width: 130px;
+  box-shadow: 0 6px 20px rgba(225, 29, 72, 0.45) !important;
+  min-width: 145px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.hcs-cta:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(192,41,60,0.6);
-}
-.hcs-cta:active:not(:disabled) { transform: translateY(0); }
-.hcs-cta:disabled { opacity: 0.5; cursor: not-allowed; box-shadow: none; }
 
-/* Loading spinner */
+.hcs-cta:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(225, 29, 72, 0.6) !important;
+}
+
+.hcs-cta:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+}
+
+.hcs-cta-arrow {
+  transition: transform 0.2s ease;
+}
+
+.hcs-cta:hover .hcs-cta-arrow {
+  transform: translateX(3px);
+}
+
+/* Shimmer beam across CTA */
+.hcs-cta::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.22) 45%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.22) 55%,
+    transparent 80%
+  );
+  transform: rotate(25deg) translateX(-150%);
+  animation: hcsCtaShimmer 4.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes hcsCtaShimmer {
+  0%   { transform: rotate(25deg) translateX(-150%); }
+  25%  { transform: rotate(25deg) translateX(150%); }
+  100% { transform: rotate(25deg) translateX(150%); }
+}
+
 .hcs-cta__spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 2.5px solid rgba(255,255,255,0.3);
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
   border-top-color: #fff;
   border-radius: 50%;
   animation: hcsSpin 0.7s linear infinite;
 }
+
 @keyframes hcsSpin { to { transform: rotate(360deg); } }
 
-/* ── Autocomplete Dropdown ── */
+/* ── Smart Autocomplete & Quick Inspiration Floating Dropdown ── */
 .hcs-autocomplete {
   position: absolute;
-  top: calc(100% + 8px);
-  left: 0; right: 0;
-  background: #fff;
-  border: 1px solid var(--color-rule);
-  border-radius: 16px;
-  box-shadow: 0 16px 48px rgba(0,0,0,0.18), 0 4px 12px rgba(0,0,0,0.1);
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  box-shadow:
+    0 24px 64px -12px rgba(0, 0, 0, 0.35),
+    0 8px 24px -4px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   z-index: 200;
-  animation: hcsFadeSlideDown 0.15s ease both;
+  animation: hcsFadeSlideDown 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+  text-align: left;
 }
+
+.hcs-dropdown-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.15rem 0.45rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #94A3B8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Autocomplete item */
 .hcs-autocomplete__item {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  padding: 0.75rem 1.1rem;
+  justify-content: space-between;
+  padding: 0.8rem 1.15rem;
   border: none;
-  border-bottom: 1px solid var(--color-rule);
+  border-bottom: 1px solid #F1F5F9;
   background: none;
-  text-align: left;
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 0.87rem;
-  font-weight: 600;
-  color: var(--color-ink);
-  transition: background 0.12s ease;
+  transition: all 0.15s ease;
 }
-.hcs-autocomplete__item:last-child { border-bottom: none; }
-.hcs-autocomplete__item:hover { background: var(--color-primary-light); }
-.hcs-autocomplete__pin { color: var(--color-primary); flex-shrink: 0; }
-.hcs-autocomplete__city { flex: 1; }
-.hcs-autocomplete__cta {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-left: auto;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-}
-.hcs-autocomplete__item:hover .hcs-autocomplete__cta { opacity: 1; }
 
-/* ── Mood Chips Row ── */
+.hcs-autocomplete__item:last-child {
+  border-bottom: none;
+}
+
+.hcs-autocomplete__item:hover {
+  background: #FFF1F2;
+}
+
+.hcs-autocomplete__item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hcs-autocomplete__pin-ring {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #FFF1F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #BE123C;
+  flex-shrink: 0;
+}
+
+.hcs-autocomplete__city-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hcs-autocomplete__city {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.hcs-autocomplete__state {
+  font-size: 0.72rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.hcs-autocomplete__item-right {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.hcs-autocomplete__rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #92400E;
+  background: #FEF3C7;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+}
+
+.hcs-autocomplete__cta {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #BE123C;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(190, 18, 60, 0.08);
+  opacity: 0.9;
+  transition: all 0.15s ease;
+}
+
+.hcs-autocomplete__item:hover .hcs-autocomplete__cta {
+  background: #BE123C;
+  color: #ffffff;
+}
+
+/* Quick Inspirations Grid in Dropdown */
+.hcs-dropdown-inspirations {
+  padding-bottom: 0.5rem;
+}
+
+.hcs-inspiration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem 0.65rem;
+}
+
+.hcs-inspiration-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.18s ease;
+}
+
+.hcs-inspiration-card:hover {
+  background: #FFF1F2;
+  border-color: #FECDD3;
+  transform: translateY(-1.5px);
+}
+
+.hcs-inspiration-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.hcs-inspiration-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hcs-inspiration-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.hcs-inspiration-sub {
+  font-size: 0.68rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.hcs-inspiration-arrow {
+  color: #94A3B8;
+  transition: transform 0.18s ease;
+}
+
+.hcs-inspiration-card:hover .hcs-inspiration-arrow {
+  color: #BE123C;
+  transform: translateX(2px);
+}
+
+/* ── Frosted Glass Mood / Category Filter Row ── */
 .hcs-mood-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
-  animation: hcsFadeSlideDown 0.8s 0.2s ease both;
+  gap: 0.55rem;
+  animation: hcsFadeSlideDown 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
 .hcs-mood {
   display: flex;
   align-items: center;
-  gap: 0.38rem;
-  padding: 0.42rem 0.95rem;
-  border-radius: 100px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.09);
-  color: rgba(255,255,255,0.78);
+  gap: 0.42rem;
+  padding: 0.45rem 1.05rem !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   font-family: var(--font-body);
-  font-size: 0.81rem;
-  font-weight: 600;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
   cursor: pointer;
-  backdrop-filter: blur(6px);
-  transition: all 0.22s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
   letter-spacing: 0.01em;
 }
+
 .hcs-mood:hover {
-  background: rgba(255,255,255,0.18);
-  border-color: rgba(255,255,255,0.4);
-  color: #fff;
-  transform: translateY(-1px);
-}
-.hcs-mood--active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
-  box-shadow: 0 4px 14px rgba(192,41,60,0.45);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* ── Quick Picks ── */
+.hcs-mood--active {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  font-weight: 800 !important;
+}
+
+.hcs-mood-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* ── Trending Hotspots Pill Bar with Ratings ── */
 .hcs-picks {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.55rem;
   justify-content: center;
-  animation: hcsFadeSlideDown 0.85s 0.25s ease both;
+  animation: hcsFadeSlideDown 0.85s 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
 .hcs-picks__label {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  font-size: 0.73rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.45);
-  letter-spacing: 0.04em;
+  gap: 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hcs-picks__label svg { color: #ff6b6b; }
-.hcs-pick-btn {
-  padding: 0.28rem 0.78rem;
-  border-radius: 100px;
-  border: 1px solid rgba(255,255,255,0.16);
-  background: rgba(255,255,255,0.07);
-  color: rgba(255,255,255,0.72);
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 700;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  transition: all 0.2s ease;
-  letter-spacing: 0.01em;
-}
-.hcs-pick-btn:hover {
-  background: rgba(255,255,255,0.18);
-  border-color: rgba(255,255,255,0.35);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+.hcs-flame-icon {
+  color: #FF5E62;
+  animation: dishlyPulse 2s infinite ease-in-out;
 }
 
-/* ── Shared entry animation ── */
+.hcs-picks-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.hcs-pick-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.85rem !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-family: var(--font-body);
+  font-size: 0.79rem !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) !important;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hcs-pick-btn:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+}
+
+.hcs-pick-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.68rem;
+  color: #FDE047;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+/* Surprise Me Button */
+.hcs-pick-btn--surprise {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(217, 119, 6, 0.25) 100%) !important;
+  border-color: rgba(245, 158, 11, 0.4) !important;
+  color: #FDE68A !important;
+}
+
+.hcs-pick-btn--surprise:hover {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4) !important;
+}
+
+/* ── Trust & Quality Assurance Ribbon ── */
+.hcs-trust-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+  animation: hcsFadeSlideDown 0.9s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hcs-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hcs-trust-check {
+  color: #10B981;
+}
+
+.hcs-trust-dot {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* Shared Entry Animation */
 @keyframes hcsFadeSlideDown {
-  from { opacity: 0; transform: translateY(-14px); }
+  from { opacity: 0; transform: translateY(-16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Responsive ── */
-@media (max-width: 600px) {
-  .chat-panel {
-    right: 0.75rem;
-    bottom: 5rem;
-    width: calc(100vw - 1.5rem);
-    border-radius: 16px;
-  }
-  .chat-toggle-btn {
-    right: 1rem;
-    bottom: 1.25rem;
-    width: 52px;
-    height: 52px;
-  }
-  .hcs-section { padding: 3.5rem 1rem 2.5rem; }
+/* ── Responsive Adaptations ── */
+@media (max-width: 768px) {
+  .hcs-section { padding: 4rem 1rem 3rem; }
+  .hcs-title { font-size: 1.85rem; }
+  .hcs-subtitle { font-size: 0.88rem; }
   .hcs-search-bar {
     flex-wrap: wrap;
-    padding: 0.6rem;
-    gap: 0.5rem;
+    padding: 0.65rem;
+    gap: 0.6rem;
+    border-radius: 20px;
   }
-  .hcs-search-input { font-size: 0.87rem; }
-  .hcs-duration-group { order: 3; width: 100%; justify-content: center; }
-  .hcs-cta          { order: 4; width: 100%; justify-content: center; }
-  .hcs-title        { font-size: 1.55rem; }
+  .hcs-search-icon-badge {
+    width: 36px;
+    height: 36px;
+  }
+  .hcs-search-input { font-size: 0.9rem; }
+  .hcs-dur-full { display: none; }
+  .hcs-dur-short { display: inline; }
+  .hcs-duration-group {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .hcs-divider { display: none; }
+  .hcs-cta {
+    order: 4;
+    width: 100%;
+    justify-content: center;
+  }
+  .hcs-inspiration-grid {
+    grid-template-columns: 1fr;
+  }
 }
-
 
 
 /* ==========================================================================
@@ -3963,5 +4534,157 @@ header {
   .hero-desktop-arrow {
     display: none !important;
   }
+}
+
+
+
+/* ── Dishly World-Class Luxury Polish & Micro-Interactions ── */
+
+.dishly-toggle-btn {
+  overflow: hidden;
+}
+
+.dishly-toggle-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.25) 45%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    transparent 80%
+  );
+  transform: rotate(25deg) translateX(-150%);
+  animation: dishlySpecularShimmer 5.5s infinite ease-in-out;
+  pointer-events: none;
+  border-radius: 9999px;
+}
+
+@keyframes dishlySpecularShimmer {
+  0%   { transform: rotate(25deg) translateX(-150%); }
+  22%  { transform: rotate(25deg) translateX(150%); }
+  100% { transform: rotate(25deg) translateX(150%); }
+}
+
+/* Chat bubble actions: Audio TTS and Copy Buttons */
+.chat-bubble-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  bottom: 5px;
+  right: 6px;
+  z-index: 2;
+}
+
+.chat-action-icon-btn {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
+  padding: 0 !important;
+  border: none !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px !important;
+  color: var(--color-ink-tertiary) !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+  opacity: 0.75;
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.chat-action-icon-btn:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.1) !important;
+  transform: scale(1.12);
+  color: var(--color-ink) !important;
+}
+
+.chat-action-icon-btn--speaking {
+  opacity: 1 !important;
+  background: #FFE4E6 !important;
+  color: #E11D48 !important;
+  animation: speakingPulse 1.2s infinite;
+}
+
+@keyframes speakingPulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.4); }
+  50% { transform: scale(1.14); box-shadow: 0 0 0 5px rgba(225, 29, 72, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); }
+}
+
+/* Restaurant Identity & Actions */
+.chat-restaurant-identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.chat-restaurant-cuisine-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #FFF1F2;
+  border: 1px solid #FFE4E6;
+  flex-shrink: 0;
+}
+
+.chat-restaurant-reviews {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #78350F;
+  margin-left: 2px;
+}
+
+.chat-restaurant-timings {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.65rem;
+  color: #64748B;
+  background: #F8FAFC;
+  padding: 0.12rem 0.45rem;
+  border-radius: 4px;
+}
+
+.chat-restaurant-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.chat-restaurant-ask-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.22rem 0.55rem !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  border-radius: 7px !important;
+  background: #FFF1F2 !important;
+  color: #BE123C !important;
+  border: 1px solid rgba(190, 18, 60, 0.25) !important;
+  cursor: pointer;
+  box-shadow: none !important;
+  transition: all 0.18s ease;
+}
+
+.chat-restaurant-ask-btn:hover {
+  background: #BE123C !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
 }
 

@@ -3,7 +3,8 @@ import {
   X, Send, Sparkles, ChevronDown, Plus,
   User, MapPin, Mic, MicOff, History,
   Trash2, Copy, Check, MessageSquare,
-  Clock, ArrowRight, RefreshCw, Volume2
+  Clock, ArrowRight, RefreshCw, Volume2, VolumeX,
+  Compass, Flame, Utensils
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import logoMark from '../assets/logo-mark.png';
@@ -25,13 +26,13 @@ import ChatResponseCard from './ChatResponseCards';
 const createGreeting = (city = 'Jaipur') => ({
   id: 'greeting',
   role: 'assistant',
-  text: `Namaste! 🍽️ I'm Dishly. What would you like to eat in ${city}? Ask me for iconic restaurants, famous street food, or pure veg spots!`,
+  text: `Namaste! 🍽️ I'm Dishly, your LukAround culinary concierge. What would you love to eat in ${city}? Ask me for iconic restaurants, famous street food, pure veg spots, or rooftop dining!`,
   type: 'text',
   suggestions: [
-    `🍛 Top restaurants`,
-    `🍢 Street food`,
-    `🥗 Pure veg spots`,
-    `🍷 Rooftop dining`
+    `🍛 Top restaurants in ${city}`,
+    `🍢 Famous street food in ${city}`,
+    `🥗 Pure veg spots in ${city}`,
+    `🍷 Rooftop dining in ${city}`
   ]
 });
 
@@ -55,6 +56,7 @@ function ChatMessage({ msg, isNew, onSelectSuggestion }) {
   const [displayed, setDisplayed] = useState(isNew && isBot ? '' : msg.text);
   const [done, setDone] = useState(!isNew || !isBot);
   const [copied, setCopied] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const cleanupRef = useRef(null);
 
   useEffect(() => {
@@ -63,17 +65,45 @@ function ChatMessage({ msg, isNew, onSelectSuggestion }) {
       msg.text,
       (current) => setDisplayed(current),
       () => setDone(true),
-      22
+      20
     );
     cleanupRef.current = cleanup;
     return cleanup;
   }, [msg.text, isNew, isBot]);
+
+  // Clean up speech synthesis on unmount
+  useEffect(() => {
+    return () => {
+      if (isSpeaking && typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, [isSpeaking]);
 
   const handleCopy = () => {
     if (!msg.text) return;
     navigator.clipboard?.writeText(msg.text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleToggleSpeak = () => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+      return;
+    }
+    window.speechSynthesis.cancel();
+    // Clean emojis and decorative symbols for smooth speech
+    const cleanText = (msg.text || '').replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F1E0}-\u{1F1FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '');
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.rate = 1.0;
+    utterance.pitch = 1.0;
+    utterance.onend = () => setIsSpeaking(false);
+    utterance.onerror = () => setIsSpeaking(false);
+    setIsSpeaking(true);
+    window.speechSynthesis.speak(utterance);
   };
 
   return (
@@ -92,17 +122,28 @@ function ChatMessage({ msg, isNew, onSelectSuggestion }) {
             {isBot && !done && <span className="chat-cursor">▌</span>}
           </div>
 
-          {/* Copy action for bot messages */}
+          {/* Action buttons for bot messages */}
           {isBot && done && msg.text && msg.id !== 'greeting' && (
-            <button
-              type="button"
-              className="chat-copy-btn"
-              onClick={handleCopy}
-              title={copied ? "Copied to clipboard!" : "Copy response"}
-              aria-label="Copy text"
-            >
-              {copied ? <Check size={12} color="#10B981" /> : <Copy size={12} />}
-            </button>
+            <div className="chat-bubble-actions">
+              <button
+                type="button"
+                className={`chat-action-icon-btn ${isSpeaking ? 'chat-action-icon-btn--speaking' : ''}`}
+                onClick={handleToggleSpeak}
+                title={isSpeaking ? "Stop voice readout" : "Listen to Dishly (Voice Readout)"}
+                aria-label="Listen to message"
+              >
+                {isSpeaking ? <VolumeX size={12} color="#E11D48" /> : <Volume2 size={12} />}
+              </button>
+              <button
+                type="button"
+                className="chat-action-icon-btn"
+                onClick={handleCopy}
+                title={copied ? "Copied to clipboard!" : "Copy response"}
+                aria-label="Copy text"
+              >
+                {copied ? <Check size={12} color="#10B981" /> : <Copy size={12} />}
+              </button>
+            </div>
           )}
         </div>
 
@@ -115,6 +156,7 @@ function ChatMessage({ msg, isNew, onSelectSuggestion }) {
               city={msg.city}
               days={msg.days}
               compact
+              onSelectSuggestion={onSelectSuggestion}
             />
           </div>
         )}
@@ -126,10 +168,11 @@ function ChatMessage({ msg, isNew, onSelectSuggestion }) {
               <button
                 key={i}
                 type="button"
-                className="chat-chip"
+                className="chat-chip dishly-smart-chip"
                 onClick={() => onSelectSuggestion && onSelectSuggestion(s)}
               >
-                {s}
+                <span>{s}</span>
+                <Sparkles size={11} className="dishly-chip-sparkle" />
               </button>
             ))}
           </div>
@@ -152,8 +195,8 @@ function TypingIndicator() {
       <div className="chat-avatar chat-avatar-bot dishly-bot-avatar">
         <img src={logoMark} alt="Dishly AI" className="dishly-avatar-logo" />
       </div>
-      <div className="chat-bubble chat-bubble-bot chat-typing-indicator">
-        <span /><span /><span />
+      <div className="chat-bubble chat-bubble-bot chat-typing-indicator dishly-typing-bubble">
+        <span className="dishly-dot" /><span className="dishly-dot" /><span className="dishly-dot" />
       </div>
     </div>
   );
@@ -361,9 +404,12 @@ export default function AiChatWidget() {
 
   // ── Send Message ─────────────────────────────────────────────────────────────
   const handleSend = useCallback(async (textOverride) => {
-    const text = (textOverride || inputText).trim();
-    if (!text || isLoading) return;
+    const rawText = (textOverride || inputText).trim();
+    // If clicked while empty, act as a Quick Food Discover prompt for the active city
+    const text = rawText || `Top restaurants and famous food in ${contextCity}`;
+    if (isLoading) return;
     setInputText('');
+    if (inputRef.current) inputRef.current.style.height = '40px';
 
     if (isListening) {
       recognitionRef.current?.stop();
@@ -505,52 +551,66 @@ export default function AiChatWidget() {
 
   return (
     <>
-      {/* ── Floating Toggle Button ── */}
-      <button
-        type="button"
-        className={`dishly-toggle-btn ${isOpen ? 'dishly-toggle-btn--open' : ''} ${pulseActive && !isOpen ? 'dishly-toggle-btn--pulse' : ''}`}
-        onClick={() => setIsOpen(prev => !prev)}
-        aria-label={isOpen ? 'Close Dishly' : 'Open Dishly — LukAround Food AI'}
-        title="Dishly — LukAround Food & Dining AI"
-      >
-        {isOpen ? (
-          <ChevronDown size={24} strokeWidth={2.6} color="#FFFFFF" />
-        ) : (
-          <div className="dishly-toggle-inner">
-            <div className="dishly-toggle-logo-ring">
-              <img src={logoMark} alt="LukAround Logo" className="dishly-toggle-logo" />
-            </div>
-            <div className="dishly-toggle-text-wrap">
-              <span className="dishly-toggle-title">Dishly</span>
-              <span className="dishly-toggle-tag">FOOD AI</span>
-            </div>
-            <Sparkles size={13} className="dishly-toggle-sparkle" />
+      {/* ── Floating Luxury Launcher Capsule ── */}
+      <div className="dishly-launcher-wrap">
+        {!isOpen && (
+          <div className="dishly-launcher-hover-pill">
+            <Sparkles size={12} className="dishly-hover-sparkle" />
+            <span>Craving food in {contextCity}? Ask Dishly ✨</span>
           </div>
         )}
-        {!isOpen && messages.length > 1 && (
-          <span className="dishly-unread-dot" />
-        )}
-      </button>
 
-      {/* ── Dishly Chat Panel ── */}
+        <button
+          type="button"
+          className={`dishly-toggle-btn ${isOpen ? 'dishly-toggle-btn--open' : ''} ${pulseActive && !isOpen ? 'dishly-toggle-btn--pulse' : ''}`}
+          onClick={() => setIsOpen(prev => !prev)}
+          aria-label={isOpen ? 'Close Dishly' : 'Open Dishly — LukAround Food AI'}
+          title="Dishly — LukAround Culinary Concierge"
+        >
+          {isOpen ? (
+            <ChevronDown size={24} strokeWidth={2.8} color="#FFFFFF" />
+          ) : (
+            <div className="dishly-toggle-inner">
+              <div className="dishly-toggle-logo-ring">
+                <img src={logoMark} alt="LukAround Logo" className="dishly-toggle-logo" />
+              </div>
+              <div className="dishly-toggle-text-wrap">
+                <span className="dishly-toggle-title">Dishly</span>
+                <span className="dishly-toggle-tag">AI CONCIERGE</span>
+              </div>
+              <div className="dishly-toggle-sparkle-pill">
+                <Sparkles size={12} />
+              </div>
+            </div>
+          )}
+          {!isOpen && messages.length > 1 && (
+            <span className="dishly-unread-dot" />
+          )}
+        </button>
+      </div>
+
+      {/* ── World-Class Dishly Chat Panel ── */}
       <div className={`chat-panel dishly-panel ${isOpen ? 'chat-panel--open' : ''}`}>
         
-        {/* ── Header ── */}
+        {/* ── Luxury Header ── */}
         <div className="chat-panel-header dishly-header">
           <div className="chat-panel-header-left dishly-header-left">
-            {/* Branded LukAround Logo Box */}
-            <div className="dishly-logo-badge" title="Powered by LukAround">
+            {/* Branded LukAround Logo Box with Ambient Glow */}
+            <div className="dishly-logo-badge" title="Official LukAround Culinary AI">
               <img src={logoMark} alt="LukAround" className="dishly-header-logo-img" />
               <span className="dishly-online-beacon" />
             </div>
             <div>
               <div className="dishly-title-row">
                 <span className="dishly-brand-name">Dishly</span>
-                <span className="dishly-ai-badge">AI FOOD GUIDE</span>
+                <span className="dishly-ai-badge">
+                  <Sparkles size={10} />
+                  <span>AI FOOD CONCIERGE</span>
+                </span>
               </div>
               <div className="chat-header-sub dishly-sub">
                 <span className="chat-online-dot" />
-                <span>LukAround Culinary Concierge • <strong>{contextCity}</strong></span>
+                <span>LukAround Culinary Radar • <strong className="dishly-current-city">{contextCity}</strong></span>
               </div>
             </div>
           </div>
@@ -562,10 +622,10 @@ export default function AiChatWidget() {
               type="button"
               className={`chat-header-btn dishly-action-btn ${showHistory ? 'dishly-action-btn--active' : ''}`}
               onClick={() => setShowHistory(prev => !prev)}
-              title={showHistory ? "Back to Chat" : "View Chat History"}
+              title={showHistory ? "Back to Chat" : "View Saved Conversations"}
               aria-label="View Chat History"
             >
-              <History size={15} strokeWidth={2.4} color="#FFFFFF" />
+              <History size={16} strokeWidth={2.4} color="#FFFFFF" />
               {sessions.length > 0 && (
                 <span className="dishly-history-badge">{sessions.length}</span>
               )}
@@ -574,9 +634,9 @@ export default function AiChatWidget() {
             {/* Start New Chat Button */}
             <button
               type="button"
-              className="chat-header-btn dishly-action-btn"
+              className="chat-header-btn dishly-action-btn dishly-new-chat-btn"
               onClick={handleStartNewChat}
-              title="Start New Chat Conversation"
+              title="Start New Conversation"
               aria-label="Start New Chat"
             >
               <Plus size={16} strokeWidth={2.6} color="#FFFFFF" />
@@ -595,11 +655,11 @@ export default function AiChatWidget() {
           </div>
         </div>
 
-        {/* ── Location Quick-Adaptation Bar ── */}
+        {/* ── Location Quick-Adaptation Ribbon ── */}
         <div className="chat-location-bar dishly-location-bar">
           <div className="chat-location-bar-label">
-            <MapPin size={11} strokeWidth={2.5} />
-            <span>Places:</span>
+            <Compass size={12} strokeWidth={2.5} />
+            <span>Destinations:</span>
           </div>
           <div className="chat-location-chips">
             {DINING_LOCATIONS.map((loc) => {
@@ -612,7 +672,7 @@ export default function AiChatWidget() {
                   onClick={() => handleSelectLocation(loc)}
                   title={`Adapt dining guide to ${loc}`}
                 >
-                  {loc}
+                  <span>{loc}</span>
                 </button>
               );
             })}
@@ -633,17 +693,19 @@ export default function AiChatWidget() {
                 onClick={handleStartNewChat}
               >
                 <Plus size={14} />
-                <span>New Chat</span>
+                <span>New Conversation</span>
               </button>
             </div>
 
             <div className="dishly-history-list">
               {sessions.length === 0 ? (
                 <div className="dishly-history-empty">
-                  <MessageSquare size={32} strokeWidth={1.5} color="var(--color-ink-tertiary)" />
+                  <div className="dishly-empty-icon-ring">
+                    <MessageSquare size={30} strokeWidth={1.7} color="var(--color-primary)" />
+                  </div>
                   <p className="dishly-history-empty-title">No conversations saved yet</p>
                   <p className="dishly-history-empty-sub">
-                    Ask Dishly about restaurants, street food, or dining tips to save your culinary chats here.
+                    Ask Dishly about restaurants, street food, or culinary gems to save your conversation history here.
                   </p>
                 </div>
               ) : (
@@ -657,7 +719,7 @@ export default function AiChatWidget() {
                       onClick={() => handleSelectSession(sess)}
                     >
                       <div className="dishly-history-item-icon">
-                        <MessageSquare size={14} color={isActive ? "var(--color-primary)" : "var(--color-ink-secondary)"} />
+                        <Utensils size={14} color={isActive ? "var(--color-primary)" : "var(--color-ink-secondary)"} />
                       </div>
                       <div className="dishly-history-item-body">
                         <div className="dishly-history-item-title">{sess.title}</div>
@@ -736,7 +798,7 @@ export default function AiChatWidget() {
           </div>
         )}
 
-        {/* ── Input Area ── */}
+        {/* ── Modern Floating Input Dock ── */}
         <div className="chat-input-area dishly-input-area">
           <textarea
             ref={inputRef}
@@ -772,23 +834,23 @@ export default function AiChatWidget() {
             )}
           </button>
 
-          {/* Send Button */}
+          {/* Send / Quick Discover Button */}
           <button
             type="button"
-            className={`chat-send-btn dishly-send-btn ${inputText.trim() ? 'chat-send-btn--active' : ''}`}
+            className={`chat-send-btn dishly-send-btn ${inputText.trim() ? 'dishly-send-btn--active' : 'dishly-send-btn--ready'}`}
             onClick={() => handleSend()}
-            disabled={!inputText.trim() || isLoading}
-            title="Send message"
-            aria-label="Send message"
+            disabled={isLoading}
+            title={inputText.trim() ? "Send message (Enter)" : `Quick Ask: Top food in ${contextCity}`}
+            aria-label={inputText.trim() ? "Send message" : `Ask Dishly for food in ${contextCity}`}
           >
-            <Send size={15} strokeWidth={2.4} color={inputText.trim() ? '#FFFFFF' : 'inherit'} />
+            <Send size={16} strokeWidth={2.4} />
           </button>
         </div>
 
         <div className="chat-input-hint dishly-input-hint">
-          <span>Powered by <strong>LukAround</strong></span>
+          <span className="dishly-hint-badge">⚡ LukAround AI</span>
           <span>•</span>
-          <span>Press Enter to send · Shift+Enter for new line</span>
+          <span>Press Enter to send · Click plane to discover food</span>
         </div>
       </div>
     </>
