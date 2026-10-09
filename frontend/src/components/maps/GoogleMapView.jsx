@@ -14,7 +14,10 @@ import {
   Layers,
   ShieldCheck,
   AlertCircle,
-  Info
+  Info,
+  Key,
+  X,
+  Check
 } from 'lucide-react';
 import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../../utils/googleMaps';
 
@@ -62,6 +65,24 @@ function createCustomLeafletIcon({ type = 'attraction', isSelected = false, labe
   });
 }
 
+const TILE_PROVIDERS = {
+  google: {
+    name: 'Google Maps',
+    url: 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+    attribution: '© Google Maps'
+  },
+  osm: {
+    name: 'OpenStreetMap',
+    url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attribution: '© OpenStreetMap contributors'
+  },
+  satellite: {
+    name: 'Satellite',
+    url: 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+    attribution: '© Google Maps Imagery'
+  }
+};
+
 export default function GoogleMapView({
   markers = [],
   center = { lat: 21.7679, lng: 78.8718 }, // Default to India center
@@ -80,14 +101,28 @@ export default function GoogleMapView({
   const googleMapRef = useRef(null);
   const leafletMarkersRef = useRef({});
   const googleMarkersRef = useRef({});
+  const activeTileLayerRef = useRef(null);
 
   const [mapEngine, setMapEngine] = useState('loading'); // 'google', 'leaflet', 'error'
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [activeTileLayer, setActiveTileLayer] = useState('streets');
+  const [tileStyle, setTileStyle] = useState('google'); // 'google' | 'satellite' | 'osm'
   const [currentZoom, setCurrentZoom] = useState(zoom);
 
-  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-  const isGoogleKeyConfigured = Boolean(apiKey && !apiKey.includes('your_google_maps') && apiKey.length > 20);
+  // User-configured API key from localStorage or .env
+  const [customApiKey, setCustomApiKey] = useState(() => {
+    try {
+      return typeof window !== 'undefined' ? (localStorage.getItem('user_google_maps_api_key') || '') : '';
+    } catch {
+      return '';
+    }
+  });
+  const [showApiKeyModal, setShowApiKeyModal] = useState(false);
+  const [apiKeyInput, setApiKeyInput] = useState('');
+  const [apiSaveFeedback, setApiSaveFeedback] = useState(null);
+
+  const envKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  const effectiveApiKey = (customApiKey && customApiKey.trim()) || (envKey && !envKey.includes('your_google_maps') ? envKey.trim() : '');
+  const isGoogleKeyConfigured = Boolean(effectiveApiKey && effectiveApiKey.length > 20);
 
   // Normalize markers
   const validMarkers = useMemo(() => {
@@ -126,7 +161,7 @@ export default function GoogleMapView({
       if (isGoogleKeyConfigured) {
         try {
           const loader = new Loader({
-            apiKey: apiKey,
+            apiKey: effectiveApiKey,
             version: 'weekly',
             libraries: ['places']
           });
@@ -168,11 +203,14 @@ export default function GoogleMapView({
         attributionControl: false
       });
 
-      // Default Clean Street Tile Layer
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19,
-        subdomains: 'abcd'
+      // Clean Tile Layer (Google Maps Roadmap or OpenStreetMap, 100% key-free and no watermark)
+      const provider = TILE_PROVIDERS[tileStyle] || TILE_PROVIDERS.google;
+      const baseLayer = L.tileLayer(provider.url, {
+        maxZoom: 20,
+        subdomains: 'abcd',
+        attribution: provider.attribution
       }).addTo(lMap);
+      activeTileLayerRef.current = baseLayer;
 
       lMap.on('zoomend', () => {
         setCurrentZoom(lMap.getZoom());
@@ -192,7 +230,27 @@ export default function GoogleMapView({
       }
       googleMapRef.current = null;
     };
-  }, [isGoogleKeyConfigured, apiKey]);
+  }, [isGoogleKeyConfigured, effectiveApiKey]);
+
+  // Dynamic Tile Layer Switcher (Street / Satellite / OpenStreetMap)
+  useEffect(() => {
+    if (mapEngine === 'leaflet' && leafletMapRef.current && activeTileLayerRef.current) {
+      const provider = TILE_PROVIDERS[tileStyle] || TILE_PROVIDERS.google;
+      leafletMapRef.current.removeLayer(activeTileLayerRef.current);
+      const newLayer = L.tileLayer(provider.url, {
+        maxZoom: 20,
+        subdomains: 'abcd',
+        attribution: provider.attribution
+      }).addTo(leafletMapRef.current);
+      activeTileLayerRef.current = newLayer;
+    } else if (mapEngine === 'google' && googleMapRef.current) {
+      if (tileStyle === 'satellite') {
+        googleMapRef.current.setMapTypeId('hybrid');
+      } else {
+        googleMapRef.current.setMapTypeId('roadmap');
+      }
+    }
+  }, [tileStyle, mapEngine]);
 
   // Update center & zoom if changed
   useEffect(() => {
@@ -417,6 +475,47 @@ export default function GoogleMapView({
     }
   };
 
+  const cycleTileLayer = () => {
+    const keys = ['google', 'satellite', 'osm'];
+    const nextIdx = (keys.indexOf(tileStyle) + 1) % keys.length;
+    setTileStyle(keys[nextIdx]);
+  };
+
+  const handleSaveApiKey = (e) => {
+    if (e) e.preventDefault();
+    const cleanKey = (apiKeyInput || '').trim();
+    if (cleanKey.length > 20) {
+      try {
+        localStorage.setItem('user_google_maps_api_key', cleanKey);
+      } catch (err) {
+        console.error('Failed to save API key to localStorage', err);
+      }
+      setCustomApiKey(cleanKey);
+      setApiSaveFeedback('saved');
+      setTimeout(() => {
+        setApiSaveFeedback(null);
+        setShowApiKeyModal(false);
+      }, 1000);
+    } else {
+      setApiSaveFeedback('invalid');
+    }
+  };
+
+  const handleResetToOpenSource = () => {
+    try {
+      localStorage.removeItem('user_google_maps_api_key');
+    } catch (err) {
+      console.error('Failed to remove API key from localStorage', err);
+    }
+    setCustomApiKey('');
+    setApiKeyInput('');
+    setApiSaveFeedback('reset');
+    setTimeout(() => {
+      setApiSaveFeedback(null);
+      setShowApiKeyModal(false);
+    }, 1000);
+  };
+
   const handleResetBounds = () => {
     if (mapEngine === 'leaflet' && leafletMapRef.current) {
       if (validMarkers.length > 1) {
@@ -470,25 +569,28 @@ export default function GoogleMapView({
         }}
       />
 
-      {/* ── Top Status & Engine Bar ── */}
+      {/* ── Top Status, Layer & API Engine Bar ── */}
       <div
         style={{
           position: 'absolute',
           top: '12px',
           left: '12px',
+          right: '56px',
           zIndex: 10,
           display: 'flex',
           alignItems: 'center',
           gap: '8px',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
+          pointerEvents: 'none'
         }}
       >
+        {/* Status Badge */}
         <div
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.94)',
+            backgroundColor: 'rgba(255, 255, 255, 0.96)',
             backdropFilter: 'blur(8px)',
             borderRadius: '9999px',
-            padding: '4px 12px',
+            padding: '5px 12px',
             boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
             display: 'inline-flex',
             alignItems: 'center',
@@ -496,7 +598,8 @@ export default function GoogleMapView({
             fontSize: '11px',
             fontWeight: 700,
             color: '#0F172A',
-            border: '1px solid rgba(226, 232, 240, 0.8)'
+            border: '1px solid rgba(226, 232, 240, 0.9)',
+            pointerEvents: 'auto'
           }}
         >
           <div
@@ -504,29 +607,105 @@ export default function GoogleMapView({
               width: '8px',
               height: '8px',
               borderRadius: '50%',
-              backgroundColor: isGoogleKeyConfigured ? '#10B981' : '#3B82F6'
+              backgroundColor: isGoogleKeyConfigured ? '#10B981' : '#2563EB',
+              boxShadow: isGoogleKeyConfigured ? '0 0 6px #10B981' : '0 0 6px #2563EB'
             }}
           />
-          <span>{isGoogleKeyConfigured ? 'Google Maps JS Engine' : 'Interactive Map (CartoDB / OSM)'}</span>
+          <span>{isGoogleKeyConfigured ? 'Google Maps JS Engine' : 'Open-Source Map Engine (Google & OSM)'}</span>
           <span style={{ color: '#94A3B8' }}>•</span>
           <span style={{ color: '#64748B' }}>{validMarkers.length} Locations</span>
         </div>
 
+        {/* Quick Layer Switcher */}
+        <div
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.96)',
+            backdropFilter: 'blur(8px)',
+            borderRadius: '9999px',
+            padding: '2px 4px',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '3px',
+            border: '1px solid rgba(226, 232, 240, 0.9)',
+            pointerEvents: 'auto'
+          }}
+        >
+          {[
+            { id: 'google', label: 'Roadmap' },
+            { id: 'satellite', label: 'Satellite' },
+            { id: 'osm', label: 'OpenStreetMap' }
+          ].map(layer => {
+            const isActive = tileStyle === layer.id;
+            return (
+              <button
+                key={layer.id}
+                type="button"
+                onClick={() => setTileStyle(layer.id)}
+                style={{
+                  padding: '4px 10px',
+                  fontSize: '11px',
+                  fontWeight: isActive ? 700 : 500,
+                  borderRadius: '9999px',
+                  border: 'none',
+                  backgroundColor: isActive ? '#0F172A' : 'transparent',
+                  color: isActive ? '#FFFFFF' : '#475569',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                {layer.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* User API Key Self-Service Button */}
+        <button
+          type="button"
+          onClick={() => {
+            setApiKeyInput(customApiKey);
+            setShowApiKeyModal(true);
+          }}
+          title="Configure Google Maps API Key or Use Open-Source"
+          style={{
+            backgroundColor: isGoogleKeyConfigured ? 'rgba(240, 253, 244, 0.96)' : 'rgba(255, 255, 255, 0.96)',
+            backdropFilter: 'blur(8px)',
+            border: `1px solid ${isGoogleKeyConfigured ? '#86EFAC' : 'rgba(226, 232, 240, 0.9)'}`,
+            color: isGoogleKeyConfigured ? '#15803D' : '#334155',
+            borderRadius: '9999px',
+            padding: '5px 11px',
+            fontSize: '11px',
+            fontWeight: 600,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '5px',
+            cursor: 'pointer',
+            boxShadow: '0 2px 6px rgba(0,0,0,0.08)',
+            pointerEvents: 'auto'
+          }}
+        >
+          <Key size={12} color={isGoogleKeyConfigured ? '#15803D' : '#64748B'} />
+          <span>{isGoogleKeyConfigured ? 'API Key Active' : 'Self-Config API Key'}</span>
+        </button>
+
+        {/* Verification Link Badge */}
         {!isGoogleKeyConfigured && (
           <div
             style={{
-              backgroundColor: 'rgba(254, 243, 199, 0.95)',
+              backgroundColor: 'rgba(254, 243, 199, 0.96)',
               backdropFilter: 'blur(6px)',
-              border: '1px solid rgba(245, 158, 11, 0.3)',
+              border: '1px solid rgba(245, 158, 11, 0.4)',
               color: '#92400E',
               borderRadius: '9999px',
-              padding: '4px 10px',
+              padding: '5px 11px',
               fontSize: '11px',
               fontWeight: 600,
               display: 'inline-flex',
               alignItems: 'center',
               gap: '4px',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.06)'
+              boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
+              pointerEvents: 'auto'
             }}
           >
             <ShieldCheck size={12} color="#D97706" />
@@ -590,6 +769,53 @@ export default function GoogleMapView({
             }}
           >
             <ZoomOut size={16} />
+          </button>
+
+          <button
+            type="button"
+            onClick={cycleTileLayer}
+            title={`Toggle Basemap Layer (Current: ${TILE_PROVIDERS[tileStyle]?.name || 'Roadmap'})`}
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E2E8F0',
+              borderRadius: '8px',
+              width: '36px',
+              height: '36px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#1E293B',
+              cursor: 'pointer',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+              transition: 'background-color 0.2s'
+            }}
+          >
+            <Layers size={15} />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setApiKeyInput(customApiKey);
+              setShowApiKeyModal(true);
+            }}
+            title="Map Engine & API Key Setup"
+            style={{
+              backgroundColor: isGoogleKeyConfigured ? '#F0FDF4' : '#FFFFFF',
+              border: isGoogleKeyConfigured ? '1px solid #86EFAC' : '1px solid #E2E8F0',
+              borderRadius: '8px',
+              width: '36px',
+              height: '36px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: isGoogleKeyConfigured ? '#15803D' : '#1E293B',
+              cursor: 'pointer',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+              transition: 'background-color 0.2s'
+            }}
+          >
+            <Key size={15} />
           </button>
 
           <button
@@ -672,6 +898,192 @@ export default function GoogleMapView({
           <span>Hotels</span>
         </span>
       </div>
+
+      {/* ── User Self-Service API Key & Engine Modal ── */}
+      {showApiKeyModal && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 100000,
+            backgroundColor: 'rgba(15, 23, 42, 0.65)',
+            backdropFilter: 'blur(4px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '16px'
+          }}
+          onClick={() => setShowApiKeyModal(false)}
+        >
+          <div
+            style={{
+              backgroundColor: '#FFFFFF',
+              borderRadius: '20px',
+              maxWidth: '520px',
+              width: '100%',
+              padding: '24px',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+              border: '1px solid #E2E8F0',
+              position: 'relative'
+            }}
+            onClick={e => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '10px', backgroundColor: '#EFF6FF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Key size={20} color="#2563EB" />
+                </div>
+                <div>
+                  <h3 style={{ margin: 0, fontSize: '17px', fontWeight: 700, color: '#0F172A' }}>Map Engine & API Key Setup</h3>
+                  <p style={{ margin: 0, fontSize: '12px', color: '#64748B' }}>Self-configure your personal Google Maps key or use Open-Source</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowApiKeyModal(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#94A3B8',
+                  cursor: 'pointer',
+                  padding: '6px',
+                  borderRadius: '8px'
+                }}
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {/* Current Active Engine Status */}
+            <div
+              style={{
+                backgroundColor: isGoogleKeyConfigured ? '#F0FDF4' : '#F8FAFC',
+                border: `1px solid ${isGoogleKeyConfigured ? '#BBF7D0' : '#E2E8F0'}`,
+                borderRadius: '12px',
+                padding: '12px 14px',
+                marginBottom: '16px'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                <div
+                  style={{
+                    width: '8px',
+                    height: '8px',
+                    borderRadius: '50%',
+                    backgroundColor: isGoogleKeyConfigured ? '#10B981' : '#2563EB'
+                  }}
+                />
+                <span style={{ fontSize: '13px', fontWeight: 700, color: isGoogleKeyConfigured ? '#166534' : '#1E293B' }}>
+                  {isGoogleKeyConfigured ? 'Google Maps JS Engine Active' : 'Open-Source Map Engine Active (Default)'}
+                </span>
+              </div>
+              <p style={{ margin: 0, fontSize: '12px', color: '#475569', lineHeight: 1.5 }}>
+                {isGoogleKeyConfigured
+                  ? 'Your custom Google Maps API key is loaded. Native vector rendering and official Google controls are active.'
+                  : '100% Free & Open-Source. Powered by OpenStreetMap & Google Maps basemaps. Zero watermark, zero cost, unlimited exploration.'}
+              </p>
+            </div>
+
+            {/* API Key Form */}
+            <form onSubmit={handleSaveApiKey} style={{ marginBottom: '16px' }}>
+              <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#0F172A', marginBottom: '6px' }}>
+                Enter Your Google Maps API Key
+              </label>
+              <div style={{ display: 'flex', gap: '8px', marginBottom: '8px' }}>
+                <input
+                  type="text"
+                  value={apiKeyInput}
+                  onChange={e => setApiKeyInput(e.target.value)}
+                  placeholder="AIzaSy..."
+                  style={{
+                    flex: 1,
+                    padding: '10px 12px',
+                    borderRadius: '10px',
+                    border: '1px solid #CBD5E1',
+                    fontSize: '13px',
+                    fontFamily: 'monospace',
+                    outline: 'none',
+                    transition: 'border-color 0.2s'
+                  }}
+                />
+                <button
+                  type="submit"
+                  style={{
+                    backgroundColor: '#0F172A',
+                    color: '#FFFFFF',
+                    border: 'none',
+                    borderRadius: '10px',
+                    padding: '10px 18px',
+                    fontSize: '13px',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  <Check size={14} />
+                  <span>Save</span>
+                </button>
+              </div>
+
+              {/* Reset to Open Source Option */}
+              {customApiKey && (
+                <button
+                  type="button"
+                  onClick={handleResetToOpenSource}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: '#EF4444',
+                    fontSize: '12px',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    padding: '4px 0'
+                  }}
+                >
+                  ✕ Remove key & switch back to Free Open-Source mode
+                </button>
+              )}
+
+              {/* Feedback messages */}
+              {apiSaveFeedback === 'saved' && (
+                <p style={{ margin: '8px 0 0', fontSize: '12px', color: '#16A34A', fontWeight: 600 }}>
+                  ✓ API key saved! Initializing Google Maps JS Engine...
+                </p>
+              )}
+              {apiSaveFeedback === 'reset' && (
+                <p style={{ margin: '8px 0 0', fontSize: '12px', color: '#2563EB', fontWeight: 600 }}>
+                  ✓ Switched to Free Open-Source Engine.
+                </p>
+              )}
+              {apiSaveFeedback === 'invalid' && (
+                <p style={{ margin: '8px 0 0', fontSize: '12px', color: '#DC2626', fontWeight: 600 }}>
+                  ⚠ Please enter a valid API key (minimum 20 characters).
+                </p>
+              )}
+            </form>
+
+            {/* Explanatory Info Card */}
+            <div
+              style={{
+                backgroundColor: '#F1F5F9',
+                borderRadius: '10px',
+                padding: '12px',
+                fontSize: '11px',
+                color: '#475569',
+                lineHeight: 1.6
+              }}
+            >
+              <div style={{ fontWeight: 700, color: '#1E293B', marginBottom: '4px' }}>💡 Quick Tips:</div>
+              <div>• <strong>No key required:</strong> The default Open-Source Engine is completely free and requires zero setup.</div>
+              <div>• <strong>Zero watermarks:</strong> Clean OpenStreetMap and Google basemaps render crisp tiles.</div>
+              <div>• <strong>Google Maps Links:</strong> All markers, search links, and direction routes open directly in verified Google Maps (api=1).</div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

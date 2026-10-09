@@ -583,10 +583,11 @@ In **APIs & Services > Library**, enable the following four services:
   - Restrict the key to `Geocoding API`, `Directions API`, and `Places API`.
   - **Never expose the server-side API key in frontend code or Git repositories.**
 
-#### 4. Dual-Engine Fallback Architecture
+#### 4. Dual-Engine Architecture & User Self-Service Map Engine
 LukAround features an automatic **Dual-Engine Map System**:
 - **With Valid Google Maps Key**: The embedded maps initialize using `@googlemaps/js-api-loader` with native Google Maps JavaScript vector rendering, styled markers, and info windows.
-- **Without Key or Exceeded Quota**: The application seamlessly activates a vector Leaflet/CartoDB fallback map engine with Google-styled markers and custom info bubbles.
+- **Without Key or Exceeded Quota**: The application seamlessly activates a 100% free, zero-watermark Open-Source engine (Leaflet + OpenStreetMap & Google Roadmap/Satellite basemaps) with Google-styled markers and custom info bubbles.
+- **User Self-Service API Key Manager**: Users can directly enter their own personal Google Maps API key via the map interface (`Self-Config API Key` button) or easily switch back to the built-in free Open-Source engine at any time.
 - **100% Operational Navigation**: Regardless of embedded map API status, every state, city, attraction, and hotel provides fully operational `https://www.google.com/maps/...` search and directions links with the mandatory `api=1` parameter, multi-origin routing (Current GPS Location, Custom Address, City, Railway Station, Airport, Attraction), and travel modes (`driving`, `walking`, `transit`, `bicycling`).
 
 ---
