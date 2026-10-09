@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout';
+import ScrollToTop from './components/common/ScrollToTop';
 
 // India Tourism Discovery Pages
 import Home from './pages/Home';
@@ -34,6 +35,7 @@ export default function App() {
   return (
     <AppProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Public Authentication Pages */}
           <Route path="/login" element={<Login />} />

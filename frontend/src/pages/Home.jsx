@@ -344,7 +344,13 @@ export default function Home() {
             {sortedStates.map((state) => (<StateCard key={state.id} state={state} />))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
-            <Link to="/states" className="cta-btn-primary">
+            <Link
+              to="/states"
+              className="cta-btn-primary"
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+              }}
+            >
               <Compass size={17} />
               <span>Explore More</span>
               <ArrowRight size={16} />
