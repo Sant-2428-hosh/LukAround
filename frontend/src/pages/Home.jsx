@@ -5,7 +5,6 @@ import StateCard from '../components/tourism/StateCard';
 import AttractionCard from '../components/tourism/AttractionCard';
 import CategoryCard from '../components/tourism/CategoryCard';
 import ItineraryCard from '../components/tourism/ItineraryCard';
-import ExploreIndiaMapSection from '../components/maps/ExploreIndiaMapSection';
 import {
   states, cities, attractions, categories, travelStyles, itineraries
 } from '../data/indiaTourismData';
@@ -317,10 +316,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 3. EXPLORE INDIA ON GOOGLE MAPS (Requirement 3) ══ */}
-      <ExploreIndiaMapSection />
-
-      {/* ══ 4. THE MAGNIFICENT 15 STATES ══ */}
+      {/* ══ 3. THE MAGNIFICENT 15 STATES ══ */}
       <section className="section-states">
         <div className="tourism-container">
           <div className="section-header-split">
@@ -357,7 +353,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 5. TRAVEL CATEGORIES ══ */}
+      {/* ══ 4. TRAVEL CATEGORIES ══ */}
       <section className="section-categories">
         <div className="tourism-container">
           <div className="section-header-centered">
@@ -378,7 +374,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 6. ICONS OF THE AGES ══ */}
+      {/* ══ 5. ICONS OF THE AGES ══ */}
       <section className="section-attractions">
         <div className="tourism-container">
           <div className="section-header-split">
@@ -424,7 +420,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 7. TRAVEL STYLES ══ */}
+      {/* ══ 6. TRAVEL STYLES ══ */}
       <section className="section-travel-styles">
         <div className="tourism-container">
           <div className="section-header-centered">
@@ -465,7 +461,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 8. ITINERARIES ══ */}
+      {/* ══ 7. ITINERARIES ══ */}
       <section className="section-itineraries">
         <div className="tourism-container">
           <div className="section-header-split">
@@ -492,7 +488,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 9. GRAND CLOSING CTA ══ */}
+      {/* ══ 8. GRAND CLOSING CTA ══ */}
       <section className="section-grand-cta">
         <div className="grand-cta-bg" />
         <div className="tourism-container" style={{ position: 'relative', zIndex: 2 }}>
