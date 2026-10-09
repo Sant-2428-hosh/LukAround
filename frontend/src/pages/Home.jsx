@@ -346,7 +346,7 @@ export default function Home() {
           <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
             <Link to="/states" className="cta-btn-primary">
               <Compass size={17} />
-              <span>Unveil All 28 States & 8 Union Territories</span>
+              <span>Explore More</span>
               <ArrowRight size={16} />
             </Link>
           </div>
