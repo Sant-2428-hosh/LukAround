@@ -79,6 +79,7 @@ export const INDIA_CENTER = { latitude: 21.7679, longitude: 78.8718, zoom: 4.8 }
  */
 export function resolvePlaceLocation(place) {
   if (!place) return null;
+  if (place._isResolved) return place;
 
   const id = place.id || place.slug || '';
   const name = place.name || place.title || '';
@@ -111,11 +112,41 @@ export function resolvePlaceLocation(place) {
     locationQueryParts.push(country);
   }
   const searchQuery = locationQueryParts.filter(Boolean).join(', ');
-
-  // Verified status
   const locationVerified = hasCoords || !!googlePlaceId;
 
+  // Construct Google Maps search URL directly without recursion
+  const searchParams = new URLSearchParams();
+  searchParams.set('api', '1');
+  if (googlePlaceId) {
+    searchParams.set('query', name || searchQuery);
+    searchParams.set('query_place_id', googlePlaceId);
+  } else if (hasCoords) {
+    searchParams.set('query', `${name} ${latitude},${longitude}`);
+  } else if (address) {
+    searchParams.set('query', `${name}, ${address}`);
+  } else {
+    searchParams.set('query', searchQuery);
+  }
+  const mapsSearchUrl = `https://www.google.com/maps/search/?${searchParams.toString()}`;
+
+  // Construct direct directions URL without recursion
+  const dirParams = new URLSearchParams();
+  dirParams.set('api', '1');
+  if (hasCoords) {
+    dirParams.set('destination', `${latitude},${longitude}`);
+  } else if (address) {
+    dirParams.set('destination', `${name}, ${address}`);
+  } else {
+    dirParams.set('destination', searchQuery);
+  }
+  if (googlePlaceId) {
+    dirParams.set('destination_place_id', googlePlaceId);
+  }
+  dirParams.set('travelmode', 'driving');
+  const directionsUrl = `https://www.google.com/maps/dir/?${dirParams.toString()}`;
+
   return {
+    _isResolved: true,
     id,
     name,
     city,
@@ -129,8 +160,8 @@ export function resolvePlaceLocation(place) {
     searchQuery,
     locationVerified,
     locationSource: hasCoords ? 'geographical_coordinates' : 'place_query',
-    mapsSearchUrl: buildGoogleMapsSearchUrl({ name, address, city, state, latitude, longitude, googlePlaceId }),
-    directionsUrl: buildGoogleMapsDirectionsUrl(null, { name, address, city, state, latitude, longitude, googlePlaceId })
+    mapsSearchUrl,
+    directionsUrl
   };
 }
 
@@ -141,52 +172,59 @@ export function resolvePlaceLocation(place) {
  */
 export function buildGoogleMapsSearchUrl(place) {
   if (!place) return 'https://www.google.com/maps/search/?api=1&query=India';
-
-  const resolved = resolvePlaceLocation(place);
-  const params = new URLSearchParams();
-  params.set('api', '1');
-
-  if (resolved.googlePlaceId) {
-    params.set('query', resolved.name || resolved.searchQuery);
-    params.set('query_place_id', resolved.googlePlaceId);
-  } else if (resolved.hasCoordinates) {
-    // If coordinates exist, use Name + Coordinates for precise Google Maps placement
-    params.set('query', `${resolved.name} ${resolved.latitude},${resolved.longitude}`);
-  } else if (resolved.address) {
-    params.set('query', `${resolved.name}, ${resolved.address}`);
-  } else {
-    params.set('query', resolved.searchQuery);
+  if (typeof place === 'string') {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place)}`;
   }
-
-  return `https://www.google.com/maps/search/?${params.toString()}`;
+  if (place._isResolved && place.mapsSearchUrl) {
+    return place.mapsSearchUrl;
+  }
+  const resolved = resolvePlaceLocation(place);
+  return resolved ? resolved.mapsSearchUrl : 'https://www.google.com/maps/search/?api=1&query=India';
 }
 
 /**
  * Builds official Google Maps Directions URL
  * Format: https://www.google.com/maps/dir/?api=1&destination=ENCODED_DESTINATION
- * Supports optional origin, destination_place_id, origin_place_id, and travelmode
+ * Flexible signature:
+ * - buildGoogleMapsDirectionsUrl(destination)
+ * - buildGoogleMapsDirectionsUrl(destination, origin)
+ * - buildGoogleMapsDirectionsUrl(destination, origin, travelMode)
  */
-export function buildGoogleMapsDirectionsUrl(origin, destination, travelMode = 'driving') {
+export function buildGoogleMapsDirectionsUrl(destOrOrigin, originOrDest = null, travelMode = 'driving') {
+  let destination = destOrOrigin;
+  let origin = originOrDest;
+  let mode = travelMode;
+
+  // Handle travelMode passed as second argument: buildGoogleMapsDirectionsUrl(dest, 'transit')
+  if (typeof originOrDest === 'string' && ['driving', 'walking', 'transit', 'bicycling'].includes(originOrDest.toLowerCase())) {
+    mode = originOrDest;
+    origin = null;
+  }
+
   if (!destination) return 'https://www.google.com/maps/dir/?api=1';
 
   const destResolved = resolvePlaceLocation(destination);
   const params = new URLSearchParams();
   params.set('api', '1');
 
-  // 1. Destination formatting
-  if (destResolved.hasCoordinates) {
-    params.set('destination', `${destResolved.latitude},${destResolved.longitude}`);
-  } else if (destResolved.address) {
-    params.set('destination', `${destResolved.name}, ${destResolved.address}`);
-  } else {
-    params.set('destination', destResolved.searchQuery);
+  // Destination formatting
+  if (destResolved) {
+    if (destResolved.hasCoordinates) {
+      params.set('destination', `${destResolved.latitude},${destResolved.longitude}`);
+    } else if (destResolved.address) {
+      params.set('destination', `${destResolved.name}, ${destResolved.address}`);
+    } else {
+      params.set('destination', destResolved.searchQuery);
+    }
+
+    if (destResolved.googlePlaceId) {
+      params.set('destination_place_id', destResolved.googlePlaceId);
+    }
+  } else if (typeof destination === 'string') {
+    params.set('destination', destination);
   }
 
-  if (destResolved.googlePlaceId) {
-    params.set('destination_place_id', destResolved.googlePlaceId);
-  }
-
-  // 2. Origin formatting (optional)
+  // Origin formatting (optional)
   if (origin) {
     if (typeof origin === 'string' && origin.trim()) {
       params.set('origin', origin.trim());
@@ -208,10 +246,10 @@ export function buildGoogleMapsDirectionsUrl(origin, destination, travelMode = '
     }
   }
 
-  // 3. Travel Mode
+  // Travel Mode
   const validModes = ['driving', 'walking', 'transit', 'bicycling'];
-  const mode = (travelMode || 'driving').toLowerCase();
-  params.set('travelmode', validModes.includes(mode) ? mode : 'driving');
+  const normalizedMode = (mode || 'driving').toLowerCase();
+  params.set('travelmode', validModes.includes(normalizedMode) ? normalizedMode : 'driving');
 
   return `https://www.google.com/maps/dir/?${params.toString()}`;
 }

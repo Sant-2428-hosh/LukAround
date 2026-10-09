@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import SafeImage from './SafeImage';
 import DirectionsModal from './DirectionsModal';
-import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../../utils/googleMaps';
+import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl, getGoogleMapsSearchUrl, getGoogleMapsDirectionsUrl } from '../../utils/googleMaps';
 
 export default function HotelCard({
   hotel,
