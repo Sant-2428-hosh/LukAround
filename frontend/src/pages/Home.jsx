@@ -5,7 +5,7 @@ import StateCard from '../components/tourism/StateCard';
 import AttractionCard from '../components/tourism/AttractionCard';
 import CategoryCard from '../components/tourism/CategoryCard';
 import ItineraryCard from '../components/tourism/ItineraryCard';
-import MapExplorer from '../components/tourism/MapExplorer';
+import ExploreIndiaMapSection from '../components/maps/ExploreIndiaMapSection';
 import {
   states, cities, attractions, categories, travelStyles, itineraries
 } from '../data/indiaTourismData';
@@ -317,25 +317,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 3. INTERACTIVE MAP EXPLORER ══ */}
-      <section className="section-explore-map">
-        <div className="tourism-container">
-          <div className="section-header-centered">
-            <span className="tourism-badge badge-earth"><Globe size={11} /> Interactive State Map & Directory</span>
-            <h2 className="tourism-heading section-heading-xl">
-              Chart Your Own Course<br />
-              <span style={{ color: 'var(--tourism-earth)' }}>Across the Subcontinent</span>
-            </h2>
-            <p className="tourism-subtitle section-subtitle-center">
-              Click any state on the map to instantly preview its crown jewels — legendary forts,
-              serpentine backwaters, tiger reserves, and the local flavours that define a civilisation.
-            </p>
-          </div>
-          <div style={{ marginTop: '2.5rem' }}>
-            <MapExplorer />
-          </div>
-        </div>
-      </section>
+      {/* ══ 3. EXPLORE INDIA ON GOOGLE MAPS (Requirement 3) ══ */}
+      <ExploreIndiaMapSection />
 
       {/* ══ 4. THE MAGNIFICENT 15 STATES ══ */}
       <section className="section-states">

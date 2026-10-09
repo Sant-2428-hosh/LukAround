@@ -3,6 +3,7 @@
  * Precision calculation using Haversine Great-Circle formula
  * LukAround / POLAMA India Travel & Tourism Platform
  */
+import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from './googleMaps';
 
 /**
  * Calculates Haversine distance in kilometers between two GPS coordinates
@@ -71,9 +72,7 @@ export function formatDistanceText(distanceKm, destinationName) {
  * @returns {string} URL
  */
 export function getGoogleMapsSearchUrl(hotel) {
-  if (!hotel) return 'https://www.google.com/maps';
-  const query = `${hotel.name}, ${hotel.address || (hotel.city + ', ' + hotel.state)}`;
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  return buildGoogleMapsSearchUrl(hotel);
 }
 
 /**
@@ -83,16 +82,7 @@ export function getGoogleMapsSearchUrl(hotel) {
  * @returns {string} URL
  */
 export function getGoogleMapsDirectionsUrl(hotel, originCoords = null) {
-  if (!hotel) return 'https://www.google.com/maps';
-  
-  const dest = `${hotel.latitude},${hotel.longitude}`;
-  if (originCoords && originCoords.latitude && originCoords.longitude) {
-    const origin = `${originCoords.latitude},${originCoords.longitude}`;
-    return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${dest}&travelmode=driving`;
-  }
-  
-  // Default to user's current GPS location to destination
-  return `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=driving`;
+  return buildGoogleMapsDirectionsUrl(originCoords, hotel, 'driving');
 }
 
 /**

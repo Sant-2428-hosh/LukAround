@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { cities, states, attractions, itineraries } from '../data/indiaTourismData';
+import { hotels as allHotels } from '../data/hotelsData';
 import AttractionCard from '../components/tourism/AttractionCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import WhereToStaySection from '../components/tourism/WhereToStaySection';
+import GoogleMapView from '../components/maps/GoogleMapView';
+import DirectionsModal from '../components/tourism/DirectionsModal';
+import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../utils/googleMaps';
 import {
   MapPin,
   Calendar,
@@ -18,7 +22,12 @@ import {
   ArrowRight,
   Camera,
   ShieldCheck,
-  Maximize2
+  Maximize2,
+  Navigation,
+  ExternalLink,
+  Search,
+  Filter,
+  Hotel
 } from 'lucide-react';
 
 export default function CityDetail() {
@@ -26,6 +35,14 @@ export default function CityDetail() {
 
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
+
+  // Search & Filter state for city attractions
+  const [attractionSearch, setAttractionSearch] = useState('');
+  const [selectedTypeFilter, setSelectedTypeFilter] = useState('all');
+  const [selectedMarkerId, setSelectedMarkerId] = useState(null);
+
+  // Directions modal
+  const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
 
   const city = cities.find(c =>
     c.id === citySlug || c.id.toLowerCase() === (citySlug || '').toLowerCase()
@@ -39,6 +56,10 @@ export default function CityDetail() {
     a.citySlug === city.id || a.city.toLowerCase() === city.name.toLowerCase()
   );
 
+  const cityHotels = allHotels.filter(h =>
+    h.citySlug === city.id || h.city.toLowerCase() === city.name.toLowerCase()
+  );
+
   const allImages = [
     city.heroImage || city.image,
     ...(city.gallery || [])
@@ -48,6 +69,93 @@ export default function CityDetail() {
     setActivePhotoIndex(idx);
     setGalleryOpen(true);
   };
+
+  // Filtered attractions
+  const filteredAttractions = useMemo(() => {
+    return cityAttractions.filter(a => {
+      const matchesSearch = !attractionSearch.trim() ||
+        a.name.toLowerCase().includes(attractionSearch.toLowerCase()) ||
+        a.shortDescription.toLowerCase().includes(attractionSearch.toLowerCase());
+
+      const matchesType = selectedTypeFilter === 'all' ||
+        (a.type && a.type.toLowerCase() === selectedTypeFilter.toLowerCase()) ||
+        (a.category && a.category.some(c => c.toLowerCase() === selectedTypeFilter.toLowerCase()));
+
+      return matchesSearch && matchesType;
+    });
+  }, [cityAttractions, attractionSearch, selectedTypeFilter]);
+
+  // City Map Markers (City Center + Attractions + Hotels)
+  const cityMapMarkers = useMemo(() => {
+    const list = [];
+
+    // 1. City Center Marker
+    if (city.latitude && city.longitude) {
+      list.push({
+        id: city.id,
+        title: `${city.name} (City Center)`,
+        latitude: city.latitude,
+        longitude: city.longitude,
+        type: 'city',
+        category: 'City Center',
+        city: city.name,
+        state: city.state,
+        image: city.heroImage || city.image,
+        address: `${city.name}, ${city.state}, India`
+      });
+    }
+
+    // 2. Attraction Markers with verified coordinates
+    cityAttractions.forEach(a => {
+      const coords = a.coordinates || { latitude: a.latitude, longitude: a.longitude };
+      if (coords && coords.latitude && coords.longitude) {
+        list.push({
+          id: a.id,
+          title: a.name,
+          latitude: coords.latitude,
+          longitude: coords.longitude,
+          type: 'attraction',
+          category: a.type || 'Attraction',
+          city: city.name,
+          state: city.state,
+          image: a.image,
+          address: `${a.name}, ${city.name}, ${city.state}`
+        });
+      }
+    });
+
+    // 3. Hotel Markers with verified coordinates
+    cityHotels.slice(0, 15).forEach(h => {
+      if (h.latitude && h.longitude) {
+        list.push({
+          id: h.id,
+          title: h.name,
+          latitude: h.latitude,
+          longitude: h.longitude,
+          type: 'hotel',
+          category: 'Hotel',
+          city: city.name,
+          state: city.state,
+          address: h.address,
+          rating: h.guestRating,
+          starCategory: h.starCategory,
+          image: h.image,
+          website: h.website
+        });
+      }
+    });
+
+    return list;
+  }, [city, cityAttractions, cityHotels]);
+
+  const mapCenter = useMemo(() => {
+    if (city.latitude && city.longitude) {
+      return { lat: city.latitude, lng: city.longitude };
+    }
+    return { lat: 20.5937, lng: 78.9629 };
+  }, [city]);
+
+  const cityMapsUrl = buildGoogleMapsSearchUrl(city);
 
   return (
     <div className="tourism-page">
@@ -112,29 +220,78 @@ export default function CityDetail() {
             {city.description}
           </p>
 
-          {allImages.length > 0 && (
-            <button
-              onClick={() => openGalleryAt(0)}
+          {/* Action Buttons in Hero Banner (Requirement 5) */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center' }}>
+            {/* View City on Google Maps Button */}
+            <a
+              href={cityMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
-                backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                backdropFilter: 'blur(8px)',
-                border: '1px solid rgba(255, 255, 255, 0.4)',
+                gap: '0.45rem',
+                backgroundColor: '#DC2626',
                 color: '#FFFFFF',
-                padding: '0.6rem 1.2rem',
+                padding: '0.65rem 1.25rem',
                 borderRadius: '8px',
                 fontWeight: 700,
                 fontSize: '0.85rem',
-                cursor: 'pointer',
-                transition: 'all 0.2s'
+                textDecoration: 'none',
+                boxShadow: '0 4px 12px rgba(220, 38, 38, 0.3)'
               }}
             >
-              <Maximize2 size={15} />
-              <span>Explore City Gallery ({allImages.length} photos)</span>
+              <MapPin size={16} />
+              <span>View {city.name} on Google Maps</span>
+              <ExternalLink size={13} />
+            </a>
+
+            {/* Get Directions to City Center Button */}
+            <button
+              type="button"
+              onClick={() => setDirectionsModalOpen(true)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: '#0F172A',
+                color: '#FFFFFF',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              <Navigation size={16} color="#38BDF8" />
+              <span>Get Directions to {city.name}</span>
             </button>
-          )}
+
+            {/* Gallery Button */}
+            {allImages.length > 0 && (
+              <button
+                onClick={() => openGalleryAt(0)}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  backdropFilter: 'blur(8px)',
+                  border: '1px solid rgba(255, 255, 255, 0.4)',
+                  color: '#FFFFFF',
+                  padding: '0.65rem 1.25rem',
+                  borderRadius: '8px',
+                  fontWeight: 700,
+                  fontSize: '0.85rem',
+                  cursor: 'pointer'
+                }}
+              >
+                <Maximize2 size={15} />
+                <span>Gallery ({allImages.length} photos)</span>
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Photo Attribution Pill */}
@@ -191,6 +348,15 @@ export default function CityDetail() {
 
           <div style={{ backgroundColor: '#FFFFFF', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--tourism-sky)', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
+              Attractions in City
+            </div>
+            <div style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0F172A' }}>
+              {cityAttractions.length} Verified Monuments
+            </div>
+          </div>
+
+          <div style={{ backgroundColor: '#FFFFFF', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
+            <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#D97706', textTransform: 'uppercase', marginBottom: '0.3rem' }}>
               Travel Styles
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginTop: '0.3rem' }}>
@@ -214,23 +380,94 @@ export default function CityDetail() {
           </div>
         </div>
 
-        {/* ── Key Attractions in this City ── */}
+        {/* ── Interactive Google Map of City Attractions & Stays (Requirement 5) ── */}
         <section style={{ marginBottom: '3.5rem' }}>
-          <div style={{ marginBottom: '1.5rem' }}>
-            <span className="tourism-badge badge-earth">Explore the Highlights</span>
-            <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-              Top Attractions in {city.name}
-            </h2>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <div>
+              <span className="tourism-badge badge-forest">Geographical Overview</span>
+              <h2 className="tourism-heading" style={{ fontSize: '1.6rem', marginTop: '0.25rem' }}>
+                Interactive Map of {city.name} Attractions
+              </h2>
+            </div>
+            <span style={{ fontSize: '0.85rem', color: '#64748B' }}>
+              Markers indicate exact verified attraction & hotel coordinates
+            </span>
+          </div>
+
+          <GoogleMapView
+            markers={cityMapMarkers}
+            center={mapCenter}
+            zoom={13}
+            selectedMarkerId={selectedMarkerId}
+            onMarkerSelect={(m) => setSelectedMarkerId(m.id)}
+            height="480px"
+            fitBounds={true}
+          />
+        </section>
+
+        {/* ── Key Attractions in this City (Requirement 5) ── */}
+        <section style={{ marginBottom: '3.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+            <div>
+              <span className="tourism-badge badge-earth">Explore the Highlights</span>
+              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
+                Top Attractions in {city.name} ({cityAttractions.length})
+              </h2>
+            </div>
+
+            {/* Search & Filter Controls */}
+            {cityAttractions.length > 3 && (
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <div style={{ position: 'relative' }}>
+                  <Search size={15} color="#94A3B8" style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }} />
+                  <input
+                    type="text"
+                    placeholder="Search attractions..."
+                    value={attractionSearch}
+                    onChange={(e) => setAttractionSearch(e.target.value)}
+                    style={{
+                      padding: '0.45rem 0.75rem 0.45rem 2rem',
+                      borderRadius: '8px',
+                      border: '1px solid #CBD5E1',
+                      fontSize: '0.85rem'
+                    }}
+                  />
+                </div>
+                <select
+                  value={selectedTypeFilter}
+                  onChange={(e) => setSelectedTypeFilter(e.target.value)}
+                  style={{
+                    padding: '0.45rem 0.75rem',
+                    borderRadius: '8px',
+                    border: '1px solid #CBD5E1',
+                    fontSize: '0.85rem',
+                    backgroundColor: '#FFFFFF',
+                    fontWeight: 600
+                  }}
+                >
+                  <option value="all">All Types</option>
+                  <option value="heritage">Heritage</option>
+                  <option value="spiritual">Spiritual</option>
+                  <option value="nature">Nature</option>
+                </select>
+              </div>
+            )}
           </div>
 
           <div className="tourism-grid-3">
-            {cityAttractions.map((attraction) => (
+            {filteredAttractions.map((attraction) => (
               <AttractionCard key={attraction.id} attraction={attraction} />
             ))}
           </div>
+
+          {filteredAttractions.length === 0 && (
+            <div style={{ textAlign: 'center', padding: '3rem', backgroundColor: '#F8FAFC', borderRadius: '12px' }}>
+              <p style={{ color: '#64748B', fontWeight: 600 }}>No attractions found matching your search.</p>
+            </div>
+          )}
         </section>
 
-        {/* ── Authentic City Photo Gallery (Requirement 5) ── */}
+        {/* ── Authentic City Photo Gallery ── */}
         {allImages.length > 1 && (
           <section style={{ marginBottom: '3.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
@@ -398,6 +635,13 @@ export default function CityDetail() {
           </section>
         )}
       </div>
+
+      {/* ── City Level Directions Modal ── */}
+      <DirectionsModal
+        isOpen={directionsModalOpen}
+        onClose={() => setDirectionsModalOpen(false)}
+        target={city}
+      />
 
       {/* ── Interactive Image Gallery Modal ── */}
       <ImageGalleryModal

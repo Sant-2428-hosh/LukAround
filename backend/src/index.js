@@ -15,6 +15,7 @@ const translateRouter = require('./routes/translate');
 const destinationsRouter = require('./routes/destinations');
 const chatRouter = require('./routes/chat');
 const tourismRouter = require('./routes/tourism');
+const locationsRouter = require('./routes/locations');
 const userStore = require('./services/userStore');
 
 const app = express();
@@ -54,6 +55,25 @@ app.use('/api/admin', adminRouter);
 app.use('/api/translate', translateRouter);
 app.use('/api/destinations', destinationsRouter);
 app.use('/api/chat', chatRouter);
+app.use('/api/locations', locationsRouter);
+
+// Alias routes matching exact specification
+app.get('/api/states/:stateId/locations', (req, res, next) => {
+  req.url = `/states/${req.params.stateId}`;
+  locationsRouter(req, res, next);
+});
+app.get('/api/cities/:cityId/locations', (req, res, next) => {
+  req.url = `/cities/${req.params.cityId}`;
+  locationsRouter(req, res, next);
+});
+app.get('/api/destinations/:destinationId/hotels', (req, res, next) => {
+  req.url = `/destinations/${req.params.destinationId}/hotels`;
+  locationsRouter(req, res, next);
+});
+app.get('/api/destinations/:destinationId', (req, res, next) => {
+  req.url = `/destinations/${req.params.destinationId}`;
+  locationsRouter(req, res, next);
+});
 
 // Public settings endpoint (broadcast banner, public flags)
 app.get('/api/public/settings', (req, res) => {

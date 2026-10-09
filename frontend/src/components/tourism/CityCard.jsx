@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Calendar, Clock, ArrowRight } from 'lucide-react';
+import { MapPin, Calendar, Clock, ArrowRight, Navigation, ExternalLink } from 'lucide-react';
 import SafeImage from './SafeImage';
+import DirectionsModal from './DirectionsModal';
+import { buildGoogleMapsSearchUrl } from '../../utils/googleMaps';
 
 export default function CityCard({ city }) {
   if (!city) return null;
+
+  const [directionsOpen, setDirectionsOpen] = useState(false);
 
   const {
     id,
@@ -23,6 +27,8 @@ export default function CityCard({ city }) {
   } = city;
 
   const effectiveAlt = imageAlt || `Travel to ${name}, ${state}`;
+  const effectiveStateSlug = stateSlug || state.toLowerCase().replace(/\s+/g, '-');
+  const mapsSearchUrl = buildGoogleMapsSearchUrl(city);
 
   return (
     <div className="attraction-card">
@@ -107,6 +113,65 @@ export default function CityCard({ city }) {
           </div>
         )}
 
+        {/* ── Action Buttons Row (Requirement 4) ── */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '0.45rem',
+          paddingTop: '0.75rem',
+          borderTop: '1px solid #F1F5F9',
+          marginBottom: '0.65rem'
+        }}>
+          {/* [View on Google Maps] */}
+          <a
+            href={mapsSearchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`View ${name} on Google Maps`}
+            style={{
+              backgroundColor: '#FEF2F2',
+              color: '#DC2626',
+              border: '1px solid #FECACA',
+              padding: '0.45rem 0.65rem',
+              borderRadius: '6px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '4px'
+            }}
+          >
+            <MapPin size={12} color="#DC2626" />
+            <span>View on Maps</span>
+          </a>
+
+          {/* [Get Directions] */}
+          <button
+            type="button"
+            onClick={() => setDirectionsOpen(true)}
+            title={`Get Directions to ${name}`}
+            style={{
+              backgroundColor: '#0F172A',
+              color: '#FFFFFF',
+              border: 'none',
+              padding: '0.45rem 0.65rem',
+              borderRadius: '6px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '4px'
+            }}
+          >
+            <Navigation size={12} color="#38BDF8" />
+            <span>Directions</span>
+          </button>
+        </div>
+
         <div className="attraction-card-footer">
           <span style={{ fontSize: '0.78rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
             <Calendar size={13} color="var(--tourism-forest)" />
@@ -114,7 +179,7 @@ export default function CityCard({ city }) {
           </span>
 
           <Link
-            to={`/india/${stateSlug || state.toLowerCase().replace(/\s+/g, '-')}/${id}`}
+            to={`/india/${effectiveStateSlug}/${id}`}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -134,6 +199,13 @@ export default function CityCard({ city }) {
           </Link>
         </div>
       </div>
+
+      {/* Directions Modal */}
+      <DirectionsModal
+        isOpen={directionsOpen}
+        onClose={() => setDirectionsOpen(false)}
+        target={city}
+      />
     </div>
   );
 }

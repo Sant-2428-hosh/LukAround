@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import SafeImage from '../components/tourism/SafeImage';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import GoogleMapView from '../components/maps/GoogleMapView';
 import { getHotelBySlug } from '../api/client';
 import { hotels as localHotels } from '../data/hotelsData';
 import { attractions } from '../data/indiaTourismData';
@@ -128,6 +129,38 @@ export default function HotelDetail() {
     .sort((a, b) => a.distanceKm - b.distanceKm);
 
   const mapsSearchUrl = getGoogleMapsSearchUrl(hotel);
+  const directionsFromAttractionUrl = nearbyLandmarks[0]
+    ? getGoogleMapsDirectionsUrl(hotel, nearbyLandmarks[0])
+    : null;
+
+  const hotelMarkers = [
+    {
+      id: hotel.id || hotel.slug,
+      title: hotel.name,
+      name: hotel.name,
+      latitude: hotel.latitude,
+      longitude: hotel.longitude,
+      address: hotel.address,
+      type: 'hotel',
+      category: hotel.starCategory ? `${hotel.starCategory}-Star Hotel` : 'Hotel',
+      rating: hotel.guestRating,
+      mapsSearchUrl: mapsSearchUrl,
+      directionsUrl: getGoogleMapsDirectionsUrl(hotel)
+    },
+    ...nearbyLandmarks.map((lm) => ({
+      id: lm.id,
+      title: lm.name,
+      name: lm.name,
+      latitude: lm.coordinates.latitude,
+      longitude: lm.coordinates.longitude,
+      address: `${lm.name}, ${lm.city}, ${lm.state}`,
+      type: 'attraction',
+      category: lm.category || lm.type || 'Attraction',
+      rating: lm.rating,
+      mapsSearchUrl: getGoogleMapsSearchUrl(lm),
+      directionsUrl: getGoogleMapsDirectionsUrl(lm)
+    }))
+  ];
 
   const priceLevelDescription = {
     '₹': 'Budget-Friendly Stays',
@@ -595,6 +628,83 @@ export default function HotelDetail() {
                 ))}
               </div>
             </div>
+
+            {/* Interactive Location & Vicinity Map */}
+            <div
+              style={{
+                backgroundColor: '#FFFFFF',
+                borderRadius: '16px',
+                padding: '1.75rem',
+                border: '1px solid #E2E8F0',
+                marginTop: '2rem'
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <div>
+                  <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0F172A', margin: 0 }}>
+                    Location & Interactive Map
+                  </h2>
+                  <p style={{ color: '#64748B', fontSize: '0.88rem', margin: '4px 0 0 0' }}>
+                    {name} ({latitude?.toFixed(4)}, {longitude?.toFixed(4)}) & nearby tourist attractions
+                  </p>
+                </div>
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <a
+                    href={mapsSearchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      padding: '0.45rem 0.85rem',
+                      borderRadius: '8px',
+                      border: '1px solid #CBD5E1',
+                      backgroundColor: '#FFFFFF',
+                      color: '#1E293B',
+                      fontSize: '0.8rem',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px'
+                    }}
+                  >
+                    <MapPin size={14} color="#EA4335" />
+                    Open Maps
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => setIsDirectionsModalOpen(true)}
+                    style={{
+                      padding: '0.45rem 0.85rem',
+                      borderRadius: '8px',
+                      border: 'none',
+                      backgroundColor: '#0F172A',
+                      color: '#FFFFFF',
+                      fontSize: '0.8rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px'
+                    }}
+                  >
+                    <Navigation size={14} color="#38BDF8" />
+                    Directions
+                  </button>
+                </div>
+              </div>
+
+              <div style={{ height: '380px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #CBD5E1' }}>
+                <GoogleMapView
+                  center={{ lat: latitude, lng: longitude }}
+                  zoom={14}
+                  markers={hotelMarkers}
+                  selectedMarkerId={hotel.id || hotel.slug}
+                  height="100%"
+                  mapId="hotel-detail-map"
+                  showControls={true}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Direct Booking & Navigation Card */}
@@ -696,12 +806,41 @@ export default function HotelDetail() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '8px',
-                  marginBottom: '1.5rem'
+                  marginBottom: directionsFromAttractionUrl ? '0.75rem' : '1.5rem'
                 }}
               >
                 <Navigation size={16} color="#38BDF8" />
                 <span>Get Directions (Google Maps)</span>
               </button>
+
+              {/* Directions from nearby attraction if available */}
+              {directionsFromAttractionUrl && (
+                <a
+                  href={directionsFromAttractionUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    width: '100%',
+                    backgroundColor: '#F0FDF4',
+                    color: '#15803D',
+                    border: '1px solid #BBF7D0',
+                    padding: '0.8rem',
+                    borderRadius: '8px',
+                    fontSize: '0.85rem',
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px',
+                    marginBottom: '1.5rem',
+                    textAlign: 'center'
+                  }}
+                >
+                  <Compass size={15} color="#16A34A" />
+                  <span>Directions from {nearbyLandmarks[0].name}</span>
+                </a>
+              )}
 
               {/* Contact Information */}
               <div style={{ paddingTop: '1.25rem', borderTop: '1px solid #E2E8F0' }}>

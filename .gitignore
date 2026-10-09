@@ -39,3 +39,4 @@ logs/
 git.bat
 git.ps1
 cloudflared.exe
+scratch/

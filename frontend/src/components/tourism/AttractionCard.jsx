@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Clock, Calendar, Star, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, Calendar, Star, ArrowRight, Navigation, ExternalLink, Hotel } from 'lucide-react';
 import SafeImage from './SafeImage';
+import DirectionsModal from './DirectionsModal';
+import { buildGoogleMapsSearchUrl } from '../../utils/googleMaps';
 
 export default function AttractionCard({ attraction }) {
   if (!attraction) return null;
+
+  const [directionsOpen, setDirectionsOpen] = useState(false);
 
   const {
     id,
@@ -28,6 +32,9 @@ export default function AttractionCard({ attraction }) {
 
   const primaryCategory = category[0] || type || 'heritage';
   const effectiveAlt = imageAlt || `Real photograph of ${name} in ${city}, ${state}`;
+  const effectiveStateSlug = stateSlug || state.toLowerCase().replace(/\s+/g, '-');
+  const effectiveCitySlug = citySlug || city.toLowerCase().replace(/\s+/g, '-');
+  const mapsSearchUrl = buildGoogleMapsSearchUrl(attraction);
 
   return (
     <div className="attraction-card">
@@ -109,33 +116,121 @@ export default function AttractionCard({ attraction }) {
           </span>
         </div>
 
-        <div className="attraction-card-footer">
-          <span style={{ fontSize: '0.78rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-            <Calendar size={13} color="var(--tourism-forest)" />
-            {bestTimeToVisit || 'Oct - Mar'}
-          </span>
+        {/* Season */}
+        <div style={{ fontSize: '0.78rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '0.3rem', marginBottom: '0.85rem' }}>
+          <Calendar size={13} color="var(--tourism-forest)" />
+          <span>Best Season: {bestTimeToVisit || 'Oct - Mar'}</span>
+        </div>
 
+        {/* ── Action Buttons Row (Requirement 6) ── */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '0.4rem',
+          paddingTop: '0.75rem',
+          borderTop: '1px solid #F1F5F9'
+        }}>
+          {/* [View on Google Maps] */}
+          <a
+            href={mapsSearchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View on Google Maps"
+            style={{
+              backgroundColor: '#FEF2F2',
+              color: '#DC2626',
+              border: '1px solid #FECACA',
+              padding: '0.45rem 0.5rem',
+              borderRadius: '6px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '4px',
+              transition: 'all 0.2s'
+            }}
+          >
+            <MapPin size={12} color="#DC2626" />
+            <span>View on Maps</span>
+          </a>
+
+          {/* [Get Directions] */}
+          <button
+            type="button"
+            onClick={() => setDirectionsOpen(true)}
+            title="Get Directions on Google Maps"
+            style={{
+              backgroundColor: '#0F172A',
+              color: '#FFFFFF',
+              border: 'none',
+              padding: '0.45rem 0.5rem',
+              borderRadius: '6px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '4px',
+              transition: 'background-color 0.2s'
+            }}
+          >
+            <Navigation size={12} color="#38BDF8" />
+            <span>Directions</span>
+          </button>
+
+          {/* [Show Nearby Hotels] */}
           <Link
-            to={`/india/${stateSlug || state.toLowerCase().replace(/\s+/g, '-')}/${citySlug || city.toLowerCase().replace(/\s+/g, '-')}/${id}`}
+            to={`/india/${effectiveStateSlug}/${effectiveCitySlug}/${id}#where-to-stay`}
+            style={{
+              backgroundColor: '#EFF6FF',
+              color: '#1D4ED8',
+              border: '1px solid #BFDBFE',
+              padding: '0.45rem 0.5rem',
+              borderRadius: '6px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '4px',
+              gridColumn: 'span 2'
+            }}
+          >
+            <Hotel size={13} color="#1D4ED8" />
+            <span>Show Nearby Hotels</span>
+          </Link>
+        </div>
+
+        {/* Explore Details Link */}
+        <div style={{ marginTop: '0.6rem', textAlign: 'center' }}>
+          <Link
+            to={`/india/${effectiveStateSlug}/${effectiveCitySlug}/${id}`}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.3rem',
-              backgroundColor: 'var(--tourism-earth)',
-              color: '#FFFFFF',
-              padding: '0.45rem 0.95rem',
-              borderRadius: '6px',
+              color: 'var(--tourism-earth)',
               fontWeight: 700,
               fontSize: '0.8rem',
-              textDecoration: 'none',
-              transition: 'all 0.2s ease'
+              textDecoration: 'none'
             }}
           >
-            <span>Explore</span>
+            <span>Full Attraction Details & Verified Photos</span>
             <ArrowRight size={13} />
           </Link>
         </div>
       </div>
+
+      {/* Directions Modal */}
+      <DirectionsModal
+        isOpen={directionsOpen}
+        onClose={() => setDirectionsOpen(false)}
+        target={attraction}
+      />
     </div>
   );
 }

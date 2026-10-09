@@ -394,6 +394,12 @@ All backend endpoints are served under `/api`.
 | `PUT` | `/api/admin/settings` | Admin | Updates feature flags, broadcast banner, or settings | `{ "featureFlags": { ... }, "broadcast": { ... } }` |
 | `GET` | `/api/admin/audit-logs` | Admin | Retrieves system security and action audit logs | Bearer Token (Admin) |
 | `GET` | `/api/admin/traffic` | Admin | Real-time traffic radar and recent visitor analytics | Bearer Token (Admin) |
+| `GET` | `/api/locations/search` | Public | Global multi-entity search across states, cities, attractions, hotels | `?q=Meenakshi&type=attraction` |
+| `GET` | `/api/states/:stateId/locations` | Public | Complete list of cities, attractions, hotels with coordinates for state | Path: `/api/states/tamil-nadu/locations` |
+| `GET` | `/api/cities/:cityId/locations` | Public | All attractions and hotels with verified coordinates for city | Path: `/api/cities/madurai/locations` |
+| `GET` | `/api/destinations/:id` | Public | Verified attraction location record, Place ID, coordinates | Path: `/api/destinations/taj-mahal` |
+| `GET` | `/api/destinations/:id/hotels`| Public | Verified hotels within radius sorted by Haversine distance | `?radius=30&limit=15` |
+| `GET` | `/api/locations/:id/map-link` | Public | Generates verified Google Maps search, directions, and embed links | Path: `/api/locations/golden-temple/map-link` |
 
 ---
 
@@ -532,8 +538,8 @@ Create or edit `frontend/.env` (a pre-configured `.env.example` is provided):
 # API Server Endpoint URL
 VITE_API_BASE_URL=http://localhost:5000/api
 
-# Google Maps API (Optional)
-VITE_GOOGLE_MAPS_API_KEY=your_google_maps_key_here
+# Google Maps API (Browser Restricted)
+VITE_GOOGLE_MAPS_API_KEY=your_browser_restricted_google_maps_api_key_here
 
 # Firebase Configuration for Google SSO
 VITE_FIREBASE_API_KEY=your_firebase_api_key
@@ -543,6 +549,45 @@ VITE_FIREBASE_STORAGE_BUCKET=lukaround-d0d47.firebasestorage.app
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 ```
+
+---
+
+### 🗺️ Google Maps Platform Setup & API Configuration
+
+LukAround integrates Google Maps across all 15 states, 212 cities, 198 tourist attractions, and 96 verified hotels.
+
+#### 1. Google Cloud Console Configuration
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project or select an existing one (e.g. `LukAround-Tourism`).
+3. Ensure **Billing** is enabled on the project (Google Maps Platform provides a monthly $200 recurring credit).
+
+#### 2. Enable Required Google Cloud APIs
+In **APIs & Services > Library**, enable the following four services:
+- **Maps JavaScript API**: Powers interactive embedded maps, custom pins, and info windows.
+- **Places API (New)**: For live place autocomplete, place details, and nearby property resolution.
+- **Geocoding API**: Resolves addresses to coordinates and reverse-geocodes user coordinates.
+- **Directions API**: Real-time multi-modal route calculation and turn-by-turn guidance.
+
+#### 3. API Key Restrictions & Security Best Practices
+- **Browser-Restricted Client Key (`VITE_GOOGLE_MAPS_API_KEY`)**:
+  - In **Credentials**, create an API key for the frontend.
+  - Set **Application restrictions** to **Websites (HTTP referrers)**.
+  - Add authorized referrers:
+    - `http://localhost:5173/*`
+    - `http://127.0.0.1:5173/*`
+    - `https://yourdomain.com/*`
+  - Under **API restrictions**, restrict the key to `Maps JavaScript API` and `Places API`.
+- **Server-Restricted Key (`GOOGLE_MAPS_SERVER_API_KEY`)**:
+  - Create a separate API key for backend Node.js services.
+  - Set **Application restrictions** to **IP addresses** (your production server IP addresses).
+  - Restrict the key to `Geocoding API`, `Directions API`, and `Places API`.
+  - **Never expose the server-side API key in frontend code or Git repositories.**
+
+#### 4. Dual-Engine Fallback Architecture
+LukAround features an automatic **Dual-Engine Map System**:
+- **With Valid Google Maps Key**: The embedded maps initialize using `@googlemaps/js-api-loader` with native Google Maps JavaScript vector rendering, styled markers, and info windows.
+- **Without Key or Exceeded Quota**: The application seamlessly activates a vector Leaflet/CartoDB fallback map engine with Google-styled markers and custom info bubbles.
+- **100% Operational Navigation**: Regardless of embedded map API status, every state, city, attraction, and hotel provides fully operational `https://www.google.com/maps/...` search and directions links with the mandatory `api=1` parameter, multi-origin routing (Current GPS Location, Custom Address, City, Railway Station, Airport, Attraction), and travel modes (`driving`, `walking`, `transit`, `bicycling`).
 
 ---
 

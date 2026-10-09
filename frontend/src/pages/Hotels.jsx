@@ -20,9 +20,11 @@ import {
 import HotelCard from '../components/tourism/HotelCard';
 import HotelComparisonModal from '../components/tourism/HotelComparisonModal';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import GoogleMapView from '../components/maps/GoogleMapView';
 import { hotels as allHotelsData } from '../data/hotelsData';
 import { states, cities } from '../data/indiaTourismData';
 import { sortHotels, calculateDistance } from '../utils/distance';
+import { getGoogleMapsSearchUrl, getGoogleMapsDirectionsUrl } from '../utils/googleMaps';
 
 export default function Hotels() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -48,6 +50,7 @@ export default function Hotels() {
   const [compareList, setCompareList] = useState([]);
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
   const [directionsHotel, setDirectionsHotel] = useState(null);
+  const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'map'
 
   // Mobile Filter Drawer Toggle
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
@@ -201,6 +204,33 @@ export default function Hotels() {
     selectedSafety,
     sortBy
   ]);
+
+  // Map markers for GoogleMapView
+  const hotelMarkers = useMemo(() => {
+    return filteredHotels
+      .filter((h) => h.latitude && h.longitude)
+      .map((h) => ({
+        id: h.id || h.slug,
+        title: h.name,
+        name: h.name,
+        latitude: h.latitude,
+        longitude: h.longitude,
+        address: h.address,
+        type: 'hotel',
+        category: h.starCategory ? `${h.starCategory}-Star ${h.propertyType || 'Hotel'}` : (h.propertyType || 'Hotel'),
+        rating: h.guestRating,
+        mapsSearchUrl: getGoogleMapsSearchUrl(h),
+        directionsUrl: getGoogleMapsDirectionsUrl(h)
+      }));
+  }, [filteredHotels]);
+
+  // Center coordinate for map view
+  const mapCenter = useMemo(() => {
+    if (hotelMarkers.length > 0) {
+      return { lat: hotelMarkers[0].latitude, lng: hotelMarkers[0].longitude };
+    }
+    return { lat: 20.5937, lng: 78.9629 };
+  }, [hotelMarkers]);
 
   // Comparison Handlers
   const handleToggleCompare = (hotel) => {
@@ -626,21 +656,80 @@ export default function Hotels() {
 
           {/* ── Main Results Grid ── */}
           <main>
-            {/* Results count & status */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+            {/* Results count & status & view switcher */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '0.75rem' }}>
               <div style={{ fontSize: '0.95rem', color: '#334155' }}>
                 Showing <strong style={{ color: '#0F172A' }}>{filteredHotels.length}</strong> verified accommodations
                 {selectedCity ? ` in ${selectedCity}` : selectedState ? ` in ${selectedState}` : ' across India'}
               </div>
 
-              {/* Mandatory Section 24 disclaimer reminder */}
-              <div style={{ fontSize: '0.75rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <ShieldCheck size={14} color="#16A34A" /> 100% Real Properties & Official Maps
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                {/* View Switcher */}
+                <div style={{ display: 'inline-flex', backgroundColor: '#E2E8F0', padding: '3px', borderRadius: '8px' }}>
+                  <button
+                    type="button"
+                    onClick={() => setViewMode('grid')}
+                    style={{
+                      padding: '0.35rem 0.75rem',
+                      borderRadius: '6px',
+                      border: 'none',
+                      backgroundColor: viewMode === 'grid' ? '#FFFFFF' : 'transparent',
+                      color: viewMode === 'grid' ? '#0F172A' : '#64748B',
+                      fontWeight: 700,
+                      fontSize: '0.8rem',
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      boxShadow: viewMode === 'grid' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'
+                    }}
+                  >
+                    <Grid size={14} /> Grid
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setViewMode('map')}
+                    style={{
+                      padding: '0.35rem 0.75rem',
+                      borderRadius: '6px',
+                      border: 'none',
+                      backgroundColor: viewMode === 'map' ? '#FFFFFF' : 'transparent',
+                      color: viewMode === 'map' ? '#0F172A' : '#64748B',
+                      fontWeight: 700,
+                      fontSize: '0.8rem',
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      boxShadow: viewMode === 'map' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none'
+                    }}
+                  >
+                    <Map size={14} /> Map
+                  </button>
+                </div>
+
+                {/* Mandatory Section 24 disclaimer reminder */}
+                <div style={{ fontSize: '0.75rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <ShieldCheck size={14} color="#16A34A" /> 100% Real Properties & Official Maps
+                </div>
               </div>
             </div>
 
-            {/* Grid of Hotel Cards */}
-            {filteredHotels.length === 0 ? (
+            {/* Map View Mode */}
+            {viewMode === 'map' ? (
+              <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1px solid #E2E8F0', padding: '1rem', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+                <div style={{ height: '620px', borderRadius: '12px', overflow: 'hidden' }}>
+                  <GoogleMapView
+                    center={mapCenter}
+                    zoom={selectedCity ? 12 : selectedState ? 8 : 5}
+                    markers={hotelMarkers}
+                    height="100%"
+                    mapId="hotels-page-map"
+                    showControls={true}
+                  />
+                </div>
+              </div>
+            ) : filteredHotels.length === 0 ? (
               <div
                 style={{
                   backgroundColor: '#FFFFFF',

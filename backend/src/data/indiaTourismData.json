@@ -132,7 +132,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Rumi_Darwaza_Lucknow.jpg/1280px-Rumi_Darwaza_Lucknow.jpg",
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg/1280px-Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 26.8467,
+        "longitude": 80.9462
+      },
+      "latitude": 26.8467,
+      "longitude": 80.9462,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "tamil-nadu",
@@ -255,7 +263,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Nilgiri_Mountain_Railway_steam_locomotive.jpg/1280px-Nilgiri_Mountain_Railway_steam_locomotive.jpg",
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-2.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-2.jpg"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 11.1271,
+        "longitude": 78.6569
+      },
+      "latitude": 11.1271,
+      "longitude": 78.6569,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "karnataka",
@@ -381,7 +397,15 @@
         "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Badami_Cave_Temples.jpg/1280px-Badami_Cave_Temples.jpg"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 15.3173,
+        "longitude": 75.7139
+      },
+      "latitude": 15.3173,
+      "longitude": 75.7139,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "andhra-pradesh",
@@ -493,7 +517,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Gandikota_Gorge.jpg/1280px-Gandikota_Gorge.jpg",
         "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 15.9129,
+        "longitude": 79.74
+      },
+      "latitude": 15.9129,
+      "longitude": 79.74,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "rajasthan",
@@ -615,7 +647,15 @@
         "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 27.0238,
+        "longitude": 74.2179
+      },
+      "latitude": 27.0238,
+      "longitude": 74.2179,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "maharashtra",
@@ -738,7 +778,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Ajanta_Caves_View.jpg/1280px-Ajanta_Caves_View.jpg",
         "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 19.7515,
+        "longitude": 75.7139
+      },
+      "latitude": 19.7515,
+      "longitude": 75.7139,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "west-bengal",
@@ -854,7 +902,15 @@
         "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 22.9868,
+        "longitude": 87.855
+      },
+      "latitude": 22.9868,
+      "longitude": 87.855,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "gujarat",
@@ -976,7 +1032,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Rani_ki_vav_07.jpg/1280px-Rani_ki_vav_07.jpg",
         "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 22.2587,
+        "longitude": 71.1924
+      },
+      "latitude": 22.2587,
+      "longitude": 71.1924,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "madhya-pradesh",
@@ -1097,7 +1161,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Mahakaleshwar_Jyotirlinga.jpg/1280px-Mahakaleshwar_Jyotirlinga.jpg",
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 22.9734,
+        "longitude": 78.6569
+      },
+      "latitude": 22.9734,
+      "longitude": 78.6569,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "telangana",
@@ -1207,7 +1279,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Ramappa_Temple_Warangal.jpg/1280px-Ramappa_Temple_Warangal.jpg",
         "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 18.1124,
+        "longitude": 79.0193
+      },
+      "latitude": 18.1124,
+      "longitude": 79.0193,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "kerala",
@@ -1328,7 +1408,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Chinese_Fishing_Nets_Kochi.jpg/1280px-Chinese_Fishing_Nets_Kochi.jpg",
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Varkala_Beach_Cliff.jpg/1280px-Varkala_Beach_Cliff.jpg"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 10.8505,
+        "longitude": 76.2711
+      },
+      "latitude": 10.8505,
+      "longitude": 76.2711,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "bihar",
@@ -1440,7 +1528,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Nalanda_Ruins.jpg/1280px-Nalanda_Ruins.jpg",
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 25.0961,
+        "longitude": 85.3131
+      },
+      "latitude": 25.0961,
+      "longitude": 85.3131,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "odisha",
@@ -1553,7 +1649,15 @@
         "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 20.9517,
+        "longitude": 85.0985
+      },
+      "latitude": 20.9517,
+      "longitude": 85.0985,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "punjab",
@@ -1664,7 +1768,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Wagah_Border_Ceremony_Amritsar.jpg/1280px-Wagah_Border_Ceremony_Amritsar.jpg",
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 31.1471,
+        "longitude": 75.3412
+      },
+      "latitude": 31.1471,
+      "longitude": 75.3412,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     },
     {
       "id": "uttarakhand",
@@ -1783,7 +1895,15 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Har_Ki_Pauri_Haridwar.jpg/1280px-Har_Ki_Pauri_Haridwar.jpg",
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Naini_Lake_Nainital.jpg/1280px-Naini_Lake_Nainital.jpg"
       ],
-      "verified": true
+      "verified": true,
+      "coordinates": {
+        "latitude": 30.0668,
+        "longitude": 79.0193
+      },
+      "latitude": 30.0668,
+      "longitude": 79.0193,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid"
     }
   ],
   "cities": [
@@ -7022,6 +7142,4586 @@
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/1280px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       ],
       "verified": true
+    },
+    {
+      "id": "mathura",
+      "name": "Mathura",
+      "aliases": [
+        "Mathura"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Sacred birthplace of Lord Krishna on the Yamuna, renowned for Dwarkadhish Temple, ancient ghats, and festive Braj celebrations.",
+      "heroImage": "https://images.unsplash.com/photo-1545063914-a1a6ec821c88?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.4924,
+      "longitude": 77.6737,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "mathura"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Mathura",
+        "Taste traditional Mathura dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Mathura Peda",
+        "Kachori Jalebi"
+      ],
+      "shopping": [
+        "Mathura traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "vrindavan",
+      "name": "Vrindavan",
+      "aliases": [
+        "Vrindavan"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Sacred town of five thousand temples dedicated to Radha Krishna, featuring Prem Mandir and Banke Bihari Temple.",
+      "heroImage": "https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.5807,
+      "longitude": 77.7006,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "vrindavan"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vrindavan",
+        "Taste traditional Vrindavan dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rabri",
+        "Malpua"
+      ],
+      "shopping": [
+        "Vrindavan traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "culture"
+      ]
+    },
+    {
+      "id": "kanpur",
+      "name": "Kanpur",
+      "aliases": [
+        "Kanpur"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Major industrial and historical hub on the Ganga with colonial leather heritage, Allen Forest Zoo, and Bithoor ghats.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 26.4499,
+      "longitude": 80.3319,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kanpur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kanpur",
+        "Taste traditional Kanpur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Thaggu Ke Laddu",
+        "Badnam Kulfi"
+      ],
+      "shopping": [
+        "Kanpur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "city"
+      ]
+    },
+    {
+      "id": "jhansi",
+      "name": "Jhansi",
+      "aliases": [
+        "Jhansi"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Historic gateway to Bundelkhand crowned by the hilltop Jhansi Fort of warrior queen Rani Lakshmibai.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.4484,
+      "longitude": 78.5685,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "jhansi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Jhansi",
+        "Taste traditional Jhansi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bundelkhandi Kadhi",
+        "Bedmi"
+      ],
+      "shopping": [
+        "Jhansi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "chitrakoot",
+      "name": "Chitrakoot",
+      "aliases": [
+        "Chitrakoot"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Tranquil sacred river town in the Vindhyas where Lord Rama spent eleven years of exile along the Mandakini.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.1762,
+      "longitude": 80.8656,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "chitrakoot"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Chitrakoot",
+        "Taste traditional Chitrakoot dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Peda",
+        "Chana Chaat"
+      ],
+      "shopping": [
+        "Chitrakoot traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "nature"
+      ]
+    },
+    {
+      "id": "sarnath",
+      "name": "Sarnath",
+      "aliases": [
+        "Sarnath"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Sacred deer park where Gautama Buddha delivered his first sermon, home to the Dhamek Stupa and Ashoka Pillar.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.3811,
+      "longitude": 83.0214,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "sarnath"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Sarnath",
+        "Taste traditional Sarnath dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Banarasi Paan",
+        "Thandai"
+      ],
+      "shopping": [
+        "Sarnath traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "kushinagar",
+      "name": "Kushinagar",
+      "aliases": [
+        "Kushinagar"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Key international Buddhist pilgrimage site marking the Mahaparinirvana of Gautama Buddha.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 26.7408,
+      "longitude": 83.889,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kushinagar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kushinagar",
+        "Taste traditional Kushinagar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Litti Chokha",
+        "Malpua"
+      ],
+      "shopping": [
+        "Kushinagar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "fatehpur-sikri",
+      "name": "Fatehpur Sikri",
+      "aliases": [
+        "Fatehpur Sikri"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "UNESCO World Heritage red sandstone imperial city built by Emperor Akbar, featuring Buland Darwaza and Salim Chishti Dargah.",
+      "heroImage": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.0945,
+      "longitude": 77.6679,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "fatehpur-sikri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Fatehpur Sikri",
+        "Taste traditional Fatehpur Sikri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Khasta Kachori",
+        "Nan Khatai"
+      ],
+      "shopping": [
+        "Fatehpur Sikri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "meerut",
+      "name": "Meerut",
+      "aliases": [
+        "Meerut"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Historic military cradle of India’s 1857 First War of Independence and world center for sports goods manufacturing.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 28.9845,
+      "longitude": 77.7064,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "meerut"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Meerut",
+        "Taste traditional Meerut dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Meerut Revdi",
+        "Gajak"
+      ],
+      "shopping": [
+        "Meerut traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "history",
+        "city"
+      ]
+    },
+    {
+      "id": "bareilly",
+      "name": "Bareilly",
+      "aliases": [
+        "Bareilly"
+      ],
+      "state": "Uttar Pradesh",
+      "stateSlug": "uttar-pradesh",
+      "description": "Cultured Rohilkhand city famous for ornate Zari-Zardozi embroidery, cane furniture, and historic Sufi shrines.",
+      "heroImage": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 28.367,
+      "longitude": 79.4304,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bareilly"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bareilly",
+        "Taste traditional Bareilly dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Seekh Kebabs",
+        "Petha"
+      ],
+      "shopping": [
+        "Bareilly traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "city"
+      ]
+    },
+    {
+      "id": "coimbatore",
+      "name": "Coimbatore",
+      "aliases": [
+        "Coimbatore"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "The Manchester of South India nestled at the foot of the Nilgiris, home to the monumental Adiyogi Shiva Statue.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.0168,
+      "longitude": 76.9558,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "coimbatore"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Coimbatore",
+        "Taste traditional Coimbatore dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kongunadu Chicken",
+        "Pallipalayam Chicken"
+      ],
+      "shopping": [
+        "Coimbatore traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "nature",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "tiruchirappalli",
+      "name": "Tiruchirappalli",
+      "aliases": [
+        "Tiruchirappalli"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Vibrant city on the Kaveri River famous for the monolithic Rockfort Temple and the grand Sri Ranganathaswamy Temple.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 10.7905,
+      "longitude": 78.7047,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "tiruchirappalli"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Tiruchirappalli",
+        "Taste traditional Tiruchirappalli dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Trichy Biryani",
+        "Kalkandu Bath"
+      ],
+      "shopping": [
+        "Tiruchirappalli traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "kanchipuram",
+      "name": "Kanchipuram",
+      "aliases": [
+        "Kanchipuram"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "The City of Thousand Temples and legendary handwoven pure mulberry silk sarees with pure gold zari borders.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 12.8342,
+      "longitude": 79.7036,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "kanchipuram"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kanchipuram",
+        "Taste traditional Kanchipuram dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kanchipuram Idli",
+        "Kovil Puliyodharai"
+      ],
+      "shopping": [
+        "Kanchipuram traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "yercaud",
+      "name": "Yercaud",
+      "aliases": [
+        "Yercaud"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Serene Jewel of the South in the Shevaroy Hills, celebrated for coffee plantations, orange groves, and emerald boathouse lakes.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.7753,
+      "longitude": 78.2093,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "yercaud"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Yercaud",
+        "Taste traditional Yercaud dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Filter Coffee",
+        "Pepper Masala"
+      ],
+      "shopping": [
+        "Yercaud traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "coonoor",
+      "name": "Coonoor",
+      "aliases": [
+        "Coonoor"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Charming Nilgiri tea retreat home to Sim’s Park, Droog Fort, and scenic stops along the historic Toy Train route.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.353,
+      "longitude": 76.7959,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "coonoor"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Coonoor",
+        "Taste traditional Coonoor dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Nilgiri Tea",
+        "Homemade Chocolates"
+      ],
+      "shopping": [
+        "Coonoor traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "valparai",
+      "name": "Valparai",
+      "aliases": [
+        "Valparai"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Pristine pollution-free hill station perched 3,500 ft above sea level with 40 hairpin bends and misty tea estates.",
+      "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 10.3262,
+      "longitude": 76.9554,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "valparai"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Valparai",
+        "Taste traditional Valparai dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Estate Fresh Tea",
+        "Spiced Vada"
+      ],
+      "shopping": [
+        "Valparai traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "tirunelveli",
+      "name": "Tirunelveli",
+      "aliases": [
+        "Tirunelveli"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Ancient cultural center on the Thamirabarani River celebrated for Nellaiappar Temple and mouth-watering wheat halwa.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 8.7139,
+      "longitude": 77.7567,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "tirunelveli"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Tirunelveli",
+        "Taste traditional Tirunelveli dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Iruttu Kadai Halwa",
+        "Sodhi Kuzhambu"
+      ],
+      "shopping": [
+        "Tirunelveli traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "vellore",
+      "name": "Vellore",
+      "aliases": [
+        "Vellore"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Historic fort city boasting the 16th-century granite Vellore Fort and the glittering Golden Temple of Sripuram.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 12.9165,
+      "longitude": 79.1325,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "vellore"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vellore",
+        "Taste traditional Vellore dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Vellore Dum Biryani",
+        "Makkan Peda"
+      ],
+      "shopping": [
+        "Vellore traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "salem",
+      "name": "Salem",
+      "aliases": [
+        "Salem"
+      ],
+      "state": "Tamil Nadu",
+      "stateSlug": "tamil-nadu",
+      "description": "Lively steel and textile city surrounded by hills, famed for sweet Salem mangoes and handloom silk dhotis.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.6643,
+      "longitude": 78.146,
+      "bestTimeToVisit": "November to March",
+      "topAttractions": [
+        "salem"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Salem",
+        "Taste traditional Salem dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Salem Mango Thokku",
+        "Thattu Vadai Set"
+      ],
+      "shopping": [
+        "Salem traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "city"
+      ]
+    },
+    {
+      "id": "chikmagalur",
+      "name": "Chikmagalur",
+      "aliases": [
+        "Chikmagalur"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "The Coffee Land of Karnataka on the slopes of Mullayanagiri, featuring rolling plantations and cascading waterfalls.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.3161,
+      "longitude": 75.772,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "chikmagalur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Chikmagalur",
+        "Taste traditional Chikmagalur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Malanad Akki Roti",
+        "Chikmagalur Filter Coffee"
+      ],
+      "shopping": [
+        "Chikmagalur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "udupi",
+      "name": "Udupi",
+      "aliases": [
+        "Udupi"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Coastal temple town and birthplace of world-renowned vegetarian cuisine, famed for Sri Krishna Matha and Malpe Beach.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.3409,
+      "longitude": 74.7421,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "udupi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Udupi",
+        "Taste traditional Udupi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Masala Dosa",
+        "Goli Baje",
+        "Neer Dosa"
+      ],
+      "shopping": [
+        "Udupi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "beaches",
+        "food"
+      ]
+    },
+    {
+      "id": "mangaluru",
+      "name": "Mangaluru",
+      "aliases": [
+        "Mangaluru"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Major Arabian Sea port with golden beaches, ancient temples, tile-roofed heritage churches, and coastal seafood delicacies.",
+      "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 12.9141,
+      "longitude": 74.856,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "mangaluru"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Mangaluru",
+        "Taste traditional Mangaluru dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Mangalorean Ghee Roast",
+        "Kori Rotti"
+      ],
+      "shopping": [
+        "Mangaluru traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "culture",
+        "food"
+      ]
+    },
+    {
+      "id": "aihole",
+      "name": "Aihole",
+      "aliases": [
+        "Aihole"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "The Cradle of Indian Rock Temple Architecture featuring over 120 historic Chalukya stone temples.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.0189,
+      "longitude": 75.8816,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "aihole"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Aihole",
+        "Taste traditional Aihole dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Jolada Roti",
+        "Yennegai"
+      ],
+      "shopping": [
+        "Aihole traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "pattadakal",
+      "name": "Pattadakal",
+      "aliases": [
+        "Pattadakal"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "UNESCO World Heritage complex showcasing the zenith of Chalukya blend of northern and southern temple styles.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 15.949,
+      "longitude": 75.816,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "pattadakal"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Pattadakal",
+        "Taste traditional Pattadakal dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Shenga Chutney",
+        "Jowar Roti"
+      ],
+      "shopping": [
+        "Pattadakal traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "belur",
+      "name": "Belur",
+      "aliases": [
+        "Belur"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Renowned Hoysala capital famed for the breathtaking Chennakeshava Temple intricate soapstone filigree carvings.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.1623,
+      "longitude": 75.8643,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "belur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Belur",
+        "Taste traditional Belur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bisi Bele Bath",
+        "Mysore Pak"
+      ],
+      "shopping": [
+        "Belur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "halebeedu",
+      "name": "Halebeedu",
+      "aliases": [
+        "Halebeedu"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Twin Hoysala jewel home to the masterwork Hoysaleswara Temple with thousands of sculpted elephants, lions, and celestial dancers.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.2167,
+      "longitude": 75.9933,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "halebeedu"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Halebeedu",
+        "Taste traditional Halebeedu dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Ragi Mudde",
+        "Saaru"
+      ],
+      "shopping": [
+        "Halebeedu traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "shivamogga",
+      "name": "Shivamogga",
+      "aliases": [
+        "Shivamogga"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Gateway to the Western Ghats cradled by rivers Tunga and Bhadra, gateway to Jog Falls and wildlife reserves.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.9299,
+      "longitude": 75.5681,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "shivamogga"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Shivamogga",
+        "Taste traditional Shivamogga dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Benne Dosa",
+        "Halasina Hannu Papad"
+      ],
+      "shopping": [
+        "Shivamogga traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "dandeli",
+      "name": "Dandeli",
+      "aliases": [
+        "Dandeli"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Top adventure tourism and whitewater rafting capital of South India on the Kali River in dense deciduous teak jungles.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 15.2361,
+      "longitude": 74.6228,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "dandeli"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Dandeli",
+        "Taste traditional Dandeli dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bamboo Shoot Curry",
+        "Fish Thali"
+      ],
+      "shopping": [
+        "Dandeli traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "adventure",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "kabini",
+      "name": "Kabini",
+      "aliases": [
+        "Kabini"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "World-famous wildlife safari sanctuary on the Kabini reservoir, home to leopards, black panthers, and elephant herds.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.9167,
+      "longitude": 76.2833,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kabini"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kabini",
+        "Taste traditional Kabini dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Jungle Feast Thali"
+      ],
+      "shopping": [
+        "Kabini traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "bandipur",
+      "name": "Bandipur",
+      "aliases": [
+        "Bandipur"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Premier Project Tiger reserve in the Nilgiri Biosphere featuring tigers, gaurs, and scenic dry-deciduous forest drives.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.6664,
+      "longitude": 76.6291,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bandipur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bandipur",
+        "Taste traditional Bandipur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Mysore Filter Coffee",
+        "Upma"
+      ],
+      "shopping": [
+        "Bandipur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "jog-falls",
+      "name": "Jog Falls",
+      "aliases": [
+        "Jog Falls"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Magnificent segmented waterfall on the Sharavathi River plunging 830 ft in four cascades: Raja, Rani, Roarer, and Rocket.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 14.2289,
+      "longitude": 74.8124,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "jog-falls"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Jog Falls",
+        "Taste traditional Jog Falls dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Neer Dosa",
+        "Pineapple Kesari"
+      ],
+      "shopping": [
+        "Jog Falls traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature"
+      ]
+    },
+    {
+      "id": "hubballi",
+      "name": "Hubballi",
+      "aliases": [
+        "Hubballi"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Commercial and cultural twin city of North Karnataka celebrated for Dharwad Peda, handloom khadi, and Unkal Lake.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 15.3647,
+      "longitude": 75.124,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "hubballi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Hubballi",
+        "Taste traditional Hubballi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Dharwad Peda",
+        "Girmit",
+        "Mirchi Bhajji"
+      ],
+      "shopping": [
+        "Hubballi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "food"
+      ]
+    },
+    {
+      "id": "srirangapatna",
+      "name": "Srirangapatna",
+      "aliases": [
+        "Srirangapatna"
+      ],
+      "state": "Karnataka",
+      "stateSlug": "karnataka",
+      "description": "Historic Kaveri river island citadel of Tipu Sultan and Hyder Ali, boasting Ranganathaswamy Temple and Summer Palace.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 12.4238,
+      "longitude": 76.683,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "srirangapatna"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Srirangapatna",
+        "Taste traditional Srirangapatna dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Mysore Pak",
+        "Bonda Soup"
+      ],
+      "shopping": [
+        "Srirangapatna traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "vijayawada",
+      "name": "Vijayawada",
+      "aliases": [
+        "Vijayawada"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Dynamic Krishna river commercial hub home to Kanaka Durga Temple atop Indrakeeladri and ancient Undavalli Caves.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.5062,
+      "longitude": 80.648,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "vijayawada"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vijayawada",
+        "Taste traditional Vijayawada dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Punugulu",
+        "Royyala Biryani"
+      ],
+      "shopping": [
+        "Vijayawada traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "city"
+      ]
+    },
+    {
+      "id": "amaravati",
+      "name": "Amaravati",
+      "aliases": [
+        "Amaravati"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Sacred Buddhist heritage center and ancient Satavahana capital with the Great Amaravati Mahachaitya Stupa.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.5745,
+      "longitude": 80.3578,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "amaravati"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Amaravati",
+        "Taste traditional Amaravati dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Gongura Pachadi",
+        "Andhra Thali"
+      ],
+      "shopping": [
+        "Amaravati traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "rajahmundry",
+      "name": "Rajahmundry",
+      "aliases": [
+        "Rajahmundry"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "The Cultural Capital of Andhra Pradesh on the sacred Godavari River, renowned for the iconic Godavari Arch Bridge.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 17.0005,
+      "longitude": 81.804,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "rajahmundry"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Rajahmundry",
+        "Taste traditional Rajahmundry dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rose Milk",
+        "Putharekulu sweet"
+      ],
+      "shopping": [
+        "Rajahmundry traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "srisailam",
+      "name": "Srisailam",
+      "aliases": [
+        "Srisailam"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Sacred Jyotirlinga and Shakti Peetha pilgrimage shrine nestled in the Nallamala Forest along the Krishna River.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.0734,
+      "longitude": 78.8687,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "srisailam"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Srisailam",
+        "Taste traditional Srisailam dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Pulihora Prasadam",
+        "Vada"
+      ],
+      "shopping": [
+        "Srisailam traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "nature"
+      ]
+    },
+    {
+      "id": "kurnool",
+      "name": "Kurnool",
+      "aliases": [
+        "Kurnool"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Historical gateway to Rayalaseema, home to the Konda Reddy Buruju fort and prehistoric Belum and Oravakallu rock gardens.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 15.8281,
+      "longitude": 78.0373,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kurnool"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kurnool",
+        "Taste traditional Kurnool dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Uggani Bajji",
+        "Rayalaseema Ragi Mudde"
+      ],
+      "shopping": [
+        "Kurnool traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "nature"
+      ]
+    },
+    {
+      "id": "nellore",
+      "name": "Nellore",
+      "aliases": [
+        "Nellore"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Coastal agriculture and aquaculture hub near the flamingos of Pulicat Lake and Nelapattu Bird Sanctuary.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 14.4426,
+      "longitude": 79.9865,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "nellore"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Nellore",
+        "Taste traditional Nellore dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Nellore Chepala Pulusu",
+        "Malai Kaja"
+      ],
+      "shopping": [
+        "Nellore traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "kakinada",
+      "name": "Kakinada",
+      "aliases": [
+        "Kakinada"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Deep-water coastal port known as the Fertilizer City with Hope Island beach barrier and mouth-watering Kakinada Kaja.",
+      "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.9891,
+      "longitude": 82.2475,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kakinada"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kakinada",
+        "Taste traditional Kakinada dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Gotta Kaja",
+        "Subbayya Gari Thali"
+      ],
+      "shopping": [
+        "Kakinada traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "food"
+      ]
+    },
+    {
+      "id": "horsley-hills",
+      "name": "Horsley Hills",
+      "aliases": [
+        "Horsley Hills"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Picturesque cool hill station at 4,150 ft named after British collector W.D. Horsley, rich in eucalyptus and teak.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.6558,
+      "longitude": 78.3986,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "horsley-hills"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Horsley Hills",
+        "Taste traditional Horsley Hills dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Eucalyptus Honey",
+        "Spicy Biryani"
+      ],
+      "shopping": [
+        "Horsley Hills traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "lepakshi",
+      "name": "Lepakshi",
+      "aliases": [
+        "Lepakshi"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Vijayanagara architectural marvel renowned for the Hanging Pillar temple, fresco ceilings, and India’s largest monolithic Nandi.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 13.8054,
+      "longitude": 77.6074,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "lepakshi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Lepakshi",
+        "Taste traditional Lepakshi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rava Dosa",
+        "Pappu Annam"
+      ],
+      "shopping": [
+        "Lepakshi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "papikondalu",
+      "name": "Papikondalu",
+      "aliases": [
+        "Papikondalu"
+      ],
+      "state": "Andhra Pradesh",
+      "stateSlug": "andhra-pradesh",
+      "description": "Breathtaking scenic gorge of the Godavari River threading between forested cliffs and emerald waters.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 17.5684,
+      "longitude": 81.5204,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "papikondalu"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Papikondalu",
+        "Taste traditional Papikondalu dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "River Fish Fry",
+        "Godavari Pulasa"
+      ],
+      "shopping": [
+        "Papikondalu traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "adventure"
+      ]
+    },
+    {
+      "id": "ajmer",
+      "name": "Ajmer",
+      "aliases": [
+        "Ajmer"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Sacred Sufi spiritual hub nestled in the Aravallis, home to the reverent Dargah Sharif of Khwaja Moinuddin Chishti.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 26.4499,
+      "longitude": 74.6399,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "ajmer"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Ajmer",
+        "Taste traditional Ajmer dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Sohan Halwa",
+        "Kadhi Kachori"
+      ],
+      "shopping": [
+        "Ajmer traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "bikaner",
+      "name": "Bikaner",
+      "aliases": [
+        "Bikaner"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Desert citadel of red sandstone palaces, Junagarh Fort, Karni Mata Rat Temple, and world-famous bhujia snacks.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 28.0229,
+      "longitude": 73.3119,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bikaner"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bikaner",
+        "Taste traditional Bikaner dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bikaneri Bhujia",
+        "Rasgulla"
+      ],
+      "shopping": [
+        "Bikaner traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "desert"
+      ]
+    },
+    {
+      "id": "mount-abu",
+      "name": "Mount Abu",
+      "aliases": [
+        "Mount Abu"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "The only hill station of Rajasthan, sanctuary of Nakki Lake and the peerless white marble Dilwara Jain Temples.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 24.5926,
+      "longitude": 72.7156,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "mount-abu"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Mount Abu",
+        "Taste traditional Mount Abu dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rabri",
+        "Dal Baati Churma"
+      ],
+      "shopping": [
+        "Mount Abu traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "chittorgarh",
+      "name": "Chittorgarh",
+      "aliases": [
+        "Chittorgarh"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Symbol of Rajput chivalry and sacrifice, home to India’s largest fort complex, Vijay Stambha, and Rani Padmini Palace.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 24.8887,
+      "longitude": 74.6269,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "chittorgarh"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Chittorgarh",
+        "Taste traditional Chittorgarh dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Laal Maas",
+        "Gatte Ki Sabzi"
+      ],
+      "shopping": [
+        "Chittorgarh traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "bharatpur",
+      "name": "Bharatpur",
+      "aliases": [
+        "Bharatpur"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Bird sanctuary paradise hosting the UNESCO World Heritage Keoladeo Ghana National Park with over 370 avian species.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.2152,
+      "longitude": 77.503,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bharatpur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bharatpur",
+        "Taste traditional Bharatpur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kachori",
+        "Malpua"
+      ],
+      "shopping": [
+        "Bharatpur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "bundi",
+      "name": "Bundi",
+      "aliases": [
+        "Bundi"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Fairytale blue-hued town of stepped stepwells (Baoris), Taragarh Fort, and ornate Rajput miniature wall murals.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.4414,
+      "longitude": 75.6429,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bundi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bundi",
+        "Taste traditional Bundi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Nukhti Ladoo",
+        "Samosa"
+      ],
+      "shopping": [
+        "Bundi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "art"
+      ]
+    },
+    {
+      "id": "alwar",
+      "name": "Alwar",
+      "aliases": [
+        "Alwar"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Historic Matsya princely capital near the legendary haunted Bhangarh Fort and Sariska Tiger Reserve.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.553,
+      "longitude": 76.6346,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "alwar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Alwar",
+        "Taste traditional Alwar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Alwar Ka Mawa (Kalakand)"
+      ],
+      "shopping": [
+        "Alwar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "kota",
+      "name": "Kota",
+      "aliases": [
+        "Kota"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Vibrant city on the Chambal River famous for Kota Doria handloom sarees, river canyons, and Seven Wonders park.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.2138,
+      "longitude": 75.8648,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kota"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kota",
+        "Taste traditional Kota dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kota Kachori",
+        "Chambal Chaat"
+      ],
+      "shopping": [
+        "Kota traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "heritage"
+      ]
+    },
+    {
+      "id": "neemrana",
+      "name": "Neemrana",
+      "aliases": [
+        "Neemrana"
+      ],
+      "state": "Rajasthan",
+      "stateSlug": "rajasthan",
+      "description": "Historical 15th-century tiered hill fort palace transformed into India’s pioneer heritage resort with aerial ziplining.",
+      "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.9892,
+      "longitude": 76.3883,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "neemrana"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Neemrana",
+        "Taste traditional Neemrana dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rajasthani Thali"
+      ],
+      "shopping": [
+        "Neemrana traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "luxury"
+      ]
+    },
+    {
+      "id": "nashik",
+      "name": "Nashik",
+      "aliases": [
+        "Nashik"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "The Wine Capital of India on the Godavari River, renowned for Kumbh Mela pilgrimage and Sula Vineyards.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 19.9975,
+      "longitude": 73.7898,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "nashik"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Nashik",
+        "Taste traditional Nashik dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Misal Pav",
+        "Estate Wine"
+      ],
+      "shopping": [
+        "Nashik traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "food"
+      ]
+    },
+    {
+      "id": "lonavala",
+      "name": "Lonavala",
+      "aliases": [
+        "Lonavala"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Beloved Sahyadri misty hill station famed for scenic monsoon waterfalls, Karla & Bhaja Caves, and crunchy chikki fudge.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.7557,
+      "longitude": 73.4091,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "lonavala"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Lonavala",
+        "Taste traditional Lonavala dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Lonavala Chikki",
+        "Fudge"
+      ],
+      "shopping": [
+        "Lonavala traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "khandala",
+      "name": "Khandala",
+      "aliases": [
+        "Khandala"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Sister hill getaway to Lonavala offering dramatic views of Duke’s Nose peak and deep forested Sahyadri ravines.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.761,
+      "longitude": 73.3768,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "khandala"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Khandala",
+        "Taste traditional Khandala dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Corn Bhajiya",
+        "Vada Pav"
+      ],
+      "shopping": [
+        "Khandala traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "alibaug",
+      "name": "Alibaug",
+      "aliases": [
+        "Alibaug"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Coastal beach paradise across the Mumbai harbor, known for Kolaba sea fort, black sand beaches, and fresh Konkani seafood.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.6414,
+      "longitude": 72.8722,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "alibaug"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Alibaug",
+        "Taste traditional Alibaug dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Surmai Fry",
+        "Solkadhi"
+      ],
+      "shopping": [
+        "Alibaug traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "nature"
+      ]
+    },
+    {
+      "id": "kolhapur",
+      "name": "Kolhapur",
+      "aliases": [
+        "Kolhapur"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Rich princely seat famous for the ancient Mahalakshmi Temple, handcrafted Kolhapuri chappals, and fiery Tambda-Pandhra rassa.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.705,
+      "longitude": 74.2433,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kolhapur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kolhapur",
+        "Taste traditional Kolhapur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kolhapuri Misal",
+        "Tambda Rassa",
+        "Pandhra Rassa"
+      ],
+      "shopping": [
+        "Kolhapur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "food",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "nagpur",
+      "name": "Nagpur",
+      "aliases": [
+        "Nagpur"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "The Orange City and geographical Zero Mile center of India, gateway to world-class tiger reserves of Vidarbha.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.1458,
+      "longitude": 79.0882,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "nagpur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Nagpur",
+        "Taste traditional Nagpur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Nagpur Oranges",
+        "Tarri Poha",
+        "Saoji Mutton"
+      ],
+      "shopping": [
+        "Nagpur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "shirdi",
+      "name": "Shirdi",
+      "aliases": [
+        "Shirdi"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Renowned worldwide pilgrimage destination holding the sacred Samadhi Mandir of revered saint Sai Baba.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 19.7667,
+      "longitude": 74.4767,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "shirdi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Shirdi",
+        "Taste traditional Shirdi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Sai Sansthan Prasad Ladoo"
+      ],
+      "shopping": [
+        "Shirdi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "matheran",
+      "name": "Matheran",
+      "aliases": [
+        "Matheran"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Asia’s only automobile-free hill station, preserved in peaceful red-clay forest trails, panoramic lookouts, and toy trains.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.9868,
+      "longitude": 73.2676,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "matheran"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Matheran",
+        "Taste traditional Matheran dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Chikki",
+        "Hot Vada Pav"
+      ],
+      "shopping": [
+        "Matheran traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "ratnagiri",
+      "name": "Ratnagiri",
+      "aliases": [
+        "Ratnagiri"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Konkan coastal haven acclaimed for luscious Alphonso (Hapus) mangoes, Thibaw Palace, and pristine secluded beaches.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.9902,
+      "longitude": 73.312,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "ratnagiri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Ratnagiri",
+        "Taste traditional Ratnagiri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Alphonso Mango",
+        "Amboli"
+      ],
+      "shopping": [
+        "Ratnagiri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "nature"
+      ]
+    },
+    {
+      "id": "panchgani",
+      "name": "Panchgani",
+      "aliases": [
+        "Panchgani"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "Picturesque hill town surrounded by five hills, famous for Table Land volcanic plateau and sweet strawberry orchards.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 17.9237,
+      "longitude": 73.8009,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "panchgani"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Panchgani",
+        "Taste traditional Panchgani dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Strawberries with Fresh Cream"
+      ],
+      "shopping": [
+        "Panchgani traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "ajanta",
+      "name": "Ajanta",
+      "aliases": [
+        "Ajanta"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "UNESCO World Heritage horseshoe canyon preserving 30 ancient rock-cut Buddhist cave temples and world-famous murals.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 20.5519,
+      "longitude": 75.7033,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "ajanta"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Ajanta",
+        "Taste traditional Ajanta dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Maharashtrian Pithla Bhakri"
+      ],
+      "shopping": [
+        "Ajanta traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "art"
+      ]
+    },
+    {
+      "id": "ellora",
+      "name": "Ellora",
+      "aliases": [
+        "Ellora"
+      ],
+      "state": "Maharashtra",
+      "stateSlug": "maharashtra",
+      "description": "UNESCO World Heritage site featuring the jaw-dropping Kailash Temple, the largest monolithic rock excavation on Earth.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 20.0268,
+      "longitude": 75.178,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "ellora"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Ellora",
+        "Taste traditional Ellora dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Naan Qalia",
+        "Bhakri"
+      ],
+      "shopping": [
+        "Ellora traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "kalimpong",
+      "name": "Kalimpong",
+      "aliases": [
+        "Kalimpong"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "Quiet Himalayan ridge town overlooking the Teesta River, famed for orchid nurseries, Buddhist monasteries, and colonial cottages.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 27.0667,
+      "longitude": 88.4667,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kalimpong"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kalimpong",
+        "Taste traditional Kalimpong dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kalimpong Cheese",
+        "Momos",
+        "Thukpa"
+      ],
+      "shopping": [
+        "Kalimpong traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "siliguri",
+      "name": "Siliguri",
+      "aliases": [
+        "Siliguri"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "Strategic transit hub connecting the plains to the Himalayas, Sikkim, and the Northeast tea corridors.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 26.7271,
+      "longitude": 88.3953,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "siliguri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Siliguri",
+        "Taste traditional Siliguri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Tibetan Momos",
+        "Puchka"
+      ],
+      "shopping": [
+        "Siliguri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city"
+      ]
+    },
+    {
+      "id": "digha",
+      "name": "Digha",
+      "aliases": [
+        "Digha"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "West Bengal’s most popular sea resort with shallow waters and miles of flat casuarina-fringed sands.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.6266,
+      "longitude": 87.5074,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "digha"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Digha",
+        "Taste traditional Digha dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Pomfret Fry",
+        "Crab Curry"
+      ],
+      "shopping": [
+        "Digha traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches"
+      ]
+    },
+    {
+      "id": "murshidabad",
+      "name": "Murshidabad",
+      "aliases": [
+        "Murshidabad"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "Last sovereign Mughal capital of Bengal, celebrated for the colossal Hazarduari Palace of a thousand doors.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 24.175,
+      "longitude": 88.28,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "murshidabad"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Murshidabad",
+        "Taste traditional Murshidabad dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Murshidabad Biryani",
+        "Chhanabora"
+      ],
+      "shopping": [
+        "Murshidabad traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "bishnupur",
+      "name": "Bishnupur",
+      "aliases": [
+        "Bishnupur"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "Medieval Malla kingdom capital famed for ornate 17th-century terracotta temples and Baluchari silk sarees.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.0678,
+      "longitude": 87.3169,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bishnupur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bishnupur",
+        "Taste traditional Bishnupur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Postor Bora",
+        "Mecha Sandesh"
+      ],
+      "shopping": [
+        "Bishnupur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "art"
+      ]
+    },
+    {
+      "id": "jalpaiguri",
+      "name": "Jalpaiguri",
+      "aliases": [
+        "Jalpaiguri"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "Scenic gateway to Dooars tea country and Gorumara National Park rhino sanctuaries.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 26.5405,
+      "longitude": 88.7194,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "jalpaiguri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Jalpaiguri",
+        "Taste traditional Jalpaiguri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Dooars Tea",
+        "Bora"
+      ],
+      "shopping": [
+        "Jalpaiguri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "kurseong",
+      "name": "Kurseong",
+      "aliases": [
+        "Kurseong"
+      ],
+      "state": "West Bengal",
+      "stateSlug": "west-bengal",
+      "description": "The Land of the White Orchids along the Toy Train route, known for Makaibari tea gardens and Eagle’s Crag panoramic viewpoint.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 26.8812,
+      "longitude": 88.2778,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kurseong"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kurseong",
+        "Taste traditional Kurseong dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Darjeeling First Flush",
+        "Chowmein"
+      ],
+      "shopping": [
+        "Kurseong traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "vadodara",
+      "name": "Vadodara",
+      "aliases": [
+        "Vadodara"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "The Cultural Capital of Gujarat home to the majestic 1890 Laxmi Vilas Palace, four times the size of Buckingham Palace.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.3072,
+      "longitude": 73.1812,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "vadodara"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vadodara",
+        "Taste traditional Vadodara dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Sev Usal",
+        "Bhakarwadi"
+      ],
+      "shopping": [
+        "Vadodara traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "culture"
+      ]
+    },
+    {
+      "id": "surat",
+      "name": "Surat",
+      "aliases": [
+        "Surat"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Global diamond polishing and silk capital on the Tapi River, world-renowned for street food delicacies.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.1702,
+      "longitude": 72.8311,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "surat"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Surat",
+        "Taste traditional Surat dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Surti Locho",
+        "Ghari Sweet",
+        "Undhiyu"
+      ],
+      "shopping": [
+        "Surat traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "food",
+        "city"
+      ]
+    },
+    {
+      "id": "rajkot",
+      "name": "Rajkot",
+      "aliases": [
+        "Rajkot"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Heart of Saurashtra where Mahatma Gandhi spent his childhood, famed for silver jewelry and Bandhani textiles.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.3039,
+      "longitude": 70.8022,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "rajkot"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Rajkot",
+        "Taste traditional Rajkot dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Peda",
+        "Chikki",
+        "Kathiyawadi Thali"
+      ],
+      "shopping": [
+        "Rajkot traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "city"
+      ]
+    },
+    {
+      "id": "bhuj",
+      "name": "Bhuj",
+      "aliases": [
+        "Bhuj"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Walled desert gateway of Kutch boasting Aina Mahal mirror palace, Prag Mahal, and authentic tribal artisan villages.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.242,
+      "longitude": 69.6669,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "bhuj"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bhuj",
+        "Taste traditional Bhuj dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kutchi Dabeli",
+        "Gulab Pak"
+      ],
+      "shopping": [
+        "Bhuj traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "crafts"
+      ]
+    },
+    {
+      "id": "junagadh",
+      "name": "Junagadh",
+      "aliases": [
+        "Junagadh"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Ancient citadel at the base of sacred Girnar Hill, home to Uparkot Fort, Maqbara tombs, and Ashoka Rock Edicts.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.5222,
+      "longitude": 70.4579,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "junagadh"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Junagadh",
+        "Taste traditional Junagadh dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Lagan nu Custard",
+        "Kesar Mango"
+      ],
+      "shopping": [
+        "Junagadh traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "gandhinagar",
+      "name": "Gandhinagar",
+      "aliases": [
+        "Gandhinagar"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Green capital of Gujarat on the Sabarmati River, site of the magnificent sandstone Akshardham Temple complex.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.2156,
+      "longitude": 72.6369,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "gandhinagar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Gandhinagar",
+        "Taste traditional Gandhinagar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Khaman",
+        "Dhokla"
+      ],
+      "shopping": [
+        "Gandhinagar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "saputara",
+      "name": "Saputara",
+      "aliases": [
+        "Saputara"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Serene Sahyadri tribal hill station nestled in dense Dang bamboo forests with panoramic viewpoints and boating lakes.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 20.5746,
+      "longitude": 73.7497,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "saputara"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Saputara",
+        "Taste traditional Saputara dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Dang Tribal Thali",
+        "Bamboo Curry"
+      ],
+      "shopping": [
+        "Saputara traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "modhera",
+      "name": "Modhera",
+      "aliases": [
+        "Modhera"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "Home to the magnificent 11th-century Sun Temple designed so sunrise rays hit the golden sanctum at equinoxes.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.5836,
+      "longitude": 72.1331,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "modhera"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Modhera",
+        "Taste traditional Modhera dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kadhi Khichdi"
+      ],
+      "shopping": [
+        "Modhera traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "champaner",
+      "name": "Champaner",
+      "aliases": [
+        "Champaner"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "UNESCO World Heritage archaeological park preserving pre-Mughal Hindu and Islamic architecture on Pavagadh hill.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.4844,
+      "longitude": 73.5358,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "champaner"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Champaner",
+        "Taste traditional Champaner dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rotla",
+        "Sev Tameta"
+      ],
+      "shopping": [
+        "Champaner traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "dholavira",
+      "name": "Dholavira",
+      "aliases": [
+        "Dholavira"
+      ],
+      "state": "Gujarat",
+      "stateSlug": "gujarat",
+      "description": "UNESCO World Heritage 4,500-year-old Indus Valley civilization metropolis on Khadir Bet island in the Great Rann.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.8864,
+      "longitude": 70.2131,
+      "bestTimeToVisit": "November to February",
+      "topAttractions": [
+        "dholavira"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Dholavira",
+        "Taste traditional Dholavira dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bajra Roti",
+        "Garlic Chutney"
+      ],
+      "shopping": [
+        "Dholavira traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "jabalpur",
+      "name": "Jabalpur",
+      "aliases": [
+        "Jabalpur"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Cultural city on the Narmada celebrated for the awe-inspiring Bhedaghat Marble Rocks canyon and Dhuandhar waterfall.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.1815,
+      "longitude": 79.9864,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "jabalpur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Jabalpur",
+        "Taste traditional Jabalpur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Khoya Jalebi",
+        "Dahi Vada"
+      ],
+      "shopping": [
+        "Jabalpur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "sanchi",
+      "name": "Sanchi",
+      "aliases": [
+        "Sanchi"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "UNESCO World Heritage Buddhist monument complex holding the Great Stupa commissioned by Emperor Ashoka in the 3rd century BCE.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.4873,
+      "longitude": 77.7418,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "sanchi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Sanchi",
+        "Taste traditional Sanchi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Poha",
+        "Jalebi"
+      ],
+      "shopping": [
+        "Sanchi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "pachmarhi",
+      "name": "Pachmarhi",
+      "aliases": [
+        "Pachmarhi"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "The Queen of Satpura, verdant hill station surrounded by waterfalls, prehistoric rock art caves, and viewpoints.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.4674,
+      "longitude": 78.4346,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "pachmarhi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Pachmarhi",
+        "Taste traditional Pachmarhi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bhutte Ka Kees",
+        "Dal Bafla"
+      ],
+      "shopping": [
+        "Pachmarhi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "orchha",
+      "name": "Orchha",
+      "aliases": [
+        "Orchha"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Medieval Bundela jewel frozen in time along the Betwa River, featuring Jahangir Mahal, Ram Raja Temple, and royal chhatris.",
+      "heroImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.3508,
+      "longitude": 78.6415,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "orchha"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Orchha",
+        "Taste traditional Orchha dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bundelkhandi Thali",
+        "Kalakand"
+      ],
+      "shopping": [
+        "Orchha traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "mandu",
+      "name": "Mandu",
+      "aliases": [
+        "Mandu"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "City of Joy set atop the Vindhyas, celebrating the romantic saga of Baz Bahadur and Rani Roopmati with Jahaz Mahal ship palace.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.3667,
+      "longitude": 75.4,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "mandu"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Mandu",
+        "Taste traditional Mandu dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Baobab Fruit Shake",
+        "Poha Sev"
+      ],
+      "shopping": [
+        "Mandu traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "kanha",
+      "name": "Kanha",
+      "aliases": [
+        "Kanha"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Iconic tiger reserve and sal forest grasslands that inspired Rudyard Kipling’s Jungle Book, home to the hard-ground Barasingha.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.3345,
+      "longitude": 80.6115,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "kanha"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kanha",
+        "Taste traditional Kanha dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Campfire Grill",
+        "Tribal Dal"
+      ],
+      "shopping": [
+        "Kanha traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "bandhavgarh",
+      "name": "Bandhavgarh",
+      "aliases": [
+        "Bandhavgarh"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Dense tiger sanctuary with the highest density of Royal Bengal Tigers in India, crowned by the ancient Bandhavgarh Fort.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 23.7226,
+      "longitude": 81.0264,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "bandhavgarh"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bandhavgarh",
+        "Taste traditional Bandhavgarh dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Wild Game Feast Thali"
+      ],
+      "shopping": [
+        "Bandhavgarh traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "pench",
+      "name": "Pench",
+      "aliases": [
+        "Pench"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Pristine teak forest reserve straddling MP and Maharashtra, real-life setting for Mowgli, Baloo, and Sher Khan.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.7583,
+      "longitude": 79.3333,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "pench"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Pench",
+        "Taste traditional Pench dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Madhya Pradesh Thali"
+      ],
+      "shopping": [
+        "Pench traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "panna",
+      "name": "Panna",
+      "aliases": [
+        "Panna"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Diamond city and tiger reserve on the Ken River, famous for roaring Pandav Falls and crocodile sanctuaries.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 24.72,
+      "longitude": 80.19,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "panna"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Panna",
+        "Taste traditional Panna dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Panna Peda",
+        "Dal Bafla"
+      ],
+      "shopping": [
+        "Panna traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "wildlife",
+        "nature"
+      ]
+    },
+    {
+      "id": "chanderi",
+      "name": "Chanderi",
+      "aliases": [
+        "Chanderi"
+      ],
+      "state": "Madhya Pradesh",
+      "stateSlug": "madhya-pradesh",
+      "description": "Weaving capital famed for gossamer Chanderi silk sarees, towering hill fort, and ancient stepwells.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 24.7125,
+      "longitude": 78.1364,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "chanderi"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Chanderi",
+        "Taste traditional Chanderi dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Mawa Jalebi",
+        "Chanderi Namkeen"
+      ],
+      "shopping": [
+        "Chanderi traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "crafts"
+      ]
+    },
+    {
+      "id": "karimnagar",
+      "name": "Karimnagar",
+      "aliases": [
+        "Karimnagar"
+      ],
+      "state": "Telangana",
+      "stateSlug": "telangana",
+      "description": "Historic town on the Manair River famed for delicate Silver Filigree (Tarkashi) crafts and Elgandal Fort.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.4386,
+      "longitude": 79.1288,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "karimnagar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Karimnagar",
+        "Taste traditional Karimnagar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Karimnagar Biryani",
+        "Sarva Pindi"
+      ],
+      "shopping": [
+        "Karimnagar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "heritage"
+      ]
+    },
+    {
+      "id": "nizamabad",
+      "name": "Nizamabad",
+      "aliases": [
+        "Nizamabad"
+      ],
+      "state": "Telangana",
+      "stateSlug": "telangana",
+      "description": "Indur princely seat home to the Ashok Sagar gardens, historic Nizamabad Fort, and Neelkantheshwar temple.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.6725,
+      "longitude": 78.0941,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "nizamabad"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Nizamabad",
+        "Taste traditional Nizamabad dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Pachi Pulusu",
+        "Makka Guda"
+      ],
+      "shopping": [
+        "Nizamabad traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "nature"
+      ]
+    },
+    {
+      "id": "khammam",
+      "name": "Khammam",
+      "aliases": [
+        "Khammam"
+      ],
+      "state": "Telangana",
+      "stateSlug": "telangana",
+      "description": "City guarded by the 10th-century Khammam Fort atop Stambhadri hill, gateway to the sacred temple of Bhadrachalam.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 17.2473,
+      "longitude": 80.1514,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "khammam"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Khammam",
+        "Taste traditional Khammam dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Khammam Karam Dosa",
+        "Pulihora"
+      ],
+      "shopping": [
+        "Khammam traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "medak",
+      "name": "Medak",
+      "aliases": [
+        "Medak"
+      ],
+      "state": "Telangana",
+      "stateSlug": "telangana",
+      "description": "Historic district known for the Gothic Medak Cathedral with stained glass windows and the Kakatiya Medak Fort.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.0461,
+      "longitude": 78.2625,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "medak"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Medak",
+        "Taste traditional Medak dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bagara Rice",
+        "Dalcha"
+      ],
+      "shopping": [
+        "Medak traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "yadadri",
+      "name": "Yadadri",
+      "aliases": [
+        "Yadadri"
+      ],
+      "state": "Telangana",
+      "stateSlug": "telangana",
+      "description": "Spectacular black-stone hill temple complex of Sri Lakshmi Narasimha Swamy, newly reconstructed in grand Dravidian style.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 17.5894,
+      "longitude": 78.9489,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "yadadri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Yadadri",
+        "Taste traditional Yadadri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Laddoo Prasadam",
+        "Pulihora"
+      ],
+      "shopping": [
+        "Yadadri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "nagarjuna-sagar",
+      "name": "Nagarjuna Sagar",
+      "aliases": [
+        "Nagarjuna Sagar"
+      ],
+      "state": "Telangana",
+      "stateSlug": "telangana",
+      "description": "Site of the world’s tallest masonry dam, creating an island museum with relocated 3rd-century Buddhist antiquities.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 16.5768,
+      "longitude": 79.3134,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "nagarjuna-sagar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Nagarjuna Sagar",
+        "Taste traditional Nagarjuna Sagar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Fresh Krishna Fish Fry"
+      ],
+      "shopping": [
+        "Nagarjuna Sagar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "nature"
+      ]
+    },
+    {
+      "id": "thiruvananthapuram",
+      "name": "Thiruvananthapuram",
+      "aliases": [
+        "Thiruvananthapuram"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "Capital of Kerala celebrated for the monumental Sri Padmanabhaswamy Temple, royal palaces, and art galleries.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 8.5241,
+      "longitude": 76.9366,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "thiruvananthapuram"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Thiruvananthapuram",
+        "Taste traditional Thiruvananthapuram dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Trivandrum Sadhya",
+        "Boli & Payasam"
+      ],
+      "shopping": [
+        "Thiruvananthapuram traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "culture",
+        "city"
+      ]
+    },
+    {
+      "id": "kovalam",
+      "name": "Kovalam",
+      "aliases": [
+        "Kovalam"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "World-famous crescent beach haven crowned by the red-and-white striped Vizhinjam Lighthouse and ayurvedic resorts.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 8.4021,
+      "longitude": 76.9787,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "kovalam"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kovalam",
+        "Taste traditional Kovalam dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Karimeen Pollichathu",
+        "Coconut Fish Curry"
+      ],
+      "shopping": [
+        "Kovalam traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "wellness"
+      ]
+    },
+    {
+      "id": "kumarakom",
+      "name": "Kumarakom",
+      "aliases": [
+        "Kumarakom"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "Tranquil emerald paradise of houseboats on Vembanad Lake and migratory bird sanctuary.",
+      "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 9.6175,
+      "longitude": 76.4301,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "kumarakom"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kumarakom",
+        "Taste traditional Kumarakom dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Appam & Stew",
+        "Duck Roast"
+      ],
+      "shopping": [
+        "Kumarakom traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "relaxation"
+      ]
+    },
+    {
+      "id": "vagamon",
+      "name": "Vagamon",
+      "aliases": [
+        "Vagamon"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "Untouched hill station of rolling green meadows, pine forests, tea estates, and paragliding thrills.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 9.6881,
+      "longitude": 76.9056,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "vagamon"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vagamon",
+        "Taste traditional Vagamon dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kerala Parotta with Beef/Paneer Fry"
+      ],
+      "shopping": [
+        "Vagamon traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "bekal",
+      "name": "Bekal",
+      "aliases": [
+        "Bekal"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "Northern coastal fort landmark where the 300-year-old keyhole-shaped Bekal Fort rises directly above the waves.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 12.3924,
+      "longitude": 75.0326,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "bekal"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bekal",
+        "Taste traditional Bekal dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Malabar Biryani",
+        "Pathiri"
+      ],
+      "shopping": [
+        "Bekal traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "beaches"
+      ]
+    },
+    {
+      "id": "kozhikode",
+      "name": "Kozhikode",
+      "aliases": [
+        "Kozhikode"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "Historic City of Spices where Vasco da Gama landed in 1498, world capital of Malabar culinary perfection.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.2588,
+      "longitude": 75.7804,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "kozhikode"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kozhikode",
+        "Taste traditional Kozhikode dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kozhikodan Biryani",
+        "Halwa",
+        "Banana Chips"
+      ],
+      "shopping": [
+        "Kozhikode traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "food",
+        "culture"
+      ]
+    },
+    {
+      "id": "kannur",
+      "name": "Kannur",
+      "aliases": [
+        "Kannur"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "The Land of Looms and Lores, renowned for sacred Theyyam ritual dance theatre and pristine drive-in beaches.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 11.8745,
+      "longitude": 75.3704,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "kannur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kannur",
+        "Taste traditional Kannur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Thalassery Biryani",
+        "Unnakai"
+      ],
+      "shopping": [
+        "Kannur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "beaches"
+      ]
+    },
+    {
+      "id": "thrissur",
+      "name": "Thrissur",
+      "aliases": [
+        "Thrissur"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "The Cultural Capital of Kerala, famed for the colossal Thrissur Pooram festival of caparisoned elephants and percussion ensembles.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 10.5276,
+      "longitude": 76.2144,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "thrissur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Thrissur",
+        "Taste traditional Thrissur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Vellayappam",
+        "Roast Banana"
+      ],
+      "shopping": [
+        "Thrissur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "kollam",
+      "name": "Kollam",
+      "aliases": [
+        "Kollam"
+      ],
+      "state": "Kerala",
+      "stateSlug": "kerala",
+      "description": "Ancient port of the spice trade on Ashtamudi Lake, southern gateway to the backwaters and cashew processing.",
+      "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 8.8932,
+      "longitude": 76.6141,
+      "bestTimeToVisit": "September to March",
+      "topAttractions": [
+        "kollam"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kollam",
+        "Taste traditional Kollam dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Cashew Sweets",
+        "Fish Molee"
+      ],
+      "shopping": [
+        "Kollam traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "heritage"
+      ]
+    },
+    {
+      "id": "vaishali",
+      "name": "Vaishali",
+      "aliases": [
+        "Vaishali"
+      ],
+      "state": "Bihar",
+      "stateSlug": "bihar",
+      "description": "The world’s first republic and birthplace of Lord Mahavira, where Buddha preached his last sermon before Parinirvana.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.9904,
+      "longitude": 85.1278,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "vaishali"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vaishali",
+        "Taste traditional Vaishali dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Litti Chokha",
+        "Sattu Paratha"
+      ],
+      "shopping": [
+        "Vaishali traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "heritage"
+      ]
+    },
+    {
+      "id": "pawapuri",
+      "name": "Pawapuri",
+      "aliases": [
+        "Pawapuri"
+      ],
+      "state": "Bihar",
+      "stateSlug": "bihar",
+      "description": "Sacred Jain spiritual center featuring the stunning Jal Mandir built in white marble in the center of a lotus lake.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.0975,
+      "longitude": 85.5342,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "pawapuri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Pawapuri",
+        "Taste traditional Pawapuri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Khaja",
+        "Jain Thali"
+      ],
+      "shopping": [
+        "Pawapuri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "gaya",
+      "name": "Gaya",
+      "aliases": [
+        "Gaya"
+      ],
+      "state": "Bihar",
+      "stateSlug": "bihar",
+      "description": "Ancient sacred city on the Phalgu River where Hindus perform Pind Daan rituals at the Vishnupad Temple.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 24.7914,
+      "longitude": 85.0002,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "gaya"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Gaya",
+        "Taste traditional Gaya dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Tilkut",
+        "Anarsa"
+      ],
+      "shopping": [
+        "Gaya traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "vikramshila",
+      "name": "Vikramshila",
+      "aliases": [
+        "Vikramshila"
+      ],
+      "state": "Bihar",
+      "stateSlug": "bihar",
+      "description": "Ruins of the celebrated 8th-century Buddhist university founded by King Dharmapala, key center of Tantric Buddhism.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 25.334,
+      "longitude": 87.283,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "vikramshila"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Vikramshila",
+        "Taste traditional Vikramshila dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Litti Chokha"
+      ],
+      "shopping": [
+        "Vikramshila traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "cuttack",
+      "name": "Cuttack",
+      "aliases": [
+        "Cuttack"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "The Millennium City cradled between the Mahanadi and Kathajodi rivers, famous for intricate silver filigree (Tarakasi) art.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 20.4625,
+      "longitude": 85.8828,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "cuttack"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Cuttack",
+        "Taste traditional Cuttack dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Dahibara Alookdum",
+        "Chhena Gaja"
+      ],
+      "shopping": [
+        "Cuttack traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "city"
+      ]
+    },
+    {
+      "id": "gopalpur",
+      "name": "Gopalpur",
+      "aliases": [
+        "Gopalpur"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "Tranquil coastal resort on the Bay of Bengal with colonial port ruins, gentle surf, and olive ridley turtle nesting.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 19.26,
+      "longitude": 84.908,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "gopalpur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Gopalpur",
+        "Taste traditional Gopalpur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Poda Pitha",
+        "Crab Fry"
+      ],
+      "shopping": [
+        "Gopalpur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches"
+      ]
+    },
+    {
+      "id": "rourkela",
+      "name": "Rourkela",
+      "aliases": [
+        "Rourkela"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "The Steel City of Odisha surrounded by hills and rivers, home to the monumental Birsa Munda International Hockey Stadium.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 22.2604,
+      "longitude": 84.8536,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "rourkela"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Rourkela",
+        "Taste traditional Rourkela dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Rasabali",
+        "Bara Guguni"
+      ],
+      "shopping": [
+        "Rourkela traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city"
+      ]
+    },
+    {
+      "id": "sambalpur",
+      "name": "Sambalpur",
+      "aliases": [
+        "Sambalpur"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "Cultural cradle of Western Odisha famed for the Hirakud Dam, Samaleswari Temple, and world-renowned Sambalpuri Ikat sarees.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.4669,
+      "longitude": 83.9812,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "sambalpur"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Sambalpur",
+        "Taste traditional Sambalpur dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Chaula Bara",
+        "Sarsatia"
+      ],
+      "shopping": [
+        "Sambalpur traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "crafts",
+        "culture"
+      ]
+    },
+    {
+      "id": "koraput",
+      "name": "Koraput",
+      "aliases": [
+        "Koraput"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "Breathtaking Eastern Ghats tribal highland of mist-draped peaks, coffee plantations, and Deomali viewpoint.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 18.8135,
+      "longitude": 82.7118,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "koraput"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Koraput",
+        "Taste traditional Koraput dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Tribal Organic Honey",
+        "Ragi Mandia"
+      ],
+      "shopping": [
+        "Koraput traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "hill-stations"
+      ]
+    },
+    {
+      "id": "baripada",
+      "name": "Baripada",
+      "aliases": [
+        "Baripada"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "Cultural seat of Mayurbhanj home to Chhau dance traditions and gateway to the Similipal Tiger Reserve and waterfalls.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 21.9322,
+      "longitude": 86.7231,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "baripada"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Baripada",
+        "Taste traditional Baripada dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Mudhi Mansa (Puffed Rice with Mutton)"
+      ],
+      "shopping": [
+        "Baripada traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "wildlife"
+      ]
+    },
+    {
+      "id": "dhenkanal",
+      "name": "Dhenkanal",
+      "aliases": [
+        "Dhenkanal"
+      ],
+      "state": "Odisha",
+      "stateSlug": "odisha",
+      "description": "Heritage district crowned by Kapilash Temple on a hill peak and Saptasajya mythological mountain valley.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 20.6622,
+      "longitude": 85.5969,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "dhenkanal"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Dhenkanal",
+        "Taste traditional Dhenkanal dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Magji Sweet",
+        "Chhena Poda"
+      ],
+      "shopping": [
+        "Dhenkanal traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "ludhiana",
+      "name": "Ludhiana",
+      "aliases": [
+        "Ludhiana"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "The Manchester of India, prominent industrial and agricultural powerhouse with vibrant Punjabi culinary culture.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.901,
+      "longitude": 75.8573,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "ludhiana"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Ludhiana",
+        "Taste traditional Ludhiana dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Makki Di Roti & Sarson Da Saag",
+        "Lassi"
+      ],
+      "shopping": [
+        "Ludhiana traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "food"
+      ]
+    },
+    {
+      "id": "jalandhar",
+      "name": "Jalandhar",
+      "aliases": [
+        "Jalandhar"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "One of the oldest cities of Punjab, global hub of world-class cricket bat and sports equipment manufacturing.",
+      "heroImage": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 31.326,
+      "longitude": 75.5762,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "jalandhar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Jalandhar",
+        "Taste traditional Jalandhar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Amritsari Kulcha",
+        "Butter Chicken"
+      ],
+      "shopping": [
+        "Jalandhar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "city",
+        "culture"
+      ]
+    },
+    {
+      "id": "bathinda",
+      "name": "Bathinda",
+      "aliases": [
+        "Bathinda"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "Historic city home to the monumental 1,400-year-old Qila Mubarak where Razia Sultan was once imprisoned.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.211,
+      "longitude": 74.9455,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "bathinda"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Bathinda",
+        "Taste traditional Bathinda dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Dal Makhani",
+        "Pinni"
+      ],
+      "shopping": [
+        "Bathinda traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "pathankot",
+      "name": "Pathankot",
+      "aliases": [
+        "Pathankot"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "Picturesque gateway city at the confluence of Punjab, Jammu & Kashmir, and Himachal Pradesh on the Chakki River.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 32.2686,
+      "longitude": 75.6528,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "pathankot"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Pathankot",
+        "Taste traditional Pathankot dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Chole Bhature",
+        "Lassi"
+      ],
+      "shopping": [
+        "Pathankot traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "city"
+      ]
+    },
+    {
+      "id": "kapurthala",
+      "name": "Kapurthala",
+      "aliases": [
+        "Kapurthala"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "The Paris of Punjab, acclaimed for Indo-French architecture like the Jagatjit Palace inspired by Versailles.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 31.38,
+      "longitude": 75.38,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "kapurthala"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kapurthala",
+        "Taste traditional Kapurthala dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Paneer Tikka",
+        "Phirni"
+      ],
+      "shopping": [
+        "Kapurthala traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "architecture"
+      ]
+    },
+    {
+      "id": "fatehgarh-sahib",
+      "name": "Fatehgarh Sahib",
+      "aliases": [
+        "Fatehgarh Sahib"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "Solemn Sikh pilgrimage site marking the martyrdom of Guru Gobind Singh’s younger sons Sahibzadas Zorawar and Fateh Singh.",
+      "heroImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.6473,
+      "longitude": 76.398,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "fatehgarh-sahib"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Fatehgarh Sahib",
+        "Taste traditional Fatehgarh Sahib dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Guru Ka Langar",
+        "Karah Prasad"
+      ],
+      "shopping": [
+        "Fatehgarh Sahib traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "rupnagar",
+      "name": "Rupnagar",
+      "aliases": [
+        "Rupnagar"
+      ],
+      "state": "Punjab",
+      "stateSlug": "punjab",
+      "description": "Ancient city on the Sutlej River with excavated settlements of the Indus Valley Harappan civilization.",
+      "heroImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.9664,
+      "longitude": 76.5331,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "rupnagar"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Rupnagar",
+        "Taste traditional Rupnagar dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Amritsari Fish Fry",
+        "Lassi"
+      ],
+      "shopping": [
+        "Rupnagar traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "history"
+      ]
+    },
+    {
+      "id": "kedarnath",
+      "name": "Kedarnath",
+      "aliases": [
+        "Kedarnath"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Highest of the twelve sacred Jyotirlingas of Lord Shiva set against snow-crested Himalayan peaks in the Mandakini valley.",
+      "heroImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.7352,
+      "longitude": 79.0669,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "kedarnath"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kedarnath",
+        "Taste traditional Kedarnath dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Garhwali Thali",
+        "Pahaadi Chai"
+      ],
+      "shopping": [
+        "Kedarnath traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "adventure"
+      ]
+    },
+    {
+      "id": "badrinath",
+      "name": "Badrinath",
+      "aliases": [
+        "Badrinath"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Sacred Char Dham shrine of Lord Vishnu between Nar and Narayana mountains along the roaring Alaknanda River.",
+      "heroImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.7433,
+      "longitude": 79.4938,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "badrinath"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Badrinath",
+        "Taste traditional Badrinath dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Khichdi Prasad",
+        "Bal Mithai"
+      ],
+      "shopping": [
+        "Badrinath traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "nature"
+      ]
+    },
+    {
+      "id": "gangotri",
+      "name": "Gangotri",
+      "aliases": [
+        "Gangotri"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Sacred Himalayan source of the Holy Ganga (Bhagirathi River), nestled in pine groves and cedar forests.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.9947,
+      "longitude": 78.9398,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "gangotri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Gangotri",
+        "Taste traditional Gangotri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Garhwali Mandua Roti",
+        "Gahat Dal"
+      ],
+      "shopping": [
+        "Gangotri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "nature"
+      ]
+    },
+    {
+      "id": "yamunotri",
+      "name": "Yamunotri",
+      "aliases": [
+        "Yamunotri"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "First stop of the Char Dham pilgrimage marking the glacial origin of River Yamuna with sacred hot water springs.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 31.0142,
+      "longitude": 78.46,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "yamunotri"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Yamunotri",
+        "Taste traditional Yamunotri dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kandalee Saag",
+        "Pahaadi Dal"
+      ],
+      "shopping": [
+        "Yamunotri traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "spiritual",
+        "nature"
+      ]
+    },
+    {
+      "id": "auli",
+      "name": "Auli",
+      "aliases": [
+        "Auli"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Premier ski resort of India offering 360-degree views of Nanda Devi peak and Asia’s longest cable car ride.",
+      "heroImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.5317,
+      "longitude": 79.5683,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "auli"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Auli",
+        "Taste traditional Auli dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Garhwali Koda Roti",
+        "Kachmauli"
+      ],
+      "shopping": [
+        "Auli traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "adventure",
+        "hill-stations"
+      ]
+    },
+    {
+      "id": "almora",
+      "name": "Almora",
+      "aliases": [
+        "Almora"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Cultural heart of Kumaon perched on a horse-saddle ridge, famous for traditional stone-carved bazaars and Bal Mithai sweet.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 29.596,
+      "longitude": 79.6465,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "almora"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Almora",
+        "Taste traditional Almora dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bal Mithai",
+        "Singori"
+      ],
+      "shopping": [
+        "Almora traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "culture"
+      ]
+    },
+    {
+      "id": "ranikhet",
+      "name": "Ranikhet",
+      "aliases": [
+        "Ranikhet"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Queen’s Meadow cantonment town home to the Kumaon Regiment, lush pine ridges, and a 9-hole golf course.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 29.6434,
+      "longitude": 79.4322,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "ranikhet"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Ranikhet",
+        "Taste traditional Ranikhet dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Aloo Ke Gutke",
+        "Kumaoni Raita"
+      ],
+      "shopping": [
+        "Ranikhet traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "lansdowne",
+      "name": "Lansdowne",
+      "aliases": [
+        "Lansdowne"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "Quiet, pristine hill sanctuary established by the British Garhwal Rifles, blanketed in thick blue pine and oak forests.",
+      "heroImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 29.8377,
+      "longitude": 78.6871,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "lansdowne"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Lansdowne",
+        "Taste traditional Lansdowne dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kafuli",
+        "Bhang Ki Chutney"
+      ],
+      "shopping": [
+        "Lansdowne traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "kausani",
+      "name": "Kausani",
+      "aliases": [
+        "Kausani"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "The Switzerland of India as praised by Mahatma Gandhi, offering unobstructed 300-km views of Trishul, Nanda Devi, and Panchachuli peaks.",
+      "heroImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 29.8543,
+      "longitude": 79.5967,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "kausani"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Kausani",
+        "Taste traditional Kausani dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Kumaoni Thali",
+        "Bal Mithai"
+      ],
+      "shopping": [
+        "Kausani traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "pithoragarh",
+      "name": "Pithoragarh",
+      "aliases": [
+        "Pithoragarh"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "The Little Kashmir of Uttarakhand nestled in the Soar Valley, gateway to the sacred Kailash-Mansarovar pilgrimage trail.",
+      "heroImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 29.5829,
+      "longitude": 80.2182,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "pithoragarh"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Pithoragarh",
+        "Taste traditional Pithoragarh dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Bhatt Ki Churkani",
+        "Dubuk"
+      ],
+      "shopping": [
+        "Pithoragarh traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "hill-stations",
+        "nature"
+      ]
+    },
+    {
+      "id": "valley-of-flowers",
+      "name": "Valley of Flowers",
+      "aliases": [
+        "Valley of Flowers"
+      ],
+      "state": "Uttarakhand",
+      "stateSlug": "uttarakhand",
+      "description": "UNESCO World Heritage alpine valley that bursts into hundreds of endemic wild alpine blooms against glacial backdrops in monsoon.",
+      "heroImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "latitude": 30.728,
+      "longitude": 79.6053,
+      "bestTimeToVisit": "March to June & September to November",
+      "topAttractions": [
+        "valley-of-flowers"
+      ],
+      "thingsToDo": [
+        "Explore heritage sites of Valley of Flowers",
+        "Taste traditional Valley of Flowers dishes",
+        "Local marketplace and cultural walk"
+      ],
+      "food": [
+        "Camp Trail Snacks",
+        "Pahaadi Tea"
+      ],
+      "shopping": [
+        "Valley of Flowers traditional handicrafts"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "adventure"
+      ]
     }
   ],
   "attractions": [

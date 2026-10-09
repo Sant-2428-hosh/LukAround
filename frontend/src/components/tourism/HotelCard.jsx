@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Star,
@@ -12,10 +12,12 @@ import {
   Wifi,
   Car,
   Utensils,
-  Layers
+  Layers,
+  Globe
 } from 'lucide-react';
 import SafeImage from './SafeImage';
-import { getGoogleMapsSearchUrl, getGoogleMapsDirectionsUrl } from '../../utils/distance';
+import DirectionsModal from './DirectionsModal';
+import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../../utils/googleMaps';
 
 export default function HotelCard({
   hotel,
@@ -27,6 +29,8 @@ export default function HotelCard({
   layout = 'card' // 'card' or 'horizontal'
 }) {
   if (!hotel) return null;
+
+  const [internalDirectionsOpen, setInternalDirectionsOpen] = useState(false);
 
   const {
     id,
@@ -434,53 +438,82 @@ export default function HotelCard({
               rel="noopener noreferrer"
               title="View on Google Maps"
               style={{
-                backgroundColor: '#F8FAFC',
-                color: '#1E293B',
-                border: '1px solid #CBD5E1',
+                backgroundColor: '#FEF2F2',
+                color: '#DC2626',
+                border: '1px solid #FECACA',
                 padding: '0.45rem 0.75rem',
                 borderRadius: '6px',
                 fontSize: '0.8rem',
-                fontWeight: 600,
+                fontWeight: 700,
                 textDecoration: 'none',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '4px'
               }}
             >
-              <MapPin size={13} color="#EA4335" />
-              <span>Map</span>
+              <MapPin size={13} color="#DC2626" />
+              <span>View on Maps</span>
             </a>
 
             {/* Get Directions Button */}
-            {onOpenDirections ? (
-              <button
-                type="button"
-                onClick={() => onOpenDirections(hotel)}
+            <button
+              type="button"
+              onClick={() => onOpenDirections ? onOpenDirections(hotel) : setInternalDirectionsOpen(true)}
+              style={{
+                backgroundColor: '#0F172A',
+                color: '#FFFFFF',
+                border: 'none',
+                padding: '0.45rem 0.75rem',
+                borderRadius: '6px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+            >
+              <Navigation size={13} color="#38BDF8" />
+              <span>Get Directions</span>
+            </button>
+
+            {/* Directions from This Attraction (Requirement 7) */}
+            {(originCoords || destinationName) && (
+              <a
+                href={buildGoogleMapsDirectionsUrl(originCoords || destinationName, hotel, 'driving')}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Directions from ${destinationName || 'Attraction'} to ${name}`}
                 style={{
-                  backgroundColor: '#0F172A',
-                  color: '#FFFFFF',
-                  border: 'none',
+                  backgroundColor: '#F0FDF4',
+                  color: '#166534',
+                  border: '1px solid #BBF7D0',
                   padding: '0.45rem 0.75rem',
                   borderRadius: '6px',
                   fontSize: '0.8rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
+                  fontWeight: 700,
+                  textDecoration: 'none',
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '4px'
                 }}
               >
-                <Navigation size={13} color="#38BDF8" />
-                <span>Directions</span>
-              </button>
-            ) : (
+                <Navigation size={13} color="#16A34A" />
+                <span>Directions from {destinationName ? destinationName.slice(0, 15) : 'Attraction'}</span>
+              </a>
+            )}
+
+            {/* Official Hotel Website (Requirement 7) */}
+            {website && (
               <a
-                href={mapsDirectionsUrl}
+                href={website}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Official Hotel Website"
                 style={{
-                  backgroundColor: '#0F172A',
-                  color: '#FFFFFF',
+                  backgroundColor: '#F8FAFC',
+                  color: '#2563EB',
+                  border: '1px solid #CBD5E1',
                   padding: '0.45rem 0.75rem',
                   borderRadius: '6px',
                   fontSize: '0.8rem',
@@ -491,13 +524,22 @@ export default function HotelCard({
                   gap: '4px'
                 }}
               >
-                <Navigation size={13} color="#38BDF8" />
-                <span>Directions</span>
+                <Globe size={13} color="#2563EB" />
+                <span>Website</span>
+                <ExternalLink size={11} color="#64748B" />
               </a>
             )}
           </div>
         </div>
       </div>
+
+      {/* Internal Directions Modal */}
+      <DirectionsModal
+        isOpen={internalDirectionsOpen}
+        onClose={() => setInternalDirectionsOpen(false)}
+        target={hotel}
+        destination={destinationName ? { name: destinationName, coordinates: originCoords } : null}
+      />
     </div>
   );
 }

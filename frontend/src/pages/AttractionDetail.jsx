@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { attractions, states, cities } from '../data/indiaTourismData';
+import { hotels as allHotels } from '../data/hotelsData';
 import AttractionCard from '../components/tourism/AttractionCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import WhereToStaySection from '../components/tourism/WhereToStaySection';
+import GoogleMapView from '../components/maps/GoogleMapView';
+import DirectionsModal from '../components/tourism/DirectionsModal';
+import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl, getNearbyHotels } from '../utils/googleMaps';
 import {
   MapPin,
   Calendar,
@@ -22,7 +26,9 @@ import {
   Share2,
   Camera,
   ShieldCheck,
-  Maximize2
+  Maximize2,
+  Navigation,
+  Hotel
 } from 'lucide-react';
 
 export default function AttractionDetail() {
@@ -30,18 +36,25 @@ export default function AttractionDetail() {
 
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
+  const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
+  const [selectedMarkerId, setSelectedMarkerId] = useState(null);
 
   const attraction = attractions.find(a =>
     a.id === attractionSlug || a.id.toLowerCase() === (attractionSlug || '').toLowerCase()
   ) || attractions[0];
 
-  const parentCity = cities.find(c => c.id === attraction.citySlug) || { name: attraction.city, id: attraction.citySlug };
+  const parentCity = cities.find(c => c.id === attraction.citySlug) || { name: attraction.city, id: attraction.citySlug, state: attraction.state };
   const parentState = states.find(s => s.slug === attraction.stateSlug) || { name: attraction.state, slug: attraction.stateSlug };
 
   // Nearby attractions in the same city or state
   const nearbyPlacesList = attractions.filter(a =>
     a.id !== attraction.id && (a.citySlug === attraction.citySlug || a.stateSlug === attraction.stateSlug)
   ).slice(0, 3);
+
+  // Nearby verified hotels
+  const nearbyHotels = useMemo(() => {
+    return getNearbyHotels(attraction, allHotels, 25).slice(0, 10);
+  }, [attraction]);
 
   // Complete gallery list including hero image
   const allImages = [
@@ -53,6 +66,70 @@ export default function AttractionDetail() {
     setActivePhotoIndex(idx);
     setGalleryOpen(true);
   };
+
+  const attrCoords = attraction.coordinates || { latitude: 20.5937, longitude: 78.9629 };
+  const mapsSearchUrl = buildGoogleMapsSearchUrl(attraction);
+
+  // Map markers: Attraction (Selected) + Nearby Hotels + Nearby Attractions
+  const mapMarkers = useMemo(() => {
+    const list = [];
+
+    // 1. Selected Attraction Marker
+    list.push({
+      id: attraction.id,
+      title: attraction.name,
+      latitude: attrCoords.latitude,
+      longitude: attrCoords.longitude,
+      type: 'attraction',
+      category: attraction.type || 'Attraction',
+      city: attraction.city,
+      state: attraction.state,
+      image: attraction.image,
+      address: `${attraction.name}, ${attraction.city}, ${attraction.state}`
+    });
+
+    // 2. Nearby Hotels
+    nearbyHotels.forEach(h => {
+      if (h.latitude && h.longitude) {
+        list.push({
+          id: h.id,
+          title: h.name,
+          latitude: h.latitude,
+          longitude: h.longitude,
+          type: 'hotel',
+          category: 'Hotel',
+          city: h.city,
+          state: h.state,
+          address: h.address,
+          rating: h.guestRating,
+          starCategory: h.starCategory,
+          image: h.image,
+          website: h.website
+        });
+      }
+    });
+
+    // 3. Other Nearby Attractions
+    nearbyPlacesList.forEach(a => {
+      const c = a.coordinates;
+      if (c && c.latitude && c.longitude) {
+        list.push({
+          id: a.id,
+          title: a.name,
+          latitude: c.latitude,
+          longitude: c.longitude,
+          type: 'attraction',
+          category: a.type || 'Attraction',
+          city: a.city,
+          state: a.state,
+          image: a.image,
+          address: `${a.name}, ${a.city}, ${a.state}`
+        });
+      }
+    });
+
+    return list;
+  }, [attraction, attrCoords, nearbyHotels, nearbyPlacesList]);
 
   return (
     <div className="tourism-page">
@@ -118,30 +195,103 @@ export default function AttractionDetail() {
             {attraction.shortDescription}
           </p>
 
-          <button
-            onClick={() => openGalleryAt(0)}
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              backgroundColor: 'rgba(255, 255, 255, 0.2)',
-              backdropFilter: 'blur(8px)',
-              border: '1px solid rgba(255, 255, 255, 0.4)',
-              color: '#FFFFFF',
-              padding: '0.6rem 1.2rem',
-              borderRadius: '8px',
-              fontWeight: 700,
-              fontSize: '0.85rem',
-              cursor: 'pointer',
-              transition: 'all 0.2s'
-            }}
-          >
-            <Maximize2 size={15} />
-            <span>View Fullscreen Gallery ({allImages.length} photos)</span>
-          </button>
+          {/* Action Buttons in Hero Banner (Requirement 6) */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center' }}>
+            {/* View on Google Maps Button */}
+            <a
+              href={mapsSearchUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: '#DC2626',
+                color: '#FFFFFF',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                textDecoration: 'none',
+                boxShadow: '0 4px 12px rgba(220, 38, 38, 0.3)'
+              }}
+            >
+              <MapPin size={16} />
+              <span>View on Google Maps</span>
+              <ExternalLink size={13} />
+            </a>
+
+            {/* Get Directions Button */}
+            <button
+              type="button"
+              onClick={() => setDirectionsModalOpen(true)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: '#0F172A',
+                color: '#FFFFFF',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              <Navigation size={16} color="#38BDF8" />
+              <span>Get Directions</span>
+            </button>
+
+            {/* Show Nearby Hotels Button */}
+            <a
+              href="#where-to-stay"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: '#1D4ED8',
+                color: '#FFFFFF',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                textDecoration: 'none'
+              }}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('where-to-stay')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <Hotel size={16} />
+              <span>Nearby Hotels</span>
+            </a>
+
+            {/* Fullscreen Gallery */}
+            <button
+              onClick={() => openGalleryAt(0)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.4)',
+                color: '#FFFFFF',
+                padding: '0.65rem 1.2rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              <Maximize2 size={15} />
+              <span>Gallery ({allImages.length} photos)</span>
+            </button>
+          </div>
         </div>
 
-        {/* Unobtrusive Photo Credit Pill in Hero (Requirement 14) */}
+        {/* Photo Attribution Pill */}
         {(attraction.imagePhotographer || attraction.imageSourceName) && (
           <div
             style={{
@@ -212,7 +362,7 @@ export default function AttractionDetail() {
               Geo Coordinates
             </div>
             <div style={{ fontWeight: 800, fontSize: '0.95rem', color: '#0F172A' }}>
-              {attraction.coordinates?.latitude}° N, {attraction.coordinates?.longitude}° E
+              {attrCoords.latitude}° N, {attrCoords.longitude}° E
             </div>
             <div style={{ fontSize: '0.75rem', color: '#64748B' }}>
               Verified GPS Location
@@ -220,82 +370,80 @@ export default function AttractionDetail() {
           </div>
         </div>
 
-        {/* ── Main Content Layout ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(0, 1fr)', gap: '2.5rem', marginBottom: '4rem' }}>
+        {/* ── Interactive Google Map Section (Attraction + Hotels + Nearby Places) ── */}
+        <section style={{ marginBottom: '3.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <div>
+              <span className="tourism-badge badge-forest">Live Geographical Map</span>
+              <h2 className="tourism-heading" style={{ fontSize: '1.6rem', marginTop: '0.25rem' }}>
+                Interactive Location Map for {attraction.name}
+              </h2>
+            </div>
+            <span style={{ fontSize: '0.85rem', color: '#64748B' }}>
+              Red pin: {attraction.name} • Blue pins: Nearby Verified Stays
+            </span>
+          </div>
+
+          <GoogleMapView
+            markers={mapMarkers}
+            center={{ lat: attrCoords.latitude, lng: attrCoords.longitude }}
+            zoom={14}
+            selectedMarkerId={selectedMarkerId || attraction.id}
+            onMarkerSelect={(m) => setSelectedMarkerId(m.id)}
+            height="460px"
+            fitBounds={true}
+          />
+        </section>
+
+        {/* ── Main Details Layout: Content + Sticky Sidebar ── */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'minmax(0, 2fr) minmax(300px, 1fr)',
+          gap: '3rem',
+          marginBottom: '4rem'
+        }}>
+          {/* Main Description & Narrative */}
           <div>
-            {/* Long Description */}
             <section style={{ marginBottom: '2.5rem' }}>
-              <h2 className="tourism-heading" style={{ fontSize: '1.6rem', marginBottom: '1rem' }}>
+              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>
                 About {attraction.name}
               </h2>
-              <p style={{ fontSize: '1rem', lineHeight: 1.7, color: '#334155' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: '#334155', margin: '0 0 1.25rem' }}>
                 {attraction.longDescription || attraction.shortDescription}
               </p>
             </section>
-
-            {/* Photo Gallery with Interactive Modal */}
-            {allImages.length > 0 && (
-              <section style={{ marginBottom: '2.5rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                  <h3 className="tourism-heading" style={{ fontSize: '1.4rem', margin: 0 }}>
-                    Authentic Photo Gallery
-                  </h3>
-                  <span style={{ fontSize: '0.8rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <ShieldCheck size={14} color="#10B981" />
-                    All Photographs Verified
-                  </span>
-                </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.85rem' }}>
-                  {allImages.map((imgUrl, idx) => (
-                    <div
-                      key={idx}
-                      onClick={() => openGalleryAt(idx)}
-                      style={{ cursor: 'pointer', position: 'relative', borderRadius: '12px', overflow: 'hidden' }}
-                    >
-                      <SafeImage
-                        src={imgUrl}
-                        alt={`${attraction.name} view ${idx + 1}`}
-                        aspectRatio="4:3"
-                        category={attraction.category?.[0] || 'heritage'}
-                        verified={true}
-                        showCredit={false}
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
 
             {/* Highlights */}
             {attraction.highlights && attraction.highlights.length > 0 && (
               <section style={{ marginBottom: '2.5rem' }}>
                 <h3 className="tourism-heading" style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>
-                  Key Highlights & Architecture
+                  Architectural & Experience Highlights
                 </h3>
-                <div style={{ display: 'grid', gap: '0.65rem' }}>
-                  {attraction.highlights.map((highlight, idx) => (
+                <div style={{ display: 'grid', gap: '0.75rem' }}>
+                  {attraction.highlights.map((hl, idx) => (
                     <div
                       key={idx}
                       style={{
                         backgroundColor: '#FFFFFF',
-                        borderRadius: '10px',
-                        padding: '1rem 1.25rem',
+                        borderRadius: '12px',
+                        padding: '1.1rem 1.25rem',
                         border: '1px solid var(--tourism-sand-border)',
                         display: 'flex',
-                        alignItems: 'center',
+                        alignItems: 'flex-start',
                         gap: '0.75rem'
                       }}
                     >
-                      <CheckCircle2 size={18} color="var(--tourism-forest)" style={{ flexShrink: 0 }} />
-                      <span style={{ fontSize: '0.92rem', color: '#1E293B', fontWeight: 600 }}>{highlight}</span>
+                      <CheckCircle2 size={18} color="var(--tourism-forest)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                      <span style={{ fontSize: '0.92rem', color: '#1E293B', fontWeight: 600, lineHeight: 1.5 }}>
+                        {hl}
+                      </span>
                     </div>
                   ))}
                 </div>
               </section>
             )}
 
-            {/* Activities */}
+            {/* Activities & Experiences */}
             {attraction.activities && attraction.activities.length > 0 && (
               <section style={{ marginBottom: '2.5rem' }}>
                 <h3 className="tourism-heading" style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>
@@ -394,33 +542,50 @@ export default function AttractionDetail() {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                <button
+                  type="button"
+                  onClick={() => setDirectionsModalOpen(true)}
+                  className="tourism-btn tourism-btn-primary"
+                  style={{ width: '100%', justifyContent: 'center' }}
+                >
+                  <Navigation size={15} color="#38BDF8" />
+                  <span>Get Directions to {attraction.name}</span>
+                </button>
+
+                <a
+                  href={mapsSearchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tourism-btn"
+                  style={{
+                    width: '100%',
+                    justifyContent: 'center',
+                    backgroundColor: '#FEF2F2',
+                    color: '#DC2626',
+                    border: '1px solid #FECACA'
+                  }}
+                >
+                  <MapPin size={15} color="#DC2626" />
+                  <span>View on Google Maps</span>
+                </a>
+
                 <Link
                   to={`/planner?destination=${encodeURIComponent(attraction.name)}`}
-                  className="tourism-btn tourism-btn-primary"
+                  className="tourism-btn tourism-btn-secondary"
                   style={{ width: '100%', justifyContent: 'center' }}
                 >
                   <span>Add to Travel Plan</span>
                   <ArrowRight size={15} />
                 </Link>
-
-                <a
-                  href="#where-to-stay"
-                  className="tourism-btn tourism-btn-secondary"
-                  style={{ width: '100%', justifyContent: 'center' }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById('where-to-stay')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  <span>Where to Stay Near {attraction.name}</span>
-                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* ── Dedicated Where to Stay Section (Official Hotel Discovery System) ── */}
-        <WhereToStaySection destination={attraction} city={parentCity} />
+        <div id="where-to-stay">
+          <WhereToStaySection destination={attraction} city={parentCity} />
+        </div>
 
         {/* ── Nearby Attractions in this City ── */}
         {nearbyPlacesList.length > 0 && (
@@ -436,6 +601,13 @@ export default function AttractionDetail() {
           </div>
         )}
       </div>
+
+      {/* ── Directions Modal ── */}
+      <DirectionsModal
+        isOpen={directionsModalOpen}
+        onClose={() => setDirectionsModalOpen(false)}
+        target={attraction}
+      />
 
       {/* ── Interactive Image Gallery Modal ── */}
       <ImageGalleryModal

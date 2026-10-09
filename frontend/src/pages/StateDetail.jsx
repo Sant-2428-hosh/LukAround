@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { states, cities, attractions, itineraries } from '../data/indiaTourismData';
+import { hotels as allHotels } from '../data/hotelsData';
 import CityCard from '../components/tourism/CityCard';
 import AttractionCard from '../components/tourism/AttractionCard';
+import HotelCard from '../components/tourism/HotelCard';
 import ItineraryCard from '../components/tourism/ItineraryCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
+import GoogleMapView from '../components/maps/GoogleMapView';
+import DirectionsModal from '../components/tourism/DirectionsModal';
+import { buildGoogleMapsSearchUrl, STATE_CENTERS } from '../utils/googleMaps';
 import {
   MapPin,
   Calendar,
@@ -24,7 +29,12 @@ import {
   Landmark,
   Camera,
   ShieldCheck,
-  Maximize2
+  Maximize2,
+  Navigation,
+  ExternalLink,
+  Search,
+  Filter,
+  Hotel
 } from 'lucide-react';
 
 export default function StateDetail() {
@@ -33,15 +43,99 @@ export default function StateDetail() {
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
 
+  // Search & Filter State
+  const [citySearchTerm, setCitySearchTerm] = useState('');
+  const [selectedStyleFilter, setSelectedStyleFilter] = useState('all');
+  const [selectedMarkerId, setSelectedMarkerId] = useState(null);
+
+  // Directions Modal
+  const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
+
   const state = states.find(s => s.slug === stateSlug || s.id === stateSlug) || states[0];
   const stateCities = cities.filter(c => c.stateSlug === state.slug || c.state === state.name);
   const stateAttractions = attractions.filter(a => a.stateSlug === state.slug || a.state === state.name);
   const stateItineraries = itineraries.filter(i => i.state === state.name);
+  const stateHotels = allHotels.filter(h => h.state.toLowerCase() === state.name.toLowerCase());
 
   // Filter attractions by category types
   const heritageAttractions = stateAttractions.filter(a => (a.category || []).includes('heritage') || a.type === 'heritage' || a.type === 'forts-palaces');
   const spiritualAttractions = stateAttractions.filter(a => (a.category || []).includes('spiritual') || a.type === 'spiritual');
   const natureAttractions = stateAttractions.filter(a => (a.category || []).includes('nature') || (a.category || []).includes('beaches') || (a.category || []).includes('hill-stations') || (a.category || []).includes('wildlife') || (a.category || []).includes('lakes-waterfalls'));
+
+  // City filtering
+  const filteredCities = useMemo(() => {
+    return stateCities.filter(c => {
+      const matchesSearch = !citySearchTerm.trim() ||
+        c.name.toLowerCase().includes(citySearchTerm.toLowerCase()) ||
+        c.description.toLowerCase().includes(citySearchTerm.toLowerCase());
+
+      const matchesStyle = selectedStyleFilter === 'all' ||
+        (c.travelStyles || []).some(s => s.toLowerCase() === selectedStyleFilter.toLowerCase());
+
+      return matchesSearch && matchesStyle;
+    });
+  }, [stateCities, citySearchTerm, selectedStyleFilter]);
+
+  // Map markers for this state
+  const stateMapMarkers = useMemo(() => {
+    const markers = [];
+
+    // All Cities in State
+    stateCities.forEach(c => {
+      if (c.latitude && c.longitude) {
+        markers.push({
+          id: c.id,
+          title: c.name,
+          latitude: c.latitude,
+          longitude: c.longitude,
+          type: 'city',
+          category: 'City',
+          city: c.name,
+          state: state.name,
+          image: c.heroImage || c.image,
+          address: `${c.name}, ${state.name}, India`
+        });
+      }
+    });
+
+    // Top Attractions in State
+    stateAttractions.forEach(a => {
+      const coords = a.coordinates || { latitude: a.latitude, longitude: a.longitude };
+      if (coords && coords.latitude && coords.longitude) {
+        markers.push({
+          id: a.id,
+          title: a.name,
+          latitude: coords.latitude,
+          longitude: coords.longitude,
+          type: 'attraction',
+          category: a.type || 'Attraction',
+          city: a.city,
+          state: state.name,
+          image: a.image,
+          address: `${a.name}, ${a.city}, ${state.name}`
+        });
+      }
+    });
+
+    return markers;
+  }, [stateCities, stateAttractions, state.name]);
+
+  const mapCenter = useMemo(() => {
+    if (STATE_CENTERS[state.slug]) {
+      return {
+        lat: STATE_CENTERS[state.slug].latitude,
+        lng: STATE_CENTERS[state.slug].longitude
+      };
+    }
+    if (stateCities[0] && stateCities[0].latitude) {
+      return { lat: stateCities[0].latitude, lng: stateCities[0].longitude };
+    }
+    return { lat: 20.5937, lng: 78.9629 };
+  }, [state.slug, stateCities]);
+
+  const mapZoom = useMemo(() => {
+    return STATE_CENTERS[state.slug]?.zoom || 7;
+  }, [state.slug]);
 
   const allImages = [
     state.heroImage,
@@ -52,6 +146,13 @@ export default function StateDetail() {
     setActivePhotoIndex(idx);
     setGalleryOpen(true);
   };
+
+  const stateMapsUrl = buildGoogleMapsSearchUrl({
+    name: `${state.name}, India`,
+    state: state.name,
+    latitude: STATE_CENTERS[state.slug]?.latitude,
+    longitude: STATE_CENTERS[state.slug]?.longitude
+  });
 
   return (
     <div className="tourism-page">
@@ -111,29 +212,78 @@ export default function StateDetail() {
             {state.description}
           </p>
 
-          {allImages.length > 0 && (
-            <button
-              onClick={() => openGalleryAt(0)}
+          {/* Action Buttons in Hero Banner (Requirement 4) */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center' }}>
+            {/* View on Google Maps Button */}
+            <a
+              href={stateMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
-                backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                backdropFilter: 'blur(8px)',
-                border: '1px solid rgba(255, 255, 255, 0.4)',
+                gap: '0.45rem',
+                backgroundColor: '#DC2626',
                 color: '#FFFFFF',
-                padding: '0.6rem 1.2rem',
+                padding: '0.65rem 1.25rem',
                 borderRadius: '8px',
                 fontWeight: 700,
                 fontSize: '0.85rem',
-                cursor: 'pointer',
-                transition: 'all 0.2s'
+                textDecoration: 'none',
+                boxShadow: '0 4px 12px rgba(220, 38, 38, 0.3)'
               }}
             >
-              <Maximize2 size={15} />
-              <span>Explore State Gallery ({allImages.length} photos)</span>
+              <MapPin size={16} />
+              <span>View {state.name} on Google Maps</span>
+              <ExternalLink size={13} />
+            </a>
+
+            {/* Get Directions Button */}
+            <button
+              type="button"
+              onClick={() => setDirectionsModalOpen(true)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: '#0F172A',
+                color: '#FFFFFF',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              <Navigation size={16} color="#38BDF8" />
+              <span>Get Directions to {state.capital || state.name}</span>
             </button>
-          )}
+
+            {/* Gallery Button */}
+            {allImages.length > 0 && (
+              <button
+                onClick={() => openGalleryAt(0)}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  backdropFilter: 'blur(8px)',
+                  border: '1px solid rgba(255, 255, 255, 0.4)',
+                  color: '#FFFFFF',
+                  padding: '0.65rem 1.25rem',
+                  borderRadius: '8px',
+                  fontWeight: 700,
+                  fontSize: '0.85rem',
+                  cursor: 'pointer'
+                }}
+              >
+                <Maximize2 size={15} />
+                <span>Gallery ({allImages.length} photos)</span>
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Photo Attribution Pill */}
@@ -173,9 +323,10 @@ export default function StateDetail() {
       }}>
         <div className="tourism-container" style={{ display: 'flex', gap: '1rem', overflowX: 'auto', padding: '0.75rem 1.25rem' }}>
           {[
-            { id: 'overview', label: 'Overview & Highlights' },
+            { id: 'overview', label: 'Overview & Interactive Map' },
             { id: 'cities', label: `Cities (${stateCities.length})` },
             { id: 'attractions', label: `Attractions (${stateAttractions.length})` },
+            { id: 'hotels', label: `Hotels & Stays (${stateHotels.length})` },
             { id: 'cuisine', label: 'Food & Delicacies' },
             { id: 'culture', label: 'Culture & Festivals' },
             { id: 'itineraries', label: 'Itineraries' },
@@ -205,7 +356,7 @@ export default function StateDetail() {
       {/* ── 3. Main State Content ── */}
       <div className="tourism-container" style={{ paddingTop: '2.5rem' }}>
 
-        {/* ── Overview Tab ── */}
+        {/* ── Overview Tab (Includes Interactive Map per Requirement 4) ── */}
         {(activeTab === 'overview' || activeTab === 'all') && (
           <section style={{ marginBottom: '4rem' }}>
             {/* Quick Facts Grid */}
@@ -218,42 +369,79 @@ export default function StateDetail() {
               <div style={{ backgroundColor: '#FFFFFF', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', marginBottom: '0.35rem' }}>
                   <Calendar size={18} />
-                  <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Best Time to Visit</span>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase' }}>Best Time to Visit</span>
                 </div>
-                <div style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0F172A' }}>{state.bestTimeToVisit}</div>
+                <div style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0F172A' }}>
+                  {state.bestTimeToVisit || 'October to March'}
+                </div>
               </div>
 
               <div style={{ backgroundColor: '#FFFFFF', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-forest)', marginBottom: '0.35rem' }}>
-                  <Compass size={18} />
-                  <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Domestic Visitors (2024)</span>
+                  <MapPin size={18} />
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase' }}>Urban Centers</span>
                 </div>
-                <div style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0F172A' }}>
-                  {(state.domesticTouristVisits2024 / 10000000).toFixed(1)} Crore
+                <div style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0F172A' }}>
+                  {stateCities.length} Listed Cities
                 </div>
               </div>
 
               <div style={{ backgroundColor: '#FFFFFF', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-sky)', marginBottom: '0.35rem' }}>
-                  <Award size={18} />
-                  <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>UNESCO Heritage</span>
+                  <Compass size={18} />
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase' }}>Key Attractions</span>
                 </div>
-                <div style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0F172A' }}>
-                  {state.unescoSites?.length || 0} Listed Locations
+                <div style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0F172A' }}>
+                  {stateAttractions.length} Verified Monuments
+                </div>
+              </div>
+
+              <div style={{ backgroundColor: '#FFFFFF', padding: '1.25rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#D97706', marginBottom: '0.35rem' }}>
+                  <Hotel size={18} />
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase' }}>Accommodations</span>
+                </div>
+                <div style={{ fontWeight: 800, fontSize: '1.1rem', color: '#0F172A' }}>
+                  {stateHotels.length} Verified Hotels
                 </div>
               </div>
             </div>
 
-            {/* UNESCO World Heritage Sites if any */}
+            {/* ── Interactive Map of State (Requirement 4) ── */}
+            <div style={{ marginBottom: '3.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <div>
+                  <span className="tourism-badge badge-forest">Live Geographical Map</span>
+                  <h2 className="tourism-heading" style={{ fontSize: '1.6rem', marginTop: '0.25rem' }}>
+                    Interactive Map of {state.name} Destinations
+                  </h2>
+                </div>
+                <span style={{ fontSize: '0.85rem', color: '#64748B' }}>
+                  Click any marker to open location card & get direct driving directions
+                </span>
+              </div>
+
+              <GoogleMapView
+                markers={stateMapMarkers}
+                center={mapCenter}
+                zoom={mapZoom}
+                selectedMarkerId={selectedMarkerId}
+                onMarkerSelect={(m) => setSelectedMarkerId(m.id)}
+                height="500px"
+                fitBounds={true}
+              />
+            </div>
+
+            {/* UNESCO World Heritage Sites */}
             {state.unescoSites && state.unescoSites.length > 0 && (
               <div style={{
-                backgroundColor: 'var(--tourism-gold-light)',
-                border: '1px solid rgba(217, 119, 6, 0.3)',
-                borderRadius: '14px',
+                backgroundColor: 'rgba(217, 119, 6, 0.06)',
+                border: '1px solid rgba(217, 119, 6, 0.25)',
+                borderRadius: '16px',
                 padding: '1.5rem',
                 marginBottom: '2.5rem'
               }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#B45309', fontWeight: 800, marginBottom: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#B45309', fontWeight: 800, marginBottom: '0.85rem' }}>
                   <Award size={20} />
                   <span style={{ fontSize: '1.1rem' }}>UNESCO World Heritage Sites in {state.name}</span>
                 </div>
@@ -277,91 +465,76 @@ export default function StateDetail() {
                 </div>
               </div>
             )}
-
-            {/* Top Destinations preview */}
-            <div style={{ marginBottom: '2rem' }}>
-              <h2 className="tourism-heading" style={{ fontSize: '1.6rem', marginBottom: '1.25rem' }}>
-                Top Destinations in {state.name}
-              </h2>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                {(state.topDestinations || []).map((dest) => (
-                  <span
-                    key={dest}
-                    style={{
-                      backgroundColor: '#FFFFFF',
-                      border: '1.5px solid var(--tourism-sand-border)',
-                      padding: '0.5rem 1rem',
-                      borderRadius: '8px',
-                      fontWeight: 700,
-                      fontSize: '0.9rem',
-                      color: '#0F172A'
-                    }}
-                  >
-                    📍 {dest}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Authentic State Photo Gallery (Requirement 4) */}
-            {allImages.length > 1 && (
-              <div style={{ marginTop: '2.5rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
-                  <div>
-                    <span className="tourism-badge badge-forest">Real Imagery</span>
-                    <h2 className="tourism-heading" style={{ fontSize: '1.6rem', marginTop: '0.35rem' }}>
-                      Photographic Highlights of {state.name}
-                    </h2>
-                  </div>
-                  <span style={{ fontSize: '0.85rem', color: '#64748B', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <ShieldCheck size={15} color="#10B981" />
-                    Verified Heritage & Nature Photography
-                  </span>
-                </div>
-
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem' }}>
-                  {allImages.map((imgUrl, idx) => (
-                    <div
-                      key={idx}
-                      onClick={() => openGalleryAt(idx)}
-                      style={{ cursor: 'pointer', borderRadius: '12px', overflow: 'hidden' }}
-                    >
-                      <SafeImage
-                        src={imgUrl}
-                        alt={`${state.name} landmark view ${idx + 1}`}
-                        aspectRatio="4:3"
-                        verified={true}
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </section>
         )}
 
-        {/* ── Cities Tab ── */}
+        {/* ── Cities Tab (Requirement 4) ── */}
         {(activeTab === 'cities' || activeTab === 'all') && (
           <section style={{ marginBottom: '4rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
                 <span className="tourism-badge badge-forest">Urban & Destination Hubs</span>
                 <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                  Major Cities in {state.name}
+                  All Cities & Destinations in {state.name} ({stateCities.length})
                 </h2>
+              </div>
+
+              {/* City Search & Filter Controls */}
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                <div style={{ position: 'relative' }}>
+                  <Search size={15} color="#94A3B8" style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }} />
+                  <input
+                    type="text"
+                    placeholder={`Search cities in ${state.name}...`}
+                    value={citySearchTerm}
+                    onChange={(e) => setCitySearchTerm(e.target.value)}
+                    style={{
+                      padding: '0.5rem 0.75rem 0.5rem 2rem',
+                      borderRadius: '8px',
+                      border: '1px solid #CBD5E1',
+                      fontSize: '0.85rem',
+                      minWidth: '220px'
+                    }}
+                  />
+                </div>
+
+                <select
+                  value={selectedStyleFilter}
+                  onChange={(e) => setSelectedStyleFilter(e.target.value)}
+                  style={{
+                    padding: '0.5rem 0.75rem',
+                    borderRadius: '8px',
+                    border: '1px solid #CBD5E1',
+                    fontSize: '0.85rem',
+                    backgroundColor: '#FFFFFF',
+                    fontWeight: 600
+                  }}
+                >
+                  <option value="all">All Styles</option>
+                  <option value="heritage">Heritage</option>
+                  <option value="spiritual">Spiritual</option>
+                  <option value="nature">Nature / Hill</option>
+                  <option value="beaches">Beaches</option>
+                </select>
               </div>
             </div>
 
             <div className="tourism-grid-3">
-              {stateCities.map((city) => (
+              {filteredCities.map((city) => (
                 <CityCard key={city.id} city={city} />
               ))}
             </div>
 
-            {stateCities.length === 0 && (
-              <div style={{ padding: '2rem', backgroundColor: '#FFFFFF', borderRadius: '12px', textAlign: 'center' }}>
-                <p>Major cities listed for {state.name}: {state.majorCities?.join(', ')}</p>
+            {filteredCities.length === 0 && (
+              <div style={{ textAlign: 'center', padding: '3rem', backgroundColor: '#F8FAFC', borderRadius: '12px' }}>
+                <p style={{ color: '#64748B', fontWeight: 600 }}>No cities matched your filter criteria.</p>
+                <button
+                  type="button"
+                  onClick={() => { setCitySearchTerm(''); setSelectedStyleFilter('all'); }}
+                  style={{ padding: '0.4rem 1rem', borderRadius: '6px', backgroundColor: '#0F172A', color: '#FFF', border: 'none', cursor: 'pointer' }}
+                >
+                  Clear Filters
+                </button>
               </div>
             )}
           </section>
@@ -371,13 +544,13 @@ export default function StateDetail() {
         {(activeTab === 'attractions' || activeTab === 'all') && (
           <section style={{ marginBottom: '4rem' }}>
             <div style={{ marginBottom: '1.5rem' }}>
-              <span className="tourism-badge badge-earth">Must-See Wonders</span>
+              <span className="tourism-badge badge-earth">Landmarks & Sights</span>
               <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                Key Tourist Attractions ({stateAttractions.length})
+                Iconic Attractions in {state.name} ({stateAttractions.length})
               </h2>
             </div>
 
-            <div className="tourism-grid-3">
+            <div className="tourism-grid-4">
               {stateAttractions.map((attraction) => (
                 <AttractionCard key={attraction.id} attraction={attraction} />
               ))}
@@ -385,207 +558,70 @@ export default function StateDetail() {
           </section>
         )}
 
-        {/* ── Food & Culinary Heritage Tab ── */}
-        {(activeTab === 'cuisine' || activeTab === 'all') && (
+        {/* ── Hotels & Stays Tab (Requirement 4) ── */}
+        {(activeTab === 'hotels' || activeTab === 'all') && (
+          <section style={{ marginBottom: '4rem' }}>
+            <div style={{ marginBottom: '1.5rem' }}>
+              <span className="tourism-badge badge-sky">Verified Accommodations</span>
+              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
+                Where to Stay in {state.name} ({stateHotels.length} Stays)
+              </h2>
+            </div>
+
+            {stateHotels.length > 0 ? (
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+                gap: '1.5rem'
+              }}>
+                {stateHotels.map((hotel) => (
+                  <HotelCard key={hotel.id} hotel={hotel} />
+                ))}
+              </div>
+            ) : (
+              <div style={{ textAlign: 'center', padding: '3rem', backgroundColor: '#F8FAFC', borderRadius: '12px' }}>
+                <p style={{ color: '#64748B', fontWeight: 600 }}>No verified hotels recorded yet in this state catalog.</p>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* ── Cuisine Tab ── */}
+        {(activeTab === 'cuisine' || activeTab === 'all') && state.popularFoods && state.popularFoods.length > 0 && (
           <section style={{ marginBottom: '4rem' }}>
             <div style={{ marginBottom: '1.5rem' }}>
               <span className="tourism-badge badge-earth">Gastronomy</span>
               <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                Popular Foods & Culinary Specialties
+                Culinary Heritage of {state.name}
               </h2>
             </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
-              {(state.popularFoods || []).map((foodItem, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '12px',
-                    padding: '1.35rem',
-                    border: '1px solid var(--tourism-sand-border)',
-                    boxShadow: 'var(--shadow-subtle)'
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', fontWeight: 800, marginBottom: '0.4rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+              {state.popularFoods.map((food, idx) => (
+                <div key={idx} style={{ backgroundColor: '#FFFFFF', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', fontWeight: 800, marginBottom: '0.5rem' }}>
                     <Utensils size={16} />
-                    <span style={{ fontSize: '1.05rem', color: '#0F172A' }}>{foodItem.name}</span>
+                    <span style={{ fontSize: '1.1rem', color: '#0F172A' }}>{food.name}</span>
                   </div>
-                  <p style={{ fontSize: '0.85rem', color: '#64748B', lineHeight: 1.5, margin: 0 }}>
-                    {foodItem.description}
-                  </p>
+                  <p style={{ margin: 0, color: '#475569', fontSize: '0.88rem', lineHeight: 1.6 }}>{food.description}</p>
                 </div>
               ))}
             </div>
           </section>
         )}
-
-        {/* ── Culture & Festivals Tab ── */}
-        {(activeTab === 'culture' || activeTab === 'all') && (
-          <section style={{ marginBottom: '4rem' }}>
-            <div style={{ marginBottom: '1.5rem' }}>
-              <span className="tourism-badge badge-sky">Living Heritage</span>
-              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                Culture, Arts & Vibrant Festivals
-              </h2>
-            </div>
-
-            {/* Cultural overview */}
-            {state.culture && (
-              <div style={{
-                backgroundColor: '#FFFFFF',
-                borderRadius: '12px',
-                padding: '1.5rem',
-                border: '1px solid var(--tourism-sand-border)',
-                marginBottom: '2rem',
-                lineHeight: 1.65,
-                fontSize: '0.95rem',
-                color: '#334155'
-              }}>
-                <h4 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#0F172A', marginBottom: '0.65rem' }}>
-                  Artistic Traditions & Living Culture
-                </h4>
-                <p style={{ margin: 0 }}>{state.culture}</p>
-              </div>
-            )}
-
-            {/* Festivals */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
-              {(state.festivals || []).map((fest, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '12px',
-                    padding: '1.35rem',
-                    border: '1px solid var(--tourism-sand-border)',
-                    boxShadow: 'var(--shadow-subtle)'
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#B45309', fontWeight: 800, marginBottom: '0.4rem' }}>
-                    <PartyPopper size={16} />
-                    <span style={{ fontSize: '1.05rem', color: '#0F172A' }}>{fest.name}</span>
-                  </div>
-                  <p style={{ fontSize: '0.85rem', color: '#64748B', lineHeight: 1.5, margin: 0 }}>
-                    {fest.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* ── Suggested Itineraries Tab ── */}
-        {(activeTab === 'itineraries' || activeTab === 'all') && (
-          <section style={{ marginBottom: '4rem' }}>
-            <div style={{ marginBottom: '1.5rem' }}>
-              <span className="tourism-badge badge-earth">Suggested Itineraries</span>
-              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                Recommended Circuits in {state.name}
-              </h2>
-            </div>
-
-            <div className="tourism-grid-3">
-              {stateItineraries.map((itinerary) => (
-                <ItineraryCard key={itinerary.id} itinerary={itinerary} />
-              ))}
-            </div>
-
-            {stateItineraries.length === 0 && (
-              <div style={{
-                backgroundColor: '#FFFFFF',
-                borderRadius: '12px',
-                padding: '2rem',
-                border: '1px solid var(--tourism-sand-border)',
-                textAlign: 'center'
-              }}>
-                <h4 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.5rem' }}>
-                  Build a Custom {state.name} Trip
-                </h4>
-                <p style={{ color: '#64748B', maxWidth: '500px', margin: '0 auto 1.5rem' }}>
-                  Use our interactive itinerary planner to generate a day-by-day morning, afternoon, and evening plan for {state.name}.
-                </p>
-                <Link
-                  to="/planner"
-                  state={{ defaultDestination: state.name }}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.4rem',
-                    backgroundColor: 'var(--tourism-earth)',
-                    color: '#FFFFFF',
-                    padding: '0.75rem 1.5rem',
-                    borderRadius: '8px',
-                    fontWeight: 700,
-                    textDecoration: 'none'
-                  }}
-                >
-                  <span>Generate {state.name} Itinerary</span>
-                  <ArrowRight size={15} />
-                </Link>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* ── Transportation & Logistics Tab ── */}
-        {(activeTab === 'transport' || activeTab === 'all') && (
-          <section style={{ marginBottom: '4rem' }}>
-            <div style={{ marginBottom: '1.5rem' }}>
-              <span className="tourism-badge badge-forest">Travel Information</span>
-              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                Transportation & Connectivity
-              </h2>
-            </div>
-
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '1.25rem'
-            }}>
-              {/* Airports */}
-              <div style={{ backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--tourism-sand-border)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-sky)', fontWeight: 800, marginBottom: '0.85rem' }}>
-                  <Plane size={18} />
-                  <span style={{ fontSize: '1.05rem', color: '#0F172A' }}>Major Airports</span>
-                </div>
-                <ul style={{ paddingLeft: '1.25rem', margin: 0, fontSize: '0.85rem', color: '#475569', lineHeight: 1.6 }}>
-                  {(state.transportation?.airports || []).map((airport, idx) => (
-                    <li key={idx} style={{ marginBottom: '0.3rem' }}>{airport}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Railways */}
-              <div style={{ backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--tourism-sand-border)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', fontWeight: 800, marginBottom: '0.85rem' }}>
-                  <Train size={18} />
-                  <span style={{ fontSize: '1.05rem', color: '#0F172A' }}>Key Railway Junctions</span>
-                </div>
-                <ul style={{ paddingLeft: '1.25rem', margin: 0, fontSize: '0.85rem', color: '#475569', lineHeight: 1.6 }}>
-                  {(state.transportation?.railway || []).map((station, idx) => (
-                    <li key={idx} style={{ marginBottom: '0.3rem' }}>{station}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Highways */}
-              <div style={{ backgroundColor: '#FFFFFF', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--tourism-sand-border)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-forest)', fontWeight: 800, marginBottom: '0.85rem' }}>
-                  <Car size={18} />
-                  <span style={{ fontSize: '1.05rem', color: '#0F172A' }}>Roads & Expressways</span>
-                </div>
-                <ul style={{ paddingLeft: '1.25rem', margin: 0, fontSize: '0.85rem', color: '#475569', lineHeight: 1.6 }}>
-                  {(state.transportation?.road || []).map((road, idx) => (
-                    <li key={idx} style={{ marginBottom: '0.3rem' }}>{road}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-        )}
-
       </div>
+
+      {/* ── State Level Directions Modal ── */}
+      <DirectionsModal
+        isOpen={directionsModalOpen}
+        onClose={() => setDirectionsModalOpen(false)}
+        target={{
+          name: `${state.capital || state.name}, ${state.name}`,
+          city: state.capital || state.name,
+          state: state.name,
+          latitude: STATE_CENTERS[state.slug]?.latitude,
+          longitude: STATE_CENTERS[state.slug]?.longitude
+        }}
+      />
 
       {/* ── Interactive Image Gallery Modal ── */}
       <ImageGalleryModal
@@ -597,7 +633,7 @@ export default function StateDetail() {
         location={`${state.name}, India`}
         photographer={state.imagePhotographer}
         sourceName={state.imageSourceName}
-        sourceUrl={state.imageSource}
+        sourceUrl={state.heroImage}
         license={state.imageLicense}
       />
     </div>
