@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const { realRestaurantData, getRestaurantsForContext } = require('../data/realRestaurantData');
+const { regionalFoodData, getMustTryDishes } = require('../data/regionalFoodData');
 
 const GROQ_KEY = process.env.GROQ_API_KEY || '';
 const API_BASE = `http://localhost:${process.env.PORT || 5000}/api`;
@@ -1479,17 +1481,20 @@ function getRestaurantsForCity(cityName) {
 
 const INDIAN_CITIES = [
   'Jaipur', 'Varanasi', 'Munnar', 'Goa', 'Agra', 'Delhi', 'Chennai',
-  'Bangalore', 'Pondicherry', 'Kochi', 'Kochin', 'Cochin', 'Yercaud', 'Mumbai', 'Kolkata',
-  'Hyderabad', 'Pune', 'Rishikesh', 'Hampi', 'Mysore', 'Ooty', 'Darjeeling',
-  'Shimla', 'Manali', 'Coorg', 'Alleppey', 'Udaipur', 'Amritsar', 'Madurai',
-  'Trivandrum', 'Jodhpur', 'Jaisalmer', 'Pushkar', 'Chandigarh', 'Leh',
-  'Srinagar', 'Gangtok', 'Shillong', 'Guwahati', 'Bhubaneswar', 'Puri',
-  'Tirupati', 'Rameswaram', 'Kanyakumari', 'Kovalam', 'Varkala'
+  'Bangalore', 'Bengaluru', 'Pondicherry', 'Kochi', 'Kochin', 'Cochin', 'Yercaud', 'Mumbai', 'Kolkata',
+  'Hyderabad', 'Pune', 'Rishikesh', 'Haridwar', 'Hampi', 'Mysore', 'Mysuru', 'Ooty', 'Darjeeling',
+  'Shimla', 'Manali', 'Coorg', 'Alleppey', 'Alappuzha', 'Udaipur', 'Amritsar', 'Madurai',
+  'Trivandrum', 'Jodhpur', 'Jaisalmer', 'Pushkar', 'Chandigarh', 'Bhubaneswar', 'Puri',
+  'Tirupati', 'Rameswaram', 'Kanyakumari', 'Kovalam', 'Varkala', 'Mahabalipuram', 'Kodaikanal',
+  'Lucknow', 'Ayodhya', 'Mathura', 'Vrindavan', 'Prayagraj', 'Ahmedabad', 'Surat', 'Indore',
+  'Bhopal', 'Patna', 'Bodh Gaya', 'Visakhapatnam', 'Gokarna', 'Chikmagalur', 'Nashik'
 ];
 
-/** Parse city name from message with full alias support */
-function extractCity(message) {
-  if (!message) return null;
+const STOPWORDS = new Set(['what', 'best', 'top', 'famous', 'local', 'any', 'nice', 'good', 'popular', 'this', 'the', 'our', 'my', 'some', 'traditional', 'authentic', 'delicious', 'cheap', 'budget']);
+
+/** Parse city name from message with full alias support and context preservation */
+function extractCity(message, contextCity = null) {
+  if (!message) return contextCity;
   const lower = message.toLowerCase();
 
   // 1. Direct alias check first
@@ -1499,26 +1504,19 @@ function extractCity(message) {
     }
   }
 
-  // 2. City name match
+  // 2. City name match against recognized Indian cities
   for (const city of INDIAN_CITIES) {
     if (new RegExp(`\\b${city.toLowerCase()}\\b`, 'i').test(lower)) {
       if (city.toLowerCase() === 'kochin' || city.toLowerCase() === 'cochin') return 'Kochi';
+      if (city.toLowerCase() === 'mysore') return 'Mysuru';
+      if (city.toLowerCase() === 'bangalore') return 'Bengaluru';
       return city;
     }
   }
 
-  // 3. Fallback regex patterns
-  const patterns = [
-    /(?:in|at|near|around|for)\s+([A-Z][a-z]+(?:\s[A-Z][a-z]+)?)/,
-    /([A-Z][a-z]+(?:\s[A-Z][a-z]+)?)\s+(?:restaurants?|food|dining|cafes?|eats?|eateries)/i
-  ];
-  for (const pat of patterns) {
-    const m = message.match(pat);
-    if (m) {
-      const detected = m[1].trim();
-      return CITY_ALIASES[detected.toLowerCase()] || detected;
-    }
-  }
+  // If user has a valid active context city, stick to it!
+  if (contextCity) return contextCity;
+
   return null;
 }
 
@@ -1610,61 +1608,143 @@ function getRestaurantSuggestions(city) {
  */
 router.post('/message', async (req, res) => {
   try {
-    const { message = '', city: contextCity = 'Jaipur' } = req.body;
+    const {
+      message = '',
+      city: contextCity = 'Jaipur',
+      state: contextState = '',
+      attraction: contextAttraction = '',
+      coordinates = null,
+      dietary: contextDietary = 'All',
+      radius: contextRadius = 5
+    } = req.body;
 
-    const city = extractCity(message) || contextCity || 'Jaipur';
+    const explicitCity = extractCity(message, null);
+    const city = explicitCity || contextCity || 'Jaipur';
+    const state = contextState || '';
+    const attraction = explicitCity ? '' : (contextAttraction || '');
     const intent = detectIntent(message);
+    const lower = message.toLowerCase();
 
-    // If intent is restaurants (the main feature of this AI):
-    if (intent === 'restaurants') {
-      let matchedRestaurants = getRestaurantsForCity(city);
+    // Determine category / dietary filters from query
+    let categoryFilter = 'All';
+    let dietaryFilter = contextDietary || 'All';
 
-      // Filter by category if user specifically asked for it
-      const lower = message.toLowerCase();
-      if (matchedRestaurants) {
-        if (/veg|vegetarian|pure veg/i.test(lower) && !/non-veg/i.test(lower)) {
-          const vegList = matchedRestaurants.filter(r => r.category.toLowerCase().includes('veg'));
-          if (vegList.length > 0) matchedRestaurants = vegList;
-        } else if (/street food|chaat|snack|budget/i.test(lower)) {
-          const streetList = matchedRestaurants.filter(r => r.category.toLowerCase().includes('street') || r.priceTier === '₹');
-          if (streetList.length > 0) matchedRestaurants = streetList;
-        } else if (/fine dining|luxury|romantic|rooftop/i.test(lower)) {
-          const fineList = matchedRestaurants.filter(r => r.category.toLowerCase().includes('fine') || r.priceTier.length >= 3);
-          if (fineList.length > 0) matchedRestaurants = fineList;
-        } else if (/cafe|coffee|breakfast|tea/i.test(lower)) {
-          const cafeList = matchedRestaurants.filter(r => r.category.toLowerCase().includes('cafe') || r.mustTry.toLowerCase().includes('chai') || r.mustTry.toLowerCase().includes('coffee'));
-          if (cafeList.length > 0) matchedRestaurants = cafeList;
-        }
+    if (/veg|vegetarian|pure veg/i.test(lower) && !/non-veg/i.test(lower)) {
+      dietaryFilter = 'Vegetarian';
+      categoryFilter = 'Vegetarian';
+    } else if (/non-veg|meat|chicken|mutton|seafood|fish/i.test(lower)) {
+      dietaryFilter = 'Non-Vegetarian';
+      categoryFilter = 'Non-Vegetarian';
+    } else if (/street food|chaat|snack/i.test(lower)) {
+      categoryFilter = 'Street Food';
+    } else if (/fine dining|luxury|romantic|rooftop/i.test(lower)) {
+      categoryFilter = 'Premium Dining';
+    } else if (/cafe|coffee|breakfast|tea|bakery/i.test(lower)) {
+      categoryFilter = 'Breakfast';
+    } else if (/sweet|dessert|mithai/i.test(lower)) {
+      categoryFilter = 'Sweets & Desserts';
+    }
+
+    const lat = coordinates?.latitude || coordinates?.lat || null;
+    const lng = coordinates?.longitude || coordinates?.lng || null;
+
+    // 1. Get real verified restaurants
+    let matchedRestaurants = getRestaurantsForContext({
+      state,
+      city,
+      attraction,
+      lat,
+      lng,
+      radius: contextRadius,
+      category: categoryFilter,
+      dietary: dietaryFilter
+    });
+
+    // 2. Fall back to curated city list if empty
+    if (!matchedRestaurants || matchedRestaurants.length === 0) {
+      matchedRestaurants = getRestaurantsForCity(city);
+    }
+
+    // 3. Fall back to Groq AI discovery if still empty
+    if (!matchedRestaurants || matchedRestaurants.length === 0) {
+      matchedRestaurants = await groqRestaurantDiscovery(message, city);
+    }
+
+    // 4. Default fallback
+    if (!matchedRestaurants || matchedRestaurants.length === 0) {
+      matchedRestaurants = getRestaurantsForCity('Jaipur');
+    }
+
+    // Fetch must-try food for current destination
+    const mustTryDishes = getMustTryDishes({ state, city, attraction });
+
+    // Ensure all restaurants have valid Google Maps URLs, distances and directions
+    const enrichedRestaurants = (matchedRestaurants || []).map(r => {
+      const q = r.name ? `${r.name} ${r.address || r.area || city}` : city;
+      let dist = r.distanceKm != null ? r.distanceKm : null;
+      if (dist == null && lat != null && lng != null && r.latitude != null && r.longitude != null) {
+        const R = 6371;
+        const dLat = (r.latitude - lat) * Math.PI / 180;
+        const dLon = (r.longitude - lng) * Math.PI / 180;
+        const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos(lat * Math.PI / 180) * Math.cos(r.latitude * Math.PI / 180) *
+          Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        dist = Math.round(R * c * 10) / 10;
       }
 
-      // If city is not in local curated DB, use Groq AI discovery
-      if (!matchedRestaurants || matchedRestaurants.length === 0) {
-        matchedRestaurants = await groqRestaurantDiscovery(message, city);
-      }
+      const mapsUri = r.googleMapsUri || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+      const dirDest = r.latitude && r.longitude ? `${r.latitude},${r.longitude}` : encodeURIComponent(q);
+      const dirOrigin = lat && lng ? `&origin=${lat},${lng}` : '';
+      const dirUri = r.directionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${dirDest}${dirOrigin}&travelmode=driving`;
 
-      // Final fallback if AI is offline
-      if (!matchedRestaurants || matchedRestaurants.length === 0) {
-        matchedRestaurants = getRestaurantsForCity('Jaipur');
-      }
+      return {
+        ...r,
+        distanceKm: dist,
+        googleMapsUri: mapsUri,
+        directionsUrl: dirUri
+      };
+    });
 
-      return res.json({
-        success: true,
-        type: 'restaurants',
-        text: `Here are the top curated restaurants & culinary gems in ${city}! From authentic heritage thalis to iconic local delicacies:`,
-        data: matchedRestaurants,
-        city,
-        suggestions: getRestaurantSuggestions(city)
+    if (lat != null && lng != null) {
+      enrichedRestaurants.sort((a, b) => {
+        if (a.distanceKm != null && b.distanceKm != null) return a.distanceKm - b.distanceKm;
+        return (b.rating || 0) - (a.rating || 0);
       });
     }
 
-    // Secondary fallback: friendly culinary assistant response
+    // Generate personalized Dishly response text
+    const destLabel = attraction ? `${attraction} in ${city}` : (state ? `${city}, ${state}` : city);
+    let responseText = '';
+
+    if (/what should i try|must try|famous food|specialty|specialities|local food/i.test(lower)) {
+      const topDishes = mustTryDishes.slice(0, 3).map(d => `**${d.name}**`).join(', ');
+      responseText = `When visiting ${destLabel}, you must definitely savor ${topDishes}! Here are verified iconic establishments known for authentic regional preparations:`;
+    } else if (/near this|near the temple|around here|nearby|within/i.test(lower) && attraction) {
+      responseText = `Here are the top-rated verified dining spots near **${attraction}** with actual walking & driving distances and Google Maps directions:`;
+    } else if (/pure veg|vegetarian/i.test(lower)) {
+      responseText = `Looking for pure vegetarian food in ${destLabel}? Here are verified, highly-rated vegetarian restaurants, thali houses, and traditional tiffin spots:`;
+    } else if (/budget|cheap|affordable/i.test(lower)) {
+      responseText = `Here are great budget-friendly eateries and famous local food spots in ${destLabel} with verified guest reviews:`;
+    } else {
+      responseText = `Here are the top verified restaurants and culinary landmarks in ${destLabel}! From authentic regional specialties to highly reviewed dining spots:`;
+    }
+
     return res.json({
       success: true,
       type: 'restaurants',
-      text: `Looking for delicious food in ${city}? Here are the most famous restaurants, local eateries, and must-try dishes:`,
-      data: getRestaurantsForCity(city) || getRestaurantsForCity('Jaipur'),
+      text: responseText,
+      data: enrichedRestaurants.slice(0, 8),
+      mustTry: mustTryDishes.slice(0, 4),
       city,
-      suggestions: getRestaurantSuggestions(city)
+      state,
+      attraction,
+      suggestions: [
+        `🍛 Must-try food in ${city}`,
+        `🥗 Pure veg restaurants near ${attraction || city}`,
+        `🍢 Famous street food in ${city}`,
+        `📍 Top-rated places within 2 km`
+      ]
     });
 
   } catch (err) {

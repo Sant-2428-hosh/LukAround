@@ -14,6 +14,7 @@ const adminRouter = require('./routes/admin');
 const translateRouter = require('./routes/translate');
 const destinationsRouter = require('./routes/destinations');
 const chatRouter = require('./routes/chat');
+const restaurantsRouter = require('./routes/restaurants');
 const tourismRouter = require('./routes/tourism');
 const locationsRouter = require('./routes/locations');
 const userStore = require('./services/userStore');
@@ -55,6 +56,9 @@ app.use('/api/admin', adminRouter);
 app.use('/api/translate', translateRouter);
 app.use('/api/destinations', destinationsRouter);
 app.use('/api/chat', chatRouter);
+app.use('/api/restaurants', restaurantsRouter);
+app.use('/api/food', restaurantsRouter);
+app.use('/api/dishly', restaurantsRouter);
 app.use('/api/locations', locationsRouter);
 
 // Alias routes matching exact specification

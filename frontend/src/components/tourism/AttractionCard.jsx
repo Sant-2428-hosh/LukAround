@@ -38,7 +38,12 @@ export default function AttractionCard({ attraction }) {
 
   return (
     <div className="attraction-card">
-      <div className="attraction-card-image-wrap">
+      <Link
+        to={`/india/${effectiveStateSlug}/${effectiveCitySlug}/${id}`}
+        className="attraction-card-image-wrap"
+        style={{ display: 'block', cursor: 'pointer', textDecoration: 'none' }}
+        title={`Explore ${name} details & characteristics`}
+      >
         <SafeImage
           src={image}
           alt={effectiveAlt}
@@ -85,10 +90,17 @@ export default function AttractionCard({ attraction }) {
             FEATURED
           </div>
         )}
-      </div>
+      </Link>
 
       <div className="attraction-card-body">
-        <h3 className="attraction-card-name">{name}</h3>
+        <h3 className="attraction-card-name">
+          <Link
+            to={`/india/${effectiveStateSlug}/${effectiveCitySlug}/${id}`}
+            style={{ color: 'inherit', textDecoration: 'none' }}
+          >
+            {name}
+          </Link>
+        </h3>
 
         <div className="attraction-card-location">
           <MapPin size={13} />

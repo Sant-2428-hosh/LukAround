@@ -492,8 +492,18 @@ export function RestaurantsCard({ data, city, onSelectSuggestion }) {
 
             <div className="chat-restaurant-details">
               <span className="chat-restaurant-tag">{rest.category || 'Dining'}</span>
-              <span className="chat-restaurant-price">{rest.priceForTwo}</span>
-              <span className="chat-restaurant-area"><MapPin size={10} /> {rest.area}</span>
+              <span className="chat-restaurant-price">{rest.priceForTwo || rest.priceTier || (rest.priceLevel === 1 ? '₹' : rest.priceLevel === 2 ? '₹₹' : rest.priceLevel === 3 ? '₹₹₹' : '₹₹')}</span>
+              <span className="chat-restaurant-area"><MapPin size={10} /> {rest.area || rest.address || cityName}</span>
+              {rest.distanceKm != null && (
+                <span className="chat-restaurant-dist" style={{ background: '#ecfdf5', color: '#059669', padding: '2px 6px', borderRadius: '4px', fontSize: '11px', fontWeight: 600 }}>
+                  📍 {rest.distanceKm} km away
+                </span>
+              )}
+              {rest.walkingTime && (
+                <span className="chat-restaurant-walk" style={{ fontSize: '11px', color: '#6b7280' }}>
+                  🚶 {rest.walkingTime}
+                </span>
+              )}
               {rest.timings && <span className="chat-restaurant-timings"><Clock size={9} /> {rest.timings}</span>}
             </div>
 
@@ -502,10 +512,15 @@ export function RestaurantsCard({ data, city, onSelectSuggestion }) {
                 <span className="must-try-label">Must Try:</span> {rest.mustTry}
               </div>
             )}
+            {rest.verifiedDishes?.length > 0 && (
+              <div className="chat-restaurant-must-try">
+                <span className="must-try-label">Verified Dishes:</span> {rest.verifiedDishes.join(', ')}
+              </div>
+            )}
 
             <div className="chat-restaurant-footer">
-              <span className="chat-restaurant-ambiance">{rest.ambiance || rest.highlight}</span>
-              <div className="chat-restaurant-actions">
+              <span className="chat-restaurant-ambiance">{rest.ambiance || rest.highlight || 'Verified authentic local restaurant'}</span>
+              <div className="chat-restaurant-actions" style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', alignItems: 'center' }}>
                 {onSelectSuggestion && (
                   <button
                     type="button"
@@ -516,15 +531,38 @@ export function RestaurantsCard({ data, city, onSelectSuggestion }) {
                     <span>Ask Dishly</span>
                   </button>
                 )}
+                {rest.menuUrl && (
+                  <a
+                    href={rest.menuUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="chat-restaurant-menu-link"
+                    style={{ fontSize: '11px', padding: '4px 8px', borderRadius: '4px', background: '#F3F4F6', color: '#374151', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                    title="View Menu"
+                  >
+                    <span>Menu</span>
+                  </a>
+                )}
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${rest.name} ${cityName}`)}`}
+                  href={rest.googleMapsUri || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${rest.name} ${cityName}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="chat-restaurant-map-link"
                   title="View on Google Maps"
                 >
-                  <span>Directions</span>
+                  <span>Google Maps</span>
                   <ExternalLink size={10} />
+                </a>
+                <a
+                  href={rest.directionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${rest.name} ${cityName}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chat-restaurant-directions-link"
+                  style={{ fontSize: '11px', padding: '4px 8px', borderRadius: '4px', background: 'var(--color-primary, #E11D48)', color: '#ffffff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px', fontWeight: 600 }}
+                  title="Get Directions"
+                >
+                  <Navigation size={10} />
+                  <span>Directions</span>
                 </a>
               </div>
             </div>

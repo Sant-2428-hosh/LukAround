@@ -67,7 +67,17 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
   };
 
   return (
-    <div ref={wrapperRef} style={{ position: 'relative', width: '100%', maxWidth: '780px', margin: '0 auto' }}>
+    <div
+      ref={wrapperRef}
+      className={`search-bar-root ${dropdownOpen ? 'dropdown-active' : ''}`}
+      style={{
+        position: 'relative',
+        width: '100%',
+        maxWidth: '780px',
+        margin: '0 auto',
+        zIndex: dropdownOpen ? 99999 : 50
+      }}
+    >
       <form onSubmit={handleSearchSubmit} className="tourism-search-box">
         <Search size={20} color="var(--tourism-earth)" style={{ marginLeft: '0.75rem', flexShrink: 0 }} />
         <input
@@ -77,9 +87,13 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
           onFocus={() => {
             if (query.trim().length >= 2) setDropdownOpen(true);
           }}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') setDropdownOpen(false);
+          }}
           placeholder={placeholder}
           className="tourism-search-input"
           autoFocus={autoFocus}
+          aria-label="Search destinations"
         />
 
         {query && (
@@ -99,14 +113,15 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
         </button>
       </form>
 
-      {/* Autocomplete Dropdown Preview */}
+      {/* Autocomplete Dropdown Preview - Absolute High Z-Index Layer */}
       {dropdownOpen && (
         <div className="search-dropdown">
           {/* Attractions */}
           {suggestions.attractions.length > 0 && (
             <div>
-              <div style={{ padding: '0.5rem 1rem', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', color: '#94A3B8', backgroundColor: '#F8FAFC' }}>
-                Attractions & Places
+              <div className="search-dropdown-section-title">
+                <span>🏛️ Attractions & Monuments</span>
+                <span className="search-section-count">{suggestions.attractions.length}</span>
               </div>
               {suggestions.attractions.map((a) => (
                 <Link
@@ -115,12 +130,25 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
                   className="search-dropdown-item"
                   onClick={() => setDropdownOpen(false)}
                 >
-                  <img src={a.image} alt={a.name} style={{ width: '42px', height: '42px', borderRadius: '8px', objectFit: 'cover' }} />
+                  <img
+                    src={a.image}
+                    alt={a.name}
+                    className="search-item-thumb"
+                    onError={(e) => {
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=120&q=80';
+                    }}
+                  />
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontWeight: 700, fontSize: '0.9rem', color: '#0F172A' }}>{a.name}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#64748B' }}>{a.city}, {a.state}</div>
+                    <div className="search-item-title">{a.name}</div>
+                    <div className="search-item-sub">
+                      <MapPin size={12} color="var(--tourism-earth)" />
+                      <span>{a.city}, {a.state}</span>
+                    </div>
                   </div>
-                  <span style={{ fontSize: '0.72rem', color: 'var(--tourism-earth)', fontWeight: 600 }}>Explore</span>
+                  <span className="search-item-badge">
+                    <span>Explore</span>
+                    <ChevronRight size={12} />
+                  </span>
                 </Link>
               ))}
             </div>
@@ -129,8 +157,9 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
           {/* Cities */}
           {suggestions.cities.length > 0 && (
             <div>
-              <div style={{ padding: '0.5rem 1rem', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', color: '#94A3B8', backgroundColor: '#F8FAFC' }}>
-                Cities & Destinations
+              <div className="search-dropdown-section-title">
+                <span>🌆 Cities & Hubs</span>
+                <span className="search-section-count">{suggestions.cities.length}</span>
               </div>
               {suggestions.cities.map((c) => (
                 <Link
@@ -139,11 +168,17 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
                   className="search-dropdown-item"
                   onClick={() => setDropdownOpen(false)}
                 >
-                  <MapPin size={18} color="var(--tourism-earth)" />
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontWeight: 700, fontSize: '0.9rem', color: '#0F172A' }}>{c.name}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#64748B' }}>{c.state}</div>
+                  <div className="search-item-icon-box city">
+                    <MapPin size={19} />
                   </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="search-item-title">{c.name}</div>
+                    <div className="search-item-sub">{c.state}</div>
+                  </div>
+                  <span className="search-item-badge">
+                    <span>Explore</span>
+                    <ChevronRight size={12} />
+                  </span>
                 </Link>
               ))}
             </div>
@@ -152,8 +187,9 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
           {/* States */}
           {suggestions.states.length > 0 && (
             <div>
-              <div style={{ padding: '0.5rem 1rem', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', color: '#94A3B8', backgroundColor: '#F8FAFC' }}>
-                States of India
+              <div className="search-dropdown-section-title">
+                <span>🗺️ States of India</span>
+                <span className="search-section-count">{suggestions.states.length}</span>
               </div>
               {suggestions.states.map((s) => (
                 <Link
@@ -162,31 +198,61 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
                   className="search-dropdown-item"
                   onClick={() => setDropdownOpen(false)}
                 >
-                  <Landmark size={18} color="var(--tourism-sky)" />
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontWeight: 700, fontSize: '0.9rem', color: '#0F172A' }}>{s.name}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#64748B' }}>Rank #{s.priorityRank} • {s.majorCities?.length} Cities</div>
+                  <div className="search-item-icon-box state">
+                    <Landmark size={19} />
                   </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="search-item-title">{s.name}</div>
+                    <div className="search-item-sub">Rank #{s.priorityRank} • {s.majorCities?.length} Cities</div>
+                  </div>
+                  <span className="search-item-badge">
+                    <span>Explore</span>
+                    <ChevronRight size={12} />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* Categories */}
+          {suggestions.categories && suggestions.categories.length > 0 && (
+            <div>
+              <div className="search-dropdown-section-title">
+                <span>✨ Travel Experiences</span>
+                <span className="search-section-count">{suggestions.categories.length}</span>
+              </div>
+              {suggestions.categories.map((cat) => (
+                <Link
+                  key={cat.id}
+                  to={`/categories/${cat.id}`}
+                  className="search-dropdown-item"
+                  onClick={() => setDropdownOpen(false)}
+                >
+                  <div className="search-item-icon-box category">
+                    <Compass size={19} />
+                  </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="search-item-title">{cat.name}</div>
+                    <div className="search-item-sub">{cat.tagline || 'Curated Category'}</div>
+                  </div>
+                  <span className="search-item-badge">
+                    <span>Discover</span>
+                    <ChevronRight size={12} />
+                  </span>
                 </Link>
               ))}
             </div>
           )}
 
           {/* View All Search Results footer */}
-          <div style={{ padding: '0.75rem 1rem', backgroundColor: '#F8FAFC', borderTop: '1px solid #E2E8F0', textAlign: 'center' }}>
+          <div className="search-dropdown-footer">
             <button
               type="button"
               onClick={handleSearchSubmit}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: 'var(--tourism-earth)',
-                fontWeight: 700,
-                fontSize: '0.85rem',
-                cursor: 'pointer'
-              }}
+              className="search-view-all-btn"
             >
-              View all results for "{query}" →
+              <span>View all results for "{query}"</span>
+              <ChevronRight size={15} />
             </button>
           </div>
         </div>

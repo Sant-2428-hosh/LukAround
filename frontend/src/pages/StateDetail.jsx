@@ -10,6 +10,7 @@ import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import { buildGoogleMapsSearchUrl, STATE_CENTERS } from '../utils/googleMaps';
 import {
   MapPin,
@@ -586,27 +587,15 @@ export default function StateDetail() {
           </section>
         )}
 
-        {/* ── Cuisine Tab ── */}
-        {(activeTab === 'cuisine' || activeTab === 'all') && state.popularFoods && state.popularFoods.length > 0 && (
-          <section style={{ marginBottom: '4rem' }}>
-            <div style={{ marginBottom: '1.5rem' }}>
-              <span className="tourism-badge badge-earth">Gastronomy</span>
-              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
-                Culinary Heritage of {state.name}
-              </h2>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
-              {state.popularFoods.map((food, idx) => (
-                <div key={idx} style={{ backgroundColor: '#FFFFFF', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--tourism-sand-border)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', fontWeight: 800, marginBottom: '0.5rem' }}>
-                    <Utensils size={16} />
-                    <span style={{ fontSize: '1.1rem', color: '#0F172A' }}>{food.name}</span>
-                  </div>
-                  <p style={{ margin: 0, color: '#475569', fontSize: '0.88rem', lineHeight: 1.6 }}>{food.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+        {/* ── Cuisine Tab (Discover the Taste of State) ── */}
+        {(activeTab === 'cuisine' || activeTab === 'all') && (
+          <div id="discover-taste-of-state">
+            <DiscoverFoodSection
+              type="state"
+              destination={state}
+              state={state}
+            />
+          </div>
         )}
       </div>
 

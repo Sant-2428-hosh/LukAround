@@ -204,14 +204,25 @@ function TypingIndicator() {
 
 // ── Main Dishly Widget ────────────────────────────────────────────────────────
 export default function AiChatWidget() {
-  const { selectedCity, days, showToast } = useApp();
+  const {
+    selectedCity,
+    days,
+    showToast,
+    activeDestinationContext,
+    dishlyPromptTrigger,
+    dietaryPreference,
+    setDietaryPreference,
+    dishlyRadius,
+    setDishlyRadius
+  } = useApp();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [contextCity, setContextCity] = useState(selectedCity || 'Jaipur');
+  const [contextCity, setContextCity] = useState(activeDestinationContext?.city || selectedCity || 'Jaipur');
   const [contextDays, setContextDays] = useState(days || 3);
   const [pulseActive, setPulseActive] = useState(true);
+  const lastTriggerTimestampRef = useRef(null);
   
   // History Drawer State
   const [showHistory, setShowHistory] = useState(false);
@@ -326,22 +337,53 @@ export default function AiChatWidget() {
     return () => clearTimeout(t);
   }, []);
 
-  // ── Sync Context City from Global App Selection ──────────────────────────────
+  // ── Sync Context City from Global App Selection or Destination Context ───────
   useEffect(() => {
-    const currentPlace = selectedCity || 'Jaipur';
+    const currentPlace = activeDestinationContext?.city || selectedCity || 'Jaipur';
     setContextCity(currentPlace);
     if (days) setContextDays(days);
 
     // If chat only has default greeting, update to newly picked place
     setMessages((prev) => {
       if (prev.length <= 1 && prev[0]?.id === 'greeting') {
-        const fresh = createGreeting(currentPlace);
+        const destLabel = activeDestinationContext?.attraction
+          ? `${activeDestinationContext.attraction} in ${currentPlace}`
+          : currentPlace;
+        const fresh = {
+          id: 'greeting',
+          role: 'assistant',
+          text: `Namaste! 🍽️ I'm Dishly, your LukAround culinary concierge for ${destLabel}. Ask me for verified restaurants nearby, must-try regional dishes, pure veg spots, or budget dining!`,
+          type: 'text',
+          suggestions: [
+            activeDestinationContext?.attraction ? `📍 Top food near ${activeDestinationContext.attraction}` : `🍛 Top restaurants in ${currentPlace}`,
+            `🍛 Must-try food in ${currentPlace}`,
+            `🥗 Pure veg spots nearby`,
+            `💰 Affordable local eateries`
+          ]
+        };
         messagesRef.current = [fresh];
         return [fresh];
       }
       return prev;
     });
-  }, [selectedCity, days]);
+  }, [activeDestinationContext, selectedCity, days]);
+
+  // ── Auto-open and Execute when dishlyPromptTrigger fires ──────────────────────
+  useEffect(() => {
+    if (!dishlyPromptTrigger || !dishlyPromptTrigger.prompt) return;
+    if (dishlyPromptTrigger.timestamp === lastTriggerTimestampRef.current) return;
+    lastTriggerTimestampRef.current = dishlyPromptTrigger.timestamp;
+
+    setIsOpen(true);
+    setShowHistory(false);
+
+    if (dishlyPromptTrigger.context?.city) {
+      setContextCity(dishlyPromptTrigger.context.city);
+    }
+
+    // Trigger message send
+    handleSend(dishlyPromptTrigger.prompt);
+  }, [dishlyPromptTrigger]);
 
   // ── Scroll to Bottom on Message Updates ──────────────────────────────────────
   useEffect(() => {
@@ -405,8 +447,11 @@ export default function AiChatWidget() {
   // ── Send Message ─────────────────────────────────────────────────────────────
   const handleSend = useCallback(async (textOverride) => {
     const rawText = (textOverride || inputText).trim();
-    // If clicked while empty, act as a Quick Food Discover prompt for the active city
-    const text = rawText || `Top restaurants and famous food in ${contextCity}`;
+    const activeAttraction = activeDestinationContext?.attraction || '';
+    const defaultQuery = activeAttraction
+      ? `Top restaurants and famous food near ${activeAttraction}, ${contextCity}`
+      : `Top restaurants and famous food in ${contextCity}`;
+    const text = rawText || defaultQuery;
     if (isLoading) return;
     setInputText('');
     if (inputRef.current) inputRef.current.style.height = '40px';
@@ -428,7 +473,22 @@ export default function AiChatWidget() {
         .slice(-8)
         .map(m => ({ role: m.role, content: m.text }));
 
-      const response = await sendChatMessage(text, historyPayload, contextCity, contextDays);
+      const currentCtx = activeDestinationContext || {};
+      const targetState = currentCtx.state || '';
+      const targetAttraction = currentCtx.attraction || '';
+      const targetCoords = currentCtx.coordinates || null;
+
+      const response = await sendChatMessage(
+        text,
+        historyPayload,
+        contextCity,
+        contextDays,
+        targetState,
+        targetAttraction,
+        targetCoords,
+        dietaryPreference || 'All',
+        dishlyRadius || 5
+      );
 
       const targetCity = response.city || contextCity;
       if (response.city && response.city !== contextCity) {
@@ -460,7 +520,7 @@ export default function AiChatWidget() {
     } finally {
       setIsLoading(false);
     }
-  }, [inputText, isLoading, isListening, contextCity, contextDays, addMessage]);
+  }, [inputText, isLoading, isListening, contextCity, contextDays, activeDestinationContext, dietaryPreference, dishlyRadius, addMessage]);
 
   // ── Start a Fresh New Chat Session ───────────────────────────────────────────
   const handleStartNewChat = () => {
@@ -614,6 +674,27 @@ export default function AiChatWidget() {
                 <span className="chat-online-dot" />
                 <span>LukAround Culinary Radar • <strong className="dishly-current-city">{contextCity}</strong></span>
               </div>
+              {activeDestinationContext?.attraction && (
+                <div style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  background: 'rgba(255,255,255,0.22)',
+                  padding: '2px 8px',
+                  borderRadius: '12px',
+                  fontSize: '11px',
+                  color: '#FEF08A',
+                  marginTop: '3px',
+                  fontWeight: 600,
+                  maxWidth: '220px',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  whiteSpace: 'nowrap'
+                }}>
+                  <MapPin size={10} color="#FEF08A" />
+                  <span>Near {activeDestinationContext.attraction}</span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -675,6 +756,90 @@ export default function AiChatWidget() {
                   title={`Adapt dining guide to ${loc}`}
                 >
                   <span>{loc}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ── Dishly Live Food Preferences (Dietary & Radius) ── */}
+        <div className="dishly-filter-ribbon" style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '8px',
+          padding: '6px 12px',
+          background: '#f8fafc',
+          borderBottom: '1px solid #e2e8f0',
+          fontSize: '11px',
+          overflowX: 'auto',
+          scrollbarWidth: 'thin',
+          paddingBottom: '8px'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
+            <span style={{ fontWeight: 700, color: '#64748b', fontSize: '10px', textTransform: 'uppercase' }}>Diet:</span>
+            {[
+              { id: 'All', label: 'All' },
+              { id: 'Pure Veg', label: '🥗 Veg' },
+              { id: 'Non-Veg', label: '🍗 Non-Veg' },
+              { id: 'Jain', label: '🌱 Jain' },
+              { id: 'Budget', label: '💰 Budget' }
+            ].map(({ id, label }) => {
+              const active = (dietaryPreference || 'All') === id;
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => {
+                    if (setDietaryPreference) setDietaryPreference(id);
+                    const dest = activeDestinationContext?.attraction || contextCity;
+                    handleSend(id === 'All' ? `Famous restaurants near ${dest}` : `Best ${id} restaurants near ${dest}`);
+                  }}
+                  style={{
+                    padding: '2px 8px',
+                    borderRadius: '999px',
+                    fontSize: '10.5px',
+                    fontWeight: 600,
+                    border: active ? '1px solid #E11D48' : '1px solid #e2e8f0',
+                    background: active ? '#FFF1F2' : '#ffffff',
+                    color: active ? '#E11D48' : '#475569',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                    whiteSpace: 'nowrap'
+                  }}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
+            <span style={{ fontWeight: 700, color: '#64748b', fontSize: '10px', textTransform: 'uppercase' }}>Radius:</span>
+            {[1, 2, 5, 10, 20].map(r => {
+              const active = (dishlyRadius || 5) === r;
+              return (
+                <button
+                  key={r}
+                  type="button"
+                  onClick={() => {
+                    if (setDishlyRadius) setDishlyRadius(r);
+                    const dest = activeDestinationContext?.attraction || contextCity;
+                    handleSend(`Find top restaurants within ${r} km of ${dest}`);
+                  }}
+                  style={{
+                    padding: '2px 6px',
+                    borderRadius: '4px',
+                    fontSize: '10px',
+                    fontWeight: 600,
+                    border: active ? '1px solid #059669' : '1px solid #e2e8f0',
+                    background: active ? '#ecfdf5' : '#ffffff',
+                    color: active ? '#059669' : '#64748b',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease'
+                  }}
+                >
+                  {r}km
                 </button>
               );
             })}

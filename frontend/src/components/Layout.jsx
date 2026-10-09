@@ -5,6 +5,7 @@ import Footer from './Footer';
 import BroadcastBanner from './BroadcastBanner';
 import AdminQuickBar from './AdminQuickBar';
 import AiChatWidget from './AiChatWidget';
+import ScrollProgressBar from './common/ScrollProgressBar';
 import { useApp } from '../context/AppContext';
 import { ShieldAlert, X, Globe } from 'lucide-react';
 
@@ -18,6 +19,9 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: "var(--font-body)", color: "var(--color-ink)" }}>
+      {/* ── Active Section Scroll Progress Bar ── */}
+      <ScrollProgressBar />
+
       {/* ── Global Broadcast Advisory Banner (Super Admin controlled) ── */}
       <BroadcastBanner />
 

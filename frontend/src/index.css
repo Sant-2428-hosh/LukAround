@@ -119,22 +119,132 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+/* ══════════════════════════════════════════════════════════════════════════════
+   GLOBAL & EVERY SECTION SCROLLBAR SYSTEM
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Firefox & Standards-compliant CSS Scrollbars */
+html,
+body,
+*,
+*::before,
+*::after {
+  scrollbar-width: thin;
+  scrollbar-color: #94A3B8 #F1F5F9;
+}
+
+/* Chrome, Edge, Safari, Opera (WebKit / Chromium) */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 9px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #F1F5F9;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-rule);
-  border-radius: 3px;
+  background: #94A3B8;
+  border-radius: 8px;
+  border: 2px solid #F1F5F9;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-ink-tertiary);
+  background: var(--color-primary, #E11D48);
+  border-color: #FFE4E6;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Explicit visible scrollbar for all horizontal & vertical section containers */
+.section-scroll-container,
+.overflow-x-auto,
+.overflow-y-auto,
+[style*="overflow-x: auto"],
+[style*="overflow-y: auto"],
+[style*="overflow: auto"],
+.chat-location-chips,
+.chat-restaurant-filters,
+.dishly-filter-ribbon,
+.chat-messages-area,
+.dishly-history-list,
+.map-sidebar,
+.map-details-view {
+  scrollbar-width: thin !important;
+  scrollbar-color: #94A3B8 #F8FAFC !important;
+}
+
+.section-scroll-container::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+[style*="overflow-x: auto"]::-webkit-scrollbar,
+[style*="overflow-y: auto"]::-webkit-scrollbar,
+[style*="overflow: auto"]::-webkit-scrollbar,
+.chat-location-chips::-webkit-scrollbar,
+.chat-restaurant-filters::-webkit-scrollbar,
+.dishly-filter-ribbon::-webkit-scrollbar,
+.chat-messages-area::-webkit-scrollbar,
+.dishly-history-list::-webkit-scrollbar,
+.map-sidebar::-webkit-scrollbar,
+.map-details-view::-webkit-scrollbar {
+  display: block !important;
+  width: 7px !important;
+  height: 7px !important;
+}
+
+.section-scroll-container::-webkit-scrollbar-track,
+.overflow-x-auto::-webkit-scrollbar-track,
+.overflow-y-auto::-webkit-scrollbar-track,
+[style*="overflow-x: auto"]::-webkit-scrollbar-track,
+[style*="overflow-y: auto"]::-webkit-scrollbar-track,
+[style*="overflow: auto"]::-webkit-scrollbar-track,
+.chat-location-chips::-webkit-scrollbar-track,
+.chat-restaurant-filters::-webkit-scrollbar-track,
+.dishly-filter-ribbon::-webkit-scrollbar-track,
+.chat-messages-area::-webkit-scrollbar-track,
+.dishly-history-list::-webkit-scrollbar-track,
+.map-sidebar::-webkit-scrollbar-track,
+.map-details-view::-webkit-scrollbar-track {
+  background: #F1F5F9 !important;
+  border-radius: 999px !important;
+}
+
+.section-scroll-container::-webkit-scrollbar-thumb,
+.overflow-x-auto::-webkit-scrollbar-thumb,
+.overflow-y-auto::-webkit-scrollbar-thumb,
+[style*="overflow-x: auto"]::-webkit-scrollbar-thumb,
+[style*="overflow-y: auto"]::-webkit-scrollbar-thumb,
+[style*="overflow: auto"]::-webkit-scrollbar-thumb,
+.chat-location-chips::-webkit-scrollbar-thumb,
+.chat-restaurant-filters::-webkit-scrollbar-thumb,
+.dishly-filter-ribbon::-webkit-scrollbar-thumb,
+.chat-messages-area::-webkit-scrollbar-thumb,
+.dishly-history-list::-webkit-scrollbar-thumb,
+.map-sidebar::-webkit-scrollbar-thumb,
+.map-details-view::-webkit-scrollbar-thumb {
+  background: #94A3B8 !important;
+  border-radius: 999px !important;
+  border: 1.5px solid #F1F5F9 !important;
+}
+
+.section-scroll-container::-webkit-scrollbar-thumb:hover,
+.overflow-x-auto::-webkit-scrollbar-thumb:hover,
+.overflow-y-auto::-webkit-scrollbar-thumb:hover,
+[style*="overflow-x: auto"]::-webkit-scrollbar-thumb:hover,
+[style*="overflow-y: auto"]::-webkit-scrollbar-thumb:hover,
+[style*="overflow: auto"]::-webkit-scrollbar-thumb:hover,
+.chat-location-chips::-webkit-scrollbar-thumb:hover,
+.chat-restaurant-filters::-webkit-scrollbar-thumb:hover,
+.dishly-filter-ribbon::-webkit-scrollbar-thumb:hover,
+.chat-messages-area::-webkit-scrollbar-thumb:hover,
+.dishly-history-list::-webkit-scrollbar-thumb:hover,
+.map-sidebar::-webkit-scrollbar-thumb:hover,
+.map-details-view::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary, #E11D48) !important;
 }
 
 .font-display {
@@ -2135,13 +2245,21 @@ header {
   align-items: center;
   gap: 0.38rem;
   overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  
   padding: 2px 0;
 }
 
 .chat-location-chips::-webkit-scrollbar {
-  display: none;
+  height: 6px;
+}
+.chat-location-chips::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+.chat-location-chips::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 4px;
 }
 
 .chat-location-pill {
@@ -2892,11 +3010,19 @@ header {
   background: #FDF4F5;
   overflow-x: auto;
   border-bottom: 1px solid #FCE7EA;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .chat-restaurant-filters::-webkit-scrollbar {
-  display: none;
+  height: 6px;
+}
+.chat-restaurant-filters::-webkit-scrollbar-track {
+  background: #FCE7EA;
+  border-radius: 4px;
+}
+.chat-restaurant-filters::-webkit-scrollbar-thumb {
+  background: #FDA4AF;
+  border-radius: 4px;
 }
 
 .chat-filter-btn {
@@ -4744,6 +4870,226 @@ header {
   .hotel-discovery-card {
     flex-direction: column !important;
   }
+}
+
+/* ==========================================================================
+   INTERACTIVE MAP CONTROLS & SCROLL-PROTECTION SYSTEM (GoogleMapView)
+   ========================================================================== */
+
+/* ── Map Action Buttons (Top-Right Controls) ── */
+button.map-control-btn,
+.map-control-btn {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  width: 38px !important;
+  min-width: 38px !important;
+  max-width: 38px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 9px !important;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12) !important;
+  cursor: pointer !important;
+  color: #0F172A !important;
+  position: relative !important;
+  z-index: 30 !important;
+  flex-shrink: 0 !important;
+  outline: none !important;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+button.map-control-btn:hover,
+.map-control-btn:hover {
+  background-color: #F8FAFC !important;
+  border-color: #94A3B8 !important;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18) !important;
+  transform: translateY(-1px) scale(1.04) !important;
+}
+
+button.map-control-btn:active,
+.map-control-btn:active {
+  transform: translateY(0) scale(0.97) !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12) !important;
+}
+
+/* Green state when API key is active */
+button.map-control-btn.map-control-btn--active,
+.map-control-btn.map-control-btn--active {
+  background-color: #F0FDF4 !important;
+  border-color: #86EFAC !important;
+}
+
+/* Crisp Lucide SVG inside map buttons */
+.map-control-btn svg {
+  display: block !important;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  stroke: #0F172A !important;
+  stroke-width: 2.3px !important;
+  color: #0F172A !important;
+  fill: none !important;
+  flex-shrink: 0 !important;
+  pointer-events: none !important;
+  transition: transform 0.15s ease !important;
+}
+
+.map-control-btn.map-control-btn--active svg {
+  stroke: #15803D !important;
+  color: #15803D !important;
+}
+
+/* ── Notation Tooltips on Hover ── */
+.map-control-btn .map-control-tooltip {
+  position: absolute;
+  right: calc(100% + 9px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-family: var(--font-body, -apple-system, sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+  z-index: 50;
+}
+
+.map-control-btn .map-control-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(15, 23, 42, 0.94);
+}
+
+.map-control-btn:hover .map-control-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* ── "Click to Interact" / Active State Overlays & Floating Pills ── */
+.map-interaction-toggle-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  padding: 8px 16px !important;
+  background: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-body, -apple-system, sans-serif) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28) !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  animation: floatPulse 2.8s ease-in-out infinite;
+}
+
+.map-interaction-toggle-btn:hover {
+  background: rgba(15, 23, 42, 0.96) !important;
+  transform: scale(1.04) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+}
+
+.map-interaction-toggle-btn svg {
+  width: 15px !important;
+  height: 15px !important;
+  stroke: #38BDF8 !important;
+  color: #38BDF8 !important;
+  flex-shrink: 0 !important;
+}
+
+.map-interaction-active-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(16, 185, 129, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-family: var(--font-body, -apple-system, sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+}
+
+.map-interaction-active-badge:hover {
+  background: rgba(5, 150, 105, 0.96);
+  transform: scale(1.02);
+}
+
+.map-interaction-active-badge svg {
+  width: 13px;
+  height: 13px;
+  stroke: #FFFFFF !important;
+  color: #FFFFFF !important;
+  flex-shrink: 0;
+}
+
+.map-scroll-hint-toast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  z-index: 40;
+  animation: fadeInHint 0.2s ease-out;
+}
+
+@keyframes fadeInHint {
+  from { opacity: 0; transform: translate(-50%, -42%) scale(0.95); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes floatPulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 
 

@@ -11,14 +11,39 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
  * @param {Array} history - [{role, content}]
  * @param {string} city - Current context city
  * @param {number} days - Current context days
- * @returns {Promise<Object>} - { type, text, data, suggestions, city, days }
+ * @param {string} state - Current context state
+ * @param {string} attraction - Current context attraction
+ * @param {Object} coordinates - Current coordinates { latitude, longitude }
+ * @param {string} dietary - User dietary preference
+ * @param {number} radius - Search radius in km
+ * @returns {Promise<Object>} - { type, text, data, suggestions, city, days, mustTry }
  */
-export async function sendChatMessage(message, history = [], city = 'Jaipur', days = 3) {
+export async function sendChatMessage(
+  message,
+  history = [],
+  city = 'Jaipur',
+  days = 3,
+  state = '',
+  attraction = '',
+  coordinates = null,
+  dietary = 'All',
+  radius = 5
+) {
   try {
     const response = await fetch(`${API_BASE}/chat/message`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message, history, city, days })
+      body: JSON.stringify({
+        message,
+        history,
+        city,
+        days,
+        state,
+        attraction,
+        coordinates,
+        dietary,
+        radius
+      })
     });
     if (!response.ok) throw new Error('Chat API error');
     const data = await response.json();

@@ -17,7 +17,8 @@ import {
   Info,
   Key,
   X,
-  Check
+  Check,
+  MousePointerClick
 } from 'lucide-react';
 import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../../utils/googleMaps';
 
@@ -37,6 +38,10 @@ function createCustomLeafletIcon({ type = 'attraction', isSelected = false, labe
     bgColor = '#D97706'; // Amber / Gold for cities
     borderColor = '#B45309';
     iconSvg = `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFFFFF"/>`;
+  } else if (type === 'restaurant') {
+    bgColor = '#059669'; // Emerald Green for restaurants & dining
+    borderColor = '#047857';
+    iconSvg = `<path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" fill="#FFFFFF"/>`;
   } else if (type === 'origin') {
     bgColor = '#8B5CF6'; // Purple for starting origin
     borderColor = '#6D28D9';
@@ -108,6 +113,11 @@ export default function GoogleMapView({
   const [tileStyle, setTileStyle] = useState('google'); // 'google' | 'satellite' | 'osm'
   const [currentZoom, setCurrentZoom] = useState(zoom);
 
+  // Map Interaction & Scroll-Protection States
+  const [isMapActive, setIsMapActive] = useState(false);
+  const [showScrollHint, setShowScrollHint] = useState(false);
+  const scrollHintTimerRef = useRef(null);
+
   // User-configured API key from localStorage or .env
   const [customApiKey, setCustomApiKey] = useState(() => {
     try {
@@ -177,7 +187,7 @@ export default function GoogleMapView({
             streetViewControl: false,
             fullscreenControl: false,
             zoomControl: false,
-            gestureHandling: interactive ? 'auto' : 'none'
+            gestureHandling: interactive ? 'cooperative' : 'none'
           });
 
           googleMapRef.current = gMap;
@@ -200,7 +210,9 @@ export default function GoogleMapView({
         center: [center.lat, center.lng],
         zoom: zoom,
         zoomControl: false,
-        attributionControl: false
+        attributionControl: false,
+        scrollWheelZoom: false, // Prevents scroll hijacking during page browsing
+        touchZoom: false // Prevents touch hijacking on mobile
       });
 
       // Clean Tile Layer (Google Maps Roadmap or OpenStreetMap, 100% key-free and no watermark)
@@ -231,6 +243,42 @@ export default function GoogleMapView({
       googleMapRef.current = null;
     };
   }, [isGoogleKeyConfigured, effectiveApiKey]);
+
+  // Synchronize scroll-wheel zoom & gesture interaction with isMapActive state
+  useEffect(() => {
+    if (mapEngine === 'leaflet' && leafletMapRef.current) {
+      if (isMapActive) {
+        leafletMapRef.current.scrollWheelZoom.enable();
+        leafletMapRef.current.touchZoom.enable();
+      } else {
+        leafletMapRef.current.scrollWheelZoom.disable();
+        leafletMapRef.current.touchZoom.disable();
+      }
+    } else if (mapEngine === 'google' && googleMapRef.current) {
+      googleMapRef.current.setOptions({
+        gestureHandling: isMapActive ? 'greedy' : (interactive ? 'cooperative' : 'none')
+      });
+    }
+  }, [isMapActive, mapEngine, interactive]);
+
+  // Press Escape to release active map mode
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isMapActive) {
+        setIsMapActive(false);
+        setShowScrollHint(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isMapActive]);
+
+  // Cleanup hint timer on unmount
+  useEffect(() => {
+    return () => {
+      if (scrollHintTimerRef.current) clearTimeout(scrollHintTimerRef.current);
+    };
+  }, []);
 
   // Dynamic Tile Layer Switcher (Street / Satellite / OpenStreetMap)
   useEffect(() => {
@@ -551,9 +599,31 @@ export default function GoogleMapView({
         zIndex: isFullscreen ? 99999 : 1,
         borderRadius: isFullscreen ? '0px' : '16px',
         overflow: 'hidden',
-        border: '1px solid var(--tourism-sand-border)',
-        boxShadow: isFullscreen ? 'none' : 'var(--shadow-subtle)',
-        backgroundColor: '#F8FAFC'
+        border: isMapActive ? '2px solid #2563EB' : '1px solid var(--tourism-sand-border)',
+        boxShadow: isFullscreen ? 'none' : (isMapActive ? '0 12px 32px rgba(37, 99, 235, 0.16)' : 'var(--shadow-subtle)'),
+        backgroundColor: '#F8FAFC',
+        transition: 'border-color 0.2s ease, box-shadow 0.2s ease'
+      }}
+      onClick={() => {
+        if (!isMapActive && interactive) {
+          setIsMapActive(true);
+          setShowScrollHint(false);
+        }
+      }}
+      onMouseLeave={() => {
+        if (isMapActive) {
+          setIsMapActive(false);
+        }
+        setShowScrollHint(false);
+      }}
+      onWheel={() => {
+        if (!isMapActive && interactive) {
+          setShowScrollHint(true);
+          if (scrollHintTimerRef.current) clearTimeout(scrollHintTimerRef.current);
+          scrollHintTimerRef.current = setTimeout(() => {
+            setShowScrollHint(false);
+          }, 2400);
+        }
       }}
     >
       {/* ── Map Canvas Container ── */}
@@ -575,7 +645,7 @@ export default function GoogleMapView({
           position: 'absolute',
           top: '12px',
           left: '12px',
-          right: '56px',
+          right: '64px',
           zIndex: 10,
           display: 'flex',
           alignItems: 'center',
@@ -714,152 +784,113 @@ export default function GoogleMapView({
         )}
       </div>
 
-      {/* ── Right-Side Interactive Controls ── */}
+      {/* ── Right-Side Interactive Controls (Notations & Map Tools) ── */}
       {showControls && (
         <div
           style={{
             position: 'absolute',
             top: '12px',
             right: '12px',
-            zIndex: 10,
+            zIndex: 30,
             display: 'flex',
             flexDirection: 'column',
-            gap: '6px'
+            gap: '8px'
           }}
         >
           <button
             type="button"
-            onClick={handleZoomIn}
-            title="Zoom In"
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #E2E8F0',
-              borderRadius: '8px',
-              width: '36px',
-              height: '36px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#1E293B',
-              cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-              transition: 'background-color 0.2s'
+            onClick={(e) => {
+              e.stopPropagation();
+              handleZoomIn();
+              if (!isMapActive) setIsMapActive(true);
             }}
+            className="map-control-btn"
+            title="Zoom In (+)"
+            aria-label="Zoom In"
           >
-            <ZoomIn size={16} />
+            <ZoomIn size={18} color="#0F172A" stroke="#0F172A" strokeWidth={2.4} />
+            <span className="map-control-tooltip">Zoom In (+)</span>
           </button>
 
           <button
             type="button"
-            onClick={handleZoomOut}
-            title="Zoom Out"
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #E2E8F0',
-              borderRadius: '8px',
-              width: '36px',
-              height: '36px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#1E293B',
-              cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-              transition: 'background-color 0.2s'
+            onClick={(e) => {
+              e.stopPropagation();
+              handleZoomOut();
+              if (!isMapActive) setIsMapActive(true);
             }}
+            className="map-control-btn"
+            title="Zoom Out (−)"
+            aria-label="Zoom Out"
           >
-            <ZoomOut size={16} />
+            <ZoomOut size={18} color="#0F172A" stroke="#0F172A" strokeWidth={2.4} />
+            <span className="map-control-tooltip">Zoom Out (−)</span>
           </button>
 
           <button
             type="button"
-            onClick={cycleTileLayer}
-            title={`Toggle Basemap Layer (Current: ${TILE_PROVIDERS[tileStyle]?.name || 'Roadmap'})`}
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #E2E8F0',
-              borderRadius: '8px',
-              width: '36px',
-              height: '36px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#1E293B',
-              cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-              transition: 'background-color 0.2s'
+            onClick={(e) => {
+              e.stopPropagation();
+              cycleTileLayer();
             }}
+            className="map-control-btn"
+            title={`Switch Basemap (${TILE_PROVIDERS[tileStyle]?.name || 'Roadmap'})`}
+            aria-label="Switch Basemap Layer"
           >
-            <Layers size={15} />
+            <Layers size={17} color="#0F172A" stroke="#0F172A" strokeWidth={2.4} />
+            <span className="map-control-tooltip">Layer: {TILE_PROVIDERS[tileStyle]?.name || 'Roadmap'}</span>
           </button>
 
           <button
             type="button"
-            onClick={() => {
+            onClick={(e) => {
+              e.stopPropagation();
               setApiKeyInput(customApiKey);
               setShowApiKeyModal(true);
             }}
+            className={`map-control-btn ${isGoogleKeyConfigured ? 'map-control-btn--active' : ''}`}
             title="Map Engine & API Key Setup"
-            style={{
-              backgroundColor: isGoogleKeyConfigured ? '#F0FDF4' : '#FFFFFF',
-              border: isGoogleKeyConfigured ? '1px solid #86EFAC' : '1px solid #E2E8F0',
-              borderRadius: '8px',
-              width: '36px',
-              height: '36px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: isGoogleKeyConfigured ? '#15803D' : '#1E293B',
-              cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-              transition: 'background-color 0.2s'
-            }}
+            aria-label="Map Engine & API Key Setup"
           >
-            <Key size={15} />
+            <Key
+              size={17}
+              color={isGoogleKeyConfigured ? '#15803D' : '#0F172A'}
+              stroke={isGoogleKeyConfigured ? '#15803D' : '#0F172A'}
+              strokeWidth={2.4}
+            />
+            <span className="map-control-tooltip">{isGoogleKeyConfigured ? 'Google API Active' : 'API Key Setup'}</span>
           </button>
 
           <button
             type="button"
-            onClick={handleResetBounds}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleResetBounds();
+            }}
+            className="map-control-btn"
             title="Fit All Locations"
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #E2E8F0',
-              borderRadius: '8px',
-              width: '36px',
-              height: '36px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#1E293B',
-              cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-              transition: 'background-color 0.2s'
-            }}
+            aria-label="Fit All Locations"
           >
-            <RotateCcw size={15} />
+            <RotateCcw size={17} color="#0F172A" stroke="#0F172A" strokeWidth={2.4} />
+            <span className="map-control-tooltip">Fit All Locations</span>
           </button>
 
           <button
             type="button"
-            onClick={toggleFullscreen}
-            title={isFullscreen ? 'Exit Fullscreen' : 'Fullscreen Map'}
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #E2E8F0',
-              borderRadius: '8px',
-              width: '36px',
-              height: '36px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#1E293B',
-              cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
-              transition: 'background-color 0.2s'
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleFullscreen();
             }}
+            className="map-control-btn"
+            title={isFullscreen ? 'Exit Fullscreen' : 'Fullscreen Map'}
+            aria-label={isFullscreen ? 'Exit Fullscreen' : 'Fullscreen Map'}
           >
-            {isFullscreen ? <Minimize2 size={15} /> : <Maximize2 size={15} />}
+            {isFullscreen ? (
+              <Minimize2 size={17} color="#0F172A" stroke="#0F172A" strokeWidth={2.4} />
+            ) : (
+              <Maximize2 size={17} color="#0F172A" stroke="#0F172A" strokeWidth={2.4} />
+            )}
+            <span className="map-control-tooltip">{isFullscreen ? 'Exit Fullscreen' : 'Fullscreen Map'}</span>
           </button>
         </div>
       )}
@@ -870,7 +901,7 @@ export default function GoogleMapView({
           position: 'absolute',
           bottom: '12px',
           left: '12px',
-          zIndex: 10,
+          zIndex: 15,
           backgroundColor: 'rgba(255, 255, 255, 0.95)',
           backdropFilter: 'blur(8px)',
           borderRadius: '8px',
@@ -898,6 +929,60 @@ export default function GoogleMapView({
           <span>Hotels</span>
         </span>
       </div>
+
+      {/* ── Scroll Protection: Click-to-Interact or Active Status Badges ── */}
+      {interactive && !isMapActive && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsMapActive(true);
+            setShowScrollHint(false);
+          }}
+          className="map-interaction-toggle-btn"
+          style={{
+            position: 'absolute',
+            bottom: '12px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 25
+          }}
+          title="Click to interact with map (zoom and pan freely)"
+        >
+          <MousePointerClick size={14} color="#38BDF8" />
+          <span>Click map to interact</span>
+        </button>
+      )}
+
+      {/* ── Scroll Hint Toast (Briefly shown when user scrolls while map is inactive) ── */}
+      {interactive && showScrollHint && !isMapActive && (
+        <div className="map-scroll-hint-toast">
+          <MousePointerClick size={15} color="#60A5FA" />
+          <span>Click anywhere on map to activate zoom & pan</span>
+        </div>
+      )}
+
+      {/* ── Active Map Badge ── */}
+      {interactive && isMapActive && (
+        <div
+          className="map-interaction-active-badge"
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsMapActive(false);
+          }}
+          style={{
+            position: 'absolute',
+            bottom: '12px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 25
+          }}
+          title="Click to lock map and scroll page (or move cursor outside)"
+        >
+          <Check size={13} color="#FFFFFF" />
+          <span>Map Active • Move mouse outside to scroll page</span>
+        </div>
+      )}
 
       {/* ── User Self-Service API Key & Engine Modal ── */}
       {showApiKeyModal && (

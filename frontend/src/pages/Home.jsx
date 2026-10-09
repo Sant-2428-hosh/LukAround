@@ -5,12 +5,14 @@ import StateCard from '../components/tourism/StateCard';
 import AttractionCard from '../components/tourism/AttractionCard';
 import CategoryCard from '../components/tourism/CategoryCard';
 import ItineraryCard from '../components/tourism/ItineraryCard';
+import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
+import PopularPlacesSection from '../components/tourism/PopularPlacesSection';
 import {
   states, cities, attractions, categories, travelStyles, itineraries
 } from '../data/indiaTourismData';
 import {
   Compass, MapPin, ArrowRight, Sparkles, Award, Calendar,
-  CheckCircle2, Flame, Star, Globe, Zap, ChevronLeft, ChevronRight
+  CheckCircle2, Flame, Star, Globe, Zap, ChevronLeft, ChevronRight, UtensilsCrossed
 } from 'lucide-react';
 
 const HERO_SLIDES = [
@@ -73,6 +75,21 @@ const HERO_SLIDES = [
     image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=2400&q=85',
     tabLabel: 'Sacred Himalayas',
     tabLocation: 'Uttarakhand'
+  },
+  {
+    id: 'thanjai-periya-kovil',
+    place: 'Thanjai Periya Kovil',
+    location: 'Thanjavur, Tamil Nadu',
+    stateSlug: 'tamil-nadu',
+    tag: '✦ THANJAVUR, TAMIL NADU · CHOLA EMPIRE MARVEL',
+    badgeColor: '#EAB308',
+    line1: 'Where Sacred Granite Echoes Chola Glory',
+    accentText: 'Thanjai Periya Kovil',
+    accentClass: 'accent-thanjavur',
+    subtitle: 'Emperor Raja Raja Chola’s thousand-year monolithic granite marvel rising in timeless Dravidian glory.',
+    image: 'https://images.unsplash.com/photo-1675677044118-3fd84f9deaf0?auto=format&fit=crop&w=2400&q=85',
+    tabLabel: 'Thanjai Periya Kovil',
+    tabLocation: 'Thanjavur, TN'
   }
 ];
 
@@ -117,7 +134,7 @@ export default function Home() {
   const [attractionFilter, setAttractionFilter] = useState('all');
   const [hoveredStyle, setHoveredStyle] = useState(null);
 
-  // 4-Destination Hero Slideshow state
+  // 5-Destination Hero Slideshow state
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [progressKey, setProgressKey] = useState(0);
@@ -173,7 +190,7 @@ export default function Home() {
   return (
     <div className="tourism-page">
 
-      {/* ══ 1. REFINED LUXURY 4-PLACE AUTO-SLIDESHOW HERO ══ */}
+      {/* ══ 1. REFINED LUXURY 5-PLACE AUTO-SLIDESHOW HERO ══ */}
       <section
         className="tourism-hero-epic"
         onMouseEnter={() => setIsPaused(true)}
@@ -236,7 +253,7 @@ export default function Home() {
             <SearchBar placeholder="Search a state, monument, beach, hill station or experience..." />
           </div>
 
-          {/* 4 Places Slideshow Navigation Switcher */}
+          {/* 5 Places Slideshow Navigation Switcher */}
           <div className="hero-slideshow-nav" role="tablist" aria-label="Iconic Indian Destinations">
             {HERO_SLIDES.map((slide, idx) => {
               const isActive = idx === currentSlide;
@@ -295,12 +312,12 @@ export default function Home() {
             <div className="metric-divider" />
             <div className="metric-item">
               <div className="metric-icon" style={{ backgroundColor: '#CCFBF1', color: '#0D9488' }}>🌆</div>
-              <StatCounter value={77} label="Iconic Destination Cities" color="#0D9488" />
+              <StatCounter value={212} label="Iconic Destination Cities" color="#0D9488" />
             </div>
             <div className="metric-divider" />
             <div className="metric-item">
               <div className="metric-icon" style={{ backgroundColor: '#E0F2FE', color: '#0284C7' }}>✨</div>
-              <StatCounter value={198} suffix="+" label="Verified Masterpiece Attractions" color="#0284C7" />
+              <StatCounter value={403} suffix="+" label="Verified Masterpiece Attractions" color="#0284C7" />
             </div>
             <div className="metric-divider" />
             <div className="metric-item">
@@ -315,6 +332,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ══ INDIA'S MOST POPULAR TOURIST PLACES ══ */}
+      <PopularPlacesSection />
 
       {/* ══ 3. THE MAGNIFICENT 15 STATES ══ */}
       <section className="section-states">
@@ -464,6 +484,22 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ══ DISCOVER FOOD WITH DISHLY ══ */}
+      <section className="section-dishly-food" style={{ padding: '3.5rem 0', backgroundColor: '#F8FAFC' }}>
+        <div className="tourism-container">
+          <DiscoverFoodSection
+            destination={{
+              city: 'Jaipur',
+              state: 'Rajasthan',
+              attraction: 'Hawa Mahal',
+              coordinates: { lat: 26.9239, lng: 75.8267 }
+            }}
+            sectionTitle="Discover Food with Dishly"
+            subtitle="Explore real restaurants, iconic local dishes, and AI food intelligence across India's premier tourist destinations."
+          />
         </div>
       </section>
 

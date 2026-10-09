@@ -6,9 +6,11 @@ import AttractionCard from '../components/tourism/AttractionCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import WhereToStaySection from '../components/tourism/WhereToStaySection';
+import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
 import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl, getNearbyHotels } from '../utils/googleMaps';
+import { calculateDistance } from '../utils/distance';
 import {
   MapPin,
   Calendar,
@@ -39,17 +41,80 @@ export default function AttractionDetail() {
   const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
 
-  const attraction = attractions.find(a =>
-    a.id === attractionSlug || a.id.toLowerCase() === (attractionSlug || '').toLowerCase()
-  ) || attractions[0];
+  // Intelligent attraction resolution: exact ID, city-scope, alias, or fuzzy name match
+  const attraction = useMemo(() => {
+    if (!attractionSlug) return attractions[0];
+    const target = attractionSlug.toLowerCase().trim();
 
+    // 1. Direct exact ID match
+    let found = attractions.find(a => a.id.toLowerCase() === target);
+    if (found) return found;
+
+    // 2. City-scoped match if citySlug provided in URL
+    if (citySlug) {
+      const cityAttrs = attractions.filter(a =>
+        a.citySlug === citySlug ||
+        a.city.toLowerCase() === citySlug.toLowerCase() ||
+        a.city.toLowerCase().replace(/\s+/g, '-') === citySlug.toLowerCase()
+      );
+      // Try ID substring in this city
+      found = cityAttrs.find(a =>
+        target.includes(a.id.toLowerCase()) || a.id.toLowerCase().includes(target)
+      );
+      if (found) return found;
+
+      // Try Name match in this city
+      found = cityAttrs.find(a => {
+        const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        return target.includes(cleanName) || cleanName.includes(target);
+      });
+      if (found) return found;
+    }
+
+    // 3. Global slug containment / alias match
+    found = attractions.find(a =>
+      target.includes(a.id.toLowerCase()) || a.id.toLowerCase().includes(target)
+    );
+    if (found) return found;
+
+    // 4. Global Name fuzzy/slug match
+    found = attractions.find(a => {
+      const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      return target.includes(cleanName) || cleanName.includes(target);
+    });
+    if (found) return found;
+
+    // 5. Fallback within city if available
+    if (citySlug) {
+      const cityFirst = attractions.find(a =>
+        a.citySlug === citySlug || a.city.toLowerCase() === citySlug.toLowerCase()
+      );
+      if (cityFirst) return cityFirst;
+    }
+
+    return attractions[0];
+  }, [attractionSlug, citySlug]);
+
+  const attrCoords = attraction.coordinates || { latitude: 20.5937, longitude: 78.9629 };
   const parentCity = cities.find(c => c.id === attraction.citySlug) || { name: attraction.city, id: attraction.citySlug, state: attraction.state };
   const parentState = states.find(s => s.slug === attraction.stateSlug) || { name: attraction.state, slug: attraction.stateSlug };
 
-  // Nearby attractions in the same city or state
-  const nearbyPlacesList = attractions.filter(a =>
-    a.id !== attraction.id && (a.citySlug === attraction.citySlug || a.stateSlug === attraction.stateSlug)
-  ).slice(0, 3);
+  // Nearby attractions sorted by true geographical distance
+  const nearbyPlacesList = useMemo(() => {
+    return attractions
+      .filter(a => a.id !== attraction.id && a.coordinates && a.coordinates.latitude && a.coordinates.longitude)
+      .map(a => ({
+        ...a,
+        distanceKm: calculateDistance(
+          attrCoords.latitude,
+          attrCoords.longitude,
+          a.coordinates.latitude,
+          a.coordinates.longitude
+        )
+      }))
+      .sort((a, b) => a.distanceKm - b.distanceKm)
+      .slice(0, 4);
+  }, [attraction, attrCoords]);
 
   // Nearby verified hotels
   const nearbyHotels = useMemo(() => {
@@ -67,7 +132,6 @@ export default function AttractionDetail() {
     setGalleryOpen(true);
   };
 
-  const attrCoords = attraction.coordinates || { latitude: 20.5937, longitude: 78.9629 };
   const mapsSearchUrl = buildGoogleMapsSearchUrl(attraction);
 
   // Map markers: Attraction (Selected) + Nearby Hotels + Nearby Attractions
@@ -580,6 +644,16 @@ export default function AttractionDetail() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* ── Eat Near This Attraction (Dishly Real Restaurant & Food Discovery) ── */}
+        <div id="eat-near-this-attraction">
+          <DiscoverFoodSection
+            type="attraction"
+            destination={attraction}
+            city={parentCity}
+            state={parentState}
+          />
         </div>
 
         {/* ── Dedicated Where to Stay Section (Official Hotel Discovery System) ── */}

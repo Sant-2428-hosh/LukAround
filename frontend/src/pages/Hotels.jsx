@@ -21,6 +21,8 @@ import HotelCard from '../components/tourism/HotelCard';
 import HotelComparisonModal from '../components/tourism/HotelComparisonModal';
 import DirectionsModal from '../components/tourism/DirectionsModal';
 import GoogleMapView from '../components/maps/GoogleMapView';
+import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
+import { useApp } from '../context/AppContext';
 import { hotels as allHotelsData } from '../data/hotelsData';
 import { states, cities } from '../data/indiaTourismData';
 import { sortHotels, calculateDistance } from '../utils/distance';
@@ -55,11 +57,25 @@ export default function Hotels() {
   // Mobile Filter Drawer Toggle
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
 
+  const { setActiveDestinationContext } = useApp();
+
   // Sync state if URL search params change
   useEffect(() => {
     if (paramCity && paramCity !== selectedCity) setSelectedCity(paramCity);
     if (paramState && paramState !== selectedState) setSelectedState(paramState);
   }, [paramCity, paramState]);
+
+  // Sync active destination context for Dishly AI
+  useEffect(() => {
+    if (selectedCity && setActiveDestinationContext) {
+      setActiveDestinationContext({
+        state: selectedState || '',
+        city: selectedCity,
+        attraction: `Hotels in ${selectedCity}`,
+        coordinates: null
+      });
+    }
+  }, [selectedCity, selectedState, setActiveDestinationContext]);
 
   // Available cities filtered by selected state
   const availableCities = useMemo(() => {
@@ -783,6 +799,19 @@ export default function Hotels() {
               </div>
             )}
           </main>
+        </div>
+
+        {/* ── Food & Restaurants Near Hotels ── */}
+        <div style={{ marginTop: '3.5rem', width: '100%' }}>
+          <DiscoverFoodSection
+            destination={{
+              city: selectedCity || 'Jaipur',
+              state: selectedState || 'Rajasthan',
+              attraction: selectedCity ? `Hotels in ${selectedCity}` : 'Selected Hotel'
+            }}
+            sectionTitle={`Famous Food & Restaurants Near Hotels in ${selectedCity || 'India'}`}
+            subtitle="Verified authentic eateries, local food spots, and must-try delicacies located conveniently near popular stay options."
+          />
         </div>
 
         {/* ── Floating Compare Tray (Sticky at bottom when hotels selected) ── */}

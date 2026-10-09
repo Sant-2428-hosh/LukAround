@@ -22,6 +22,7 @@ import {
   Loader2
 } from 'lucide-react';
 import LeafletMap from '../components/LeafletMap';
+import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 
 const POPULAR_CITIES = [
   "Jaipur", "Hampi", "Goa", "Munnar", "Varanasi", "Bangalore", "Agra", "Chennai", "Delhi", "Rishikesh", "Kochi", "Pondicherry"
@@ -72,16 +73,27 @@ export default function Itinerary() {
     setActiveDay,
     handleGenerateItinerary,
     userLocation,
-    detectUserLocation
+    detectUserLocation,
+    setActiveDestinationContext
   } = useApp();
 
   const [searchParams, setSearchParams] = useSearchParams();
   const [cityInput, setCityInput] = useState(selectedCity || 'Jaipur');
 
-  // Keep input in sync with selectedCity
+  // Keep input in sync with selectedCity and update Dishly context
   useEffect(() => {
-    if (selectedCity) setCityInput(selectedCity);
-  }, [selectedCity]);
+    if (selectedCity) {
+      setCityInput(selectedCity);
+      if (setActiveDestinationContext) {
+        const firstStop = itineraryData?.days?.[activeDay - 1]?.stops?.[0]?.name;
+        setActiveDestinationContext({
+          city: selectedCity,
+          attraction: firstStop || `Sightseeing in ${selectedCity}`,
+          coordinates: null
+        });
+      }
+    }
+  }, [selectedCity, activeDay, itineraryData, setActiveDestinationContext]);
 
   // Deep-link query param support & automatic plan synchronization
   useEffect(() => {
@@ -784,6 +796,18 @@ export default function Itinerary() {
                 </div>
               </div>
             )}
+
+            {/* ── Culinary Guide & Dining Stops for this Itinerary ── */}
+            <div style={{ marginTop: '3rem', width: '100%' }}>
+              <DiscoverFoodSection
+                destination={{
+                  city: selectedCity,
+                  attraction: itineraryData?.days?.[activeDay - 1]?.stops?.[0]?.name || `Attractions in ${selectedCity}`
+                }}
+                sectionTitle={`Culinary Guide & Food Stops for Day ${activeDay}`}
+                subtitle={`Authentic restaurants and local culinary landmarks around your Day ${activeDay} sightseeing route in ${selectedCity}.`}
+              />
+            </div>
 
           </div>
         )}

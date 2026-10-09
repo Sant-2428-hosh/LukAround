@@ -386,6 +386,26 @@ export function AppProvider({ children }) {
   const [isAuthChecking, setIsAuthChecking] = useState(true);
   const [authToast, setAuthToast] = useState(null);
 
+  // Active Destination Context for Dishly AI & Real Food Discovery
+  const [activeDestinationContext, setActiveDestinationContext] = useState({
+    state: 'Rajasthan',
+    stateSlug: 'rajasthan',
+    city: 'Jaipur',
+    citySlug: 'jaipur',
+    attraction: '',
+    attractionSlug: '',
+    coordinates: { latitude: 26.9124, longitude: 75.7873 },
+    hotel: null
+  });
+
+  const [dietaryPreference, setDietaryPreference] = useState('No preference');
+  const [dishlyRadius, setDishlyRadius] = useState(5);
+  const [dishlyPromptTrigger, setDishlyPromptTrigger] = useState(null);
+
+  const openDishlyWithPrompt = (promptText) => {
+    setDishlyPromptTrigger({ prompt: promptText, timestamp: Date.now() });
+  };
+
   // Platform Broadcast & Feature Flags State
   const [broadcast, setBroadcast] = useState({ active: false });
   const [featureFlags, setFeatureFlags] = useState({});
@@ -712,7 +732,16 @@ export function AppProvider({ children }) {
         setUserLocation,
         nearbyPlaces,
         locationLoading,
-        detectUserLocation
+        detectUserLocation,
+        activeDestinationContext,
+        setActiveDestinationContext,
+        dietaryPreference,
+        setDietaryPreference,
+        dishlyRadius,
+        setDishlyRadius,
+        dishlyPromptTrigger,
+        setDishlyPromptTrigger,
+        openDishlyWithPrompt
       }}
     >
       {children}

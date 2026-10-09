@@ -6,6 +6,7 @@ import AttractionCard from '../components/tourism/AttractionCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import WhereToStaySection from '../components/tourism/WhereToStaySection';
+import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
 import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../utils/googleMaps';
@@ -44,16 +45,32 @@ export default function CityDetail() {
   // Directions modal
   const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
 
-  const city = cities.find(c =>
-    c.id === citySlug || c.id.toLowerCase() === (citySlug || '').toLowerCase()
-  ) || cities[0];
+  const city = useMemo(() => {
+    if (!citySlug) return cities[0];
+    const target = citySlug.toLowerCase().trim();
+    let found = cities.find(c => c.id.toLowerCase() === target);
+    if (found) return found;
+    found = cities.find(c => c.aliases && c.aliases.some(a => a.toLowerCase().replace(/\s+/g, '-') === target));
+    if (found) return found;
+    found = cities.find(c => c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') === target);
+    if (found) return found;
+    if (stateSlug) {
+      const stateCities = cities.filter(c => c.stateSlug === stateSlug || c.state.toLowerCase() === stateSlug.toLowerCase());
+      found = stateCities.find(c => c.id.includes(target) || target.includes(c.id));
+      if (found) return found;
+    }
+    return cities[0];
+  }, [citySlug, stateSlug]);
 
   const parentState = states.find(s =>
     s.slug === city.stateSlug || s.name.toLowerCase() === (city.state || '').toLowerCase()
   ) || { name: city.state, slug: city.stateSlug };
 
   const cityAttractions = attractions.filter(a =>
-    a.citySlug === city.id || a.city.toLowerCase() === city.name.toLowerCase()
+    a.citySlug === city.id ||
+    a.city.toLowerCase() === city.name.toLowerCase() ||
+    (city.id === 'mathura-vrindavan' && (a.citySlug === 'mathura' || a.citySlug === 'vrindavan')) ||
+    (city.topAttractions && city.topAttractions.includes(a.id))
   );
 
   const cityHotels = allHotels.filter(h =>
@@ -537,27 +554,23 @@ export default function CityDetail() {
           </section>
         )}
 
-        {/* ── Food, Shopping & Festivals Grid ── */}
+        {/* ── Famous Food in This City (Dishly AI & Real Restaurant Discovery) ── */}
+        <div id="famous-food-in-city">
+          <DiscoverFoodSection
+            type="city"
+            destination={city}
+            city={city}
+            state={parentState}
+          />
+        </div>
+
+        {/* ── Shopping & Festivals Grid ── */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
           gap: '1.5rem',
           marginBottom: '3.5rem'
         }}>
-          {/* Food */}
-          {city.food && city.food.length > 0 && (
-            <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', padding: '1.75rem', border: '1px solid var(--tourism-sand-border)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', fontWeight: 800, marginBottom: '1rem' }}>
-                <Utensils size={18} />
-                <h3 style={{ fontSize: '1.2rem', color: '#0F172A', margin: 0 }}>Famous Foods & Drinks</h3>
-              </div>
-              <ul style={{ paddingLeft: '1.25rem', margin: 0, color: '#475569', fontSize: '0.9rem', lineHeight: 1.7 }}>
-                {city.food.map((item, idx) => (
-                  <li key={idx}><strong>{item}</strong></li>
-                ))}
-              </ul>
-            </div>
-          )}
 
           {/* Shopping */}
           {city.shopping && city.shopping.length > 0 && (
