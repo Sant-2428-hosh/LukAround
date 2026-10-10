@@ -4,6 +4,7 @@ import { MapPin, Clock, Calendar, Star, ArrowRight, Navigation, ExternalLink, Ho
 import SafeImage from './SafeImage';
 import DirectionsModal from './DirectionsModal';
 import { buildGoogleMapsSearchUrl } from '../../utils/googleMaps';
+import { recordCardClick } from '../common/ScrollToTop';
 
 export default function AttractionCard({ attraction }) {
   if (!attraction) return null;
@@ -37,9 +38,10 @@ export default function AttractionCard({ attraction }) {
   const mapsSearchUrl = buildGoogleMapsSearchUrl(attraction);
 
   return (
-    <div className="attraction-card">
+    <div className="attraction-card" id={`place-${id}`} data-place-id={id}>
       <Link
         to={`/india/${effectiveStateSlug}/${effectiveCitySlug}/${id}`}
+        onClick={() => recordCardClick(id)}
         className="attraction-card-image-wrap"
         style={{ display: 'block', cursor: 'pointer', textDecoration: 'none' }}
         title={`Explore ${name} details & characteristics`}

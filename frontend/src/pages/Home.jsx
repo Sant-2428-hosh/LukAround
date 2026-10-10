@@ -12,8 +12,108 @@ import {
 } from '../data/indiaTourismData';
 import {
   Compass, MapPin, ArrowRight, Sparkles, Award, Calendar,
-  CheckCircle2, Flame, Star, Globe, Zap, ChevronLeft, ChevronRight, UtensilsCrossed
+  CheckCircle2, Flame, Star, Globe, Zap, ChevronLeft, ChevronRight, UtensilsCrossed,
+  Users, Heart, Smile, Clock, Crown, Wallet, Landmark, Trees, Palmtree
 } from 'lucide-react';
+
+const TRAVEL_STYLE_CONFIG = {
+  family: {
+    icon: Users,
+    image: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Ooty', 'Jaipur', 'Mysore', 'Shimla'],
+    badge: '140+ Cities',
+    tag: 'All Generations',
+    accent: '#F59E0B'
+  },
+  couples: {
+    icon: Heart,
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Udaipur', 'Alleppey', 'Manali', 'Munnar'],
+    badge: '60+ Cities',
+    tag: 'Romantic Getaways',
+    accent: '#F43F5E'
+  },
+  solo: {
+    icon: Compass,
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Rishikesh', 'Pondicherry', 'Hampi', 'Kasol'],
+    badge: '135+ Cities',
+    tag: 'Soulful & Free',
+    accent: '#10B981'
+  },
+  friends: {
+    icon: Smile,
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Goa', 'Manali', 'Gokarna', 'Leh'],
+    badge: '95+ Cities',
+    tag: 'High Energy',
+    accent: '#06B6D4'
+  },
+  weekend: {
+    icon: Clock,
+    image: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Lonavala', 'Agra', 'Coorg', 'Mussoorie'],
+    badge: '200+ Cities',
+    tag: 'Quick 2-3 Days',
+    accent: '#8B5CF6'
+  },
+  luxury: {
+    icon: Crown,
+    image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Udaipur', 'Jodhpur', 'Jaipur', 'Agra'],
+    badge: '100+ Cities',
+    tag: 'Royal Palaces',
+    accent: '#EAB308'
+  },
+  budget: {
+    icon: Wallet,
+    image: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Varanasi', 'Pushkar', 'McLeodGanj', 'Puri'],
+    badge: '125+ Cities',
+    tag: 'High Value',
+    accent: '#14B8A6'
+  },
+  spiritual: {
+    icon: Flame,
+    image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Varanasi', 'Madurai', 'Haridwar', 'Amritsar'],
+    badge: '60+ Cities',
+    tag: 'Sacred Shrines',
+    accent: '#F97316'
+  },
+  heritage: {
+    icon: Landmark,
+    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Hampi', 'Agra', 'Delhi', 'Khajuraho'],
+    badge: '120+ Cities',
+    tag: 'UNESCO Marvels',
+    accent: '#D97706'
+  },
+  nature: {
+    icon: Trees,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Munnar', 'Wayanad', 'Coonoor', 'Kaziranga'],
+    badge: '80+ Cities',
+    tag: 'Pristine Wilderness',
+    accent: '#10B981'
+  },
+  adventure: {
+    icon: Zap,
+    image: 'https://images.unsplash.com/photo-1600100397608-f010f443b7e7?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Rishikesh', 'Leh', 'Dandeli', 'Bir Billing'],
+    badge: '25+ Cities',
+    tag: 'Thrill & Adrenaline',
+    accent: '#EF4444'
+  },
+  beach: {
+    icon: Palmtree,
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
+    sampleCities: ['Goa', 'Varkala', 'Andaman', 'Gokarna'],
+    badge: '20+ Cities',
+    tag: 'Coastal Serenity',
+    accent: '#0EA5E9'
+  }
+};
 
 const HERO_SLIDES = [
   {
@@ -508,29 +608,77 @@ export default function Home() {
               We've curated hyper-personalised Indian journeys for every kind of wandering soul.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '1.25rem', marginTop: '2.5rem' }}>
-            {travelStyles.map((style) => (
-              <Link
-                key={style.id}
-                to={'/cities?travelStyle=' + style.id}
-                className="travel-style-card"
-                onMouseEnter={() => setHoveredStyle(style.id)}
-                onMouseLeave={() => setHoveredStyle(null)}
-                style={{
-                  transform: hoveredStyle === style.id ? 'translateY(-6px)' : 'translateY(0)',
-                  borderColor: hoveredStyle === style.id ? 'var(--tourism-earth)' : 'var(--tourism-sand-border)',
-                  boxShadow: hoveredStyle === style.id ? '0 16px 40px rgba(200, 90, 50, 0.15)' : 'var(--shadow-subtle)'
-                }}
-              >
-                <div className="travel-style-icon">{style.icon || '🌍'}</div>
-                <h4 className="travel-style-name">{style.name}</h4>
-                <p className="travel-style-desc">{style.description}</p>
-                <div className="travel-style-cta">
-                  <span>Explore Cities for This Style</span>
-                  <ArrowRight size={13} />
-                </div>
-              </Link>
-            ))}
+          <div className="travel-styles-grid">
+            {travelStyles.map((style) => {
+              const config = TRAVEL_STYLE_CONFIG[style.id] || {
+                icon: Compass,
+                image: 'https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=800&q=80',
+                sampleCities: ['Verified Destinations'],
+                badge: 'Verified',
+                tag: 'Curated',
+                accent: '#F59E0B'
+              };
+              const IconComp = config.icon;
+              const isHovered = hoveredStyle === style.id;
+
+              return (
+                <Link
+                  key={style.id}
+                  to={'/cities?travelStyle=' + style.id}
+                  className="travel-style-card-pro"
+                  onMouseEnter={() => setHoveredStyle(style.id)}
+                  onMouseLeave={() => setHoveredStyle(null)}
+                >
+                  <div className="travel-style-card-media">
+                    <img
+                      src={config.image}
+                      alt={style.name}
+                      className="travel-style-card-img"
+                      loading="lazy"
+                    />
+                    <div className="travel-style-card-overlay" />
+                  </div>
+
+                  <div className="travel-style-topbar">
+                    <div className="travel-style-tag-pill">
+                      <IconComp size={14} style={{ color: config.accent || '#FBBF24' }} />
+                      <span>{config.tag || 'Curated'}</span>
+                    </div>
+                    <div className="travel-style-count-pill">
+                      {config.badge}
+                    </div>
+                  </div>
+
+                  <div className="travel-style-content">
+                    <h3 className="travel-style-title">{style.name}</h3>
+                    <p className="travel-style-desc-text">{style.description}</p>
+
+                    <div className="travel-style-dest-pills">
+                      {Array.isArray(config.sampleCities) && config.sampleCities.map((cityName, idx) => (
+                        <span key={idx} className="travel-style-dest-chip">
+                          <MapPin size={10} />
+                          {cityName}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="travel-style-cta-bar">
+                      <span className="travel-style-cta-label">Explore Destinations</span>
+                      <div
+                        className="travel-style-cta-arrow-box"
+                        style={{
+                          backgroundColor: isHovered ? (config.accent || '#FFFFFF') : undefined,
+                          borderColor: isHovered ? (config.accent || '#FFFFFF') : undefined,
+                          color: isHovered ? '#FFFFFF' : undefined
+                        }}
+                      >
+                        <ArrowRight size={14} />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
