@@ -56,13 +56,13 @@ export default function HotelDetail() {
         // Fallback to local
       }
 
-      // Local fallback
+      // Local lookup (strict, no random defaulting to localHotels[0])
       const found = localHotels.find(
         (h) => h.slug === slug || h.id === slug || h.slug?.toLowerCase() === (slug || '').toLowerCase()
-      ) || localHotels[0];
+      );
 
       if (isMounted) {
-        setHotel(found);
+        setHotel(found || null);
         setLoading(false);
       }
     }
@@ -71,10 +71,23 @@ export default function HotelDetail() {
     return () => { isMounted = false; };
   }, [slug]);
 
-  if (loading || !hotel) {
+  if (loading) {
     return (
       <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <p style={{ color: '#64748B', fontSize: '1.1rem' }}>Loading verified hotel details...</p>
+      </div>
+    );
+  }
+
+  if (!hotel) {
+    return (
+      <div style={{ minHeight: '70vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem', padding: '2rem', textAlign: 'center' }}>
+        <Hotel size={48} color="#94A3B8" />
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1E293B' }}>Hotel Not Found</h2>
+        <p style={{ color: '#64748B', maxWidth: '420px' }}>The requested hotel could not be identified in our verified database.</p>
+        <Link to="/hotels" className="tourism-btn tourism-btn-primary" style={{ textDecoration: 'none', padding: '0.6rem 1.2rem', borderRadius: '8px', color: '#FFF' }}>
+          Explore Verified Accommodations
+        </Link>
       </div>
     );
   }
@@ -106,13 +119,16 @@ export default function HotelDetail() {
     accessibility = []
   } = hotel;
 
-  // Build combined photo list
-  const allPhotos = [
-    { imageUrl: image, caption: 'Main Property Facade', credit: 'Official Archive', verified: true },
-    ...gallery
-  ].filter((p, i, arr) => arr.findIndex((x) => x.imageUrl === p.imageUrl) === i);
+  // Build combined photo list strictly from verified property photos
+  const hasVerifiedPhoto = !!image && !hotel.isPropertyPhotoPending;
+  const allPhotos = hasVerifiedPhoto
+    ? [
+        { imageUrl: image, caption: 'Main Property Facade', credit: 'Verified Property Photo', verified: true },
+        ...gallery
+      ].filter((p, i, arr) => p && p.imageUrl && arr.findIndex((x) => x.imageUrl === p.imageUrl) === i)
+    : (gallery || []).filter(p => p && p.imageUrl);
 
-  const activePhoto = allPhotos[activePhotoIdx] || allPhotos[0];
+  const activePhoto = allPhotos[activePhotoIdx] || allPhotos[0] || null;
 
   // Find nearby attractions in the same city or state
   const nearbyLandmarks = attractions
@@ -330,103 +346,147 @@ export default function HotelDetail() {
         </div>
 
         {/* ── Interactive Photo Gallery with Authentic Photography ── */}
-        <div
-          style={{
-            backgroundColor: '#FFFFFF',
-            borderRadius: '16px',
-            padding: '1.5rem',
-            border: '1px solid #E2E8F0',
-            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
-            marginBottom: '2rem'
-          }}
-        >
-          {/* Main Stage Image */}
+        {allPhotos.length > 0 ? (
           <div
             style={{
-              height: '460px',
-              borderRadius: '12px',
-              overflow: 'hidden',
-              position: 'relative',
-              backgroundColor: '#0F172A',
-              marginBottom: '1rem'
+              backgroundColor: '#FFFFFF',
+              borderRadius: '16px',
+              padding: '1.5rem',
+              border: '1px solid #E2E8F0',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+              marginBottom: '2rem'
             }}
           >
-            <SafeImage
-              src={activePhoto.imageUrl}
-              alt={activePhoto.caption || name}
-              category="heritage"
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-
-            {/* Photo Metadata Caption */}
+            {/* Main Stage Image */}
             <div
               style={{
-                position: 'absolute',
-                bottom: 0,
-                left: 0,
-                right: 0,
-                background: 'linear-gradient(transparent, rgba(15, 23, 42, 0.9))',
-                padding: '1.5rem 1.25rem 1rem 1.25rem',
-                color: '#FFFFFF',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'flex-end',
-                flexWrap: 'wrap',
-                gap: '0.5rem'
+                height: '460px',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                position: 'relative',
+                backgroundColor: '#0F172A',
+                marginBottom: '1rem'
               }}
             >
-              <div>
-                <div style={{ fontWeight: 700, fontSize: '1rem' }}>
-                  {activePhoto.caption || name}
-                </div>
-                <div style={{ fontSize: '0.78rem', color: '#94A3B8' }}>
-                  Verified Real Photograph • Source: {activePhoto.credit || 'Official Property Archive'}
-                </div>
-              </div>
+              <SafeImage
+                src={activePhoto.imageUrl}
+                alt={activePhoto.caption || name}
+                category="heritage"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+
+              {/* Photo Metadata Caption */}
               <div
                 style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                  backdropFilter: 'blur(4px)',
-                  padding: '0.2rem 0.6rem',
-                  borderRadius: '6px',
-                  fontSize: '0.75rem',
-                  fontWeight: 600
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  background: 'linear-gradient(transparent, rgba(15, 23, 42, 0.9))',
+                  padding: '1.5rem 1.25rem 1rem 1.25rem',
+                  color: '#FFFFFF',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'flex-end',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem'
                 }}
               >
-                Photo {activePhotoIdx + 1} of {allPhotos.length}
+                <div>
+                  <div style={{ fontWeight: 700, fontSize: '1rem' }}>
+                    {activePhoto.caption || name}
+                  </div>
+                  <div style={{ fontSize: '0.78rem', color: '#94A3B8' }}>
+                    Verified Real Photograph • Source: {activePhoto.credit || 'Official Property Archive'}
+                  </div>
+                </div>
+                <div
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                    backdropFilter: 'blur(4px)',
+                    padding: '0.2rem 0.6rem',
+                    borderRadius: '6px',
+                    fontSize: '0.75rem',
+                    fontWeight: 600
+                  }}
+                >
+                  Photo {activePhotoIdx + 1} of {allPhotos.length}
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Thumbnails row */}
-          <div style={{ display: 'flex', gap: '0.75rem', overflowX: 'auto', paddingBottom: '0.5rem' }}>
-            {allPhotos.map((photo, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => setActivePhotoIdx(idx)}
-                style={{
-                  border: activePhotoIdx === idx ? '3px solid var(--color-primary)' : '2px solid transparent',
-                  borderRadius: '8px',
-                  overflow: 'hidden',
-                  width: '90px',
-                  height: '65px',
-                  padding: 0,
-                  cursor: 'pointer',
-                  flexShrink: 0,
-                  opacity: activePhotoIdx === idx ? 1 : 0.7,
-                  transition: 'opacity 0.2s ease'
-                }}
-              >
-                <img
-                  src={photo.imageUrl}
-                  alt={photo.caption || `Thumbnail ${idx}`}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-              </button>
-            ))}
+            {/* Thumbnails row */}
+            {allPhotos.length > 1 && (
+              <div style={{ display: 'flex', gap: '0.75rem', overflowX: 'auto', paddingBottom: '0.5rem' }}>
+                {allPhotos.map((photo, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setActivePhotoIdx(idx)}
+                    style={{
+                      border: activePhotoIdx === idx ? '3px solid var(--color-primary)' : '2px solid transparent',
+                      borderRadius: '8px',
+                      overflow: 'hidden',
+                      width: '90px',
+                      height: '65px',
+                      padding: 0,
+                      cursor: 'pointer',
+                      flexShrink: 0,
+                      opacity: activePhotoIdx === idx ? 1 : 0.7,
+                      transition: 'opacity 0.2s ease'
+                    }}
+                  >
+                    <img
+                      src={photo.imageUrl}
+                      alt={photo.caption || `Thumbnail ${idx}`}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
-        </div>
+        ) : (
+          <div
+            style={{
+              backgroundColor: '#FFFFFF',
+              borderRadius: '16px',
+              padding: '2.5rem 1.5rem',
+              border: '1px solid #E2E8F0',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+              marginBottom: '2rem',
+              background: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.75rem',
+              textAlign: 'center',
+              color: '#94A3B8'
+            }}
+          >
+            <div
+              style={{
+                width: '64px',
+                height: '64px',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#38BDF8'
+              }}
+            >
+              <Hotel size={32} />
+            </div>
+            <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#F8FAFC' }}>
+              {name}
+            </div>
+            <p style={{ fontSize: '0.88rem', color: '#94A3B8', maxWidth: '520px', margin: 0, lineHeight: 1.5 }}>
+              Official property photograph is pending verification in the central registry. All hotel specifications, exact address, safety indicators, room amenities, and live navigation directions below are 100% verified.
+            </p>
+          </div>
+        )}
 
         {/* ── Main Two-Column Layout ── */}
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(320px, 1fr)', gap: '2rem' }}>

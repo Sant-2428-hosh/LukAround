@@ -37,7 +37,7 @@ export default function CityCard({ city }) {
           src={heroImage}
           alt={effectiveAlt}
           aspectRatio="16:9"
-          category="heritage"
+          category={travelStyles && travelStyles.length > 0 ? travelStyles[0] : 'heritage'}
           verified={true}
           showCredit={false}
           photographer={imagePhotographer}

@@ -13,7 +13,8 @@ import {
   Car,
   Utensils,
   Layers,
-  Globe
+  Globe,
+  Hotel
 } from 'lucide-react';
 import SafeImage from './SafeImage';
 import DirectionsModal from './DirectionsModal';
@@ -85,8 +86,11 @@ export default function HotelCard({
   const displayDistance = distanceFromDestination || (distanceInKm != null ? `${distanceInKm} km away` : 'Nearby');
   const displayTravelTime = estimatedTravelTime || (distanceInKm != null ? `Approx. ${Math.round(distanceInKm * 3)} min drive` : null);
 
-  const primaryPhoto = image || (gallery[0] && gallery[0].imageUrl) || 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80';
-  const photoCredit = (gallery[0] && gallery[0].credit) || 'Verified Property';
+  const hasVerifiedPhoto = !!image && !hotel.isPropertyPhotoPending;
+  const primaryPhoto = hasVerifiedPhoto ? image : (gallery[0] && gallery[0].imageUrl);
+  const photoCredit = hasVerifiedPhoto
+    ? ((gallery[0] && gallery[0].credit) || 'Verified Property Photo')
+    : 'Official Photo Pending';
 
   const priceLevelMap = {
     '₹': 'Budget',
@@ -123,14 +127,54 @@ export default function HotelCard({
           flexShrink: 0
         }}
       >
-        <SafeImage
-          src={primaryPhoto}
-          alt={`Real photograph of ${name} in ${city}, ${state}`}
-          aspectRatio={isHorizontal ? undefined : '16:9'}
-          category="heritage"
-          verified={verified}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        />
+        {hasVerifiedPhoto ? (
+          <SafeImage
+            src={primaryPhoto}
+            alt={`Real photograph of ${name} in ${city}, ${state}`}
+            aspectRatio={isHorizontal ? undefined : '16:9'}
+            category="heritage"
+            verified={verified}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        ) : (
+          <div
+            style={{
+              width: '100%',
+              height: isHorizontal ? '100%' : '220px',
+              minHeight: '200px',
+              background: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.45rem',
+              color: '#94A3B8',
+              padding: '1.25rem',
+              textAlign: 'center'
+            }}
+          >
+            <div
+              style={{
+                width: '50px',
+                height: '50px',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#38BDF8'
+              }}
+            >
+              <Hotel size={26} />
+            </div>
+            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#E2E8F0', maxWidth: '240px', lineHeight: 1.3 }}>
+              {name}
+            </span>
+            <span style={{ fontSize: '0.7rem', color: '#94A3B8' }}>
+              Official Property Photo Pending
+            </span>
+          </div>
+        )}
 
         {/* Official Star Badge overlay */}
         <div
@@ -153,7 +197,7 @@ export default function HotelCard({
         </div>
 
         {/* Verification Badge */}
-        {verified && (
+        {hasVerifiedPhoto ? (
           <div
             style={{
               position: 'absolute',
@@ -172,7 +216,28 @@ export default function HotelCard({
               zIndex: 3
             }}
           >
-            <CheckCircle2 size={12} /> Verified Property
+            <CheckCircle2 size={12} /> Verified Property Photo
+          </div>
+        ) : (
+          <div
+            style={{
+              position: 'absolute',
+              top: '12px',
+              right: '12px',
+              backgroundColor: 'rgba(51, 65, 85, 0.92)',
+              backdropFilter: 'blur(4px)',
+              color: '#E2E8F0',
+              padding: '0.25rem 0.6rem',
+              borderRadius: '9999px',
+              fontSize: '0.72rem',
+              fontWeight: 700,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px',
+              zIndex: 3
+            }}
+          >
+            <ShieldCheck size={12} color="#38BDF8" /> Verified Listing
           </div>
         )}
 

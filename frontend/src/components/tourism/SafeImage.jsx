@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Camera, ShieldCheck } from 'lucide-react';
 
+// Neutral architectural & scenic fallback patterns (Abstract textures, no monument or place misrepresentations)
 const FALLBACK_CATEGORY_IMAGES = {
-  heritage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80',
+  heritage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80',
   spiritual: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80',
-  nature: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80',
+  nature: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80',
   beaches: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
   wildlife: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80',
   food: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80',
@@ -106,8 +107,8 @@ export default function SafeImage({
         style={finalImgStyle}
       />
 
-      {/* Verified Authentic Badge */}
-      {verified && (
+      {/* Verified Authentic Badge - strictly shown only when authentic primary photo loads without error */}
+      {verified && errorCount === 0 && currentSrc === src && (
         <div
           title="Verified Real Photograph of this destination"
           style={{

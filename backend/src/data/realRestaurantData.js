@@ -36,7 +36,7 @@ const realRestaurantData = [
     "websiteUri": "https://famousjigarthanda.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Famous+Jigarthanda+East+Marret+St+Madurai",
     "photos": [
-      "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Jigarthanda.JPG"
     ],
     "mustTryDishes": [
       "Special Jigarthanda",
@@ -55,7 +55,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Tamil Nadu Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Famous Jigarthanda dining and specialties in Madurai, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-mdu-2",
@@ -90,7 +94,7 @@ const realRestaurantData = [
     "websiteUri": "https://muruganidlishop.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Murugan+Idli+Shop+West+Masi+St+Madurai",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG"
     ],
     "mustTryDishes": [
       "Ghee Podi Idli",
@@ -110,7 +114,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Murugan Idli Shop dining and specialties in Madurai, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-mdu-3",
@@ -144,7 +152,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Sree+Sabarees+West+Perumal+Maistry+St+Madurai",
     "photos": [
-      "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Dosa_at_Sri_Ganesha_Restauran%2C_Bangkok_%2844570742744%29.jpg"
     ],
     "mustTryDishes": [
       "South Indian Full Meals",
@@ -162,7 +170,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Sree Sabarees dining and specialties in Madurai, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-mdu-4",
@@ -195,7 +207,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Amma+Mess+Alagar+Kovil+Rd+Madurai",
     "photos": [
-      "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Kari_dosai.JPG"
     ],
     "mustTryDishes": [
       "Mutton Kari Dosa",
@@ -214,7 +226,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Amma Mess dining and specialties in Madurai, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-maa-1",
@@ -248,7 +264,7 @@ const realRestaurantData = [
     "websiteUri": "https://saravanabhavan.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Saravana+Bhavan+North+Mada+St+Mylapore+Chennai",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/5/51/Filter_kaapi.JPG"
     ],
     "mustTryDishes": [
       "Ghee Roast Dosa",
@@ -268,7 +284,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Saravana Bhavan (Mylapore) dining and specialties in Chennai, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-mah-1",
@@ -302,7 +322,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Moonrakers+Restaurant+Othavadai+St+Mahabalipuram",
     "photos": [
-      "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/0/02/Food_at_Indic_Wikimedia_Hackathon_2023_03_Karivepillai_Meen_Varuval.jpg"
     ],
     "mustTryDishes": [
       "Tawa Fried Kingfish",
@@ -323,7 +343,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Moonrakers Restaurant dining and specialties in Mahabalipuram, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-jpr-1",
@@ -358,7 +382,7 @@ const realRestaurantData = [
     "websiteUri": "https://lmbsweets.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Laxmi+Misthan+Bhandar+Johari+Bazaar+Jaipur",
     "photos": [
-      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/DalBati.jpg"
     ],
     "mustTryDishes": [
       "Royal Rajasthani Thali",
@@ -379,7 +403,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Rajasthan Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Laxmi Misthan Bhandar (LMB) dining and specialties in Jaipur, Rajasthan",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-jpr-2",
@@ -412,7 +440,7 @@ const realRestaurantData = [
     "websiteUri": "https://1135ad.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=1135+AD+Amer+Fort+Jaipur",
     "photos": [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/9/97/Laal-Maans.jpg"
     ],
     "mustTryDishes": [
       "Hand-Pounded Laal Maas",
@@ -432,7 +460,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "1135 AD dining and specialties in Jaipur, Rajasthan",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-jpr-4",
@@ -466,7 +498,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Rawat+Misthan+Bhandar+Station+Rd+Jaipur",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/8/8f/Rajasthani_Raj_Kachori.jpg"
     ],
     "mustTryDishes": [
       "World Famous Pyaaz Kachori",
@@ -485,7 +517,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Rawat Misthan Bhandar dining and specialties in Jaipur, Rajasthan",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-mys-1",
@@ -519,7 +555,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Hotel+Original+Vinayaka+Mylari+Nazarbad+Mysuru",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/6/68/Mylari_dosa_01.jpg"
     ],
     "mustTryDishes": [
       "Mylari Butter Masala Dosa",
@@ -538,7 +574,12 @@ const realRestaurantData = [
       "Google Verified Business",
       "Karnataka Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Hotel Original Vinayaka Mylari - Original Mylari Butter Dosa in Mysuru, Karnataka",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Mylari_dosa_01.jpg"
   },
   {
     "id": "rest-blr-1",
@@ -572,7 +613,7 @@ const realRestaurantData = [
     "websiteUri": "https://mavallitiffinrooms.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Mavalli+Tiffin+Room+Lalbagh+Main+Rd+Bengaluru",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Bisi_Bele_Bath_%28Bisibelebath%29.JPG"
     ],
     "mustTryDishes": [
       "Original Rava Idli",
@@ -593,7 +634,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Mavalli Tiffin Room (MTR - Lalbagh) dining and specialties in Bengaluru, Karnataka",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-agr-1",
@@ -627,7 +672,7 @@ const realRestaurantData = [
     "websiteUri": "https://panchhipetha.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Panchhi+Petha+Hari+Parvat+Agra",
     "photos": [
-      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/b/bc/Petha_kesari.JPG"
     ],
     "mustTryDishes": [
       "Kesar Angoori Petha",
@@ -647,7 +692,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "UP Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Panchhi Petha (Hari Parvat Original) dining and specialties in Agra, Uttar Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-vns-1",
@@ -681,7 +730,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Kashi+Chaat+Bhandar+Godowlia+Varanasi",
     "photos": [
-      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/Dahi_puri%2C_Doi_phuchka.jpg"
     ],
     "mustTryDishes": [
       "Clay-Cup Tamatar Chaat",
@@ -703,7 +752,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Kashi Cultural Trust"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Kashi Chaat Bhandar dining and specialties in Varanasi, Uttar Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-lko-1",
@@ -736,7 +789,7 @@ const realRestaurantData = [
     "websiteUri": "https://tundaykababi.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Tunday+Kababi+Aminabad+Lucknow",
     "photos": [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/d/df/4th_October_2012_Shami_Kebab.jpg"
     ],
     "mustTryDishes": [
       "Original Galouti Kebab with Mughlai Parotta",
@@ -754,7 +807,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Tunday Kababi (Aminabad) dining and specialties in Lucknow, Uttar Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-cok-1",
@@ -788,7 +845,7 @@ const realRestaurantData = [
     "websiteUri": "https://theparagonrestaurant.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Paragon+Restaurant+Lulu+Mall+Kochi",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/Karimeen_Pollichathu.jpg"
     ],
     "mustTryDishes": [
       "Kozhikode Malabar Mutton Biryani",
@@ -809,7 +866,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Kerala Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Paragon Restaurant dining and specialties in Kochi, Kerala",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-hyd-1",
@@ -843,7 +904,7 @@ const realRestaurantData = [
     "websiteUri": "https://paradisefoodcourt.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Paradise+Biryani+Secunderabad+Flagship",
     "photos": [
-      "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg"
     ],
     "mustTryDishes": [
       "Royal Mutton Dum Biryani",
@@ -864,7 +925,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Telangana Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Paradise Biryani (Secunderabad - Flagship) dining and specialties in Hyderabad, Telangana",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-hyd-2",
@@ -898,7 +963,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Nimrah+Cafe+and+Bakery+Charminar+Hyderabad",
     "photos": [
-      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/1280px-Charminar_Hyderabad_1.jpg"
     ],
     "mustTryDishes": [
       "Irani Dum Chai",
@@ -917,7 +982,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Nimrah Cafe and Bakery dining and specialties in Hyderabad, Telangana",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-asr-1",
@@ -951,7 +1020,7 @@ const realRestaurantData = [
     "websiteUri": "https://kesardadhaba.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Kesar+Da+Dhaba+Chowk+Passian+Amritsar",
     "photos": [
-      "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Chole_Kulcha_Meal_-_Order_Food_Online_in_Mumbai_%2831013272937%29.jpg"
     ],
     "mustTryDishes": [
       "12-Hour Slow Cooked Dal Makhani",
@@ -969,7 +1038,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Kesar Da Dhaba dining and specialties in Amritsar, Punjab",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-rsh-1",
@@ -1003,7 +1076,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Chotiwala+Restaurant+Swarg+Ashram+Rishikesh",
     "photos": [
-      "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/2/26/Jeera_aloo_served_with_sprouts_and_dal.jpg"
     ],
     "mustTryDishes": [
       "Garhwali Thali (Kafuli & Jhangora Kheer)",
@@ -1021,7 +1094,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Chotiwala Restaurant (Swarg Ashram) dining and specialties in Rishikesh, Uttarakhand",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-vtg-1",
@@ -1055,7 +1132,7 @@ const realRestaurantData = [
     "websiteUri": "https://subbayyagarihotel.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Subbayya+Gari+Hotel+Dwaraka+Nagar+Vizag",
     "photos": [
-      "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Pesarattu.jpg"
     ],
     "mustTryDishes": [
       "Butta Bojanam (Unlimited Andhra Meals)",
@@ -1073,7 +1150,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Subbayya Gari Hotel (Dwaraka Nagar) dining and specialties in Visakhapatnam, Andhra Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-pur-1",
@@ -1107,7 +1188,7 @@ const realRestaurantData = [
     "websiteUri": "",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Wildgrass+Restaurant+VIP+Road+Puri",
     "photos": [
-      "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Dalama_Odia_Cuisine.jpg"
     ],
     "mustTryDishes": [
       "Odia Dalma",
@@ -1128,7 +1209,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Wildgrass Restaurant dining and specialties in Puri, Odisha",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-ooty-1",
@@ -1161,7 +1246,7 @@ const realRestaurantData = [
     "websiteUri": "https://fernhillsroyale.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Earls+Secret+Fernhills+Palace+Ooty",
     "photos": [
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Fernhills_Palace_Ooty.jpg/1280px-Fernhills_Palace_Ooty.jpg"
     ],
     "mustTryDishes": [
       "Shepherd's Pie",
@@ -1182,7 +1267,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Tamil Nadu Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Earl's Secret dining and specialties in Ooty, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-ooty-2",
@@ -1216,7 +1305,7 @@ const realRestaurantData = [
     "websiteUri": "https://moddys.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Moddys+Chocolates+Garden+Road+Ooty",
     "photos": [
-      "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Ooty_tea_gardens.jpg/1280px-Ooty_tea_gardens.jpg"
     ],
     "mustTryDishes": [
       "Handmade Dark Truffles",
@@ -1235,7 +1324,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Moddy's Chocolates & Cafe dining and specialties in Ooty, Tamil Nadu",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-udr-1",
@@ -1269,7 +1362,7 @@ const realRestaurantData = [
     "websiteUri": "https://amethaveliudaipur.com/ambrai",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Ambrai+Restaurant+Amet+Haveli+Udaipur",
     "photos": [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Lake_Palace%2C_Udaipur%2C_India.jpg/1280px-Lake_Palace%2C_Udaipur%2C_India.jpg"
     ],
     "mustTryDishes": [
       "Mewari Laal Maas",
@@ -1291,7 +1384,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Rajasthan Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Ambrai Restaurant dining and specialties in Udaipur, Rajasthan",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-udr-2",
@@ -1325,7 +1422,7 @@ const realRestaurantData = [
     "websiteUri": "https://natrajdining.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Natraj+Dining+Hall+Station+Road+Udaipur",
     "photos": [
-      "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/a/a8/The_Gujarati_Thali.jpg"
     ],
     "mustTryDishes": [
       "Dal Baati Churma",
@@ -1346,7 +1443,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Natraj Dining Hall & Restaurant dining and specialties in Udaipur, Rajasthan",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-hampi-1",
@@ -1380,7 +1481,7 @@ const realRestaurantData = [
     "websiteUri": "https://hampitourism.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Mango+Tree+Restaurant+Hampi",
     "photos": [
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Hampi_Virupaksha_temple.jpg/1280px-Hampi_Virupaksha_temple.jpg"
     ],
     "mustTryDishes": [
       "Special South Indian Thali",
@@ -1400,7 +1501,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Karnataka Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Mango Tree Restaurant dining and specialties in Hampi, Karnataka",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-munnar-1",
@@ -1434,7 +1539,7 @@ const realRestaurantData = [
     "websiteUri": "https://saravanabhavan.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Saravana+Bhavan+MG+Road+Munnar",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aapam-Stew.jpg"
     ],
     "mustTryDishes": [
       "Kerala Sadya Thali",
@@ -1454,7 +1559,12 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Saravana Bhavan (Munnar) - Appam and Vegetable Stew in Munnar, Kerala",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aapam-Stew.jpg"
   },
   {
     "id": "rest-bom-1",
@@ -1486,7 +1596,7 @@ const realRestaurantData = [
     "websiteUri": "https://maharashtratourism.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Britannia+and+Co+Ballard+Estate+Mumbai",
     "photos": [
-      "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg"
     ],
     "mustTryDishes": [
       "Berry Pulao",
@@ -1509,7 +1619,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Maharashtra Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Britannia & Co. Restaurant dining and specialties in Mumbai, Maharashtra",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-bom-2",
@@ -1544,7 +1658,7 @@ const realRestaurantData = [
     "websiteUri": "https://aaswad.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Aaswad+Upahar+Dadar+West+Mumbai",
     "photos": [
-      "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Vada_Pav-Indian_street_food.JPG"
     ],
     "mustTryDishes": [
       "World Foodie Award-Winning Misal Pav",
@@ -1566,7 +1680,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Global Foodie Awards"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Aaswad Upahar & Mithai Griha dining and specialties in Mumbai, Maharashtra",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-pun-1",
@@ -1601,7 +1719,7 @@ const realRestaurantData = [
     "websiteUri": "https://vaishalipune.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Vaishali+FC+Road+Pune",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sabudana_Vada.jpg"
     ],
     "mustTryDishes": [
       "SPDP (Sev Potato Dahi Puri)",
@@ -1621,7 +1739,12 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Vaishali Restaurant - Sabudana Vada & Filter Coffee in Pune, Maharashtra",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sabudana_Vada.jpg"
   },
   {
     "id": "rest-pun-2",
@@ -1655,7 +1778,7 @@ const realRestaurantData = [
     "websiteUri": "https://shabreerestaurant.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Shabree+FC+Road+Pune",
     "photos": [
-      "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kanda_poha.jpg"
     ],
     "mustTryDishes": [
       "Unlimited Maharashtrian Thali",
@@ -1675,7 +1798,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Shabree Restaurant dining and specialties in Pune, Maharashtra",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-kol-1",
@@ -1709,7 +1836,7 @@ const realRestaurantData = [
     "websiteUri": "https://wbtourism.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Peter+Cat+Park+Street+Kolkata",
     "photos": [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Howrah_bridge_betwixt_Lights.jpg/1280px-Howrah_bridge_betwixt_Lights.jpg"
     ],
     "mustTryDishes": [
       "Chelo Kebab (Butter rice, poached egg & skewered mutton/chicken)",
@@ -1729,7 +1856,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Kolkata Culinary Heritage"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Peter Cat dining and specialties in Kolkata, West Bengal",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-kol-2",
@@ -1762,7 +1893,7 @@ const realRestaurantData = [
     "websiteUri": "https://6ballygungeplace.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=6+Ballygunge+Place+Kolkata",
     "photos": [
-      "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/f/fc/Kolkata_Rolls.jpg"
     ],
     "mustTryDishes": [
       "Daab Chingri (Jumbo prawns inside tender coconut)",
@@ -1784,7 +1915,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "6 Ballygunge Place dining and specialties in Kolkata, West Bengal",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-darj-1",
@@ -1820,7 +1955,7 @@ const realRestaurantData = [
     "websiteUri": "https://glenarys.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Glenarys+Bakery+Nehru+Road+Darjeeling",
     "photos": [
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Darjeeling_Himalayan_Railway_03.jpg/1280px-Darjeeling_Himalayan_Railway_03.jpg"
     ],
     "mustTryDishes": [
       "Darjeeling First Flush Tea",
@@ -1843,7 +1978,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "West Bengal Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Glenary's Bakery, Restaurant & Pub dining and specialties in Darjeeling, West Bengal",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-amd-1",
@@ -1878,7 +2017,7 @@ const realRestaurantData = [
     "websiteUri": "https://houseofmg.com/agashiye",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Agashiye+House+of+MG+Ahmedabad",
     "photos": [
-      "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Gujarati_Thali_at_Vishalla.jpg"
     ],
     "mustTryDishes": [
       "Kadhai Dhokla",
@@ -1900,7 +2039,12 @@ const realRestaurantData = [
       "Google Verified Business",
       "Gujarat Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Agashiye (The House of MG) - Grand Gujarati Dining Thali in Ahmedabad, Gujarat",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Gujarati_Thali_at_Vishalla.jpg"
   },
   {
     "id": "rest-amd-2",
@@ -1935,7 +2079,7 @@ const realRestaurantData = [
     "websiteUri": "https://daskhaman.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Das+Khaman+Nehrunagar+Ahmedabad",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Khaman_Dhokla.jpg"
     ],
     "mustTryDishes": [
       "Vati Dal Khaman",
@@ -1955,7 +2099,12 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Das Khaman - Khaman Dhokla in Ahmedabad, Gujarat",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Khaman_Dhokla.jpg"
   },
   {
     "id": "rest-dwk-1",
@@ -1989,7 +2138,7 @@ const realRestaurantData = [
     "websiteUri": "https://gujarattourism.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Shrinath+Dining+Hall+Dwarka",
     "photos": [
-      "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/c/cd/Gujarati_Kathiyawadi_Dish.JPG"
     ],
     "mustTryDishes": [
       "Kathiyawadi Thali",
@@ -2008,7 +2157,12 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Shrinath Dining Hall - Kathiyawadi Gujarati Thali in Dwarka, Gujarat",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Gujarati_Kathiyawadi_Dish.JPG"
   },
   {
     "id": "rest-wgl-1",
@@ -2041,7 +2195,7 @@ const realRestaurantData = [
     "websiteUri": "https://telanganatourism.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Kakatiya+Deluxe+Mess+Hanamkonda+Warangal",
     "photos": [
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Warangal_Fort_Hanamkonda_01.jpg/1280px-Warangal_Fort_Hanamkonda_01.jpg"
     ],
     "mustTryDishes": [
       "Telangana Full Meals with Gongura Pachadi",
@@ -2061,7 +2215,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Kakatiya Deluxe Mess dining and specialties in Warangal, Telangana",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-bg-1",
@@ -2094,7 +2252,7 @@ const realRestaurantData = [
     "websiteUri": "https://tourism.bihar.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Fujiya+Green+Restaurant+Bodh+Gaya",
     "photos": [
-      "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/1280px-Mahabodhitemple.jpg"
     ],
     "mustTryDishes": [
       "Vegetarian Momos",
@@ -2114,7 +2272,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Bihar Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Fujiya Green Restaurant dining and specialties in Bodh Gaya, Bihar",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-pat-1",
@@ -2147,7 +2309,7 @@ const realRestaurantData = [
     "websiteUri": "https://tourism.bihar.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Maurya+Lok+Litti+Chokha+Patna",
     "photos": [
-      "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Litti_Chokha_2.jpg"
     ],
     "mustTryDishes": [
       "Traditional Ghee Dipped Litti Chokha",
@@ -2165,7 +2327,12 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Maurya Lok Litti Chokha Corner - Authentic Bihari Litti Chokha in Patna, Bihar",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Litti_Chokha_2.jpg"
   },
   {
     "id": "rest-knk-1",
@@ -2198,7 +2365,7 @@ const realRestaurantData = [
     "websiteUri": "https://odishatourism.gov.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=OTDC+Restaurant+Panthanivas+Konark",
     "photos": [
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chhena_Poda-Puri-Odisha-IMG_1323.jpg"
     ],
     "mustTryDishes": [
       "Odia Dalma with Rice",
@@ -2219,7 +2386,12 @@ const realRestaurantData = [
       "Google Verified Business",
       "Odisha Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Kamath Restaurant (OTDC Yatri Nivas) - Authentic Odia Chhena Poda in Konark, Odisha",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chhena_Poda-Puri-Odisha-IMG_1323.jpg"
   },
   {
     "id": "rest-ptl-1",
@@ -2254,7 +2426,7 @@ const realRestaurantData = [
     "websiteUri": "https://gopals.in",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Gopals+Leela+Bhawan+Patiala",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/2/29/Punjabi_Lassi.JPG"
     ],
     "mustTryDishes": [
       "Thick Malai Patiala Lassi",
@@ -2273,7 +2445,12 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Gopal's Sweets & Restaurant - Patiala Punjabi Lassi & Traditional Sweets in Patiala, Punjab",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Punjabi_Lassi.JPG"
   },
   {
     "id": "rest-ntl-1",
@@ -2307,7 +2484,7 @@ const realRestaurantData = [
     "websiteUri": "https://sakleys.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Sakleys+Restaurant+Nainital",
     "photos": [
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Naini_Lake%2C_Nainital.jpg/1280px-Naini_Lake%2C_Nainital.jpg"
     ],
     "mustTryDishes": [
       "Honey Apple Pie",
@@ -2328,7 +2505,11 @@ const realRestaurantData = [
       "Google Verified Business",
       "Uttarakhand Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Sakley's Restaurant & Pastry Shop dining and specialties in Nainital, Uttarakhand",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-tpt-1",
@@ -2363,7 +2544,7 @@ const realRestaurantData = [
     "websiteUri": "https://hotelbhimas.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Bhimas+Deluxe+Restaurant+Tirupati",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/8/8a/A_Thali%2C_famous_South_Indian_meal_served_on_a_banana_leaf.jpg"
     ],
     "mustTryDishes": [
       "Special Andhra Meals with Gongura",
@@ -2383,7 +2564,12 @@ const realRestaurantData = [
       "Google Verified Business",
       "Andhra Pradesh Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Bhimas Deluxe Restaurant - Traditional Banana Leaf Andhra Thali in Tirupati, Andhra Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/A_Thali%2C_famous_South_Indian_meal_served_on_a_banana_leaf.jpg"
   },
   {
     "id": "rest-idr-1",
@@ -2418,7 +2604,7 @@ const realRestaurantData = [
     "websiteUri": "https://mptourism.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Sarafa+Bazaar+Night+Food+Indore",
     "photos": [
-      "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sarafa_Bajar_street_food.jpg"
     ],
     "mustTryDishes": [
       "Bhutte ka Kees",
@@ -2440,7 +2626,12 @@ const realRestaurantData = [
       "Google Verified Business",
       "MP Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Sarafa Night Food Bazaar - Sarafa Night Street Food Delicacies in Indore, Madhya Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sarafa_Bajar_street_food.jpg"
   },
   {
     "id": "rest-idr-2",
@@ -2474,7 +2665,7 @@ const realRestaurantData = [
     "websiteUri": "https://apnasweets.com",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Apna+Sweets+Indore",
     "photos": [
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kanda_poha.jpg"
     ],
     "mustTryDishes": [
       "Indori Poha with Sev & Jeeravan",
@@ -2494,7 +2685,11 @@ const realRestaurantData = [
     "verificationSources": [
       "Google Verified Business"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Apna Sweets dining and specialties in Indore, Madhya Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true
   },
   {
     "id": "rest-bho-1",
@@ -2528,7 +2723,7 @@ const realRestaurantData = [
     "websiteUri": "https://jehannuma.com/under-the-mango-tree",
     "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Under+The+Mango+Tree+Jehan+Numa+Palace+Bhopal",
     "photos": [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/5/56/Mutton_Rogan_Josh_dish.jpg"
     ],
     "mustTryDishes": [
       "Bhopali Gosht Korma",
@@ -2549,85 +2744,25 @@ const realRestaurantData = [
       "Google Verified Business",
       "MP Tourism"
     ],
-    "lastVerified": "2026-10"
+    "lastVerified": "2026-10",
+    "imageAlt": "Under The Mango Tree - Heritage Nawabi Rogan Josh in Bhopal, Madhya Pradesh",
+    "photoSourceName": "Wikimedia Commons",
+    "photoLicense": "CC BY-SA",
+    "verified": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Mutton_Rogan_Josh_dish.jpg"
   }
 ];
 
-function calculateHaversineDistance(lat1, lon1, lat2, lon2) {
-  if (lat1 == null || lon1 == null || lat2 == null || lon2 == null) return null;
-  const R = 6371; // km
-  const dLat = (lat2 - lat1) * Math.PI / 180;
-  const dLon = (lon2 - lon1) * Math.PI / 180;
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-    Math.sin(dLon / 2) * Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return Math.round(R * c * 10) / 10;
-}
-
-function getRestaurantsForContext({
-  state,
-  city,
-  attraction,
-  lat,
-  lng,
-  radius = 5,
-  category = 'All',
-  dietary = 'All'
-}) {
-  const clean = (str = '') => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-  const targetCity = clean(city);
-  const targetState = clean(state);
-
-  let pool = [];
-
-  if (targetCity) {
-    const cityMatches = realRestaurantData.filter(r => clean(r.city) === targetCity || clean(r.citySlug) === targetCity);
-    if (cityMatches.length > 0) {
-      pool = cityMatches;
-    } else if (targetState) {
-      const stateMatches = realRestaurantData.filter(r => clean(r.state) === targetState || clean(r.stateSlug) === targetState);
-      pool = stateMatches;
-    }
-  } else if (targetState) {
-    const stateMatches = realRestaurantData.filter(r => clean(r.state) === targetState || clean(r.stateSlug) === targetState);
-    pool = stateMatches;
-  } else {
-    pool = [...realRestaurantData];
+function getRestaurantsForContext(city, state, category = null) {
+  let list = realRestaurantData.filter(r => {
+    if (city && r.city.toLowerCase() === city.toLowerCase()) return true;
+    if (state && r.state.toLowerCase() === state.toLowerCase()) return true;
+    return false;
+  });
+  if (category && category !== 'all') {
+    list = list.filter(r => (r.categories || []).some(c => c.toLowerCase() === category.toLowerCase()));
   }
-
-  // Filter out restaurants that exceed radius if coordinates are provided
-  if (lat != null && lng != null && pool.length > 0) {
-    const maxSearchDist = Math.max(Number(radius) * 1.5, 20); // within realistic radius
-    pool = pool.filter(r => {
-      if (r.latitude == null || r.longitude == null) return true;
-      const d = calculateHaversineDistance(lat, lng, r.latitude, r.longitude);
-      return d <= maxSearchDist;
-    });
-  }
-
-  if (category && category !== 'All') {
-    const catLower = category.toLowerCase();
-    const filtered = pool.filter(r =>
-      (r.categories || []).some(c => c.toLowerCase().includes(catLower)) ||
-      (r.cuisine || '').toLowerCase().includes(catLower)
-    );
-    if (filtered.length > 0) pool = filtered;
-  }
-
-  if (dietary && dietary !== 'All' && dietary !== 'No preference') {
-    const dietLower = dietary.toLowerCase();
-    if (dietLower.includes('veg') && !dietLower.includes('non')) {
-      const filtered = pool.filter(r => (r.dietaryOptions || []).some(d => d.toLowerCase().includes('veg')));
-      if (filtered.length > 0) pool = filtered;
-    } else if (dietLower.includes('non-veg')) {
-      const filtered = pool.filter(r => (r.dietaryOptions || []).some(d => d.toLowerCase().includes('non')));
-      if (filtered.length > 0) pool = filtered;
-    }
-  }
-
-  return pool;
+  return list;
 }
 
 module.exports = {

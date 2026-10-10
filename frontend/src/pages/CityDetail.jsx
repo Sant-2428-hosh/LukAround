@@ -59,8 +59,21 @@ export default function CityDetail() {
       found = stateCities.find(c => c.id.includes(target) || target.includes(c.id));
       if (found) return found;
     }
-    return cities[0];
+    return null;
   }, [citySlug, stateSlug]);
+
+  if (!city) {
+    return (
+      <div style={{ minHeight: '70vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem', padding: '2rem', textAlign: 'center' }}>
+        <MapPin size={48} color="#94A3B8" />
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1E293B' }}>City Not Found</h2>
+        <p style={{ color: '#64748B', maxWidth: '420px' }}>The requested city could not be found in our verified database.</p>
+        <Link to="/cities" className="tourism-btn tourism-btn-primary" style={{ textDecoration: 'none', padding: '0.6rem 1.2rem', borderRadius: '8px', color: '#FFF' }}>
+          Explore Verified Cities
+        </Link>
+      </div>
+    );
+  }
 
   const parentState = states.find(s =>
     s.slug === city.stateSlug || s.name.toLowerCase() === (city.state || '').toLowerCase()

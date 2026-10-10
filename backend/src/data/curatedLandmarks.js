@@ -24,7 +24,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.4064,
         lng: 76.6908,
         wikiQuery: 'Ooty Lake',
-        imageUrl: 'https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ooty_Lake_in_Tamil_Nadu_04.jpg/1280px-Ooty_Lake_in_Tamil_Nadu_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 14200
       },
@@ -37,7 +37,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.4172,
         lng: 76.7118,
         wikiQuery: 'Government Botanical Garden',
-        imageUrl: 'https://images.unsplash.com/photo-1577083165633-14ebcdb0f658?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Botanical_Gardens_-_Ootacamund_%28Ooty%29_-_India_03.JPG/1280px-Botanical_Gardens_-_Ootacamund_%28Ooty%29_-_India_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 18500
       },
@@ -50,7 +50,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.4011,
         lng: 76.7358,
         wikiQuery: 'Doddabetta',
-        imageUrl: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Arts_College_Hill_Ooty_Nilgiris_Mar21_A7C_00188.jpg/1280px-Arts_College_Hill_Ooty_Nilgiris_Mar21_A7C_00188.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 16100
       },
@@ -63,7 +63,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.4078,
         lng: 76.7025,
         wikiQuery: 'Nilgiri Mountain Railway',
-        imageUrl: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg/1280px-NMR_train_at_Ketti_05-02-26_75.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 21000
       },
@@ -76,7 +76,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.4089,
         lng: 76.7175,
         wikiQuery: 'Government Rose Garden, Ooty',
-        imageUrl: 'https://images.unsplash.com/photo-1490750967868-88df5691cc63?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Papagena_rose_ooty_gardens.jpg/1280px-Papagena_rose_ooty_gardens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 11300
       },
@@ -89,7 +89,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.4886,
         lng: 76.5939,
         wikiQuery: 'Pykara',
-        imageUrl: 'https://images.unsplash.com/photo-1571400493717-d3a1d5b0748f?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ooty_Lake_in_Tamil_Nadu_04.jpg/1280px-Ooty_Lake_in_Tamil_Nadu_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 9800
       },
@@ -102,7 +102,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.3328,
         lng: 76.6214,
         wikiQuery: 'Emerald Lake, India',
-        imageUrl: 'https://images.unsplash.com/photo-1559827291-72fcc8cd68d8?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ooty_Lake_in_Tamil_Nadu_04.jpg/1280px-Ooty_Lake_in_Tamil_Nadu_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 8200
       },
@@ -115,7 +115,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.3006,
         lng: 76.5956,
         wikiQuery: 'Avalanche Lake, India',
-        imageUrl: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Avalanche_Lake_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled',
         rating: '4.8',
         reviewsCount: 7600
       }
@@ -139,7 +139,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.3350,
         lng: 76.4600,
         wikiQuery: 'Virupaksha Temple, Hampi',
-        imageUrl: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg/1280px-Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 24500
       },
@@ -165,7 +165,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.3211,
         lng: 76.4700,
         wikiQuery: 'Lotus Mahal',
-        imageUrl: 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Hampi%2C_India%2C_Lotus_Mahal.jpg/1280px-Hampi%2C_India%2C_Lotus_Mahal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 13400
       },
@@ -178,7 +178,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.3228,
         lng: 76.4739,
         wikiQuery: 'Elephant Stables, Hampi',
-        imageUrl: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Panorama_of_Elephant_Stables%2C_Hampi.jpg/1280px-Panorama_of_Elephant_Stables%2C_Hampi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 15600
       },
@@ -191,7 +191,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.3339,
         lng: 76.4678,
         wikiQuery: 'Matanga Hill',
-        imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg/1280px-Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 12100
       }
@@ -215,7 +215,7 @@ const CURATED_DESTINATIONS = {
         lat: 10.1500,
         lng: 77.0667,
         wikiQuery: 'Eravikulam National Park',
-        imageUrl: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Eravikulam_National_Park_%2849444006652%29.jpg/1280px-Eravikulam_National_Park_%2849444006652%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 17200
       },
@@ -228,7 +228,7 @@ const CURATED_DESTINATIONS = {
         lat: 10.1067,
         lng: 77.1242,
         wikiQuery: 'Mattupetty Dam',
-        imageUrl: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/1280px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 12400
       },
@@ -241,7 +241,7 @@ const CURATED_DESTINATIONS = {
         lat: 10.0911,
         lng: 77.0583,
         wikiQuery: 'Tea Museum (Munnar)',
-        imageUrl: 'https://images.unsplash.com/photo-1571400493717-d3a1d5b0748f?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/1280px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 9400
       }
@@ -265,7 +265,7 @@ const CURATED_DESTINATIONS = {
         lat: 26.9855,
         lng: 75.8513,
         wikiQuery: 'Amer Fort',
-        imageUrl: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Jaipur_03-2016_02_Amber_Fort.jpg/1280px-Jaipur_03-2016_02_Amber_Fort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 32000
       },
@@ -278,7 +278,7 @@ const CURATED_DESTINATIONS = {
         lat: 26.9239,
         lng: 75.8267,
         wikiQuery: 'Hawa Mahal',
-        imageUrl: 'https://images.unsplash.com/photo-1477587458883-47145ed6a6cb?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 29500
       },
@@ -291,7 +291,7 @@ const CURATED_DESTINATIONS = {
         lat: 26.9258,
         lng: 75.8236,
         wikiQuery: 'City Palace, Jaipur',
-        imageUrl: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Jaipur_03-2016_02_Amber_Fort.jpg/1280px-Jaipur_03-2016_02_Amber_Fort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 18400
       }
@@ -315,7 +315,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.5009,
         lng: 73.9116,
         wikiQuery: 'Basilica of Bom Jesus',
-        imageUrl: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 22100
       },
@@ -328,7 +328,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.4925,
         lng: 73.7736,
         wikiQuery: 'Fort Aguada',
-        imageUrl: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.7',
         reviewsCount: 19800
       },
@@ -341,7 +341,7 @@ const CURATED_DESTINATIONS = {
         lat: 15.3144,
         lng: 74.3144,
         wikiQuery: 'Dudhsagar Falls',
-        imageUrl: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.9',
         reviewsCount: 16900
       }
@@ -365,7 +365,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.4542,
         lng: 75.7197,
         wikiQuery: 'Abbey Falls',
-        imageUrl: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 16800
       },
@@ -378,7 +378,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.4300,
         lng: 75.9667,
         wikiQuery: 'Namdroling Monastery',
-        imageUrl: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 22400
       },
@@ -391,7 +391,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.4214,
         lng: 75.7350,
         wikiQuery: 'Raja\'s Seat',
-        imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 14200
       },
@@ -404,7 +404,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.4250,
         lng: 75.7389,
         wikiQuery: 'Madikeri Fort',
-        imageUrl: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.5',
         reviewsCount: 9800
       },
@@ -417,7 +417,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.3833,
         lng: 75.4833,
         wikiQuery: 'Talakaveri',
-        imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 11200
       }
@@ -441,7 +441,7 @@ const CURATED_DESTINATIONS = {
         lat: 10.2381,
         lng: 77.4892,
         wikiQuery: 'Kodaikanal Lake',
-        imageUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c4/Kodaikanal_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
         rating: '4.8',
         reviewsCount: 19500
       },
@@ -454,7 +454,7 @@ const CURATED_DESTINATIONS = {
         lat: 10.2319,
         lng: 77.4967,
         wikiQuery: 'Coaker\'s Walk',
-        imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c4/Kodaikanal_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
         rating: '4.7',
         reviewsCount: 15400
       },
@@ -467,7 +467,7 @@ const CURATED_DESTINATIONS = {
         lat: 10.2083,
         lng: 77.4700,
         wikiQuery: 'Pillar Rocks',
-        imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Pillar_Rocks%2C_Kodaikanal_Hills.jpg/1280px-Pillar_Rocks%2C_Kodaikanal_Hills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 13200
       }
@@ -491,7 +491,7 @@ const CURATED_DESTINATIONS = {
         lat: 32.2472,
         lng: 77.1706,
         wikiQuery: 'Hidimba Devi Temple',
-        imageUrl: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 23100
       },
@@ -504,7 +504,7 @@ const CURATED_DESTINATIONS = {
         lat: 32.3167,
         lng: 77.1583,
         wikiQuery: 'Solang Valley',
-        imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.7',
         reviewsCount: 26400
       },
@@ -517,7 +517,7 @@ const CURATED_DESTINATIONS = {
         lat: 32.3719,
         lng: 77.2467,
         wikiQuery: 'Rohtang Pass',
-        imageUrl: 'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 21800
       }
@@ -541,7 +541,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.9333,
         lng: 79.8333,
         wikiQuery: 'Promenade Beach',
-        imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 21500
       },
@@ -554,7 +554,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.0069,
         lng: 79.8106,
         wikiQuery: 'Matrimandir',
-        imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.9',
         reviewsCount: 18700
       },
@@ -567,7 +567,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.9367,
         lng: 79.8344,
         wikiQuery: 'Sri Aurobindo Ashram',
-        imageUrl: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.7',
         reviewsCount: 13900
       }
@@ -591,7 +591,7 @@ const CURATED_DESTINATIONS = {
         lat: 9.5833,
         lng: 76.4167,
         wikiQuery: 'Vembanad',
-        imageUrl: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.9',
         reviewsCount: 25800
       },
@@ -604,7 +604,7 @@ const CURATED_DESTINATIONS = {
         lat: 9.4925,
         lng: 76.3181,
         wikiQuery: 'Alappuzha Beach',
-        imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.6',
         reviewsCount: 14700
       },
@@ -617,7 +617,7 @@ const CURATED_DESTINATIONS = {
         lat: 9.6000,
         lng: 76.2917,
         wikiQuery: 'Marari Beach',
-        imageUrl: 'https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.7',
         reviewsCount: 8900
       }
@@ -641,7 +641,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.6667,
         lng: 75.9556,
         wikiQuery: 'Banasura Sagar Dam',
-        imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Banasura_Sagar_Dam_Wayanad.jpg/1280px-Banasura_Sagar_Dam_Wayanad.jpg',
         rating: '4.8',
         reviewsCount: 18200
       },
@@ -654,7 +654,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.5500,
         lng: 76.0833,
         wikiQuery: 'Chembra Peak',
-        imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Banasura_Sagar_Dam_Wayanad.jpg/1280px-Banasura_Sagar_Dam_Wayanad.jpg',
         rating: '4.8',
         reviewsCount: 14100
       }
@@ -678,7 +678,7 @@ const CURATED_DESTINATIONS = {
         lat: 24.5764,
         lng: 73.6836,
         wikiQuery: 'City Palace, Udaipur',
-        imageUrl: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/1280px-Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 31200
       },
@@ -691,7 +691,7 @@ const CURATED_DESTINATIONS = {
         lat: 24.5694,
         lng: 73.6789,
         wikiQuery: 'Lake Pichola',
-        imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/1280px-Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 27900
       },
@@ -704,7 +704,7 @@ const CURATED_DESTINATIONS = {
         lat: 24.5794,
         lng: 73.6842,
         wikiQuery: 'Jagdish Temple, Udaipur',
-        imageUrl: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/1280px-Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 14800
       }
@@ -728,7 +728,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.3053,
         lng: 76.6553,
         wikiQuery: 'Mysore Palace',
-        imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/1280px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 38500
       },
@@ -741,7 +741,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.2744,
         lng: 76.6711,
         wikiQuery: 'Chamundeshwari Temple',
-        imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 21900
       },
@@ -754,7 +754,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.4244,
         lng: 76.5728,
         wikiQuery: 'Brindavan Gardens',
-        imageUrl: 'https://images.unsplash.com/photo-1577083165633-14ebcdb0f658?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Brindavan_Gardens.JPG/1280px-Brindavan_Gardens.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 23100
       }
@@ -778,7 +778,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.0089,
         lng: 88.2583,
         wikiQuery: 'Tiger Hill, Darjeeling',
-        imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Tiger_Hill_Darjeeling_West_Bengal_India_%283%29.JPG/1280px-Tiger_Hill_Darjeeling_West_Bengal_India_%283%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 24200
       },
@@ -791,7 +791,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.0428,
         lng: 88.2667,
         wikiQuery: 'Darjeeling Himalayan Railway',
-        imageUrl: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Tiger_Hill_Darjeeling_West_Bengal_India_%283%29.JPG/1280px-Tiger_Hill_Darjeeling_West_Bengal_India_%283%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 19800
       },
@@ -804,7 +804,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.0167,
         lng: 88.2500,
         wikiQuery: 'Batasia Loop',
-        imageUrl: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Batasia_Loop_War_Memorial_with_Kanchanjunga.jpg/1280px-Batasia_Loop_War_Memorial_with_Kanchanjunga.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 16400
       }
@@ -828,7 +828,7 @@ const CURATED_DESTINATIONS = {
         lat: 30.1039,
         lng: 78.2936,
         wikiQuery: 'Triveni Ghat',
-        imageUrl: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Triveni_Ghat_Krishna_Arjun_Rath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
         rating: '4.9',
         reviewsCount: 26100
       },
@@ -841,7 +841,7 @@ const CURATED_DESTINATIONS = {
         lat: 30.1239,
         lng: 78.3150,
         wikiQuery: 'Ram Jhula',
-        imageUrl: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Triveni_Ghat_Krishna_Arjun_Rath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
         rating: '4.8',
         reviewsCount: 22400
       }
@@ -865,7 +865,7 @@ const CURATED_DESTINATIONS = {
         lat: 31.6200,
         lng: 74.8765,
         wikiQuery: 'Golden Temple',
-        imageUrl: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1280px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '5.0',
         reviewsCount: 45000
       },
@@ -878,7 +878,7 @@ const CURATED_DESTINATIONS = {
         lat: 31.6206,
         lng: 74.8800,
         wikiQuery: 'Jallianwala Bagh',
-        imageUrl: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1280px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 28200
       }
@@ -902,7 +902,7 @@ const CURATED_DESTINATIONS = {
         lat: 25.3067,
         lng: 83.0100,
         wikiQuery: 'Dashashwamedh Ghat',
-        imageUrl: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Dasaswamedh_ghat-varanasi_india-andres_larin.jpg/1280px-Dasaswamedh_ghat-varanasi_india-andres_larin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.9',
         reviewsCount: 31000
       },
@@ -915,7 +915,7 @@ const CURATED_DESTINATIONS = {
         lat: 25.2892,
         lng: 83.0064,
         wikiQuery: 'Assi Ghat',
-        imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Assi_Ghat_Varanasi_morning_Aarti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
         rating: '4.8',
         reviewsCount: 18400
       },
@@ -952,7 +952,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.1751,
         lng: 78.0421,
         wikiQuery: 'Taj Mahal',
-        imageUrl: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '5.0',
         reviewsCount: 52000
       },
@@ -965,7 +965,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.1795,
         lng: 78.0211,
         wikiQuery: 'Agra Fort',
-        imageUrl: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Agra_03-2016_16_Agra_Fort.jpg/1280px-Agra_03-2016_16_Agra_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 34100
       },
@@ -978,7 +978,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.1800,
         lng: 78.0422,
         wikiQuery: 'Mehtab Bagh',
-        imageUrl: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Mehtab_Bagh_facing_Taj_Mahal.JPG/1280px-Mehtab_Bagh_facing_Taj_Mahal.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 11400
       },
@@ -991,7 +991,7 @@ const CURATED_DESTINATIONS = {
         lat: 27.0944,
         lng: 77.6678,
         wikiQuery: 'Fatehpur Sikri',
-        imageUrl: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg/1280px-Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 19500
       }
@@ -1015,7 +1015,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.7753,
         lng: 78.2093,
         wikiQuery: 'Yercaud Lake',
-        imageUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Yercaud_lake.jpg/1280px-Yercaud_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 8900
       },
@@ -1028,7 +1028,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.7967,
         lng: 78.2033,
         wikiQuery: 'Kiliyur Falls',
-        imageUrl: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Yercaud_lake.jpg/1280px-Yercaud_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 6400
       },
@@ -1041,7 +1041,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.7694,
         lng: 78.2081,
         wikiQuery: "Lady's Seat, Yercaud",
-        imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Yercaud_lake.jpg/1280px-Yercaud_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.6',
         reviewsCount: 7800
       },
@@ -1054,7 +1054,7 @@ const CURATED_DESTINATIONS = {
         lat: 11.8319,
         lng: 78.2269,
         wikiQuery: 'Shevaroy Hills',
-        imageUrl: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Yercaud_lake.jpg/1280px-Yercaud_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 6200
       }
@@ -1078,7 +1078,7 @@ const CURATED_DESTINATIONS = {
         lat: 28.5245,
         lng: 77.1855,
         wikiQuery: 'Qutb Minar',
-        imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 29500
       },
@@ -1091,7 +1091,7 @@ const CURATED_DESTINATIONS = {
         lat: 28.6562,
         lng: 77.2410,
         wikiQuery: 'Red Fort',
-        imageUrl: 'https://images.unsplash.com/photo-1580502304784-8985b7eb7260?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.7',
         reviewsCount: 31200
       },
@@ -1104,7 +1104,7 @@ const CURATED_DESTINATIONS = {
         lat: 28.5933,
         lng: 77.2507,
         wikiQuery: "Humayun's Tomb",
-        imageUrl: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 24100
       },
@@ -1117,7 +1117,7 @@ const CURATED_DESTINATIONS = {
         lat: 28.6129,
         lng: 77.2295,
         wikiQuery: 'India Gate',
-        imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.8',
         reviewsCount: 34000
       },
@@ -1130,7 +1130,7 @@ const CURATED_DESTINATIONS = {
         lat: 28.5535,
         lng: 77.2588,
         wikiQuery: 'Lotus Temple',
-        imageUrl: 'https://images.unsplash.com/photo-1592635196078-9fdc757f27f4?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
         rating: '4.7',
         reviewsCount: 28700
       }
@@ -1154,7 +1154,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.9507,
         lng: 77.5848,
         wikiQuery: 'Lal Bagh',
-        imageUrl: 'https://images.unsplash.com/photo-1577083165633-14ebcdb0f658?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Glasshouse_and_fountain_at_lalbagh.jpg/1280px-Glasshouse_and_fountain_at_lalbagh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.8',
         reviewsCount: 27800
       },
@@ -1167,7 +1167,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.9988,
         lng: 77.5921,
         wikiQuery: 'Bangalore Palace',
-        imageUrl: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Bangalore_Palace_facade_on_a_cloudy_day.jpg/1280px-Bangalore_Palace_facade_on_a_cloudy_day.jpg',
         rating: '4.6',
         reviewsCount: 22400
       },
@@ -1180,7 +1180,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.9738,
         lng: 77.5906,
         wikiQuery: 'Cubbon Park',
-        imageUrl: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Cubbon_Park_W.jpg/1280px-Cubbon_Park_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
         rating: '4.7',
         reviewsCount: 21900
       },
@@ -1193,7 +1193,7 @@ const CURATED_DESTINATIONS = {
         lat: 12.9593,
         lng: 77.5738,
         wikiQuery: "Tipu Sultan's Summer Palace",
-        imageUrl: 'https://images.unsplash.com/photo-1603525547614-7d583091040f?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Srirangapatna_Temple_Gopuram.jpg/1280px-Srirangapatna_Temple_Gopuram.jpg',
         rating: '4.5',
         reviewsCount: 14200
       }
@@ -1217,7 +1217,7 @@ const CURATED_DESTINATIONS = {
         lat: 13.0336,
         lng: 80.2699,
         wikiQuery: 'Kapaleeshwarar Temple',
-        imageUrl: 'https://images.unsplash.com/photo-1606298855672-3efb63017be8?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Marina_Beach_in_Chennai.jpg/1280px-Marina_Beach_in_Chennai.jpg',
         rating: '4.8',
         reviewsCount: 26300
       },
@@ -1230,7 +1230,7 @@ const CURATED_DESTINATIONS = {
         lat: 13.0500,
         lng: 80.2824,
         wikiQuery: 'Marina Beach',
-        imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Marina_Beach_in_Chennai.jpg/1280px-Marina_Beach_in_Chennai.jpg',
         rating: '4.7',
         reviewsCount: 32000
       },
@@ -1243,7 +1243,7 @@ const CURATED_DESTINATIONS = {
         lat: 13.0339,
         lng: 80.2781,
         wikiQuery: 'San Thome Basilica',
-        imageUrl: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Marina_Beach_in_Chennai.jpg/1280px-Marina_Beach_in_Chennai.jpg',
         rating: '4.7',
         reviewsCount: 16800
       }
@@ -1267,7 +1267,7 @@ const CURATED_DESTINATIONS = {
         lat: 9.9678,
         lng: 76.2415,
         wikiQuery: 'Chinese fishing nets',
-        imageUrl: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Chinese_fishingnet_kochi.jpg/1280px-Chinese_fishingnet_kochi.jpg',
         rating: '4.8',
         reviewsCount: 24700
       },
@@ -1280,7 +1280,7 @@ const CURATED_DESTINATIONS = {
         lat: 9.9583,
         lng: 76.2592,
         wikiQuery: 'Mattancherry Palace',
-        imageUrl: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Chinese_fishingnet_kochi.jpg/1280px-Chinese_fishingnet_kochi.jpg',
         rating: '4.6',
         reviewsCount: 18200
       },
@@ -1293,7 +1293,7 @@ const CURATED_DESTINATIONS = {
         lat: 9.9575,
         lng: 76.2594,
         wikiQuery: 'Paradesi Synagogue',
-        imageUrl: 'https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80',
+        imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Chinese_fishingnet_kochi.jpg/1280px-Chinese_fishingnet_kochi.jpg',
         rating: '4.7',
         reviewsCount: 15600
       }

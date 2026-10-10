@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Sparkles,
@@ -824,13 +824,10 @@ const POPULAR_COLLECTIONS = [
 ];
 
 export default function PopularPlacesSection() {
-  const [activeTabId, setActiveTabId] = useState('iconic');
   const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
   const [selectedPlaceForDirections, setSelectedPlaceForDirections] = useState(null);
 
-  const activeCollection = useMemo(() => {
-    return POPULAR_COLLECTIONS.find(c => c.id === activeTabId) || POPULAR_COLLECTIONS[0];
-  }, [activeTabId]);
+  const activeCollection = POPULAR_COLLECTIONS[0];
 
   const handleDirections = (place, e) => {
     e.preventDefault();
@@ -844,7 +841,7 @@ export default function PopularPlacesSection() {
       <div className="tourism-container">
 
         {/* Section Header */}
-        <div className="section-header-split" style={{ alignItems: 'flex-end', marginBottom: '2rem' }}>
+        <div className="section-header-split" style={{ alignItems: 'flex-end', marginBottom: '2.5rem' }}>
           <div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', backgroundColor: '#FEF3C7', color: '#B45309', padding: '0.3rem 0.8rem', borderRadius: '9999px', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '0.65rem' }}>
               <Award size={13} />
@@ -855,7 +852,7 @@ export default function PopularPlacesSection() {
               <span style={{ color: 'var(--tourism-earth)' }}>Tourist Places</span>
             </h2>
             <p className="tourism-subtitle" style={{ maxWidth: '580px', margin: 0 }}>
-              {activeCollection.description}
+              Internationally renowned landmarks and timeless cultural marvels verified with official tourism data.
             </p>
           </div>
 
@@ -867,50 +864,6 @@ export default function PopularPlacesSection() {
               <div style={{ fontSize: '0.7rem', color: '#94A3B8' }}>ASI · State Tourism Boards · UNESCO</div>
             </div>
           </div>
-        </div>
-
-        {/* Category Tab Pills */}
-        <div
-          style={{
-            display: 'flex',
-            gap: '0.5rem',
-            overflowX: 'auto',
-            paddingBottom: '0.75rem',
-            marginBottom: '2rem',
-            scrollbarWidth: 'none'
-          }}
-        >
-          {POPULAR_COLLECTIONS.map(col => {
-            const Icon = col.icon;
-            const isActive = col.id === activeTabId;
-            return (
-              <button
-                key={col.id}
-                type="button"
-                onClick={() => setActiveTabId(col.id)}
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  padding: '0.55rem 1.15rem',
-                  borderRadius: '9999px',
-                  border: '1.5px solid',
-                  borderColor: isActive ? 'var(--tourism-earth)' : '#E2E8F0',
-                  backgroundColor: isActive ? 'var(--tourism-earth)' : '#FFFFFF',
-                  color: isActive ? '#FFFFFF' : '#475569',
-                  fontSize: '0.82rem',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                  whiteSpace: 'nowrap',
-                  boxShadow: isActive ? '0 4px 12px rgba(200, 90, 50, 0.2)' : 'none'
-                }}
-              >
-                <Icon size={14} color={isActive ? '#FFFFFF' : col.color} />
-                <span>{col.label}</span>
-              </button>
-            );
-          })}
         </div>
 
         {/* Popular Cards Grid */}

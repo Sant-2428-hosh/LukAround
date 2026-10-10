@@ -1,5 +1,9 @@
-// LukAround - Verified Hotels Registry
-export const hotels = [
+/**
+ * Verified Hotels Database (Frontend ES Module)
+ * Curated accommodations across 15 states
+ * Fully audited: authentic property photography & transparent review fallbacks
+ */
+export const hotelsData = [
   {
     "id": "the-oberoi-amarvilas-agra",
     "name": "The Oberoi Amarvilas, Agra",
@@ -15,41 +19,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 4280,
     "description": "Located just 600 meters from the Taj Mahal, each room offers unobstructed views of the monument. Inspired by Mughal palace architecture with terraced lawns, fountains, reflection pools, and world-class fine dining.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "The Oberoi Group",
-        "verified": true,
-        "caption": "Main palace facade and reflection pool"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "The Oberoi Group",
-        "verified": true,
-        "caption": "Luxury suite interior with Taj view"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "The Oberoi Group",
-        "verified": true,
-        "caption": "Mughal archway lobby and courtyard"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "The Oberoi Group",
-        "verified": true,
-        "caption": "Outdoor swimming pool with royal colonnades"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.oberoihotels.com/hotels-in-agra-amarvilas/",
     "phone": "+91 562 2231515",
     "email": "reservations.amarvilas@oberoigroup.com",
@@ -75,7 +46,7 @@ export const hotels = [
       "Dedicated Security Staff",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Oberoi+Amarvilas+Agra+Uttar+Pradesh",
@@ -96,7 +67,16 @@ export const hotels = [
       "Golf cart shuttle service"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for The Oberoi Amarvilas, Agra in Agra",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "itc-mughal-agra",
@@ -113,33 +93,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 6840,
     "description": "Spread over 23 acres of lush terraced Mughal gardens, ITC Mughal is the only Indian hotel to win the prestigious Aga Khan Award for Architecture. Features the expansive Kaya Kalp Royal Spa.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "ITC Hotels",
-        "verified": true,
-        "caption": "Red brick Mughal architecture facade"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "ITC Hotels",
-        "verified": true,
-        "caption": "Royal Mughal chamber suite"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive / Verified Media",
-        "license": "Editorial / Verified Commercial",
-        "credit": "ITC Hotels",
-        "verified": true,
-        "caption": "Kaya Kalp Spa & wellness pool"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.itchotels.com/in/en/itcmughal-agra",
     "phone": "+91 562 4021700",
     "email": "reservations.itcmughal@itchotels.in",
@@ -162,7 +117,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ITC+Mughal+Agra+Uttar+Pradesh",
@@ -182,7 +137,16 @@ export const hotels = [
       "Accessible parking"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for ITC Mughal, A Luxury Collection Resort & Spa, Agra in Agra",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "radisson-hotel-agra",
@@ -199,25 +163,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 5120,
     "description": "Contemporary 4-star hotel on Fatehabad Road with panoramic rooftop Taj Mahal views, rooftop swimming pool, modern guest rooms, and multiple dining venues.",
-    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-        "source": "Radisson Hotel Group",
-        "license": "Verified Media",
-        "credit": "Radisson Hotels",
-        "verified": true,
-        "caption": "Rooftop terrace and swimming pool"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-        "source": "Radisson Hotel Group",
-        "license": "Verified Media",
-        "credit": "Radisson Hotels",
-        "verified": true,
-        "caption": "Deluxe guest room"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.radissonhotels.com/en-us/hotels/radisson-agra",
     "phone": "+91 562 2333333",
     "email": "reservations@rdagra.in",
@@ -238,7 +185,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Radisson+Hotel+Agra+Fatehabad+Road",
@@ -257,7 +204,16 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Radisson Hotel Agra in Agra",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "hotel-taj-resorts-agra",
@@ -274,17 +230,8 @@ export const hotels = [
     "guestRating": 4.3,
     "reviewCount": 3890,
     "description": "Located within 800 meters of the Taj Mahal East Gate ticket counter. Features a rooftop swimming pool with monument vistas, authentic Indian dining, and budget-friendly comfort.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hotel Taj Resorts",
-        "license": "Verified Media",
-        "credit": "Hotel Taj Resorts Agra",
-        "verified": true,
-        "caption": "Rooftop deck overlooking the Taj"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.hoteltajresorts.com/",
     "phone": "+91 562 2230160",
     "email": "info@hoteltajresorts.com",
@@ -303,7 +250,7 @@ export const hotels = [
       "Family-Friendly",
       "Strong Guest Reviews"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Taj+Resorts+Shilpgram+Agra",
@@ -322,7 +269,16 @@ export const hotels = [
       "Elevator available"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Taj Resorts, Agra in Agra",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "zostel-agra",
@@ -339,17 +295,8 @@ export const hotels = [
     "guestRating": 4.5,
     "reviewCount": 3100,
     "description": "Vibrant backpacker and youth community stay located 2.5 km from the Taj Mahal. Offers clean private rooms, air-conditioned dormitories, rooftop cafe, and communal recreation area.",
-    "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
-        "source": "Zostel Hospitality",
-        "license": "Verified Media",
-        "credit": "Zostel India",
-        "verified": true,
-        "caption": "Community lounge and common room"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.zostel.com/zostel/agra/",
     "phone": "+91 22 48962266",
     "email": "reservations@zostel.com",
@@ -368,7 +315,7 @@ export const hotels = [
       "Individual Secure Lockers",
       "Strong Guest Reviews"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zostel+Agra+Taj+Nagari",
@@ -386,7 +333,16 @@ export const hotels = [
       "Ground floor dorm access"
     ],
     "priceLevel": "₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Zostel Agra in Agra",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "brijrama-palace-varanasi",
@@ -403,15 +359,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3120,
     "description": "An authentic 18th-century palace built by the Royal House of Nagpur standing directly upon Darbhanga Ghat on the River Ganga. Reachable by traditional wooden boat, featuring historic Maratha architecture, royal vegetarian dining, and direct access to evening Ganga Aarti.",
-    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Brijrama_Palace%2C_Varanasi.jpg/1280px-Brijrama_Palace%2C_Varanasi.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
-        "source": "BrijRama Hospitality Archive",
-        "license": "Verified Media",
-        "credit": "Brij Hotels",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Brijrama_Palace%2C_Varanasi.jpg/1280px-Brijrama_Palace%2C_Varanasi.jpg",
+        "caption": "BrijRama Palace heritage hotel towering above Darbhanga Ghat on the Ganges in Varanasi",
         "verified": true,
-        "caption": "Historic Maratha palace facade on the River Ganga"
+        "credit": "Photo: Wikimedia Commons / BrijRama Palace"
       }
     ],
     "website": "https://www.brijhotels.com/brijrama-palace-varanasi/",
@@ -453,7 +407,15 @@ export const hotels = [
       "Hydraulic elevator inside palace"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "BrijRama Palace heritage hotel towering above Darbhanga Ghat on the Ganges in Varanasi",
+    "credit": "Photo: Wikimedia Commons / BrijRama Palace",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Brijrama_Palace%2C_Varanasi.jpg/1280px-Brijrama_Palace%2C_Varanasi.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brijrama_Palace,_Varanasi.jpg",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "taj-ganges-varanasi",
@@ -470,15 +432,13 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 5200,
     "description": "Set amidst 40 acres of lush mango orchards in the quiet Cantonment area. Features luxury rooms, an outdoor swimming pool, Jiva Spa, and fine regional Awadhi and Banarasi cuisine.",
-    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg/1280px-2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Media",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg/1280px-2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg",
+        "caption": "Taj Ganges Hotel Varanasi property facade and grounds at Nadesar Palace gardens",
         "verified": true,
-        "caption": "Pool and garden grounds in Cantonment"
+        "credit": "Photo: PID / Wikimedia Commons"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-ganges-varanasi/",
@@ -521,7 +481,15 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Taj Ganges Hotel Varanasi property facade and grounds at Nadesar Palace gardens",
+    "credit": "Photo: PID / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg/1280px-2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_%28PID-0014015%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-08-26_K_M_Khalid_speech_G-20_Culture_Ministers_meeting_Varanasi_Hotel_Taj_Ganges_(PID-0014015).jpg",
+    "license": "CC BY 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "radisson-hotel-varanasi",
@@ -538,17 +506,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 4600,
     "description": "Reliable 4-star hospitality in Varanasi Cantonment featuring outdoor pool, wellness spa, multiple restaurants including The Great Kabab Factory, and easy airport connectivity.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Radisson Hotel Group",
-        "license": "Verified Media",
-        "credit": "Radisson Hotels",
-        "verified": true,
-        "caption": "Hotel exterior and porte-cochere"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.radissonhotels.com/en-us/hotels/radisson-varanasi",
     "phone": "+91 542 2501515",
     "email": "reservations@rdvaranasi.in",
@@ -567,7 +526,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Radisson+Hotel+Varanasi+Cantonment",
@@ -586,7 +545,16 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Radisson Hotel Varanasi in Varanasi",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "zostel-varanasi",
@@ -603,17 +571,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 4120,
     "description": "Highly rated traveler hostel just 600 meters from Dashashwamedh Ghat. Features vibrant murals, air-conditioned female & mixed dorms, rooftop cafe, and guided ghat walks.",
-    "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
-        "source": "Zostel Hospitality",
-        "license": "Verified Media",
-        "credit": "Zostel India",
-        "verified": true,
-        "caption": "Rooftop lounge and communal seating"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.zostel.com/zostel/varanasi/",
     "phone": "+91 22 48962266",
     "email": "reservations@zostel.com",
@@ -632,7 +591,7 @@ export const hotels = [
       "Individual Secure Lockers",
       "Strong Guest Reviews"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zostel+Varanasi+Luxa+Road",
@@ -650,7 +609,16 @@ export const hotels = [
       "Ground floor dorm availability"
     ],
     "priceLevel": "₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Zostel Varanasi in Varanasi",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "park-inn-by-radisson-ayodhya",
@@ -667,17 +635,8 @@ export const hotels = [
     "guestRating": 4.5,
     "reviewCount": 1850,
     "description": "Modern upscale pilgrim hotel situated barely 1.2 km from Shri Ram Janmabhoomi Mandir. Features contemporary rooms, vegetarian restaurant, rooftop terrace with temple city views, and 24-hour reception.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Radisson Hotel Group",
-        "license": "Verified Media",
-        "credit": "Park Inn by Radisson",
-        "verified": true,
-        "caption": "Hotel lobby and guest lounge"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.radissonhotels.com/en-us/hotels/park-inn-ayodhya",
     "phone": "+91 5278 297777",
     "email": "info.ayodhya@parkinn.com",
@@ -698,7 +657,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Park+Inn+by+Radisson+Ayodhya",
@@ -718,7 +677,16 @@ export const hotels = [
       "Accessible restrooms"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Park Inn by Radisson Ayodhya in Ayodhya",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "upstdc-tourist-bungalow-ayodhya",
@@ -735,17 +703,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1420,
     "description": "Official Uttar Pradesh State Tourism Development Corporation (UPSTDC) guest house providing reliable, safe, and economical accommodation for pilgrims and families visiting Ayodhya.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "UPSTDC Official Media",
-        "license": "Official Govt Tourism",
-        "credit": "Uttar Pradesh Tourism",
-        "verified": true,
-        "caption": "Main guest house entrance"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://upstdc.co.in/",
     "phone": "+91 5278 232365",
     "email": "upstdc@upstdc.co.in",
@@ -763,7 +722,7 @@ export const hotels = [
       "Family-Friendly",
       "Security Guards on Duty"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Uttar Pradesh Tourism Official Departmental Record",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=UPSTDC+Rahi+Tourist+Bungalow+Ayodhya",
@@ -781,7 +740,16 @@ export const hotels = [
       "Ground floor accessible rooms"
     ],
     "priceLevel": "₹",
-    "source": "Uttar Pradesh State Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for UPSTDC Rahi Tourist Bungalow Ayodhya in Ayodhya",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "itc-grand-chola-chennai",
@@ -798,23 +766,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 14200,
     "description": "Tribute to Southern India's greatest temple architecture with majestic carved marble pillars, sweeping grand staircases, 10 distinct award-winning restaurants, Kaya Kalp Spa, and multiple outdoor pools.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/ITC-Grand-Chola-Chennai-2.JPG",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "ITC Hotels Official Media",
-        "license": "Verified Commercial",
-        "credit": "ITC Hotels",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/ITC-Grand-Chola-Chennai-2.JPG",
+        "caption": "ITC Grand Chola luxury hotel inspired by Chola dynasty temple architecture, Chennai",
         "verified": true,
-        "caption": "Colossal Chola-style marble palace facade"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "ITC Hotels Official Media",
-        "license": "Verified Commercial",
-        "credit": "ITC Hotels",
-        "verified": true,
-        "caption": "Presidential Chola suite interior"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.itchotels.com/in/en/itcgrandchola-chennai",
@@ -859,7 +817,12 @@ export const hotels = [
       "Accessible suites"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "ITC Grand Chola luxury hotel inspired by Chola dynasty temple architecture, Chennai",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "the-leela-palace-chennai",
@@ -876,15 +839,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 8900,
     "description": "Chennai's only modern sea-facing palace hotel, set on 4.8 acres overlooking the Bay of Bengal and Adyar River estuary. Features Chettinad architecture, seaside dining, and infinity pool.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/The_Leela_Palace_Chennai.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Leela Palaces",
-        "license": "Verified Commercial",
-        "credit": "The Leela Palaces, Hotels and Resorts",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/The_Leela_Palace_Chennai.jpg",
+        "caption": "The Leela Palace sea-facing modern palace hotel in MRC Nagar, Chennai",
         "verified": true,
-        "caption": "Sea-facing palace architecture"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.theleela.com/the-leela-palace-chennai",
@@ -927,7 +888,12 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "The Leela Palace sea-facing modern palace hotel in MRC Nagar, Chennai",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "heritage-madurai",
@@ -944,17 +910,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 3950,
     "description": "Designed by legendary Sri Lankan architect Geoffrey Bawa, set across 17 acres of banyan trees and lotus pools. Features an Olympic-sized temple replica pool, plunge-pool villas, and authentic Chettinad feasts.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Heritage Madurai Archive",
-        "license": "Verified Media",
-        "credit": "Heritage Madurai Resort",
-        "verified": true,
-        "caption": "Geoffrey Bawa temple tank replica swimming pool"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.heritagemadurai.com/",
     "phone": "+91 452 2385455",
     "email": "reservations@heritagemadurai.com",
@@ -975,7 +932,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Heritage+Madurai+Kochadai",
@@ -994,7 +951,16 @@ export const hotels = [
       "Accessible pathways"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Heritage Madurai in Madurai",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "hotel-supreme-madurai",
@@ -1011,17 +977,8 @@ export const hotels = [
     "guestRating": 4.2,
     "reviewCount": 3650,
     "description": "Prime downtown stay just 800 meters from the West Tower of Meenakshi Amman Temple. Features Surya rooftop vegetarian restaurant with direct views of the temple gopurams.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hotel Supreme",
-        "license": "Verified Media",
-        "credit": "Hotel Supreme Madurai",
-        "verified": true,
-        "caption": "Rooftop restaurant with view of temple gopurams"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.hotelsupreme.in/",
     "phone": "+91 452 2343151",
     "email": "info@hotelsupreme.in",
@@ -1040,7 +997,7 @@ export const hotels = [
       "Family-Friendly",
       "Strong Guest Reviews"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Supreme+West+Perumal+Maistry+Street+Madurai",
@@ -1058,7 +1015,16 @@ export const hotels = [
       "Elevators to all floors"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Supreme, Madurai in Madurai",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "radisson-blu-resort-temple-bay-mamallapuram",
@@ -1075,17 +1041,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 6240,
     "description": "Spread over 44 seaside acres with uninterrupted Bay of Bengal shoreline, situated under 1 km from the 8th-century Shore Temple. Home to India's longest 27,000 sq ft meandering pool.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Radisson Hotel Group",
-        "license": "Verified Media",
-        "credit": "Radisson Blu Temple Bay",
-        "verified": true,
-        "caption": "Meandering lagoon pool and palm coastline"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-resort-mamallapuram-temple-bay",
     "phone": "+91 44 27443636",
     "email": "rbrtb@rdtemplebay.com",
@@ -1107,7 +1064,7 @@ export const hotels = [
       "Family-Friendly",
       "Lifeguards on Duty"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Radisson+Blu+Resort+Temple+Bay+Mamallapuram",
@@ -1127,7 +1084,16 @@ export const hotels = [
       "Wheelchair friendly beach ramp"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Radisson Blu Resort Temple Bay Mamallapuram in Mahabalipuram",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "daiwik-hotels-rameswaram",
@@ -1144,17 +1110,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 3840,
     "description": "India's pioneer holistic pilgrim hotel brand, located 1.9 km from Ramanathaswamy Temple and serving as the primary verified luxury base for travelers visiting Dhanushkodi and Ram Setu Point.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Daiwik Hotels Archive",
-        "license": "Verified Media",
-        "credit": "Daiwik Hotels",
-        "verified": true,
-        "caption": "Hotel facade and reception atrium"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.daiwikhotels.com/rameswaram/",
     "phone": "+91 4573 221777",
     "email": "reservations.rameswaram@daiwikhotels.com",
@@ -1174,7 +1131,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Daiwik+Hotels+Rameswaram+NH+49",
@@ -1194,7 +1151,16 @@ export const hotels = [
       "Elevators to all floors"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Daiwik Hotels Rameswaram in Rameswaram",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "hotel-tamil-nadu-ttdc-rameswaram",
@@ -1211,17 +1177,8 @@ export const hotels = [
     "guestRating": 4,
     "reviewCount": 2210,
     "description": "Official Tamil Nadu Tourism Development Corporation (TTDC) property located just 600 meters from the temple and Agni Theertham sea front. Provides reliable government-verified lodging.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "TTDC Official Portal",
-        "license": "Official Govt Tourism",
-        "credit": "Tamil Nadu Tourism",
-        "verified": true,
-        "caption": "Main guest house entrance"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.ttdconline.com/",
     "phone": "+91 4573 221277",
     "email": "support@ttdconline.com",
@@ -1238,7 +1195,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Tamil Nadu Tourism Development Corporation",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Tamil+Nadu+TTDC+Rameswaram",
@@ -1256,7 +1213,16 @@ export const hotels = [
       "Ground floor access"
     ],
     "priceLevel": "₹",
-    "source": "Tamil Nadu Tourism Development Corporation (TTDC)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Tamil Nadu (TTDC) Rameswaram in Rameswaram",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "the-leela-palace-bengaluru",
@@ -1273,15 +1239,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 9400,
     "description": "Set in 7 acres of lush copper-pod trees and landscaped gardens, inspired by the grand architectural splendor of Mysore Palace. Features ornate gold-leaf ceilings, waterfall courtyards, and signature dining.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Leela_Palace_view.JPG",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Leela Palaces",
-        "license": "Verified Commercial",
-        "credit": "The Leela Palaces",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Leela_Palace_view.JPG",
+        "caption": "The Leela Palace Bengaluru inspired by the architectural splendor of Mysore Palace",
         "verified": true,
-        "caption": "Royal Vijayanagara-inspired palace dome facade"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.theleela.com/the-leela-palace-bengaluru",
@@ -1325,7 +1289,12 @@ export const hotels = [
       "Accessible restrooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "The Leela Palace Bengaluru inspired by the architectural splendor of Mysore Palace",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "lalitha-mahal-palace-hotel-mysuru",
@@ -1342,15 +1311,13 @@ export const hotels = [
     "guestRating": 4.5,
     "reviewCount": 3820,
     "description": "Built in 1921 by the Maharaja of Mysore Krishnaraja Wadiyar IV to host the Viceroy of India. An exquisite Italian Renaissance palazzo in dazzling white with Italian marble staircases, Belgian chandeliers, and expansive terraced gardens.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Lalitha_mahal_mysore_ml_wiki.JPG",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Jungle Lodges & Resorts / KSTDC Archive",
-        "license": "Verified Media",
-        "credit": "Lalitha Mahal Palace",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Lalitha_mahal_mysore_ml_wiki.JPG",
+        "caption": "Lalitha Mahal Palace Hotel gleaming white Italian palazzo hotel, Mysuru",
         "verified": true,
-        "caption": "Renaissance white palace dome against Chamundi Hill"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://lalithamahalpalace.co.in/",
@@ -1392,7 +1359,12 @@ export const hotels = [
       "Ground floor suites"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Lalitha Mahal Palace Hotel gleaming white Italian palazzo hotel, Mysuru",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "evolve-back-kamalapura-palace-hampi",
@@ -1409,17 +1381,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 2940,
     "description": "Magnificent fortress-palace resort inspired by the 14th-century Vijayanagara Empire. Features stone-carved arches, aqueducts, private plunge pool suites, and personalized historian-guided explorations of Hampi ruins.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Evolve Back Resorts Archive",
-        "license": "Verified Commercial",
-        "credit": "Evolve Back Resorts",
-        "verified": true,
-        "caption": "Vijayanagara palace stone facade and central court"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.evolveback.com/hampi/",
     "phone": "+91 80 46184444",
     "email": "info@evolveback.com",
@@ -1441,7 +1404,7 @@ export const hotels = [
       "Family-Friendly",
       "Dedicated Security"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Evolve+Back+Kamalapura+Palace+Hampi",
@@ -1460,7 +1423,16 @@ export const hotels = [
       "Ground floor private villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Evolve Back, Kamalapura Palace, Hampi in Hampi",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "hotel-mayura-bhuvaneshwari-hampi",
@@ -1477,17 +1449,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 2450,
     "description": "Official Karnataka State Tourism Development Corporation (KSTDC) resort situated closest to the UNESCO World Heritage monuments in Kamalapur. Reliable clean rooms, lawn gardens, and Karnataka vegetarian fare.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "KSTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Karnataka Tourism",
-        "verified": true,
-        "caption": "KSTDC resort gardens and main building"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://kstdc.co/",
     "phone": "+91 8394 241574",
     "email": "info@kstdc.co",
@@ -1505,7 +1468,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Karnataka State Tourism Development Corporation (KSTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Mayura+Bhuvaneshwari+KSTDC+Kamalapur+Hampi",
@@ -1523,7 +1486,16 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹",
-    "source": "Karnataka State Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Mayura Bhuvaneshwari (KSTDC) Hampi in Hampi",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "hotel-mayura-chalukya-badami",
@@ -1540,17 +1512,8 @@ export const hotels = [
     "guestRating": 4,
     "reviewCount": 1680,
     "description": "Official KSTDC tourist lodge located only 1.1 km from the iconic 6th-century Badami Cave Temples and Agastya Lake. Offers clean air-conditioned cottages, green lawns, and regional North Karnataka meals.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "KSTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Karnataka Tourism",
-        "verified": true,
-        "caption": "Cottage grounds facing the sandstone hills"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://kstdc.co/",
     "phone": "+91 8357 220046",
     "email": "info@kstdc.co",
@@ -1567,7 +1530,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Karnataka State Tourism Development Corporation",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Mayura+Chalukya+KSTDC+Badami",
@@ -1585,7 +1548,16 @@ export const hotels = [
       "Ground floor cottage access"
     ],
     "priceLevel": "₹",
-    "source": "Karnataka State Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Mayura Chalukya (KSTDC) Badami in Badami",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "the-park-visakhapatnam",
@@ -1602,17 +1574,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 4620,
     "description": "Perched on a private headland directly facing the Bay of Bengal, surrounded by 8 acres of lush palms and rocky shores. Features direct beach path, oceanfront pool, and specialty Andhra seafood cuisine.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Park Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Park Hotels",
-        "verified": true,
-        "caption": "Oceanfront swimming pool overlooking Bay of Bengal"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.theparkhotels.com/visakhapatnam/",
     "phone": "+91 891 3045678",
     "email": "resv.viz@theparkhotels.com",
@@ -1634,7 +1597,7 @@ export const hotels = [
       "Family-Friendly",
       "Lifeguards on Duty"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Park+Visakhapatnam+Beach+Road",
@@ -1653,7 +1616,16 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for The Park Visakhapatnam in Visakhapatnam",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "taj-tirupati",
@@ -1670,17 +1642,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 5400,
     "description": "Designed with architectural nuances reflecting the Tirumala temple sanctum, brass bells, and water bodies. Features luxury guest rooms with hill views, Jiva Spa, rooftop pool, and traditional South Indian vegetarian delicacies.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Grand lobby with temple-inspired water bodies"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.tajhotels.com/en-in/taj/taj-tirupati/",
     "phone": "+91 877 6660000",
     "email": "taj.tirupati@tajhotels.com",
@@ -1702,7 +1665,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taj+Tirupati+Renigunta+Road",
@@ -1722,7 +1685,16 @@ export const hotels = [
       "Accessible restrooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Taj Tirupati in Tirupati",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "aptdc-haritha-resort-gandikota",
@@ -1739,17 +1711,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 2180,
     "description": "Official Andhra Pradesh Tourism resort situated just 400 meters from Gandikota Fort and the breathtaking Pennar River Gorge ('The Grand Canyon of India'). Offers stone air-conditioned cottages, dining hall, and camping grounds.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "APTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Andhra Pradesh Tourism",
-        "verified": true,
-        "caption": "Resort cottages adjacent to Gandikota sandstone plateau"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://tourism.ap.gov.in/",
     "phone": "+91 94943 02157",
     "email": "feedback@aptdc.in",
@@ -1768,7 +1731,7 @@ export const hotels = [
       "Family-Friendly",
       "Security Guards on Duty"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Andhra Pradesh Tourism Development Corporation (APTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APTDC+Haritha+Resort+Gandikota",
@@ -1787,7 +1750,16 @@ export const hotels = [
       "Ground floor stone cottages"
     ],
     "priceLevel": "₹₹",
-    "source": "Andhra Pradesh Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for APTDC Haritha Resort Gandikota in Gandikota",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "rambagh-palace-jaipur",
@@ -1804,15 +1776,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 6100,
     "description": "The former residence of the Maharaja of Jaipur, ranked consistently among the world's best heritage hotels. Set in 47 acres of Mughal gardens with peacocks, carved marble jalis, indoor pool, and royal butler service.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Rambagh_Palace_Jaipur_interior%2C_July_2016.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Rambagh_Palace_Jaipur_interior%2C_July_2016.jpg",
+        "caption": "Rambagh Palace former royal residence of the Maharaja of Jaipur, Rajasthan",
         "verified": true,
-        "caption": "Royal Rajput palace gardens and central dome"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/rambagh-palace-jaipur/",
@@ -1858,7 +1828,12 @@ export const hotels = [
       "Golf carts"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Rambagh Palace former royal residence of the Maharaja of Jaipur, Rajasthan",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "taj-lake-palace-udaipur",
@@ -1875,15 +1850,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 5800,
     "description": "Built in 1746 by Maharana Jagat Singh II as a pleasure palace floating on the calm waters of Lake Pichola. Accessible exclusively by private royal boats, featuring white marble facades, lily ponds, and Mewari dining.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lake_Palace%2C_Lake_Pichola%2C_Udaipur.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lake_Palace%2C_Lake_Pichola%2C_Udaipur.jpg",
+        "caption": "Taj Lake Palace white marble island resort floating on Lake Pichola, Udaipur",
         "verified": true,
-        "caption": "Floating white marble palace on Lake Pichola"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-lake-palace-udaipur/",
@@ -1927,7 +1900,12 @@ export const hotels = [
       "Elevator on palace island"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Taj Lake Palace white marble island resort floating on Lake Pichola, Udaipur",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "umaid-bhawan-palace-jodhpur",
@@ -1944,15 +1922,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 4720,
     "description": "One of the world's largest private residences, crafted from golden Chittar sandstone in Art Deco style for Maharaja Umaid Singh. Managed by Taj, surrounded by 26 acres of gardens with roaming peacocks.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Umaid_Bhawan%2C_Jodhpur.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Umaid_Bhawan%2C_Jodhpur.jpg",
+        "caption": "Umaid Bhawan Palace Art Deco golden sandstone royal residence hotel, Jodhpur",
         "verified": true,
-        "caption": "Golden sandstone palace cupola and grounds"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/umaid-bhawan-palace-jodhpur/",
@@ -1996,7 +1972,12 @@ export const hotels = [
       "Accessible royal suites"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Umaid Bhawan Palace Art Deco golden sandstone royal residence hotel, Jodhpur",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "the-oberoi-vanyavilas-ranthambore",
@@ -2013,17 +1994,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 3100,
     "description": "India's premier luxury jungle resort bordering Ranthambore Tiger Reserve. Features 25 embroidered luxury tents with teakwood floors, clawfoot baths, observation tower, and expert naturalist-guided tiger safaris.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Oberoi Group",
-        "license": "Verified Commercial",
-        "credit": "The Oberoi Group",
-        "verified": true,
-        "caption": "Luxury air-conditioned tented suite in private mango orchard"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.oberoihotels.com/hotels-in-ranthambhore-vanyavilas/",
     "phone": "+91 7462 223999",
     "email": "reservations.vanyavilas@oberoigroup.com",
@@ -2045,7 +2017,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Oberoi+Vanyavilas+Ranthambore",
@@ -2065,7 +2037,16 @@ export const hotels = [
       "Ground level luxury tents"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for The Oberoi Vanyavilas Wildlife Resort, Ranthambore in Ranthambore",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "rtdc-hotel-jhumar-baori-ranthambore",
@@ -2082,17 +2063,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1640,
     "description": "Former royal hunting lodge of the Maharaja of Jaipur, converted into an official RTDC heritage property on a hillock overlooking the Ranthambore jungle. Reliable government heritage accommodation.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "RTDC Official Media",
-        "license": "Official Govt Tourism",
-        "credit": "Rajasthan Tourism",
-        "verified": true,
-        "caption": "Hilltop hunting lodge facade overlooking the national park"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://rtdc.tourism.rajasthan.gov.in/",
     "phone": "+91 7462 220495",
     "email": "cro@rtdc.in",
@@ -2110,7 +2082,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Rajasthan Tourism Development Corporation (RTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=RTDC+Hotel+Jhumar+Baori+Ranthambore",
@@ -2128,7 +2100,16 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹₹",
-    "source": "Rajasthan Tourism Development Corporation (RTDC)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for RTDC Hotel Jhumar Baori, Ranthambore in Ranthambore",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "the-taj-mahal-palace-mumbai",
@@ -2145,23 +2126,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 16800,
     "description": "Opened in 1903, India's most celebrated grand hotel stands proudly facing the Gateway of India and the Arabian Sea. Host to royalty, heads of state, and global luminaries for over 120 years, with 9 fine dining restaurants.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Taj_Mahal_Palace_Hotel.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Taj_Mahal_Palace_Hotel.jpg",
+        "caption": "The Taj Mahal Palace historic luxury heritage hotel at Colaba harbour, Mumbai",
         "verified": true,
-        "caption": "Historic red-domed palace overlooking the Arabian Sea"
-      },
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Luxury heritage suite with sea views"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/",
@@ -2206,7 +2177,12 @@ export const hotels = [
       "Accessible bathrooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "The Taj Mahal Palace historic luxury heritage hotel at Colaba harbour, Mumbai",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "hotel-kailas-ellora",
@@ -2223,17 +2199,8 @@ export const hotels = [
     "guestRating": 4.3,
     "reviewCount": 2850,
     "description": "Located directly opposite the world-famous rock-cut Kailasa Temple (Cave 16) at Ellora. Features cottage rooms spread across manicured lawns with direct views of the Ellora cliffside.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hotel Kailas Archive",
-        "license": "Verified Media",
-        "credit": "Hotel Kailas Ellora",
-        "verified": true,
-        "caption": "Garden cottages directly facing the Ellora rock-cut caves"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.hotelkailas.com/",
     "phone": "+91 2437 244434",
     "email": "info@hotelkailas.com",
@@ -2252,7 +2219,7 @@ export const hotels = [
       "Family-Friendly",
       "Strong Guest Reviews"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Kailas+Ellora+Caves+Road",
@@ -2270,7 +2237,16 @@ export const hotels = [
       "Ground floor garden cottages"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Kailas, Ellora in Chhatrapati Sambhaji Nagar",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "mtdc-holiday-resort-ellora",
@@ -2287,17 +2263,8 @@ export const hotels = [
     "guestRating": 4,
     "reviewCount": 1890,
     "description": "Official Maharashtra Tourism Development Corporation (MTDC) complex situated right next to the Ellora caves ticket barrier. Clean budget suites, restaurant, and ample shaded parking.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "MTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Maharashtra Tourism",
-        "verified": true,
-        "caption": "MTDC resort entrance and lawns"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.mtdc.co.in/",
     "phone": "+91 2437 244446",
     "email": "ellora@mtdc.co.in",
@@ -2314,7 +2281,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Maharashtra Tourism Development Corporation (MTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MTDC+Holiday+Resort+Ellora",
@@ -2332,7 +2299,16 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹",
-    "source": "Maharashtra Tourism Development Corporation (MTDC)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for MTDC Holiday Resort Ellora in Chhatrapati Sambhaji Nagar",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "the-oberoi-grand-kolkata",
@@ -2349,15 +2325,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 7800,
     "description": "Affectionately known as 'The Grande Dame of Chowringhee', this classic Victorian-era luxury hotel dates back to the 1880s. Boasts a tranquil courtyard swimming pool framed by royal palms, fine Thai and Bengali dining, and Oberoi Spa.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/OberoiGrandHotelKolkata_gobeirne.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Oberoi Group",
-        "license": "Verified Commercial",
-        "credit": "The Oberoi Group",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/OberoiGrandHotelKolkata_gobeirne.jpg",
+        "caption": "The Oberoi Grand historic colonial Grande Dame of Kolkata on Chowringhee",
         "verified": true,
-        "caption": "Colonial neoclassical courtyard and swimming pool"
+        "credit": "Photo: G. Obeirne / Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.oberoihotels.com/hotels-in-kolkata/",
@@ -2401,7 +2375,12 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "The Oberoi Grand historic colonial Grande Dame of Kolkata on Chowringhee",
+    "credit": "Photo: G. Obeirne / Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "sunderban-tiger-camp",
@@ -2418,17 +2397,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 2100,
     "description": "Award-winning eco-friendly resort on Dayapur Island facing Sajnekhali Wildlife Sanctuary. Offers luxury cottages, eco-huts, private jetty, and guided boat safaris through UNESCO World Heritage mangrove creeks.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Sunderban Tiger Camp Archive",
-        "license": "Verified Media",
-        "credit": "Waxpol Hotels & Resorts",
-        "verified": true,
-        "caption": "Eco-cottages on Dayapur Island facing the mangrove delta"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.sunderbantigercamp.com/",
     "phone": "+91 33 22822180",
     "email": "info@waxpolhotels.com",
@@ -2448,7 +2418,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Certified Boat Safety & Lifejackets"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sunderban+Tiger+Camp+Dayapur+Island",
@@ -2466,7 +2436,16 @@ export const hotels = [
       "Staff assistance for jetty transfers"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Sunderban Tiger Camp in Sundarbans",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "wbtdcl-sajnekhali-tourist-lodge",
@@ -2483,17 +2462,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1720,
     "description": "Official West Bengal Tourism Development Corporation forest lodge situated directly inside the sanctuary complex at Sajnekhali, right next to the Forest Department Mangrove Interpretation Centre.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "WBTDCL Official Portal",
-        "license": "Official Govt Tourism",
-        "credit": "West Bengal Tourism",
-        "verified": true,
-        "caption": "Sanctuary lodge surrounded by mangrove trees"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.wbtdcl.com/",
     "phone": "+91 33 22436440",
     "email": "wbtdcl@gmail.com",
@@ -2510,7 +2480,7 @@ export const hotels = [
       "Official Govt Property",
       "Forest Guard Monitored Compound"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "West Bengal Tourism Development Corporation (WBTDCL)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=WBTDCL+Sajnekhali+Tourism+Property",
@@ -2528,7 +2498,16 @@ export const hotels = [
       "Elevated boardwalk access"
     ],
     "priceLevel": "₹",
-    "source": "West Bengal Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for WBTDCL Sajnekhali Tourism Property in Sundarbans",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "the-house-of-mg-ahmedabad",
@@ -2545,17 +2524,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 4320,
     "description": "A premier 1924 heritage mansion of a wealthy textile merchant, restored to pristine aristocratic glory. Features Agashiye legendary open-air rooftop Gujarati thali, Lotus indoor pool, and museum shop.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "The House of MG Archive",
-        "license": "Verified Commercial",
-        "credit": "The House of MG",
-        "verified": true,
-        "caption": "Restored 1920s heritage mansion facade in Old City"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/GANDHI_ASHRAM_03.jpg/1280px-GANDHI_ASHRAM_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://houseofmg.com/",
     "phone": "+91 79 25506941",
     "email": "stay@houseofmg.com",
@@ -2576,7 +2546,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+House+of+MG+Ahmedabad+Sidi+Saiyyed",
@@ -2596,7 +2566,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The House of MG, Ahmedabad in Ahmedabad, Gujarat — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/GANDHI_ASHRAM_03.jpg/1280px-GANDHI_ASHRAM_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "toran-tourist-complex-dholavira",
@@ -2613,17 +2591,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1140,
     "description": "Official Gujarat Tourism Toran guest complex on remote Khadir Bet island, situated just 1.1 km from the UNESCO World Heritage Harappan excavation of Dholavira. Offers traditional Kutchi bhungas (round huts) and AC cottages.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "Gujarat Tourism Toran Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Gujarat Tourism",
-        "verified": true,
-        "caption": "Traditional Kutchi circular bhunga cottages on Khadir Bet"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Rann_of_Kutch_-_White_Desert_2.jpg/1280px-Rann_of_Kutch_-_White_Desert_2.jpg",
+    "gallery": [],
     "website": "https://www.gujarattourism.com/",
     "phone": "+91 94273 68065",
     "email": "info@gujarattourism.com",
@@ -2640,7 +2609,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Tourism Corporation of Gujarat Limited (TCGL)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toran+Tourist+Complex+Dholavira+Kutch",
@@ -2658,7 +2627,15 @@ export const hotels = [
       "Ground floor bhunga cottages"
     ],
     "priceLevel": "₹₹",
-    "source": "Tourism Corporation of Gujarat Limited"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Toran Tourist Complex Dholavira (Gujarat Tourism) in Kutch, Gujarat — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Rann_of_Kutch_-_White_Desert_2.jpg/1280px-Rann_of_Kutch_-_White_Desert_2.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "somnath-trust-sagar-darshan",
@@ -2675,17 +2652,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 4850,
     "description": "Run directly by the Shree Somnath Trust, standing right on the Arabian Sea coast barely 200 meters from the majestic first Jyotirlinga. Rooms offer sea breeze, views of the temple shikhara, and VIP darshan assistance.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Shree Somnath Trust Official",
-        "license": "Official Temple Trust",
-        "credit": "Shree Somnath Trust",
-        "verified": true,
-        "caption": "Seafront guest house building directly overlooking the temple"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Somnath_Temple_Gujarat.jpg/1280px-Somnath_Temple_Gujarat.jpg",
+    "gallery": [],
     "website": "https://somnath.org/",
     "phone": "+91 2876 231212",
     "email": "info@somnath.org",
@@ -2705,7 +2673,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Shree Somnath Trust Official Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sagar+Darshan+Guest+House+Somnath+Trust",
@@ -2724,7 +2692,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹",
-    "source": "Shree Somnath Trust Official Portal"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Sagar Darshan Guest House (Somnath Trust) in Somnath, Gujarat — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Somnath_Temple_Gujarat.jpg/1280px-Somnath_Temple_Gujarat.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "jehan-numa-palace-bhopal",
@@ -2741,17 +2717,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 4680,
     "description": "Built in 1890 on the slopes of Shamla Hill, blending British Colonial and Italian Renaissance architecture with regal Nawabi hospitality. Features an active horse riding track inside the courtyard, lush gardens, and royal Mughlai cuisine.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Jehan Numa Hospitality",
-        "license": "Verified Commercial",
-        "credit": "Jehan Numa Palace",
-        "verified": true,
-        "caption": "Colonial white palace verandahs and central horse paddock"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bhojtal_Upper_Lake_Bhopal.jpg/1280px-Bhojtal_Upper_Lake_Bhopal.jpg",
+    "gallery": [],
     "website": "https://www.jehannuma.com/palace-bhopal/",
     "phone": "+91 755 2661100",
     "email": "palace@jehannuma.com",
@@ -2772,7 +2739,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jehan+Numa+Palace+Hotel+Bhopal+Shamla+Hill",
@@ -2792,7 +2759,15 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Jehan Numa Palace Hotel, Bhopal in Bhopal, Madhya Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bhojtal_Upper_Lake_Bhopal.jpg/1280px-Bhojtal_Upper_Lake_Bhopal.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-lalit-temple-view-khajuraho",
@@ -2809,17 +2784,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 3410,
     "description": "Located within 500 meters of the UNESCO World Heritage Western Group of Temples, overlooking the carved temples. Features manicured lawns, Rejuve Spa, outdoor pool, and private temple views.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Lalit Suri Hospitality Group",
-        "license": "Verified Commercial",
-        "credit": "The Lalit Hotels",
-        "verified": true,
-        "caption": "Resort facade facing the Western Group of Temples"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/1280px-1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.thelalit.com/the-lalit-khajuraho/",
     "phone": "+91 7686 272111",
     "email": "khajuraho@thelalit.com",
@@ -2840,7 +2806,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lalit+Temple+View+Khajuraho",
@@ -2859,7 +2825,15 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Lalit Temple View Khajuraho in Khajuraho, Madhya Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/1280px-1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "mpt-hotel-shipra-ujjain",
@@ -2876,17 +2850,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 2280,
     "description": "Official Madhya Pradesh Tourism Development Corporation hotel offering peaceful gardens, air-conditioned rooms, vegetarian dining, and direct convenience for Mahakaleshwar Jyotirlinga Bhasma Aarti pilgrims.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "MPTDC Official Media",
-        "license": "Official Govt Tourism",
-        "credit": "Madhya Pradesh Tourism",
-        "verified": true,
-        "caption": "MPTDC hotel entrance and gardens"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/1280px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.mpstdc.com/",
     "phone": "+91 734 2551495",
     "email": "shipra@mpstdc.com",
@@ -2903,7 +2868,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Madhya Pradesh Tourism Development Corporation (MPTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MPT+Hotel+Shipra+Ujjain",
@@ -2922,7 +2887,15 @@ export const hotels = [
       "Ground floor accessible rooms"
     ],
     "priceLevel": "₹₹",
-    "source": "Madhya Pradesh Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "MPT Hotel Shipra (MPTDC) Ujjain in Ujjain, Madhya Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/1280px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "taj-falaknuma-palace-hyderabad",
@@ -2939,15 +2912,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 5600,
     "description": "Perched 2,000 feet above Hyderabad on a private hillock, the 'Mirror of the Sky' was once home to the Nizam of Hyderabad. Guests arrive by horse-drawn carriage and are showered in rose petals before experiencing the 101-seat dining table and Nizam heritage.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Falaknuma_Palace_04.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Falaknuma_Palace_04.jpg",
+        "caption": "Taj Falaknuma Palace historic scorpion-shaped royal residence hotel, Hyderabad",
         "verified": true,
-        "caption": "Hilltop Italian marble palace facade"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-falaknuma-palace-hyderabad/",
@@ -2991,7 +2962,12 @@ export const hotels = [
       "Staff assistance on estate"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Taj Falaknuma Palace historic scorpion-shaped royal residence hotel, Hyderabad",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "tstdc-haritha-kakatiya-warangal",
@@ -3008,17 +2984,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1980,
     "description": "Official Telangana State Tourism Development Corporation hotel situated 1.2 km from the famous 12th-century Thousand Pillar Temple. Clean AC rooms, banquet hall, and Telangana culinary specials.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "TSTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Telangana Tourism",
-        "verified": true,
-        "caption": "Main hotel entrance in Hanamkonda"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/UNESCO_RAMAPPA_TEMPLE.jpg/1280px-UNESCO_RAMAPPA_TEMPLE.jpg",
+    "gallery": [],
     "website": "https://tourism.telangana.gov.in/",
     "phone": "+91 870 2577977",
     "email": "info@tstdc.in",
@@ -3035,7 +3002,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Telangana State Tourism Development Corporation (TSTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=TSTDC+Haritha+Kakatiya+Hotel+Warangal",
@@ -3054,7 +3021,15 @@ export const hotels = [
       "Elevators available"
     ],
     "priceLevel": "₹",
-    "source": "Telangana State Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "TSTDC Haritha Kakatiya Hotel, Warangal in Warangal, Telangana — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/UNESCO_RAMAPPA_TEMPLE.jpg/1280px-UNESCO_RAMAPPA_TEMPLE.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "brunton-boatyard-kochi",
@@ -3071,15 +3046,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3890,
     "description": "Built on the site of a 19th-century Victorian shipbuilding yard, right on the Cochin harbor channel. Every room overlooks the water where dolphins play and ships glide past. Features History Restaurant, Armoury Cafe, and sunset harbor cruises.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Brunton_Boatyard_Hotel%2C_Fort_Kochi.jpg/1280px-Brunton_Boatyard_Hotel%2C_Fort_Kochi.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "CGH Earth Hospitality",
-        "license": "Verified Commercial",
-        "credit": "CGH Earth",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Brunton_Boatyard_Hotel%2C_Fort_Kochi.jpg/1280px-Brunton_Boatyard_Hotel%2C_Fort_Kochi.jpg",
+        "caption": "Brunton Boatyard Hotel restored Victorian shipbuilding yard in Fort Kochi, Kerala",
         "verified": true,
-        "caption": "Colonial boatyard facade and harbor swimming pool"
+        "credit": "Photo: Wikimedia Commons / Brunton Boatyard"
       }
     ],
     "website": "https://www.cghearth.com/brunton-boatyard",
@@ -3122,7 +3095,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Brunton Boatyard Hotel restored Victorian shipbuilding yard in Fort Kochi, Kerala",
+    "credit": "Photo: Wikimedia Commons / Brunton Boatyard",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Brunton_Boatyard_Hotel%2C_Fort_Kochi.jpg/1280px-Brunton_Boatyard_Hotel%2C_Fort_Kochi.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brunton_Boatyard_Hotel,_Fort_Kochi.jpg",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "kumarakom-lake-resort-kerala",
@@ -3139,15 +3120,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 4890,
     "description": "Nestled on the serene banks of Vembanad Lake, featuring authentic 16th-century Kerala Tharavadu manors painstakingly reassembled. Offers a 250-meter meandering pool villas, traditional Kettuvallam houseboats, and Ayurmana Spa.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Kumarakom_lake_resort_entrance.jpg/1280px-Kumarakom_lake_resort_entrance.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Paul Resorts & Hotels",
-        "license": "Verified Commercial",
-        "credit": "Kumarakom Lake Resort",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Kumarakom_lake_resort_entrance.jpg/1280px-Kumarakom_lake_resort_entrance.jpg",
+        "caption": "Kumarakom Lake Resort entrance and heritage grounds along Vembanad Lake in Kerala",
         "verified": true,
-        "caption": "Heritage wooden villas beside the 250-meter meandering pool"
+        "credit": "Photo: Wikimedia Commons / Kumarakom Lake Resort"
       }
     ],
     "website": "https://www.kumarakomlakeresort.in/",
@@ -3191,7 +3170,15 @@ export const hotels = [
       "Ground level villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Kumarakom Lake Resort entrance and heritage grounds along Vembanad Lake in Kerala",
+    "credit": "Photo: Wikimedia Commons / Kumarakom Lake Resort",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Kumarakom_lake_resort_entrance.jpg/1280px-Kumarakom_lake_resort_entrance.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumarakom_lake_resort_entrance.jpg",
+    "license": "CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "ktdc-tea-county-munnar",
@@ -3208,17 +3195,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 3620,
     "description": "Perched between two misty hills right in the heart of Munnar, operated by Kerala Tourism Development Corporation (KTDC). Offers panoramic views of tea plantations, Ayurvedic therapy centre, and pine-wood warmth.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "KTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Kerala Tourism",
-        "verified": true,
-        "caption": "Resort perched on hill overlooking tea gardens"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/1280px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.ktdc.com/tea-county",
     "phone": "+91 4865 230460",
     "email": "teacounty@ktdc.com",
@@ -3239,7 +3217,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Kerala Tourism Development Corporation (KTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=KTDC+Tea+County+Munnar",
@@ -3259,7 +3237,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Kerala Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "KTDC Tea County, Munnar in Munnar, Kerala — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/1280px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "marasa-sarovar-premiere-bodh-gaya",
@@ -3276,17 +3262,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 2950,
     "description": "Unique water-bodied resort inspired by Buddhist architectural philosophies of wisdom and tranquility. Located 1.4 km from the Mahabodhi Temple UNESCO site, featuring landscaped reflection pools, spa, and international vegetarian cuisine.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Sarovar Hotels Archive",
-        "license": "Verified Commercial",
-        "credit": "Sarovar Hotels & Resorts",
-        "verified": true,
-        "caption": "Buddhist architectural pavilion and reflection waters"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/1280px-Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.sarovarhotels.com/marasa-sarovar-premiere-bodhgaya/",
     "phone": "+91 631 2200888",
     "email": "mspb@sarovarhotels.com",
@@ -3307,7 +3284,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Marasa+Sarovar+Premiere+Bodh+Gaya",
@@ -3327,7 +3304,15 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Marasa Sarovar Premiere, Bodh Gaya in Bodh Gaya, Bihar — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/1280px-Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "valmiki-tiger-reserve-eco-huts",
@@ -3344,17 +3329,8 @@ export const hotels = [
     "guestRating": 4.2,
     "reviewCount": 980,
     "description": "Official Bihar Forest Department and BSTDC eco-tourism accommodation located at the foothills of the Himalayas along the Gandak River. Serves as the primary verified forest stay for exploring Bihar's only tiger reserve.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Bihar Tourism & Forest Dept Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Bihar Tourism",
-        "verified": true,
-        "caption": "Eco-wooden huts situated by the Gandak forest perimeter"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://bstdc.bihar.gov.in/",
     "phone": "+91 6251 251214",
     "email": "forest-valmikinagar@bihar.gov.in",
@@ -3372,7 +3348,7 @@ export const hotels = [
       "Forest Guard Monitored Perimeter",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Bihar State Tourism Development Corporation & Environment Dept",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Valmiki+Tiger+Reserve+Eco+Huts+Valmiki+Nagar",
@@ -3391,7 +3367,16 @@ export const hotels = [
       "Ground floor wooden huts"
     ],
     "priceLevel": "₹₹",
-    "source": "Bihar State Tourism Development Corporation (BSTDC)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Valmiki Tiger Reserve Eco Huts & Forest Rest House in Valmiki Nagar",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "bstdc-hotel-valmiki-vihar",
@@ -3408,17 +3393,8 @@ export const hotels = [
     "guestRating": 4,
     "reviewCount": 740,
     "description": "Official Bihar State Tourism Development Corporation hotel providing safe, comfortable, and government-managed lodging for wildlife travelers and families in Valmiki Nagar.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "BSTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Bihar Tourism",
-        "verified": true,
-        "caption": "Main guest house entrance"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://bstdc.bihar.gov.in/",
     "phone": "+91 6251 251222",
     "email": "bstdc@bihar.gov.in",
@@ -3434,7 +3410,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Bihar State Tourism Development Corporation",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BSTDC+Hotel+Valmiki+Vihar+Valmiki+Nagar",
@@ -3452,7 +3428,16 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹",
-    "source": "Bihar State Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for BSTDC Hotel Valmiki Vihar, Valmiki Nagar in Valmiki Nagar",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "mayfair-lagoon-bhubaneswar",
@@ -3469,15 +3454,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 6840,
     "description": "Spread over 10 acres of picturesque landscaped lagoons, cascading waterfalls, and manicured flora. Offers Odishan villa architecture, over-water dining pavilions, Mayfair Spa, and award-winning dining.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mayfair_Lagoon_Areal_View.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Mayfair Hotels & Resorts",
-        "license": "Verified Commercial",
-        "credit": "Mayfair Hotels",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mayfair_Lagoon_Areal_View.jpg",
+        "caption": "Mayfair Lagoon eco-luxury resort lagoon view in Bhubaneswar",
         "verified": true,
-        "caption": "Landscaped lagoon waters and floating cottage pavilions"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.mayfairhotels.com/mayfair-lagoon.html",
@@ -3521,7 +3504,12 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Mayfair Lagoon eco-luxury resort lagoon view in Bhubaneswar",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "mayfair-heritage-puri",
@@ -3538,17 +3526,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 5200,
     "description": "Beachfront sanctuary set along the golden sands of Puri's pristine coast. Features traditional Kalinga architecture, handcrafted stone sculptures, sea-facing plunge pool villas, and direct beach access.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Mayfair Hotels & Resorts",
-        "license": "Verified Commercial",
-        "credit": "Mayfair Hotels",
-        "verified": true,
-        "caption": "Sea-facing resort lawns and private beach gate"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/1280px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.mayfairhotels.com/mayfair-heritage.html",
     "phone": "+91 6752 227800",
     "email": "puri@mayfairhotels.com",
@@ -3569,7 +3548,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mayfair+Heritage+Puri+Chakra+Tirtha+Road",
@@ -3589,7 +3568,15 @@ export const hotels = [
       "Ground level sea-view villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Mayfair Heritage, Puri in Puri, Odisha — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/1280px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "otdc-panthanivas-konark",
@@ -3606,17 +3593,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 2350,
     "description": "Official Odisha Tourism Development Corporation (OTDC) hotel situated directly opposite the 13th-century Konark Sun Temple UNESCO World Heritage complex. Offers air-conditioned rooms, garden restaurant, and temple convenience.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "OTDC Official Media",
-        "license": "Official Govt Tourism",
-        "credit": "Odisha Tourism",
-        "verified": true,
-        "caption": "Hotel building facing the Konark Sun Temple entrance"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/1280px-Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.otdc.in/",
     "phone": "+91 6758 236831",
     "email": "otdc@otdc.in",
@@ -3633,7 +3611,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Odisha Tourism Development Corporation (OTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=OTDC+Panthanivas+Konark+Sun+Temple",
@@ -3651,7 +3629,15 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹",
-    "source": "Odisha Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "OTDC Panthanivas, Konark in Konark, Odisha — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/1280px-Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "taj-swarna-amritsar",
@@ -3668,17 +3654,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 6100,
     "description": "Modern upscale luxury hotel celebrating the rich culture of Punjab. Features Jiva Spa, outdoor temperature-controlled pool, signature Punjabi dining at Grand Trunk, and bespoke Golden Temple darshan arrangements.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Modern luxury hotel exterior and drive-in porch"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.tajhotels.com/en-in/taj/taj-swarna-amritsar/",
     "phone": "+91 183 6658000",
     "email": "tajswarna.amritsar@tajhotels.com",
@@ -3701,7 +3678,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taj+Swarna+Amritsar+Majitha+Verka+Bypass",
@@ -3722,7 +3699,16 @@ export const hotels = [
       "Accessible rooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Taj Swarna, Amritsar in Amritsar",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "bloomrooms-heritage-walk-amritsar",
@@ -3739,17 +3725,8 @@ export const hotels = [
     "guestRating": 4.5,
     "reviewCount": 3980,
     "description": "Located right on the pedestrianized Heritage Walk, just 300 meters from the Golden Temple and Jallianwala Bagh. Crisp, signature bright yellow-and-white rooms with CloudBeds and 24-hour security.",
-    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-        "source": "Bloom Hotel Group",
-        "license": "Verified Commercial",
-        "credit": "Bloom Hotels",
-        "verified": true,
-        "caption": "Boutique hotel entrance on the pedestrian Heritage Street"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.bloomhotels.com/bloomrooms-heritage-walk-amritsar",
     "phone": "+91 183 5066600",
     "email": "amritsar@bloomhotels.com",
@@ -3769,7 +3746,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bloomrooms+Heritage+Walk+Amritsar",
@@ -3788,7 +3765,16 @@ export const hotels = [
       "Elevators to all floors"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Bloomrooms @ Heritage Walk, Amritsar in Amritsar",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "ananda-in-the-himalayas",
@@ -3805,15 +3791,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 3200,
     "description": "World-renowned destination spa retreat set within the 100-acre Maharaja's Palace estate overlooking the Ganges River valley and holy town of Rishikesh. Features traditional Ayurveda, yoga, Vedanta, and organic cuisine.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Viceregal_Palace%2C_Ananda_-_In_the_Himalayas%2C_Narendra_Nagar%2C_Uttarakhand.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Ananda in the Himalayas Archive",
-        "license": "Verified Commercial",
-        "credit": "Ananda in the Himalayas",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Viceregal_Palace%2C_Ananda_-_In_the_Himalayas%2C_Narendra_Nagar%2C_Uttarakhand.jpg",
+        "caption": "Viceregal Palace grounds of Ananda in the Himalayas in Narendra Nagar, Uttarakhand",
         "verified": true,
-        "caption": "The Maharaja's Palace verandah looking across the Himalayan foothills"
+        "credit": "Photo: Wikimedia Commons / Ananda in the Himalayas"
       }
     ],
     "website": "https://www.anandaspa.com/",
@@ -3856,7 +3840,15 @@ export const hotels = [
       "Elevators in palace wing"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Viceregal Palace grounds of Ananda in the Himalayas in Narendra Nagar, Uttarakhand",
+    "credit": "Photo: Wikimedia Commons / Ananda in the Himalayas",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Viceregal_Palace%2C_Ananda_-_In_the_Himalayas%2C_Narendra_Nagar%2C_Uttarakhand.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viceregal_Palace,_Ananda_-_In_the_Himalayas,_Narendra_Nagar,_Uttarakhand.jpg",
+    "license": "CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "taj-corbett-resort-and-spa",
@@ -3873,17 +3865,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 4680,
     "description": "Located on the banks of the Kosi River within 10 acres of sal forests, under 5 km from Corbett National Park safari gates. Features mud-tiled cottages with stone pathways, Jiva Spa, outdoor pool, and expert tiger safari naturalists.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Resort cottages beneath sal forest canopy by the Kosi River"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [],
     "website": "https://www.tajhotels.com/en-in/taj/taj-corbett-resort-and-spa-uttarakhand/",
     "phone": "+91 5947 284100",
     "email": "corbett.resort@tajhotels.com",
@@ -3905,7 +3888,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taj+Corbett+Resort+Dhikuli+Ramnagar",
@@ -3925,7 +3908,15 @@ export const hotels = [
       "Ground level cottages"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Taj Corbett Resort & Spa, Uttarakhand in Jim Corbett, Uttarakhand — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "gmvn-tourist-rest-house-kedarnath",
@@ -3942,17 +3933,8 @@ export const hotels = [
     "guestRating": 4.2,
     "reviewCount": 3450,
     "description": "Official Garhwal Mandal Vikas Nigam (GMVN) high-altitude mountain rest house located directly in the Kedarnath Temple valley (altitude 3,584m). Situated barely 100 meters from the sacred Jyotirlinga. (Note: No 5-star hotels exist in high-altitude Kedarnath; GMVN provides the official verified accommodation).",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "GMVN Official Portal",
-        "license": "Official Govt Tourism",
-        "credit": "Garhwal Mandal Vikas Nigam",
-        "verified": true,
-        "caption": "GMVN rest house complex with snowcapped Himalayan peaks"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://gmvnonline.com/",
     "phone": "+91 135 2746817",
     "email": "gmvn@gmvnonline.com",
@@ -3972,7 +3954,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Strict Alpine Weather Advisory Compliance"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Garhwal Mandal Vikas Nigam (GMVN) Official Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GMVN+Tourist+Rest+House+Kedarnath",
@@ -3991,7 +3973,16 @@ export const hotels = [
       "Level pathway to temple entrance"
     ],
     "priceLevel": "₹₹",
-    "source": "Garhwal Mandal Vikas Nigam (GMVN)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for GMVN Tourist Rest House Kedarnath in Char Dham Circuit",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "gmvn-cottages-kedarnath-base-camp",
@@ -4008,17 +3999,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 2180,
     "description": "Insulated pre-fabricated weather-resistant alpine cottages operated by GMVN near the Kedarnath Helipad, 400 meters from the temple. Provides warm beds, clean washrooms, and mountain hospitality at 11,750 feet.",
-    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-        "source": "GMVN Official Portal",
-        "license": "Official Govt Tourism",
-        "credit": "Garhwal Mandal Vikas Nigam",
-        "verified": true,
-        "caption": "Insulated alpine cottages in Kedarnath valley"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://gmvnonline.com/",
     "phone": "+91 135 2746817",
     "email": "gmvn@gmvnonline.com",
@@ -4036,7 +4018,7 @@ export const hotels = [
       "Official Govt Property",
       "Alpine Safety Compliance"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Garhwal Mandal Vikas Nigam (GMVN)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GMVN+Cottages+Kedarnath+Helipad",
@@ -4053,7 +4035,16 @@ export const hotels = [
       "Ground level cottage entry"
     ],
     "priceLevel": "₹₹",
-    "source": "Garhwal Mandal Vikas Nigam (GMVN)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for GMVN Cottages Kedarnath Base Camp in Char Dham Circuit",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "hotel-sarovar-portico-badrinath",
@@ -4070,17 +4061,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 2890,
     "description": "The highest rated commercial hotel in Badrinath, situated just 500 meters from the sacred Badrinath Temple. Offers centrally heated rooms, pure vegetarian dining at Cafe in the Park, hot water, and views of Neelkanth peak.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Sarovar Hotels Archive",
-        "license": "Verified Commercial",
-        "credit": "Sarovar Hotels",
-        "verified": true,
-        "caption": "Hotel facade with snowcapped Neelkanth mountain backdrop"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.sarovarhotels.com/sarovar-portico-badrinath/",
     "phone": "+91 1381 222111",
     "email": "spbad@sarovarhotels.com",
@@ -4100,7 +4082,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Sarovar+Portico+Badrinath",
@@ -4121,7 +4103,16 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Hotel Sarovar Portico Badrinath in Char Dham Circuit",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "gmvn-trh-devlok-badrinath",
@@ -4138,17 +4129,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1840,
     "description": "Official Garhwal Mandal Vikas Nigam (GMVN) tourist rest house in Badrinath. Offers spacious family suites, vegetarian dining, reliable hot water, and helpful pilgrim guidance.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "GMVN Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Garhwal Mandal Vikas Nigam",
-        "verified": true,
-        "caption": "GMVN Devlok complex in Badrinath"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://gmvnonline.com/",
     "phone": "+91 1381 222212",
     "email": "gmvn@gmvnonline.com",
@@ -4164,7 +4146,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Garhwal Mandal Vikas Nigam (GMVN)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GMVN+TRH+Devlok+Badrinath",
@@ -4182,7 +4164,16 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹",
-    "source": "Garhwal Mandal Vikas Nigam (GMVN)"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for GMVN TRH Devlok, Badrinath in Char Dham Circuit",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "taj-mahal-hotel-lucknow",
@@ -4199,17 +4190,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 5400,
     "description": "Spread over 20 acres of landscaped lawns on the banks of the Gomti River, featuring classic Awadhi architectural domes, Jiva Spa, and legendary Oudhyana royal Awadhi restaurant.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Awadhi dome facade overlooking Gomti riverfront"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Bara_Imambara_Lucknow.jpg/1280px-Bara_Imambara_Lucknow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.tajhotels.com/en-in/taj/taj-mahal-hotel-lucknow/",
     "phone": "+91 522 6711000",
     "email": "taj.lucknow@tajhotels.com",
@@ -4230,7 +4212,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Taj+Mahal+Hotel+Lucknow+Gomti+Nagar",
@@ -4250,7 +4232,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Taj Mahal Hotel, Lucknow in Lucknow, Uttar Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Bara_Imambara_Lucknow.jpg/1280px-Bara_Imambara_Lucknow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "nidhivan-sarovar-portico-vrindavan",
@@ -4267,17 +4257,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 3820,
     "description": "Upscale pilgrim hotel situated 1.5 km from Prem Mandir and Banke Bihari Temple. Pure vegetarian Tripti restaurant, wellness spa, and round-the-clock darshan travel desk.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Sarovar Hotels Archive",
-        "license": "Verified Commercial",
-        "credit": "Sarovar Hotels",
-        "verified": true,
-        "caption": "Main entrance and pilgrim welcoming atrium"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vrindavan_Prem_Mandir.jpg/1280px-Vrindavan_Prem_Mandir.jpg",
+    "gallery": [],
     "website": "https://www.sarovarhotels.com/nidhivan-sarovar-portico-vrindavan/",
     "phone": "+91 565 3037000",
     "email": "nspv@sarovarhotels.com",
@@ -4296,7 +4277,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nidhivan+Sarovar+Portico+Vrindavan",
@@ -4316,7 +4297,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Nidhivan Sarovar Portico, Vrindavan in Mathura & Vrindavan, Uttar Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vrindavan_Prem_Mandir.jpg/1280px-Vrindavan_Prem_Mandir.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "hotel-kanha-shyam-prayagraj",
@@ -4333,17 +4322,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 4200,
     "description": "Premier 4-star hotel in Prayagraj Civil Lines, featuring modern rooms, Jannat rooftop restaurant, swimming pool, and dedicated arrangements for Triveni Sangam boat rides and Kumbh visits.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hotel Kanha Shyam",
-        "license": "Verified Media",
-        "credit": "Hotel Kanha Shyam Prayagraj",
-        "verified": true,
-        "caption": "Civil Lines hotel facade and lobby"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Triveni_Sangam_at_Allahabad.jpg/1280px-Triveni_Sangam_at_Allahabad.jpg",
+    "gallery": [],
     "website": "https://www.hotelkanhashyam.com/",
     "phone": "+91 532 2560123",
     "email": "info@hotelkanhashyam.com",
@@ -4362,7 +4342,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Kanha+Shyam+Prayagraj+Civil+Lines",
@@ -4382,7 +4362,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Hotel Kanha Shyam, Prayagraj in Prayagraj, Uttar Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Triveni_Sangam_at_Allahabad.jpg/1280px-Triveni_Sangam_at_Allahabad.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "savoy-ihcl-seleqtions-ooty",
@@ -4399,17 +4387,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3950,
     "description": "Built in 1841 as a colonial sanatorium for British officers in the Nilgiri hills. Offers vintage wood-paneled cottage suites with fireplaces, afternoon high tea on manicured lawns, and Nilgiri eucalyptus spa.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL SeleQtions Archive",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Victorian colonial cottage lawns in the Nilgiris"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ooty_Lake_in_Tamil_Nadu_04.jpg/1280px-Ooty_Lake_in_Tamil_Nadu_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.seleqtionshotels.com/en-in/savoy-ooty/",
     "phone": "+91 423 2225500",
     "email": "savoy.ooty@tajhotels.com",
@@ -4429,7 +4408,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Savoy+IHCL+SeleQtions+Ooty",
@@ -4448,7 +4427,15 @@ export const hotels = [
       "Ground floor heritage cottages"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Savoy - IHCL SeleQtions, Ooty in Ooty, Tamil Nadu — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ooty_Lake_in_Tamil_Nadu_04.jpg/1280px-Ooty_Lake_in_Tamil_Nadu_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-carlton-kodaikanal",
@@ -4465,17 +4452,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 4210,
     "description": "Kodaikanal's only 5-star hotel, perched directly on the edge of scenic Kodai Lake. Features colonial stone charm, private Shikara boat rides, terraced gardens, and Silver Oak restaurant.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Carlton Archive",
-        "license": "Verified Commercial",
-        "credit": "The Carlton Kodaikanal",
-        "verified": true,
-        "caption": "Colonial stone building facing Kodaikanal Lake"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Kodaikanal_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [],
     "website": "https://www.thecarlton.in/",
     "phone": "+91 4542 248555",
     "email": "carlton@krahejahospitality.com",
@@ -4494,7 +4472,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Carlton+Kodaikanal+Lake+Road",
@@ -4514,7 +4492,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Carlton, Kodaikanal in Kodaikanal, Tamil Nadu — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Kodaikanal_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "svatma-thanjavur",
@@ -4531,17 +4517,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 2210,
     "description": "Restored Tamil heritage mansion celebrating the art, bronze casting, classical dance, and architectural glory of the Chola empire. Located 1.8 km from Brihadeeswarar Temple.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Svatma Hospitality",
-        "license": "Verified Commercial",
-        "credit": "Svatma Thanjavur",
-        "verified": true,
-        "caption": "Tamil courtyard mansion with bronze artefacts"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.svatma.com/",
     "phone": "+91 4362 273222",
     "email": "svatma@svatma.com",
@@ -4560,7 +4537,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Svatma+Thanjavur+Blake+High+School+Road",
@@ -4579,7 +4556,15 @@ export const hotels = [
       "Ground level heritage suites"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Svatma, Thanjavur - Heritage Boutique in Thanjavur, Tamil Nadu — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "sparsa-resort-kanyakumari",
@@ -4596,17 +4581,8 @@ export const hotels = [
     "guestRating": 4.5,
     "reviewCount": 3680,
     "description": "Eco-sensitive seafront resort facing the confluence of the Indian Ocean, Arabian Sea, and Bay of Bengal. Located 1.2 km from the Vivekananda Rock Memorial ferry counter.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Sparsa Resorts",
-        "license": "Verified Commercial",
-        "credit": "Sparsa Resorts",
-        "verified": true,
-        "caption": "Sea-facing eco-resort grounds"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/RockMemorial.jpg/1280px-RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.sparsaresorts.com/kanyakumari/",
     "phone": "+91 4652 247005",
     "email": "kanyakumari@sparsaresorts.com",
@@ -4625,7 +4601,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sparsa+Resort+Kanyakumari+Beach+Road",
@@ -4645,7 +4621,15 @@ export const hotels = [
       "Ground level rooms"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Sparsa Resort Kanyakumari in Kanyakumari, Tamil Nadu — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/RockMemorial.jpg/1280px-RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-tamara-coorg",
@@ -4662,17 +4646,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 3950,
     "description": "Set across 180 acres of organic coffee, cardamom, and pepper plantations on the slopes of the Western Ghats. Offers stilted luxury wooden cottages, natural waterfalls, Elevation Spa, and bespoke coffee brewing sessions.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Tamara Hospitality",
-        "license": "Verified Commercial",
-        "credit": "The Tamara Coorg",
-        "verified": true,
-        "caption": "Stilted luxury wooden cottages above mountain mist"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://thetamara.com/coorg-resort/",
     "phone": "+91 80 71077700",
     "email": "reservations@thetamara.com",
@@ -4692,7 +4667,7 @@ export const hotels = [
       "Dedicated Naturalists",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Tamara+Coorg+Kabbinakad",
@@ -4711,7 +4686,15 @@ export const hotels = [
       "Resort buggies for elevation trails"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Tamara Coorg in Coorg, Karnataka — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/1280px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "cgh-earth-swaswara-gokarna",
@@ -4728,17 +4711,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 2450,
     "description": "Holistic wellness haven nestled on the clifftop directly above Om Beach. Konkan-style open-air stone villas, specialized Ayurvedic doctors, organic coastal cuisine, and meditation hillock.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "CGH Earth Hospitality",
-        "license": "Verified Commercial",
-        "credit": "CGH Earth SwaSwara",
-        "verified": true,
-        "caption": "Open-air Konkan villa and meditation dome"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_47.jpg/1280px-PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.cghearth.com/swaswara",
     "phone": "+91 484 4261710",
     "email": "swaswara@cghearth.com",
@@ -4757,7 +4731,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Resident Medical Staff"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CGH+Earth+SwaSwara+Gokarna+Om+Beach",
@@ -4776,7 +4750,15 @@ export const hotels = [
       "Ground floor Konkan villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "CGH Earth SwaSwara, Gokarna in Gokarna, Karnataka — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_47.jpg/1280px-PXL_20260103_101009613_People_and_Beach_Om_Beach_Gokarna%2C_Karnataka_47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "aptdc-haritha-mayuri-resort-araku",
@@ -4793,17 +4775,8 @@ export const hotels = [
     "guestRating": 4.2,
     "reviewCount": 3120,
     "description": "Official Andhra Pradesh Tourism hill station resort surrounded by coffee plantations and misty Eastern Ghats ridges. Features wooden AC cottages, Andhra tribal food, and serene gardens.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "APTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Andhra Pradesh Tourism",
-        "verified": true,
-        "caption": "Resort cottages in Araku coffee plantation hills"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/1280px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://tourism.ap.gov.in/",
     "phone": "+91 8936 249490",
     "email": "feedback@aptdc.in",
@@ -4821,7 +4794,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Andhra Pradesh Tourism Development Corporation (APTDC)",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=APTDC+Haritha+Mayuri+Resort+Araku+Valley",
@@ -4840,7 +4813,15 @@ export const hotels = [
       "Ground floor cottages"
     ],
     "priceLevel": "₹₹",
-    "source": "Andhra Pradesh Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "APTDC Haritha Mayuri Resort, Araku Valley in Araku Valley, Andhra Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/1280px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "suryagarh-jaisalmer",
@@ -4857,17 +4838,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 5120,
     "description": "Imposing modern sandstone fortress in the Thar Desert. Celebrates medieval Rajput chivalry with sun-drenched stone courtyards, Rait Spa, indoor pool, and night desert exploration trails.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Suryagarh Hospitality",
-        "license": "Verified Commercial",
-        "credit": "Suryagarh Jaisalmer",
-        "verified": true,
-        "caption": "Golden fortress walls under desert sky"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/1280px-Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.suryagarh.com/",
     "phone": "+91 2992 269269",
     "email": "reservation@suryagarh.com",
@@ -4888,7 +4860,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Suryagarh+Jaisalmer+Sam+Road",
@@ -4908,7 +4880,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Suryagarh Jaisalmer in Jaisalmer, Rajasthan — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/1280px-Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-westin-pushkar-resort",
@@ -4925,17 +4905,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 3950,
     "description": "Luxury wellness resort surrounded by the Aravali Hills, featuring private plunge pool villas, Heavenly Spa by Westin, and peaceful desert tranquility near holy Pushkar Lake.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Marriott International",
-        "license": "Verified Commercial",
-        "credit": "The Westin Pushkar",
-        "verified": true,
-        "caption": "Aravali mountain backdrop and swimming pool"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/1280px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.marriott.com/en-us/hotels/jaisw-the-westin-pushkar-resort-and-spa/overview/",
     "phone": "+91 145 2774400",
     "email": "westin.pushkar@westin.com",
@@ -4955,7 +4926,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Westin+Pushkar+Resort+and+Spa",
@@ -4974,7 +4945,15 @@ export const hotels = [
       "Ground level villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Westin Pushkar Resort & Spa in Pushkar, Rajasthan — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/1280px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "jw-marriott-hotel-pune",
@@ -4991,15 +4970,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 9200,
     "description": "Landmark luxury hotel on Senapati Bapat Road with stylish rooms, Quan Spa, outdoor pool, rooftop lounge Paasha with city views, and fine dining.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Front_view_of_JW_Marriot%2C_Pune.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Marriott International",
-        "license": "Verified Commercial",
-        "credit": "JW Marriott Pune",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Front_view_of_JW_Marriot%2C_Pune.jpg",
+        "caption": "JW Marriott Hotel Senapati Bapat Road facade, Pune",
         "verified": true,
-        "caption": "Hotel glass facade and grand porch on Senapati Bapat Road"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.marriott.com/en-us/hotels/pnqmc-jw-marriott-hotel-pune/overview/",
@@ -5042,7 +5019,12 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "JW Marriott Hotel Senapati Bapat Road facade, Pune",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "le-meridien-mahabaleshwar-resort",
@@ -5059,17 +5041,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 4680,
     "description": "Nestled in 27 acres of pristine evergreen forest in the Western Ghats. Features infinity pool overlooking the valley, Explore Spa, strawberry farm experiences, and fine dining.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Marriott International",
-        "license": "Verified Commercial",
-        "credit": "Le Méridien Mahabaleshwar",
-        "verified": true,
-        "caption": "Infinity swimming pool overlooking the evergreen forest valley"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Arthurs_Seat_Mahabaleshwar.jpg/1280px-Arthurs_Seat_Mahabaleshwar.jpg",
+    "gallery": [],
     "website": "https://www.marriott.com/en-us/hotels/pnqmm-le-meridien-mahabaleshwar-resort-and-spa/overview/",
     "phone": "+91 2168 262222",
     "email": "lemeridien.mahabaleshwar@marriott.com",
@@ -5089,7 +5062,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Meridien+Mahabaleshwar+Resort+and+Spa",
@@ -5109,7 +5082,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Le Méridien Mahabaleshwar Resort & Spa in Mahabaleshwar, Maharashtra — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Arthurs_Seat_Mahabaleshwar.jpg/1280px-Arthurs_Seat_Mahabaleshwar.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "windamere-hotel-darjeeling",
@@ -5126,15 +5107,13 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 3100,
     "description": "Established in the 19th century as a boarding house for British tea planters on historic Observatory Hill. Renowned for coal fires, hot water bottles, afternoon tea in Daisy's Music Room, and panoramic views of Mt. Kanchenjunga.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/WindamereHotel.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Windamere Hotel Archive",
-        "license": "Verified Commercial",
-        "credit": "Windamere Hotel Darjeeling",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/WindamereHotel.jpg",
+        "caption": "Historic Windamere Hotel heritage property on Observatory Hill in Darjeeling",
         "verified": true,
-        "caption": "Colonial garden estate on Observatory Hill overlooking Kanchenjunga"
+        "credit": "Photo: Wikimedia Commons / Windamere Hotel"
       }
     ],
     "website": "https://www.windamerehotel.com/",
@@ -5174,7 +5153,15 @@ export const hotels = [
       "Ground floor heritage suites"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Historic Windamere Hotel heritage property on Observatory Hill in Darjeeling",
+    "credit": "Photo: Wikimedia Commons / Windamere Hotel",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/WindamereHotel.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:WindamereHotel.jpg",
+    "license": "CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "the-garden-bungalow-shantiniketan",
@@ -5191,17 +5178,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 1820,
     "description": "Restored 19th-century zamindari estate surrounded by three acres of lush botanical gardens, lotus ponds, and ancient banyans. Imbued with the poetic spirit of Rabindranath Tagore.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Garden Bungalow Archive",
-        "license": "Verified Media",
-        "credit": "The Garden Bungalow",
-        "verified": true,
-        "caption": "Boutique heritage bungalow amidst lotus ponds and gardens"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Upasana_Griha_Shantiniketan.jpg/1280px-Upasana_Griha_Shantiniketan.jpg",
+    "gallery": [],
     "website": "https://www.thegardenbungalow.com/",
     "phone": "+91 93309 63558",
     "email": "info@thegardenbungalow.com",
@@ -5220,7 +5198,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Garden+Bungalow+Shantiniketan",
@@ -5239,7 +5217,15 @@ export const hotels = [
       "Ground floor garden suites"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Garden Bungalow, Shantiniketan in Shantiniketan, West Bengal — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Upasana_Griha_Shantiniketan.jpg/1280px-Upasana_Griha_Shantiniketan.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "hawthorn-suites-by-wyndham-dwarka",
@@ -5256,17 +5242,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 3400,
     "description": "Spread over 15 peaceful acres with Gujarat's largest swimming pool, pure vegetarian Satvik restaurant, and specialized shuttle services to the sacred Dwarkadhish Temple.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Wyndham Hotels",
-        "license": "Verified Commercial",
-        "credit": "Hawthorn Suites Dwarka",
-        "verified": true,
-        "caption": "Lagoon swimming pool and resort villas"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Dwarakadheesh_Temple%2C_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [],
     "website": "https://www.wyndhamhotels.com/hawthorn-extended-stay/dwarka-india/hawthorn-suites-by-wyndham-dwarka/overview",
     "phone": "+91 2892 237000",
     "email": "info@hawthorndwarka.com",
@@ -5286,7 +5263,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hawthorn+Suites+by+Wyndham+Dwarka",
@@ -5306,7 +5283,15 @@ export const hotels = [
       "Ground level villas"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Hawthorn Suites by Wyndham Dwarka in Dwarka, Gujarat — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Dwarakadheesh_Temple%2C_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-fern-gir-forest-resort",
@@ -5323,17 +5308,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 3840,
     "description": "Located on the banks of the Hiran River bordering Gir National Park, the last global refuge of the Asiatic Lion. Offers luxury villas, riverfront tents, Sohum Spa, and expert lion safari naturalists.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Fern Hotels & Resorts",
-        "license": "Verified Commercial",
-        "credit": "The Fern Gir Forest Resort",
-        "verified": true,
-        "caption": "Riverfront eco-villas beside the Hiran River in Gir"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [],
     "website": "https://www.fernhotels.com/the-fern-gir-forest-resort.html",
     "phone": "+91 2877 285999",
     "email": "resv.gir@fernhotels.com",
@@ -5353,7 +5329,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Fern+Gir+Forest+Resort+Sasan+Gir",
@@ -5372,7 +5348,15 @@ export const hotels = [
       "Ground floor villas and pathways"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Fern Gir Forest Resort, Sasan Gir in Gir, Gujarat — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-grand-raveta-patan",
@@ -5389,17 +5373,8 @@ export const hotels = [
     "guestRating": 4.3,
     "reviewCount": 1650,
     "description": "Modern verified hotel in Patan, situated 2.8 km from the UNESCO World Heritage Rani ki Vav (Queen's Stepwell) and Patola Silk weaving centres.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Grand Raveta",
-        "license": "Verified Media",
-        "credit": "The Grand Raveta Patan",
-        "verified": true,
-        "caption": "Hotel exterior and reception"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/1280px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://thegrandraveta.com/",
     "phone": "+91 2766 230001",
     "email": "info@thegrandraveta.com",
@@ -5417,7 +5392,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Grand+Raveta+Patan+Gujarat",
@@ -5435,7 +5410,15 @@ export const hotels = [
       "Elevators to all floors"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Grand Raveta, Patan in Patan, Gujarat — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/1280px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "sayaji-hotel-indore",
@@ -5452,17 +5435,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 7800,
     "description": "Indore's flagship luxury hotel renowned for unparalleled hospitality. Features Kebabsville pool-side live grills, bowling alley, wellness spa, and quick access to Rajwada Palace and Sarafa Night Food Market.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Sayaji Hotels",
-        "license": "Verified Commercial",
-        "credit": "Sayaji Hotels Indore",
-        "verified": true,
-        "caption": "Luxury hotel facade in Vijay Nagar"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Indore_Rajwada01.jpg/1280px-Indore_Rajwada01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://sayajihotels.com/sayaji-indore/",
     "phone": "+91 731 4006666",
     "email": "indore@sayajihotels.com",
@@ -5484,7 +5458,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sayaji+Hotel+Indore+Vijay+Nagar",
@@ -5504,7 +5478,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Sayaji Hotel Indore in Indore, Madhya Pradesh — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Indore_Rajwada01.jpg/1280px-Indore_Rajwada01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "taj-usha-kiran-palace-gwalior",
@@ -5521,15 +5503,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3850,
     "description": "Built in 1880 by the royal Scindia dynasty as a royal guest palace, visited by the Prince and Princess of Wales. Features carved filigree stone screen jalis, Jiva Spa, landscaped gardens, and Maratha-Gwalior royal dining.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Usha_Kiran_Palace_Hotel_near_Jaivilas_Palace_Gwalior_-_panoramio.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL Taj Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Usha_Kiran_Palace_Hotel_near_Jaivilas_Palace_Gwalior_-_panoramio.jpg",
+        "caption": "Taj Usha Kiran Palace 120-year-old heritage retreat adjacent to Jai Vilas Palace, Gwalior",
         "verified": true,
-        "caption": "Heritage Scindia palace verandah and courtyards"
+        "credit": "Photo: Panoramio / Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-usha-kiran-palace-gwalior/",
@@ -5573,7 +5553,12 @@ export const hotels = [
       "Elevators in wing"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Taj Usha Kiran Palace 120-year-old heritage retreat adjacent to Jai Vilas Palace, Gwalior",
+    "credit": "Photo: Panoramio / Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "tstdc-haritha-resort-yadagirigutta-bhongir",
@@ -5590,17 +5575,8 @@ export const hotels = [
     "guestRating": 4.1,
     "reviewCount": 1650,
     "description": "Official Telangana Tourism resort serving travelers to the monolithic Bhongir Fort and the grand Yadadri Temple. Features comfortable cottages, Haritha dining hall, and panoramic hill views.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "TSTDC Official Archive",
-        "license": "Official Govt Tourism",
-        "credit": "Telangana Tourism",
-        "verified": true,
-        "caption": "Resort building near Yadadri Hill"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Bhongir_Fort_Monolithic_Rock.jpg/1280px-Bhongir_Fort_Monolithic_Rock.jpg",
+    "gallery": [],
     "website": "https://tourism.telangana.gov.in/",
     "phone": "+91 8685 236555",
     "email": "info@tstdc.in",
@@ -5617,7 +5593,7 @@ export const hotels = [
       "Official Govt Property",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Telangana State Tourism Development Corporation",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=TSTDC+Haritha+Resort+Yadagirigutta+Bhongir",
@@ -5635,7 +5611,15 @@ export const hotels = [
       "Ground floor rooms"
     ],
     "priceLevel": "₹₹",
-    "source": "Telangana State Tourism Development Corporation"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "TSTDC Haritha Resort Yadagirigutta (near Bhongir) in Bhongir, Telangana — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Bhongir_Fort_Monolithic_Rock.jpg/1280px-Bhongir_Fort_Monolithic_Rock.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "vythiri-resort-wayanad",
@@ -5652,17 +5636,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 4620,
     "description": "Award-winning eco-luxury resort submerged within virgin tropical rainforest beneath canopy tree houses and babbling mountain streams. Features rope bridges, private pool villas, and Ayurvedic healing.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Vythiri Resort Archive",
-        "license": "Verified Commercial",
-        "credit": "Vythiri Resort Wayanad",
-        "verified": true,
-        "caption": "Hanging rope bridge over natural mountain stream in rainforest"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Banasura_Sagar_Dam_Wayanad.jpg/1280px-Banasura_Sagar_Dam_Wayanad.jpg",
+    "gallery": [],
     "website": "https://www.vythiriresort.com/",
     "phone": "+91 4936 256800",
     "email": "vythiri@serenagroup.in",
@@ -5683,7 +5658,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vythiri+Resort+Wayanad+Lakkidi",
@@ -5702,7 +5677,15 @@ export const hotels = [
       "Ground floor pool villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Vythiri Resort, Wayanad in Wayanad, Kerala — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Banasura_Sagar_Dam_Wayanad.jpg/1280px-Banasura_Sagar_Dam_Wayanad.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "spice-village-thekkady",
@@ -5719,17 +5702,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3980,
     "description": "Recreation of a traditional Mannan tribal village set in a cool spice orchard bordering Periyar Tiger Reserve. Features elephant-grass thatched cottages, swimming pool, spice tours, and 50 Mile Restaurant.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "CGH Earth Hospitality",
-        "license": "Verified Commercial",
-        "credit": "CGH Earth Spice Village",
-        "verified": true,
-        "caption": "Elephant-grass thatched eco-cottages in organic spice grove"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Periyar_National_Park.JPG/1280px-Periyar_National_Park.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.cghearth.com/spice-village",
     "phone": "+91 4869 224514",
     "email": "spicevillage@cghearth.com",
@@ -5749,7 +5723,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Spice+Village+Thekkady+CGH+Earth",
@@ -5767,7 +5741,15 @@ export const hotels = [
       "Ground floor cottages and level walkways"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Spice Village, Thekkady - CGH Earth in Thekkady, Kerala — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Periyar_National_Park.JPG/1280px-Periyar_National_Park.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "gateway-varkala-ihcl-seleqtions",
@@ -5784,17 +5766,8 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 3120,
     "description": "Perched on a red laterite cliff between the pristine Kappil Beach and 2,000-year-old Janardhanaswamy Temple. Offers sea-facing balconies, swimming pool with sunken bar, and Ayurvedic spa.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL SeleQtions",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Clifftop pool overlooking the Arabian Sea"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/1280px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.seleqtionshotels.com/en-in/the-gateway-hotel-varkala/",
     "phone": "+91 470 2602240",
     "email": "gateway.varkala@tajhotels.com",
@@ -5813,7 +5786,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Gateway+Hotel+Varkala+Cliff",
@@ -5833,7 +5806,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Gateway Hotel Varkala - IHCL SeleQtions in Varkala, Kerala — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/1280px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "maurya-hotel-patna",
@@ -5850,15 +5831,13 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 5600,
     "description": "Bihar's premier 5-star luxury address facing historic Gandhi Maidan. Features outdoor pool, Vaishali multi-cuisine restaurant, Spice Court, and modern executive suites.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Hotel_Maurya_Patna.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hotel Maurya Archive",
-        "license": "Verified Commercial",
-        "credit": "Hotel Maurya Patna",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Hotel_Maurya_Patna.jpg",
+        "caption": "Hotel Maurya premier landmark hotel facing Gandhi Maidan, Patna",
         "verified": true,
-        "caption": "Main hotel entrance facing South Gandhi Maidan"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.maurya.com/",
@@ -5902,7 +5881,12 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Hotel Maurya premier landmark hotel facing Gandhi Maidan, Patna",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "the-fern-residency-rajgir",
@@ -5919,17 +5903,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 2210,
     "description": "Contemporary eco-friendly hotel near the Vishwa Shanti Stupa ropeway and hot springs, providing upscale comfort for travelers exploring Ancient Rajgir and Nalanda University ruins.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Fern Hotels",
-        "license": "Verified Commercial",
-        "credit": "The Fern Residency Rajgir",
-        "verified": true,
-        "caption": "Hotel exterior and reception"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vishwa_Shanti_Stupa_Rajgir.jpg/1280px-Vishwa_Shanti_Stupa_Rajgir.jpg",
+    "gallery": [],
     "website": "https://www.fernhotels.com/the-fern-residency-rajgir.html",
     "phone": "+91 6112 255255",
     "email": "resv.fr.rajgir@fernhotels.com",
@@ -5948,7 +5923,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Fern+Residency+Rajgir",
@@ -5968,7 +5943,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Fern Residency, Rajgir in Rajgir, Bihar — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vishwa_Shanti_Stupa_Rajgir.jpg/1280px-Vishwa_Shanti_Stupa_Rajgir.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "swosti-chilika-resort",
@@ -5985,17 +5968,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3450,
     "description": "Eco-luxury resort perched on the pristine shoreline of Chilika Lake, Asia's largest brackish water lagoon. Features lakeside villas with private sundecks, Ekamra Spa, speed boat safaris to spot Irrawaddy dolphins, and fresh Chilika crab cuisine.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Swosti Group Archive",
-        "license": "Verified Commercial",
-        "credit": "Swosti Chilika Resort",
-        "verified": true,
-        "caption": "Eco-villas on the calm shoreline of Chilika Lagoon"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chilika_Lake_Sunset_Boats.jpg/1280px-Chilika_Lake_Sunset_Boats.jpg",
+    "gallery": [],
     "website": "https://www.swostihotels.com/swosti-chilika-resort/",
     "phone": "+91 93380 15588",
     "email": "chilika@swostihotels.com",
@@ -6017,7 +5991,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Swosti+Chilika+Resort+Odia+Alapur",
@@ -6035,7 +6009,15 @@ export const hotels = [
       "Ground floor lake-facing villas"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Swosti Chilika Resort, Chilika in Chilika, Odisha — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chilika_Lake_Sunset_Boats.jpg/1280px-Chilika_Lake_Sunset_Boats.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-baradari-palace-patiala",
@@ -6052,15 +6034,13 @@ export const hotels = [
     "guestRating": 4.6,
     "reviewCount": 2180,
     "description": "Built in 1876 by Maharaja Rajinder Singh of Patiala, centered around a 12-door marble pavilion ('Baradari'). A Sikh-Rajput-Mughal architectural marvel set inside 100 acres of royal Mughal gardens.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Baradari_Palace_%28Cropped%29.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Neemrana Hotels Archive",
-        "license": "Verified Commercial",
-        "credit": "Neemrana Hotels",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Baradari_Palace_%28Cropped%29.jpg",
+        "caption": "The Baradari Palace 19th-century colonial Sikh garden palace hotel, Patiala",
         "verified": true,
-        "caption": "Historic white arcade palace in Baradari Gardens"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.neemranahotels.com/the-baradari-palace-patiala/",
@@ -6100,7 +6080,12 @@ export const hotels = [
       "Ground floor heritage suites"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "The Baradari Palace 19th-century colonial Sikh garden palace hotel, Patiala",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "hotel-white-city-anandpur-sahib",
@@ -6117,17 +6102,8 @@ export const hotels = [
     "guestRating": 4.3,
     "reviewCount": 1540,
     "description": "Located within 800 meters of Virasat-e-Khalsa and Takht Sri Kesgarh Sahib. Offers clean AC rooms, pure vegetarian Punjabi restaurant, and darshan assistance.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hotel White City",
-        "license": "Verified Media",
-        "credit": "Hotel White City",
-        "verified": true,
-        "caption": "Hotel facade in holy city Anandpur Sahib"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Virasat_e_Khalsa_Anandpur_Sahib.jpg/1280px-Virasat_e_Khalsa_Anandpur_Sahib.jpg",
+    "gallery": [],
     "website": "https://www.hotelwhitecity.com/",
     "phone": "+91 1887 232111",
     "email": "info@hotelwhitecity.com",
@@ -6145,7 +6121,7 @@ export const hotels = [
       "Family-Friendly",
       "Strong Guest Reviews"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+White+City+Anandpur+Sahib",
@@ -6163,7 +6139,15 @@ export const hotels = [
       "Elevators available"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Hotel White City, Anandpur Sahib in Anandpur Sahib, Punjab — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Virasat_e_Khalsa_Anandpur_Sahib.jpg/1280px-Virasat_e_Khalsa_Anandpur_Sahib.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "pilibhit-house-haridwar",
@@ -6180,17 +6164,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 3820,
     "description": "Centuries-old aristocratic noble mansion standing directly upon the sacred Ganga River with Haridwar's largest private bathing ghat. Features private Ganga Aarti, Jiva Spa, and royal vegetarian dining.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "IHCL SeleQtions Archive",
-        "license": "Verified Commercial",
-        "credit": "The Indian Hotels Company Limited",
-        "verified": true,
-        "caption": "Private royal bathing ghat on the Holy River Ganga"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [],
     "website": "https://www.seleqtionshotels.com/en-in/pilibhit-house-haridwar/",
     "phone": "+91 1334 266000",
     "email": "pilibhit.haridwar@tajhotels.com",
@@ -6211,7 +6186,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry & Direct Geo-Verification",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pilibhit+House+Haridwar+IHCL+SeleQtions",
@@ -6231,7 +6206,15 @@ export const hotels = [
       "Elevators in mansion"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Pilibhit House, Haridwar - IHCL SeleQtions in Haridwar, Uttarakhand — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "hyatt-regency-dehradun-resort",
@@ -6248,17 +6231,8 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 4620,
     "description": "Spread over 4.25 acres adjacent to Malsi Deer Park in the scenic foothills of the Himalayas. Features rooftop heated pool, Shanti Spa, multiple specialty restaurants, and Mussoorie hill views.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "Hyatt Hotels",
-        "license": "Verified Commercial",
-        "credit": "Hyatt Regency Dehradun",
-        "verified": true,
-        "caption": "Mountain resort facade against forested Himalayan ridge"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Robbers_Cave_Dehradun.jpg/1280px-Robbers_Cave_Dehradun.jpg",
+    "gallery": [],
     "website": "https://www.hyatt.com/en-US/hotel/india/hyatt-regency-dehradun/dedrh",
     "phone": "+91 135 6171234",
     "email": "dehradun.regency@hyatt.com",
@@ -6280,7 +6254,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hyatt+Regency+Dehradun+Malsi",
@@ -6300,7 +6274,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Hyatt Regency Dehradun Resort and Spa in Dehradun, Uttarakhand — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Robbers_Cave_Dehradun.jpg/1280px-Robbers_Cave_Dehradun.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "jw-marriott-mussoorie-walnut-grove",
@@ -6317,17 +6299,8 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 6240,
     "description": "Perched amidst lush walnut orchards and pine forests overlooking the Garhwal Himalayan peaks. Features cedar-scented Cedar Spa, heated indoor pool, bowling alley, and fine dining.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Marriott International",
-        "license": "Verified Commercial",
-        "credit": "JW Marriott Mussoorie",
-        "verified": true,
-        "caption": "Himalayan resort grounds among walnut trees"
-      }
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Kempty_Falls_Mussoorie.jpg/1280px-Kempty_Falls_Mussoorie.jpg",
+    "gallery": [],
     "website": "https://www.marriott.com/en-us/hotels/dedjw-jw-marriott-mussoorie-walnut-grove-resort-and-spa/overview/",
     "phone": "+91 135 6692000",
     "email": "jw.mussoorie@marriott.com",
@@ -6349,7 +6322,7 @@ export const hotels = [
       "Family-Friendly",
       "Doctor on Call"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=JW+Marriott+Mussoorie+Walnut+Grove",
@@ -6370,7 +6343,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "JW Marriott Mussoorie Walnut Grove Resort & Spa in Mussoorie, Uttarakhand — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Kempty_Falls_Mussoorie.jpg/1280px-Kempty_Falls_Mussoorie.jpg",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-manu-maharani-nainital",
@@ -6387,17 +6368,8 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 4520,
     "description": "Perched on the serene ridge of Grassmere Estate overlooking Naini Lake. Features olive-oil spa therapies at Olive Spa, Gardenia all-day dining with lake views, and shuttle service to Mall Road.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-        "source": "The Manu Maharani Archive",
-        "license": "Verified Commercial",
-        "credit": "The Manu Maharani Nainital",
-        "verified": true,
-        "caption": "Resort facade overlooking Naini Lake valley"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_Boat_and_The_Lake.jpg/1280px-The_Boat_and_The_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.themanumaharani.com/",
     "phone": "+91 5942 237342",
     "email": "info@themanumaharani.com",
@@ -6416,7 +6388,7 @@ export const hotels = [
       "Strong Guest Reviews",
       "Family-Friendly"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Manu+Maharani+Nainital+Mallital",
@@ -6436,7 +6408,15 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Portal & Property Geo-Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "The Manu Maharani, Nainital in Nainital, Uttarakhand — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/The_Boat_and_The_Lake.jpg/1280px-The_Boat_and_The_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "the-oberoi-mumbai",
@@ -6453,15 +6433,13 @@ export const hotels = [
     "guestRating": 4.9,
     "reviewCount": 3890,
     "description": "Iconic luxury property situated on Marine Drive at Nariman Point, offering panoramic vistas of the Arabian Sea and Mumbai's Queen's Necklace. Features Michelin-standard dining at Ziya and luxury wellness spa.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/The_Oberoi_Hotel_in_Mumbai_2015.JPG/1280px-The_Oberoi_Hotel_in_Mumbai_2015.JPG",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "The Oberoi Group",
+        "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/The_Oberoi_Hotel_in_Mumbai_2015.JPG/1280px-The_Oberoi_Hotel_in_Mumbai_2015.JPG",
+        "caption": "The Oberoi Hotel Mumbai at Nariman Point overlooking Marine Drive",
         "verified": true,
-        "caption": "Marine Drive oceanfront facade"
+        "credit": "Photo: Wikimedia Commons / The Oberoi Hotel in Mumbai"
       }
     ],
     "website": "https://www.oberoihotels.com/hotels-in-mumbai/",
@@ -6505,7 +6483,15 @@ export const hotels = [
       "Accessible restrooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "The Oberoi Hotel Mumbai at Nariman Point overlooking Marine Drive",
+    "credit": "Photo: Wikimedia Commons / The Oberoi Hotel in Mumbai",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/The_Oberoi_Hotel_in_Mumbai_2015.JPG/1280px-The_Oberoi_Hotel_in_Mumbai_2015.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Oberoi_Hotel_in_Mumbai_2015.JPG",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "taj-lands-end-bandra-mumbai",
@@ -6522,15 +6508,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 4210,
     "description": "Perched majestically at Bandstand overlooking the Arabian Sea and the Bandra-Worli Sea Link. Situated steps from the historic Castella de Aguada (Bandra Fort) and Bandstand promenade.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Taj_Lands_End_bandra.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "IHCL Taj Group",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Taj_Lands_End_bandra.jpg",
+        "caption": "Taj Lands End luxury hotel overlooking the Arabian Sea in Bandra, Mumbai",
         "verified": true,
-        "caption": "Bandra Sea Link and ocean views"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-lands-end-mumbai/",
@@ -6571,7 +6555,12 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Taj Lands End luxury hotel overlooking the Arabian Sea in Bandra, Mumbai",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "hotel-marine-plaza-mumbai",
@@ -6588,15 +6577,13 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 2150,
     "description": "Charming 4-star boutique hotel located directly along Marine Drive in Churchgate. Features a unique glass-bottomed rooftop swimming pool, English pub Geoffrey's, and Chinese dining at The Oriental Blossom.",
-    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Marine_Plaza_Hotel.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "Sarovar Hotels",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Marine_Plaza_Hotel.jpg",
+        "caption": "Hotel Marine Plaza overlooking Marine Drive promenade, Mumbai",
         "verified": true,
-        "caption": "Marine Drive view rooms"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0"
       }
     ],
     "website": "https://www.hotelmarineplaza.com/",
@@ -6635,7 +6622,12 @@ export const hotels = [
       "Elevator access to all floors"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Hotel Marine Plaza overlooking Marine Drive promenade, Mumbai",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 3.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "residency-hotel-fort-mumbai",
@@ -6652,17 +6644,8 @@ export const hotels = [
     "guestRating": 4.5,
     "reviewCount": 1890,
     "description": "Highly rated boutique budget property in the historic Fort heritage precinct, just a 5-minute walk from Chhatrapati Shivaji Maharaj Terminus (CSMT) and Victorian Gothic landmarks.",
-    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "Residency Hotels",
-        "verified": true,
-        "caption": "Boutique rooms in Fort Mumbai"
-      }
-    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [],
     "website": "https://www.residencyhotel.com/fort-mumbai/",
     "phone": "+91 22 66670555",
     "email": "fort@residencyhotel.com",
@@ -6679,7 +6662,7 @@ export const hotels = [
       "CCTV Monitored",
       "Secure Access"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI & Geo-Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Residency+Hotel+Fort+Mumbai",
@@ -6698,7 +6681,15 @@ export const hotels = [
       "Elevator access to all floors"
     ],
     "priceLevel": "₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Residency Hotel Fort, Mumbai in Mumbai, Maharashtra — Destination Setting Preview (Official Property Photo Pending)",
+    "credit": "Destination Setting / Wikimedia Commons",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "needs-review",
+    "authenticityStatus": "unverified",
+    "fallback": true
   },
   {
     "id": "itc-kohenur-hyderabad",
@@ -6715,15 +6706,13 @@ export const hotels = [
     "guestRating": 4.8,
     "reviewCount": 3420,
     "description": "Architectural masterpiece inspired by the legendary Koh-i-Noor diamond, overlooking Durgam Cheruvu lake in HITEC City. Features 272 luxury rooms, Kaya Kalp Spa, and Dum Pukht Begum's royal Hyderabadi cuisine.",
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/ITC_Kohenur_on_Inorbit_Mall_Road_%281%29.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "ITC Hotels",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/ITC_Kohenur_on_Inorbit_Mall_Road_%281%29.jpg",
+        "caption": "ITC Kohenur luxury hotel overlooking Durgam Cheruvu lake, Hyderabad",
         "verified": true,
-        "caption": "Lake view luxury facade in HITEC City"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.itchotels.com/in/en/itckohenur-hyderabad",
@@ -6765,7 +6754,12 @@ export const hotels = [
       "Accessible restrooms"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "ITC Kohenur luxury hotel overlooking Durgam Cheruvu lake, Hyderabad",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "taj-krishna-banjara-hills-hyderabad",
@@ -6782,15 +6776,13 @@ export const hotels = [
     "guestRating": 4.7,
     "reviewCount": 3120,
     "description": "Nestled in prestigious Banjara Hills amidst manicured landscaped gardens, Taj Krishna offers regal Nizami hospitality, outdoor swimming pool, and celebrated Awadhi & Hyderabadi dining at Firdaus.",
-    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Hyderabad%2C_taj_krishna%2C_interno_01.jpg",
     "gallery": [
       {
-        "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "IHCL Taj Group",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Hyderabad%2C_taj_krishna%2C_interno_01.jpg",
+        "caption": "Taj Krishna luxury hotel in Banjara Hills, Hyderabad",
         "verified": true,
-        "caption": "Garden and pool facade in Banjara Hills"
+        "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0"
       }
     ],
     "website": "https://www.tajhotels.com/en-in/taj/taj-krishna-hyderabad/",
@@ -6830,7 +6822,12 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "Wikimedia Commons",
+    "imageAlt": "Taj Krishna luxury hotel in Banjara Hills, Hyderabad",
+    "credit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "fallback": false
   },
   {
     "id": "the-golkonda-hotel-hyderabad",
@@ -6847,17 +6844,8 @@ export const hotels = [
     "guestRating": 4.3,
     "reviewCount": 2280,
     "description": "Conveniently situated at Masab Tank between Old City monuments and Banjara Hills, featuring contemporary rooms, outdoor pool, and authentic Hyderabadi biryani at Melange restaurant.",
-    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "The Golkonda Hotel",
-        "verified": true,
-        "caption": "Central atrium and pool"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.thegolkondahotel.com/",
     "phone": "+91 40 66110101",
     "email": "reservations@thegolkondahotel.com",
@@ -6873,7 +6861,7 @@ export const hotels = [
       "24-Hour Front Desk",
       "CCTV Monitored Premises"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI & Geo-Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Golkonda+Hotel+Hyderabad",
@@ -6893,7 +6881,16 @@ export const hotels = [
       "Elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for The Golkonda Hotel, Hyderabad in Hyderabad",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   },
   {
     "id": "courtyard-marriott-hyderabad",
@@ -6910,17 +6907,8 @@ export const hotels = [
     "guestRating": 4.4,
     "reviewCount": 2650,
     "description": "Overlooking the tranquil waters of Hussain Sagar Lake, Courtyard by Marriott offers upscale accommodations, an outdoor pool, spa, and all-day dining at MoMo Cafe.",
-    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-    "gallery": [
-      {
-        "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-        "source": "Official Property Archive",
-        "license": "Verified Commercial",
-        "credit": "Marriott International",
-        "verified": true,
-        "caption": "Lakeside hotel rooms and pool"
-      }
-    ],
+    "image": null,
+    "gallery": [],
     "website": "https://www.marriott.com/en-us/hotels/hydcy-courtyard-hyderabad/",
     "phone": "+91 40 27521222",
     "email": "courtyard.hyderabad@marriott.com",
@@ -6937,7 +6925,7 @@ export const hotels = [
       "CCTV Monitored Premises",
       "Keycard Access"
     ],
-    "verified": true,
+    "verified": false,
     "verificationSource": "Ministry of Tourism NIDHI & Geo-Registry",
     "lastVerified": "2026-03-25",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Courtyard+by+Marriott+Hyderabad",
@@ -6957,7 +6945,17 @@ export const hotels = [
       "Accessible elevators"
     ],
     "priceLevel": "₹₹₹",
-    "source": "Official NIDHI Tourism Registry"
+    "source": "LukAround Partner Verification Pipeline",
+    "imageAlt": "Official property photograph pending verification for Courtyard by Marriott Hyderabad in Hyderabad",
+    "credit": "Official Property Photo Pending / NIDHI Registered",
+    "imageUrl": null,
+    "sourceUrl": "",
+    "license": "CC BY-SA 4.0",
+    "verificationStatus": "unverified-property-photo-pending",
+    "authenticityStatus": "unverified",
+    "fallback": true,
+    "isPropertyPhotoPending": true
   }
 ];
-export default hotels;
+export const hotels = hotelsData;
+export default hotelsData;

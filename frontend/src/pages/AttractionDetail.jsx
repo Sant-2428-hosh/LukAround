@@ -41,59 +41,56 @@ export default function AttractionDetail() {
   const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
 
-  // Intelligent attraction resolution: exact ID, city-scope, alias, or fuzzy name match
+  // Intelligent attraction resolution: exact ID, exact slug, or verified city scope
   const attraction = useMemo(() => {
-    if (!attractionSlug) return attractions[0];
+    if (!attractionSlug) return null;
     const target = attractionSlug.toLowerCase().trim();
 
     // 1. Direct exact ID match
     let found = attractions.find(a => a.id.toLowerCase() === target);
     if (found) return found;
 
-    // 2. City-scoped match if citySlug provided in URL
+    // 2. Exact Name slug match
+    found = attractions.find(a => {
+      const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return cleanName === target;
+    });
+    if (found) return found;
+
+    // 3. City-scoped match if citySlug provided in URL
     if (citySlug) {
       const cityAttrs = attractions.filter(a =>
         a.citySlug === citySlug ||
         a.city.toLowerCase() === citySlug.toLowerCase() ||
         a.city.toLowerCase().replace(/\s+/g, '-') === citySlug.toLowerCase()
       );
-      // Try ID substring in this city
-      found = cityAttrs.find(a =>
-        target.includes(a.id.toLowerCase()) || a.id.toLowerCase().includes(target)
-      );
+      // Try exact ID match in this city
+      found = cityAttrs.find(a => a.id.toLowerCase() === target);
       if (found) return found;
 
-      // Try Name match in this city
+      // Try exact Name slug match in this city
       found = cityAttrs.find(a => {
-        const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-        return target.includes(cleanName) || cleanName.includes(target);
+        const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        return cleanName === target;
       });
       if (found) return found;
     }
 
-    // 3. Global slug containment / alias match
-    found = attractions.find(a =>
-      target.includes(a.id.toLowerCase()) || a.id.toLowerCase().includes(target)
-    );
-    if (found) return found;
-
-    // 4. Global Name fuzzy/slug match
-    found = attractions.find(a => {
-      const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-      return target.includes(cleanName) || cleanName.includes(target);
-    });
-    if (found) return found;
-
-    // 5. Fallback within city if available
-    if (citySlug) {
-      const cityFirst = attractions.find(a =>
-        a.citySlug === citySlug || a.city.toLowerCase() === citySlug.toLowerCase()
-      );
-      if (cityFirst) return cityFirst;
-    }
-
-    return attractions[0];
+    return null;
   }, [attractionSlug, citySlug]);
+
+  if (!attraction) {
+    return (
+      <div style={{ minHeight: '70vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem', padding: '2rem', textAlign: 'center' }}>
+        <MapPin size={48} color="#94A3B8" />
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#1E293B' }}>Destination Not Found</h2>
+        <p style={{ color: '#64748B', maxWidth: '420px' }}>The requested tourist attraction could not be found in our verified database.</p>
+        <Link to="/attractions" className="tourism-btn tourism-btn-primary" style={{ textDecoration: 'none', padding: '0.6rem 1.2rem', borderRadius: '8px', color: '#FFF' }}>
+          Explore Verified Destinations
+        </Link>
+      </div>
+    );
+  }
 
   const attrCoords = attraction.coordinates || { latitude: 20.5937, longitude: 78.9629 };
   const parentCity = cities.find(c => c.id === attraction.citySlug) || { name: attraction.city, id: attraction.citySlug, state: attraction.state };

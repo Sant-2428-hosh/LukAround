@@ -21,30 +21,34 @@ const HERO_SLIDES = [
     place: 'The Taj Mahal',
     location: 'Agra, Uttar Pradesh',
     stateSlug: 'uttar-pradesh',
-    tag: '✦ AGRA, UTTAR PRADESH · WORLD WONDER',
+    tag: '✦ AGRA, UTTAR PRADESH · UNESCO WORLD HERITAGE',
     badgeColor: '#F59E0B',
     line1: 'Where Marble Whispers Eternity',
     accentText: 'The Taj Mahal',
     accentClass: 'accent-taj',
-    subtitle: 'An ivory poem of immortal love, bathed in rosy dawn and timeless grace.',
-    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=2400&q=85',
+    subtitle: 'An ivory-white marble poem bathed in rosy dawn on the sacred Yamuna riverbank.',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg',
+    fallbackImage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=2000&q=80',
     tabLabel: 'Taj Mahal',
-    tabLocation: 'Agra, UP'
+    tabLocation: 'Agra, UP',
+    targetUrl: '/india/uttar-pradesh/agra/taj-mahal'
   },
   {
     id: 'kerala-backwaters',
     place: 'Kerala Backwaters',
     location: 'Alleppey & Kumarakom, Kerala',
     stateSlug: 'kerala',
-    tag: '✦ ALLEPPEY, KERALA · GOD’S OWN SANCTUARY',
+    tag: '✦ ALLEPPEY, KERALA · GOD’S OWN COUNTRY',
     badgeColor: '#10B981',
     line1: 'Where Palms Dance on Glass Waters',
     accentText: 'Kerala Backwaters',
     accentClass: 'accent-kerala',
-    subtitle: 'Drift through peaceful emerald lagoons where tranquil ripples compose nature’s song.',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2400&q=85',
+    subtitle: 'Drift through tranquil emerald lagoons and spice canals aboard traditional kettuvallam houseboats.',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/House_Boat_DSW.jpg/1280px-House_Boat_DSW.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2000&q=80',
     tabLabel: 'Alleppey Lagoons',
-    tabLocation: 'Kerala'
+    tabLocation: 'Kerala',
+    targetUrl: '/india/kerala/alleppey'
   },
   {
     id: 'royal-rajasthan',
@@ -56,10 +60,12 @@ const HERO_SLIDES = [
     line1: 'Where Golden Forts Crown Desert Skies',
     accentText: 'Royal Rajasthan',
     accentClass: 'accent-rajasthan',
-    subtitle: 'Ascend soaring clifftop fortresses and fairy-tale palaces under fiery desert sunsets.',
-    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=2400&q=85',
+    subtitle: 'Ascend sandstone ramparts, mirror-mosaic Sheesh Mahals, and royal desert citadels.',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Jaipur_03-2016_02_Amber_Fort.jpg/1280px-Jaipur_03-2016_02_Amber_Fort.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=2000&q=80',
     tabLabel: 'Amber Fort',
-    tabLocation: 'Jaipur, Rajasthan'
+    tabLocation: 'Jaipur, Rajasthan',
+    targetUrl: '/india/rajasthan/jaipur/amber-fort'
   },
   {
     id: 'sacred-himalayas',
@@ -72,9 +78,11 @@ const HERO_SLIDES = [
     accentText: 'Sacred Himalayas',
     accentClass: 'accent-himalayas',
     subtitle: 'Mighty snow-crested peaks and sacred emerald rivers touching the divine.',
-    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=2400&q=85',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/1280px-Kedarnath_Temple_in_Rainy_season.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=2000&q=80',
     tabLabel: 'Sacred Himalayas',
-    tabLocation: 'Uttarakhand'
+    tabLocation: 'Uttarakhand',
+    targetUrl: '/india/uttarakhand/kedarnath/kedarnath-temple-shrine'
   },
   {
     id: 'thanjai-periya-kovil',
@@ -87,9 +95,11 @@ const HERO_SLIDES = [
     accentText: 'Thanjai Periya Kovil',
     accentClass: 'accent-thanjavur',
     subtitle: 'Emperor Raja Raja Chola’s thousand-year monolithic granite marvel rising in timeless Dravidian glory.',
-    image: 'https://images.unsplash.com/photo-1675677044118-3fd84f9deaf0?auto=format&fit=crop&w=2400&q=85',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg',
+    fallbackImage: 'https://images.unsplash.com/photo-1675677044118-3fd84f9deaf0?auto=format&fit=crop&w=2000&q=80',
     tabLabel: 'Thanjai Periya Kovil',
-    tabLocation: 'Thanjavur, TN'
+    tabLocation: 'Thanjavur, TN',
+    targetUrl: '/india/tamil-nadu/thanjavur/brihadeeswarar-temple'
   }
 ];
 
@@ -136,17 +146,31 @@ export default function Home() {
 
   // 5-Destination Hero Slideshow state
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isControlsHovered, setIsControlsHovered] = useState(false);
   const [progressKey, setProgressKey] = useState(0);
+  const [imageFailures, setImageFailures] = useState({});
 
+  // Preload all 5 slide images immediately on mount for 0ms transition lag
   useEffect(() => {
-    if (isPaused) return;
+    HERO_SLIDES.forEach((slide) => {
+      const primary = new Image();
+      primary.src = slide.image;
+      if (slide.fallbackImage) {
+        const fallback = new Image();
+        fallback.src = slide.fallbackImage;
+      }
+    });
+  }, []);
+
+  // Reliable 6-second auto-timer that advances unless user is actively interacting with search
+  useEffect(() => {
+    if (isControlsHovered) return;
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
       setProgressKey((k) => k + 1);
     }, 6000);
     return () => clearInterval(timer);
-  }, [isPaused, currentSlide]);
+  }, [isControlsHovered, currentSlide]);
 
   const goToSlide = (idx) => {
     setCurrentSlide(idx);
@@ -159,6 +183,12 @@ export default function Home() {
 
   const prevSlide = () => {
     goToSlide((currentSlide - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
+  };
+
+  const handleSlideImageError = (slideId, fallbackUrl) => {
+    if (fallbackUrl && !imageFailures[slideId]) {
+      setImageFailures((prev) => ({ ...prev, [slideId]: fallbackUrl }));
+    }
   };
 
   const activeSlide = HERO_SLIDES[currentSlide];
@@ -191,20 +221,28 @@ export default function Home() {
     <div className="tourism-page">
 
       {/* ══ 1. REFINED LUXURY 5-PLACE AUTO-SLIDESHOW HERO ══ */}
-      <section
-        className="tourism-hero-epic"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-      >
-        {/* Slideshow Background Layers with smooth crossfade */}
+      <section className="tourism-hero-epic">
+        {/* Slideshow Background Layers with smooth crossfade & guaranteed load */}
         <div className="hero-slideshow-container" aria-hidden="true">
-          {HERO_SLIDES.map((slide, idx) => (
-            <div
-              key={slide.id}
-              className={`hero-slide-bg ${idx === currentSlide ? 'active' : ''}`}
-              style={{ backgroundImage: `url(${slide.image})` }}
-            />
-          ))}
+          {HERO_SLIDES.map((slide, idx) => {
+            const isActive = idx === currentSlide;
+            const imgSrc = imageFailures[slide.id] || slide.image;
+            return (
+              <div
+                key={slide.id}
+                className={`hero-slide-bg ${isActive ? 'active' : ''}`}
+              >
+                <img
+                  src={imgSrc}
+                  alt={slide.place}
+                  className="hero-slide-img"
+                  loading={idx === 0 ? 'eager' : 'lazy'}
+                  decoding="async"
+                  onError={() => handleSlideImageError(slide.id, slide.fallbackImage)}
+                />
+              </div>
+            );
+          })}
           <div className="hero-slide-overlay" />
         </div>
 
@@ -249,12 +287,22 @@ export default function Home() {
           </p>
 
           {/* Clean, Centered Search Bar */}
-          <div className="hero-search-wrapper">
+          <div
+            className="hero-search-wrapper"
+            onMouseEnter={() => setIsControlsHovered(true)}
+            onMouseLeave={() => setIsControlsHovered(false)}
+          >
             <SearchBar placeholder="Search a state, monument, beach, hill station or experience..." />
           </div>
 
           {/* 5 Places Slideshow Navigation Switcher */}
-          <div className="hero-slideshow-nav" role="tablist" aria-label="Iconic Indian Destinations">
+          <div
+            className="hero-slideshow-nav"
+            role="tablist"
+            aria-label="Iconic Indian Destinations"
+            onMouseEnter={() => setIsControlsHovered(true)}
+            onMouseLeave={() => setIsControlsHovered(false)}
+          >
             {HERO_SLIDES.map((slide, idx) => {
               const isActive = idx === currentSlide;
               return (
@@ -273,7 +321,7 @@ export default function Home() {
                   <div className="hero-nav-place">{slide.tabLabel}</div>
                   {isActive && (
                     <div
-                      className={`hero-nav-progress ${isPaused ? 'paused' : ''}`}
+                      className="hero-nav-progress"
                       key={`prog-${idx}-${progressKey}`}
                     />
                   )}
