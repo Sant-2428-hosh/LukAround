@@ -232,25 +232,23 @@ export default function AuthForm({ mode = 'login' }) {
       });
   }, []);
 
-  // Initialize Google Identity Services (One-Tap & Unified Button)
+  // Track whether GSI has been initialized in this session (module-level to survive re-renders)
+  const gsiInitRef = React.useRef(false);
+
+  // Initialize Google Identity Services (One-Tap & Unified Button) — only once
   useEffect(() => {
     const googleClientId =
       import.meta.env.VITE_GOOGLE_CLIENT_ID ||
       '1055485765270-eqj5hp22jm8vf2csqvevajifggo757g4.apps.googleusercontent.com';
 
     const initGsi = () => {
-      if (window.google?.accounts?.id && googleClientId) {
-        try {
-          window.google.accounts.id.initialize({
-            client_id: googleClientId,
-            callback: handleGoogleCredentialResponse,
-            auto_select: false,
-            cancel_on_tap_outside: true,
-          });
-
-          const btnContainer = document.getElementById('google-signin-btn-container');
-          if (btnContainer) {
-            btnContainer.innerHTML = '';
+      if (!window.google?.accounts?.id || !googleClientId) return;
+      if (gsiInitRef.current) {
+        // Already initialized — just re-render the button for login/signup switch
+        const btnContainer = document.getElementById('google-signin-btn-container');
+        if (btnContainer) {
+          btnContainer.innerHTML = '';
+          try {
             window.google.accounts.id.renderButton(btnContainer, {
               type: 'standard',
               theme: 'outline',
@@ -260,18 +258,38 @@ export default function AuthForm({ mode = 'login' }) {
               shape: 'rectangular',
               logo_alignment: 'left',
             });
-            setGsiReady(true);
-          }
-
-          // Trigger One-Tap prompt gently
-          window.google.accounts.id.prompt((notification) => {
-            if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-              // Gracefully handle without console spam
-            }
-          });
-        } catch (err) {
-          console.warn('Google Identity Services init notice:', err);
+          } catch {}
         }
+        return;
+      }
+
+      try {
+        window.google.accounts.id.initialize({
+          client_id: googleClientId,
+          callback: handleGoogleCredentialResponse,
+          auto_select: false,
+          cancel_on_tap_outside: true,
+          use_fedcm_for_prompt: false, // Disable FedCM to stop repeated navigator.credentials errors
+        });
+
+        const btnContainer = document.getElementById('google-signin-btn-container');
+        if (btnContainer) {
+          btnContainer.innerHTML = '';
+          window.google.accounts.id.renderButton(btnContainer, {
+            type: 'standard',
+            theme: 'outline',
+            size: 'large',
+            width: btnContainer.offsetWidth ? Math.min(btnContainer.offsetWidth, 380) : 340,
+            text: isLogin ? 'signin_with' : 'signup_with',
+            shape: 'rectangular',
+            logo_alignment: 'left',
+          });
+          setGsiReady(true);
+        }
+
+        gsiInitRef.current = true;
+      } catch (err) {
+        console.warn('Google Identity Services init notice:', err);
       }
     };
 
@@ -286,6 +304,11 @@ export default function AuthForm({ mode = 'login' }) {
       }, 250);
       return () => clearInterval(timer);
     }
+
+    // Cancel any pending One Tap on unmount
+    return () => {
+      try { window.google?.accounts?.id?.cancel(); } catch {}
+    };
   }, [isLogin]);
 
   // Fallback Google Sign-In click handler

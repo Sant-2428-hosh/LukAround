@@ -84,20 +84,18 @@ export async function googleLoginUser({ email, name, avatar }) {
 
 /**
  * Fetch current user profile GET /api/auth/me
+ * NOTE: Throws on network errors (so verifySession keeps offline state).
+ * Returns null only on explicit auth failures (401/403).
  */
 export async function getCurrentUser(token) {
-  try {
-    const headers = { 'Accept': 'application/json' };
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-    }
-
-    const response = await fetch(`${API_BASE_URL}/auth/me`, { headers });
-    if (!response.ok) return null;
-    return await response.json();
-  } catch (error) {
-    return null;
+  const headers = { 'Accept': 'application/json' };
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
   }
+  // Do NOT catch here — let network errors propagate to verifySession's catch block
+  const response = await fetch(`${API_BASE_URL}/auth/me`, { headers });
+  if (!response.ok) return null; // Explicit 401/403 → return null → logout
+  return await response.json();
 }
 
 /**

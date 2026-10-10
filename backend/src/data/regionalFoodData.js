@@ -921,7 +921,18 @@ const regionalFoodData = [
   }
 ];
 
-function getMustTryDishes(city, state) {
+function getMustTryDishes(params = {}) {
+  // Support both object { city, state } and positional (city, state)
+  let city, state;
+  if (typeof params === 'object' && params !== null && !Array.isArray(params)) {
+    city = params.city;
+    state = params.state;
+  } else {
+    city = params;
+    state = arguments[1];
+  }
+  city = typeof city === 'string' ? city : '';
+  state = typeof state === 'string' ? state : '';
   return regionalFoodData.filter(d => {
     if (city && d.city.toLowerCase() === city.toLowerCase()) return true;
     if (state && d.state.toLowerCase() === state.toLowerCase()) return true;

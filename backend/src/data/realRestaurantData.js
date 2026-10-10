@@ -2753,13 +2753,26 @@ const realRestaurantData = [
   }
 ];
 
-function getRestaurantsForContext(city, state, category = null) {
+function getRestaurantsForContext(params = {}) {
+  // Support both object { city, state, category } and positional (city, state, category)
+  let city, state, category;
+  if (typeof params === 'object' && params !== null && !Array.isArray(params)) {
+    city = params.city;
+    state = params.state;
+    category = params.category || null;
+  } else {
+    city = params;
+    state = arguments[1];
+    category = arguments[2] || null;
+  }
+  city = typeof city === 'string' ? city : '';
+  state = typeof state === 'string' ? state : '';
   let list = realRestaurantData.filter(r => {
     if (city && r.city.toLowerCase() === city.toLowerCase()) return true;
     if (state && r.state.toLowerCase() === state.toLowerCase()) return true;
     return false;
   });
-  if (category && category !== 'all') {
+  if (category && category !== 'All' && category !== 'all') {
     list = list.filter(r => (r.categories || []).some(c => c.toLowerCase() === category.toLowerCase()));
   }
   return list;
