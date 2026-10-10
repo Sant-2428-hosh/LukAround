@@ -22,19 +22,22 @@ export default function CitySelector({
       if (res && res.data && Array.isArray(res.data) && res.data.length > 0) {
         setCities(res.data);
       } else {
-        // Fallback default 11 seeded cities
+        // Fallback default seeded cities with top metros
         setCities([
-          { id: 1, name: 'Bangalore', state: 'Karnataka' },
-          { id: 2, name: 'Goa', state: 'Goa' },
-          { id: 3, name: 'Chennai', state: 'Tamil Nadu' },
-          { id: 4, name: 'Jaipur', state: 'Rajasthan' },
-          { id: 5, name: 'Agra', state: 'Uttar Pradesh' },
-          { id: 6, name: 'Kochin', state: 'Kerala' },
-          { id: 7, name: 'Pondicherry', state: 'Puducherry' },
-          { id: 8, name: 'Yercaud', state: 'Tamil Nadu' },
-          { id: 9, name: 'Delhi', state: 'Delhi NCR' },
-          { id: 10, name: 'Munnar', state: 'Kerala' },
-          { id: 11, name: 'Varanasi', state: 'Uttar Pradesh' }
+          { id: 1, name: 'Mumbai', state: 'Maharashtra' },
+          { id: 2, name: 'Delhi', state: 'Delhi NCR' },
+          { id: 3, name: 'Hyderabad', state: 'Telangana' },
+          { id: 4, name: 'Bangalore', state: 'Karnataka' },
+          { id: 5, name: 'Goa', state: 'Goa' },
+          { id: 6, name: 'Chennai', state: 'Tamil Nadu' },
+          { id: 7, name: 'Jaipur', state: 'Rajasthan' },
+          { id: 8, name: 'Agra', state: 'Uttar Pradesh' },
+          { id: 9, name: 'Varanasi', state: 'Uttar Pradesh' },
+          { id: 10, name: 'Kolkata', state: 'West Bengal' },
+          { id: 11, name: 'Kochin', state: 'Kerala' },
+          { id: 12, name: 'Pondicherry', state: 'Puducherry' },
+          { id: 13, name: 'Yercaud', state: 'Tamil Nadu' },
+          { id: 14, name: 'Munnar', state: 'Kerala' }
         ]);
       }
     }

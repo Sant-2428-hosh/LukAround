@@ -16,6 +16,69 @@
   "adminInvites": [],
   "auditLogs": [
     {
+      "id": "log_1791622869203_9vv",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T09:01:09.203Z"
+    },
+    {
+      "id": "log_1791622169805_bvi",
+      "action": "USER_LOGIN",
+      "details": "User bharath logged in via password",
+      "performedBy": "bharath@gmail.com",
+      "timestamp": "2026-10-10T08:49:29.805Z"
+    },
+    {
+      "id": "log_1791620314538_z3a",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T08:18:34.538Z"
+    },
+    {
+      "id": "log_1791619612178_jue",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T08:06:52.178Z"
+    },
+    {
+      "id": "log_1791618839813_lva",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T07:53:59.813Z"
+    },
+    {
+      "id": "log_1791618620832_cl3",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T07:50:20.832Z"
+    },
+    {
+      "id": "log_1791618574837_07y",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T07:49:34.837Z"
+    },
+    {
+      "id": "log_1791618516940_ddm",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T07:48:36.940Z"
+    },
+    {
+      "id": "log_1791618118361_ntl",
+      "action": "GOOGLE_LOGIN",
+      "details": "User Ragul R authenticated via Google SSO",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-10T07:41:58.361Z"
+    },
+    {
       "id": "log_1791481310501_ygy",
       "action": "USER_LOGIN",
       "details": "User bharath logged in via password",
