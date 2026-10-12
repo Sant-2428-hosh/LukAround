@@ -162,7 +162,13 @@ router.get('/attractions', (req, res) => {
 // ── GET /api/tourism/attractions/:slug ──
 router.get('/attractions/:slug', (req, res) => {
   const slug = req.params.slug.toLowerCase();
-  const attraction = tourismData.attractions.find(a => a.id === slug);
+  const attraction = tourismData.attractions.find(a =>
+    a.id === slug ||
+    (a.aliases || []).some(al =>
+      al.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') === slug ||
+      al.toLowerCase() === slug
+    )
+  );
 
   if (!attraction) {
     return res.status(404).json({ success: false, error: `Attraction not found: ${slug}` });

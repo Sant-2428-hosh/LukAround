@@ -79,7 +79,7 @@ export default function Footer() {
             </Link>
 
             <p className="luk-footer__brand-desc">
-              A comprehensive travel companion charting India's sovereign states, cultural capitals, and verified monuments with real-time navigation.
+              A comprehensive travel companion charting India's diverse states, cultural capitals, and verified monuments with real-time navigation.
             </p>
 
             <div className="luk-footer__meta-note">

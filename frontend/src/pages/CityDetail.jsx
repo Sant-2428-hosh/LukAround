@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { cities, states, attractions, itineraries } from '../data/indiaTourismData';
 import { hotels as allHotels } from '../data/hotelsData';
 import AttractionCard from '../components/tourism/AttractionCard';
@@ -9,6 +9,7 @@ import WhereToStaySection from '../components/tourism/WhereToStaySection';
 import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import TouristSafetyDirectory from '../components/safety/TouristSafetyDirectory';
 import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl } from '../utils/googleMaps';
 import {
   MapPin,
@@ -21,6 +22,7 @@ import {
   PartyPopper,
   ChevronRight,
   ArrowRight,
+  ArrowLeft,
   Camera,
   ShieldCheck,
   Maximize2,
@@ -32,6 +34,7 @@ import {
 } from 'lucide-react';
 
 export default function CityDetail() {
+  const navigate = useNavigate();
   const { stateSlug, citySlug } = useParams();
 
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -84,7 +87,16 @@ export default function CityDetail() {
     a.city.toLowerCase() === city.name.toLowerCase() ||
     (city.id === 'mathura-vrindavan' && (a.citySlug === 'mathura' || a.citySlug === 'vrindavan')) ||
     (city.topAttractions && city.topAttractions.includes(a.id))
-  );
+  ).sort((a, b) => {
+    if (city.topAttractions) {
+      const idxA = city.topAttractions.indexOf(a.id);
+      const idxB = city.topAttractions.indexOf(b.id);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+    }
+    return (a.priorityRank || 99) - (b.priorityRank || 99);
+  });
 
   const cityHotels = allHotels.filter(h =>
     h.citySlug === city.id || h.city.toLowerCase() === city.name.toLowerCase()
@@ -199,15 +211,41 @@ export default function CityDetail() {
       >
         <div className="detail-hero-overlay" />
         <div className="detail-hero-content">
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1rem', flexWrap: 'wrap' }}>
-            <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
-            <ChevronRight size={13} />
-            <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
-            <ChevronRight size={13} />
-            <Link to={`/india/${parentState.slug}`} style={{ color: '#E2E8F0', textDecoration: 'none' }}>{parentState.name}</Link>
-            <ChevronRight size={13} />
-            <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{city.name}</span>
-          </nav>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                color: '#FFFFFF',
+                padding: '0.35rem 0.85rem',
+                borderRadius: '9999px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Return to where you left off"
+            >
+              <ArrowLeft size={13} />
+              <span>Back</span>
+            </button>
+
+            <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.82rem', color: '#CBD5E1', flexWrap: 'wrap' }}>
+              <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
+              <ChevronRight size={13} />
+              <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
+              <ChevronRight size={13} />
+              <Link to={`/india/${parentState.slug}`} style={{ color: '#E2E8F0', textDecoration: 'none' }}>{parentState.name}</Link>
+              <ChevronRight size={13} />
+              <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{city.name}</span>
+            </nav>
+          </div>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <span className="tourism-badge badge-forest">
@@ -321,6 +359,29 @@ export default function CityDetail() {
                 <span>Gallery ({allImages.length} photos)</span>
               </button>
             )}
+
+            {/* Safety & Emergency Anchor Button */}
+            <a
+              href="#city-tourist-safety"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: 'rgba(239, 68, 68, 0.25)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(239, 68, 68, 0.55)',
+                color: '#FCA5A5',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                textDecoration: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              <ShieldCheck size={16} color="#EF4444" />
+              <span>Tourist Safety & Emergency</span>
+            </a>
           </div>
         </div>
 
@@ -627,6 +688,16 @@ export default function CityDetail() {
           }}
           city={city}
         />
+
+        {/* ── Tourist Safety & Emergency Services Section (Master Prompt Requirement) ── */}
+        <div id="city-tourist-safety" style={{ marginBottom: '4rem' }}>
+          <TouristSafetyDirectory
+            initialCity={city.name}
+            initialState={city.state}
+            isEmbedded={true}
+            showHeader={false}
+          />
+        </div>
 
         {/* ── Nearby Destinations ── */}
         {city.nearbyDestinations && city.nearbyDestinations.length > 0 && (

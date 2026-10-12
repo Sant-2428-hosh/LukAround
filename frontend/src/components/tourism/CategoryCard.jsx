@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Compass, Landmark, Flame, Palmtree, Mountain, Coffee, Sparkles } from 'lucide-react';
+import { recordCardClick } from '../common/ScrollToTop';
 
 const ICON_MAP = {
   Landmark,
@@ -16,11 +17,15 @@ export default function CategoryCard({ category }) {
   if (!category) return null;
 
   const { id, name, slug, heroImage, tagline, description, count, icon } = category;
+  const targetId = slug || id;
   const IconComponent = ICON_MAP[icon] || Compass;
 
   return (
     <Link
-      to={`/categories/${slug || id}`}
+      to={`/categories/${targetId}`}
+      id={`category-${targetId}`}
+      data-place-id={targetId}
+      onClick={() => recordCardClick(targetId)}
       style={{
         position: 'relative',
         display: 'flex',

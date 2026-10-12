@@ -58,6 +58,25 @@ const STATE_REGIONS = {
   'madhya-pradesh': 'Central India'
 };
 
+// Verified high-definition fallback images for all 15 states (fast CDN, no hotlink blocks)
+const STATE_HERO_FALLBACKS = {
+  'uttar-pradesh': 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1600&q=80',
+  'rajasthan': 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1600&q=80',
+  'punjab': 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=1600&q=80',
+  'uttarakhand': 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1600&q=80',
+  'tamil-nadu': 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1600&q=80',
+  'karnataka': 'https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1600&q=80',
+  'andhra-pradesh': 'https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=1600&q=80',
+  'telangana': 'https://images.unsplash.com/photo-1572445271230-a78b5944a659?auto=format&fit=crop&w=1600&q=80',
+  'kerala': 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=80',
+  'maharashtra': 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1600&q=80',
+  'gujarat': 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1600&q=80',
+  'west-bengal': 'https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1600&q=80',
+  'bihar': 'https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&w=1600&q=80',
+  'odisha': 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1600&q=80',
+  'madhya-pradesh': 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=1600&q=80'
+};
+
 const REGIONS = ['All', 'North', 'South', 'West', 'East', 'Central'];
 
 export default function MapExplorer() {
@@ -435,58 +454,120 @@ export default function MapExplorer() {
           borderBottom: '1px solid var(--tourism-sand-border)'
         }}>
           {/* Breadcrumb + Prev/Next Controls */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+            {/* Sleek Pill State Switcher */}
+            <div className="state-nav-pill-group" style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              backgroundColor: '#F1F5F9',
+              borderRadius: '12px',
+              padding: '3px',
+              border: '1px solid #E2E8F0',
+              boxShadow: '0 1px 3px rgba(15, 23, 42, 0.05)'
+            }}>
               <button
                 type="button"
                 onClick={handlePrevState}
-                title="Previous State"
+                aria-label="Previous state"
+                title={`Previous state: ${states[(currentStateIndex - 1 + states.length) % states.length]?.name}`}
                 style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '8px',
-                  border: '1px solid var(--tourism-sand-border)',
-                  background: '#FFFFFF',
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
+                  gap: '0.3rem',
+                  padding: '0.4rem 0.75rem',
+                  borderRadius: '9px',
+                  border: 'none',
+                  backgroundColor: '#FFFFFF',
+                  color: '#0F172A',
+                  fontSize: '0.78rem',
+                  fontWeight: 800,
                   cursor: 'pointer',
-                  color: '#475569'
+                  boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--tourism-earth)';
+                  e.currentTarget.style.color = '#FFFFFF';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#FFFFFF';
+                  e.currentTarget.style.color = '#0F172A';
                 }}
               >
-                <ChevronLeft size={16} />
+                <ChevronLeft size={15} strokeWidth={2.5} />
+                <span>Prev</span>
               </button>
+
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.2rem',
+                padding: '0 0.65rem',
+                fontSize: '0.75rem',
+                fontWeight: 800,
+                color: '#64748B',
+                letterSpacing: '0.2px'
+              }}>
+                <span style={{ color: 'var(--tourism-earth)', fontWeight: 900 }}>{currentStateIndex + 1}</span>
+                <span style={{ opacity: 0.5 }}>/</span>
+                <span>{states.length}</span>
+              </div>
+
               <button
                 type="button"
                 onClick={handleNextState}
-                title="Next State"
+                aria-label="Next state"
+                title={`Next state: ${states[(currentStateIndex + 1) % states.length]?.name}`}
                 style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '8px',
-                  border: '1px solid var(--tourism-sand-border)',
-                  background: '#FFFFFF',
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
+                  gap: '0.3rem',
+                  padding: '0.4rem 0.75rem',
+                  borderRadius: '9px',
+                  border: 'none',
+                  backgroundColor: '#FFFFFF',
+                  color: '#0F172A',
+                  fontSize: '0.78rem',
+                  fontWeight: 800,
                   cursor: 'pointer',
-                  color: '#475569'
+                  boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--tourism-earth)';
+                  e.currentTarget.style.color = '#FFFFFF';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#FFFFFF';
+                  e.currentTarget.style.color = '#0F172A';
                 }}
               >
-                <ChevronRight size={16} />
+                <span>Next</span>
+                <ChevronRight size={15} strokeWidth={2.5} />
               </button>
             </div>
 
-            <div style={{ fontSize: '0.82rem', color: '#64748B', fontWeight: 600 }}>
-              <span>India</span>
-              <span style={{ margin: '0 0.35rem' }}>›</span>
-              <span style={{ color: 'var(--tourism-forest)' }}>{stateRegion}</span>
-              <span style={{ margin: '0 0.35rem' }}>›</span>
-              <strong style={{ color: '#0F172A' }}>{selectedState.name}</strong>
-              <span style={{ marginLeft: '0.5rem', fontSize: '0.72rem', color: '#94A3B8' }}>
-                ({currentStateIndex + 1} of {states.length})
+            {/* Breadcrumb Trail */}
+            <nav aria-label="State Breadcrumb" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.82rem' }}>
+              <Link to="/explore" style={{ color: '#64748B', textDecoration: 'none', fontWeight: 600 }}>
+                India
+              </Link>
+              <span style={{ color: '#CBD5E1' }}>›</span>
+              <span style={{
+                color: 'var(--tourism-forest)',
+                backgroundColor: 'rgba(46, 125, 50, 0.08)',
+                padding: '0.15rem 0.55rem',
+                borderRadius: '6px',
+                fontWeight: 700,
+                fontSize: '0.75rem'
+              }}>
+                {stateRegion}
               </span>
-            </div>
+              <span style={{ color: '#CBD5E1' }}>›</span>
+              <strong style={{ color: '#0F172A', fontWeight: 900 }}>
+                {selectedState.name}
+              </strong>
+            </nav>
           </div>
 
           {/* Quick Actions Ribbon */}
@@ -497,16 +578,25 @@ export default function MapExplorer() {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.45rem 0.85rem',
-                borderRadius: '8px',
+                gap: '0.4rem',
+                padding: '0.48rem 0.9rem',
+                borderRadius: '10px',
                 border: '1px solid var(--tourism-sand-border)',
                 background: '#FFFFFF',
                 color: '#334155',
                 fontSize: '0.78rem',
                 fontWeight: 700,
                 cursor: 'pointer',
-                transition: 'var(--transition-smooth)'
+                boxShadow: '0 1px 3px rgba(0,0,0,0.03)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'var(--tourism-earth)';
+                e.currentTarget.style.color = 'var(--tourism-earth)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'var(--tourism-sand-border)';
+                e.currentTarget.style.color = '#334155';
               }}
             >
               {copiedLink ? <Check size={14} color="#16A34A" /> : <Share2 size={14} />}
@@ -520,15 +610,25 @@ export default function MapExplorer() {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.45rem 0.85rem',
-                borderRadius: '8px',
+                gap: '0.4rem',
+                padding: '0.48rem 0.9rem',
+                borderRadius: '10px',
                 border: '1px solid var(--tourism-sand-border)',
                 background: '#FFFFFF',
                 color: '#334155',
                 fontSize: '0.78rem',
                 fontWeight: 700,
-                textDecoration: 'none'
+                textDecoration: 'none',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.03)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'var(--tourism-earth)';
+                e.currentTarget.style.color = 'var(--tourism-earth)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'var(--tourism-sand-border)';
+                e.currentTarget.style.color = '#334155';
               }}
             >
               <Navigation size={14} color="var(--tourism-earth)" />
@@ -542,14 +642,24 @@ export default function MapExplorer() {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.45rem 0.95rem',
-                borderRadius: '8px',
-                background: 'var(--tourism-forest)',
+                gap: '0.4rem',
+                padding: '0.48rem 1rem',
+                borderRadius: '10px',
+                background: 'linear-gradient(135deg, #1E3A8A 0%, #2E7D32 100%)',
                 color: '#FFFFFF',
                 fontSize: '0.78rem',
                 fontWeight: 800,
-                textDecoration: 'none'
+                textDecoration: 'none',
+                boxShadow: '0 2px 8px rgba(46, 125, 50, 0.25)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(46, 125, 50, 0.35)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(46, 125, 50, 0.25)';
               }}
             >
               <Compass size={14} />
@@ -561,14 +671,24 @@ export default function MapExplorer() {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.45rem 0.95rem',
-                borderRadius: '8px',
+                gap: '0.4rem',
+                padding: '0.48rem 1rem',
+                borderRadius: '10px',
                 background: 'var(--tourism-earth)',
                 color: '#FFFFFF',
                 fontSize: '0.78rem',
                 fontWeight: 800,
-                textDecoration: 'none'
+                textDecoration: 'none',
+                boxShadow: '0 2px 8px rgba(200, 90, 50, 0.25)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(200, 90, 50, 0.35)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(200, 90, 50, 0.25)';
               }}
             >
               <span>Full State Guide</span>
@@ -580,94 +700,227 @@ export default function MapExplorer() {
         {/* 2. State Cinematic Hero Banner */}
         <div style={{
           position: 'relative',
-          height: '240px',
-          borderRadius: '18px',
+          height: '270px',
+          minHeight: '270px',
+          borderRadius: '20px',
           overflow: 'hidden',
-          marginBottom: '1.5rem',
-          boxShadow: 'var(--shadow-medium)'
+          marginBottom: '1.75rem',
+          backgroundColor: '#0F172A',
+          backgroundImage: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+          boxShadow: '0 10px 25px -5px rgba(15, 23, 42, 0.2), 0 8px 10px -6px rgba(15, 23, 42, 0.15)'
         }}>
+          {/* Background Photo with Guaranteed High-Res Fallback */}
           <SafeImage
             src={selectedState.heroImage}
+            fallbackSrc={STATE_HERO_FALLBACKS[selectedState.slug]}
             alt={`${selectedState.name} tourism and heritage`}
-            aspectRatio="16:9"
             category="heritage"
             verified={true}
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              zIndex: 1
+            }}
+            imgStyle={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center'
+            }}
           />
 
+          {/* Deep Cinematic Gradient Overlay */}
           <div style={{
             position: 'absolute',
-            top: 0, left: 0, right: 0, bottom: 0,
-            background: 'linear-gradient(180deg, rgba(15,23,42,0.15) 0%, rgba(15,23,42,0.88) 100%)',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 2,
+            background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.6) 45%, rgba(15, 23, 42, 0.95) 100%)',
             display: 'flex',
-            alignItems: 'flex-end',
+            flexDirection: 'column',
             justifyContent: 'space-between',
-            padding: '1.75rem',
+            padding: '1.5rem 1.75rem',
             color: '#FFFFFF'
           }}>
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.45rem' }}>
-                <span style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.22)',
-                  backdropFilter: 'blur(8px)',
-                  color: '#FFFFFF',
-                  padding: '0.2rem 0.65rem',
-                  borderRadius: '9999px',
-                  fontSize: '0.72rem',
-                  fontWeight: 800
-                }}>
-                  Priority Rank #{selectedState.priorityRank}
-                </span>
-                <span style={{
-                  backgroundColor: 'rgba(200, 90, 50, 0.85)',
-                  color: '#FFFFFF',
-                  padding: '0.2rem 0.65rem',
-                  borderRadius: '9999px',
-                  fontSize: '0.72rem',
-                  fontWeight: 800
-                }}>
-                  {stateRegion}
-                </span>
-                <span style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.18)',
-                  backdropFilter: 'blur(8px)',
-                  color: '#FFFFFF',
-                  padding: '0.2rem 0.65rem',
-                  borderRadius: '9999px',
-                  fontSize: '0.72rem',
-                  fontWeight: 700
-                }}>
-                  Capital: {selectedState.capital}
-                </span>
-              </div>
-
-              <h2 style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.4rem)', fontWeight: 900, color: '#FFFFFF', margin: 0, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-                {selectedState.name}
-              </h2>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => handleTabChange('map')}
-              style={{
+            {/* Top Badges */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <span style={{
+                backgroundColor: 'rgba(234, 179, 8, 0.22)',
+                backdropFilter: 'blur(8px)',
+                WebkitBackdropFilter: 'blur(8px)',
+                color: '#FDE047',
+                border: '1px solid rgba(234, 179, 8, 0.4)',
+                padding: '0.25rem 0.7rem',
+                borderRadius: '9999px',
+                fontSize: '0.72rem',
+                fontWeight: 800,
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.4rem',
-                backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                color: '#0F172A',
-                border: 'none',
-                padding: '0.65rem 1.15rem',
-                borderRadius: '12px',
-                fontSize: '0.85rem',
+                gap: '0.35rem'
+              }}>
+                <Award size={13} />
+                <span>Priority Rank #{selectedState.priorityRank}</span>
+              </span>
+
+              <span style={{
+                backgroundColor: 'var(--tourism-earth)',
+                color: '#FFFFFF',
+                padding: '0.25rem 0.7rem',
+                borderRadius: '9999px',
+                fontSize: '0.72rem',
                 fontWeight: 800,
-                cursor: 'pointer',
-                boxShadow: '0 4px 14px rgba(0,0,0,0.25)',
-                transition: 'var(--transition-smooth)'
-              }}
-            >
-              <MapIcon size={16} color="var(--tourism-earth)" />
-              <span>Explore Interactive Map</span>
-            </button>
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem'
+              }}>
+                <Compass size={13} />
+                <span>{stateRegion}</span>
+              </span>
+
+              <span style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.18)',
+                backdropFilter: 'blur(8px)',
+                WebkitBackdropFilter: 'blur(8px)',
+                color: '#FFFFFF',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                padding: '0.25rem 0.7rem',
+                borderRadius: '9999px',
+                fontSize: '0.72rem',
+                fontWeight: 700,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem'
+              }}>
+                <Building2 size={13} />
+                <span>Capital: {selectedState.capital}</span>
+              </span>
+
+              {selectedState.domesticTouristVisits2024 && (
+                <span style={{
+                  backgroundColor: 'rgba(34, 197, 94, 0.22)',
+                  backdropFilter: 'blur(8px)',
+                  WebkitBackdropFilter: 'blur(8px)',
+                  color: '#86EFAC',
+                  border: '1px solid rgba(34, 197, 94, 0.35)',
+                  padding: '0.25rem 0.7rem',
+                  borderRadius: '9999px',
+                  fontSize: '0.72rem',
+                  fontWeight: 800,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem'
+                }}>
+                  <Sparkles size={13} />
+                  <span>{(selectedState.domesticTouristVisits2024 / 10000000).toFixed(1)} Cr Annual Visitors</span>
+                </span>
+              )}
+            </div>
+
+            {/* Bottom Title & Action Buttons */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'space-between',
+              gap: '1rem',
+              flexWrap: 'wrap'
+            }}>
+              <div>
+                <h2 style={{
+                  fontSize: 'clamp(1.9rem, 3.2vw, 2.6rem)',
+                  fontWeight: 900,
+                  color: '#FFFFFF',
+                  margin: '0 0 0.3rem 0',
+                  letterSpacing: '-0.5px',
+                  textShadow: '0 3px 12px rgba(0,0,0,0.6)'
+                }}>
+                  {selectedState.name}
+                </h2>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  fontSize: '0.82rem',
+                  color: 'rgba(255, 255, 255, 0.88)'
+                }}>
+                  <span>{stateCities.length} Verified Cities</span>
+                  <span>•</span>
+                  <span>{stateAttractions.length} Iconic Destinations</span>
+                  <span>•</span>
+                  <span>{selectedState.popularFoods?.length || 0} Signature Cuisines</span>
+                </div>
+              </div>
+
+              {/* Quick Hero Interactive Action Buttons */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <button
+                  type="button"
+                  onClick={() => handleTabChange('map')}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.45rem',
+                    backgroundColor: '#FFFFFF',
+                    color: '#0F172A',
+                    border: 'none',
+                    padding: '0.65rem 1.15rem',
+                    borderRadius: '12px',
+                    fontSize: '0.84rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 14px rgba(0,0,0,0.3)',
+                    transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = 'var(--tourism-earth)';
+                    e.currentTarget.style.color = '#FFFFFF';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#FFFFFF';
+                    e.currentTarget.style.color = '#0F172A';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  <MapIcon size={16} color="var(--tourism-earth)" />
+                  <span>Explore Interactive Map</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => handleTabChange('cities')}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    backgroundColor: 'rgba(255, 255, 255, 0.16)',
+                    backdropFilter: 'blur(8px)',
+                    WebkitBackdropFilter: 'blur(8px)',
+                    color: '#FFFFFF',
+                    border: '1px solid rgba(255, 255, 255, 0.3)',
+                    padding: '0.65rem 1rem',
+                    borderRadius: '12px',
+                    fontSize: '0.84rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.28)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.16)';
+                  }}
+                >
+                  <Building2 size={15} />
+                  <span>View Cities</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -1,11 +1,12 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import CategoryCard from '../components/tourism/CategoryCard';
 import AttractionCard from '../components/tourism/AttractionCard';
 import { categories, attractions } from '../data/indiaTourismData';
-import { Compass, ArrowRight, ChevronRight } from 'lucide-react';
+import { Compass, ArrowRight, ArrowLeft, ChevronRight } from 'lucide-react';
 
 export default function Categories() {
+  const navigate = useNavigate();
   const { categorySlug } = useParams();
 
   // If a specific category slug is passed in the URL (e.g. /categories/beaches)
@@ -18,7 +19,7 @@ export default function Categories() {
         (a.category || []).includes(selectedCategory.slug) ||
         a.type === selectedCategory.slug ||
         (a.tags || []).includes(selectedCategory.slug)
-      )
+      ).sort((a, b) => (a.priorityRank || 99) - (b.priorityRank || 99))
     : [];
 
   return (
@@ -34,13 +35,39 @@ export default function Categories() {
       }}>
         <div className="tourism-container" style={{ maxWidth: '850px' }}>
           {selectedCategory && (
-            <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1rem' }}>
-              <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
-              <ChevronRight size={13} />
-              <Link to="/categories" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Categories</Link>
-              <ChevronRight size={13} />
-              <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{selectedCategory.name}</span>
-            </nav>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+              <button
+                type="button"
+                onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/categories')}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                  backdropFilter: 'blur(8px)',
+                  border: '1px solid rgba(255, 255, 255, 0.25)',
+                  color: '#FFFFFF',
+                  padding: '0.35rem 0.85rem',
+                  borderRadius: '9999px',
+                  fontSize: '0.8rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Return to where you left off"
+              >
+                <ArrowLeft size={13} />
+                <span>Back</span>
+              </button>
+
+              <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1' }}>
+                <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
+                <ChevronRight size={13} />
+                <Link to="/categories" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Categories</Link>
+                <ChevronRight size={13} />
+                <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{selectedCategory.name}</span>
+              </nav>
+            </div>
           )}
 
           <span className="tourism-badge badge-earth" style={{ marginBottom: '0.75rem' }}>

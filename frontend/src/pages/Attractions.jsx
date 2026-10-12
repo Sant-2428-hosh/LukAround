@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import AttractionCard from '../components/tourism/AttractionCard';
 import FilterPanel from '../components/tourism/FilterPanel';
 import { attractions } from '../data/indiaTourismData';
+import { ArrowLeft } from 'lucide-react';
 
 export default function Attractions() {
+  const navigate = useNavigate();
   const [filters, setFilters] = useState({
     stateSlug: '',
     category: '',
@@ -42,10 +45,11 @@ export default function Attractions() {
       const matchCity = a.city.toLowerCase().includes(q);
       const matchState = a.state.toLowerCase().includes(q);
       const matchTag = (a.tags || []).some(t => t.toLowerCase().includes(q));
-      if (!matchName && !matchCity && !matchState && !matchTag) return false;
+      const matchAlias = (a.aliases || []).some(al => al.toLowerCase().includes(q));
+      if (!matchName && !matchCity && !matchState && !matchTag && !matchAlias) return false;
     }
     return true;
-  });
+  }).sort((a, b) => (a.priorityRank || 99) - (b.priorityRank || 99));
 
   return (
     <div className="tourism-page">
@@ -56,9 +60,34 @@ export default function Attractions() {
         textAlign: 'center'
       }}>
         <div className="tourism-container" style={{ maxWidth: '800px' }}>
-          <span className="tourism-badge badge-earth" style={{ marginBottom: '0.75rem' }}>
-            Destinations & Sights
-          </span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.65rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                color: '#FFFFFF',
+                padding: '0.3rem 0.8rem',
+                borderRadius: '9999px',
+                fontSize: '0.78rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Return to where you left off"
+            >
+              <ArrowLeft size={13} />
+              <span>Back</span>
+            </button>
+            <span className="tourism-badge badge-earth">
+              Destinations & Sights
+            </span>
+          </div>
           <h1 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', fontWeight: 900, marginBottom: '0.75rem' }}>
             Tourist Attractions of India
           </h1>

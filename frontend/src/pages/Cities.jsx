@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import CityCard from '../components/tourism/CityCard';
 import { cities, states, travelStyles } from '../data/indiaTourismData';
-import { MapPin, Filter, Search, Sparkles, X } from 'lucide-react';
+import { MapPin, Filter, Search, Sparkles, X, ArrowLeft } from 'lucide-react';
 
 const STYLE_CITY_MAPPING = {
   family: ['family', 'sightseeing', 'heritage', 'hill-stations'],
@@ -20,6 +20,7 @@ const STYLE_CITY_MAPPING = {
 };
 
 export default function Cities() {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const initialStyle = searchParams.get('travelStyle') || '';
 
@@ -73,9 +74,34 @@ export default function Cities() {
         textAlign: 'center'
       }}>
         <div className="tourism-container" style={{ maxWidth: '800px' }}>
-          <span className="tourism-badge badge-forest" style={{ marginBottom: '0.75rem' }}>
-            City Directory
-          </span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.65rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                color: '#FFFFFF',
+                padding: '0.3rem 0.8rem',
+                borderRadius: '9999px',
+                fontSize: '0.78rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Return to where you left off"
+            >
+              <ArrowLeft size={13} />
+              <span>Back</span>
+            </button>
+            <span className="tourism-badge badge-forest">
+              City Directory
+            </span>
+          </div>
           <h1 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', fontWeight: 900, marginBottom: '0.75rem' }}>
             Cities & Tourist Destinations
           </h1>

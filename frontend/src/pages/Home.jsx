@@ -7,6 +7,7 @@ import CategoryCard from '../components/tourism/CategoryCard';
 import ItineraryCard from '../components/tourism/ItineraryCard';
 import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import PopularPlacesSection from '../components/tourism/PopularPlacesSection';
+import TravelIntelligenceHub from '../components/tourism/TravelIntelligenceHub';
 import {
   states, cities, attractions, categories, travelStyles, itineraries
 } from '../data/indiaTourismData';
@@ -15,6 +16,7 @@ import {
   CheckCircle2, Flame, Star, Globe, Zap, ChevronLeft, ChevronRight, UtensilsCrossed,
   Users, Heart, Smile, Clock, Crown, Wallet, Landmark, Trees, Palmtree
 } from 'lucide-react';
+import { recordCardClick } from '../components/common/ScrollToTop';
 
 const TRAVEL_STYLE_CONFIG = {
   family: {
@@ -199,43 +201,9 @@ const HERO_SLIDES = [
     fallbackImage: 'https://images.unsplash.com/photo-1675677044118-3fd84f9deaf0?auto=format&fit=crop&w=2000&q=80',
     tabLabel: 'Thanjai Periya Kovil',
     tabLocation: 'Thanjavur, TN',
-    targetUrl: '/india/tamil-nadu/thanjavur/brihadeeswarar-temple'
+    targetUrl: '/india/tamil-nadu/thanjavur/thanjai-periya-kovil'
   }
 ];
-
-function useCounter(target, duration) {
-  if (duration === undefined) duration = 1800;
-  const [count, setCount] = useState(0);
-  useEffect(function() {
-    var start = 0;
-    var step = target / (duration / 16);
-    var timer = setInterval(function() {
-      start += step;
-      if (start >= target) { setCount(target); clearInterval(timer); }
-      else { setCount(Math.floor(start)); }
-    }, 16);
-    return function() { clearInterval(timer); };
-  }, [target, duration]);
-  return count;
-}
-
-function StatCounter(props) {
-  var value = props.value;
-  var suffix = props.suffix || '';
-  var label = props.label;
-  var color = props.color;
-  var count = useCounter(parseInt(value));
-  return (
-    React.createElement('div', { style: { textAlign: 'center' } },
-      React.createElement('div', { style: { fontSize: '2.2rem', fontWeight: 900, color: color, letterSpacing: '-0.04em', lineHeight: 1 } },
-        count, suffix
-      ),
-      React.createElement('div', { style: { fontSize: '0.72rem', fontWeight: 700, color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.8px', marginTop: '0.3rem' } },
-        label
-      )
-    )
-  );
-}
 
 export default function Home() {
   const navigate = useNavigate();
@@ -299,10 +267,33 @@ export default function Home() {
     return (a.priorityRank || 999) - (b.priorityRank || 999);
   });
 
-  const featuredAttractions = attractions.filter(function(a) {
-    if (attractionFilter === 'all') return a.featured === true;
-    return (a.category || []).includes(attractionFilter) || a.type === attractionFilter;
-  }).slice(0, 8);
+  const FEATURED_ICONIC_IDS = [
+    'taj-mahal',
+    'thanjai-periya-kovil',
+    'hampi-monuments',
+    'amber-fort',
+    'golden-temple',
+    'meenakshi-temple',
+    'qutub-minar',
+    'mysore-palace',
+    'red-fort',
+    'khajuraho-temples'
+  ];
+
+  const featuredAttractions = attractions
+    .filter(function(a) {
+      if (attractionFilter === 'all') return a.featured === true;
+      return (a.category || []).includes(attractionFilter) || a.type === attractionFilter;
+    })
+    .sort(function(a, b) {
+      const idxA = FEATURED_ICONIC_IDS.indexOf(a.id);
+      const idxB = FEATURED_ICONIC_IDS.indexOf(b.id);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+      return (a.priorityRank || 99) - (b.priorityRank || 99);
+    })
+    .slice(0, 8);
 
   const handleStateJump = function(e) {
     e.preventDefault();
@@ -449,37 +440,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ 2. CREDIBILITY METRICS ══ */}
-      <section className="metrics-strip">
-        <div className="tourism-container">
-          <div className="metrics-grid">
-            <div className="metric-item">
-              <div className="metric-icon" style={{ backgroundColor: '#FCEEE8', color: '#C85A32' }}>🏛️</div>
-              <StatCounter value={15} label="Sovereign States Charted" color="#C85A32" />
-            </div>
-            <div className="metric-divider" />
-            <div className="metric-item">
-              <div className="metric-icon" style={{ backgroundColor: '#CCFBF1', color: '#0D9488' }}>🌆</div>
-              <StatCounter value={212} label="Iconic Destination Cities" color="#0D9488" />
-            </div>
-            <div className="metric-divider" />
-            <div className="metric-item">
-              <div className="metric-icon" style={{ backgroundColor: '#E0F2FE', color: '#0284C7' }}>✨</div>
-              <StatCounter value={403} suffix="+" label="Verified Masterpiece Attractions" color="#0284C7" />
-            </div>
-            <div className="metric-divider" />
-            <div className="metric-item">
-              <div className="metric-icon" style={{ backgroundColor: '#FEF3C7', color: '#D97706' }}>🏆</div>
-              <StatCounter value={42} suffix="+" label="UNESCO World Heritage Sites" color="#D97706" />
-            </div>
-            <div className="metric-divider" />
-            <div className="metric-item">
-              <div className="metric-icon" style={{ backgroundColor: '#F3E8FF', color: '#9333EA' }}>🗺️</div>
-              <StatCounter value={6} label="Curated Signature Itineraries" color="#9333EA" />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ══ 2. LUKAROUND TRAVEL INTELLIGENCE RADAR & VERIFIED RESOURCES ══ */}
+      <TravelIntelligenceHub />
 
       {/* ══ INDIA'S MOST POPULAR TOURIST PLACES ══ */}
       <PopularPlacesSection />
@@ -515,9 +477,6 @@ export default function Home() {
             <Link
               to="/states"
               className="cta-btn-primary"
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-              }}
             >
               <Compass size={17} />
               <span>Explore More</span>
@@ -625,6 +584,9 @@ export default function Home() {
                 <Link
                   key={style.id}
                   to={'/cities?travelStyle=' + style.id}
+                  id={`place-${style.id}`}
+                  data-place-id={style.id}
+                  onClick={() => recordCardClick(style.id)}
                   className="travel-style-card-pro"
                   onMouseEnter={() => setHoveredStyle(style.id)}
                   onMouseLeave={() => setHoveredStyle(null)}

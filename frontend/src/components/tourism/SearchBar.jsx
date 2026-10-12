@@ -42,8 +42,9 @@ export default function SearchBar({ placeholder = "Search states, cities, attrac
       a.name.toLowerCase().includes(q) ||
       a.city.toLowerCase().includes(q) ||
       (a.category || []).some(cat => cat.toLowerCase().includes(q)) ||
-      (a.tags || []).some(t => t.toLowerCase().includes(q))
-    ).slice(0, 5);
+      (a.tags || []).some(t => t.toLowerCase().includes(q)) ||
+      (a.aliases || []).some(al => al.toLowerCase().includes(q))
+    ).sort((a, b) => (a.priorityRank || 99) - (b.priorityRank || 99)).slice(0, 5);
 
     const matchedCats = (categories || []).filter(cat =>
       cat.name.toLowerCase().includes(q) || cat.id.toLowerCase().includes(q)

@@ -211,8 +211,8 @@ const POPULAR_COLLECTIONS = [
         url: '/india/odisha/konark/konark-sun-temple'
       },
       {
-        id: 'brihadeeswarar-temple',
-        name: 'Brihadeeswarar Temple (Big Temple)',
+        id: 'thanjai-periya-kovil',
+        name: 'Thanjai Periya Kovil (Brihadisvara Temple)',
         city: 'Thanjavur',
         citySlug: 'thanjavur',
         state: 'Tamil Nadu',
@@ -222,8 +222,8 @@ const POPULAR_COLLECTIONS = [
         popularitySource: 'UNESCO & Archaeological Survey of India',
         sourceYear: '2024',
         lastVerified: '2026-03-25',
-        highlights: 'Thousand-year-old monolithic 80-tonne granite vimana built by Emperor Raja Raja Chola I',
-        url: '/india/tamil-nadu/thanjavur/brihadeeswarar-temple'
+        highlights: 'Thousand-year-old monolithic 81-tonne granite vimana built by Emperor Raja Raja Chola I',
+        url: '/india/tamil-nadu/thanjavur/thanjai-periya-kovil'
       }
     ]
   },

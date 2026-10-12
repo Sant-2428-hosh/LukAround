@@ -51,6 +51,7 @@ app.use('/api/itinerary', itineraryRouter);
 app.use('/api/transport', transportRouter);
 app.use('/api/hotels', hotelsRouter);
 app.use('/api/safety', safetyRouter);
+app.use('/api/emergency', safetyRouter);
 app.use('/api/auth', authRouter.router || authRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api/translate', translateRouter);

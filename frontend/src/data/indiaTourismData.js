@@ -168,8 +168,8 @@ export const states = [
       "Salem"
     ],
     "topDestinations": [
+      "Thanjai Periya Kovil (Brihadisvara Temple)",
       "Meenakshi Amman Temple",
-      "Brihadeeswarar Temple",
       "Shore Temple",
       "Ramanathaswamy Temple",
       "Vivekananda Rock Memorial",
@@ -2763,23 +2763,26 @@ export const cities = [
     "name": "Thanjavur",
     "aliases": [
       "Tanjore",
+      "Thanjavur Periya Kovil",
+      "Home of Thanjai Periya Kovil",
       "Rice Bowl of Tamil Nadu"
     ],
     "state": "Tamil Nadu",
     "stateSlug": "tamil-nadu",
-    "description": "The imperial capital of the Chola Empire, home to the UNESCO Brihadeeswarar Temple (Big Temple) with its monolithic 80-tonne granite dome, royal Nayak palace, and exquisite gold leaf Tanjore art.",
+    "description": "The imperial capital of the Chola Empire, home to the UNESCO World Heritage Thanjai Periya Kovil (Brihadisvara Temple) with its monolithic 80-tonne granite dome, royal Nayak-Maratha palace, and exquisite gold leaf Tanjore art.",
     "heroImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "latitude": 10.787,
     "longitude": 79.1378,
     "bestTimeToVisit": "October to March",
     "topAttractions": [
+      "thanjai-periya-kovil",
       "brihadeeswarar-temple",
       "thanjavur-palace",
       "saraswathi-mahal-library"
     ],
     "thingsToDo": [
-      "Marvel at the shadow-defying architecture of the Big Temple",
-      "Examine ancient palm-leaf manuscripts at Saraswathi Mahal",
+      "Marvel at the shadow-defying architecture and monolithic Nandi of Thanjai Periya Kovil",
+      "Examine ancient palm-leaf manuscripts at Saraswathi Mahal Library",
       "Visit bronze casting master artisans in Swamimalai",
       "Learn the technique of Tanjore gold foil painting"
     ],
@@ -17323,68 +17326,95 @@ export const attractions = [
     "verified": true
   },
   {
-    "id": "brihadeeswarar-temple",
-    "name": "Brihadeeswarar Temple (Big Temple)",
+    "id": "thanjai-periya-kovil",
+    "name": "Thanjai Periya Kovil (Brihadisvara Temple)",
+    "aliases": [
+      "Thanjai Periya Kovil",
+      "Periya Kovil",
+      "Thanjavur Big Temple",
+      "Peruvudaiyar Kovil",
+      "Rajarajesvaram",
+      "Brihadeeswarar Temple",
+      "Brihadisvara Temple",
+      "Tanjore Big Temple",
+      "brihadeeswarar-temple"
+    ],
     "state": "Tamil Nadu",
     "stateSlug": "tamil-nadu",
     "city": "Thanjavur",
     "citySlug": "thanjavur",
-    "type": "spiritual",
-    "shortDescription": "UNESCO World Heritage 11th-century Chola masterpiece, built entirely of granite with a 216-foot soaring vimana and an 80-ton monolithic stone cupola.",
-    "longDescription": "Consecrated in 1010 AD by Emperor Raja Raja Chola I, the 'Peruvudaiyar Kovil' is the apex of Dravidian architecture. The entire temple is constructed without mortar using interlocking granite blocks in an area where no granite quarries exist for 60 km. The 66-meter central tower (Vimana) is capped by a single carved granite block weighing 81 tons, housing one of India's largest monolithic Shiva lingams.",
+    "type": "heritage",
+    "shortDescription": "UNESCO World Heritage 11th-century Chola granite marvel built by Emperor Raja Raja Chola I, featuring a 216-foot vimana crowned by an 81-tonne monolithic dome.",
+    "longDescription": "Consecrated in 1010 AD by the visionary Chola Emperor Raja Raja Chola I, Thanjai Periya Kovil (celebrated as Brihadisvara Temple or Peruvudaiyar Kovil) is universally revered as the supreme pinnacle of Dravidian architectural mastery. Built entirely of interlocking granite blocks without mortar across a delta where no stone quarries exist for 60 km, its 66-meter (216-foot) Vimana tower is crowned by an 81-tonne monolithic granite cupola. The sanctuary enshrines a monumental 12-foot tall monolithic Shiva Lingam, complemented by one of India's largest monolithic Nandi bulls carved from a single 25-tonne granite block.",
     "category": [
-      "spiritual",
       "heritage",
+      "spiritual",
       "architecture",
-      "temples"
+      "temples",
+      "culture"
     ],
     "bestTimeToVisit": "October to March",
-    "recommendedDuration": "3 hours",
+    "recommendedDuration": "3 - 4 hours",
     "estimatedVisitTime": "Half Day",
+    "timings": "6:00 AM – 12:30 PM & 4:00 PM – 8:30 PM (Daily)",
+    "entryFee": "Free (ASI Protected UNESCO World Heritage Monument)",
     "coordinates": {
       "latitude": 10.7828,
       "longitude": 79.1318
     },
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
     "gallery": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/1000_years_Old_Thanjavur_Brihadeeshwara_Temple_View_at_Sunrise.jpg",
+      "https://images.unsplash.com/photo-1675677044118-3fd84f9deaf0?auto=format&fit=crop&w=1200&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/6/66/1010_CE_Brihadishwara_Shiva_Temple%2C_inscription%2C_built_by_Rajaraja_I%2C_Thanjavur_Tamil_Nadu_India.jpg"
     ],
     "highlights": [
-      "216-foot granite Vimana that dominates the skyline",
-      "81-ton monolithic granite capstone (Kumbam)",
-      "Massive monolithic Nandi bull carved from a single 25-ton stone",
-      "Ancient 1,000-year-old Tamil inscriptions on temple base"
+      "216-foot soaring granite Vimana dominating the Kaveri delta horizon",
+      "81-tonne single-stone monolithic granite cupola (Kumbam)",
+      "Massive monolithic Nandi bull carved from a single 25-tonne stone",
+      "1,000-year-old ancient Tamil inscriptions recording donations by King Raja Raja Chola I",
+      "Magnificent Chola fresco murals and 108 Natya Karanas dance postures carved along the corridors"
     ],
     "activities": [
-      "Circling the vast paved courtyard at golden hour",
-      "Studying ancient Chola fresco paintings and Tamil script",
-      "Admiring sunset glow on the golden granite spire"
+      "Circumbulating the vast paved granite courtyard during golden hour",
+      "Witnessing evening Pradosham and Aarti ceremonies",
+      "Studying ancient 11th-century Chola Tamil calligraphy on the plinth",
+      "Admiring the sunset reflection turning the granite walls into glowing gold"
     ],
     "nearbyPlaces": [
       "Thanjavur Maratha Palace",
-      "Saraswathi Mahal Library"
+      "Saraswathi Mahal Library",
+      "Schwartz Church",
+      "Sivaganga Park"
     ],
     "travelTips": [
-      "Visit in late afternoon (around 4:30 PM) when the granite stones cool down and the temple radiates golden light"
+      "Visit between 4:30 PM and 6:30 PM when the granite courtyard cools down and the golden hour light illuminates the vimana",
+      "Footwear must be deposited at the temple entrance counter",
+      "Photography is allowed in the vast outer courtyards and praharas; inside the inner sanctum photography is prohibited"
     ],
-    "accessibility": "Ramps available at the main moat entrance and outer corridors",
+    "accessibility": "Wheelchair ramps available at outer moat entrance and paved courtyards",
     "familyFriendly": true,
     "budgetLevel": "free",
     "tags": [
       "unesco",
+      "thanjai-periya-kovil",
+      "periya-kovil",
       "big-temple",
       "chola",
       "granite-marvel",
-      "thanjavur"
+      "thanjavur",
+      "dravidian-architecture",
+      "raja-raja-chola"
     ],
     "featured": true,
     "priorityRank": 1,
-    "imageAlt": "Brihadeeswarar Temple (Big Temple) in Thanjavur, Tamil Nadu, India",
+    "imageAlt": "Authentic photograph of Thanjai Periya Kovil (Brihadisvara Temple) in Thanjavur, Tamil Nadu",
     "imageSource": "https://en.wikipedia.org/wiki/Brihadisvara_Temple",
     "imageSourceName": "Wikimedia Commons",
     "imageLicense": "CC BY-SA 4.0",
-    "imagePhotographer": "Wikimedia Contributor",
-    "imageCredit": "Photo: Contributor / Wikimedia Commons",
+    "imagePhotographer": "Wiki Loves Monuments Contributor",
+    "imageCredit": "Photo: Wikimedia Commons / CC BY-SA 4.0",
     "verified": true
   },
   {
@@ -38913,7 +38943,7 @@ export const categories = [
     "description": "Explore India's peerless architectural legacy spanning 3,000 years—from soaring Dravidian temple gopurams and monolithic rock-cut cave temples to impregnable Rajput hill citadels and symmetrical white marble Mughal mausoleums.",
     "topDestinations": [
       "Taj Mahal",
-      "Brihadeeswarar Temple",
+      "Thanjai Periya Kovil (Brihadisvara Temple)",
       "Hampi Stone Chariot",
       "Amer Fort",
       "Kailash Temple Ellora",
@@ -38932,6 +38962,7 @@ export const categories = [
     "tagline": "Sacred Confluences, Jyotirlingas & Eternal Ghats",
     "description": "Experience the timeless spiritual heartbeat of India. Journey across the 12 Jyotirlingas, the four supreme Char Dham holy abodes, eternal Ganga Aarti rituals along Varanasi's sacred ghats, and golden gurdwaras serving universal brotherhood.",
     "topDestinations": [
+      "Thanjai Periya Kovil",
       "Kashi Vishwanath (Varanasi)",
       "Golden Temple (Amritsar)",
       "Mahabodhi Temple (Bodh Gaya)",
@@ -43287,21 +43318,31 @@ export const searchIndex = [
     ]
   },
   {
-    "id": "brihadeeswarar-temple",
-    "title": "Brihadeeswarar Temple (Big Temple)",
+    "id": "thanjai-periya-kovil",
+    "title": "Thanjai Periya Kovil (Brihadisvara Temple)",
+    "aliases": [
+      "Thanjai Periya Kovil",
+      "Periya Kovil",
+      "Brihadeeswarar Temple",
+      "Thanjavur Big Temple",
+      "Peruvudaiyar Kovil",
+      "Tanjore Big Temple",
+      "brihadeeswarar-temple"
+    ],
     "type": "attraction",
     "city": "Thanjavur",
     "citySlug": "thanjavur",
     "state": "Tamil Nadu",
     "stateSlug": "tamil-nadu",
-    "url": "/india/tamil-nadu/thanjavur/brihadeeswarar-temple",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "description": "UNESCO World Heritage 11th-century Chola masterpiece, built entirely of granite with a 216-foot soaring vimana and an 80-ton monolithic stone cupola.",
+    "url": "/india/tamil-nadu/thanjavur/thanjai-periya-kovil",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+    "description": "UNESCO World Heritage 11th-century Chola granite marvel built by Emperor Raja Raja Chola I, featuring a 216-foot vimana and an 81-tonne monolithic dome.",
     "category": [
-      "spiritual",
       "heritage",
+      "spiritual",
       "architecture",
-      "temples"
+      "temples",
+      "culture"
     ]
   },
   {

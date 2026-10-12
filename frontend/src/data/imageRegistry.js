@@ -17260,6 +17260,27 @@ export const imageRegistry = [
     "isAiGenerated": false,
     "lastVerified": "2026-10-09",
     "fallback": false
+  },
+  {
+    "imageId": "attr-thanjai-periya-kovil-primary",
+    "entityId": "thanjai-periya-kovil",
+    "entityType": "attraction",
+    "entityName": "Thanjai Periya Kovil (Brihadisvara Temple)",
+    "state": "Tamil Nadu",
+    "city": "Thanjavur",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+    "thumbnailUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Brihadisvara_Temple",
+    "license": "CC BY-SA 4.0",
+    "photographer": "Wiki Loves Monuments Contributor",
+    "attributionText": "Photo: Wikimedia Commons / CC BY-SA 4.0",
+    "altText": "Authentic photograph of Thanjai Periya Kovil (Brihadisvara Temple) in Thanjavur, Tamil Nadu",
+    "verificationStatus": "verified-real-photograph",
+    "authenticityStatus": "verified-real",
+    "isAiGenerated": false,
+    "lastVerified": "2026-10-10",
+    "fallback": false
   }
 ];
 export default imageRegistry;

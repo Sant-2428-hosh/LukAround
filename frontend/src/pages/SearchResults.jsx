@@ -38,8 +38,9 @@ export default function SearchResults() {
     a.shortDescription.toLowerCase().includes(qLower) ||
     (a.category || []).some(cat => cat.toLowerCase().includes(qLower)) ||
     (a.tags || []).some(t => t.toLowerCase().includes(qLower)) ||
-    (a.activities || []).some(act => act.toLowerCase().includes(qLower))
-  );
+    (a.activities || []).some(act => act.toLowerCase().includes(qLower)) ||
+    (a.aliases || []).some(al => al.toLowerCase().includes(qLower))
+  ).sort((a, b) => (a.priorityRank || 99) - (b.priorityRank || 99));
 
   const matchedCategories = categories.filter(cat =>
     cat.name.toLowerCase().includes(qLower) ||

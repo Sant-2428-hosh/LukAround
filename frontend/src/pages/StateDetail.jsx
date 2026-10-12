@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { states, cities, attractions, itineraries } from '../data/indiaTourismData';
 import { hotels as allHotels } from '../data/hotelsData';
 import CityCard from '../components/tourism/CityCard';
@@ -10,6 +10,7 @@ import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import TouristSafetyDirectory from '../components/safety/TouristSafetyDirectory';
 import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import { buildGoogleMapsSearchUrl, STATE_CENTERS } from '../utils/googleMaps';
 import {
@@ -24,6 +25,7 @@ import {
   Sparkles,
   ShoppingBag,
   ArrowRight,
+  ArrowLeft,
   ChevronRight,
   Compass,
   CheckCircle2,
@@ -39,6 +41,7 @@ import {
 } from 'lucide-react';
 
 export default function StateDetail() {
+  const navigate = useNavigate();
   const { stateSlug } = useParams();
   const [activeTab, setActiveTab] = useState('overview');
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -54,7 +57,9 @@ export default function StateDetail() {
 
   const state = states.find(s => s.slug === stateSlug || s.id === stateSlug) || states[0];
   const stateCities = cities.filter(c => c.stateSlug === state.slug || c.state === state.name);
-  const stateAttractions = attractions.filter(a => a.stateSlug === state.slug || a.state === state.name);
+  const stateAttractions = attractions
+    .filter(a => a.stateSlug === state.slug || a.state === state.name)
+    .sort((a, b) => (a.priorityRank || 99) - (b.priorityRank || 99));
   const stateItineraries = itineraries.filter(i => i.state === state.name);
   const stateHotels = allHotels.filter(h => h.state.toLowerCase() === state.name.toLowerCase());
 
@@ -164,13 +169,39 @@ export default function StateDetail() {
       >
         <div className="detail-hero-overlay" />
         <div className="detail-hero-content">
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1rem' }}>
-            <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
-            <ChevronRight size={13} />
-            <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
-            <ChevronRight size={13} />
-            <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{state.name}</span>
-          </nav>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                color: '#FFFFFF',
+                padding: '0.35rem 0.85rem',
+                borderRadius: '9999px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Return to where you left off"
+            >
+              <ArrowLeft size={13} />
+              <span>Back</span>
+            </button>
+
+            <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.82rem', color: '#CBD5E1', flexWrap: 'wrap' }}>
+              <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
+              <ChevronRight size={13} />
+              <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
+              <ChevronRight size={13} />
+              <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{state.name}</span>
+            </nav>
+          </div>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <span className="tourism-badge badge-earth">
@@ -284,6 +315,29 @@ export default function StateDetail() {
                 <span>Gallery ({allImages.length} photos)</span>
               </button>
             )}
+
+            {/* Tourist Safety & Emergency Services Button */}
+            <button
+              type="button"
+              onClick={() => setActiveTab('safety')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: 'rgba(239, 68, 68, 0.25)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(239, 68, 68, 0.55)',
+                color: '#FCA5A5',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              <ShieldCheck size={16} color="#EF4444" />
+              <span>Tourist Safety & Emergency</span>
+            </button>
           </div>
         </div>
 
@@ -331,7 +385,8 @@ export default function StateDetail() {
             { id: 'cuisine', label: 'Food & Delicacies' },
             { id: 'culture', label: 'Culture & Festivals' },
             { id: 'itineraries', label: 'Itineraries' },
-            { id: 'transport', label: 'Transport & Travel' }
+            { id: 'transport', label: 'Transport & Travel' },
+            { id: 'safety', label: '🛡️ Tourist Safety & Emergency' }
           ].map((tab) => (
             <button
               key={tab.id}
@@ -596,6 +651,23 @@ export default function StateDetail() {
               state={state}
             />
           </div>
+        )}
+
+        {/* ── Tourist Safety & Emergency Services Tab ── */}
+        {(activeTab === 'safety' || activeTab === 'all') && (
+          <section id="state-tourist-safety" style={{ marginBottom: '4rem' }}>
+            <div style={{ marginBottom: '1.5rem' }}>
+              <span className="tourism-badge badge-forest">Emergency Preparedness & Assistance</span>
+              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
+                Tourist Safety & Emergency Services ({state.name})
+              </h2>
+            </div>
+            <TouristSafetyDirectory
+              initialState={state.name}
+              isEmbedded={true}
+              showHeader={false}
+            />
+          </section>
         )}
       </div>
 

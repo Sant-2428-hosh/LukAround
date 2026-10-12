@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import StateCard from '../components/tourism/StateCard';
 import { states } from '../data/indiaTourismData';
-import { Landmark, ArrowUpDown, Filter } from 'lucide-react';
+import { Landmark, ArrowUpDown, Filter, ArrowLeft } from 'lucide-react';
 
 export default function States() {
+  const navigate = useNavigate();
   const [sortOrder, setSortOrder] = useState('priorityRank');
   const [filterQuery, setFilterQuery] = useState('');
 
@@ -28,9 +30,34 @@ export default function States() {
         textAlign: 'center'
       }}>
         <div className="tourism-container" style={{ maxWidth: '800px' }}>
-          <span className="tourism-badge badge-forest" style={{ marginBottom: '0.75rem' }}>
-            National Directory
-          </span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.65rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                color: '#FFFFFF',
+                padding: '0.3rem 0.8rem',
+                borderRadius: '9999px',
+                fontSize: '0.78rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Return to where you left off"
+            >
+              <ArrowLeft size={13} />
+              <span>Back</span>
+            </button>
+            <span className="tourism-badge badge-forest">
+              National Directory
+            </span>
+          </div>
           <h1 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', fontWeight: 900, marginBottom: '0.75rem' }}>
             States & Territories of India
           </h1>

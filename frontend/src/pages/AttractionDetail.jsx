@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { attractions, states, cities } from '../data/indiaTourismData';
 import { hotels as allHotels } from '../data/hotelsData';
 import AttractionCard from '../components/tourism/AttractionCard';
@@ -9,6 +9,7 @@ import WhereToStaySection from '../components/tourism/WhereToStaySection';
 import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import TouristSafetyDirectory from '../components/safety/TouristSafetyDirectory';
 import { buildGoogleMapsSearchUrl, buildGoogleMapsDirectionsUrl, getNearbyHotels } from '../utils/googleMaps';
 import { calculateDistance } from '../utils/distance';
 import {
@@ -24,16 +25,19 @@ import {
   Award,
   ChevronRight,
   ArrowRight,
+  ArrowLeft,
   ExternalLink,
   Share2,
   Camera,
   ShieldCheck,
+  ShieldAlert,
   Maximize2,
   Navigation,
   Hotel
 } from 'lucide-react';
 
 export default function AttractionDetail() {
+  const navigate = useNavigate();
   const { stateSlug, citySlug, attractionSlug } = useParams();
 
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -41,7 +45,7 @@ export default function AttractionDetail() {
   const [directionsModalOpen, setDirectionsModalOpen] = useState(false);
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
 
-  // Intelligent attraction resolution: exact ID, exact slug, or verified city scope
+  // Intelligent attraction resolution: exact ID, aliases, exact slug, or verified city scope
   const attraction = useMemo(() => {
     if (!attractionSlug) return null;
     const target = attractionSlug.toLowerCase().trim();
@@ -50,14 +54,33 @@ export default function AttractionDetail() {
     let found = attractions.find(a => a.id.toLowerCase() === target);
     if (found) return found;
 
-    // 2. Exact Name slug match
+    // 2. Direct Alias match (e.g. brihadeeswarar-temple, thanjavur-big-temple, periya-kovil)
+    found = attractions.find(a => (a.aliases || []).some(al => {
+      const cleanAlias = al.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return cleanAlias === target || al.toLowerCase() === target;
+    }));
+    if (found) return found;
+
+    // 3. Exact Name slug match
     found = attractions.find(a => {
       const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
       return cleanName === target;
     });
     if (found) return found;
 
-    // 3. City-scoped match if citySlug provided in URL
+    // 4. Dedicated keyword recognition for Thanjai Periya Kovil variations
+    if (
+      target.includes('thanjai') ||
+      target.includes('periya-kovil') ||
+      target.includes('brihadeeswarar') ||
+      target.includes('peruvudaiyar') ||
+      target.includes('brihadisvara')
+    ) {
+      const periyaKovil = attractions.find(a => a.id === 'thanjai-periya-kovil');
+      if (periyaKovil) return periyaKovil;
+    }
+
+    // 5. City-scoped match if citySlug provided in URL
     if (citySlug) {
       const cityAttrs = attractions.filter(a =>
         a.citySlug === citySlug ||
@@ -68,6 +91,13 @@ export default function AttractionDetail() {
       found = cityAttrs.find(a => a.id.toLowerCase() === target);
       if (found) return found;
 
+      // Try aliases in this city
+      found = cityAttrs.find(a => (a.aliases || []).some(al => {
+        const cleanAlias = al.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        return cleanAlias === target || al.toLowerCase() === target;
+      }));
+      if (found) return found;
+
       // Try exact Name slug match in this city
       found = cityAttrs.find(a => {
         const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -75,6 +105,13 @@ export default function AttractionDetail() {
       });
       if (found) return found;
     }
+
+    // 6. Substring match fallback across names and IDs
+    found = attractions.find(a => {
+      const cleanName = a.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return cleanName.includes(target) || target.includes(a.id.toLowerCase());
+    });
+    if (found) return found;
 
     return null;
   }, [attractionSlug, citySlug]);
@@ -204,17 +241,43 @@ export default function AttractionDetail() {
       >
         <div className="detail-hero-overlay" />
         <div className="detail-hero-content">
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1rem', flexWrap: 'wrap' }}>
-            <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
-            <ChevronRight size={13} />
-            <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
-            <ChevronRight size={13} />
-            <Link to={`/india/${parentState.slug}`} style={{ color: '#E2E8F0', textDecoration: 'none' }}>{parentState.name}</Link>
-            <ChevronRight size={13} />
-            <Link to={`/india/${parentState.slug}/${parentCity.id}`} style={{ color: '#E2E8F0', textDecoration: 'none' }}>{parentCity.name}</Link>
-            <ChevronRight size={13} />
-            <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{attraction.name}</span>
-          </nav>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255, 255, 255, 0.25)',
+                color: '#FFFFFF',
+                padding: '0.35rem 0.85rem',
+                borderRadius: '9999px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Return to where you left off"
+            >
+              <ArrowLeft size={13} />
+              <span>Back</span>
+            </button>
+
+            <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.82rem', color: '#CBD5E1', flexWrap: 'wrap' }}>
+              <Link to="/" style={{ color: '#E2E8F0', textDecoration: 'none' }}>Home</Link>
+              <ChevronRight size={13} />
+              <Link to="/states" style={{ color: '#E2E8F0', textDecoration: 'none' }}>States</Link>
+              <ChevronRight size={13} />
+              <Link to={`/india/${parentState.slug}`} style={{ color: '#E2E8F0', textDecoration: 'none' }}>{parentState.name}</Link>
+              <ChevronRight size={13} />
+              <Link to={`/india/${parentState.slug}/${parentCity.id}`} style={{ color: '#E2E8F0', textDecoration: 'none' }}>{parentCity.name}</Link>
+              <ChevronRight size={13} />
+              <span style={{ color: '#FFFFFF', fontWeight: 700 }}>{attraction.name}</span>
+            </nav>
+          </div>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <span className="tourism-badge badge-earth">
@@ -303,6 +366,27 @@ export default function AttractionDetail() {
               <Navigation size={16} color="#38BDF8" />
               <span>Get Directions</span>
             </button>
+
+            {/* Safety & Emergency Quick Button */}
+            <a
+              href="#tourist-safety"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.45rem',
+                backgroundColor: 'rgba(220, 38, 38, 0.25)',
+                color: '#FECACA',
+                border: '1px solid rgba(220, 38, 38, 0.5)',
+                padding: '0.65rem 1.25rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                textDecoration: 'none'
+              }}
+            >
+              <ShieldAlert size={16} color="#EF4444" />
+              <span>Safety & Emergency</span>
+            </a>
 
             {/* Show Nearby Hotels Button */}
             <a
@@ -656,6 +740,25 @@ export default function AttractionDetail() {
         {/* ── Dedicated Where to Stay Section (Official Hotel Discovery System) ── */}
         <div id="where-to-stay">
           <WhereToStaySection destination={attraction} city={parentCity} />
+        </div>
+
+        {/* ── Tourist Safety & Emergency Services (Verified Nearby Police & Hospitals) ── */}
+        <div id="tourist-safety" style={{ marginBottom: '5rem' }}>
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h3 className="tourism-heading" style={{ fontSize: '1.75rem', marginBottom: '0.4rem' }}>
+              Tourist Safety & Nearby Emergency Care
+            </h3>
+            <p style={{ color: '#64748B', fontSize: '0.92rem', margin: 0 }}>
+              Real-time emergency facilities, nearby police precincts, and 24/7 hospitals around {attraction.name}.
+            </p>
+          </div>
+          <TouristSafetyDirectory
+            initialAttraction={attraction}
+            initialCity={parentCity}
+            initialState={parentState}
+            showHeader={false}
+            isEmbedded={true}
+          />
         </div>
 
         {/* ── Nearby Attractions in this City ── */}

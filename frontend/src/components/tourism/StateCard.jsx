@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Calendar, Compass, ArrowRight, Award } from 'lucide-react';
 import SafeImage from './SafeImage';
+import { recordCardClick } from '../common/ScrollToTop';
 
 export default function StateCard({ state }) {
   if (!state) return null;
@@ -33,6 +34,9 @@ export default function StateCard({ state }) {
   return (
     <Link
       to={`/india/${slug}`}
+      id={`state-${slug}`}
+      data-place-id={slug}
+      onClick={() => recordCardClick(slug)}
       className="state-card"
       aria-label={`Explore ${name}, India`}
     >

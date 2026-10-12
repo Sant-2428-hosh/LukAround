@@ -330,6 +330,41 @@ export async function getSafetyInfo(city) {
 }
 
 /**
+ * Fetch Verified Location-Specific Emergency Facilities (Police, Hospitals)
+ * Resolves exact coordinates and returns real nearby facilities.
+ */
+export async function getNearbyFacilitiesApi({
+  lat,
+  lng,
+  city,
+  state,
+  radius,
+  type,
+  destination,
+  attractionId,
+  signal
+} = {}) {
+  const params = new URLSearchParams();
+  if (lat != null) params.append('lat', lat);
+  if (lng != null) params.append('lng', lng);
+  if (city) params.append('city', city);
+  if (state) params.append('state', state);
+  if (radius) params.append('radius', radius);
+  if (type) params.append('type', type);
+  if (destination) params.append('destination', destination);
+  if (attractionId) params.append('attractionId', attractionId);
+
+  const response = await fetch(`${API_BASE_URL}/emergency/facilities/nearby?${params.toString()}`, {
+    headers: { 'Accept': 'application/json' },
+    signal
+  });
+  if (!response.ok) {
+    throw new Error(`Emergency facilities query failed with status ${response.status}`);
+  }
+  return await response.json();
+}
+
+/**
  * Fetch Public Settings (Broadcast Banner & Feature Flags)
  */
 export async function getPublicSettings() {

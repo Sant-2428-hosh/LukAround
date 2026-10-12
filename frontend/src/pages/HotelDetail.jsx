@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
   Star,
   MapPin,
@@ -12,6 +12,7 @@ import {
   Navigation,
   ExternalLink,
   ChevronRight,
+  ArrowLeft,
   Sparkles,
   Camera,
   Share2,
@@ -22,6 +23,7 @@ import {
 } from 'lucide-react';
 import SafeImage from '../components/tourism/SafeImage';
 import DirectionsModal from '../components/tourism/DirectionsModal';
+import TouristSafetyDirectory from '../components/safety/TouristSafetyDirectory';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import { getHotelBySlug } from '../api/client';
 import { hotels as localHotels } from '../data/hotelsData';
@@ -29,6 +31,7 @@ import { attractions } from '../data/indiaTourismData';
 import { calculateDistance, estimateTravelTime, getGoogleMapsSearchUrl, getGoogleMapsDirectionsUrl } from '../utils/distance';
 
 export default function HotelDetail() {
+  const navigate = useNavigate();
   const { slug } = useParams();
 
   const [hotel, setHotel] = useState(null);
@@ -197,7 +200,31 @@ export default function HotelDetail() {
     <div className="hotel-detail-page" style={{ backgroundColor: '#F8FAFC', minHeight: '90vh', paddingBottom: '5rem' }}>
       {/* ── Breadcrumbs & Nav Strip ── */}
       <div style={{ backgroundColor: '#0F172A', color: '#CBD5E1', padding: '1rem 0' }}>
-        <div className="container">
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
+          <button
+            type="button"
+            onClick={() => window.history.length > 1 ? navigate(-1) : navigate('/hotels')}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+              backgroundColor: 'rgba(255, 255, 255, 0.12)',
+              backdropFilter: 'blur(8px)',
+              border: '1px solid rgba(255, 255, 255, 0.25)',
+              color: '#FFFFFF',
+              padding: '0.3rem 0.8rem',
+              borderRadius: '9999px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              transition: 'all 0.2s ease'
+            }}
+            title="Return to where you left off"
+          >
+            <ArrowLeft size={13} />
+            <span>Back</span>
+          </button>
+
           <nav style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', flexWrap: 'wrap' }}>
             <Link to="/" style={{ color: '#94A3B8', textDecoration: 'none' }}>Home</Link>
             <ChevronRight size={13} />
@@ -893,7 +920,7 @@ export default function HotelDetail() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '8px',
-                    marginBottom: '1.5rem',
+                    marginBottom: '1rem',
                     textAlign: 'center'
                   }}
                 >
@@ -901,6 +928,31 @@ export default function HotelDetail() {
                   <span>Directions from {nearbyLandmarks[0].name}</span>
                 </a>
               )}
+
+              {/* Safety & Emergency Services Jump Button */}
+              <a
+                href="#hotel-tourist-safety"
+                style={{
+                  width: '100%',
+                  backgroundColor: '#FEF2F2',
+                  color: '#DC2626',
+                  border: '1px solid #FECACA',
+                  padding: '0.75rem',
+                  borderRadius: '8px',
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  marginBottom: '1.5rem',
+                  cursor: 'pointer'
+                }}
+              >
+                <ShieldCheck size={16} color="#DC2626" />
+                <span>Safety & Emergency Facilities</span>
+              </a>
 
               {/* Contact Information */}
               <div style={{ paddingTop: '1.25rem', borderTop: '1px solid #E2E8F0' }}>
@@ -934,6 +986,25 @@ export default function HotelDetail() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* ── Verified Emergency Facilities & Tourist Safety Near Hotel (Master Prompt Requirement) ── */}
+        <div id="hotel-tourist-safety" style={{ marginTop: '3.5rem', marginBottom: '2rem' }}>
+          <div style={{ marginBottom: '1.25rem' }}>
+            <span className="tourism-badge badge-forest">Emergency Preparedness & Assistance</span>
+            <h2 style={{ fontSize: '1.6rem', fontWeight: 800, color: '#0F172A', marginTop: '0.4rem', margin: '0.4rem 0 0.25rem 0' }}>
+              Nearby Hospitals, Police & Emergency Services for {hotel.name}
+            </h2>
+            <p style={{ fontSize: '0.88rem', color: '#64748B', margin: 0 }}>
+              Verified medical care, police stations and official emergency helplines serving guests in {hotel.city}, {hotel.state}.
+            </p>
+          </div>
+          <TouristSafetyDirectory
+            initialCity={hotel.city}
+            initialState={hotel.state}
+            isEmbedded={true}
+            showHeader={false}
+          />
         </div>
       </div>
 

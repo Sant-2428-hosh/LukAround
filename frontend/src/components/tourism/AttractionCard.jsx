@@ -223,6 +223,7 @@ export default function AttractionCard({ attraction }) {
         <div style={{ marginTop: '0.6rem', textAlign: 'center' }}>
           <Link
             to={`/india/${effectiveStateSlug}/${effectiveCitySlug}/${id}`}
+            onClick={() => recordCardClick(id)}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
