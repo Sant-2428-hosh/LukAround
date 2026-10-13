@@ -386,7 +386,7 @@ export function AppProvider({ children }) {
   const [isAuthChecking, setIsAuthChecking] = useState(true);
   const [authToast, setAuthToast] = useState(null);
 
-  // Active Destination Context for Dishly AI & Real Food Discovery
+  // Active Destination Context for Regional Food Discovery
   const [activeDestinationContext, setActiveDestinationContext] = useState({
     state: 'Rajasthan',
     stateSlug: 'rajasthan',
@@ -399,12 +399,6 @@ export function AppProvider({ children }) {
   });
 
   const [dietaryPreference, setDietaryPreference] = useState('No preference');
-  const [dishlyRadius, setDishlyRadius] = useState(5);
-  const [dishlyPromptTrigger, setDishlyPromptTrigger] = useState(null);
-
-  const openDishlyWithPrompt = (promptText) => {
-    setDishlyPromptTrigger({ prompt: promptText, timestamp: Date.now() });
-  };
 
   // Platform Broadcast & Feature Flags State
   const [broadcast, setBroadcast] = useState({ active: false });
@@ -736,12 +730,7 @@ export function AppProvider({ children }) {
         activeDestinationContext,
         setActiveDestinationContext,
         dietaryPreference,
-        setDietaryPreference,
-        dishlyRadius,
-        setDishlyRadius,
-        dishlyPromptTrigger,
-        setDishlyPromptTrigger,
-        openDishlyWithPrompt
+        setDietaryPreference
       }}
     >
       {children}

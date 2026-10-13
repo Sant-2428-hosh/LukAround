@@ -43,6 +43,7 @@ export default function ScrollToTop() {
   const location = useLocation();
   const navigationType = useNavigationType(); // 'POP' | 'PUSH' | 'REPLACE'
   const isRestoringRef = useRef(false);
+  const prevPathnameRef = useRef(location.pathname);
   const prevPathRef = useRef(location.pathname + location.search);
   const prevKeyRef = useRef(location.key);
 
@@ -85,20 +86,34 @@ export default function ScrollToTop() {
 
   // Handle route navigation: Restore exact scroll or scroll to top
   useEffect(() => {
+    const currentPathname = location.pathname;
     const currentUrl = location.pathname + location.search;
     const currentKey = location.key;
+    const isSamePathname = prevPathnameRef.current === currentPathname;
 
     // 1. If in-page anchor hash is specified (e.g. #categories), scroll to target element
     if (location.hash) {
       const targetElement = document.querySelector(location.hash);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
+        prevPathnameRef.current = currentPathname;
         prevPathRef.current = currentUrl;
         prevKeyRef.current = currentKey;
         return;
       }
     }
 
+    // 2. If the user stays on the exact same pathname (e.g. updating ?state=, ?tab=, or search filters in-place):
+    // DO NOT scroll to top! Preserve the user's scroll position completely.
+    if (isSamePathname) {
+      prevPathnameRef.current = currentPathname;
+      prevPathRef.current = currentUrl;
+      prevKeyRef.current = currentKey;
+      return;
+    }
+
+    // 3. User transitioned to a different page/route:
+    prevPathnameRef.current = currentPathname;
     const isPop = navigationType === 'POP';
 
     // Retrieve saved position for this route from memory registry

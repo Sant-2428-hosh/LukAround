@@ -72,8 +72,8 @@ const DESTINATION_HEROES = {
   chennai: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1400&q=85',
   madurai: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1400&q=85',
   goa: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1400&q=85',
-  karnataka: 'https://images.unsplash.com/photo-1600100397608-f010f443b7e7?auto=format&fit=crop&w=1400&q=85',
-  hampi: 'https://images.unsplash.com/photo-1600100397608-f010f443b7e7?auto=format&fit=crop&w=1400&q=85',
+  karnataka: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=1400&q=85',
+  hampi: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=1400&q=85',
   uttarakhand: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1400&q=85',
   rishikesh: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1400&q=85',
   kolkata: 'https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1400&q=85'
@@ -99,7 +99,7 @@ const FEATURED_ESCAPES = [
     theme: 'Historic',
     tagline: 'Charminar & Nizams',
     style: 'heritage',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/800px-Charminar_Hyderabad_1.jpg'
+    image: 'https://images.unsplash.com/photo-1572445271230-a78b5944a659?auto=format&fit=crop&w=400&q=80'
   },
   {
     name: 'Bangalore',
@@ -162,7 +162,7 @@ const FEATURED_ESCAPES = [
     theme: 'Ruins',
     tagline: 'Stone Relics',
     style: 'heritage',
-    image: 'https://images.unsplash.com/photo-1600100397608-f010f443b7e7?auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=400&q=80'
   },
   {
     name: 'Uttarakhand',

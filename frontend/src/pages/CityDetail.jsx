@@ -6,7 +6,6 @@ import AttractionCard from '../components/tourism/AttractionCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import WhereToStaySection from '../components/tourism/WhereToStaySection';
-import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
 import TouristSafetyDirectory from '../components/safety/TouristSafetyDirectory';
@@ -30,8 +29,19 @@ import {
   ExternalLink,
   Search,
   Filter,
-  Hotel
+  Hotel,
+  Ticket,
+  Plane,
+  Train,
+  Car
 } from 'lucide-react';
+import {
+  parseAirportInfo,
+  parseRailwayInfo,
+  parseRoadInfo,
+  getStateBusPortal,
+  STATE_OFFICIAL_BUS_PORTALS
+} from '../utils/transitBookingService';
 
 export default function CityDetail() {
   const navigate = useNavigate();
@@ -189,6 +199,36 @@ export default function CityDetail() {
 
     return list;
   }, [city, cityAttractions, cityHotels]);
+
+  // City Transit & Connectivity Information
+  const cityTransit = useMemo(() => {
+    const words = city.name.toLowerCase().split(/[\s,&/]+/).filter(w => w.length >= 3);
+    const stateAirports = parentState?.transportation?.airports || [];
+    const stateRailways = parentState?.transportation?.railway || [];
+    const stateRoads = parentState?.transportation?.road || [];
+
+    const matchedAirportStr = stateAirports.find(a => words.some(w => new RegExp(`\\b${w}\\b`, 'i').test(a)))
+      || stateAirports[0]
+      || `${city.name} Domestic Airport`;
+
+    const matchedRailwayStr = stateRailways.find(r => words.some(w => new RegExp(`\\b${w}\\b`, 'i').test(r)))
+      || stateRailways[0]
+      || `${city.name} Railway Junction`;
+
+    const matchedRoadStr = stateRoads[0] || `National Highway Connecting ${city.name}`;
+
+    const airport = parseAirportInfo(matchedAirportStr, city.state || parentState?.name || '');
+    const railway = parseRailwayInfo(matchedRailwayStr, city.state || parentState?.name || '');
+    const road = parseRoadInfo(matchedRoadStr, city.stateSlug || parentState?.slug || '', city.state || parentState?.name || '');
+    const officialRtc = getStateBusPortal(city.stateSlug || parentState?.slug || '');
+
+    return {
+      airport,
+      railway,
+      road,
+      officialRtc
+    };
+  }, [city, parentState]);
 
   const mapCenter = useMemo(() => {
     if (city.latitude && city.longitude) {
@@ -628,16 +668,6 @@ export default function CityDetail() {
           </section>
         )}
 
-        {/* ── Famous Food in This City (Dishly AI & Real Restaurant Discovery) ── */}
-        <div id="famous-food-in-city">
-          <DiscoverFoodSection
-            type="city"
-            destination={city}
-            city={city}
-            state={parentState}
-          />
-        </div>
-
         {/* ── Shopping & Festivals Grid ── */}
         <div style={{
           display: 'grid',
@@ -688,6 +718,414 @@ export default function CityDetail() {
           }}
           city={city}
         />
+
+        {/* ── Official Travel Connectivity & Ticket Booking Desk ── */}
+        <section style={{ marginBottom: '4rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <div>
+              <span className="tourism-badge badge-forest">Direct Travel & Connectivity</span>
+              <h2 className="tourism-heading" style={{ fontSize: '1.8rem', marginTop: '0.35rem' }}>
+                How to Reach {city.name} & Official Ticket Desk
+              </h2>
+            </div>
+            <span style={{ fontSize: '0.85rem', color: '#64748B' }}>
+              Direct access to IRCTC Indian Railways, State Govt RTC, Google Flights & ASI Monument Tickets
+            </span>
+          </div>
+
+          {/* Quick Desk Bar */}
+          <div style={{
+            background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
+            borderRadius: '16px',
+            padding: '1.5rem',
+            color: '#FFFFFF',
+            marginBottom: '1.75rem',
+            boxShadow: '0 4px 15px rgba(15, 23, 42, 0.12)'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1.25rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <div style={{
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '10px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.12)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#38BDF8'
+                }}>
+                  <Ticket size={20} />
+                </div>
+                <div>
+                  <h4 style={{ fontSize: '1.05rem', fontWeight: 900, color: '#FFFFFF', margin: 0 }}>
+                    Official Transit & Monument Booking Desk for {city.name}
+                  </h4>
+                  <p style={{ fontSize: '0.78rem', color: '#94A3B8', margin: '0.15rem 0 0' }}>
+                    Government e-ticketing portals, IRCTC train booking, state buses & ASI entry permits
+                  </p>
+                </div>
+              </div>
+              <span style={{
+                fontSize: '0.75rem',
+                fontWeight: 800,
+                color: '#38BDF8',
+                backgroundColor: 'rgba(56, 189, 248, 0.12)',
+                padding: '0.25rem 0.75rem',
+                borderRadius: '20px',
+                border: '1px solid rgba(56, 189, 248, 0.3)'
+              }}>
+                Verified Portals
+              </span>
+            </div>
+
+            {/* 4 Official Links */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '0.85rem'
+            }}>
+              {/* 1. IRCTC */}
+              <a
+                href="https://www.irctc.co.in/nget/train-search"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.85rem 1rem',
+                  borderRadius: '10px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Train size={18} color="#38BDF8" />
+                  <div>
+                    <div style={{ fontSize: '0.86rem', fontWeight: 800 }}>IRCTC Indian Railways</div>
+                    <div style={{ fontSize: '0.7rem', color: '#94A3B8' }}>Official e-Ticketing Portal</div>
+                  </div>
+                </div>
+                <ExternalLink size={13} color="#94A3B8" />
+              </a>
+
+              {/* 2. Official State RTC */}
+              <a
+                href={cityTransit.officialRtc?.url || `https://www.redbus.in/bus-tickets/${encodeURIComponent((parentState?.slug || 'india'))}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.85rem 1rem',
+                  borderRadius: '10px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Car size={18} color="#10B981" />
+                  <div>
+                    <div style={{ fontSize: '0.86rem', fontWeight: 800 }}>
+                      {cityTransit.officialRtc?.code || 'State RTC'} Govt Buses
+                    </div>
+                    <div style={{ fontSize: '0.7rem', color: '#94A3B8' }}>
+                      {cityTransit.officialRtc?.badge || 'Official State Bus'}
+                    </div>
+                  </div>
+                </div>
+                <ExternalLink size={13} color="#94A3B8" />
+              </a>
+
+              {/* 3. Google Flights */}
+              <a
+                href={cityTransit.airport?.googleFlightsUrl || `https://www.google.com/travel/flights?q=flights+to+${encodeURIComponent(`${city.name} ${city.state}`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.85rem 1rem',
+                  borderRadius: '10px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Plane size={18} color="#60A5FA" />
+                  <div>
+                    <div style={{ fontSize: '0.86rem', fontWeight: 800 }}>Google Flights</div>
+                    <div style={{ fontSize: '0.7rem', color: '#94A3B8' }}>Fares to {city.name}</div>
+                  </div>
+                </div>
+                <ExternalLink size={13} color="#94A3B8" />
+              </a>
+
+              {/* 4. ASI Monument Tickets */}
+              <a
+                href="https://asi.payumoney.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.85rem 1rem',
+                  borderRadius: '10px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  color: '#FFFFFF',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Ticket size={18} color="#F59E0B" />
+                  <div>
+                    <div style={{ fontSize: '0.86rem', fontWeight: 800 }}>ASI Monument Tickets</div>
+                    <div style={{ fontSize: '0.7rem', color: '#94A3B8' }}>Official Archaeological Entry</div>
+                  </div>
+                </div>
+                <ExternalLink size={13} color="#94A3B8" />
+              </a>
+            </div>
+          </div>
+
+          {/* 3 Detailed Cards */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))',
+            gap: '1.25rem'
+          }}>
+            {/* 1. Airport */}
+            <div style={{
+              backgroundColor: '#FFFFFF',
+              borderRadius: '16px',
+              border: '1px solid var(--tourism-sand-border)',
+              padding: '1.5rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.75rem'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-sky)', fontSize: '0.9rem', fontWeight: 900 }}>
+                  <Plane size={18} />
+                  <span>Aviation Gateway</span>
+                </div>
+                {cityTransit.airport?.code && (
+                  <span style={{ fontSize: '0.72rem', fontWeight: 800, backgroundColor: '#0F172A', color: '#FFFFFF', padding: '0.15rem 0.5rem', borderRadius: '5px' }}>
+                    {cityTransit.airport.code}
+                  </span>
+                )}
+              </div>
+              <div>
+                <h4 style={{ fontSize: '1rem', fontWeight: 800, color: '#0F172A', margin: '0 0 0.35rem 0' }}>
+                  {cityTransit.airport?.name || `${city.name} Domestic Terminal`}
+                </h4>
+                <p style={{ fontSize: '0.8rem', color: '#64748B', margin: 0 }}>
+                  Serving {city.name} & surrounding region with direct and connecting flights
+                </p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: 'auto', paddingTop: '0.75rem', borderTop: '1px solid #F1F5F9', flexWrap: 'wrap' }}>
+                <a
+                  href={cityTransit.airport?.googleFlightsUrl || `https://www.google.com/travel/flights?q=flights+to+${encodeURIComponent(city.name)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.3rem',
+                    backgroundColor: 'var(--tourism-sky)',
+                    color: '#FFFFFF',
+                    fontSize: '0.74rem',
+                    fontWeight: 800,
+                    padding: '0.4rem 0.75rem',
+                    borderRadius: '6px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <span>Book Flights</span>
+                  <ExternalLink size={11} />
+                </a>
+                <a
+                  href={cityTransit.airport?.liveStatusUrl || `https://www.google.com/search?q=${encodeURIComponent(`${city.name} flight schedule`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    color: '#475569',
+                    backgroundColor: '#F1F5F9',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    padding: '0.4rem 0.65rem',
+                    borderRadius: '6px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <span>Flight Status</span>
+                  <ExternalLink size={10} />
+                </a>
+              </div>
+            </div>
+
+            {/* 2. Railway */}
+            <div style={{
+              backgroundColor: '#FFFFFF',
+              borderRadius: '16px',
+              border: '1px solid var(--tourism-sand-border)',
+              padding: '1.5rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.75rem'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-earth)', fontSize: '0.9rem', fontWeight: 900 }}>
+                  <Train size={18} />
+                  <span>Indian Railways Station</span>
+                </div>
+                {cityTransit.railway?.code && (
+                  <span style={{ fontSize: '0.72rem', fontWeight: 800, backgroundColor: 'var(--tourism-earth)', color: '#FFFFFF', padding: '0.15rem 0.5rem', borderRadius: '5px' }}>
+                    {cityTransit.railway.code}
+                  </span>
+                )}
+              </div>
+              <div>
+                <h4 style={{ fontSize: '1rem', fontWeight: 800, color: '#0F172A', margin: '0 0 0.35rem 0' }}>
+                  {cityTransit.railway?.name || `${city.name} Railway Station`}
+                </h4>
+                <p style={{ fontSize: '0.8rem', color: '#64748B', margin: 0 }}>
+                  Halts for Superfast, Express, and Vande Bharat trains across the Indian rail network
+                </p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: 'auto', paddingTop: '0.75rem', borderTop: '1px solid #F1F5F9', flexWrap: 'wrap' }}>
+                <a
+                  href="https://www.irctc.co.in/nget/train-search"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.3rem',
+                    backgroundColor: 'var(--tourism-earth)',
+                    color: '#FFFFFF',
+                    fontSize: '0.74rem',
+                    fontWeight: 800,
+                    padding: '0.4rem 0.75rem',
+                    borderRadius: '6px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <span>Book on IRCTC Official</span>
+                  <ExternalLink size={11} />
+                </a>
+                <a
+                  href={cityTransit.railway?.liveTrainUrl || `https://www.railyatri.in/live-train-status?station=${encodeURIComponent(city.name)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    color: '#475569',
+                    backgroundColor: '#F1F5F9',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    padding: '0.4rem 0.65rem',
+                    borderRadius: '6px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <span>Live Trains</span>
+                  <ExternalLink size={10} />
+                </a>
+              </div>
+            </div>
+
+            {/* 3. Road & Bus */}
+            <div style={{
+              backgroundColor: '#FFFFFF',
+              borderRadius: '16px',
+              border: '1px solid var(--tourism-sand-border)',
+              padding: '1.5rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.75rem'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--tourism-forest)', fontSize: '0.9rem', fontWeight: 900 }}>
+                  <Car size={18} />
+                  <span>State RTC & Expressways</span>
+                </div>
+                <span style={{ fontSize: '0.72rem', fontWeight: 700, backgroundColor: '#ECFDF5', color: '#059669', padding: '0.15rem 0.5rem', borderRadius: '4px', border: '1px solid #A7F3D0' }}>
+                  {cityTransit.officialRtc?.code || 'State RTC'}
+                </span>
+              </div>
+              <div>
+                <h4 style={{ fontSize: '1rem', fontWeight: 800, color: '#0F172A', margin: '0 0 0.35rem 0' }}>
+                  {cityTransit.officialRtc?.fullName || `${city.state} State Transport`}
+                </h4>
+                <p style={{ fontSize: '0.8rem', color: '#64748B', margin: 0 }}>
+                  Regular deluxe, AC sleeper, and government buses connecting {city.name} to major districts
+                </p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: 'auto', paddingTop: '0.75rem', borderTop: '1px solid #F1F5F9', flexWrap: 'wrap' }}>
+                <a
+                  href={cityTransit.officialRtc?.url || 'https://www.redbus.in'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.3rem',
+                    backgroundColor: 'var(--tourism-forest)',
+                    color: '#FFFFFF',
+                    fontSize: '0.74rem',
+                    fontWeight: 800,
+                    padding: '0.4rem 0.75rem',
+                    borderRadius: '6px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <span>Book Govt Bus ({cityTransit.officialRtc?.code || 'RTC'})</span>
+                  <ExternalLink size={11} />
+                </a>
+                <a
+                  href={`https://www.redbus.in/bus-tickets/${encodeURIComponent(city.id)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    color: '#475569',
+                    backgroundColor: '#F1F5F9',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    padding: '0.4rem 0.65rem',
+                    borderRadius: '6px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <span>RedBus</span>
+                  <ExternalLink size={10} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* ── Tourist Safety & Emergency Services Section (Master Prompt Requirement) ── */}
         <div id="city-tourist-safety" style={{ marginBottom: '4rem' }}>

@@ -6,7 +6,6 @@ import AttractionCard from '../components/tourism/AttractionCard';
 import SafeImage from '../components/tourism/SafeImage';
 import ImageGalleryModal from '../components/tourism/ImageGalleryModal';
 import WhereToStaySection from '../components/tourism/WhereToStaySection';
-import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import GoogleMapView from '../components/maps/GoogleMapView';
 import DirectionsModal from '../components/tourism/DirectionsModal';
 import TouristSafetyDirectory from '../components/safety/TouristSafetyDirectory';
@@ -33,7 +32,8 @@ import {
   ShieldAlert,
   Maximize2,
   Navigation,
-  Hotel
+  Hotel,
+  Ticket
 } from 'lucide-react';
 
 export default function AttractionDetail() {
@@ -684,9 +684,49 @@ export default function AttractionDetail() {
                     )}
                   </div>
                 </div>
+
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                  <Ticket size={18} color="var(--tourism-earth)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                  <div>
+                    <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#64748B' }}>Entry & Monument Tickets</div>
+                    <div style={{ fontSize: '0.88rem', color: '#1E293B', fontWeight: 700 }}>
+                      Official ASI / State Tourism e-Ticket
+                    </div>
+                    <div style={{ fontSize: '0.75rem', color: '#64748B' }}>
+                      Online admission permits with QR code entry pass
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                <a
+                  href="https://asi.payumoney.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tourism-btn"
+                  style={{
+                    width: '100%',
+                    justifyContent: 'center',
+                    backgroundColor: 'var(--tourism-earth)',
+                    color: '#FFFFFF',
+                    fontWeight: 800,
+                    textDecoration: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.45rem',
+                    padding: '0.7rem 1rem',
+                    borderRadius: '8px',
+                    border: 'none',
+                    boxShadow: '0 2px 8px rgba(180, 83, 9, 0.2)'
+                  }}
+                  title="Book entry tickets through the official Archaeological Survey of India (ASI) portal"
+                >
+                  <Ticket size={16} />
+                  <span>Book Official Entry Tickets (ASI)</span>
+                  <ExternalLink size={12} />
+                </a>
+
                 <button
                   type="button"
                   onClick={() => setDirectionsModalOpen(true)}
@@ -725,16 +765,6 @@ export default function AttractionDetail() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* ── Eat Near This Attraction (Dishly Real Restaurant & Food Discovery) ── */}
-        <div id="eat-near-this-attraction">
-          <DiscoverFoodSection
-            type="attraction"
-            destination={attraction}
-            city={parentCity}
-            state={parentState}
-          />
         </div>
 
         {/* ── Dedicated Where to Stay Section (Official Hotel Discovery System) ── */}

@@ -1713,7 +1713,7 @@ router.post('/message', async (req, res) => {
       });
     }
 
-    // Generate personalized Dishly response text
+    // Generate personalized food response text
     const destLabel = attraction ? `${attraction} in ${city}` : (state ? `${city}, ${state}` : city);
     let responseText = '';
 

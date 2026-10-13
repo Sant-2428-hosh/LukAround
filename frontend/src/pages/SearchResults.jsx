@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import SearchBar from '../components/tourism/SearchBar';
 import StateCard from '../components/tourism/StateCard';
@@ -15,40 +15,116 @@ export default function SearchResults() {
 
   const qLower = query.toLowerCase();
 
-  // Fuzzy filter
-  const matchedStates = states.filter(s =>
-    s.name.toLowerCase().includes(qLower) ||
-    s.description.toLowerCase().includes(qLower) ||
-    (s.majorCities || []).some(c => c.toLowerCase().includes(qLower)) ||
-    (s.categories || []).some(cat => cat.toLowerCase().includes(qLower))
-  );
+  // 1. States scoring
+  const scoredStates = (states || []).map(s => {
+    let score = 0;
+    const name = s.name.toLowerCase();
+    const words = name.split(/\s+/);
+    if (name === qLower) score = 100;
+    else if (name.startsWith(qLower)) score = 95;
+    else if (words.some(w => w.startsWith(qLower))) score = 90;
+    else if ((s.majorCities || []).some(c => c.toLowerCase().startsWith(qLower))) score = 50;
+    else if (qLower.length >= 3 && name.includes(qLower)) score = 30;
+    else if (qLower.length >= 3 && (s.majorCities || []).some(c => c.toLowerCase().includes(qLower))) score = 25;
+    else if (qLower.length >= 3 && s.description && s.description.toLowerCase().includes(qLower)) score = 20;
+    return { item: s, score };
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score || (a.item.priorityRank || 99) - (b.item.priorityRank || 99));
 
-  const matchedCities = cities.filter(c =>
-    c.name.toLowerCase().includes(qLower) ||
-    (c.aliases || []).some(a => a.toLowerCase().includes(qLower)) ||
-    c.state.toLowerCase().includes(qLower) ||
-    c.description.toLowerCase().includes(qLower) ||
-    (c.thingsToDo || []).some(t => t.toLowerCase().includes(qLower))
-  );
+  const matchedStates = scoredStates.map(x => x.item);
 
-  const matchedAttractions = attractions.filter(a =>
-    a.name.toLowerCase().includes(qLower) ||
-    a.city.toLowerCase().includes(qLower) ||
-    a.state.toLowerCase().includes(qLower) ||
-    a.shortDescription.toLowerCase().includes(qLower) ||
-    (a.category || []).some(cat => cat.toLowerCase().includes(qLower)) ||
-    (a.tags || []).some(t => t.toLowerCase().includes(qLower)) ||
-    (a.activities || []).some(act => act.toLowerCase().includes(qLower)) ||
-    (a.aliases || []).some(al => al.toLowerCase().includes(qLower))
-  ).sort((a, b) => (a.priorityRank || 99) - (b.priorityRank || 99));
+  // 2. Cities scoring
+  const scoredCities = (cities || []).map(c => {
+    let score = 0;
+    const name = c.name.toLowerCase();
+    const words = name.split(/\s+/);
+    const state = (c.state || '').toLowerCase();
+    if (name === qLower) score = 100;
+    else if (name.startsWith(qLower)) score = 95;
+    else if (words.some(w => w.startsWith(qLower))) score = 90;
+    else if ((c.aliases || []).some(a => a.toLowerCase().startsWith(qLower))) score = 85;
+    else if (state === qLower) score = 45;
+    else if (state.startsWith(qLower)) score = 40;
+    else if (qLower.length >= 3 && name.includes(qLower)) score = 30;
+    else if (qLower.length >= 3 && (c.aliases || []).some(a => a.toLowerCase().includes(qLower))) score = 25;
+    else if (qLower.length >= 3 && state.includes(qLower)) score = 15;
+    return { item: c, score };
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score || (a.item.priorityRank || 99) - (b.item.priorityRank || 99));
 
-  const matchedCategories = categories.filter(cat =>
-    cat.name.toLowerCase().includes(qLower) ||
-    cat.id.toLowerCase().includes(qLower) ||
-    cat.description.toLowerCase().includes(qLower)
-  );
+  const matchedCities = scoredCities.map(x => x.item);
+
+  // 3. Attractions scoring
+  const scoredAttractions = (attractions || []).map(a => {
+    let score = 0;
+    const name = a.name.toLowerCase();
+    const words = name.split(/[\s\-()]+/).filter(Boolean);
+    const city = (a.city || '').toLowerCase();
+    const state = (a.state || '').toLowerCase();
+
+    if (name === qLower) score = 100;
+    else if (name.startsWith(qLower)) score = 95;
+    else if (words.some(w => w.startsWith(qLower))) score = 90;
+    else if ((a.aliases || []).some(al => al.toLowerCase().startsWith(qLower))) score = 85;
+    else if (city === qLower) score = 55;
+    else if (city.startsWith(qLower)) score = 50;
+    else if (state === qLower) score = 30 + (a.featured ? 10 : 0);
+    else if (state.startsWith(qLower)) score = 25 + (a.featured ? 10 : 0);
+    else if ((a.tags || []).some(t => t.toLowerCase() === qLower)) score = 15;
+    else if ((a.tags || []).some(t => t.toLowerCase().startsWith(qLower))) score = 12;
+    else if (qLower.length >= 3 && name.includes(qLower)) score = 35;
+    else if (qLower.length >= 3 && (a.category || []).some(cat => cat.toLowerCase().includes(qLower))) score = 18;
+    else if (qLower.length >= 3 && (a.tags || []).some(t => t.toLowerCase().includes(qLower))) score = 8;
+
+    return { item: a, score };
+  }).filter(x => x.score > 0).sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    if (Boolean(a.item.featured) !== Boolean(b.item.featured)) {
+      return a.item.featured ? -1 : 1;
+    }
+    return (a.item.priorityRank || 99) - (b.item.priorityRank || 99);
+  });
+
+  const matchedAttractions = scoredAttractions.map(x => x.item);
+
+  // 4. Categories scoring
+  const scoredCategories = (categories || []).map(cat => {
+    let score = 0;
+    const name = cat.name.toLowerCase();
+    const id = cat.id.toLowerCase();
+    if (name === qLower || id === qLower) score = 100;
+    else if (name.startsWith(qLower) || id.startsWith(qLower)) score = 95;
+    else if (name.includes(qLower) || id.includes(qLower)) score = 75;
+    else if (cat.description && cat.description.toLowerCase().includes(qLower)) score = 30;
+    return { item: cat, score };
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
+
+  const matchedCategories = scoredCategories.map(x => x.item);
 
   const totalCount = matchedStates.length + matchedCities.length + matchedAttractions.length + matchedCategories.length;
+
+  const maxScores = {
+    states: scoredStates[0]?.score || 0,
+    cities: scoredCities[0]?.score || 0,
+    attractions: scoredAttractions[0]?.score || 0,
+    categories: scoredCategories[0]?.score || 0
+  };
+
+  const defaultPriority = { states: 4, cities: 3, attractions: 2, categories: 1 };
+  const sectionOrder = ['states', 'cities', 'attractions', 'categories'].sort((a, b) => {
+    const diff = (maxScores[b] || 0) - (maxScores[a] || 0);
+    if (diff !== 0) return diff;
+    return (defaultPriority[b] || 0) - (defaultPriority[a] || 0);
+  });
+
+  const tabs = [
+    { id: 'all', label: `All Results (${totalCount})` },
+    ...sectionOrder.map(secKey => {
+      if (secKey === 'states') return { id: 'states', label: `States (${matchedStates.length})` };
+      if (secKey === 'cities') return { id: 'cities', label: `Cities (${matchedCities.length})` };
+      if (secKey === 'attractions') return { id: 'attractions', label: `Attractions (${matchedAttractions.length})` };
+      if (secKey === 'categories') return { id: 'categories', label: `Categories (${matchedCategories.length})` };
+      return null;
+    }).filter(Boolean)
+  ];
 
   return (
     <div className="tourism-page">
@@ -57,7 +133,10 @@ export default function SearchResults() {
         background: 'linear-gradient(180deg, #0F172A 0%, #1E293B 100%)',
         color: '#FFFFFF',
         padding: '3.5rem 1.5rem',
-        textAlign: 'center'
+        textAlign: 'center',
+        position: 'relative',
+        zIndex: 50,
+        overflow: 'visible'
       }}>
         <div className="tourism-container" style={{ maxWidth: '800px' }}>
           <h1 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 900, marginBottom: '1.25rem' }}>
@@ -82,13 +161,7 @@ export default function SearchResults() {
           marginBottom: '2rem',
           overflowX: 'auto'
         }}>
-          {[
-            { id: 'all', label: `All Results (${totalCount})` },
-            { id: 'attractions', label: `Attractions (${matchedAttractions.length})` },
-            { id: 'cities', label: `Cities (${matchedCities.length})` },
-            { id: 'states', label: `States (${matchedStates.length})` },
-            { id: 'categories', label: `Categories (${matchedCategories.length})` }
-          ].map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
@@ -143,61 +216,74 @@ export default function SearchResults() {
           </div>
         )}
 
-        {/* ── Attractions Results ── */}
-        {(activeTab === 'all' || activeTab === 'attractions') && matchedAttractions.length > 0 && (
-          <section style={{ marginBottom: '3.5rem' }}>
-            <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-              Tourist Attractions ({matchedAttractions.length})
-            </h3>
-            <div className="tourism-grid-4">
-              {matchedAttractions.map((a) => (
-                <AttractionCard key={a.id} attraction={a} />
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Dynamic Section Ordering */}
+        {sectionOrder.map((secKey) => {
+          // ── STATES RESULTS ──
+          if ((activeTab === 'all' || activeTab === 'states') && secKey === 'states' && matchedStates.length > 0) {
+            return (
+              <section key="states-section" style={{ marginBottom: '3.5rem' }}>
+                <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
+                  States of India ({matchedStates.length})
+                </h3>
+                <div className="tourism-grid-3">
+                  {matchedStates.map((s) => (
+                    <StateCard key={s.id} state={s} />
+                  ))}
+                </div>
+              </section>
+            );
+          }
 
-        {/* ── Cities Results ── */}
-        {(activeTab === 'all' || activeTab === 'cities') && matchedCities.length > 0 && (
-          <section style={{ marginBottom: '3.5rem' }}>
-            <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-              Cities & Destinations ({matchedCities.length})
-            </h3>
-            <div className="tourism-grid-3">
-              {matchedCities.map((c) => (
-                <CityCard key={c.id} city={c} />
-              ))}
-            </div>
-          </section>
-        )}
+          // ── CITIES RESULTS ──
+          if ((activeTab === 'all' || activeTab === 'cities') && secKey === 'cities' && matchedCities.length > 0) {
+            return (
+              <section key="cities-section" style={{ marginBottom: '3.5rem' }}>
+                <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
+                  Cities & Destinations ({matchedCities.length})
+                </h3>
+                <div className="tourism-grid-3">
+                  {matchedCities.map((c) => (
+                    <CityCard key={c.id} city={c} />
+                  ))}
+                </div>
+              </section>
+            );
+          }
 
-        {/* ── States Results ── */}
-        {(activeTab === 'all' || activeTab === 'states') && matchedStates.length > 0 && (
-          <section style={{ marginBottom: '3.5rem' }}>
-            <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-              States of India ({matchedStates.length})
-            </h3>
-            <div className="tourism-grid-3">
-              {matchedStates.map((s) => (
-                <StateCard key={s.id} state={s} />
-              ))}
-            </div>
-          </section>
-        )}
+          // ── ATTRACTIONS RESULTS ──
+          if ((activeTab === 'all' || activeTab === 'attractions') && secKey === 'attractions' && matchedAttractions.length > 0) {
+            return (
+              <section key="attractions-section" style={{ marginBottom: '3.5rem' }}>
+                <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
+                  Tourist Attractions ({matchedAttractions.length})
+                </h3>
+                <div className="tourism-grid-4">
+                  {matchedAttractions.map((a) => (
+                    <AttractionCard key={a.id} attraction={a} />
+                  ))}
+                </div>
+              </section>
+            );
+          }
 
-        {/* ── Categories Results ── */}
-        {(activeTab === 'all' || activeTab === 'categories') && matchedCategories.length > 0 && (
-          <section style={{ marginBottom: '3.5rem' }}>
-            <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-              Matching Categories ({matchedCategories.length})
-            </h3>
-            <div className="tourism-grid-4">
-              {matchedCategories.map((cat) => (
-                <CategoryCard key={cat.id} category={cat} />
-              ))}
-            </div>
-          </section>
-        )}
+          // ── CATEGORIES RESULTS ──
+          if ((activeTab === 'all' || activeTab === 'categories') && secKey === 'categories' && matchedCategories.length > 0) {
+            return (
+              <section key="categories-section" style={{ marginBottom: '3.5rem' }}>
+                <h3 className="tourism-heading" style={{ fontSize: '1.5rem', marginBottom: '1.25rem' }}>
+                  Matching Categories ({matchedCategories.length})
+                </h3>
+                <div className="tourism-grid-4">
+                  {matchedCategories.map((cat) => (
+                    <CategoryCard key={cat.id} category={cat} />
+                  ))}
+                </div>
+              </section>
+            );
+          }
+
+          return null;
+        })}
       </div>
     </div>
   );

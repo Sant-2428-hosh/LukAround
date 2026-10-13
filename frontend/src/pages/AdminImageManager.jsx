@@ -164,7 +164,7 @@ export default function AdminImageManager() {
               India Tourism Real Image Studio & Central Registry
             </h1>
             <p style={{ margin: '0.3rem 0 0', color: '#64748B', fontSize: '0.9rem' }}>
-              Manage verified photographs, geographical accuracy, and attribution credits across all 15 States and 198 Tourist Destinations.
+              Manage verified photographs, geographical accuracy, and attribution credits across all 16 States and Tourist Destinations.
             </p>
           </div>
 
@@ -270,7 +270,7 @@ export default function AdminImageManager() {
                 cursor: 'pointer'
               }}
             >
-              <option value="">All 15 States</option>
+              <option value="">All 16 States</option>
               {states.map(s => (
                 <option key={s.slug} value={s.slug}>{s.name}</option>
               ))}
@@ -363,7 +363,7 @@ export default function AdminImageManager() {
               }}
             >
               {/* Image Preview with Selected Crop Ratio */}
-              <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative', overflow: 'hidden' }}>
                 <SafeImage
                   src={attraction.image}
                   alt={attraction.imageAlt || attraction.name}

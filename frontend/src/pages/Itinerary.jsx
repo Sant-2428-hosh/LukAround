@@ -22,7 +22,6 @@ import {
   Loader2
 } from 'lucide-react';
 import LeafletMap from '../components/LeafletMap';
-import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 
 const POPULAR_CITIES = [
   "Jaipur", "Hampi", "Goa", "Munnar", "Varanasi", "Bangalore", "Agra", "Chennai", "Delhi", "Rishikesh", "Kochi", "Pondicherry"
@@ -80,7 +79,7 @@ export default function Itinerary() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [cityInput, setCityInput] = useState(selectedCity || 'Jaipur');
 
-  // Keep input in sync with selectedCity and update Dishly context
+  // Keep input in sync with selectedCity and update destination context
   useEffect(() => {
     if (selectedCity) {
       setCityInput(selectedCity);
@@ -796,18 +795,6 @@ export default function Itinerary() {
                 </div>
               </div>
             )}
-
-            {/* ── Culinary Guide & Dining Stops for this Itinerary ── */}
-            <div style={{ marginTop: '3rem', width: '100%' }}>
-              <DiscoverFoodSection
-                destination={{
-                  city: selectedCity,
-                  attraction: itineraryData?.days?.[activeDay - 1]?.stops?.[0]?.name || `Attractions in ${selectedCity}`
-                }}
-                sectionTitle={`Culinary Guide & Food Stops for Day ${activeDay}`}
-                subtitle={`Authentic restaurants and local culinary landmarks around your Day ${activeDay} sightseeing route in ${selectedCity}.`}
-              />
-            </div>
 
           </div>
         )}

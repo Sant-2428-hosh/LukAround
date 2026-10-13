@@ -1894,6 +1894,141 @@
       "locationVerified": true,
       "locationSource": "Survey of India / Official State Capital Geographic Centroid",
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/1280px-Kedarnath_Temple_in_Rainy_season.jpg"
+    },
+    {
+      "id": "goa",
+      "name": "Goa",
+      "slug": "goa",
+      "priorityRank": 16,
+      "domesticTouristVisits2024": 9850000,
+      "capital": "Panaji",
+      "description": "Goa is India's sun-blessed coastal jewel, celebrated worldwide for its golden palm-fringed Arabian Sea shores, UNESCO World Heritage 16th-century Portuguese cathedrals, and charming Latin quarters. From the cascading majesty of Dudhsagar Falls in the verdant Western Ghats to the pulsating beach shacks and flea markets of North Goa, the tranquil white sands of South Goa, and aromatic organic spice plantations, Goa enchants visitors with its signature 'Susegad' lifestyle, rich Indo-Portuguese heritage, and world-class seafood gastronomy.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1600&q=80",
+      "categories": [
+        "beaches",
+        "heritage",
+        "food",
+        "nature",
+        "nightlife",
+        "culture"
+      ],
+      "bestTimeToVisit": "November to March",
+      "majorCities": [
+        "Panaji",
+        "Old Goa",
+        "Calangute",
+        "Candolim",
+        "Anjuna",
+        "Margao",
+        "Palolem",
+        "Ponda",
+        "Vasco da Gama",
+        "Colva"
+      ],
+      "topDestinations": [
+        "Basilica of Bom Jesus",
+        "Fort Aguada",
+        "Dudhsagar Falls",
+        "Calangute Beach",
+        "Anjuna Beach",
+        "Palolem Beach",
+        "Chapora Fort",
+        "Fontainhas Latin Quarter",
+        "Se Cathedral",
+        "Mangueshi Temple"
+      ],
+      "popularFoods": [
+        {
+          "name": "Goan Fish Curry Thali",
+          "description": "Iconic coastal staple featuring fresh Kingfish (Surmai) cooked in coconut milk, kokum, and ground spices, served with steamed red rice"
+        },
+        {
+          "name": "Chicken Xacuti",
+          "description": "Rich and complex Portuguese-Goan curry made with roasted spices, white poppy seeds, and freshly toasted coconut paste"
+        },
+        {
+          "name": "Pork / Chicken Vindaloo",
+          "description": "Fiery and tangy Indo-Portuguese classic infused with Kashmiri chillies, garlic, and sugarcane palm vinegar"
+        },
+        {
+          "name": "Bebinca",
+          "description": "Celebrated 7 to 16 layered Indo-Portuguese baked pudding made with rich coconut milk, egg yolk, pure ghee, and nutmeg"
+        },
+        {
+          "name": "Prawn Balchão",
+          "description": "Tangy and spicy pickled prawn preparation with fragrant toddy vinegar, garlic, and dried red chillies"
+        },
+        {
+          "name": "Goan Poee & Chourico",
+          "description": "Crusty, traditional fermented whole-wheat pocket bread stuffed with spicy, smoked Goan pork sausages"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Goa Carnival (Panaji & Major Towns)",
+          "description": "Vibrant 4-day pre-Lent cultural extravaganza featuring King Momo street parades, music bands, and colorful masquerades"
+        },
+        {
+          "name": "Shigmo Festival (Panaji & Ponda)",
+          "description": "Goan Hindu spring festival of colors featuring majestic temple floats, traditional Ghode Modni warrior dances, and Fugdi"
+        },
+        {
+          "name": "Feast of St. Francis Xavier (Old Goa)",
+          "description": "Solemn annual December pilgrimage drawing lakhs of devotees worldwide to the Basilica of Bom Jesus"
+        },
+        {
+          "name": "Sao Joao Monsoon Feast",
+          "description": "Joyous June feast of St. John the Baptist where revelers wear flower crowns (kopels) and leap into wells singing Konkani songs"
+        },
+        {
+          "name": "International Film Festival of India (Panaji)",
+          "description": "Prestigious annual global cinema festival held every November along the Mandovi River waterfront promenade"
+        }
+      ],
+      "culture": "A fascinating harmonious blend of ancient Konkani coastal folklore and four centuries of Portuguese maritime heritage. Celebrated for its laid-back 'Susegad' lifestyle, Mando and Dulpod music traditions, Azulejos ceramic tile art, and vibrant seaside cafe culture.",
+      "transportation": {
+        "airports": [
+          "Manohar International Airport Mopa (GOX)",
+          "Dabolim International Airport (GOI)"
+        ],
+        "railway": [
+          "Madgaon Junction (MAO)",
+          "Vasco da Gama (VSG)",
+          "Thivim Railway Station (THVM)",
+          "Karmali Railway Station (KRMI)"
+        ],
+        "road": [
+          "NH 66 (Mumbai - Goa - Kochi Coastal Corridor)",
+          "NH 748 (Panaji - Belagavi Highway)",
+          "Atal Setu Cable-Stayed Bridge (Panaji)",
+          "New Zuari Bridge Expressway"
+        ]
+      },
+      "unescoSites": [
+        "Churches and Convents of Goa (Velha Goa / Old Goa)"
+      ],
+      "imageAlt": "Scenic golden beach and Arabian Sea coastline fringed by coconut palms in Goa, India",
+      "imageSource": "https://unsplash.com/photos/a960bf40e7f2",
+      "imageSourceName": "Unsplash Travel",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Sumit Sourav",
+      "imageCredit": "Photo: Sumit Sourav / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true,
+      "coordinates": {
+        "latitude": 15.4989,
+        "longitude": 73.8278
+      },
+      "latitude": 15.4989,
+      "longitude": 73.8278,
+      "locationVerified": true,
+      "locationSource": "Survey of India / Official State Capital Geographic Centroid",
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1600&q=80"
     }
   ],
   "cities": [
@@ -13011,6 +13146,547 @@
       "gallery": [
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg/1280px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       ]
+    },
+    {
+      "id": "panaji",
+      "name": "Panaji",
+      "aliases": [
+        "Panjim",
+        "Capital of Goa"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "The picturesque capital of Goa situated along the Mandovi River, famous for its preserved Latin Quarter of Fontainhas, whitewashed baroque Church of Our Lady of the Immaculate Conception, floating casino cruises, and vibrant culinary arts.",
+      "heroImage": "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.4989,
+      "longitude": 73.8278,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "fontainhas-latin-quarter",
+        "our-lady-of-the-immaculate-conception-church",
+        "miramar-beach-panaji",
+        "mandovi-river-cruise"
+      ],
+      "thingsToDo": [
+        "Heritage walking tour through the colorful streets of Fontainhas",
+        "Sunset luxury dinner cruise along the Mandovi River",
+        "Feast on authentic Goan fish curry thali at historic local eateries",
+        "Visit Mario Miranda gallery and antique Portuguese artisan shops"
+      ],
+      "food": [
+        "Ritz Classic Goan Fish Thali",
+        "Mum's Kitchen traditional Goan curries",
+        "Bebinca at Confeitaria 31 De Janeiro",
+        "Goan Poee with spicy Chorizo pav",
+        "Kokum Solkadhi"
+      ],
+      "shopping": [
+        "Traditional Azulejos hand-painted ceramic tiles",
+        "Feni & Cashew nuts at Panaji Municipal Market",
+        "Mario Miranda artwork souvenirs",
+        "Designer boutique fashion on 18th June Road"
+      ],
+      "festivals": [
+        "Goa Carnival Float Parade (February)",
+        "International Film Festival of India (November)",
+        "Feast of Our Lady of Immaculate Conception (December)"
+      ],
+      "nearbyDestinations": [
+        "Old Goa (10 km)",
+        "Candolim (13 km)",
+        "Calangute (15 km)",
+        "Dona Paula (7 km)"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "heritage",
+        "couples",
+        "culture",
+        "food",
+        "photography"
+      ],
+      "image": "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Colorful Portuguese heritage quarter of Fontainhas in Panaji, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Abhishek Gaurav",
+      "imageCredit": "Photo: Abhishek Gaurav / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80",
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "old-goa",
+      "name": "Old Goa",
+      "aliases": [
+        "Velha Goa",
+        "Rome of the East"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "The former capital of Portuguese India and a prestigious UNESCO World Heritage Site, home to some of Asia's most majestic 16th and 17th-century Catholic monuments, including the Basilica of Bom Jesus and Se Cathedral.",
+      "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.5039,
+      "longitude": 73.9117,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "basilica-of-bom-jesus",
+        "se-cathedral",
+        "church-of-st-francis-of-assisi",
+        "church-of-st-cajetan"
+      ],
+      "thingsToDo": [
+        "Marvel at the sacred relics of St. Francis Xavier in the Basilica of Bom Jesus",
+        "Listen to the resonant acoustics of the famous Golden Bell inside Se Cathedral",
+        "Explore Portuguese Christian art inside the Archaeological Museum of Goa",
+        "Walk through the imposing Viceroy's Arch towards Mandovi river"
+      ],
+      "food": [
+        "Goan Serradura dessert",
+        "Portuguese Bolinhas coconut cookies",
+        "Cafreal chicken rolls",
+        "Traditional Bebinca"
+      ],
+      "shopping": [
+        "Religious artifacts and blessed souvenirs",
+        "Antiquated Goan woodwork copies",
+        "Konkani spice packets"
+      ],
+      "festivals": [
+        "Feast of St. Francis Xavier (Nov 24 - Dec 3)",
+        "Feast of St. Catherine (November)"
+      ],
+      "nearbyDestinations": [
+        "Panaji (10 km)",
+        "Ponda Temples (18 km)",
+        "Divar Island (3 km via ferry)"
+      ],
+      "recommendedDays": 1,
+      "travelStyles": [
+        "heritage",
+        "spiritual",
+        "culture",
+        "photography",
+        "family"
+      ],
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Historic Portuguese Basilica of Bom Jesus in Old Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Vikram Shenoy",
+      "imageCredit": "Photo: Vikram Shenoy / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "calangute",
+      "name": "Calangute",
+      "aliases": [
+        "Queen of Beaches",
+        "North Goa Coast"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "Known as the 'Queen of Beaches', Calangute is the bustling tourism epicenter of North Goa, stretching seamlessly into Baga Beach with a vibrant shoreline of beach shacks, thrilling watersports, lively markets, and nocturnal entertainment.",
+      "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.5439,
+      "longitude": 73.7554,
+      "bestTimeToVisit": "October to May",
+      "topAttractions": [
+        "calangute-beach",
+        "baga-beach",
+        "tibetan-market-calangute",
+        "st-alex-church-calangute"
+      ],
+      "thingsToDo": [
+        "Indulge in parasailing, jet skiing, banana boat rides, and bumper rides",
+        "Dine under candlelit shacks with fresh grilled red snapper and live coastal music",
+        "Bargain for beachwear, handcrafted jewellery, and leather footwear at market stalls",
+        "Experience pulsating nightlife along the famed Tito's Lane in Baga"
+      ],
+      "food": [
+        "Butter Garlic Prawns & Crab Masala",
+        "Britto's Seafood Platter & baked desserts",
+        "Goan Prawn Curry with Poi",
+        "Chilled tender coconut water & fresh feni cocktails"
+      ],
+      "shopping": [
+        "Handmade junk jewelry & shell craft",
+        "Tibetan handicrafts and singing bowls",
+        "Bohemian beachwear and linen shirts"
+      ],
+      "festivals": [
+        "New Year's Eve Beach Fireworks",
+        "Sunburn After-parties",
+        "Calangute Beach Cultural Week"
+      ],
+      "nearbyDestinations": [
+        "Candolim (4 km)",
+        "Anjuna (8 km)",
+        "Aguada Fort (6 km)",
+        "Panaji (15 km)"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "adventure",
+        "nightlife",
+        "family",
+        "food"
+      ],
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Golden sands and active shoreline of Calangute Beach in North Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Sean Oulashin",
+      "imageCredit": "Photo: Sean Oulashin / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "candolim",
+      "name": "Candolim",
+      "aliases": [
+        "Sinquerim - Candolim Belt"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "An upscale, scenic seaside stretch in North Goa crowned by the historic 17th-century Fort Aguada and its four-tiered lighthouse, offering golden beaches, luxury seaside resorts, fine dining, and watersports.",
+      "heroImage": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.5186,
+      "longitude": 73.7686,
+      "bestTimeToVisit": "October to April",
+      "topAttractions": [
+        "fort-aguada",
+        "candolim-beach",
+        "sinquerim-beach",
+        "aguada-jail-museum"
+      ],
+      "thingsToDo": [
+        "Explore the majestic ramparts and ocean panoramas of Fort Aguada",
+        "Visit the newly restored Aguada Central Jail Freedom Museum",
+        "Enjoy dolphin sighting boat excursions from Sinquerim bay",
+        "Dine at upscale beachfront restaurants along the Candolim promenade"
+      ],
+      "food": [
+        "Prawn Rissois and Crab Xec Xec",
+        "Tenderloin & Pork Roast at local tavernas",
+        "European & Goan fusion at fine dining bistros",
+        "Fresh sea bass in recheado masala"
+      ],
+      "shopping": [
+        "Boutique designer clothes and resort wear",
+        "Spices and cashew nuts at Newton's Supermarket",
+        "Handmade leather accessories"
+      ],
+      "festivals": [
+        "Candolim Feast of Our Lady of Hope",
+        "Annual Beach Watersports Carnival"
+      ],
+      "nearbyDestinations": [
+        "Calangute (4 km)",
+        "Panaji (13 km)",
+        "Reis Magos Fort (8 km)"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "luxury",
+        "heritage",
+        "beaches",
+        "couples",
+        "photography"
+      ],
+      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Fort Aguada lighthouse and Arabian Sea ramparts in Candolim, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Naveen Saxena",
+      "imageCredit": "Photo: Naveen Saxena / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "anjuna",
+      "name": "Anjuna",
+      "aliases": [
+        "Vagator - Anjuna Belt",
+        "Bohemian North Goa"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "The legendary cradle of Goa's bohemian and hippie culture, Anjuna is renowned for its iconic red laterite headlands, the historic Wednesday Flea Market, sweeping views from Chapora Fort, and sunset trance spots in adjacent Vagator.",
+      "heroImage": "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.5833,
+      "longitude": 73.7447,
+      "bestTimeToVisit": "November to April",
+      "topAttractions": [
+        "anjuna-beach",
+        "chapora-fort",
+        "vagator-beach",
+        "anjuna-flea-market"
+      ],
+      "thingsToDo": [
+        "Climb to Chapora Fort for unforgettable 360-degree sunset ocean views",
+        "Shop colorful textiles, spices, jewelry, and instruments at the Wednesday flea market",
+        "Relax at cliffside beach lounges listening to ambient sunset music",
+        "Explore dramatic rocky coves and red cliffs along Little Vagator"
+      ],
+      "food": [
+        "Gunpowder South Indian coastal cuisine in Assagao",
+        "Curlys beachfront snacks & fresh catch",
+        "Organic smoothies and vegan brunch bowls",
+        "Spicy Goan fish recheado"
+      ],
+      "shopping": [
+        "Vintage jewelry, Tibetan singing bowls, and leather goods",
+        "Handmade dreamcatchers and boho hammocks",
+        "Spices and handmade herbal cosmetics"
+      ],
+      "festivals": [
+        "Anjuna Flea Market Fiesta (Wednesdays)",
+        "Hilltop Goa Psytrance & Art Festival",
+        "Sunburn Music Festival (Vagator)"
+      ],
+      "nearbyDestinations": [
+        "Vagator (2 km)",
+        "Assagao (4 km)",
+        "Calangute (8 km)",
+        "Morjim Beach (14 km)"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "beaches",
+        "nightlife",
+        "couples",
+        "photography",
+        "adventure"
+      ],
+      "image": "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Chapora Fort ramparts overlooking the Arabian Sea and Vagator in Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Ashwin Kumar",
+      "imageCredit": "Photo: Ashwin Kumar / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "margao",
+      "name": "Margao",
+      "aliases": [
+        "Madgaon",
+        "Commercial Capital of South Goa"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "The cultural and commercial headquarters of South Goa, Margao boasts splendid Portuguese-era mansions, the 17th-century Holy Spirit Church, vibrant municipal spice markets, and serves as the major railway junction connecting Goa to all of India.",
+      "heroImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.2832,
+      "longitude": 73.9862,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "holy-spirit-church-margao",
+        "monte-hill-margao",
+        "margao-covered-market",
+        "colva-beach"
+      ],
+      "thingsToDo": [
+        "Admire grand Portuguese baroque facades around Holy Spirit Church square",
+        "Climb Monte Hill chapel for panoramic twilight vistas across South Goa",
+        "Shop authentic spices, dried fish, and Goan sausages in the covered market",
+        "Sample legendary Goan seafood and live music at Martin's Corner in nearby Betalbatim"
+      ],
+      "food": [
+        "Martin's Corner famous King Crab in garlic butter",
+        "Traditional Bebinca & Dodol sweets",
+        "Longaniza spiced pork sausages",
+        "Authentic Fish Curry Thali at Longuinhos"
+      ],
+      "shopping": [
+        "Famous Goan Chourico sausages",
+        "Cashew nuts and home-brewed Feni",
+        "Handmade terracotta pottery and clay cooking pots"
+      ],
+      "festivals": [
+        "Holy Spirit Church Feast of the Holy Spirit (May)",
+        "Margao Shigmo Utsav (March)",
+        "Dindi Festival"
+      ],
+      "nearbyDestinations": [
+        "Colva Beach (6 km)",
+        "Benaulim (7 km)",
+        "Majorda (9 km)",
+        "Panaji (33 km)"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "culture",
+        "heritage",
+        "food",
+        "family"
+      ],
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Heritage Portuguese mansions and churches in Margao, South Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Sumit Sourav",
+      "imageCredit": "Photo: Sumit Sourav / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "palolem",
+      "name": "Palolem",
+      "aliases": [
+        "Canacona Coastal Paradise",
+        "South Goa Crescent"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "Tucked away in South Goa's Canacona taluka, Palolem is celebrated for its pristine crescent-shaped white sand bay, tranquil turquoise waters ideal for swimming, palm-thatched beach huts, and dolphin watching boat excursions.",
+      "heroImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.01,
+      "longitude": 74.023,
+      "bestTimeToVisit": "November to April",
+      "topAttractions": [
+        "palolem-beach",
+        "butterfly-beach",
+        "agonda-beach",
+        "cotigao-wildlife-sanctuary"
+      ],
+      "thingsToDo": [
+        "Kayak in the gentle morning waves and explore the rocky northern island",
+        "Take a boat trip to secluded Butterfly Beach and spot playful dolphins",
+        "Experience a silent headphone party at the southern headland",
+        "Take day trips to tranquil Agonda Beach and Cotigao Wildlife Sanctuary"
+      ],
+      "food": [
+        "Fresh tandoori red snapper and tiger prawns on the beach",
+        "Wood-fired thin-crust Italian pizzas",
+        "Health smoothie bowls, kombucha & fresh juices",
+        "Authentic Goan Caldin vegetable and prawn stew"
+      ],
+      "shopping": [
+        "Tie-dye beach dresses, sarongs, and cotton kurtas",
+        "Ayurvedic massage oils and incense",
+        "Handmade silver jewellery and macrame art"
+      ],
+      "festivals": [
+        "Palolem Silent Noise Parties",
+        "Canacona Temple Zatra Festivals",
+        "New Year Beach Lantern Celebrations"
+      ],
+      "nearbyDestinations": [
+        "Agonda Beach (9 km)",
+        "Cabo de Rama Fort (22 km)",
+        "Margao (38 km)",
+        "Gokarna, Karnataka (90 km)"
+      ],
+      "recommendedDays": 3,
+      "travelStyles": [
+        "beaches",
+        "couples",
+        "nature",
+        "wellness",
+        "photography"
+      ],
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Crescent shaped golden sand and swaying coconut palms at Palolem Beach, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Ganesh K",
+      "imageCredit": "Photo: Ganesh K / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ponda",
+      "name": "Ponda",
+      "aliases": [
+        "Cultural Heartland of Goa",
+        "Temple Town"
+      ],
+      "state": "Goa",
+      "stateSlug": "goa",
+      "description": "The spiritual and agricultural heart of Goa nestled at the foothills of the Western Ghats, renowned for centuries-old Konkani Hindu temples, fragrant organic spice plantations, and as the launching point for Dudhsagar Falls.",
+      "heroImage": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "latitude": 15.4026,
+      "longitude": 74.015,
+      "bestTimeToVisit": "October to March",
+      "topAttractions": [
+        "dudhsagar-falls",
+        "mangueshi-temple",
+        "sahakari-spice-farm",
+        "shanta-durga-temple"
+      ],
+      "thingsToDo": [
+        "Embark on an exhilarating 4x4 jungle jeep safari to Dudhsagar Falls in Mollem",
+        "Admire the grand 7-story Deepastambha lamp tower at Mangueshi Temple",
+        "Tour the lush aromatic groves of Sahakari Spice Farm and enjoy a buffet lunch",
+        "Visit the serene Shanta Durga Temple complex in Kavlem"
+      ],
+      "food": [
+        "Traditional Saraswat Brahmin vegetarian feast",
+        "Spiced herbal tea and organic spice farm thali",
+        "Khatkhate mixed vegetable and kokum stew",
+        "Sweet Patoli steamed in turmeric leaves"
+      ],
+      "shopping": [
+        "Freshly harvested black pepper, cardamom, vanilla, and cinnamon",
+        "Pure organic coconut oil and cashew feni",
+        "Handmade Ayurvedic herbal medicines"
+      ],
+      "festivals": [
+        "Mangueshi Temple Jatra (January/February)",
+        "Shantadurga Zatra",
+        "Ponda Shigmo Festival"
+      ],
+      "nearbyDestinations": [
+        "Old Goa (18 km)",
+        "Panaji (28 km)",
+        "Dudhsagar Falls (35 km)",
+        "Margao (18 km)"
+      ],
+      "recommendedDays": 2,
+      "travelStyles": [
+        "nature",
+        "spiritual",
+        "adventure",
+        "culture",
+        "family"
+      ],
+      "image": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "imageAlt": "Majestic multi-tiered cascade of Dudhsagar Falls in the Western Ghats, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Prashant Gautam",
+      "imageCredit": "Photo: Prashant Gautam / Unsplash",
+      "gallery": [
+        "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "verified": true
     }
   ],
   "attractions": [
@@ -38929,6 +39605,751 @@
       "imageCredit": "Photo: Wikimedia Commons",
       "verified": true,
       "heroImage": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Kasu_Brahmananda_Reddy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "basilica-of-bom-jesus",
+      "name": "Basilica of Bom Jesus",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Old Goa",
+      "citySlug": "old-goa",
+      "type": "heritage",
+      "shortDescription": "UNESCO World Heritage 16th-century baroque basilica in Old Goa housing the sacred relics of St. Francis Xavier.",
+      "longDescription": "Consecrated in 1605, the Basilica of Bom Jesus is one of the oldest churches in India and a triumph of baroque architecture. Constructed from unplastered red laterite stone with elaborate basalt carvings, it enshrines the silver casket containing the sacred mortal remains of Saint Francis Xavier. Its gilded high altar and carved wooden pulpit are celebrated masterpieces of Indo-Portuguese Christian art.",
+      "category": [
+        "heritage",
+        "spiritual",
+        "culture"
+      ],
+      "bestTimeToVisit": "October to March",
+      "recommendedDuration": "1.5 - 2 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.5009,
+        "longitude": 73.9116
+      },
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Silver casket enshrining the sacred relics of St. Francis Xavier",
+        "Elaborate 3-storey unplastered red laterite baroque facade",
+        "Gilded baroque main altar depicting the Infant Jesus",
+        "Priceless 17th-century Florentine marble mausoleum"
+      ],
+      "activities": [
+        "Heritage architectural photography",
+        "Attending the holy mass in Portuguese and Konkani",
+        "Exploring the adjacent Bom Jesus Art Gallery"
+      ],
+      "nearbyPlaces": [
+        "Se Cathedral",
+        "Church of St. Francis of Assisi",
+        "Archaeological Museum of Goa",
+        "Church of St. Cajetan"
+      ],
+      "travelTips": [
+        "Dress modestly; shoulders and knees must be covered",
+        "Photography is restricted inside the primary relics chapel during solemn prayers",
+        "Visit early morning around 9:00 AM to avoid peak pilgrimage coach crowds"
+      ],
+      "accessibility": "Wheelchair ramp available at northern side entry",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "unesco",
+        "baroque",
+        "christian-heritage",
+        "old-goa",
+        "pilgrimage"
+      ],
+      "featured": true,
+      "priorityRank": 1,
+      "imageAlt": "Basilica of Bom Jesus red laterite baroque church in Old Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Vikram Shenoy",
+      "imageCredit": "Photo: Vikram Shenoy / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "fort-aguada",
+      "name": "Fort Aguada & Lighthouse",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Candolim",
+      "citySlug": "candolim",
+      "type": "forts-palaces",
+      "shortDescription": "Well-preserved 17th-century Portuguese fortress and lighthouse commanding dramatic panoramic vistas of the Arabian Sea.",
+      "longDescription": "Built in 1612 by the Portuguese to guard against Dutch naval fleets and the Marathas, Fort Aguada ('Fort of the Water') is a colossal coastal fortress perched atop Sinquerim headland. It houses a massive 79-gun battery and an ingenious underground freshwater cistern capable of holding 2.3 million gallons of drinking water to resupply passing ocean-faring galleons. A 19th-century four-storey lighthouse rises prominently from the central citadel.",
+      "category": [
+        "heritage",
+        "forts-palaces",
+        "beaches"
+      ],
+      "bestTimeToVisit": "October to April",
+      "recommendedDuration": "2 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.4925,
+        "longitude": 73.7736
+      },
+      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Spectacular 180-degree Arabian Sea panoramic horizon views",
+        "Historical four-storey Portuguese lighthouse erected in 1864",
+        "Subterranean freshwater reservoir with ancient stone piping",
+        "Adjacent Aguada Central Jail Museum showcasing Goa's freedom struggle"
+      ],
+      "activities": [
+        "Golden hour sunset ocean photography",
+        "Walking the laterite battlements overlooking Sinquerim beach",
+        "Touring the interactive Aguada Jail freedom fighter galleries"
+      ],
+      "nearbyPlaces": [
+        "Sinquerim Beach",
+        "Candolim Beach",
+        "Reis Magos Fort"
+      ],
+      "travelTips": [
+        "Sunset hours from 4:30 PM to 6:00 PM offer the best breeze and golden lighting",
+        "Wear sturdy walking shoes for the uneven laterite stone pavements",
+        "Stay hydrated during afternoon visits as open battlements have minimal shade"
+      ],
+      "accessibility": "Paved pathway up to central lighthouse plaza; battlements have steps",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "portuguese-fort",
+        "lighthouse",
+        "arabian-sea",
+        "candolim",
+        "heritage"
+      ],
+      "featured": true,
+      "priorityRank": 2,
+      "imageAlt": "Historic Fort Aguada lighthouse on the Arabian Sea cliff in Candolim, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Naveen Saxena",
+      "imageCredit": "Photo: Naveen Saxena / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "dudhsagar-falls",
+      "name": "Dudhsagar Falls",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "type": "nature",
+      "shortDescription": "Spectacular 310-metre four-tiered waterfall cascading down the lush Western Ghats like a sea of frothy white milk.",
+      "longDescription": "Plummeting 310 metres from the rugged granite escarpment of the Western Ghats along the Goa-Karnataka border, Dudhsagar ('Sea of Milk') is among India's tallest and most majestic waterfalls. Located within the Bhagwan Mahaveer Sanctuary and Mollem National Park, it cascades in four dramatic tiers into deep emerald plunge pools. An iconic arched railway viaduct spans directly across the middle of the roaring cascade, made legendary in cinematic travel journeys.",
+      "category": [
+        "nature",
+        "adventure"
+      ],
+      "bestTimeToVisit": "October to May (Monsoon for majestic flow, Winter for jeep access)",
+      "recommendedDuration": "4 - 5 hours (including jungle safari)",
+      "estimatedVisitTime": "Full Day",
+      "coordinates": {
+        "latitude": 15.3144,
+        "longitude": 74.3144
+      },
+      "image": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Four-tiered 310-metre mountain waterfall cascade",
+        "Thrill of rugged 4x4 open jeep safari across mountain streams in Mollem",
+        "Natural freshwater swimming pool at the base of the waterfall",
+        "Spotting Malabar giant squirrels and exotic hornbills in the jungle"
+      ],
+      "activities": [
+        "Jeep safari through Bhagwan Mahaveer National Park",
+        "Swimming in the designated freshwater plunge pool with mandatory life jackets",
+        "Trekking along designated forest trails"
+      ],
+      "nearbyPlaces": [
+        "Mollem National Park",
+        "Tambdi Surla Mahadev Temple",
+        "Devil's Canyon"
+      ],
+      "travelTips": [
+        "Mandatory government jeep registration at Kulem base camp; book slots early",
+        "Wearing provided lifejackets in the plunge pool is strictly compulsory by law",
+        "Avoid visiting on weekends if you wish to bypass long jeep queues at Kulem"
+      ],
+      "accessibility": "Jungle trek over natural boulders required from the jeep drop point; not wheelchair accessible",
+      "familyFriendly": true,
+      "budgetLevel": "moderate",
+      "tags": [
+        "waterfall",
+        "western-ghats",
+        "safari",
+        "nature",
+        "adventure"
+      ],
+      "featured": true,
+      "priorityRank": 3,
+      "imageAlt": "Dudhsagar Waterfall cascading down the Western Ghats mountain range in Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Prashant Gautam",
+      "imageCredit": "Photo: Prashant Gautam / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "chapora-fort",
+      "name": "Chapora Fort",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Anjuna",
+      "citySlug": "anjuna",
+      "type": "forts-palaces",
+      "shortDescription": "Iconic red laterite fort perched high above the Chapora River and Vagator shoreline, immortalized by Bollywood cinema.",
+      "longDescription": "Rising high atop a prominent laterite promontory overlooking the Chapora estuary and Vagator Beach, Chapora Fort was constructed by the Portuguese in 1717 over an earlier defensive stronghold built by Adil Shah of Bijapur. While only the outer laterite ramparts, gatehouses, and defensive bastions survive today, the site offers legendary, breathtaking 360-degree vistas across the Arabian Sea, coastline, and rivers, forever cemented in popular culture as the iconic 'Dil Chahta Hai' fort.",
+      "category": [
+        "forts-palaces",
+        "heritage",
+        "beaches"
+      ],
+      "bestTimeToVisit": "October to April",
+      "recommendedDuration": "1.5 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.6058,
+        "longitude": 73.7364
+      },
+      "image": "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Legendary panoramic cliffside sunset vistas over Vagator Beach",
+        "Dramatic red laterite stone ramparts against turquoise Arabian ocean",
+        "Views of fishing boats entering the calm waters of Chapora River",
+        "Famous cinematic landmark of contemporary Indian travel culture"
+      ],
+      "activities": [
+        "Sunset photography and ocean breeze gazing",
+        "Walking along the undulating hillcrest battlements",
+        "Enjoying fresh fruit juices at the base village"
+      ],
+      "nearbyPlaces": [
+        "Vagator Beach",
+        "Ozran Little Vagator Beach",
+        "Anjuna Beach",
+        "Chapora Fish Jetty"
+      ],
+      "travelTips": [
+        "Requires a 10-minute moderately steep walk up a paved laterite hill from parking",
+        "Wear shoes with good grip as gravel and dry laterite can be slippery",
+        "Arrive by 5:00 PM for the finest sunset viewing spots along the northern wall"
+      ],
+      "accessibility": "Moderately steep slope uphill with uneven stones; limited wheelchair access",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "fort",
+        "sunset",
+        "vagator",
+        "dil-chahta-hai",
+        "panoramic"
+      ],
+      "featured": true,
+      "priorityRank": 4,
+      "imageAlt": "Chapora Fort laterite ramparts overlooking the ocean in North Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Ashwin Kumar",
+      "imageCredit": "Photo: Ashwin Kumar / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "fontainhas-latin-quarter",
+      "name": "Fontainhas Latin Quarter",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Panaji",
+      "citySlug": "panaji",
+      "type": "heritage",
+      "shortDescription": "UNESCO heritage-recognized Latin Quarter featuring pastel-colored Portuguese colonial mansions, terracotta roofs, and charming art cafes.",
+      "longDescription": "Nestled between the Altinho hillock and Ourem Creek in Panaji, Fontainhas is Asia's only surviving Latin Quarter and an architectural treasure trove. Founded in the late 18th century, its narrow winding lanes are lined with two-hundred-year-old Portuguese residences painted in mandatory bright hues of yellow, sapphire blue, green, and terracotta red. Wrought-iron balconies, ornate oyster-shell windows, and azulejos nameplates transport travelers into a charming Mediterranean dreamscape.",
+      "category": [
+        "heritage",
+        "culture",
+        "photography"
+      ],
+      "bestTimeToVisit": "October to April",
+      "recommendedDuration": "2 - 3 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.4988,
+        "longitude": 73.8322
+      },
+      "image": "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Vibrant pastel-toned Portuguese villas with wooden overhanging balconies",
+        "Historic St. Sebastian Chapel dating back to 1888",
+        "Traditional bakeries like Confeitaria 31 De Janeiro serving warm pastels",
+        "Art galleries showcasing Mario Miranda cartoon murals and Azulejos tile paintings"
+      ],
+      "activities": [
+        "Guided heritage walking and architectural photography trail",
+        "Sampling authentic Bebinca and freshly baked Poee bread",
+        "Browsing bespoke Goan designer craft and lifestyle studios"
+      ],
+      "nearbyPlaces": [
+        "Our Lady of the Immaculate Conception Church",
+        "Mandovi River Promenade",
+        "Panaji Municipal Market"
+      ],
+      "travelTips": [
+        "Early morning between 7:30 AM and 9:30 AM offers the best soft lighting and quiet streets for photography",
+        "Please respect local residents' privacy by not entering private garden gates",
+        "Fontainhas is best explored entirely on foot"
+      ],
+      "accessibility": "Cobblestoned and paved flat roads; easily walkable and wheelchair accessible",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "latin-quarter",
+        "portuguese-architecture",
+        "fontainhas",
+        "panaji",
+        "heritage-walk"
+      ],
+      "featured": true,
+      "priorityRank": 5,
+      "imageAlt": "Vibrant yellow and blue Portuguese heritage houses in Fontainhas, Panaji",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Abhishek Gaurav",
+      "imageCredit": "Photo: Abhishek Gaurav / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "se-cathedral",
+      "name": "Se Cathedral",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Old Goa",
+      "citySlug": "old-goa",
+      "type": "heritage",
+      "shortDescription": "One of the largest cathedrals in Asia, built in magnificent Portuguese-Manueline style and home to the renowned Golden Bell.",
+      "longDescription": "Dedicated to St. Catherine of Alexandria, Se Cathedral was commissioned by Afonso de Albuquerque to commemorate the Portuguese victory over the Muslim army in 1510. Measuring an astounding 250 feet in length and 181 feet in breadth, it is celebrated as one of the largest religious buildings in all of Asia. Its majestic Iberian exterior, vaulted ceiling, and remaining 115-foot southern bell tower house the famous 'Golden Bell' (Sino de Ouro), celebrated for its rich, melodic timbre that echoes across miles.",
+      "category": [
+        "heritage",
+        "spiritual",
+        "culture"
+      ],
+      "bestTimeToVisit": "October to March",
+      "recommendedDuration": "1 - 1.5 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.5039,
+        "longitude": 73.9125
+      },
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Colossal cathedral interior with 14 gilded wood-carved side chapels",
+        "Famous 'Golden Bell' renowned as the largest church bell in Goa",
+        "Courtyard of the Cross of Miracles displaying miraculous 17th-century crucifix",
+        "Magnificent Portuguese-Manueline high altar"
+      ],
+      "activities": [
+        "Architectural study of Indo-Portuguese cathedral stonework",
+        "Visiting the Archaeological Museum located across the courtyard",
+        "Quiet prayer and reflection in the cavernous nave"
+      ],
+      "nearbyPlaces": [
+        "Basilica of Bom Jesus",
+        "Church of St. Francis of Assisi",
+        "Viceroy's Arch"
+      ],
+      "travelTips": [
+        "Modest attire required",
+        "Pair with the Basilica of Bom Jesus right across the manicured green lawn",
+        "Look for the detailed wooden carvings depicting the martyrdom of St. Catherine"
+      ],
+      "accessibility": "Ramp available at entrance; spacious flat interior aisles",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "unesco",
+        "cathedral",
+        "golden-bell",
+        "old-goa",
+        "manueline"
+      ],
+      "featured": true,
+      "priorityRank": 6,
+      "imageAlt": "Se Cathedral majestic white Iberian facade in Old Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Vikram Shenoy",
+      "imageCredit": "Photo: Vikram Shenoy / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "calangute-beach",
+      "name": "Calangute Beach",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Calangute",
+      "citySlug": "calangute",
+      "type": "beaches",
+      "shortDescription": "Goa's premier golden-sand beach offering world-class watersports, lively beach shacks, and vibrant coastal dining.",
+      "longDescription": "Crowned the 'Queen of Beaches', Calangute is the largest and most famous beach in North Goa, stretching across four kilometers of shimmering Arabian Sea coastline. The beach pulsates with energy, lined with colorful shacks serving chilled drinks and fresh catches of the day. A hub for thrill-seekers, it offers certified water adventures like parasailing, banana rides, jet skiing, and windsurfing under the supervision of professional lifeguards.",
+      "category": [
+        "beaches",
+        "adventure",
+        "food"
+      ],
+      "bestTimeToVisit": "October to May",
+      "recommendedDuration": "3 - 4 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.5439,
+        "longitude": 73.7554
+      },
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Wide expanses of sun-drenched golden sands and warm Arabian waves",
+        "Licensed watersports operators for parasailing and speedboating",
+        "Iconic beach shacks offering fresh grilled seafood and live Konkani music",
+        "Stunning sunset ocean panoramas with evening sea breezes"
+      ],
+      "activities": [
+        "Parasailing high above the Calangute coastline",
+        "Jet skiing and bumper boat rides",
+        "Sunbathing and beach volleyball",
+        "Candlelit shack dinners on the sand"
+      ],
+      "nearbyPlaces": [
+        "Baga Beach",
+        "Candolim Beach",
+        "St. Alex Church",
+        "Tibetan Market"
+      ],
+      "travelTips": [
+        "Swim only in zones demarcated between yellow/red flags under Drishti lifeguard watch",
+        "Always negotiate water sports rates or book through official government tourism counters",
+        "Sunscreen and sunglasses are essential between 11:00 AM and 3:30 PM"
+      ],
+      "accessibility": "Direct ramp access available from main promenade to sand",
+      "familyFriendly": true,
+      "budgetLevel": "moderate",
+      "tags": [
+        "beach",
+        "watersports",
+        "queen-of-beaches",
+        "calangute",
+        "shacks"
+      ],
+      "featured": true,
+      "priorityRank": 7,
+      "imageAlt": "Sunbathers and water waves on Calangute Beach in North Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Sean Oulashin",
+      "imageCredit": "Photo: Sean Oulashin / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "palolem-beach",
+      "name": "Palolem Beach",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Palolem",
+      "citySlug": "palolem",
+      "type": "beaches",
+      "shortDescription": "Crescent-shaped tranquil white sand bay lined with coconut palms, calm waters for swimming, and colorful eco cottages.",
+      "longDescription": "Nestled in Canacona at the southernmost edge of Goa, Palolem is widely hailed as one of the most picturesque beaches in the world. Framed between two rocky promontories, its mile-long crescent bay features remarkably calm, warm waters sheltered from heavy open-sea swells, making it ideal for swimming and stand-up paddling. Bohemian palm-thatched beach huts perched on stilts, organic smoothie cafes, and playful dolphins offshore make Palolem a tranquil tropical haven.",
+      "category": [
+        "beaches",
+        "nature",
+        "wellness"
+      ],
+      "bestTimeToVisit": "November to April",
+      "recommendedDuration": "Full Day / Overnight Stay",
+      "estimatedVisitTime": "Full Day",
+      "coordinates": {
+        "latitude": 15.01,
+        "longitude": 74.023
+      },
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Pristine crescent bay with gentle, safe swimming waters",
+        "Morning kayak rentals to explore Monkey Island and rocky coves",
+        "Dolphin spotting boat trips to Butterfly and Honeymoon beaches",
+        "Lively Saturday night headphone parties at Neptune Point"
+      ],
+      "activities": [
+        "Sea kayaking and stand-up paddleboarding",
+        "Morning yoga on the beach and Ayurvedic massages",
+        "Sunset dolphin boat cruises",
+        "Dining at beachfront organic vegan bistros"
+      ],
+      "nearbyPlaces": [
+        "Butterfly Beach",
+        "Agonda Beach",
+        "Cabo de Rama Fort",
+        "Cotigao Wildlife Sanctuary"
+      ],
+      "travelTips": [
+        "Rent a sea kayak early in the morning around 7:00 AM for glass-like calm waters",
+        "Book an eco beach hut right on the beachfront for falling asleep to gentle wave sounds",
+        "ATMs and reliable local pharmacies are available in nearby Chaudi market"
+      ],
+      "accessibility": "Narrow sandy lanes lead to beach; assistance needed for wheelchairs on sand",
+      "familyFriendly": true,
+      "budgetLevel": "moderate",
+      "tags": [
+        "crescent-beach",
+        "palolem",
+        "dolphins",
+        "south-goa",
+        "tranquil"
+      ],
+      "featured": true,
+      "priorityRank": 8,
+      "imageAlt": "Palm-fringed crescent bay and blue waters of Palolem Beach in South Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Ganesh K",
+      "imageCredit": "Photo: Ganesh K / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "anjuna-beach",
+      "name": "Anjuna Beach & Flea Market",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Anjuna",
+      "citySlug": "anjuna",
+      "type": "beaches",
+      "shortDescription": "World-famous beach with dramatic red laterite rock formations, bohemian spirit, and legendary Wednesday flea market.",
+      "longDescription": "Famed since the 1960s as the epicenter of Goa's counter-culture and hippie trail, Anjuna Beach presents a striking natural setting where black-and-red laterite rock shelves jut out into the foaming Arabian Sea. Lined with legendary coastal music cafes and shacks like Curlies and Shiva Valley, Anjuna is renowned for its world-famous Wednesday Flea Market, where travelers from across the globe gather amidst aromatic incense, brass handicrafts, handmade jewelry, and beach fashion.",
+      "category": [
+        "beaches",
+        "nightlife",
+        "culture"
+      ],
+      "bestTimeToVisit": "November to April",
+      "recommendedDuration": "3 - 4 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.5833,
+        "longitude": 73.7447
+      },
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Dramatic red laterite rocky outcrops meeting curling white waves",
+        "Legendary Wednesday Anjuna Flea Market running from dawn to dusk",
+        "Famous sunset chill-out beach shacks with electronic and acoustic music",
+        "Unique bohemian art, clothing, and handcrafted souvenir stalls"
+      ],
+      "activities": [
+        "Browsing and bargaining at the Wednesday Flea Market",
+        "Watching the sunset from beachfront rock headlands",
+        "Dining on fresh grilled tiger prawns and Goan fish curries"
+      ],
+      "nearbyPlaces": [
+        "Chapora Fort",
+        "Vagator Beach",
+        "Assagao Village",
+        "Baga Beach"
+      ],
+      "travelTips": [
+        "Wear sturdy footwear as sections of the beach are rocky",
+        "Wednesday is the busiest day due to the flea market; arrive before 11:00 AM for easier parking",
+        "Keep cash handy as many flea market artisan stalls do not accept card payments"
+      ],
+      "accessibility": "Stairs lead down to the beach from parking; limited wheelchair access on rocky sections",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "flea-market",
+        "bohemian",
+        "anjuna",
+        "rocky-beach",
+        "sunset"
+      ],
+      "featured": true,
+      "priorityRank": 9,
+      "imageAlt": "Anjuna Beach with red laterite rocks and beach shacks in North Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Sumit Sourav",
+      "imageCredit": "Photo: Sumit Sourav / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "mangueshi-temple",
+      "name": "Mangueshi Temple",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "type": "spiritual",
+      "shortDescription": "450-year-old historic Konkani temple dedicated to Lord Shiva, famous for its graceful 7-story Deepastambha lamp tower.",
+      "longDescription": "Situated in Priol, Ponda taluka, Sri Mangueshi Temple is one of the largest and most venerated Hindu shrines in Goa. Dedicated to Lord Manguesh (an incarnation of Lord Shiva worshipped by the Saraswat Brahmin community), the deity was relocated here in 1560 to escape religious persecution in Portuguese-controlled Salcete. Set against lush forested hills, the temple features a unique blend of Hindu, Christian, and Islamic architectural elements, highlighted by an iconic, dazzling white seven-storey Deepastambha (octagonal lamp tower).",
+      "category": [
+        "spiritual",
+        "heritage",
+        "culture"
+      ],
+      "bestTimeToVisit": "October to March",
+      "recommendedDuration": "1.5 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.4419,
+        "longitude": 73.9686
+      },
+      "image": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Magnificent seven-storey octagonal Deepastambha (lamp tower)",
+        "Historic water tank (Sarovara) reflecting the temple's white pillars",
+        "Ornate silver filigree door frames and chandelier-lit prayer hall",
+        "Peaceful forested valley setting in the Priol countryside"
+      ],
+      "activities": [
+        "Attending traditional morning and evening aarti rituals",
+        "Admiring unique Goan temple architecture and brass craftwork",
+        "Pairing with a tour of the nearby Sahakari Spice Farm"
+      ],
+      "nearbyPlaces": [
+        "Shanta Durga Temple",
+        "Sahakari Spice Farm",
+        "Old Goa",
+        "Ponda Town"
+      ],
+      "travelTips": [
+        "Strict temple dress code: shorts, sleeveless tops, and short skirts are strictly prohibited",
+        "Remove footwear outside the main temple gate",
+        "Photography is restricted inside the sanctum sanctorum"
+      ],
+      "accessibility": "Paved flat courtyards with small threshold steps into the sanctum",
+      "familyFriendly": true,
+      "budgetLevel": "budget",
+      "tags": [
+        "temple",
+        "shiva",
+        "deepastambha",
+        "ponda",
+        "saraswat"
+      ],
+      "featured": true,
+      "priorityRank": 10,
+      "imageAlt": "Iconic seven-storey Deepastambha lamp tower of Sri Mangueshi Temple in Ponda, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Prashant Gautam",
+      "imageCredit": "Photo: Prashant Gautam / Unsplash",
+      "verified": true
+    },
+    {
+      "id": "sahakari-spice-farm",
+      "name": "Sahakari Spice Farm",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "type": "nature",
+      "shortDescription": "Lush 130-acre aromatic organic spice plantation offering guided educational tours and authentic Goan buffet lunch.",
+      "longDescription": "Located amidst the tranquil rural greenery of Curti in Ponda, Sahakari Spice Farm is a 130-acre certified organic agricultural sanctuary. Visitors receive a traditional Goan welcome with flower garlands, aarti, and refreshing lemongrass tea before setting out on guided walking trails among towering betel nut trees, cinnamon bushes, vanilla vines, cardamom pods, and clove trees. The tour concludes with an authentic, lavish buffet of traditional Goan dishes served on eco-friendly banana leaves.",
+      "category": [
+        "nature",
+        "food",
+        "family"
+      ],
+      "bestTimeToVisit": "October to April",
+      "recommendedDuration": "2.5 - 3 hours",
+      "estimatedVisitTime": "Half Day",
+      "coordinates": {
+        "latitude": 15.408,
+        "longitude": 74.028
+      },
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1280&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1280&q=80"
+      ],
+      "highlights": [
+        "Guided educational botany walk explaining organic spice cultivation",
+        "Traditional welcoming ritual with lemongrass herbal infusion",
+        "Lavish Goan buffet lunch included with ticket (vegetarian & fish curries)",
+        "Watching nimble plantation harvesters swing between betel nut palms"
+      ],
+      "activities": [
+        "Tasting fresh organic spices plucked straight from the vine",
+        "Sampling authentic Goan cashew feni distilled on the plantation",
+        "Purchasing farm-fresh unadulterated spices, vanilla extracts, and oils"
+      ],
+      "nearbyPlaces": [
+        "Mangueshi Temple",
+        "Shanta Durga Temple",
+        "Dudhsagar Falls",
+        "Ponda Town"
+      ],
+      "travelTips": [
+        "Arrive around 11:30 AM so your guided tour seamlessly flows into lunch at 1:00 PM",
+        "Wear breathable cotton clothing and mosquito repellent for shady tree groves",
+        "The farm shop offers verified organic spices directly from the growers"
+      ],
+      "accessibility": "Even, unpaved nature paths; suitable for all age groups with light assistance",
+      "familyFriendly": true,
+      "budgetLevel": "moderate",
+      "tags": [
+        "spice-farm",
+        "organic-spices",
+        "buffet-lunch",
+        "ponda",
+        "plantation"
+      ],
+      "featured": true,
+      "priorityRank": 11,
+      "imageAlt": "Aromatic spice plantation trees and tropical nature in Ponda, Goa",
+      "imageSource": "https://unsplash.com",
+      "imageSourceName": "Unsplash",
+      "imageLicense": "Unsplash Commercial Free",
+      "imagePhotographer": "Aron Visuals",
+      "imageCredit": "Photo: Aron Visuals / Unsplash",
+      "verified": true
     }
   ],
   "categories": [
@@ -48911,6 +50332,304 @@
         "nature",
         "wildlife"
       ]
+    },
+    {
+      "id": "goa",
+      "title": "Goa",
+      "type": "state",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa",
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+      "description": "Goa is India's sun-blessed coastal jewel, celebrated worldwide for its golden palm-fringed Arabian Sea shores, UNESCO World Heritage 16th-century Portuguese cathedrals, and charming Latin quarters. From the cascading majesty of Dudhsagar Falls in the verdant Western Ghats to the pulsating beach shacks and flea markets of North Goa, the tranquil white sands of South Goa, and aromatic organic spice plantations, Goa enchants visitors with its signature 'Susegad' lifestyle, rich Indo-Portuguese heritage, and world-class seafood gastronomy."
+    },
+    {
+      "id": "panaji",
+      "title": "Panaji",
+      "type": "city",
+      "city": "Panaji",
+      "citySlug": "panaji",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/panaji",
+      "image": "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80",
+      "description": "The picturesque capital of Goa situated along the Mandovi River, famous for its preserved Latin Quarter of Fontainhas, whitewashed baroque Church of Our Lady of the Immaculate Conception, floating casino cruises, and vibrant culinary arts."
+    },
+    {
+      "id": "old-goa",
+      "title": "Old Goa",
+      "type": "city",
+      "city": "Old Goa",
+      "citySlug": "old-goa",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/old-goa",
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "description": "The former capital of Portuguese India and a prestigious UNESCO World Heritage Site, home to some of Asia's most majestic 16th and 17th-century Catholic monuments, including the Basilica of Bom Jesus and Se Cathedral."
+    },
+    {
+      "id": "calangute",
+      "title": "Calangute",
+      "type": "city",
+      "city": "Calangute",
+      "citySlug": "calangute",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/calangute",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+      "description": "Known as the 'Queen of Beaches', Calangute is the bustling tourism epicenter of North Goa, stretching seamlessly into Baga Beach with a vibrant shoreline of beach shacks, thrilling watersports, lively markets, and nocturnal entertainment."
+    },
+    {
+      "id": "candolim",
+      "title": "Candolim",
+      "type": "city",
+      "city": "Candolim",
+      "citySlug": "candolim",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/candolim",
+      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80",
+      "description": "An upscale, scenic seaside stretch in North Goa crowned by the historic 17th-century Fort Aguada and its four-tiered lighthouse, offering golden beaches, luxury seaside resorts, fine dining, and watersports."
+    },
+    {
+      "id": "anjuna",
+      "title": "Anjuna",
+      "type": "city",
+      "city": "Anjuna",
+      "citySlug": "anjuna",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/anjuna",
+      "image": "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80",
+      "description": "The legendary cradle of Goa's bohemian and hippie culture, Anjuna is renowned for its iconic red laterite headlands, the historic Wednesday Flea Market, sweeping views from Chapora Fort, and sunset trance spots in adjacent Vagator."
+    },
+    {
+      "id": "margao",
+      "title": "Margao",
+      "type": "city",
+      "city": "Margao",
+      "citySlug": "margao",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/margao",
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+      "description": "The cultural and commercial headquarters of South Goa, Margao boasts splendid Portuguese-era mansions, the 17th-century Holy Spirit Church, vibrant municipal spice markets, and serves as the major railway junction connecting Goa to all of India."
+    },
+    {
+      "id": "palolem",
+      "title": "Palolem",
+      "type": "city",
+      "city": "Palolem",
+      "citySlug": "palolem",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/palolem",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+      "description": "Tucked away in South Goa's Canacona taluka, Palolem is celebrated for its pristine crescent-shaped white sand bay, tranquil turquoise waters ideal for swimming, palm-thatched beach huts, and dolphin watching boat excursions."
+    },
+    {
+      "id": "ponda",
+      "title": "Ponda",
+      "type": "city",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/ponda",
+      "image": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "description": "The spiritual and agricultural heart of Goa nestled at the foothills of the Western Ghats, renowned for centuries-old Konkani Hindu temples, fragrant organic spice plantations, and as the launching point for Dudhsagar Falls."
+    },
+    {
+      "id": "basilica-of-bom-jesus",
+      "title": "Basilica of Bom Jesus",
+      "type": "attraction",
+      "city": "Old Goa",
+      "citySlug": "old-goa",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/old-goa/basilica-of-bom-jesus",
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "description": "UNESCO World Heritage 16th-century baroque basilica in Old Goa housing the sacred relics of St. Francis Xavier.",
+      "category": [
+        "heritage",
+        "spiritual",
+        "culture"
+      ]
+    },
+    {
+      "id": "fort-aguada",
+      "title": "Fort Aguada & Lighthouse",
+      "type": "attraction",
+      "city": "Candolim",
+      "citySlug": "candolim",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/candolim/fort-aguada",
+      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?auto=format&fit=crop&w=1280&q=80",
+      "description": "Well-preserved 17th-century Portuguese fortress and lighthouse commanding dramatic panoramic vistas of the Arabian Sea.",
+      "category": [
+        "heritage",
+        "forts-palaces",
+        "beaches"
+      ]
+    },
+    {
+      "id": "dudhsagar-falls",
+      "title": "Dudhsagar Falls",
+      "type": "attraction",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/ponda/dudhsagar-falls",
+      "image": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "description": "Spectacular 310-metre four-tiered waterfall cascading down the lush Western Ghats like a sea of frothy white milk.",
+      "category": [
+        "nature",
+        "adventure"
+      ]
+    },
+    {
+      "id": "chapora-fort",
+      "title": "Chapora Fort",
+      "type": "attraction",
+      "city": "Anjuna",
+      "citySlug": "anjuna",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/anjuna/chapora-fort",
+      "image": "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1280&q=80",
+      "description": "Iconic red laterite fort perched high above the Chapora River and Vagator shoreline, immortalized by Bollywood cinema.",
+      "category": [
+        "forts-palaces",
+        "heritage",
+        "beaches"
+      ]
+    },
+    {
+      "id": "fontainhas-latin-quarter",
+      "title": "Fontainhas Latin Quarter",
+      "type": "attraction",
+      "city": "Panaji",
+      "citySlug": "panaji",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/panaji/fontainhas-latin-quarter",
+      "image": "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1280&q=80",
+      "description": "UNESCO heritage-recognized Latin Quarter featuring pastel-colored Portuguese colonial mansions, terracotta roofs, and charming art cafes.",
+      "category": [
+        "heritage",
+        "culture",
+        "photography"
+      ]
+    },
+    {
+      "id": "se-cathedral",
+      "title": "Se Cathedral",
+      "type": "attraction",
+      "city": "Old Goa",
+      "citySlug": "old-goa",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/old-goa/se-cathedral",
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1280&q=80",
+      "description": "One of the largest cathedrals in Asia, built in magnificent Portuguese-Manueline style and home to the renowned Golden Bell.",
+      "category": [
+        "heritage",
+        "spiritual",
+        "culture"
+      ]
+    },
+    {
+      "id": "calangute-beach",
+      "title": "Calangute Beach",
+      "type": "attraction",
+      "city": "Calangute",
+      "citySlug": "calangute",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/calangute/calangute-beach",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1280&q=80",
+      "description": "Goa's premier golden-sand beach offering world-class watersports, lively beach shacks, and vibrant coastal dining.",
+      "category": [
+        "beaches",
+        "adventure",
+        "food"
+      ]
+    },
+    {
+      "id": "palolem-beach",
+      "title": "Palolem Beach",
+      "type": "attraction",
+      "city": "Palolem",
+      "citySlug": "palolem",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/palolem/palolem-beach",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1280&q=80",
+      "description": "Crescent-shaped tranquil white sand bay lined with coconut palms, calm waters for swimming, and colorful eco cottages.",
+      "category": [
+        "beaches",
+        "nature",
+        "wellness"
+      ]
+    },
+    {
+      "id": "anjuna-beach",
+      "title": "Anjuna Beach & Flea Market",
+      "type": "attraction",
+      "city": "Anjuna",
+      "citySlug": "anjuna",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/anjuna/anjuna-beach",
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1280&q=80",
+      "description": "World-famous beach with dramatic red laterite rock formations, bohemian spirit, and legendary Wednesday flea market.",
+      "category": [
+        "beaches",
+        "nightlife",
+        "culture"
+      ]
+    },
+    {
+      "id": "mangueshi-temple",
+      "title": "Mangueshi Temple",
+      "type": "attraction",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/ponda/mangueshi-temple",
+      "image": "https://images.unsplash.com/photo-1582650625119-3a31f841839d?auto=format&fit=crop&w=1280&q=80",
+      "description": "450-year-old historic Konkani temple dedicated to Lord Shiva, famous for its graceful 7-story Deepastambha lamp tower.",
+      "category": [
+        "spiritual",
+        "heritage",
+        "culture"
+      ]
+    },
+    {
+      "id": "sahakari-spice-farm",
+      "title": "Sahakari Spice Farm",
+      "type": "attraction",
+      "city": "Ponda",
+      "citySlug": "ponda",
+      "state": "Goa",
+      "stateSlug": "goa",
+      "url": "/india/goa/ponda/sahakari-spice-farm",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1280&q=80",
+      "description": "Lush 130-acre aromatic organic spice plantation offering guided educational tours and authentic Goan buffet lunch.",
+      "category": [
+        "nature",
+        "food",
+        "family"
+      ]
     }
-  ]
+  ],
+  "metadata": {
+    "totalStates": 16,
+    "totalCities": 220,
+    "totalAttractions": 414,
+    "lastUpdated": "2026-10-13T06:02:03.917Z"
+  }
 }

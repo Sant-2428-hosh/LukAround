@@ -24,7 +24,6 @@ export default function RestaurantCard({
   onGetDirections = null,
   compact = false
 }) {
-  const { openDishlyWithPrompt } = useApp();
   const [expanded, setExpanded] = useState(false);
 
   if (!restaurant) return null;
@@ -66,11 +65,7 @@ export default function RestaurantCard({
   const isPureVeg = (dietaryOptions || []).some(d => d.toLowerCase().includes('pure veg') || d.toLowerCase() === 'vegetarian');
   const isNonVeg = (dietaryOptions || []).some(d => d.toLowerCase().includes('non'));
 
-  const handleAskDishly = () => {
-    if (openDishlyWithPrompt) {
-      openDishlyWithPrompt(`Tell me about signature specialties, crowd ambiance, and the best time to visit ${name} in ${city}.`);
-    }
-  };
+
 
   const handleDirectionsClick = () => {
     if (onGetDirections) {
@@ -381,25 +376,7 @@ export default function RestaurantCard({
             </a>
           </div>
 
-          <div style={{ display: 'flex', gap: '0.45rem' }}>
-            <button
-              type="button"
-              onClick={handleAskDishly}
-              className="tourism-btn tourism-btn-secondary"
-              style={{
-                flex: 1,
-                fontSize: '0.78rem',
-                padding: '0.4rem 0.6rem',
-                justifyContent: 'center',
-                backgroundColor: '#FFF7ED',
-                color: '#C2410C',
-                border: '1px solid #FFEDD5'
-              }}
-              title="Ask Dishly about this restaurant"
-            >
-              <Sparkles size={12} color="#EA580C" />
-              <span>Ask Dishly</span>
-            </button>
+          <div style={{ display: 'flex', gap: '0.45rem', width: '100%' }}>
 
             <button
               type="button"

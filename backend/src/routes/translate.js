@@ -20,7 +20,7 @@ const CORE_PRESETS = {
     "Travel beyond the Ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
     "travel beyond the ordinary": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
     "travel india": "வழக்கத்திற்கு அப்பாற்பட்ட பயணம்",
-    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+    "LukAround": "LukAround", "SOS": "SOS"
   },
   hi: {
     "Home": "होम", "home": "होम",
@@ -36,7 +36,7 @@ const CORE_PRESETS = {
     "Travel beyond the Ordinary": "असाधारण से परे यात्रा",
     "travel beyond the ordinary": "असाधारण से परे यात्रा",
     "travel india": "असाधारण से परे यात्रा",
-    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+    "LukAround": "LukAround", "SOS": "SOS"
   },
   te: {
     "Home": "హోమ్", "home": "హోమ్",
@@ -52,7 +52,7 @@ const CORE_PRESETS = {
     "Travel beyond the Ordinary": "సాధారణానికి మించిన ప్రయాణం",
     "travel beyond the ordinary": "సాధారణానికి మించిన ప్రయాణం",
     "travel india": "సాధారణానికి మించిన ప్రయాణం",
-    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+    "LukAround": "LukAround", "SOS": "SOS"
   },
   kn: {
     "Home": "ಮುಖಪುಟ", "home": "ಮುಖಪುಟ",
@@ -68,7 +68,7 @@ const CORE_PRESETS = {
     "Travel beyond the Ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
     "travel beyond the ordinary": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
     "travel india": "ಸಾಮಾನ್ಯವನ್ನು ಮೀರಿದ ಪ್ರವಾಸ",
-    "Dishly": "Dishly", "dishly": "Dishly", "LukAround": "LukAround", "SOS": "SOS"
+    "LukAround": "LukAround", "SOS": "SOS"
   }
 };
 

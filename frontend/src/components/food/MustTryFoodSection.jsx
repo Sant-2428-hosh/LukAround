@@ -7,7 +7,6 @@ export default function MustTryFoodSection({
   destinationName = '',
   onSelectDish = null
 }) {
-  const { openDishlyWithPrompt } = useApp();
 
   if (!dishes || dishes.length === 0) return null;
 
@@ -145,28 +144,6 @@ export default function MustTryFoodSection({
                     <ChevronRight size={12} />
                   </button>
                 )}
-
-                <button
-                  type="button"
-                  onClick={() => openDishlyWithPrompt?.(`Where can I eat the best authentic ${dish.name} in ${destinationName}?`)}
-                  style={{
-                    backgroundColor: '#FFF7ED',
-                    color: '#C2410C',
-                    border: '1px solid #FFEDD5',
-                    borderRadius: '8px',
-                    padding: '0.45rem 0.65rem',
-                    fontSize: '0.78rem',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '4px'
-                  }}
-                  title="Ask Dishly AI"
-                >
-                  <Sparkles size={12} />
-                  <span>Ask Dishly</span>
-                </button>
               </div>
             </div>
           );

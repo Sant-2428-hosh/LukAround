@@ -101,7 +101,7 @@ export async function fetchSuggestions(city) {
 /** Local intent-based fallback (works offline) */
 function getLocalFallback(message, city) {
   const c = city || 'your destination';
-  return `I'm Dishly, your personal LukAround culinary & dining concierge! Here are top-rated restaurants, iconic local foods, and must-try dining spots in ${c}.`;
+  return `Here are top-rated restaurants, iconic local foods, and must-try dining spots in ${c}.`;
 }
 
 /** Default suggestion chips */
@@ -136,10 +136,8 @@ export function createTypingAnimator(text, onUpdate, onDone, speed = 24) {
   return () => clearInterval(interval); // cleanup
 }
 
-/** Storage keys for Dishly sessions and active chat */
+/** Storage key for chat history */
 export const CHAT_STORAGE_KEY = 'luk_chat_history';
-export const DISHLY_SESSIONS_STORAGE_KEY = 'dishly_chat_sessions_v2';
-export const DISHLY_ACTIVE_SESSION_KEY = 'dishly_active_session_id';
 
 /** Load chat history from storage */
 export function loadChatHistory() {
@@ -160,38 +158,3 @@ export function saveChatHistory(messages) {
   } catch { /* ignore */ }
 }
 
-/** Load all saved Dishly chat sessions from localStorage */
-export function loadDishlySessions() {
-  try {
-    const raw = localStorage.getItem(DISHLY_SESSIONS_STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
-}
-
-/** Save all Dishly chat sessions to localStorage */
-export function saveDishlySessions(sessions) {
-  try {
-    localStorage.setItem(DISHLY_SESSIONS_STORAGE_KEY, JSON.stringify(sessions.slice(0, 30)));
-  } catch { /* ignore */ }
-}
-
-/** Get currently active session ID */
-export function getActiveSessionId() {
-  try {
-    return localStorage.getItem(DISHLY_ACTIVE_SESSION_KEY) || null;
-  } catch {
-    return null;
-  }
-}
-
-/** Set currently active session ID */
-export function setActiveSessionId(id) {
-  try {
-    if (id) localStorage.setItem(DISHLY_ACTIVE_SESSION_KEY, id);
-    else localStorage.removeItem(DISHLY_ACTIVE_SESSION_KEY);
-  } catch { /* ignore */ }
-}

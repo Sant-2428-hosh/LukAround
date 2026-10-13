@@ -1,10 +1,10 @@
 {
   "broadcast": {
     "active": false,
-    "message": "",
-    "severity": "info",
-    "updatedAt": null,
-    "updatedBy": null
+    "message": "HEavy moNSoon",
+    "severity": "warning",
+    "updatedAt": "2026-10-13T07:07:12.502Z",
+    "updatedBy": "Ragul R"
   },
   "featureFlags": {
     "aiItineraryV2": true,
@@ -15,6 +15,48 @@
   },
   "adminInvites": [],
   "auditLogs": [
+    {
+      "id": "log_1791875232506_bho",
+      "action": "BROADCAST_UPDATED",
+      "details": "Disabled global broadcast banner",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-13T07:07:12.506Z"
+    },
+    {
+      "id": "log_1791875226795_fst",
+      "action": "BROADCAST_UPDATED",
+      "details": "Published global banner: \"HEavy moNSoon\" [warning]",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-13T07:07:06.795Z"
+    },
+    {
+      "id": "log_1791875225499_zf9",
+      "action": "BROADCAST_UPDATED",
+      "details": "Published global banner: \"HEavy moNSoon\" [warning]",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-13T07:07:05.499Z"
+    },
+    {
+      "id": "log_1791874636156_05c",
+      "action": "BROADCAST_UPDATED",
+      "details": "Published global banner: \"HEavy moNSoon\" [warning]",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-13T06:57:16.156Z"
+    },
+    {
+      "id": "log_1791874613159_uju",
+      "action": "BROADCAST_UPDATED",
+      "details": "Published global banner: \"\" [warning]",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-13T06:56:53.159Z"
+    },
+    {
+      "id": "log_1791874597161_02k",
+      "action": "USER_LOGIN",
+      "details": "User Ragul R logged in via password",
+      "performedBy": "ragulr9962@gmail.com",
+      "timestamp": "2026-10-13T06:56:37.161Z"
+    },
     {
       "id": "log_1791622869203_9vv",
       "action": "GOOGLE_LOGIN",

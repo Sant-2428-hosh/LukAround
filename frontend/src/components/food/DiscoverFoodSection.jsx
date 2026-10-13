@@ -30,7 +30,7 @@ export default function DiscoverFoodSection({
   city = null,
   state = null
 }) {
-  const { openDishlyWithPrompt, setActiveDestinationContext } = useApp();
+  const { setActiveDestinationContext } = useApp();
 
   // Determine names & coordinates
   const destName = destination?.name || city?.name || state?.name || 'Destination';
@@ -60,7 +60,7 @@ export default function DiscoverFoodSection({
   // Target count: 5–8 for attractions, 8–15 for cities
   const targetLimit = type === 'attraction' ? 8 : 14;
 
-  // Sync destination context with global AppContext for Dishly AI
+  // Sync destination context with global AppContext
   useEffect(() => {
     if (setActiveDestinationContext) {
       setActiveDestinationContext({
@@ -291,97 +291,7 @@ export default function DiscoverFoodSection({
         </div>
       </div>
 
-      {/* ── Dishly AI Interactive Concierge Banner (Section 5 & 20) ── */}
-      <div
-        style={{
-          background: 'linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FFEDD5 100%)',
-          border: '1px solid #FDE68A',
-          borderRadius: '16px',
-          padding: '1.25rem 1.5rem',
-          marginBottom: '2rem',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '0.85rem',
-          boxShadow: '0 4px 14px rgba(245, 158, 11, 0.08)'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div
-              style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '10px',
-                backgroundColor: '#D97706',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#FFFFFF'
-              }}
-            >
-              <Sparkles size={20} />
-            </div>
-            <div>
-              <div style={{ fontWeight: 800, fontSize: '1rem', color: '#78350F' }}>
-                Ask Dishly AI • Your Indian Food & Dining Assistant
-              </div>
-              <div style={{ fontSize: '0.82rem', color: '#92400E' }}>
-                Instantly find dishes, verified pure veg spots, budget lunch, or places near {destName}
-              </div>
-            </div>
-          </div>
 
-          <button
-            type="button"
-            onClick={() => openDishlyWithPrompt?.(`Recommend the best restaurants and must-try local food near ${destName}.`)}
-            className="tourism-btn"
-            style={{
-              backgroundColor: '#B45309',
-              color: '#FFFFFF',
-              fontWeight: 800,
-              fontSize: '0.82rem',
-              padding: '0.45rem 0.9rem',
-              border: 'none',
-              boxShadow: '0 2px 8px rgba(180, 83, 9, 0.25)'
-            }}
-          >
-            <span>Chat with Dishly</span>
-            <ChevronRight size={13} />
-          </button>
-        </div>
-
-        {/* Quick Suggestion Chips */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-          {[
-            `What are famous restaurants near ${destName}?`,
-            `Show pure veg spots near ${cityName || destName}`,
-            `What local food should I try in ${cityName || destName}?`,
-            `Find affordable restaurants within 2 km`
-          ].map((prompt, pi) => (
-            <button
-              key={pi}
-              type="button"
-              onClick={() => openDishlyWithPrompt?.(prompt)}
-              style={{
-                backgroundColor: '#FFFFFF',
-                border: '1px solid #FCD34D',
-                borderRadius: '20px',
-                padding: '4px 10px',
-                fontSize: '0.76rem',
-                fontWeight: 700,
-                color: '#78350F',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '4px',
-                transition: 'all 0.15s ease'
-              }}
-            >
-              <span>{prompt}</span>
-            </button>
-          ))}
-        </div>
-      </div>
 
       {/* ── Must-Try Local Food Section (Section 6 & 7) ── */}
       {mustTryDishes.length > 0 && (

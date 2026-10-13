@@ -46,8 +46,6 @@ export const STATIC_DICTIONARY = {
     "signOut": "साइन आउट",
     "Account": "खाता",
     "SOS": "SOS",
-    "Dishly": "Dishly",
-    "dishly": "Dishly",
     "LukAround": "LukAround",
 
     // Hero & Search
@@ -183,8 +181,6 @@ export const STATIC_DICTIONARY = {
     "signOut": "வெளியேறுக",
     "Account": "கணக்கு",
     "SOS": "SOS",
-    "Dishly": "Dishly",
-    "dishly": "Dishly",
     "LukAround": "LukAround",
 
     // Hero & Search
@@ -320,8 +316,6 @@ export const STATIC_DICTIONARY = {
     "signOut": "లాగ్ అవుట్",
     "Account": "ఖాతా",
     "SOS": "SOS",
-    "Dishly": "Dishly",
-    "dishly": "Dishly",
     "LukAround": "LukAround",
 
     // Hero & Search
@@ -457,8 +451,6 @@ export const STATIC_DICTIONARY = {
     "signOut": "ಸೈನ್ ಔಟ್",
     "Account": "ಖಾತೆ",
     "SOS": "SOS",
-    "Dishly": "Dishly",
-    "dishly": "Dishly",
     "LukAround": "LukAround",
 
     // Hero & Search

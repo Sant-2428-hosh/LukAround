@@ -345,8 +345,8 @@ router.get('/must-try', (req, res) => {
 });
 
 // ─────────────────────────────────────────────────────────────────────────────
-// ENDPOINT 4: POST /api/dishly/recommend
-// Context-Aware Dishly AI Food Recommendation
+// ENDPOINT 4: POST /api/restaurants/recommend
+// Context-Aware AI Food Recommendation
 // ─────────────────────────────────────────────────────────────────────────────
 router.post('/recommend', async (req, res) => {
   try {
@@ -410,7 +410,7 @@ router.post('/recommend', async (req, res) => {
       ]
     });
   } catch (err) {
-    console.error('[Dishly Recommend] Error:', err.message);
+    console.error('[Food Recommend] Error:', err.message);
     res.status(500).json({ success: false, error: err.message });
   }
 });

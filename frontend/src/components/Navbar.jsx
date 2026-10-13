@@ -21,7 +21,8 @@ import {
   DollarSign,
   HeartHandshake,
   Globe,
-  Landmark
+  Landmark,
+  Sparkles
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import logoMark from '../assets/logo-mark.png';

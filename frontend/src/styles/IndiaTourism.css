@@ -96,11 +96,12 @@
    ══════════════════════════════════════════════════════════ */
 .tourism-hero-epic {
   position: relative;
+  z-index: 30;
   min-height: 94vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   background: #060B18;
   color: #FFFFFF;
   padding: 6.5rem 1.5rem 3.5rem;
@@ -288,10 +289,10 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
 }
 
-/* Search Wrapper - Clean High Z-Index Layer (No filter drop-shadow stacking trap!) */
+/* Search Wrapper - Clean High Z-Index Layer */
 .hero-search-wrapper {
   position: relative;
-  z-index: 100;
+  z-index: 9999;
   max-width: 740px;
   margin: 0 auto 1.85rem;
 }
@@ -1393,10 +1394,11 @@
   border-radius: 18px;
   box-shadow: 0 25px 60px -10px rgba(15, 23, 42, 0.45), 0 12px 28px -6px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(226, 232, 240, 0.95);
-  overflow: hidden;
-  z-index: 99999;
-  max-height: 440px;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  z-index: 999999;
+  max-height: 460px;
   text-align: left;
   animation: searchDropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -1438,6 +1440,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 .search-section-count {
   font-size: 0.68rem;
@@ -1454,16 +1461,20 @@
   gap: 0.9rem;
   padding: 0.85rem 1.25rem;
   border-bottom: 1px solid #F8FAFC;
+  border-left: 3px solid transparent;
   text-decoration: none;
   color: #0F172A;
   transition: all 0.15s ease;
+  cursor: pointer;
 }
 .search-dropdown-item:last-child {
   border-bottom: none;
 }
-.search-dropdown-item:hover {
+.search-dropdown-item:hover,
+.search-dropdown-item.is-selected {
   background: #F8FAFC;
   padding-left: 1.45rem;
+  border-left: 3px solid var(--tourism-earth, #C85A32);
 }
 .search-item-thumb {
   width: 44px;
@@ -1586,6 +1597,14 @@
   width: 100%;
   overflow: hidden;
   background-color: #0F172A;
+}
+.safe-image-container {
+  overflow: hidden !important;
+  max-width: 100%;
+}
+.safe-image-container img {
+  max-width: 100%;
+  display: block;
 }
 .state-card-image-wrap img,
 .state-card .safe-image-container img {
@@ -1897,12 +1916,14 @@
 }
 .map-explorer-nav-tabs {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   border-bottom: 2px solid var(--tourism-sand-border);
   overflow-x: auto;
-  padding-bottom: 0.25rem;
+  padding: 0.25rem 0.25rem 0.65rem 0.25rem;
   margin-bottom: 1.75rem;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 .map-explorer-nav-tabs::-webkit-scrollbar {
   display: none;
@@ -1910,44 +1931,53 @@
 .map-tab-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.75rem 1.1rem;
-  font-size: 0.88rem;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #64748B;
-  background: transparent;
-  border: none;
-  border-bottom: 3px solid transparent;
+  color: #475569;
+  background: #F8FAFC;
+  border: 1px solid var(--tourism-sand-border);
+  border-radius: 12px;
   cursor: pointer;
   white-space: nowrap;
-  margin-bottom: -2px;
-  transition: var(--transition-smooth);
-  border-radius: 6px 6px 0 0;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 .map-tab-btn:hover {
   color: var(--tourism-earth);
-  background: rgba(200, 90, 50, 0.04);
+  border-color: var(--tourism-earth);
+  background: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(200, 90, 50, 0.12);
 }
 .map-tab-btn.active {
-  color: var(--tourism-earth);
-  border-bottom-color: var(--tourism-earth);
-  background: rgba(200, 90, 50, 0.06);
+  color: #FFFFFF;
+  background: var(--tourism-earth);
+  border-color: var(--tourism-earth);
+  box-shadow: 0 4px 14px rgba(200, 90, 50, 0.3);
+  transform: translateY(-1px);
 }
 .map-tab-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
   border-radius: 9999px;
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 800;
   background: #E2E8F0;
-  color: #475569;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+.map-tab-btn:hover .map-tab-badge {
+  background: rgba(200, 90, 50, 0.15);
+  color: var(--tourism-earth);
 }
 .map-tab-btn.active .map-tab-badge {
-  background: var(--tourism-earth);
+  background: rgba(255, 255, 255, 0.25);
   color: #FFFFFF;
 }
 .map-pin-preview-flyout {

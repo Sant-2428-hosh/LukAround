@@ -10,28 +10,145 @@ export default function ExploreIndia() {
     <div className="tourism-page">
       {/* ── Page Header ── */}
       <div style={{
-        background: 'linear-gradient(180deg, #0F172A 0%, #1E293B 100%)',
+        background: 'radial-gradient(ellipse 80% 60% at 50% -15%, rgba(200, 90, 50, 0.25) 0%, #0F172A 60%, #0B1120 100%)',
         color: '#FFFFFF',
-        padding: '4rem 1.5rem',
-        textAlign: 'center'
+        padding: '5rem 1.5rem 6.5rem',
+        textAlign: 'center',
+        position: 'relative',
+        zIndex: 50,
+        overflow: 'visible'
       }}>
-        <div className="tourism-container" style={{ maxWidth: '800px' }}>
-          <span className="tourism-badge badge-earth" style={{ marginBottom: '1rem' }}>
-            Interactive Directory
-          </span>
-          <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: '0.85rem' }}>
-            Explore India: State by State
+        {/* Subtle Decorative Starburst */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          overflow: 'hidden',
+          pointerEvents: 'none',
+          zIndex: 0
+        }}>
+          <div style={{
+            position: 'absolute',
+            top: '-120px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '600px',
+            height: '600px',
+            background: 'radial-gradient(circle, rgba(200, 90, 50, 0.12) 0%, transparent 70%)',
+            pointerEvents: 'none'
+          }} />
+        </div>
+
+        <div className="tourism-container" style={{ maxWidth: '880px', position: 'relative', zIndex: 10 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem', marginBottom: '1.25rem' }}>
+            <span className="tourism-badge badge-earth" style={{ boxShadow: '0 0 20px rgba(200, 90, 50, 0.35)' }}>
+              Official India Travel Directory
+            </span>
+            <span style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(8px)',
+              WebkitBackdropFilter: 'blur(8px)',
+              color: '#E2E8F0',
+              padding: '0.2rem 0.65rem',
+              borderRadius: '9999px',
+              fontSize: '0.72rem',
+              fontWeight: 800,
+              border: '1px solid rgba(255, 255, 255, 0.15)'
+            }}>
+              16 States • 120+ Cities • 40+ UNESCO Sites
+            </span>
+          </div>
+
+          <h1 style={{
+            fontSize: 'clamp(2.2rem, 4.5vw, 3.4rem)',
+            fontWeight: 900,
+            marginBottom: '1rem',
+            letterSpacing: '-0.5px',
+            lineHeight: 1.15,
+            textShadow: '0 2px 14px rgba(0,0,0,0.5)'
+          }}>
+            Explore India: <span style={{ color: 'var(--tourism-gold, #F59E0B)' }}>State by State</span>
           </h1>
-          <p style={{ fontSize: '1.05rem', color: '#94A3B8', lineHeight: 1.6, marginBottom: '2rem' }}>
-            Traverse India's geographic and cultural tapestry. Select any state to uncover major cities, famous monuments, local cuisine, and verified travel logistics.
+
+          <p style={{
+            fontSize: 'clamp(0.95rem, 1.8vw, 1.12rem)',
+            color: '#94A3B8',
+            lineHeight: 1.7,
+            marginBottom: '2.25rem',
+            maxWidth: '720px',
+            margin: '0 auto 2.25rem'
+          }}>
+            Traverse India's geographic and cultural tapestry. Select any state to uncover major cities, famous monuments, authentic regional cuisines, and verified travel logistics.
           </p>
 
           <SearchBar placeholder="Search any Indian destination, state, city, or temple..." />
+
+          {/* Key Geographic Quick Jump Chips */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '0.5rem',
+            flexWrap: 'wrap',
+            marginTop: '1.5rem'
+          }}>
+            <span style={{ fontSize: '0.75rem', color: '#64748B', fontWeight: 700, marginRight: '0.25rem' }}>
+              Quick Regions:
+            </span>
+            {[
+              { name: 'North India', state: 'uttar-pradesh' },
+              { name: 'South India', state: 'tamil-nadu' },
+              { name: 'West India', state: 'maharashtra' },
+              { name: 'East India', state: 'west-bengal' },
+              { name: 'Central India', state: 'madhya-pradesh' }
+            ].map((reg) => (
+              <a
+                key={reg.name}
+                href={`#state-directory-explorer`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.getElementById('state-directory-explorer');
+                  if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Dispatch custom URL param or click if possible
+                    window.history.pushState({}, '', `/explore?state=${reg.state}`);
+                    window.dispatchEvent(new Event('popstate'));
+                  }
+                }}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  color: '#E2E8F0',
+                  border: '1px solid rgba(255, 255, 255, 0.12)',
+                  padding: '0.3rem 0.75rem',
+                  borderRadius: '9999px',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--tourism-earth)';
+                  e.currentTarget.style.color = '#FFFFFF';
+                  e.currentTarget.style.borderColor = 'var(--tourism-earth)';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.08)';
+                  e.currentTarget.style.color = '#E2E8F0';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                {reg.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* ── Map Explorer Section ── */}
-      <div className="tourism-container" style={{ marginTop: '-2.5rem', position: 'relative', zIndex: 10 }}>
+      <div className="tourism-container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 1 }}>
         <MapExplorer />
       </div>
 

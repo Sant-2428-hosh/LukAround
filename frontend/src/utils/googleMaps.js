@@ -24,7 +24,8 @@ export const MAJOR_AIRPORTS = [
   { id: 'ixc-airport', name: 'Shaheed Bhagat Singh International Airport (IXC)', city: 'Chandigarh / Mohali', state: 'Punjab', latitude: 30.6735, longitude: 76.7885 },
   { id: 'bbi-airport', name: 'Biju Patnaik International Airport (BBI)', city: 'Bhubaneswar', state: 'Odisha', latitude: 20.2444, longitude: 85.8178 },
   { id: 'pat-airport', name: 'Jay Prakash Narayan Airport (PAT)', city: 'Patna', state: 'Bihar', latitude: 25.5913, longitude: 85.0880 },
-  { id: 'dhn-airport', name: 'Jolly Grant Airport (DED)', city: 'Dehradun', state: 'Uttarakhand', latitude: 30.1897, longitude: 74.1800 }
+  { id: 'dhn-airport', name: 'Jolly Grant Airport (DED)', city: 'Dehradun', state: 'Uttarakhand', latitude: 30.1897, longitude: 74.1800 },
+  { id: 'goi-airport', name: 'Dabolim International / Manohar Mopa Airport (GOI/GOX)', city: 'Panaji / Dabolim', state: 'Goa', latitude: 15.3800, longitude: 73.8300 }
 ];
 
 export const MAJOR_RAILWAY_STATIONS = [
@@ -43,7 +44,8 @@ export const MAJOR_RAILWAY_STATIONS = [
   { id: 'asr-railway', name: 'Amritsar Junction (ASR)', city: 'Amritsar', state: 'Punjab', latitude: 31.6340, longitude: 74.8723 },
   { id: 'bbs-railway', name: 'Bhubaneswar Railway Station (BBS)', city: 'Bhubaneswar', state: 'Odisha', latitude: 20.2648, longitude: 85.8406 },
   { id: 'pnbe-railway', name: 'Patna Junction (PNBE)', city: 'Patna', state: 'Bihar', latitude: 25.6025, longitude: 85.1376 },
-  { id: 'hw-railway', name: 'Haridwar Junction (HW)', city: 'Haridwar', state: 'Uttarakhand', latitude: 29.9457, longitude: 78.1517 }
+  { id: 'hw-railway', name: 'Haridwar Junction (HW)', city: 'Haridwar', state: 'Uttarakhand', latitude: 29.9457, longitude: 78.1517 },
+  { id: 'mao-railway', name: 'Madgaon Junction Railway Station (MAO)', city: 'Margao', state: 'Goa', latitude: 15.2736, longitude: 73.9789 }
 ];
 
 /**
@@ -64,7 +66,8 @@ export const STATE_CENTERS = {
   'bihar': { latitude: 25.0961, longitude: 85.3131, zoom: 7.3 },
   'odisha': { latitude: 20.9517, longitude: 85.0985, zoom: 7.2 },
   'punjab': { latitude: 31.1471, longitude: 75.3412, zoom: 7.6 },
-  'uttarakhand': { latitude: 30.0668, longitude: 79.0193, zoom: 7.4 }
+  'uttarakhand': { latitude: 30.0668, longitude: 79.0193, zoom: 7.4 },
+  'goa': { latitude: 15.2993, longitude: 74.1240, zoom: 9.2 }
 };
 
 export const INDIA_CENTER = { latitude: 21.7679, longitude: 78.8718, zoom: 4.8 };

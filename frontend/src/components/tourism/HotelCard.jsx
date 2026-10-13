@@ -124,7 +124,8 @@ export default function HotelCard({
           minWidth: isHorizontal ? '280px' : 'auto',
           height: isHorizontal ? 'auto' : '220px',
           backgroundColor: '#0F172A',
-          flexShrink: 0
+          flexShrink: 0,
+          overflow: 'hidden'
         }}
       >
         {hasVerifiedPhoto ? (

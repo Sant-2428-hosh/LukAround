@@ -1,6 +1,6 @@
 /**
  * Regional Food Database (Frontend ES module)
- * Iconic, must-try culinary specialties across all 15 prioritized Indian states.
+ * Iconic, must-try culinary specialties across all 16 prioritized Indian states.
  */
 export const regionalFoodData = [
   {
@@ -918,15 +918,167 @@ export const regionalFoodData = [
     "imageLicense": "CC BY-SA 4.0",
     "imageSourceName": "Wikimedia Commons",
     "verified": true
+  },
+  {
+    "id": "goa-fish-curry-thali",
+    "name": "Goan Fish Curry Thali",
+    "state": "Goa",
+    "stateSlug": "goa",
+    "city": "Panaji",
+    "citySlug": "panaji",
+    "category": "Main Course & Local Specialty",
+    "dietary": "Non-Vegetarian",
+    "description": "The quintessential culinary soul of Goa. Fresh Kingfish (Surmai) cooked in a fragrant curry of grated fresh coconut, dried Kashmiri chillies, coriander seeds, and tart kokum (solam), served alongside boiled red rice (ukda tandool), fried fish, clams (tisryo), vegetable foogath, and refreshing digestive solkadhi.",
+    "regionalRelevance": "Highest",
+    "bestKnownIn": [
+      "Panaji",
+      "Margao",
+      "Calangute",
+      "Anjuna"
+    ],
+    "iconicLocations": [
+      "18th June Road Panaji",
+      "Margao Market",
+      "Fontainhas"
+    ],
+    "servingStyle": "Served on traditional steel or banana leaf thali with hot steamed Goan red rice",
+    "dishTags": [
+      "Must-Try",
+      "Signature Dish",
+      "Seafood",
+      "Local Specialty"
+    ],
+    "knownEstablishments": [
+      "Ritz Classic",
+      "Mum's Kitchen",
+      "Fisherman's Wharf",
+      "Martin's Corner"
+    ],
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Traditional Goan fish curry thali with red rice and fried surmai",
+    "imageCredit": "Photo: Unsplash Travel",
+    "imageLicense": "Unsplash Commercial Free",
+    "imageSourceName": "Unsplash",
+    "verified": true
+  },
+  {
+    "id": "goa-chicken-xacuti",
+    "name": "Chicken Xacuti (Shakuti)",
+    "state": "Goa",
+    "stateSlug": "goa",
+    "city": "Panaji",
+    "citySlug": "panaji",
+    "category": "Curry & Local Specialty",
+    "dietary": "Non-Vegetarian",
+    "description": "An intensely aromatic and deeply flavored Indo-Portuguese curry prepared with white poppy seeds (khus khus), dried red chillies, and over twenty roasted spices blended with freshly grated, caramelized coconut paste.",
+    "regionalRelevance": "Highest",
+    "bestKnownIn": [
+      "Panaji",
+      "Ponda",
+      "Margao"
+    ],
+    "iconicLocations": [
+      "Fontainhas",
+      "St. Inez"
+    ],
+    "servingStyle": "Served steaming hot with warm Goan Poee or unpolished boiled rice",
+    "dishTags": [
+      "Must-Try",
+      "Spicy",
+      "Portuguese-Goan",
+      "Heritage Recipe"
+    ],
+    "knownEstablishments": [
+      "Mum's Kitchen",
+      "Florentine Bar & Restaurant",
+      "O Coqueiro"
+    ],
+    "image": "https://images.unsplash.com/photo-1600100397608-f010f443b76a?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Rich spiced Goan Chicken Xacuti with toasted coconut curry",
+    "imageCredit": "Photo: Unsplash Travel",
+    "imageLicense": "Unsplash Commercial Free",
+    "imageSourceName": "Unsplash",
+    "verified": true
+  },
+  {
+    "id": "goa-bebinca",
+    "name": "Bebinca (Queen of Goan Desserts)",
+    "state": "Goa",
+    "stateSlug": "goa",
+    "city": "Old Goa",
+    "citySlug": "old-goa",
+    "category": "Dessert & Sweet",
+    "dietary": "Vegetarian (Contains Eggs)",
+    "description": "The crowned 'Queen of Goan Desserts'. A traditional 7 to 16 layered Indo-Portuguese pudding painstakingly baked layer by layer using rich coconut milk extract, farm egg yolks, sugar, pure ghee, and grated nutmeg. Legend attributes its creation to Sister Bebiana of the Santa Monica Convent in Old Goa.",
+    "regionalRelevance": "Highest",
+    "bestKnownIn": [
+      "Old Goa",
+      "Panaji",
+      "Margao"
+    ],
+    "iconicLocations": [
+      "Confeitaria 31 De Janeiro",
+      "Bakeries of Old Goa"
+    ],
+    "servingStyle": "Served warm or at room temperature, often accompanied by a scoop of vanilla bean ice cream",
+    "dishTags": [
+      "Must-Try",
+      "Dessert",
+      "Layered Cake",
+      "Indo-Portuguese"
+    ],
+    "knownEstablishments": [
+      "Confeitaria 31 De Janeiro",
+      "Simonia Stores",
+      "Pasteleria"
+    ],
+    "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Multi-layered warm Goan Bebinca dessert with coconut milk and ghee",
+    "imageCredit": "Photo: Unsplash Travel",
+    "imageLicense": "Unsplash Commercial Free",
+    "imageSourceName": "Unsplash",
+    "verified": true
+  },
+  {
+    "id": "goa-pork-vindaloo",
+    "name": "Goan Pork / Chicken Vindaloo",
+    "state": "Goa",
+    "stateSlug": "goa",
+    "city": "Panaji",
+    "citySlug": "panaji",
+    "category": "Curry & Local Specialty",
+    "dietary": "Non-Vegetarian",
+    "description": "Derived from the Portuguese 'Carne de Vinha d'Alhos' (meat marinated in wine and garlic), this classic Goan preparation features tender meat slow-cooked in a fiery, tangy paste of Kashmiri chillies, cinnamon, cloves, cumin, ginger, garlic, and naturally fermented palm toddy vinegar.",
+    "regionalRelevance": "High",
+    "bestKnownIn": [
+      "Panaji",
+      "Calangute",
+      "Anjuna",
+      "Margao"
+    ],
+    "iconicLocations": [
+      "Fontainhas",
+      "Assagao"
+    ],
+    "servingStyle": "Served with crusty whole-wheat Poee bread or steamed fragrant rice",
+    "dishTags": [
+      "Spicy",
+      "Tangy",
+      "Indo-Portuguese",
+      "Traditional"
+    ],
+    "knownEstablishments": [
+      "Martin's Corner",
+      "Mum's Kitchen",
+      "Gunpowder Assagao",
+      "Britto's"
+    ],
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Traditional Goan Vindaloo curry in rich red chilli vinegar gravy",
+    "imageCredit": "Photo: Unsplash Travel",
+    "imageLicense": "Unsplash Commercial Free",
+    "imageSourceName": "Unsplash",
+    "verified": true
   }
 ];
-
-export function getMustTryDishes(city, state) {
-  return regionalFoodData.filter(d => {
-    if (city && d.city.toLowerCase() === city.toLowerCase()) return true;
-    if (state && d.state.toLowerCase() === state.toLowerCase()) return true;
-    return false;
-  });
-}
-
 export default regionalFoodData;

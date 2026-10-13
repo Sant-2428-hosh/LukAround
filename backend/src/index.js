@@ -59,7 +59,6 @@ app.use('/api/destinations', destinationsRouter);
 app.use('/api/chat', chatRouter);
 app.use('/api/restaurants', restaurantsRouter);
 app.use('/api/food', restaurantsRouter);
-app.use('/api/dishly', restaurantsRouter);
 app.use('/api/locations', locationsRouter);
 
 // Alias routes matching exact specification

@@ -911,6 +911,7 @@ export default function PopularPlacesSection() {
                     aspectRatio="16:9"
                     verified={true}
                     loading="lazy"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
 
                   {/* Real Photo Verified Pill */}

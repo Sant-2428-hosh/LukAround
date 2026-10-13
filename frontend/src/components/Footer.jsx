@@ -10,6 +10,7 @@ const PRIORITY_STATES = [
   { name: 'Tamil Nadu', slug: 'tamil-nadu' },
   { name: 'Uttar Pradesh', slug: 'uttar-pradesh' },
   { name: 'Rajasthan', slug: 'rajasthan' },
+  { name: 'Goa', slug: 'goa' },
   { name: 'Kerala', slug: 'kerala' },
   { name: 'Karnataka', slug: 'karnataka' },
   { name: 'Maharashtra', slug: 'maharashtra' },

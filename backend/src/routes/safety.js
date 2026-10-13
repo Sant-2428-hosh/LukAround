@@ -274,11 +274,27 @@ async function fetchLiveFacilities(lat, lng, radiusKm, type = null) {
           const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
           const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${lat},${lng}&destination=${props.lat},${props.lon}`;
 
+          const lowerName = rawName.toLowerCase();
+          const isSpecialty = facType === 'hospital' && (
+            lowerName.includes('eye') ||
+            lowerName.includes('dental') ||
+            lowerName.includes('skin') ||
+            lowerName.includes('clinic') ||
+            lowerName.includes('physio') ||
+            lowerName.includes('diagnostic') ||
+            lowerName.includes('optical') ||
+            lowerName.includes('ent ')
+          );
+
           places.push({
             id: `live-${props.place_id || Math.random().toString(36).substr(2, 9)}`,
             name: rawName,
             facilityType: facType,
-            categoryName: facType === 'police_station' ? 'Local Police Precinct' : 'Hospital & Emergency Care',
+            categoryName: facType === 'police_station'
+              ? 'Local Police Precinct'
+              : isSpecialty
+                ? 'Specialty Healthcare & Clinic'
+                : 'Hospital & Trauma Care',
             address,
             latitude: props.lat,
             longitude: props.lon,
@@ -287,8 +303,8 @@ async function fetchLiveFacilities(lat, lng, radiusKm, type = null) {
             phoneVerificationStatus: props.contact?.phone ? 'public_listing' : 'not_verified',
             phoneSourceUrl: null,
             officialWebsite: props.website || null,
-            emergencyDepartmentAvailable: facType === 'hospital' ? true : null,
-            operatingHours: '24 Hours (Emergency Services)',
+            emergencyDepartmentAvailable: facType === 'hospital' ? !isSpecialty : null,
+            operatingHours: isSpecialty ? 'Specialty Consultations' : '24 Hours (Emergency Services)',
             distanceKm: dist,
             roadTime: estimateRoadTransitTime(dist),
             mapsUrl,

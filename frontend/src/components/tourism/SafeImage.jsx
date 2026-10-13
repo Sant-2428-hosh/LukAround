@@ -3,24 +3,27 @@ import { Camera, ShieldCheck } from 'lucide-react';
 
 // Neutral architectural & scenic fallback patterns (Abstract textures, no monument or place misrepresentations)
 const FALLBACK_CATEGORY_IMAGES = {
-  heritage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80',
-  spiritual: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80',
+  heritage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80',
+  spiritual: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80',
   nature: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80',
-  beaches: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
-  wildlife: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80',
-  food: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80',
-  default: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80'
+  beaches: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80',
+  'hill-stations': 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80',
+  wildlife: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80',
+  adventure: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80',
+  food: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=80',
+  culture: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80',
+  default: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80'
 };
 
-const ASPECT_RATIOS = {
-  '16:9': '56.25%',
-  '4:3': '75%',
-  '1:1': '100%',
-  '4:5': '125%',
-  hero: '56.25%',
-  card: '75%',
-  square: '100%',
-  mobile: '125%'
+const CSS_ASPECT_RATIOS = {
+  '16:9': '16 / 9',
+  '4:3': '4 / 3',
+  '1:1': '1 / 1',
+  '4:5': '4 / 5',
+  hero: '16 / 9',
+  card: '4 / 3',
+  square: '1 / 1',
+  mobile: '4 / 5'
 };
 
 export default function SafeImage({
@@ -57,44 +60,28 @@ export default function SafeImage({
     }
   };
 
-  const hasRatio = aspectRatio && ASPECT_RATIOS[aspectRatio];
+  const hasExplicitHeight = Boolean(style && style.height && style.height !== 'auto');
+  const cssRatio = aspectRatio ? CSS_ASPECT_RATIOS[aspectRatio] : null;
 
-  const wrapperStyle = hasRatio
-    ? {
-        position: 'relative',
-        width: '100%',
-        paddingBottom: ASPECT_RATIOS[aspectRatio],
-        overflow: 'hidden',
-        backgroundColor: '#0F172A',
-        ...style
-      }
-    : {
-        position: 'relative',
-        overflow: 'hidden',
-        backgroundColor: '#0F172A',
-        ...style
-      };
+  const wrapperStyle = {
+    position: 'relative',
+    backgroundColor: '#0F172A',
+    width: style?.width || '100%',
+    ...(!hasExplicitHeight && cssRatio ? { aspectRatio: cssRatio } : {}),
+    ...style,
+    // Strictly guarantee overflow: hidden so images NEVER bleed into sibling containers
+    overflow: 'hidden'
+  };
 
-  const finalImgStyle = hasRatio
-    ? {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-        objectPosition: 'center',
-        transition: 'transform 0.4s ease',
-        ...imgStyle
-      }
-    : {
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-        objectPosition: 'center',
-        display: 'block',
-        ...imgStyle
-      };
+  const finalImgStyle = {
+    width: '100%',
+    height: '100%',
+    objectFit: style?.objectFit || imgStyle?.objectFit || 'cover',
+    objectPosition: imgStyle?.objectPosition || 'center',
+    display: 'block',
+    transition: 'transform 0.4s ease',
+    ...imgStyle
+  };
 
   return (
     <div className={`safe-image-container ${className}`} style={wrapperStyle} onClick={onClick}>

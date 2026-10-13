@@ -99,7 +99,7 @@ export default function About() {
               'Train, Flight & Expressway Logistics',
               'Verified User Reviews & Travel Communities',
               'Offline-Ready Itinerary Planner',
-              'AI Travel Assistant (Dishly & MindTrip)'
+              'Intelligent AI Travel & Trip Planning'
             ].map((feature, idx) => (
               <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                 <CheckCircle2 size={16} color="var(--tourism-forest)" style={{ flexShrink: 0 }} />

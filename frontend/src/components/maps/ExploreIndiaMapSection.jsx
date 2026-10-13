@@ -296,7 +296,7 @@ export default function ExploreIndiaMapSection() {
                   backgroundColor: '#F8FAFC'
                 }}
               >
-                <option value="all">🇮🇳 All India (15 States Overview)</option>
+                <option value="all">🇮🇳 All India (16 States Overview)</option>
                 {states.map(s => (
                   <option key={s.id} value={s.slug}>
                     #{s.priorityRank} {s.name} ({s.majorCities?.length || 0} Cities)

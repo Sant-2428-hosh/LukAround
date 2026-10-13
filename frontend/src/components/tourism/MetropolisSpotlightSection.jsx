@@ -105,7 +105,7 @@ export default function MetropolisSpotlightSection() {
             <span style={{ color: 'var(--tourism-earth)' }}>As First-Class Destinations</span>
           </h2>
           <p className="tourism-subtitle" style={{ margin: 0, fontSize: '0.95rem' }}>
-            Complete 20-attraction tourism coverage, verified coordinates, nearby luxury hotels, Dishly culinary trails, and Google Maps direction routing.
+            Complete 20-attraction tourism coverage, verified coordinates, nearby luxury hotels, iconic culinary trails, and Google Maps direction routing.
           </p>
         </div>
 
@@ -131,9 +131,9 @@ export default function MetropolisSpotlightSection() {
                   <SafeImage
                     src={metro.image}
                     alt={metro.name}
-                    aspectRatio="16:9"
                     verified={true}
                     loading="lazy"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.2) 60%, transparent 100%)' }} />
 
@@ -227,7 +227,7 @@ export default function MetropolisSpotlightSection() {
                     <div>
                       <div style={{ fontWeight: 800, color: '#0F172A', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '4px' }}>
                         <Utensils size={12} color="#D97706" />
-                        <span>Dishly Food</span>
+                        <span>Iconic Food</span>
                       </div>
                       <div style={{ color: '#64748B', lineHeight: 1.4 }}>
                         {metro.foodHighlights.slice(0, 2).join(', ')}

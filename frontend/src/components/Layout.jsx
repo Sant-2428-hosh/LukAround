@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import BroadcastBanner from './BroadcastBanner';
 import AdminQuickBar from './AdminQuickBar';
-import AiChatWidget from './AiChatWidget';
 import ScrollProgressBar from './common/ScrollProgressBar';
 import { useApp } from '../context/AppContext';
 import { ShieldAlert, X, Globe } from 'lucide-react';
@@ -48,9 +47,6 @@ export default function Layout() {
 
       {/* ── Shared Footer ── */}
       <Footer />
-
-      {/* ── Global AI Chat Widget (MindTrip-style, embedded bottom-right) ── */}
-      <AiChatWidget />
 
       {/* ── Enhanced Floating Emergency SOS Modal ── */}
       <EmergencySOSModal

@@ -130,23 +130,45 @@ export function getDestinationSafetyAdvisories(city, state, attractionType = nul
   const generalTips = [
     {
       title: 'Unified National Emergency Access (112)',
-      detail: 'Dial 112 from any Indian or international roaming mobile connection for unified police, medical, and fire dispatch. It works with or without SIM credit.',
+      detail: 'Dial 112 from any Indian or international roaming mobile connection for unified police, medical, and fire dispatch. It operates 24/7 with or without active SIM balance.',
+      category: 'emergency',
+      icon: 'Siren',
       verifiedSource: 'ERSS India (112.gov.in)'
     },
     {
-      title: 'Authorized Transport & Transparent Fares',
-      detail: 'At major airports, railway stations, and heritage monuments, utilize government prepaid taxi/auto booths or verified ride-hailing apps (Ola, Uber) to prevent overcharging.',
+      title: 'Authorized Transport & Fair Pricing',
+      detail: 'At major airports, railway junctions, and heritage hubs, always use government pre-paid taxi/auto booths or verified ride-hailing apps (Ola, Uber) to guarantee transparent, GPS-monitored fares.',
+      category: 'transport',
+      icon: 'Car',
       verifiedSource: 'Ministry of Tourism Advisory'
     },
     {
       title: '24/7 Multi-Lingual Tourist Support (1363)',
-      detail: 'Ministry of Tourism operates 1363 toll-free in 12 languages. Save this number for legitimate tourist guidance, ticket verification, and transit disputes.',
+      detail: 'Ministry of Tourism operates 1363 toll-free in 12 global languages. Call for authorized guide verification, ticketing guidance, grievance reporting, and translation aid.',
+      category: 'helpline',
+      icon: 'Phone',
       verifiedSource: 'Incredible India Portal'
     },
     {
-      title: 'Digital Credential Storage & Offline Copies',
-      detail: 'Keep password-protected offline scans of your Passport, Visa, and government ID. Never hand over original passport documents as collateral to local vehicle rental vendors.',
+      title: 'Digital Credential Storage & Safe Documents',
+      detail: 'Carry password-protected offline digital copies of your Passport, Visa, and government ID. Never hand over your original passport or ID as a collateral deposit for scooter/car rentals.',
+      category: 'documents',
+      icon: 'CreditCard',
       verifiedSource: 'Bureau of Immigration India'
+    },
+    {
+      title: 'Safe Hydration & Culinary Hygiene',
+      detail: 'Consume packaged drinking water from sealed, BIS-certified bottles (Kinley, Aquafina, Bisleri). Prefer freshly cooked, hot meals at busy reputable dining establishments.',
+      category: 'health',
+      icon: 'Utensils',
+      verifiedSource: 'Food Safety and Standards Authority of India (FSSAI)'
+    },
+    {
+      title: 'Women Traveler Support & Safe Transit (1091)',
+      detail: 'Dedicated round-the-clock women safety helplines (1091 & 181) provide immediate police intervention. Most metro networks (Delhi, Chennai, Mumbai) and local trains feature dedicated women coaches.',
+      category: 'women_safety',
+      icon: 'ShieldCheck',
+      verifiedSource: 'Ministry of Women & Child Development'
     }
   ];
 
@@ -164,11 +186,14 @@ export function getDestinationSafetyAdvisories(city, state, attractionType = nul
     cityLower.includes('rishikesh') ||
     cityLower.includes('coorg') ||
     cityLower.includes('wayanad') ||
-    stateLower.includes('uttarakhand')
+    stateLower.includes('uttarakhand') ||
+    stateLower.includes('himachal')
   ) {
     generalTips.unshift({
-      title: 'Mountain & Hill Terrain Safety',
-      detail: 'Mountain roads experience seasonal fog and sudden rains. Avoid driving ghat sections post-sunset. Check mountain highway status during monsoon months before venturing out.',
+      title: 'Mountain Road & Hill Terrain Safety',
+      detail: 'Mountain roads frequently experience heavy fog, steep bends, and monsoon showers. Avoid driving ghat sections post-sunset. Check mountain highway status during monsoon months before venturing out.',
+      category: 'terrain',
+      icon: 'Compass',
       verifiedSource: 'State Disaster Management Authority (SDMA)'
     });
   }
@@ -182,11 +207,14 @@ export function getDestinationSafetyAdvisories(city, state, attractionType = nul
     cityLower.includes('alappuzha') ||
     cityLower.includes('kochi') ||
     cityLower.includes('visakhapatnam') ||
-    cityLower.includes('dwarka')
+    cityLower.includes('dwarka') ||
+    cityLower.includes('kanyakumari')
   ) {
     generalTips.unshift({
       title: 'Coastal Water & Rip Current Safety',
-      detail: 'Adhere strictly to red-flag warning markers on beaches. High-tide rip currents can be hazardous along open sea beaches. Swim only in demarcated areas monitored by certified lifeguards.',
+      detail: 'Adhere strictly to red-flag warning markers on beaches. High-tide rip currents can be hazardous along open sea beaches. Swim only in demarcated zones monitored by certified lifeguards.',
+      category: 'coastal',
+      icon: 'ShieldAlert',
       verifiedSource: 'Coastal Police & National Lifesaving Society'
     });
   }
@@ -201,17 +229,149 @@ export function getDestinationSafetyAdvisories(city, state, attractionType = nul
     cityLower.includes('tirupati') ||
     cityLower.includes('amritsar') ||
     cityLower.includes('puri') ||
-    cityLower.includes('bodh gaya')
+    cityLower.includes('bodh gaya') ||
+    cityLower.includes('haridwar')
   ) {
     generalTips.unshift({
       title: 'Pilgrim Corridor & Footwear Protocol',
-      detail: 'Leave footwear only at official free temple cloakrooms (Devasthanam/Trust counters). Avoid unbadged touts promising queue-skipping VIP darshan; utilize only official trust counters or temple websites.',
+      detail: 'Deposit footwear only at official free temple cloakrooms (Devasthanam/Trust counters). Avoid unbadged touts promising queue-skipping VIP darshan; utilize only official trust counters or temple websites.',
+      category: 'heritage',
+      icon: 'Landmark',
       verifiedSource: 'State Religious Endowment & Temple Administration'
     });
   }
 
   return generalTips;
 }
+
+/**
+ * Supported 5 Website Languages for Tourist Emergency Phrasebook
+ */
+export const PHRASEBOOK_LANGUAGES = [
+  { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी', flag: '🇮🇳', speechCode: 'hi-IN' },
+  { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்', flag: '🇮🇳', speechCode: 'ta-IN' },
+  { code: 'te', name: 'Telugu', nativeName: 'తెలుగు', flag: '🇮🇳', speechCode: 'te-IN' },
+  { code: 'kn', name: 'Kannada', nativeName: 'ಕನ್ನಡ', flag: '🇮🇳', speechCode: 'kn-IN' },
+  { code: 'en', name: 'English', nativeName: 'English', flag: '🇬🇧', speechCode: 'en-IN' }
+];
+
+/**
+ * High-frequency multilingual emergency phrases for travelers across all 5 official website languages.
+ */
+export const EMERGENCY_LOCAL_PHRASES = [
+  {
+    id: 'help',
+    english: 'Help me please!',
+    context: 'Emergency distress call in public',
+    translations: {
+      hi: { script: 'मदद कीजिए!', phonetic: 'Madad kijiye!' },
+      ta: { script: 'எனக்கு உதவி செய்யுங்கள்!', phonetic: 'Enakku udhavi seiyungal!' },
+      te: { script: 'దయచేసి నాకు సహాయం చేయండి!', phonetic: 'Dayachesi naaku sahaayam cheyandi!' },
+      kn: { script: 'ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡಿ!', phonetic: 'Dayavittu nanage sahaaya maadi!' },
+      en: { script: 'Help me please!', phonetic: 'Help me please!' }
+    },
+    hindi: 'मदद कीजिए!',
+    phonetic: 'Madad kijiye!'
+  },
+  {
+    id: 'police',
+    english: 'Call the police immediately!',
+    context: 'Theft, harassment, or crime report',
+    translations: {
+      hi: { script: 'तुरंत पुलिस को बुलाइए!', phonetic: 'Turant police ko bulaiye!' },
+      ta: { script: 'உடனே போலீஸை கூப்பிடுங்கள்!', phonetic: 'Udane police-ai kooppidungal!' },
+      te: { script: 'వెంటనే పోలీసులను పిలవండి!', phonetic: 'Ventane police-lanu pilavandi!' },
+      kn: { script: 'ತಕ್ಷಣ ಪೊಲೀಸರನ್ನು ಕರೆಯಿರಿ!', phonetic: 'Takshana police-annu kareyiri!' },
+      en: { script: 'Call the police immediately!', phonetic: 'Call the police immediately!' }
+    },
+    hindi: 'तुरंत पुलिस को बुलाइए!',
+    phonetic: 'Turant police ko bulaiye!'
+  },
+  {
+    id: 'ambulance',
+    english: 'I need an ambulance / doctor.',
+    context: 'Medical emergency or acute illness',
+    translations: {
+      hi: { script: 'मुझे एम्बुलेंस / डॉक्टर चाहिए।', phonetic: 'Mujhe ambulance / doctor chahiye.' },
+      ta: { script: 'எனக்கு ஆம்புலன்ஸ் / மருத்துவர் தேவை.', phonetic: 'Enakku ambulance / maruthuvar thevai.' },
+      te: { script: 'నాకు అంబులెన్స్ / డాక్టర్ కావాలి.', phonetic: 'Naaku ambulance / doctor kaavaali.' },
+      kn: { script: 'ನನಗೆ ಆಂಬ್ಯುಲೆನ್ಸ್ / ವೈದ್ಯರು ಬೇಕು.', phonetic: 'Nanage ambulance / vaidyaru beku.' },
+      en: { script: 'I need an ambulance / doctor.', phonetic: 'I need an ambulance / doctor.' }
+    },
+    hindi: 'मुझे एम्बुलेंस / डॉक्टर चाहिए।',
+    phonetic: 'Mujhe ambulance / doctor chahiye.'
+  },
+  {
+    id: 'hospital',
+    english: 'Where is the nearest hospital?',
+    context: 'Urgent medical seeking',
+    translations: {
+      hi: { script: 'नज़दीकी अस्पताल कहाँ है?', phonetic: 'Nazdeeki aspatal kahan hai?' },
+      ta: { script: 'அருகில் உள்ள மருத்துவமனை எங்கே?', phonetic: 'Arugil ulla maruthuvamanai engey?' },
+      te: { script: 'దగ్గరలోని ఆసుపత్రి ఎక్కడ ఉంది?', phonetic: 'Daggaraloni aasupatri ekkada undi?' },
+      kn: { script: 'ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆ ಎಲ್ಲಿದೆ?', phonetic: 'Hattirada aaspatre ellide?' },
+      en: { script: 'Where is the nearest hospital?', phonetic: 'Where is the nearest hospital?' }
+    },
+    hindi: 'नज़दीकी अस्पताल कहाँ है?',
+    phonetic: 'Nazdeeki aspatal kahan hai!'
+  },
+  {
+    id: 'lost_items',
+    english: 'I lost my bag / passport.',
+    context: 'Lost luggage or travel documents',
+    translations: {
+      hi: { script: 'मेरा बैग / पासपोर्ट खो गया है।', phonetic: 'Mera bag / passport kho gaya hai.' },
+      ta: { script: 'என் பை / பாஸ்போர்ட் தொலைந்துவிட்டது.', phonetic: 'En pai / passport tholaindhuvittadhu.' },
+      te: { script: 'నా బ్యాగ్ / పాస్‌పోర్ట్ పోయింది.', phonetic: 'Naa bag / passport poyindi.' },
+      kn: { script: 'ನನ್ನ ಬ್ಯಾಗ್ / ಪಾಸ್‌ಪೋರ್ಟ್ ಕಳೆದುಹೋಗಿದೆ.', phonetic: 'Nanna bag / passport kaleduhogide.' },
+      en: { script: 'I lost my bag / passport.', phonetic: 'I lost my bag / passport.' }
+    },
+    hindi: 'मेरा बैग / पासपोर्ट खो गया है।',
+    phonetic: 'Mera bag / passport kho gaya hai.'
+  },
+  {
+    id: 'take_police_station',
+    english: 'Please take me to the police station.',
+    context: 'Taxi / Auto driver direction',
+    translations: {
+      hi: { script: 'कृपया मुझे पुलिस थाने ले चलिए।', phonetic: 'Kripya mujhe police thaane le chaliye.' },
+      ta: { script: 'தயவுசெய்து என்னை காவல் நிலையத்திற்கு அழைத்துச் செல்லுங்கள்.', phonetic: 'Dhayavuseidhu ennai kaaval nilayathirku azhaithu chellungal.' },
+      te: { script: 'దయచేసి నన్ను పోలీస్ స్టేషన్‌కు తీసుకెళ్లండి.', phonetic: 'Dayachesi nannu police station-ku theesukellandi.' },
+      kn: { script: 'ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಪೊಲೀಸ್ ಠಾಣೆಗೆ ಕರೆದೊಯ್ಯಿರಿ.', phonetic: 'Dayavittu nannannu police thanege karedoyyiri.' },
+      en: { script: 'Please take me to the police station.', phonetic: 'Please take me to the police station.' }
+    },
+    hindi: 'कृपया मुझे पुलिस थाने ले चलिए।',
+    phonetic: 'Kripya mujhe police thaane le chaliye.'
+  },
+  {
+    id: 'danger',
+    english: 'I am in danger, please help!',
+    context: 'Immediate personal safety threat',
+    translations: {
+      hi: { script: 'मैं खतरे में हूँ, कृपया मदद करें!', phonetic: 'Main khatre mein hoon, kripya madad karein!' },
+      ta: { script: 'நான் ஆபத்தில் இருக்கிறேன், உதவுங்கள்!', phonetic: 'Naan aabathil irukkiren, udhavungal!' },
+      te: { script: 'నేను ప్రమాదంలో ఉన్నాను, సహాయం చేయండి!', phonetic: 'Nenu pramaadamlo unnaanu, sahaayam cheyandi!' },
+      kn: { script: 'ನಾನು ಅಪಾಯದಲ್ಲಿದ್ದೇನೆ, ಸಹಾಯ ಮಾಡಿ!', phonetic: 'Naanu apaayadalliddene, sahaaya maadi!' },
+      en: { script: 'I am in danger, please help!', phonetic: 'I am in danger, please help!' }
+    },
+    hindi: 'मैं खतरे में हूँ, कृपया मदद करें!',
+    phonetic: 'Main khatre mein hoon, kripya madad karein!'
+  },
+  {
+    id: 'tourist_desk',
+    english: 'Where is the tourist police desk?',
+    context: 'Tourist assistance & scam reporting',
+    translations: {
+      hi: { script: 'पर्यटक पुलिस बूथ कहाँ है?', phonetic: 'Paryatak police booth kahan hai?' },
+      ta: { script: 'சுற்றுலா போலீஸ் உதவி மையம் எங்கே?', phonetic: 'Sutrula police udhavi maiyam engey?' },
+      te: { script: 'టూరిస్ట్ పోలీస్ బూత్ ఎక్కడ ఉంది?', phonetic: 'Tourist police booth ekkada undi?' },
+      kn: { script: 'ಪ್ರವಾಸಿ ಪೊಲೀಸ್ ಬೂತ್ ಎಲ್ಲಿದೆ?', phonetic: 'Pravasi police booth ellide?' },
+      en: { script: 'Where is the tourist police desk?', phonetic: 'Where is the tourist police desk?' }
+    },
+    hindi: 'पर्यटक पुलिस बूथ कहाँ है?',
+    phonetic: 'Paryatak police booth kahan hai?'
+  }
+];
 
 /**
  * Searches and ranks nearby verified emergency facilities for a target destination.

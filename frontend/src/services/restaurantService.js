@@ -1,7 +1,7 @@
 /**
  * restaurantService.js
  * Frontend service for real restaurant discovery, Google Places API integration,
- * must-try regional food, and Dishly AI food recommendations.
+ * and must-try regional food recommendations.
  */
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
@@ -72,9 +72,9 @@ export async function fetchMustTryFood({ state = '', city = '', attraction = '' 
 }
 
 /**
- * Send recommendation query to Dishly AI endpoint
+ * Send recommendation query to food recommendations endpoint
  */
-export async function fetchDishlyRecommendation({
+export async function fetchFoodRecommendation({
   message = '',
   city = 'Jaipur',
   state = '',
@@ -84,7 +84,7 @@ export async function fetchDishlyRecommendation({
   dietary = 'No preference'
 }) {
   try {
-    const response = await fetch(`${API_BASE}/dishly/recommend`, {
+    const response = await fetch(`${API_BASE}/restaurants/recommend`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -97,10 +97,10 @@ export async function fetchDishlyRecommendation({
         dietary
       })
     });
-    if (!response.ok) throw new Error('Dishly recommendation error');
+    if (!response.ok) throw new Error('Restaurant recommendation error');
     return await response.json();
   } catch (err) {
-    console.warn('[restaurantService] fetchDishlyRecommendation fallback:', err.message);
+    console.warn('[restaurantService] fetchFoodRecommendation fallback:', err.message);
     return null;
   }
 }
@@ -108,5 +108,5 @@ export async function fetchDishlyRecommendation({
 export default {
   fetchNearbyRestaurants,
   fetchMustTryFood,
-  fetchDishlyRecommendation
+  fetchFoodRecommendation
 };

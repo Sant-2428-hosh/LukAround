@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Compass, Landmark, Flame, Palmtree, Mountain, Coffee, Sparkles } from 'lucide-react';
 import { recordCardClick } from '../common/ScrollToTop';
@@ -13,12 +13,36 @@ const ICON_MAP = {
   Sparkles
 };
 
+const CATEGORY_FALLBACKS = {
+  heritage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80',
+  spiritual: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80',
+  beaches: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80',
+  'hill-stations': 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80',
+  wildlife: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80',
+  adventure: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80',
+  food: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=80',
+  culture: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=1200&q=80',
+  default: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80'
+};
+
 export default function CategoryCard({ category }) {
   if (!category) return null;
 
   const { id, name, slug, heroImage, tagline, description, count, icon } = category;
   const targetId = slug || id;
   const IconComponent = ICON_MAP[icon] || Compass;
+
+  const defaultImg = heroImage || CATEGORY_FALLBACKS[targetId] || CATEGORY_FALLBACKS.default;
+  const [imgSrc, setImgSrc] = useState(defaultImg);
+  const [imgFailed, setImgFailed] = useState(false);
+
+  const handleImageError = () => {
+    if (!imgFailed) {
+      setImgFailed(true);
+      const fallbackUrl = CATEGORY_FALLBACKS[targetId] || CATEGORY_FALLBACKS[id] || CATEGORY_FALLBACKS.default;
+      setImgSrc(fallbackUrl);
+    }
+  };
 
   return (
     <Link
@@ -36,6 +60,7 @@ export default function CategoryCard({ category }) {
         overflow: 'hidden',
         textDecoration: 'none',
         color: '#FFFFFF',
+        backgroundColor: '#0F172A',
         boxShadow: 'var(--shadow-subtle)',
         transition: 'transform 0.3s ease, box-shadow 0.3s ease'
       }}
@@ -51,8 +76,9 @@ export default function CategoryCard({ category }) {
     >
       {/* Background Image with Gradient Overlay */}
       <img
-        src={heroImage}
+        src={imgSrc}
         alt={name}
+        onError={handleImageError}
         style={{
           position: 'absolute',
           top: 0,

@@ -4,8 +4,8 @@ import SearchBar from '../components/tourism/SearchBar';
 import StateCard from '../components/tourism/StateCard';
 import AttractionCard from '../components/tourism/AttractionCard';
 import CategoryCard from '../components/tourism/CategoryCard';
+import TravelStyleCard from '../components/tourism/TravelStyleCard';
 import ItineraryCard from '../components/tourism/ItineraryCard';
-import DiscoverFoodSection from '../components/food/DiscoverFoodSection';
 import PopularPlacesSection from '../components/tourism/PopularPlacesSection';
 import TravelIntelligenceHub from '../components/tourism/TravelIntelligenceHub';
 import {
@@ -101,7 +101,7 @@ const TRAVEL_STYLE_CONFIG = {
   },
   adventure: {
     icon: Zap,
-    image: 'https://images.unsplash.com/photo-1600100397608-f010f443b7e7?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
     sampleCities: ['Rishikesh', 'Leh', 'Dandeli', 'Bir Billing'],
     badge: '25+ Cities',
     tag: 'Thrill & Adrenaline',
@@ -109,7 +109,7 @@ const TRAVEL_STYLE_CONFIG = {
   },
   beach: {
     icon: Palmtree,
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
     sampleCities: ['Goa', 'Varkala', 'Andaman', 'Gokarna'],
     badge: '20+ Cities',
     tag: 'Coastal Serenity',
@@ -356,28 +356,30 @@ export default function Home() {
         </button>
 
         {/* Clean, Uncluttered Hero Content */}
-        <div className="tourism-hero-content-epic" key={`slide-content-${currentSlide}`}>
+        <div className="tourism-hero-content-epic">
 
-          {/* Place-Specific Heritage Badge */}
-          <div className="hero-trust-badge">
-            <Sparkles size={13} color={activeSlide.badgeColor} />
-            <span style={{ color: activeSlide.badgeColor, fontWeight: 700 }}>{activeSlide.tag}</span>
+          {/* Place-Specific Heritage Badge & Title (smoothly rotates with slide) */}
+          <div key={`slide-editorial-${currentSlide}`} className="hero-editorial-group">
+            <div className="hero-trust-badge">
+              <Sparkles size={13} color={activeSlide.badgeColor} />
+              <span style={{ color: activeSlide.badgeColor, fontWeight: 700 }}>{activeSlide.tag}</span>
+            </div>
+
+            {/* Refined, Smaller, 2-Line Editorial Title */}
+            <h1 className="tourism-hero-title-epic">
+              <span className="hero-title-line-1">{activeSlide.line1}</span>
+              <span className={`hero-accent-text ${activeSlide.accentClass}`}>
+                {activeSlide.accentText}
+              </span>
+            </h1>
+
+            {/* Simple and Sweet 1-Line Subtitle */}
+            <p className="tourism-hero-subtitle-epic">
+              {activeSlide.subtitle}
+            </p>
           </div>
 
-          {/* Refined, Smaller, 2-Line Editorial Title */}
-          <h1 className="tourism-hero-title-epic">
-            <span className="hero-title-line-1">{activeSlide.line1}</span>
-            <span className={`hero-accent-text ${activeSlide.accentClass}`}>
-              {activeSlide.accentText}
-            </span>
-          </h1>
-
-          {/* Simple and Sweet 1-Line Subtitle */}
-          <p className="tourism-hero-subtitle-epic">
-            {activeSlide.subtitle}
-          </p>
-
-          {/* Clean, Centered Search Bar */}
+          {/* Clean, Centered Search Bar - Rock Solid & Never Unmounted */}
           <div
             className="hero-search-wrapper"
             onMouseEnter={() => setIsControlsHovered(true)}
@@ -446,12 +448,12 @@ export default function Home() {
       {/* ══ INDIA'S MOST POPULAR TOURIST PLACES ══ */}
       <PopularPlacesSection />
 
-      {/* ══ 3. THE MAGNIFICENT 15 STATES ══ */}
+      {/* ══ 3. THE MAGNIFICENT 16 STATES ══ */}
       <section className="section-states">
         <div className="tourism-container">
           <div className="section-header-split">
             <div>
-              <span className="tourism-badge badge-forest"><Award size={11} /> The Magnificent 15</span>
+              <span className="tourism-badge badge-forest"><Award size={11} /> The Magnificent 16</span>
               <h2 className="tourism-heading section-heading-xl">
                 India's Most Breathtaking<br />
                 <span style={{ color: 'var(--tourism-forest)' }}>Tourism Destinations</span>
@@ -568,96 +570,14 @@ export default function Home() {
             </p>
           </div>
           <div className="travel-styles-grid">
-            {travelStyles.map((style) => {
-              const config = TRAVEL_STYLE_CONFIG[style.id] || {
-                icon: Compass,
-                image: 'https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=800&q=80',
-                sampleCities: ['Verified Destinations'],
-                badge: 'Verified',
-                tag: 'Curated',
-                accent: '#F59E0B'
-              };
-              const IconComp = config.icon;
-              const isHovered = hoveredStyle === style.id;
-
-              return (
-                <Link
-                  key={style.id}
-                  to={'/cities?travelStyle=' + style.id}
-                  id={`place-${style.id}`}
-                  data-place-id={style.id}
-                  onClick={() => recordCardClick(style.id)}
-                  className="travel-style-card-pro"
-                  onMouseEnter={() => setHoveredStyle(style.id)}
-                  onMouseLeave={() => setHoveredStyle(null)}
-                >
-                  <div className="travel-style-card-media">
-                    <img
-                      src={config.image}
-                      alt={style.name}
-                      className="travel-style-card-img"
-                      loading="lazy"
-                    />
-                    <div className="travel-style-card-overlay" />
-                  </div>
-
-                  <div className="travel-style-topbar">
-                    <div className="travel-style-tag-pill">
-                      <IconComp size={14} style={{ color: config.accent || '#FBBF24' }} />
-                      <span>{config.tag || 'Curated'}</span>
-                    </div>
-                    <div className="travel-style-count-pill">
-                      {config.badge}
-                    </div>
-                  </div>
-
-                  <div className="travel-style-content">
-                    <h3 className="travel-style-title">{style.name}</h3>
-                    <p className="travel-style-desc-text">{style.description}</p>
-
-                    <div className="travel-style-dest-pills">
-                      {Array.isArray(config.sampleCities) && config.sampleCities.map((cityName, idx) => (
-                        <span key={idx} className="travel-style-dest-chip">
-                          <MapPin size={10} />
-                          {cityName}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="travel-style-cta-bar">
-                      <span className="travel-style-cta-label">Explore Destinations</span>
-                      <div
-                        className="travel-style-cta-arrow-box"
-                        style={{
-                          backgroundColor: isHovered ? (config.accent || '#FFFFFF') : undefined,
-                          borderColor: isHovered ? (config.accent || '#FFFFFF') : undefined,
-                          color: isHovered ? '#FFFFFF' : undefined
-                        }}
-                      >
-                        <ArrowRight size={14} />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
+            {travelStyles.map((style) => (
+              <TravelStyleCard
+                key={style.id}
+                style={style}
+                config={TRAVEL_STYLE_CONFIG[style.id]}
+              />
+            ))}
           </div>
-        </div>
-      </section>
-
-      {/* ══ DISCOVER FOOD WITH DISHLY ══ */}
-      <section className="section-dishly-food" style={{ padding: '3.5rem 0', backgroundColor: '#F8FAFC' }}>
-        <div className="tourism-container">
-          <DiscoverFoodSection
-            destination={{
-              city: 'Jaipur',
-              state: 'Rajasthan',
-              attraction: 'Hawa Mahal',
-              coordinates: { lat: 26.9239, lng: 75.8267 }
-            }}
-            sectionTitle="Discover Food with Dishly"
-            subtitle="Explore real restaurants, iconic local dishes, and AI food intelligence across India's premier tourist destinations."
-          />
         </div>
       </section>
 
